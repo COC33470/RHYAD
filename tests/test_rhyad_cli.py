@@ -69,23 +69,47 @@ def _write_cli_fixture(root):
     (root / "output").mkdir()
 
 
-def _append_registry_document(root, code, official_code, family="000"):
+def _append_registry_document(root, code, official_code, family="000", title=None, source=None):
     path = root / "config" / "document_registry.yaml"
     source_code = str(code).strip("'\"")
+    source = source or f"config/documents/{source_code}.yaml"
     with open(path, "a", encoding="utf-8") as f:
-        f.write(
-            "\n".join(
-                [
-                    "",
-                    f"  - code: {code}",
-                    f"    official_code: {official_code}",
-                    "    revision: Rev0.1",
-                    f"    family: '{family}'",
-                    f"    source: config/documents/{source_code}.yaml",
-                    "",
-                ]
-            )
+        lines = [
+            "",
+            f"  - code: {code}",
+            f"    official_code: {official_code}",
+        ]
+        if title:
+            lines.append(f"    title: {title}")
+        lines.extend(
+            [
+                "    revision: Rev0.1",
+                f"    family: '{family}'",
+                f"    source: {source}",
+                "",
+            ]
         )
+        f.write("\n".join(lines))
+
+
+def _write_document_source(root, source, reference, title, status="Draft"):
+    path = root / source
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        "\n".join(
+            [
+                f"reference: {reference}",
+                f"title: {title}",
+                "revision: Rev0.1",
+                f"status: {status}",
+                "chapters:",
+                "  - title: 1. Test",
+                "    text: Test.",
+            ]
+        ),
+        encoding="utf-8",
+    )
+    return path
 
 
 def _write_figures_registry(root, file_path="assets/figures/000/test.png", used_in=None):
@@ -393,6 +417,105 @@ class RhyadCliTest(unittest.TestCase):
             self.assertIn("Menu Documents", output)
             self.assertIn("1. Afficher tous les documents", output)
             self.assertIn("6. Générer un document", output)
+            self.assertIn("7. Nouveau document", output)
+
+    def test_ui_generate_document_lists_only_existing_sources(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            _write_cli_fixture(root)
+            _write_document_source(
+                root,
+                "config/documents/002.yaml",
+                "CEVA-RHYAD-002-PF",
+                "Programme Fonctionnel",
+            )
+            _write_document_source(
+                root,
+                "config/documents/functions/F01.yaml",
+                "CEVA-RHYAD-100-F01",
+                "Réception et Expédition",
+            )
+            _append_registry_document(
+                root,
+                "MTH01",
+                "CEVA-RHYAD-000-MTH01",
+                title='"Guide Méthodologique RHYAD"',
+            )
+            stream = io.StringIO()
+            inputs = iter(["2", "6", "1", "", "0", "0"])
+            commands = []
+
+            def fake_runner(command, timeout=None):
+                commands.append(command)
+                return rhyad.CommandResult(0, "generation ok")
+
+            exit_code = rhyad.command_ui(
+                root=root,
+                runner=fake_runner,
+                stream=stream,
+                input_func=lambda: next(inputs),
+            )
+
+            self.assertEqual(exit_code, 0)
+            self.assertEqual(commands, [["python3", "scripts/main.py", "002"]])
+            output = stream.getvalue()
+            self.assertIn("Documents existants", output)
+            self.assertIn("CEVA-RHYAD-002-PF", output)
+            self.assertIn("CEVA-RHYAD-100-F01", output)
+            self.assertNotIn("CEVA-RHYAD-000-MTH01 | Guide Méthodologique RHYAD", output)
+
+    def test_ui_new_document_creates_skeleton_and_launches_paste_workflow(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            _write_cli_fixture(root)
+            _write_document_source(
+                root,
+                "config/documents/002.yaml",
+                "CEVA-RHYAD-002-PF",
+                "Programme Fonctionnel",
+            )
+            _write_document_source(
+                root,
+                "config/documents/functions/F01.yaml",
+                "CEVA-RHYAD-100-F01",
+                "Réception et Expédition",
+            )
+            _append_registry_document(
+                root,
+                "MTH01",
+                "CEVA-RHYAD-000-MTH01",
+                title='"Guide Méthodologique RHYAD"',
+            )
+            stream = io.StringIO()
+            inputs = iter(["2", "7", "1", "", "0", "0"])
+            pasted = []
+
+            def fake_paste(document, root=None, runner=None, stream=None):
+                pasted.append(document)
+                print("Workflow paste lancé.", file=stream)
+                return 0
+
+            exit_code = rhyad.command_ui(
+                root=root,
+                stream=stream,
+                input_func=lambda: next(inputs),
+                paste_func=fake_paste,
+            )
+
+            self.assertEqual(exit_code, 0)
+            self.assertEqual(pasted, ["MTH01"])
+            yaml_path = root / "config" / "documents" / "MTH01.yaml"
+            self.assertTrue(yaml_path.exists())
+            yaml_text = yaml_path.read_text(encoding="utf-8")
+            self.assertIn('reference: "CEVA-RHYAD-000-MTH01"', yaml_text)
+            self.assertIn('title: "Guide Méthodologique RHYAD"', yaml_text)
+            self.assertIn('revision: "Rev0.1"', yaml_text)
+            self.assertIn('status: "Draft"', yaml_text)
+            output = stream.getvalue()
+            self.assertIn("Nouveaux documents disponibles", output)
+            self.assertIn("Document préparé : CEVA-RHYAD-000-MTH01", output)
+            self.assertIn("Workflow paste lancé.", output)
+            self.assertNotIn("config/documents/MTH01.yaml", output)
 
     def test_ui_displays_dashboard(self):
         with tempfile.TemporaryDirectory() as tmp:

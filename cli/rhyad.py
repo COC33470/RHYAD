@@ -438,7 +438,7 @@ def command_list(root=ROOT, stream=sys.stdout):
         code = document.get("code", "")
         official_code = document.get("official_code", "")
         family = document.get("family", "")
-        title = titles.get(code.upper(), "")
+        title = document.get("title", "") or titles.get(code.upper(), "")
         print(f"{official_code} | {title} | famille {family}", file=stream)
 
     return 0
@@ -511,16 +511,12 @@ def _ui_wait(input_func, stream):
 
 
 def _load_document_summary(root, document):
-    source = document.get("source", "")
-    path = Path(source)
-    if source and not path.is_absolute():
-        path = root / path
-
+    path = _document_source_path(root, document)
     summary = {
         "reference": document.get("official_code", ""),
-        "title": "",
+        "title": document.get("title", ""),
         "revision": document.get("revision", ""),
-        "status": "",
+        "status": document.get("status", ""),
     }
     if not path.exists():
         return summary
@@ -538,6 +534,14 @@ def _load_document_summary(root, document):
     return summary
 
 
+def _document_source_path(root, document):
+    source = document.get("source", "")
+    path = Path(source)
+    if source and not path.is_absolute():
+        path = root / path
+    return path
+
+
 def _documents_for_ui(root):
     registry = load_registry_documents(root / "config" / "document_registry.yaml")
     repository_titles = load_repository_titles(root / "config" / "rhyad_repository.yaml")
@@ -546,6 +550,7 @@ def _documents_for_ui(root):
         summary = _load_document_summary(root, document)
         code = document.get("code", "")
         title = summary.get("title") or repository_titles.get(code.upper(), "")
+        source_path = _document_source_path(root, document)
         documents.append(
             {
                 "code": code,
@@ -554,9 +559,20 @@ def _documents_for_ui(root):
                 "title": title,
                 "revision": summary.get("revision") or document.get("revision", ""),
                 "status": summary.get("status", ""),
+                "source": document.get("source", ""),
+                "source_exists": source_path.exists(),
+                "source_path": source_path,
             }
         )
     return documents
+
+
+def _existing_documents_for_ui(root):
+    return [document for document in _documents_for_ui(root) if document["source_exists"]]
+
+
+def _missing_source_documents_for_ui(root):
+    return [document for document in _documents_for_ui(root) if not document["source_exists"]]
 
 
 def _document_state(status):
@@ -737,7 +753,60 @@ def _print_documents(documents, stream):
         )
 
 
-def _ui_documents(root, runner, stream, input_func):
+def _print_numbered_documents(documents, stream):
+    if not documents:
+        print("Aucun document.", file=stream)
+        return
+
+    for index, document in enumerate(documents, start=1):
+        status = document.get("status") or "À définir"
+        print(
+            f"{index}. {document['official_code']} | {document['title']} | famille {document['family']} | {status}",
+            file=stream,
+        )
+
+
+def _select_document(documents, stream, input_func):
+    _print_numbered_documents(documents, stream)
+    if not documents:
+        return None
+
+    choice = _read_ui_input(input_func, stream, "Sélection : ")
+    try:
+        index = int(choice)
+    except ValueError:
+        print("Sélection invalide.", file=stream)
+        return None
+
+    if index < 1 or index > len(documents):
+        print("Sélection invalide.", file=stream)
+        return None
+
+    return documents[index - 1]
+
+
+def create_document_skeleton(document):
+    document["source_path"].parent.mkdir(parents=True, exist_ok=True)
+    document["source_path"].write_text(
+        "\n".join(
+            [
+                f"reference: \"{document['official_code']}\"",
+                f"title: \"{document['title']}\"",
+                f"revision: \"{document.get('revision') or 'Rev0.1'}\"",
+                "status: \"Draft\"",
+                "",
+                "chapters:",
+                "  - title: \"1. Contenu\"",
+                "    text: \"À compléter.\"",
+            ]
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+    return document["source_path"]
+
+
+def _ui_documents(root, runner, stream, input_func, paste_func=command_paste):
     while True:
         print("Menu Documents", file=stream)
         print("1. Afficher tous les documents", file=stream)
@@ -746,6 +815,7 @@ def _ui_documents(root, runner, stream, input_func):
         print("4. Ouvrir un document", file=stream)
         print("5. Mettre à jour un document", file=stream)
         print("6. Générer un document", file=stream)
+        print("7. Nouveau document", file=stream)
         print("0. Retour", file=stream)
         choice = _read_ui_input(input_func, stream)
 
@@ -777,12 +847,25 @@ def _ui_documents(root, runner, stream, input_func):
             continue
         if choice == "5":
             code = _read_ui_input(input_func, stream, "Document : ")
-            command_paste(code, root=root, runner=runner, stream=stream)
+            paste_func(code, root=root, runner=runner, stream=stream)
             _ui_wait(input_func, stream)
             continue
         if choice == "6":
-            code = _read_ui_input(input_func, stream, "Document : ")
-            command_generate(code, runner=runner, stream=stream)
+            existing_documents = _existing_documents_for_ui(root)
+            print("Documents existants", file=stream)
+            document = _select_document(existing_documents, stream, input_func)
+            if document:
+                command_generate(document["code"], runner=runner, stream=stream)
+            _ui_wait(input_func, stream)
+            continue
+        if choice == "7":
+            missing_documents = _missing_source_documents_for_ui(root)
+            print("Nouveaux documents disponibles", file=stream)
+            document = _select_document(missing_documents, stream, input_func)
+            if document:
+                create_document_skeleton(document)
+                print(f"Document préparé : {document['official_code']}", file=stream)
+                paste_func(document["code"], root=root, runner=runner, stream=stream)
             _ui_wait(input_func, stream)
             continue
 
@@ -798,11 +881,11 @@ def _ui_simple_menu(title, actions, stream, input_func):
     _read_ui_input(input_func, stream)
 
 
-def _ui_generate_deliverables(runner, stream, input_func):
+def _ui_generate_deliverables(root, runner, stream, input_func):
     print("Générer les livrables", file=stream)
-    code = _read_ui_input(input_func, stream, "Document : ")
-    if code:
-        command_generate(code, runner=runner, stream=stream)
+    document = _select_document(_existing_documents_for_ui(root), stream, input_func)
+    if document:
+        command_generate(document["code"], runner=runner, stream=stream)
     _ui_wait(input_func, stream)
 
 
@@ -813,7 +896,7 @@ def _ui_sync_project(runner, stream, input_func):
     _ui_wait(input_func, stream)
 
 
-def command_ui(root=ROOT, runner=run_command, stream=sys.stdout, input_func=input):
+def command_ui(root=ROOT, runner=run_command, stream=sys.stdout, input_func=input, paste_func=command_paste):
     while True:
         _print_ui_home(root, runner, stream)
         choice = _read_ui_input(input_func, stream)
@@ -826,7 +909,7 @@ def command_ui(root=ROOT, runner=run_command, stream=sys.stdout, input_func=inpu
             _ui_wait(input_func, stream)
             continue
         if choice == "2":
-            _ui_documents(root, runner, stream, input_func)
+            _ui_documents(root, runner, stream, input_func, paste_func=paste_func)
             continue
         if choice == "3":
             _ui_simple_menu(
@@ -877,7 +960,7 @@ def command_ui(root=ROOT, runner=run_command, stream=sys.stdout, input_func=inpu
             _ui_simple_menu("Données Techniques", ("Consulter les données techniques", "Voir les hypothèses associées"), stream, input_func)
             continue
         if choice == "9":
-            _ui_generate_deliverables(runner, stream, input_func)
+            _ui_generate_deliverables(root, runner, stream, input_func)
             continue
         if choice == "10":
             _ui_sync_project(runner, stream, input_func)

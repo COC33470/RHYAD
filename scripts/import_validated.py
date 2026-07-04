@@ -404,6 +404,8 @@ def _prepare_document_import(code, markdown_path):
 
     project_config = load_project_config(PROJECT_CONFIG)
     repository_title = repository_entry["document"].get("title") if repository_entry else None
+    if repository_title is None and registry_entry:
+        repository_title = registry_entry.get("title")
     markdown_text = markdown_path.read_text(encoding="utf-8")
     default_reference = registry_entry.get("official_code") if registry_entry else None
     default_revision = registry_entry.get("revision") if registry_entry else None

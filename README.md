@@ -244,6 +244,10 @@ Menus disponibles :
 
 Les opérations restent réalisées par les fonctions existantes de RHYAD, mais l'utilisateur les déclenche depuis des menus métier.
 
+Dans le menu `Documents`, l'option `Nouveau document` affiche les documents connus mais non encore initialisés. Après sélection, RHYAD prépare le document, ouvre le workflow de collage du contenu validé, puis réutilise la chaîne automatisée pour produire les livrables, lancer les tests et gérer la validation Git.
+
+L'option `Générer un document` n'affiche que les documents déjà initialisés.
+
 ## Production documentaire automatisée
 
 La chaîne automatisée permet de produire un document validé à partir d'un unique fichier Markdown.
