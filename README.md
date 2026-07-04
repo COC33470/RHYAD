@@ -290,7 +290,9 @@ Il affiche le projet, le client, l'état Git, les documents générés ou en att
 
 ## Suggestions de traçabilité
 
-Les liens de traçabilité ne doivent pas être inventés. Le mode suggestion analyse uniquement les références documentaires explicites trouvées dans :
+Les liens de traçabilité ne doivent pas être inventés. Aucune relation de traçabilité n’est inscrite dans `knowledge/traceability.yaml` sans preuve documentaire explicite et validation.
+
+Le mode suggestion analyse uniquement les références documentaires explicites trouvées dans :
 
 - les YAML existants de `config/documents/` ;
 - les contenus Markdown présents dans `inbox/validated/` ;
