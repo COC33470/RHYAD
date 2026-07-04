@@ -1,6 +1,7 @@
 import tempfile
 import unittest
 import zipfile
+import re
 from pathlib import Path
 
 from docx import Document
@@ -84,13 +85,69 @@ class DocumentBuilderTest(unittest.TestCase):
             self.assertIn("Document Control", document_xml)
             self.assertIn("Test table", document_xml)
             self.assertIn('TOC \\o "1-3" \\h \\z \\u', document_xml)
-            self.assertIn("Document", header_xml)
+            self.assertIn("Reference", header_xml)
             self.assertIn("TEST-F99", header_xml)
+            self.assertIn("Test document", header_xml)
             self.assertIn("Revision", header_xml)
             self.assertIn("Status", header_xml)
             self.assertIn("PAGE", footer_xml)
             self.assertIn("NUMPAGES", footer_xml)
             self.assertIn("INTERNAL", footer_xml)
+
+    def test_document_template_uses_default_header_after_cover_page(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            yaml_path = root / "F99.yaml"
+            yaml_path.write_text(
+                "\n".join(
+                    [
+                        "reference: TEST-F99",
+                        "title: Test document",
+                        "revision: Rev1",
+                        "status: Validated",
+                        "chapters:",
+                        "  - title: 1. Purpose",
+                        "    text: Test body.",
+                    ]
+                ),
+                encoding="utf-8",
+            )
+
+            output_path = root / "output" / "docx" / "TEST-F99.docx"
+            project_config = {
+                "document": {
+                    "confidentiality": "INTERNAL",
+                },
+            }
+
+            build_document(yaml_path, output_path, project_config=project_config, project_root=root)
+
+            with zipfile.ZipFile(output_path) as docx:
+                document_xml = docx.read("word/document.xml").decode("utf-8")
+                header_xml = docx.read("word/header1.xml").decode("utf-8")
+                footer_xml_parts = [
+                    docx.read(name).decode("utf-8")
+                    for name in docx.namelist()
+                    if name.startswith("word/footer")
+                ]
+
+            page_width = int(re.search(r'<w:pgSz[^>]*w:w="(\d+)"', document_xml).group(1))
+            left_margin = int(re.search(r'<w:pgMar[^>]*w:left="(\d+)"', document_xml).group(1))
+            right_margin = int(re.search(r'<w:pgMar[^>]*w:right="(\d+)"', document_xml).group(1))
+            body_width = page_width - left_margin - right_margin
+            header_width = int(re.search(r'<w:tblW[^>]*w:w="(\d+)"', header_xml).group(1))
+
+            self.assertIn("<w:titlePg/>", document_xml)
+            self.assertIn('<w:headerReference w:type="default"', document_xml)
+            self.assertNotIn('<w:headerReference w:type="first"', document_xml)
+            self.assertIn('<w:footerReference w:type="default"', document_xml)
+            self.assertIn('<w:footerReference w:type="first"', document_xml)
+            self.assertEqual(header_width, body_width)
+            self.assertIn('<w:bottom w:val="single" w:sz="4" w:space="0" w:color="29306B"/>', header_xml)
+            self.assertEqual(len(footer_xml_parts), 2)
+            self.assertTrue(all("PAGE" in footer_xml for footer_xml in footer_xml_parts))
+            self.assertTrue(all("NUMPAGES" in footer_xml for footer_xml in footer_xml_parts))
+            self.assertTrue(all("INTERNAL" in footer_xml for footer_xml in footer_xml_parts))
 
     def test_build_document_prefers_document_revision_and_status(self):
         with tempfile.TemporaryDirectory() as tmp:

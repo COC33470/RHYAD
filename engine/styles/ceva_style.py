@@ -8,6 +8,9 @@ from docx.enum.table import WD_ALIGN_VERTICAL, WD_TABLE_ALIGNMENT
 from engine.styles.colors import CEVA_BLUE, CEVA_AQUA, CEVA_SLATE
 
 
+TWIPS_PER_EMU = 635
+
+
 def hex_to_rgb(hex_color):
     return RGBColor(
         int(hex_color[0:2], 16),
@@ -33,6 +36,54 @@ def _set_cell_width(cell, width_twips):
         tc_pr.append(width)
     width.set(qn("w:w"), str(width_twips))
     width.set(qn("w:type"), "dxa")
+
+
+def _content_width(section):
+    return section.page_width - section.left_margin - section.right_margin
+
+
+def _width_twips(width):
+    return int(round(int(width) / TWIPS_PER_EMU))
+
+
+def _set_table_width(table, width):
+    tbl_pr = table._tbl.tblPr
+    tbl_width = tbl_pr.first_child_found_in("w:tblW")
+    if tbl_width is None:
+        tbl_width = OxmlElement("w:tblW")
+        tbl_pr.append(tbl_width)
+    tbl_width.set(qn("w:w"), str(_width_twips(width)))
+    tbl_width.set(qn("w:type"), "dxa")
+
+
+def _set_table_borders(table, bottom_color=None, bottom_size=4):
+    tbl_pr = table._tbl.tblPr
+    borders = tbl_pr.first_child_found_in("w:tblBorders")
+    if borders is None:
+        borders = OxmlElement("w:tblBorders")
+        tbl_pr.append(borders)
+
+    border_values = {
+        "top": ("nil", "0", "auto"),
+        "left": ("nil", "0", "auto"),
+        "right": ("nil", "0", "auto"),
+        "insideH": ("nil", "0", "auto"),
+        "insideV": ("nil", "0", "auto"),
+        "bottom": (
+            "single" if bottom_color else "nil",
+            str(bottom_size if bottom_color else 0),
+            bottom_color or "auto",
+        ),
+    }
+    for edge, (value, size, color) in border_values.items():
+        element = borders.find(qn(f"w:{edge}"))
+        if element is None:
+            element = OxmlElement(f"w:{edge}")
+            borders.append(element)
+        element.set(qn("w:val"), value)
+        element.set(qn("w:sz"), size)
+        element.set(qn("w:space"), "0")
+        element.set(qn("w:color"), color)
 
 
 def _format_run(run, size=9, bold=False, italic=False, color=CEVA_SLATE):
@@ -156,15 +207,25 @@ def setup_document_shell(document, metadata, logo_path=None):
 
 def add_document_header(document, metadata, logo_path=None):
     section = document.sections[0]
+    section.different_first_page_header_footer = True
     section.header_distance = Cm(0.7)
-    table = section.header.add_table(rows=1, cols=2, width=Cm(17.4))
-    table.style = "Table Grid"
+    width = _content_width(section)
+    table = section.header.add_table(rows=1, cols=3, width=width)
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
+    table.autofit = False
+    _set_table_width(table, width)
+    _set_table_borders(table, bottom_color=CEVA_BLUE, bottom_size=4)
 
-    left, right = table.rows[0].cells
-    _set_cell_width(left, 3600)
-    _set_cell_width(right, 6260)
+    left, center, right = table.rows[0].cells
+    width_twips = _width_twips(width)
+    left_width = int(width_twips * 0.22)
+    right_width = int(width_twips * 0.34)
+    center_width = width_twips - left_width - right_width
+    _set_cell_width(left, left_width)
+    _set_cell_width(center, center_width)
+    _set_cell_width(right, right_width)
     left.vertical_alignment = WD_ALIGN_VERTICAL.CENTER
+    center.vertical_alignment = WD_ALIGN_VERTICAL.CENTER
     right.vertical_alignment = WD_ALIGN_VERTICAL.CENTER
 
     logo_paragraph = left.paragraphs[0]
@@ -172,9 +233,12 @@ def add_document_header(document, metadata, logo_path=None):
     if not add_optional_logo_to_paragraph(logo_paragraph, logo_path, width=Cm(2.8)):
         _add_text(logo_paragraph, "CEVA", size=16, bold=True, color=CEVA_BLUE)
 
+    title_paragraph = center.paragraphs[0]
+    title_paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    _add_text(title_paragraph, metadata.get("title", ""), size=9, bold=True, color=CEVA_BLUE)
+
     info = [
-        ("Document", metadata.get("reference", "")),
-        ("Title", metadata.get("title", "")),
+        ("Reference", metadata.get("reference", "")),
         ("Revision", metadata.get("revision", "")),
         ("Status", metadata.get("status", "")),
     ]
@@ -188,13 +252,19 @@ def add_document_header(document, metadata, logo_path=None):
         _add_text(paragraph, value, size=8)
 
 
-def add_document_footer(document, metadata):
-    section = document.sections[0]
-    section.footer_distance = Cm(0.7)
-    table = section.footer.add_table(rows=1, cols=3, width=Cm(17.4))
+def _add_footer_content(footer, section, metadata):
+    width = _content_width(section)
+    table = footer.add_table(rows=1, cols=3, width=width)
     table.style = "Table Grid"
+    table.alignment = WD_TABLE_ALIGNMENT.CENTER
+    table.autofit = False
+    _set_table_width(table, width)
 
     left, center, right = table.rows[0].cells
+    width_twips = _width_twips(width)
+    _set_cell_width(left, int(width_twips * 0.33))
+    _set_cell_width(center, int(width_twips * 0.34))
+    _set_cell_width(right, width_twips - int(width_twips * 0.33) - int(width_twips * 0.34))
     for cell in (left, center, right):
         cell.vertical_alignment = WD_ALIGN_VERTICAL.CENTER
 
@@ -211,6 +281,13 @@ def add_document_footer(document, metadata):
     right_p = right.paragraphs[0]
     right_p.alignment = WD_ALIGN_PARAGRAPH.RIGHT
     _add_text(right_p, f"Generated: {metadata.get('generated_date', '')}", size=8)
+
+
+def add_document_footer(document, metadata):
+    section = document.sections[0]
+    section.footer_distance = Cm(0.7)
+    _add_footer_content(section.footer, section, metadata)
+    _add_footer_content(section.first_page_footer, section, metadata)
 
 
 def add_cover_page(document, metadata, logo_path=None):
