@@ -93,3 +93,11 @@ documents:
     status: "Validated"
     family: "100"
     source: "config/documents/functions/F04.yaml"
+
+  - code: "F05"
+    official_code: "CEVA-RHYAD-100-F05"
+    title: "Conditionnement et Expédition des Produits"
+    revision: "Rev1.0"
+    status: "Validated"
+    family: "100"
+    source: "config/documents/functions/F05.yaml"
