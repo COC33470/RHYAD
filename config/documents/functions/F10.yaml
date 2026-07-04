@@ -1,0 +1,313 @@
+reference: CEVA-RHYAD-100-F10
+title: Maintenance et Exploitation Technique
+revision: Rev1.0
+status: Validated
+chapters:
+- title: 1. Objet
+  blocks:
+  - type: text
+    text: La fonction F10 -- Maintenance et Exploitation Technique définit les exigences fonctionnelles relatives à la maintenance
+      et à l'exploitation technique des bâtiments, des laboratoires, des installations industrielles, des utilités et des
+      infrastructures du Campus CEVA RHYAD.
+  - type: text
+    text: Cette fonction vise à garantir la disponibilité, la fiabilité et la pérennité des installations tout au long de
+      leur cycle de vie.
+  - type: text
+    text: Le présent document traite exclusivement des exigences de conception permettant la maintenance des installations.
+      Il ne définit pas l'organisation future du service maintenance ni les procédures d'exploitation.
+  text: 'La fonction F10 -- Maintenance et Exploitation Technique définit les exigences fonctionnelles relatives à la maintenance
+    et à l''exploitation technique des bâtiments, des laboratoires, des installations industrielles, des utilités et des infrastructures
+    du Campus CEVA RHYAD.
+
+
+    Cette fonction vise à garantir la disponibilité, la fiabilité et la pérennité des installations tout au long de leur cycle
+    de vie.
+
+
+    Le présent document traite exclusivement des exigences de conception permettant la maintenance des installations. Il ne
+    définit pas l''organisation future du service maintenance ni les procédures d''exploitation.'
+- title: 2. Objectifs
+  blocks:
+  - type: list
+    items:
+    - maintenance préventive ;
+    - maintenance corrective ;
+    - maintenance prédictive lorsque pertinente ;
+    - remplacement des équipements ;
+    - accès sécurisé aux installations ;
+    - continuité des activités pendant la maintenance ;
+    - optimisation du coût global sur le cycle de vie.
+  bullets:
+  - maintenance préventive ;
+  - maintenance corrective ;
+  - maintenance prédictive lorsque pertinente ;
+  - remplacement des équipements ;
+  - accès sécurisé aux installations ;
+  - continuité des activités pendant la maintenance ;
+  - optimisation du coût global sur le cycle de vie.
+- title: 3. Périmètre
+- title: Bâtiments
+  blocks:
+  - type: list
+    items:
+    - bâtiments industriels ;
+    - laboratoires ;
+    - bâtiments administratifs ;
+    - locaux sociaux ;
+    - locaux techniques ;
+    - locaux logistiques.
+  bullets:
+  - bâtiments industriels ;
+  - laboratoires ;
+  - bâtiments administratifs ;
+  - locaux sociaux ;
+  - locaux techniques ;
+  - locaux logistiques.
+- title: Installations techniques
+  blocks:
+  - type: list
+    items:
+    - CVC / HVAC ;
+    - électricité ;
+    - plomberie ;
+    - protection incendie ;
+    - GTB/GTC ;
+    - automatismes ;
+    - réseaux IT / OT ;
+    - utilités industrielles ;
+    - équipements process.
+  bullets:
+  - CVC / HVAC ;
+  - électricité ;
+  - plomberie ;
+  - protection incendie ;
+  - GTB/GTC ;
+  - automatismes ;
+  - réseaux IT / OT ;
+  - utilités industrielles ;
+  - équipements process.
+- title: Infrastructures extérieures
+  blocks:
+  - type: list
+    items:
+    - réseaux enterrés ;
+    - voiries techniques ;
+    - locaux techniques extérieurs ;
+    - équipements extérieurs.
+  - type: text
+    text: 'Sont exclus :'
+  - type: list
+    items:
+    - procédures de maintenance ;
+    - gestion du personnel de maintenance ;
+    - contrats de maintenance ;
+    - exploitation future du site.
+  bullets:
+  - réseaux enterrés ;
+  - voiries techniques ;
+  - locaux techniques extérieurs ;
+  - équipements extérieurs.
+  - procédures de maintenance ;
+  - gestion du personnel de maintenance ;
+  - contrats de maintenance ;
+  - exploitation future du site.
+  text: 'Sont exclus :'
+- title: 4. Exigences fonctionnelles
+- title: F10-01 -- Accessibilité
+  blocks:
+  - type: text
+    text: Tous les équipements devront être accessibles pour l'inspection, les essais, la maintenance, le remplacement et
+      les contrôles réglementaires.
+  text: Tous les équipements devront être accessibles pour l'inspection, les essais, la maintenance, le remplacement et les
+    contrôles réglementaires.
+- title: F10-02 -- Maintenabilité
+  blocks:
+  - type: text
+    text: Les équipements devront limiter les temps d'intervention. Les espaces techniques devront permettre le démontage
+      et le remplacement.
+  text: Les équipements devront limiter les temps d'intervention. Les espaces techniques devront permettre le démontage et
+    le remplacement.
+- title: F10-03 -- Continuité d'exploitation
+  blocks:
+  - type: text
+    text: Les opérations de maintenance devront avoir un impact minimal. Les installations critiques devront pouvoir être
+      maintenues sans interruption majeure lorsque cela est justifié.
+  text: Les opérations de maintenance devront avoir un impact minimal. Les installations critiques devront pouvoir être maintenues
+    sans interruption majeure lorsque cela est justifié.
+- title: F10-04 -- Surveillance des équipements
+  blocks:
+  - type: text
+    text: 'Les équipements critiques devront permettre :'
+  - type: list
+    items:
+    - suivi d'état ;
+    - alarmes ;
+    - analyse des performances ;
+    - aide à la maintenance prédictive.
+  text: 'Les équipements critiques devront permettre :'
+  bullets:
+  - suivi d'état ;
+  - alarmes ;
+  - analyse des performances ;
+  - aide à la maintenance prédictive.
+- title: F10-05 -- Documentation technique
+  blocks:
+  - type: text
+    text: 'La documentation comprendra notamment :'
+  - type: list
+    items:
+    - DOE ;
+    - notices techniques ;
+    - plans ;
+    - nomenclatures ;
+    - schémas ;
+    - procédures de consignation.
+  text: 'La documentation comprendra notamment :'
+  bullets:
+  - DOE ;
+  - notices techniques ;
+  - plans ;
+  - nomenclatures ;
+  - schémas ;
+  - procédures de consignation.
+- title: F10-06 -- Sécurité des interventions
+  blocks:
+  - type: text
+    text: 'Les installations devront faciliter :'
+  - type: list
+    items:
+    - consignation ;
+    - interventions en sécurité ;
+    - accès réglementaires ;
+    - protection des intervenants.
+  text: 'Les installations devront faciliter :'
+  bullets:
+  - consignation ;
+  - interventions en sécurité ;
+  - accès réglementaires ;
+  - protection des intervenants.
+- title: F10-07 -- Locaux de maintenance
+  blocks:
+  - type: text
+    text: 'Prévoir :'
+  - type: list
+    items:
+    - ateliers ;
+    - magasins techniques ;
+    - stockage des pièces ;
+    - locaux équipes techniques ;
+    - zones de préparation.
+  text: 'Prévoir :'
+  bullets:
+  - ateliers ;
+  - magasins techniques ;
+  - stockage des pièces ;
+  - locaux équipes techniques ;
+  - zones de préparation.
+- title: F10-08 -- Maintenance des bâtiments administratifs
+  blocks:
+  - type: text
+    text: Les exigences s'appliquent aussi aux bureaux, salles de réunion, espaces de formation, locaux sociaux, restaurants,
+      cafétérias et accueil.
+  text: Les exigences s'appliquent aussi aux bureaux, salles de réunion, espaces de formation, locaux sociaux, restaurants,
+    cafétérias et accueil.
+- title: 5. Interfaces
+  blocks:
+  - type: list
+    items:
+    - F04
+    - F05
+    - F07
+    - F08
+    - F09
+    - F11
+    - F12
+    - F13
+    - F14
+  bullets:
+  - F04
+  - F05
+  - F07
+  - F08
+  - F09
+  - F11
+  - F12
+  - F13
+  - F14
+- title: 6. Contraintes
+  blocks:
+  - type: list
+    items:
+    - exigences GMP/BPF ;
+    - sécurité des interventions ;
+    - climat local ;
+    - disponibilité des pièces ;
+    - accès aux équipements ;
+    - exigences réglementaires ;
+    - coût global.
+  bullets:
+  - exigences GMP/BPF ;
+  - sécurité des interventions ;
+  - climat local ;
+  - disponibilité des pièces ;
+  - accès aux équipements ;
+  - exigences réglementaires ;
+  - coût global.
+- title: 7. Critères de performance
+  blocks:
+  - type: list
+    items:
+    - forte disponibilité ;
+    - réduction des interruptions ;
+    - maintenance simple et sécurisée ;
+    - optimisation du coût global ;
+    - évolutivité ;
+    - exploitation durable.
+  bullets:
+  - forte disponibilité ;
+  - réduction des interruptions ;
+  - maintenance simple et sécurisée ;
+  - optimisation du coût global ;
+  - évolutivité ;
+  - exploitation durable.
+- title: 8. Documents associés
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-001A-ACAP
+    - CEVA-RHYAD-200-DT-F10-01 et suivants
+    - CEVA-RHYAD-300-DB02 — Architecture
+    - CEVA-RHYAD-300-DB03 — CVC / HVAC
+    - CEVA-RHYAD-300-DB04 — Utilités
+    - CEVA-RHYAD-300-DB05 — Électricité
+    - CEVA-RHYAD-300-DB06 — Automatisme, IT / OT et Cybersécurité
+    - CEVA-RHYAD-500-REG03 — Registre des Risques
+    - CEVA-RHYAD-500-REG04 — Registre des Hypothèses
+    - CEVA-RHYAD-500-REG05 — Registre des Interfaces
+  bullets:
+  - CEVA-RHYAD-001A-ACAP
+  - CEVA-RHYAD-200-DT-F10-01 et suivants
+  - CEVA-RHYAD-300-DB02 — Architecture
+  - CEVA-RHYAD-300-DB03 — CVC / HVAC
+  - CEVA-RHYAD-300-DB04 — Utilités
+  - CEVA-RHYAD-300-DB05 — Électricité
+  - CEVA-RHYAD-300-DB06 — Automatisme, IT / OT et Cybersécurité
+  - CEVA-RHYAD-500-REG03 — Registre des Risques
+  - CEVA-RHYAD-500-REG04 — Registre des Hypothèses
+  - CEVA-RHYAD-500-REG05 — Registre des Interfaces
+- title: 9. Critères de validation
+  blocks:
+  - type: list
+    items:
+    - besoins approuvés ;
+    - exigences de maintenabilité définies ;
+    - accès aux équipements critiques validés ;
+    - données techniques collectées ;
+    - hypothèses enregistrées dans les DT associés.
+  bullets:
+  - besoins approuvés ;
+  - exigences de maintenabilité définies ;
+  - accès aux équipements critiques validés ;
+  - données techniques collectées ;
+  - hypothèses enregistrées dans les DT associés.
+- title: Fin du document
