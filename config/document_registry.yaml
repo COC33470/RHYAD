@@ -125,3 +125,11 @@ documents:
     status: "Validated"
     family: "100"
     source: "config/documents/functions/F08.yaml"
+
+  - code: "F09"
+    official_code: "CEVA-RHYAD-100-F09"
+    title: "Utilités Industrielles"
+    revision: "Rev1.0"
+    status: "Validated"
+    family: "100"
+    source: "config/documents/functions/F09.yaml"

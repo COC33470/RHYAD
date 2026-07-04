@@ -1,0 +1,291 @@
+reference: CEVA-RHYAD-100-F09
+title: Utilités Industrielles
+revision: Rev1.0
+status: Validated
+chapters:
+- title: 1. Objet
+  blocks:
+  - type: text
+    text: La fonction F09 -- Utilités Industrielles définit les exigences fonctionnelles relatives à l'ensemble des utilités
+      nécessaires au fonctionnement du Campus CEVA RHYAD.
+  - type: text
+    text: Elle couvre les réseaux de production, de distribution, de stockage et de supervision des utilités nécessaires aux
+      bâtiments, aux laboratoires et aux procédés industriels.
+  - type: text
+    text: Le présent document décrit les besoins fonctionnels sans préjuger des solutions techniques qui seront retenues lors
+      des phases de conception.
+  text: 'La fonction F09 -- Utilités Industrielles définit les exigences fonctionnelles relatives à l''ensemble des utilités
+    nécessaires au fonctionnement du Campus CEVA RHYAD.
+
+
+    Elle couvre les réseaux de production, de distribution, de stockage et de supervision des utilités nécessaires aux bâtiments,
+    aux laboratoires et aux procédés industriels.
+
+
+    Le présent document décrit les besoins fonctionnels sans préjuger des solutions techniques qui seront retenues lors des
+    phases de conception.'
+- title: 2. Objectifs
+  blocks:
+  - type: list
+    items:
+    - alimentation continue des procédés ;
+    - alimentation des bâtiments ;
+    - disponibilité des utilités critiques ;
+    - sécurité d'exploitation ;
+    - maintenabilité ;
+    - optimisation énergétique ;
+    - évolutivité du Campus.
+  bullets:
+  - alimentation continue des procédés ;
+  - alimentation des bâtiments ;
+  - disponibilité des utilités critiques ;
+  - sécurité d'exploitation ;
+  - maintenabilité ;
+  - optimisation énergétique ;
+  - évolutivité du Campus.
+- title: 3. Périmètre
+- title: Utilités process
+  blocks:
+  - type: list
+    items:
+    - Eau potable
+    - Eau industrielle
+    - Eau purifiée (PW)
+    - Eau pour préparation injectable (WFI), si requise
+    - Vapeur industrielle
+    - Vapeur propre, si requise
+    - Air comprimé industriel
+    - Air comprimé instrumentation
+    - Gaz industriels
+    - Gaz spéciaux
+  bullets:
+  - Eau potable
+  - Eau industrielle
+  - Eau purifiée (PW)
+  - Eau pour préparation injectable (WFI), si requise
+  - Vapeur industrielle
+  - Vapeur propre, si requise
+  - Air comprimé industriel
+  - Air comprimé instrumentation
+  - Gaz industriels
+  - Gaz spéciaux
+- title: Utilités bâtiment
+  blocks:
+  - type: list
+    items:
+    - Production de chaud
+    - Production de froid
+    - Réseaux hydrauliques
+    - Réseaux de distribution
+    - Traitement des eaux
+    - Stockages techniques
+  bullets:
+  - Production de chaud
+  - Production de froid
+  - Réseaux hydrauliques
+  - Réseaux de distribution
+  - Traitement des eaux
+  - Stockages techniques
+- title: Utilités énergétiques
+  blocks:
+  - type: list
+    items:
+    - Alimentation électrique
+    - Groupe(s) électrogène(s)
+    - Onduleurs (UPS)
+    - Batteries
+    - Production photovoltaïque (variante à étudier)
+    - Stockage d'énergie par batteries (variante à étudier)
+  bullets:
+  - Alimentation électrique
+  - Groupe(s) électrogène(s)
+  - Onduleurs (UPS)
+  - Batteries
+  - Production photovoltaïque (variante à étudier)
+  - Stockage d'énergie par batteries (variante à étudier)
+- title: Refroidissement
+  blocks:
+  - type: text
+    text: 'Comparer :'
+  - type: list
+    items:
+    - groupes frigorifiques classiques ;
+    - refroidissement par bassin d'eau ;
+    - géocooling / géothermie ;
+    - solutions hybrides.
+  - type: text
+    text: Le choix devra être justifié par une analyse multicritère.
+  text: 'Comparer :
+
+
+    Le choix devra être justifié par une analyse multicritère.'
+  bullets:
+  - groupes frigorifiques classiques ;
+  - refroidissement par bassin d'eau ;
+  - géocooling / géothermie ;
+  - solutions hybrides.
+- title: 4. Exigences fonctionnelles
+- title: F09-01 -- Disponibilité
+  blocks:
+  - type: text
+    text: Les utilités doivent assurer la continuité des activités.
+  text: Les utilités doivent assurer la continuité des activités.
+- title: F09-02 -- Redondance
+  blocks:
+  - type: text
+    text: Les infrastructures critiques devront disposer d'un niveau de redondance justifié.
+  text: Les infrastructures critiques devront disposer d'un niveau de redondance justifié.
+- title: F09-03 -- Performance énergétique
+  blocks:
+  - type: text
+    text: Les installations devront limiter les consommations d'énergie.
+  text: Les installations devront limiter les consommations d'énergie.
+- title: F09-04 -- Résilience
+  blocks:
+  - type: text
+    text: Maintien des fonctions critiques lors de défaillances limitées.
+  text: Maintien des fonctions critiques lors de défaillances limitées.
+- title: F09-05 -- Maintenabilité
+  blocks:
+  - type: text
+    text: Maintenance sans interruption majeure.
+  text: Maintenance sans interruption majeure.
+- title: F09-06 -- Supervision
+  blocks:
+  - type: list
+    items:
+    - suivi des performances ;
+    - alarmes ;
+    - historiques ;
+    - tendances ;
+    - aide à la maintenance.
+  bullets:
+  - suivi des performances ;
+  - alarmes ;
+  - historiques ;
+  - tendances ;
+  - aide à la maintenance.
+- title: F09-07 -- Flexibilité
+  blocks:
+  - type: text
+    text: Extensions futures sans remise en cause majeure.
+  text: Extensions futures sans remise en cause majeure.
+- title: 5. Installations critiques
+  blocks:
+  - type: list
+    items:
+    - traitement d'air des salles blanches ;
+    - alimentation électrique des installations critiques ;
+    - groupes électrogènes ;
+    - UPS ;
+    - systèmes de refroidissement critiques ;
+    - eau purifiée ;
+    - air comprimé instrumentation ;
+    - supervision centralisée des utilités.
+  bullets:
+  - traitement d'air des salles blanches ;
+  - alimentation électrique des installations critiques ;
+  - groupes électrogènes ;
+  - UPS ;
+  - systèmes de refroidissement critiques ;
+  - eau purifiée ;
+  - air comprimé instrumentation ;
+  - supervision centralisée des utilités.
+- title: 6. Interfaces
+  blocks:
+  - type: list
+    items:
+    - F03
+    - F04
+    - F05
+    - F07
+    - F08
+    - F10
+    - F11
+    - F13
+  bullets:
+  - F03
+  - F04
+  - F05
+  - F07
+  - F08
+  - F10
+  - F11
+  - F13
+- title: 7. Contraintes
+  blocks:
+  - type: list
+    items:
+    - exigences GMP/BPF ;
+    - contraintes climatiques de l'Arabie Saoudite ;
+    - disponibilité des ressources locales ;
+    - consommation d'eau ;
+    - consommation énergétique ;
+    - contraintes d'exploitation ;
+    - cybersécurité.
+  bullets:
+  - exigences GMP/BPF ;
+  - contraintes climatiques de l'Arabie Saoudite ;
+  - disponibilité des ressources locales ;
+  - consommation d'eau ;
+  - consommation énergétique ;
+  - contraintes d'exploitation ;
+  - cybersécurité.
+- title: 8. Critères de performance
+  blocks:
+  - type: list
+    items:
+    - disponibilité élevée des utilités critiques ;
+    - consommation énergétique optimisée ;
+    - maintenance facilitée ;
+    - forte résilience ;
+    - évolutivité ;
+    - optimisation du coût global.
+  bullets:
+  - disponibilité élevée des utilités critiques ;
+  - consommation énergétique optimisée ;
+  - maintenance facilitée ;
+  - forte résilience ;
+  - évolutivité ;
+  - optimisation du coût global.
+- title: 9. Documents associés
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-001A-ACAP
+    - CEVA-RHYAD-200-DT-F09-01 et suivants
+    - CEVA-RHYAD-300-DB03 — CVC / HVAC
+    - CEVA-RHYAD-300-DB04 — Utilités
+    - CEVA-RHYAD-300-DB05 — Électricité
+    - CEVA-RHYAD-300-DB06 — Automatisme, IT / OT et Cybersécurité
+    - CEVA-RHYAD-300-DB08 — Développement Durable
+    - CEVA-RHYAD-500-REG03 — Registre des Risques
+    - CEVA-RHYAD-500-REG04 — Registre des Hypothèses
+    - CEVA-RHYAD-500-REG05 — Registre des Interfaces
+  bullets:
+  - CEVA-RHYAD-001A-ACAP
+  - CEVA-RHYAD-200-DT-F09-01 et suivants
+  - CEVA-RHYAD-300-DB03 — CVC / HVAC
+  - CEVA-RHYAD-300-DB04 — Utilités
+  - CEVA-RHYAD-300-DB05 — Électricité
+  - CEVA-RHYAD-300-DB06 — Automatisme, IT / OT et Cybersécurité
+  - CEVA-RHYAD-300-DB08 — Développement Durable
+  - CEVA-RHYAD-500-REG03 — Registre des Risques
+  - CEVA-RHYAD-500-REG04 — Registre des Hypothèses
+  - CEVA-RHYAD-500-REG05 — Registre des Interfaces
+- title: 10. Critères de validation
+  blocks:
+  - type: list
+    items:
+    - besoins approuvés ;
+    - infrastructures critiques identifiées ;
+    - variantes énergétiques étudiées ;
+    - hypothèses enregistrées ;
+    - Design Drivers validés.
+  bullets:
+  - besoins approuvés ;
+  - infrastructures critiques identifiées ;
+  - variantes énergétiques étudiées ;
+  - hypothèses enregistrées ;
+  - Design Drivers validés.
+- title: Fin du document
