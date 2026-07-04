@@ -1,6 +1,7 @@
-reference: RHYAD-F01
+reference: CEVA-RHYAD-100-F01
 title: F01 — Réception et Expédition
 subtitle: Chapitre fonctionnel - Révision A1.0
+revision: "Rev0.1"
 
 chapters:
   - title: "1. Objet de la fonction"

@@ -1,0 +1,30 @@
+documents:
+  - code: "000"
+    official_code: "CEVA-RHYAD-000-MODELE"
+    revision: "Rev0.1"
+    family: "000"
+    source: "config/documents/000.yaml"
+
+  - code: "001"
+    official_code: "CEVA-RHYAD-001-CHARTE"
+    revision: "Rev0.1"
+    family: "000"
+    source: "config/documents/001.yaml"
+
+  - code: "001A"
+    official_code: "CEVA-RHYAD-001A-ACAP"
+    revision: "Rev0.1"
+    family: "000"
+    source: "config/documents/001A.yaml"
+
+  - code: "002"
+    official_code: "CEVA-RHYAD-002-PF"
+    revision: "Rev0.1"
+    family: "000"
+    source: "config/documents/002.yaml"
+
+  - code: "F01"
+    official_code: "CEVA-RHYAD-100-F01"
+    revision: "Rev0.1"
+    family: "100"
+    source: "config/documents/functions/F01.yaml"

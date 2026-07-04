@@ -1,8 +1,8 @@
-reference: "001"
+reference: "CEVA-RHYAD-001-CHARTE"
 title: "Charte Projet"
 subtitle: "CEVA – Campus de Production d’Autovaccins – Royaume d’Arabie Saoudite"
 status: "Working Draft"
-revision: "Rev.0.1"
+revision: "Rev0.1"
 
 chapters:
   - title: "1. Objet"

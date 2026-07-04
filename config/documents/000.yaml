@@ -1,7 +1,8 @@
-reference: "000"
+reference: "CEVA-RHYAD-000-MODELE"
 title: "Modèle documentaire RHYAD-CEVA"
 subtitle: "Document de gouvernance projet"
 status: "Validé"
+revision: "Rev0.1"
 
 chapters:
   - title: "1. Objet"

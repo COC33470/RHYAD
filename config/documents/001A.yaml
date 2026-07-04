@@ -1,8 +1,8 @@
-reference: "001A"
+reference: "CEVA-RHYAD-001A-ACAP"
 title: "Analyse de Contexte et d’Adaptation du Projet (ACAP)"
 subtitle: "CEVA – Campus de Production d’Autovaccins – Royaume d’Arabie Saoudite"
 status: "Working Draft"
-revision: "Rev.0.1"
+revision: "Rev0.1"
 
 chapters:
   - title: "1. Objet"

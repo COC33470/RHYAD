@@ -4,10 +4,14 @@ from pathlib import Path
 import yaml
 
 from scripts.main import (
+    find_registry_document,
     find_repository_document,
+    load_document_registry_config,
     load_project_config,
     load_repository_config,
+    resolve_document_yaml_path,
     resolve_family_output_dir,
+    resolve_output_stem,
     resolve_output_dir,
 )
 
@@ -103,6 +107,23 @@ class ProjectConfigTest(unittest.TestCase):
                 )
             )
 
+    def test_document_registry_resolves_official_codes_and_sources(self):
+        registry = load_document_registry_config(Path("config/document_registry.yaml"))
+        project_config = {"output": {"docx": "output/docx"}}
+
+        doc_002 = find_registry_document(registry, "002")
+        doc_f01 = find_registry_document(registry, "F01")
+
+        self.assertEqual(doc_002["official_code"], "CEVA-RHYAD-002-PF")
+        self.assertEqual(doc_f01["official_code"], "CEVA-RHYAD-100-F01")
+        self.assertTrue(str(resolve_document_yaml_path("F01", doc_f01)).endswith("config/documents/functions/F01.yaml"))
+        self.assertEqual(resolve_output_stem("RHYAD", "002", doc_002), "CEVA-RHYAD-002-PF_Rev0.1")
+        self.assertTrue(
+            str(resolve_family_output_dir(project_config, "docx", "fallback", doc_f01)).endswith(
+                "output/docx/100"
+            )
+        )
+
     def test_002_function_table_uses_repository_family_100_codes(self):
         repository = load_repository_config(Path("config/rhyad_repository.yaml"))
         with open("config/documents/002.yaml", "r", encoding="utf-8") as f:
@@ -155,7 +176,7 @@ class ProjectConfigTest(unittest.TestCase):
 
     def test_f01_interfaces_match_repository_family_100_except_f01(self):
         repository = load_repository_config(Path("config/rhyad_repository.yaml"))
-        with open("config/documents/F01.yaml", "r", encoding="utf-8") as f:
+        with open("config/documents/functions/F01.yaml", "r", encoding="utf-8") as f:
             document = yaml.safe_load(f)
 
         family_100 = next(

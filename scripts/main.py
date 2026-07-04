@@ -11,6 +11,7 @@ from engine.utils.pdf import convert_docx_to_pdf
 CONFIG_DIR = ROOT / "config" / "documents"
 PROJECT_CONFIG = ROOT / "config" / "project.yaml"
 REPOSITORY_CONFIG = ROOT / "config" / "rhyad_repository.yaml"
+DOCUMENT_REGISTRY_CONFIG = ROOT / "config" / "document_registry.yaml"
 
 
 def _require_mapping(data, label):
@@ -77,6 +78,38 @@ def load_repository_config(path: Path):
     return data
 
 
+def load_document_registry_config(path: Path):
+    if not path.exists():
+        return {}
+
+    with open(path, "r", encoding="utf-8") as f:
+        data = yaml.safe_load(f)
+
+    _require_mapping(data, str(path))
+    documents = data.get("documents")
+    if not isinstance(documents, list):
+        raise ValueError(f"{path}.documents must be a list.")
+
+    for index, document in enumerate(documents, start=1):
+        label = f"{path}.documents[{index}]"
+        _require_mapping(document, label)
+        _require_string(document, "code", label)
+        _require_string(document, "official_code", label)
+        _require_string(document, "revision", label)
+        _require_string(document, "family", label)
+        _require_string(document, "source", label)
+
+    return data
+
+
+def find_registry_document(registry_config, code):
+    code = code.upper()
+    for document in (registry_config or {}).get("documents", []):
+        if str(document.get("code", "")).upper() == code:
+            return document
+    return None
+
+
 def find_repository_document(repository_config, code):
     repository = (repository_config or {}).get("repository") or {}
     for family in repository.get("families", []):
@@ -92,6 +125,22 @@ def find_repository_document(repository_config, code):
     return None
 
 
+def resolve_document_yaml_path(code, registry_entry=None):
+    if registry_entry:
+        source = Path(registry_entry["source"])
+        return source if source.is_absolute() else ROOT / source
+
+    direct_path = CONFIG_DIR / f"{code}.yaml"
+    if direct_path.exists():
+        return direct_path
+
+    function_path = CONFIG_DIR / "functions" / f"{code}.yaml"
+    if function_path.exists():
+        return function_path
+
+    return direct_path
+
+
 def resolve_output_dir(project_config, key, fallback):
     value = (project_config.get("output") or {}).get(key, fallback)
     path = Path(value)
@@ -101,8 +150,16 @@ def resolve_output_dir(project_config, key, fallback):
 def resolve_family_output_dir(project_config, key, fallback, repository_entry):
     output_dir = resolve_output_dir(project_config, key, fallback)
     if repository_entry:
-        output_dir = output_dir / repository_entry["family_code"]
+        family_code = repository_entry.get("family_code") or repository_entry.get("family")
+        if family_code:
+            output_dir = output_dir / family_code
     return output_dir
+
+
+def resolve_output_stem(project_code, code, registry_entry=None):
+    if registry_entry:
+        return f"{registry_entry['official_code']}_{registry_entry['revision']}"
+    return f"{project_code}-{code}"
 
 
 def main():
@@ -110,26 +167,30 @@ def main():
         print("Usage: python3 scripts/main.py 002")
         return 1
 
-    code = sys.argv[1].upper()
-    yaml_path = CONFIG_DIR / f"{code}.yaml"
-
-    if not yaml_path.exists():
-        print(f"Document configuration not found: {yaml_path}")
-        return 1
-
     try:
         project_config = load_project_config(PROJECT_CONFIG)
         repository_config = load_repository_config(REPOSITORY_CONFIG)
+        registry_config = load_document_registry_config(DOCUMENT_REGISTRY_CONFIG)
     except ValueError as exc:
         print("Configuration invalid.")
         print(exc)
         return 1
 
+    code = sys.argv[1].upper()
+    registry_entry = find_registry_document(registry_config, code)
+    yaml_path = resolve_document_yaml_path(code, registry_entry)
+
+    if not yaml_path.exists():
+        print(f"Document configuration not found: {yaml_path}")
+        return 1
+
     repository_entry = find_repository_document(repository_config, code)
     project_code = (project_config.get("project") or {}).get("code", "RHYAD")
-    output_docx = resolve_family_output_dir(project_config, "docx", "output/docx", repository_entry)
-    output_pdf = resolve_family_output_dir(project_config, "pdf", "output/pdf", repository_entry)
-    docx_path = output_docx / f"{project_code}-{code}.docx"
+    routing_entry = registry_entry or repository_entry
+    output_docx = resolve_family_output_dir(project_config, "docx", "output/docx", routing_entry)
+    output_pdf = resolve_family_output_dir(project_config, "pdf", "output/pdf", routing_entry)
+    output_stem = resolve_output_stem(project_code, code, registry_entry)
+    docx_path = output_docx / f"{output_stem}.docx"
 
     try:
         build_document(yaml_path, docx_path, project_config=project_config, project_root=ROOT)

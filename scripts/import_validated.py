@@ -11,12 +11,17 @@ sys.path.insert(0, str(ROOT))
 
 from engine.core.document_builder import validate_document_config
 from scripts.main import (
+    DOCUMENT_REGISTRY_CONFIG,
     PROJECT_CONFIG,
     REPOSITORY_CONFIG,
     find_repository_document,
+    find_registry_document,
+    load_document_registry_config,
     load_project_config,
     load_repository_config,
     resolve_family_output_dir,
+    resolve_document_yaml_path,
+    resolve_output_stem,
 )
 
 INBOX_DIR = ROOT / "inbox" / "validated"
@@ -218,12 +223,12 @@ def parse_markdown_body(lines):
     return chapters
 
 
-def markdown_to_document(markdown_text, code, repository_title=None):
+def markdown_to_document(markdown_text, code, repository_title=None, default_reference=None):
     metadata, body_lines = extract_metadata(markdown_text)
     code = code.upper()
 
     if not metadata.get("reference"):
-        metadata["reference"] = code
+        metadata["reference"] = default_reference or code
 
     if not metadata.get("title"):
         for index, line in enumerate(body_lines):
@@ -278,13 +283,14 @@ def run_checked(command):
     return result.stdout.strip()
 
 
-def expected_outputs(code, project_config, repository_entry):
+def expected_outputs(code, project_config, routing_entry, registry_entry=None):
     project_code = (project_config.get("project") or {}).get("code", "RHYAD")
-    output_docx = resolve_family_output_dir(project_config, "docx", "output/docx", repository_entry)
-    output_pdf = resolve_family_output_dir(project_config, "pdf", "output/pdf", repository_entry)
+    output_docx = resolve_family_output_dir(project_config, "docx", "output/docx", routing_entry)
+    output_pdf = resolve_family_output_dir(project_config, "pdf", "output/pdf", routing_entry)
+    output_stem = resolve_output_stem(project_code, code, registry_entry)
     return (
-        output_docx / f"{project_code}-{code}.docx",
-        output_pdf / f"{project_code}-{code}.pdf",
+        output_docx / f"{output_stem}.docx",
+        output_pdf / f"{output_stem}.pdf",
     )
 
 
@@ -295,24 +301,34 @@ def import_validated_content(code):
         raise ImportErrorWithContext(f"Validated Markdown not found: {markdown_path}")
 
     repository_config = load_repository_config(REPOSITORY_CONFIG)
+    registry_config = load_document_registry_config(DOCUMENT_REGISTRY_CONFIG)
     repository_entry = find_repository_document(repository_config, code)
+    registry_entry = find_registry_document(registry_config, code)
     if not repository_entry:
         raise ImportErrorWithContext(f"Document code is not declared in config/rhyad_repository.yaml: {code}")
 
     project_config = load_project_config(PROJECT_CONFIG)
     repository_title = repository_entry["document"].get("title")
     markdown_text = markdown_path.read_text(encoding="utf-8")
-    document = markdown_to_document(markdown_text, code, repository_title=repository_title)
+    default_reference = registry_entry.get("official_code") if registry_entry else None
+    document = markdown_to_document(
+        markdown_text,
+        code,
+        repository_title=repository_title,
+        default_reference=default_reference,
+    )
     yaml_text = dump_document_yaml(document)
 
-    yaml_path = CONFIG_DIR / f"{code}.yaml"
+    yaml_path = resolve_document_yaml_path(code, registry_entry)
+    yaml_path.parent.mkdir(parents=True, exist_ok=True)
     yaml_path.write_text(yaml_text, encoding="utf-8")
     validate_document_config(document, yaml_path)
 
     generation_output = run_checked(["python3", "scripts/main.py", code])
     test_output = run_checked(["python3", "-m", "unittest", "discover"])
 
-    docx_path, pdf_path = expected_outputs(code, project_config, repository_entry)
+    routing_entry = registry_entry or repository_entry
+    docx_path, pdf_path = expected_outputs(code, project_config, routing_entry, registry_entry)
     if not docx_path.exists():
         raise ImportErrorWithContext(f"DOCX was not created: {docx_path}")
     if not pdf_path.exists():
