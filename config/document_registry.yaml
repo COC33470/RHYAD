@@ -69,3 +69,11 @@ documents:
     status: "Validated"
     family: "100"
     source: "config/documents/functions/F01.yaml"
+
+  - code: "F02"
+    official_code: "CEVA-RHYAD-100-F02"
+    title: "Stockage des Matières Premières et Consommables"
+    revision: "Rev1.0"
+    status: "Validated"
+    family: "100"
+    source: "config/documents/functions/F02.yaml"
