@@ -103,7 +103,7 @@ class ProjectConfigTest(unittest.TestCase):
                 )
             )
 
-    def test_002_function_table_matches_repository_family_100(self):
+    def test_002_function_table_uses_repository_family_100_codes(self):
         repository = load_repository_config(Path("config/rhyad_repository.yaml"))
         with open("config/documents/002.yaml", "r", encoding="utf-8") as f:
             document = yaml.safe_load(f)
@@ -113,13 +113,45 @@ class ProjectConfigTest(unittest.TestCase):
             for family in repository["repository"]["families"]
             if str(family["code"]) == "100"
         )
-        expected_rows = [
-            [item["code"], item["title"]]
+        expected_codes = [
+            item["code"]
             for item in family_100["documents"]
         ]
-        actual_rows = document["chapters"][8]["tables"][0]["rows"]
+        functions_chapter = next(
+            chapter
+            for chapter in document["chapters"]
+            if chapter["title"] == "PARTIE 2 — FONCTIONS"
+        )
+        actual_rows = functions_chapter["tables"][0]["rows"]
+        actual_codes = [row[0] for row in actual_rows]
 
-        self.assertEqual(actual_rows, expected_rows)
+        self.assertEqual(actual_codes, expected_codes)
+        self.assertIn(["F13", "SI, Automatismes et Cybersécurité"], actual_rows)
+
+    def test_002_placeholders_cover_repository_family_100_codes(self):
+        repository = load_repository_config(Path("config/rhyad_repository.yaml"))
+        with open("config/documents/002.yaml", "r", encoding="utf-8") as f:
+            document = yaml.safe_load(f)
+
+        family_100 = next(
+            family
+            for family in repository["repository"]["families"]
+            if str(family["code"]) == "100"
+        )
+        expected_codes = [
+            item["code"]
+            for item in family_100["documents"]
+        ]
+        placeholder_chapter = next(
+            chapter
+            for chapter in document["chapters"]
+            if chapter["title"] == "10. Intégration des fonctions"
+        )
+        actual_rows = placeholder_chapter["tables"][0]["rows"]
+        actual_codes = [row[0] for row in actual_rows]
+
+        self.assertEqual(actual_codes, expected_codes)
+        self.assertTrue(all(row[2] == "Placeholder" for row in actual_rows))
 
     def test_f01_interfaces_match_repository_family_100_except_f01(self):
         repository = load_repository_config(Path("config/rhyad_repository.yaml"))

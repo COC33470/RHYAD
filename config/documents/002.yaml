@@ -1,34 +1,85 @@
-reference: RHYAD-002
-title: Programme Fonctionnel
-subtitle: Structure documentaire - Révision A1.0
+reference: "002"
+title: "Programme Fonctionnel"
+subtitle: "CEVA – Campus de Production d’Autovaccins – Royaume d’Arabie Saoudite"
+revision: "Rev.0.1"
+status: "Working Draft"
 
 chapters:
-  - title: "1. Objet du document"
-    text: "À compléter après validation du contenu."
+  - title: "PARTIE 1 — GÉNÉRALITÉS"
+    text: "Programme Fonctionnel du Campus de production d’autovaccins vétérinaires."
 
-  - title: "2. Contexte projet"
-    text: "À compléter après validation du contenu."
+  - title: "1. Objet"
+    text: >
+      Le présent Programme Fonctionnel définit les besoins fonctionnels du Campus de production
+      d’autovaccins vétérinaires.
 
-  - title: "3. Objectifs du programme fonctionnel"
-    text: "À compléter après validation du contenu."
+      Il constitue le document de référence permettant de traduire les besoins de CEVA en
+      exigences de conception destinées aux équipes de maîtrise d’œuvre et aux bureaux d’études.
 
-  - title: "4. Périmètre fonctionnel"
-    text: "À compléter après validation du contenu."
+  - title: "2. Objectifs du Programme Fonctionnel"
+    bullets:
+      - "définir les besoins fonctionnels du futur Campus ;"
+      - "formaliser les exigences de CEVA ;"
+      - "identifier les interfaces entre les fonctions ;"
+      - "définir les critères de performance attendus ;"
+      - "préparer les Design Basis ;"
+      - "garantir l’évolutivité du projet."
 
-  - title: "5. Hypothèses structurantes"
-    text: "À compléter après validation du contenu."
+  - title: "3. Périmètre"
+    text: >
+      Le Programme Fonctionnel couvre l’ensemble des fonctions nécessaires à la conception, à
+      la réalisation et à l’exploitation du Campus.
 
-  - title: "6. Contraintes réglementaires et qualité"
-    text: "À compléter après validation du contenu."
+      Les fonctions sont organisées en quinze chapitres fonctionnels (F01 à F15).
 
-  - title: "7. Principes de flux"
-    text: "À compléter après validation du contenu."
+  - title: "4. Documents de référence"
+    tables:
+      - title: "Documents de référence"
+        headers:
+          - "Référence"
+          - "Document"
+        rows:
+          - ["RHYAD-001", "Charte Projet"]
+          - ["RHYAD-001A", "Analyse de Contexte et d’Adaptation du Projet (ACAP)"]
+          - ["RHYAD-003", "Glossaire"]
+          - ["RHYAD-004", "Registre des Risques"]
+          - ["RHYAD-005", "Registre des Décisions"]
+          - ["RHYAD-006", "Plan Directeur Documentaire"]
 
-  - title: "8. Organisation fonctionnelle générale"
-    text: "À compléter après validation du contenu."
+  - title: "5. Glossaire"
+    text: >
+      Les définitions et acronymes utilisés dans le présent document sont regroupés dans le
+      RHYAD-003 – Glossaire.
 
-  - title: "9. Liste des fonctions F01 à F15"
-    text: "Liste issue de l'arborescence documentaire officielle validée."
+  - title: "6. Hypothèses générales"
+    text: >
+      Les hypothèses de conception sont suivies dans le DT-000 – Registre des Hypothèses de
+      Conception.
+
+      Le présent document ne reprend que les hypothèses ayant une incidence directe sur les
+      besoins fonctionnels.
+
+  - title: "7. Principes de conception"
+    bullets:
+      - "permettre une montée en capacité de 100–300 L vers 1000 L ;"
+      - "être conçu de manière évolutive ;"
+      - "assurer la séparation des flux ;"
+      - "répondre aux exigences GMP/BPF ;"
+      - "faciliter la maintenance et l’exploitation ;"
+      - "intégrer les contraintes du contexte local identifiées dans l’ACAP."
+
+  - title: "8. Évolutivité du Campus"
+    bullets:
+      - "augmentation des capacités de production ;"
+      - "ajout de nouvelles lignes de production ;"
+      - "intégration de nouvelles technologies ;"
+      - "évolutions réglementaires ;"
+      - "limitation des impacts sur l’exploitation existante."
+
+  - title: "PARTIE 2 — FONCTIONS"
+    text: >
+      Les fonctions F01 à F15 sont listées ci-dessous. Les contenus détaillés sont portés par
+      les documents indépendants de chaque fonction.
     tables:
       - title: "Fonctions du Programme Fonctionnel"
         headers:
@@ -47,18 +98,63 @@ chapters:
           - ["F10", "Maintenance et Exploitation Technique"]
           - ["F11", "Gestion des Déchets et Effluents"]
           - ["F12", "Sûreté, Protection des Actifs et Contrôle des Accès"]
-          - ["F13", "Systèmes d’Information, Automatismes et Cybersécurité"]
+          - ["F13", "SI, Automatismes et Cybersécurité"]
           - ["F14", "Administration, Formation et Services Généraux"]
           - ["F15", "Gouvernance du Campus et Fonctions Transverses"]
 
-  - title: "10. Interfaces entre fonctions"
-    text: "À compléter après validation du contenu."
+  - title: "9. Structure des documents fonctionnels"
+    text: >
+      Les chapitres F01 à F15 constituent le cœur du Programme Fonctionnel.
 
-  - title: "11. Synthèse des besoins par fonction"
-    text: "À compléter après validation du contenu."
+      Chaque fonction est développée dans un document indépendant selon la structure RHYAD
+      validée :
+    bullets:
+      - "1. Objectif"
+      - "2. Synthèse"
+      - "3. Mission"
+      - "4. Exigences fonctionnelles"
+      - "5. Interfaces"
+      - "6. Contraintes de conception"
+      - "7. Critères de performance"
+      - "8. Documents de référence"
+      - "9. Atelier CEVA"
+      - "10. Impacts documentaires"
+      - "11. Contexte local"
+      - "12. Recommandations RHYAD"
 
-  - title: "12. Points ouverts"
-    text: "À compléter après validation du contenu."
+  - title: "10. Intégration des fonctions"
+    text: >
+      Ne pas intégrer le contenu détaillé des fonctions dans RHYAD-002.
 
-  - title: "13. Annexes"
-    text: "À compléter après validation du contenu."
+      Prévoir uniquement un emplacement (placeholder) pour chaque fonction afin de permettre
+      leur intégration automatique lors de la génération d'une version consolidée du Programme
+      Fonctionnel.
+    tables:
+      - title: "Emplacements réservés pour intégration consolidée"
+        headers:
+          - "Code"
+          - "Document source"
+          - "Statut"
+        rows:
+          - ["F01", "RHYAD-F01", "Placeholder"]
+          - ["F02", "RHYAD-F02", "Placeholder"]
+          - ["F03", "RHYAD-F03", "Placeholder"]
+          - ["F04", "RHYAD-F04", "Placeholder"]
+          - ["F05", "RHYAD-F05", "Placeholder"]
+          - ["F06", "RHYAD-F06", "Placeholder"]
+          - ["F07", "RHYAD-F07", "Placeholder"]
+          - ["F08", "RHYAD-F08", "Placeholder"]
+          - ["F09", "RHYAD-F09", "Placeholder"]
+          - ["F10", "RHYAD-F10", "Placeholder"]
+          - ["F11", "RHYAD-F11", "Placeholder"]
+          - ["F12", "RHYAD-F12", "Placeholder"]
+          - ["F13", "RHYAD-F13", "Placeholder"]
+          - ["F14", "RHYAD-F14", "Placeholder"]
+          - ["F15", "RHYAD-F15", "Placeholder"]
+
+  - title: "PARTIE 3 — ANNEXES"
+    bullets:
+      - "Liste des figures"
+      - "Liste des tableaux"
+      - "Liste des documents associés"
+      - "Historique des évolutions"
