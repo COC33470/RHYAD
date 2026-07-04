@@ -286,6 +286,33 @@ def add_document_control_table(document, metadata):
     document.add_paragraph("")
 
 
+def add_data_table(document, table_data):
+    title = table_data.get("title")
+    headers = table_data["headers"]
+    rows = table_data["rows"]
+
+    if title:
+        document.add_heading(title, level=2)
+
+    table = document.add_table(rows=1, cols=len(headers))
+    table.style = "Table Grid"
+
+    for index, header in enumerate(headers):
+        cell = table.rows[0].cells[index]
+        cell.vertical_alignment = WD_ALIGN_VERTICAL.CENTER
+        _set_cell_shading(cell, CEVA_BLUE)
+        _add_text(cell.paragraphs[0], header, size=8, bold=True, color="FFFFFF")
+
+    for data_row in rows:
+        row = table.add_row().cells
+        for index, value in enumerate(data_row):
+            row[index].vertical_alignment = WD_ALIGN_VERTICAL.CENTER
+            display_value = "-" if value is None or value == "" else value
+            _add_text(row[index].paragraphs[0], display_value, size=8)
+
+    document.add_paragraph("")
+
+
 def add_table_of_contents(document):
     document.add_heading("Table of Contents", level=1)
     paragraph = document.add_paragraph()

@@ -4,23 +4,285 @@ subtitle: Procédure projet - Révision A1.0
 
 chapters:
   - title: "1. Objet"
-    text: "Définir la méthode unique de création, attribution, suivi, mise à jour et clôture des actions du projet RHYAD."
+    text: >
+      La présente procédure définit la méthode commune de création, qualification, attribution,
+      suivi, relance, arbitrage et clôture des actions du projet RHYAD. Elle vise à garantir
+      que toute action issue des études, revues, réunions, ateliers, inspections, interfaces,
+      risques ou décisions est tracée dans un registre unique, affectée à un responsable
+      clairement identifié et clôturée sur la base d'une preuve documentaire vérifiable.
+    bullets:
+      - "Assurer une traçabilité complète entre le fait générateur, l'action, la réponse et la preuve de clôture."
+      - "Réduire les dérives de délai par une priorisation et une relance structurées."
+      - "Donner à l'AMO, à la MOA et à la MOE une vision partagée des points ouverts et des blocages."
+      - "Standardiser les pratiques de suivi applicables aux études, travaux, achats, qualité, HSE, interfaces et commissioning."
 
   - title: "2. Domaine d'application"
-    text: "La présente procédure s'applique à la MOA, AMO, MOE, architectes, ingénieries, entreprises, fournisseurs et contrôleurs."
+    text: >
+      Cette procédure s'applique à toutes les parties prenantes intervenant dans le cadre du
+      projet RHYAD, y compris la MOA, l'AMO, la MOE, les architectes, ingénieries spécialisées,
+      entreprises, fournisseurs, contrôleurs, consultants qualité, équipes HSE, équipes
+      exploitation et représentants du client. Elle couvre les actions ouvertes pendant les
+      phases de cadrage, conception, consultation, exécution, essais, réception, transfert et
+      clôture documentaire.
+    bullets:
+      - "Actions issues des réunions de pilotage, réunions techniques, ateliers d'interface et revues de conception."
+      - "Actions liées aux observations qualité, HSE, planning, coûts, contrats et risques."
+      - "Actions nécessaires au traitement des RFI, décisions, déviations, non-conformités et réserves."
+      - "Actions relatives aux livrables documentaires, validations, commentaires et retours d'approbation."
 
-  - title: "3. Documents de référence"
+  - title: "3. Références"
+    text: >
+      Les documents ci-dessous constituent les références opérationnelles du processus de
+      gestion des actions. En cas d'écart entre les registres, le registre des actions fait foi
+      pour le pilotage quotidien, tandis que les documents contractuels et décisions validées
+      priment pour les arbitrages de fond.
     bullets:
       - "DT-000 - Note de cadrage documentaire"
       - "REG-ACT - Registre des actions"
       - "REG-DEC - Registre des décisions"
+      - "REG-RFI - Registre des RFI"
+      - "REG-RSK - Registre des risques"
+      - "REG-INT - Registre des interfaces"
+      - "REG-NCR - Registre des non-conformités"
       - "F02 - Gestion des décisions"
-      - "F03 - RFI"
-      - "F04 - Interfaces"
-      - "F05 - Risques"
+      - "F03 - Gestion des RFI"
+      - "F04 - Gestion des interfaces"
+      - "F05 - Gestion des risques"
 
-  - title: "4. Principes généraux"
-    text: "Toute action doit comporter un identifiant unique, un responsable unique, une échéance, une priorité, un statut et une preuve documentaire de clôture."
+  - title: "4. Définitions"
+    text: >
+      Les définitions suivantes sont utilisées pour homogénéiser les échanges entre équipes
+      projet. Une action n'est pas une simple note d'information : elle implique une tâche
+      mesurable, un responsable unique, une échéance et un critère de clôture.
+    bullets:
+      - "Action : tâche formalisée nécessitant une réponse, une production, une vérification ou une décision."
+      - "Fait générateur : événement ou constat à l'origine de l'action, par exemple réunion, RFI, risque, observation site ou commentaire documentaire."
+      - "Responsable d'action : personne ou entité chargée de produire la réponse et de fournir la preuve de clôture."
+      - "Pilote : membre AMO/MOE chargé de qualifier, suivre, relancer et consolider l'action dans le registre."
+      - "Preuve de clôture : document, compte rendu, visa, photographie, référence de livrable, décision ou enregistrement permettant de démontrer que l'action est soldée."
+      - "Blocage : situation empêchant l'avancement de l'action sans arbitrage, information externe ou décision de niveau supérieur."
 
-  - title: "5. Cycle de vie"
-    text: "Identification → Création → Validation → Affectation → En cours → Suivi → Terminée → Vérification → Clôture."
+  - title: "5. Principes généraux"
+    text: >
+      Toute action doit être enregistrée dès qu'elle nécessite un suivi au-delà de l'échange
+      immédiat. Les actions doivent être formulées de manière opérationnelle, vérifiable et
+      non ambiguë. Une action ne doit pas regrouper plusieurs responsabilités incompatibles :
+      lorsqu'un sujet implique plusieurs contributeurs, le pilote crée soit des sous-actions,
+      soit une action principale assortie de contributions identifiées.
+    bullets:
+      - "Un identifiant unique est attribué à chaque action."
+      - "Une action possède un seul responsable de clôture, même si plusieurs contributeurs interviennent."
+      - "L'échéance est fixée selon l'impact projet et non selon la disponibilité informelle des équipes."
+      - "La priorité est réévaluée dès qu'un impact planning, coût, qualité, HSE ou conformité apparaît."
+      - "Aucune action ne peut être clôturée sans preuve ou justification enregistrée."
+
+  - title: "6. Typologie des actions"
+    text: >
+      La typologie permet de filtrer les actions, d'orienter les revues et d'identifier les
+      tendances récurrentes. Le type d'action doit être renseigné à la création et peut être
+      ajusté par le pilote si le sujet évolue.
+    bullets:
+      - "Technique : études, calculs, plans, notes, spécifications, méthodes ou clarifications de conception."
+      - "Interface : coordination entre lots, disciplines, bâtiments, utilités, équipements ou parties externes."
+      - "Planning : jalons, séquences, retards, contraintes d'accès, approvisionnements ou dépendances critiques."
+      - "Qualité : commentaires, non-conformités, inspections, plans de contrôle et preuves de conformité."
+      - "HSE : sécurité, environnement, accès, permis, coactivité et mesures de prévention."
+      - "Contractuel : obligations, notifications, variations, réserves, responsabilités et arbitrages commerciaux."
+      - "Documentaire : livrables, visas, retours de commentaires, versions et complétude des dossiers."
+
+  - title: "7. Cycle de vie"
+    text: >
+      Le cycle de vie d'une action suit une séquence maîtrisée depuis l'identification jusqu'à
+      la clôture vérifiée. Le statut doit refléter l'état réel du traitement et non l'intention
+      du responsable.
+    tables:
+      - title: "Tableau des statuts"
+        headers:
+          - "Statut"
+          - "Signification"
+          - "Condition d'entrée"
+          - "Condition de sortie"
+        rows:
+          - ["Draft", "Action identifiée mais pas encore qualifiée.", "Constat initial ou proposition d'action.", "Validation par le pilote et affectation."]
+          - ["Open", "Action validée et affectée.", "Responsable, priorité et échéance définis.", "Démarrage du traitement ou annulation justifiée."]
+          - ["In Progress", "Traitement en cours par le responsable.", "Travail engagé ou réponse en préparation.", "Soumission d'une réponse ou identification d'un blocage."]
+          - ["Blocked", "Action empêchée par une dépendance ou un arbitrage.", "Obstacle documenté et escaladé.", "Blocage levé ou décision prise."]
+          - ["Answered", "Réponse fournie mais non encore vérifiée.", "Preuve ou livrable transmis.", "Acceptation, demande de complément ou rejet."]
+          - ["Closed", "Action soldée avec preuve acceptée.", "Vérification AMO/MOE réalisée.", "Archivage et traçabilité finalisés."]
+          - ["Cancelled", "Action annulée car sans objet ou remplacée.", "Justification approuvée par le pilote.", "Référence vers l'action ou décision de remplacement."]
+    bullets:
+      - "Le passage en Closed relève du pilote ou de l'autorité de vérification désignée, pas uniquement du responsable d'action."
+      - "Le statut Blocked doit toujours indiquer la cause du blocage et l'instance d'escalade attendue."
+      - "Une action Answered non vérifiée reste ouverte pour le pilotage projet."
+
+  - title: "8. Création d'une action"
+    text: >
+      La création d'une action doit être suffisamment précise pour permettre son traitement
+      sans interprétation ultérieure. Le pilote vérifie que l'action est utile, non redondante,
+      affectable et compatible avec les registres existants.
+    bullets:
+      - "Identifier le fait générateur et renseigner sa référence : compte rendu, RFI, livrable, observation, risque ou décision."
+      - "Formuler l'action avec un verbe d'action clair : produire, confirmer, vérifier, transmettre, corriger, arbitrer, valider."
+      - "Définir le responsable unique et les contributeurs éventuels."
+      - "Fixer une échéance réaliste mais compatible avec les jalons projet."
+      - "Attribuer une priorité initiale et préciser l'impact potentiel."
+      - "Indiquer le critère de clôture et le type de preuve attendu."
+
+  - title: "9. Priorisation"
+    text: >
+      La priorité détermine le niveau de suivi et d'escalade. Elle doit être fondée sur les
+      impacts projet et peut être révisée lors des revues hebdomadaires ou lorsqu'un nouveau
+      risque apparaît.
+    tables:
+      - title: "Tableau des priorités"
+        headers:
+          - "Priorité"
+          - "Critère principal"
+          - "Délai cible"
+          - "Escalade"
+        rows:
+          - ["P1 - Critique", "Impact immédiat sur sécurité, conformité réglementaire, jalon critique, coût majeur ou arrêt de chantier.", "24 à 48 h", "Direction projet / comité de pilotage."]
+          - ["P2 - Haute", "Impact probable sur planning, interfaces critiques, approbation majeure ou mobilisation d'une entreprise.", "3 à 5 jours ouvrés", "Responsable AMO/MOE et responsable de lot."]
+          - ["P3 - Normale", "Action nécessaire au bon déroulement mais sans impact critique immédiat.", "10 jours ouvrés", "Revue hebdomadaire."]
+          - ["P4 - Basse", "Action d'optimisation, clarification mineure ou amélioration documentaire.", "Selon planning convenu", "Suivi mensuel ou clôture groupée."]
+    bullets:
+      - "Une priorité P1 doit être accompagnée d'une justification d'impact."
+      - "Les actions P1 et P2 sont examinées en priorité dans les réunions de coordination."
+      - "Une action en retard peut être reclassée si son impact projet augmente."
+
+  - title: "10. Responsabilités"
+    text: >
+      La responsabilité de traitement est distinguée de la responsabilité de pilotage. L'AMO
+      garantit la qualité du processus et la cohérence globale, tandis que chaque partie reste
+      responsable des actions relevant de son périmètre contractuel ou technique.
+    tables:
+      - title: "Matrice RACI simplifiée"
+        headers:
+          - "Activité"
+          - "MOA"
+          - "AMO"
+          - "MOE"
+          - "Entreprise / Fournisseur"
+        rows:
+          - ["Créer et qualifier une action", "I", "A/R", "R", "C"]
+          - ["Fournir la réponse technique", "I", "C", "A/R", "R"]
+          - ["Traiter une action travaux ou fournisseur", "I", "C", "C", "A/R"]
+          - ["Vérifier la preuve de clôture", "I", "A/R", "R", "C"]
+          - ["Escalader un blocage", "A", "R", "R", "C"]
+          - ["Arbitrer une priorité critique", "A/R", "R", "C", "I"]
+    bullets:
+      - "R = Responsible, A = Accountable, C = Consulted, I = Informed."
+      - "Le responsable désigné dans le registre ne peut pas être remplacé sans mise à jour formelle."
+      - "Toute action transverse doit préciser le pilote de coordination."
+
+  - title: "11. Suivi"
+    text: >
+      Le suivi est assuré dans le registre des actions. Chaque mise à jour doit indiquer l'état
+      réel, la date de mise à jour, les éléments reçus, les points manquants et la prochaine
+      étape. Les commentaires doivent être factuels et exploitables.
+    bullets:
+      - "Mettre à jour les actions P1/P2 avant chaque réunion de coordination ou de pilotage."
+      - "Documenter les relances avec date, destinataire et synthèse de la demande."
+      - "Identifier les actions sans mouvement depuis plus de sept jours ouvrés."
+      - "Lier chaque action aux registres concernés : RFI, décisions, risques, interfaces, NCR ou livrables."
+      - "Conserver l'historique des changements de priorité, d'échéance et de responsable."
+
+  - title: "12. Revues périodiques"
+    text: >
+      Les revues périodiques permettent de maintenir la discipline de clôture et de traiter les
+      blocages avant qu'ils n'affectent les jalons projet. Elles sont préparées par extraction
+      du registre et orientées par priorité, retard, criticité et responsabilité.
+    bullets:
+      - "Revue hebdomadaire AMO/MOE : actions P1/P2, retards, blocages, interfaces critiques et arbitrages attendus."
+      - "Revue de lot : actions ouvertes par discipline, entreprise ou fournisseur."
+      - "Revue mensuelle de pilotage : tendances, KPI, actions critiques persistantes et décisions nécessaires."
+      - "Revue de clôture de phase : actions résiduelles, réserves, transfert documentaire et plan de reprise."
+      - "Chaque revue doit produire une liste d'actions mises à jour, de décisions attendues et de propriétaires confirmés."
+
+  - title: "13. Clôture"
+    text: >
+      Une action est clôturée uniquement lorsque le résultat attendu est atteint et que la
+      preuve associée est disponible. La clôture doit être compréhensible par un auditeur
+      externe sans recours à des échanges informels.
+    bullets:
+      - "Vérifier que la réponse traite entièrement l'objet initial."
+      - "Contrôler que la preuve de clôture est référencée et accessible."
+      - "Confirmer que les impacts induits ont été traités dans les registres connexes."
+      - "Refuser la clôture si la réponse crée une nouvelle action non enregistrée."
+      - "Renseigner la date de clôture, le vérificateur et la référence de preuve."
+
+  - title: "14. KPI"
+    text: >
+      Les indicateurs de performance mesurent l'efficacité du processus et la qualité du
+      pilotage. Ils doivent être calculés sur une base cohérente et présentés avec une analyse
+      des causes lorsque les seuils sont dépassés.
+    tables:
+      - title: "Tableau KPI"
+        headers:
+          - "Indicateur"
+          - "Définition"
+          - "Cible"
+          - "Fréquence"
+        rows:
+          - ["Actions ouvertes", "Nombre total d'actions non clôturées.", "Tendance stable ou décroissante", "Hebdomadaire"]
+          - ["Actions en retard", "Actions dont l'échéance est dépassée et le statut non Closed ou Cancelled.", "< 10 % du portefeuille", "Hebdomadaire"]
+          - ["Actions critiques ouvertes", "Actions P1 et P2 non clôturées.", "Zéro P1 en retard", "Hebdomadaire"]
+          - ["Délai moyen de clôture", "Durée moyenne entre création et clôture.", "Conforme à la priorité", "Mensuelle"]
+          - ["Taux de clôture vérifiée", "Actions fermées avec preuve complète.", "100 %", "Mensuelle"]
+          - ["Actions bloquées", "Actions au statut Blocked.", "Analyse cause et plan d'action", "Hebdomadaire"]
+    bullets:
+      - "Les KPI doivent être commentés, pas seulement reportés."
+      - "Une dégradation sur deux périodes consécutives déclenche une analyse de cause."
+      - "Les KPI sont consolidés par priorité, responsable, discipline et origine."
+
+  - title: "15. Interfaces documentaires"
+    text: >
+      La gestion des actions est reliée aux autres processus documentaires. Une action peut
+      être le moyen de suivre une obligation, mais elle ne remplace pas le registre spécialisé
+      lorsqu'une décision, une RFI, une non-conformité ou un risque doit être formellement
+      enregistré.
+    bullets:
+      - "Décisions : une action peut demander la préparation d'une décision, mais la décision validée doit rester dans REG-DEC."
+      - "RFI : une action peut suivre la réponse à une RFI, mais la question et la réponse officielle restent dans REG-RFI."
+      - "Risques : une action de mitigation doit être liée au risque correspondant dans REG-RSK."
+      - "Interfaces : une action transverse doit référencer l'interface concernée dans REG-INT."
+      - "Non-conformités : une action corrective ne clôture pas une NCR sans validation qualité."
+      - "Livrables : une action documentaire doit citer la référence, la révision et le statut du livrable."
+
+  - title: "16. Cas particuliers"
+    text: >
+      Certains cas nécessitent une gestion renforcée afin d'éviter les angles morts de
+      responsabilité ou les clôtures prématurées. Le pilote documente systématiquement la
+      décision de traitement retenue.
+    bullets:
+      - "Action urgente hors réunion : création immédiate dans le registre avec mention de l'origine et confirmation lors de la revue suivante."
+      - "Action confidentielle : accès limité et description synthétique dans le registre principal si nécessaire."
+      - "Action remplacée : clôture en Cancelled avec référence explicite vers l'action de remplacement."
+      - "Action multi-lots : responsable unique de coordination et contributeurs listés dans le commentaire."
+      - "Action contestée : statut Blocked, motif documenté et escalade vers l'instance d'arbitrage."
+      - "Action réouverte : conservation de l'historique et indication de la cause de réouverture."
+
+  - title: "17. Bonnes pratiques"
+    text: >
+      La qualité du registre dépend de la clarté des libellés et de la régularité des mises à
+      jour. Les bonnes pratiques ci-dessous doivent être appliquées par tous les pilotes et
+      responsables d'action.
+    bullets:
+      - "Rédiger une action comme une instruction vérifiable, pas comme un sujet général."
+      - "Éviter les formulations vagues telles que 'à voir', 'à suivre' ou 'en attente'."
+      - "Utiliser des dates d'échéance explicites et éviter les mentions relatives non datées."
+      - "Limiter le nombre d'actions critiques aux sujets ayant un impact démontré."
+      - "Ne pas clôturer une action sur la seule base d'un accord verbal."
+      - "Regrouper les doublons et conserver la référence de l'action conservée."
+      - "Préparer les revues avec des filtres par retard, priorité, responsable et discipline."
+
+  - title: "18. Annexes"
+    text: >
+      Les annexes ci-dessous constituent les informations minimales à maintenir dans le
+      registre des actions et dans les extractions de pilotage. Elles peuvent être complétées
+      selon les besoins du projet sans modifier la logique de la présente procédure.
+    bullets:
+      - "Annexe A - Champs minimaux du registre : identifiant, origine, description, type, priorité, statut, responsable, contributeurs, date de création, échéance, dernière mise à jour, preuve, date de clôture."
+      - "Annexe B - Format d'identifiant recommandé : ACT-YYYY-NNNN ou préfixe équivalent défini par le projet."
+      - "Annexe C - Exemples de preuves : compte rendu approuvé, visa de livrable, courrier, photographie géolocalisée, extrait de registre, décision validée, rapport d'essai."
+      - "Annexe D - Règle d'archivage : les exports mensuels du registre et les preuves de clôture doivent être conservés dans le répertoire documentaire projet."

@@ -25,6 +25,12 @@ class DocumentBuilderTest(unittest.TestCase):
                         "  - title: 2. References",
                         "    bullets:",
                         "      - REF-001",
+                        "    tables:",
+                        "      - title: Test table",
+                        "        headers: [Code, Description]",
+                        "        rows:",
+                        "          - [A, Alpha]",
+                        "          - [B, Beta]",
                     ]
                 ),
                 encoding="utf-8",
@@ -67,6 +73,8 @@ class DocumentBuilderTest(unittest.TestCase):
             self.assertIn("Document Number", table_text)
             self.assertIn("TEST-F99", table_text)
             self.assertIn("DRAFT", table_text)
+            self.assertIn("Code", table_text)
+            self.assertIn("Alpha", table_text)
 
             with zipfile.ZipFile(output_path) as docx:
                 document_xml = docx.read("word/document.xml").decode("utf-8")
@@ -74,6 +82,7 @@ class DocumentBuilderTest(unittest.TestCase):
                 footer_xml = docx.read("word/footer1.xml").decode("utf-8")
 
             self.assertIn("Document Control", document_xml)
+            self.assertIn("Test table", document_xml)
             self.assertIn('TOC \\o "1-3" \\h \\z \\u', document_xml)
             self.assertIn("Document", header_xml)
             self.assertIn("TEST-F99", header_xml)
@@ -87,6 +96,27 @@ class DocumentBuilderTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "chapters"):
             validate_document_config(
                 {"reference": "TEST-F99", "title": "Test document"},
+                Path("F99.yaml"),
+            )
+
+    def test_validate_document_config_rejects_table_row_width_mismatch(self):
+        with self.assertRaisesRegex(ValueError, "must contain 2 values"):
+            validate_document_config(
+                {
+                    "reference": "TEST-F99",
+                    "title": "Test document",
+                    "chapters": [
+                        {
+                            "title": "1. Test",
+                            "tables": [
+                                {
+                                    "headers": ["Code", "Description"],
+                                    "rows": [["A"]],
+                                }
+                            ],
+                        }
+                    ],
+                },
                 Path("F99.yaml"),
             )
 

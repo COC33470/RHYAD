@@ -5,6 +5,7 @@ from docx import Document
 
 from engine.styles.ceva_style import (
     add_cover_page,
+    add_data_table,
     add_document_control_table,
     add_table_of_contents,
     setup_document_shell,
@@ -56,6 +57,37 @@ def validate_document_config(data, yaml_path: Path):
                     raise ValueError(
                         f"{chapter_label}.bullets[{item_index}] must be a non-empty string."
                     )
+
+        tables = chapter.get("tables")
+        if tables is not None:
+            if not isinstance(tables, list) or not tables:
+                raise ValueError(f"{chapter_label}.tables must be a non-empty list when provided.")
+            for table_index, table in enumerate(tables, start=1):
+                table_label = f"{chapter_label}.tables[{table_index}]"
+                _require_mapping(table, table_label)
+
+                title = table.get("title")
+                if title is not None and not isinstance(title, str):
+                    raise ValueError(f"{table_label}.title must be a string when provided.")
+
+                headers = table.get("headers")
+                if not isinstance(headers, list) or not headers:
+                    raise ValueError(f"{table_label}.headers must be a non-empty list.")
+                for header_index, header in enumerate(headers, start=1):
+                    if not isinstance(header, str) or not header.strip():
+                        raise ValueError(
+                            f"{table_label}.headers[{header_index}] must be a non-empty string."
+                        )
+
+                rows = table.get("rows")
+                if not isinstance(rows, list) or not rows:
+                    raise ValueError(f"{table_label}.rows must be a non-empty list.")
+                for row_index, row in enumerate(rows, start=1):
+                    row_label = f"{table_label}.rows[{row_index}]"
+                    if not isinstance(row, list):
+                        raise ValueError(f"{row_label} must be a list.")
+                    if len(row) != len(headers):
+                        raise ValueError(f"{row_label} must contain {len(headers)} values.")
 
 
 def _resolve_optional_path(path_value, project_root):
@@ -119,6 +151,10 @@ def build_document(yaml_path: Path, output_path: Path, project_config=None, proj
         if "bullets" in chapter:
             for item in chapter["bullets"]:
                 doc.add_paragraph(item, style="List Bullet")
+
+        if "tables" in chapter:
+            for table in chapter["tables"]:
+                add_data_table(doc, table)
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     doc.save(output_path)
