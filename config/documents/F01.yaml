@@ -1,0 +1,26 @@
+reference: RHYAD-F01
+title: Gestion des actions
+subtitle: Procédure projet - Révision A1.0
+
+chapters:
+  - title: "1. Objet"
+    text: "Définir la méthode unique de création, attribution, suivi, mise à jour et clôture des actions du projet RHYAD."
+
+  - title: "2. Domaine d'application"
+    text: "La présente procédure s'applique à la MOA, AMO, MOE, architectes, ingénieries, entreprises, fournisseurs et contrôleurs."
+
+  - title: "3. Documents de référence"
+    bullets:
+      - "DT-000 - Note de cadrage documentaire"
+      - "REG-ACT - Registre des actions"
+      - "REG-DEC - Registre des décisions"
+      - "F02 - Gestion des décisions"
+      - "F03 - RFI"
+      - "F04 - Interfaces"
+      - "F05 - Risques"
+
+  - title: "4. Principes généraux"
+    text: "Toute action doit comporter un identifiant unique, un responsable unique, une échéance, une priorité, un statut et une preuve documentaire de clôture."
+
+  - title: "5. Cycle de vie"
+    text: "Identification → Création → Validation → Affectation → En cours → Suivi → Terminée → Vérification → Clôture."
