@@ -1,5 +1,6 @@
 import tempfile
 import unittest
+import zipfile
 from pathlib import Path
 
 from docx import Document
@@ -62,8 +63,25 @@ class DocumentBuilderTest(unittest.TestCase):
             self.assertIn("TEST-F99", paragraph_text)
             self.assertIn("Test document", paragraph_text)
             self.assertIn("REF-001", paragraph_text)
-            self.assertIn("Test Project", table_text)
+            self.assertIn("Test Project", paragraph_text)
+            self.assertIn("Document Number", table_text)
+            self.assertIn("TEST-F99", table_text)
             self.assertIn("DRAFT", table_text)
+
+            with zipfile.ZipFile(output_path) as docx:
+                document_xml = docx.read("word/document.xml").decode("utf-8")
+                header_xml = docx.read("word/header1.xml").decode("utf-8")
+                footer_xml = docx.read("word/footer1.xml").decode("utf-8")
+
+            self.assertIn("Document Control", document_xml)
+            self.assertIn('TOC \\o "1-3" \\h \\z \\u', document_xml)
+            self.assertIn("Document", header_xml)
+            self.assertIn("TEST-F99", header_xml)
+            self.assertIn("Revision", header_xml)
+            self.assertIn("Status", header_xml)
+            self.assertIn("PAGE", footer_xml)
+            self.assertIn("NUMPAGES", footer_xml)
+            self.assertIn("INTERNAL", footer_xml)
 
     def test_validate_document_config_requires_chapters(self):
         with self.assertRaisesRegex(ValueError, "chapters"):

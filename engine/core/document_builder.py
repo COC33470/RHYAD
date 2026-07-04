@@ -1,8 +1,14 @@
 from pathlib import Path
+from datetime import date
 import yaml
 from docx import Document
 
-from engine.styles.ceva_style import setup_document, add_title
+from engine.styles.ceva_style import (
+    add_cover_page,
+    add_document_control_table,
+    add_table_of_contents,
+    setup_document_shell,
+)
 
 
 def _require_mapping(data, label):
@@ -63,41 +69,28 @@ def _resolve_optional_path(path_value, project_root):
     return path if path.exists() else None
 
 
-def _project_rows(project_config):
-    if not project_config:
-        return []
-
+def _metadata(data, project_config):
+    project_config = project_config or {}
     project = project_config.get("project") or {}
     document = project_config.get("document") or {}
     authors = project_config.get("authors") or {}
+    approval = project_config.get("approval") or {}
 
-    rows = [
-        ("Projet", project.get("name")),
-        ("Client", project.get("client")),
-        ("Localisation", project.get("location")),
-        ("Révision", document.get("revision")),
-        ("Statut", document.get("status")),
-        ("Confidentialité", document.get("confidentiality")),
-        ("Auteur", authors.get("author")),
-        ("Société", authors.get("company")),
-    ]
-    return [(label, value) for label, value in rows if value]
-
-
-def _add_project_metadata(document, project_config):
-    rows = _project_rows(project_config)
-    if not rows:
-        return
-
-    table = document.add_table(rows=0, cols=2)
-    table.style = "Table Grid"
-
-    for label, value in rows:
-        row = table.add_row().cells
-        row[0].text = label
-        row[1].text = str(value)
-
-    document.add_paragraph("")
+    return {
+        "reference": data["reference"],
+        "title": data["title"],
+        "subtitle": data.get("subtitle", ""),
+        "project_name": project.get("name", ""),
+        "client": project.get("client", ""),
+        "location": project.get("location", ""),
+        "revision": document.get("revision", ""),
+        "status": document.get("status", ""),
+        "confidentiality": document.get("confidentiality", ""),
+        "author": authors.get("author", ""),
+        "checker": approval.get("checker", ""),
+        "approver": approval.get("approver", ""),
+        "generated_date": date.today().isoformat(),
+    }
 
 
 def build_document(yaml_path: Path, output_path: Path, project_config=None, project_root=None):
@@ -107,19 +100,15 @@ def build_document(yaml_path: Path, output_path: Path, project_config=None, proj
     validate_document_config(data, yaml_path)
 
     doc = Document()
-    setup_document(doc)
 
     branding = (project_config or {}).get("branding", {})
     logo_path = _resolve_optional_path(branding.get("logo_ceva"), project_root)
+    metadata = _metadata(data, project_config or {})
 
-    add_title(
-        doc,
-        data["reference"],
-        data["title"],
-        data.get("subtitle", ""),
-        logo_path=logo_path,
-    )
-    _add_project_metadata(doc, project_config or {})
+    setup_document_shell(doc, metadata, logo_path=logo_path)
+    add_cover_page(doc, metadata, logo_path=logo_path)
+    add_document_control_table(doc, metadata)
+    add_table_of_contents(doc)
 
     for chapter in data["chapters"]:
         doc.add_heading(chapter["title"], level=1)
