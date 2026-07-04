@@ -1,6 +1,7 @@
 import tempfile
 import unittest
 from pathlib import Path
+import yaml
 
 from scripts.main import (
     find_repository_document,
@@ -101,6 +102,24 @@ class ProjectConfigTest(unittest.TestCase):
                     "output/docx/100"
                 )
             )
+
+    def test_002_function_table_matches_repository_family_100(self):
+        repository = load_repository_config(Path("config/rhyad_repository.yaml"))
+        with open("config/documents/002.yaml", "r", encoding="utf-8") as f:
+            document = yaml.safe_load(f)
+
+        family_100 = next(
+            family
+            for family in repository["repository"]["families"]
+            if str(family["code"]) == "100"
+        )
+        expected_rows = [
+            [item["code"], item["title"]]
+            for item in family_100["documents"]
+        ]
+        actual_rows = document["chapters"][8]["tables"][0]["rows"]
+
+        self.assertEqual(actual_rows, expected_rows)
 
 
 if __name__ == "__main__":

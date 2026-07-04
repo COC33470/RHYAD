@@ -1,19 +1,64 @@
 reference: RHYAD-002
 title: Programme Fonctionnel
-subtitle: Squelette documentaire - Révision A1.0
+subtitle: Structure documentaire - Révision A1.0
 
 chapters:
-  - title: "1. Objet"
+  - title: "1. Objet du document"
     text: "À compléter après validation du contenu."
 
-  - title: "2. Domaine d'application"
+  - title: "2. Contexte projet"
     text: "À compléter après validation du contenu."
 
-  - title: "3. Fonctions du programme"
+  - title: "3. Objectifs du programme fonctionnel"
     text: "À compléter après validation du contenu."
 
-  - title: "4. Interfaces fonctionnelles"
+  - title: "4. Périmètre fonctionnel"
     text: "À compléter après validation du contenu."
 
-  - title: "5. Annexes"
+  - title: "5. Hypothèses structurantes"
+    text: "À compléter après validation du contenu."
+
+  - title: "6. Contraintes réglementaires et qualité"
+    text: "À compléter après validation du contenu."
+
+  - title: "7. Principes de flux"
+    text: "À compléter après validation du contenu."
+
+  - title: "8. Organisation fonctionnelle générale"
+    text: "À compléter après validation du contenu."
+
+  - title: "9. Liste des fonctions F01 à F15"
+    text: "Liste issue de l'arborescence documentaire officielle validée."
+    tables:
+      - title: "Fonctions du Programme Fonctionnel"
+        headers:
+          - "Code"
+          - "Fonction"
+        rows:
+          - ["F01", "Réception et Expédition"]
+          - ["F02", "Stockage des Matières Premières et Consommables"]
+          - ["F03", "Préparation des Matières Premières et Solutions"]
+          - ["F04", "Production des Autovaccins"]
+          - ["F05", "Conditionnement et Expédition des Produits"]
+          - ["F06", "Gestion des Flux"]
+          - ["F07", "Lavage, Stérilisation et Préparation des Équipements"]
+          - ["F08", "Contrôle Qualité"]
+          - ["F09", "Utilités Industrielles"]
+          - ["F10", "Maintenance et Exploitation Technique"]
+          - ["F11", "Gestion des Déchets et Effluents"]
+          - ["F12", "Sûreté, Protection des Actifs et Contrôle des Accès"]
+          - ["F13", "Systèmes d’Information, Automatismes et Cybersécurité"]
+          - ["F14", "Administration, Formation et Services Généraux"]
+          - ["F15", "Gouvernance du Campus et Fonctions Transverses"]
+
+  - title: "10. Interfaces entre fonctions"
+    text: "À compléter après validation du contenu."
+
+  - title: "11. Synthèse des besoins par fonction"
+    text: "À compléter après validation du contenu."
+
+  - title: "12. Points ouverts"
+    text: "À compléter après validation du contenu."
+
+  - title: "13. Annexes"
     text: "À compléter après validation du contenu."
