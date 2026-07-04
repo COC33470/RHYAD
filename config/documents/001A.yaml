@@ -1,19 +1,244 @@
-reference: RHYAD-001A
-title: ACAP – Analyse de Contexte et d’Adaptation du Projet
-subtitle: Squelette documentaire - Révision A1.0
+reference: "001A"
+title: "Analyse de Contexte et d’Adaptation du Projet (ACAP)"
+subtitle: "CEVA – Campus de Production d’Autovaccins – Royaume d’Arabie Saoudite"
+status: "Working Draft"
+revision: "Rev.0.1"
 
 chapters:
   - title: "1. Objet"
-    text: "À compléter après validation du contenu."
+    text: >
+      Le présent document a pour objet d’analyser le contexte local dans lequel sera implanté
+      le projet et d’identifier les adaptations nécessaires afin de garantir la réussite de sa
+      conception, de sa réalisation et de son exploitation.
 
-  - title: "2. Contexte d'adaptation"
-    text: "À compléter après validation du contenu."
+      Il constitue une donnée d’entrée pour le Programme Fonctionnel, les Design Basis et les
+      études de conception.
 
-  - title: "3. Hypothèses structurantes"
-    text: "À compléter après validation du contenu."
+  - title: "2. Présentation générale du projet"
+    text: >
+      Projet : Campus de production d’autovaccins vétérinaires.
 
-  - title: "4. Contraintes et adaptations"
-    text: "À compléter après validation du contenu."
+      Client : CEVA Santé Animale.
 
-  - title: "5. Annexes"
-    text: "À compléter après validation du contenu."
+      Localisation : Royaume d’Arabie Saoudite.
+
+      Objectif :
+
+      Créer un site de production évolutif permettant une montée en capacité de 100–300 L vers
+      1000 L tout en respectant les exigences réglementaires, techniques et opérationnelles
+      locales.
+
+  - title: "3. Contexte général"
+    tables:
+      - title: "Contexte général"
+        headers:
+          - "Champ"
+          - "Valeur"
+        rows:
+          - ["Pays", "À compléter"]
+          - ["Région", "À compléter"]
+          - ["Ville", "À compléter"]
+          - ["Zone industrielle", "À compléter"]
+          - ["Contexte politique", "À compléter"]
+          - ["Contexte économique", "À compléter"]
+          - ["Contexte sécuritaire", "À compléter"]
+
+  - title: "4. Réglementation"
+    bullets:
+      - "Urbanisme"
+      - "Construction"
+      - "Pharmaceutique"
+      - "SFDA"
+      - "GMP / BPF applicables"
+      - "Environnement"
+      - "Incendie"
+      - "Santé et sécurité"
+      - "Droit du travail"
+
+  - title: "5. Conditions climatiques"
+    text: >
+      Données climatiques :
+    bullets:
+      - "Température extérieure"
+      - "Température extrême"
+      - "Hygrométrie"
+      - "Vent dominant"
+      - "Tempêtes de sable"
+      - "Rayonnement solaire"
+      - "Pluviométrie"
+      - "Risques naturels"
+      - "Impacts sur : Architecture"
+      - "Impacts sur : CVC"
+      - "Impacts sur : Utilités"
+      - "Impacts sur : Consommations énergétiques"
+      - "Impacts sur : Maintenance"
+
+  - title: "6. Analyse des disponibilités"
+    text: "À compléter."
+
+  - title: "6.1 Électricité"
+    tables:
+      - title: "Électricité"
+        headers:
+          - "Paramètre"
+          - "Donnée locale"
+          - "Impact projet"
+          - "Décision RHYAD"
+        rows:
+          - ["Producteur", "À compléter", "À compléter", "À compléter"]
+          - ["Nombre de réseaux", "À compléter", "À compléter", "À compléter"]
+          - ["HT", "À compléter", "À compléter", "À compléter"]
+          - ["BT", "À compléter", "À compléter", "À compléter"]
+          - ["Fréquence", "À compléter", "À compléter", "À compléter"]
+          - ["Qualité alimentation", "À compléter", "À compléter", "À compléter"]
+          - ["Variations de tension", "À compléter", "À compléter", "À compléter"]
+          - ["Microcoupures", "À compléter", "À compléter", "À compléter"]
+          - ["Coupures programmées", "À compléter", "À compléter", "À compléter"]
+          - ["Coupures non programmées", "À compléter", "À compléter", "À compléter"]
+          - ["Durée moyenne annuelle", "À compléter", "À compléter", "À compléter"]
+          - ["Temps moyen de rétablissement", "À compléter", "À compléter", "À compléter"]
+          - ["Groupes électrogènes", "À compléter", "À compléter", "À compléter"]
+          - ["Coût de l’énergie", "À compléter", "À compléter", "À compléter"]
+
+  - title: "6.2 Eau"
+    tables:
+      - title: "Eau"
+        headers:
+          - "Paramètre"
+          - "Valeur"
+        rows:
+          - ["Origine", "À compléter"]
+          - ["Qualité", "À compléter"]
+          - ["Pression", "À compléter"]
+          - ["Débit", "À compléter"]
+          - ["Continuité", "À compléter"]
+          - ["Analyses disponibles", "À compléter"]
+          - ["Traitements nécessaires", "À compléter"]
+          - ["Restrictions éventuelles", "À compléter"]
+
+  - title: "6.3 Télécommunications"
+    tables:
+      - title: "Télécommunications"
+        headers:
+          - "Paramètre"
+          - "Valeur"
+        rows:
+          - ["Opérateurs", "À compléter"]
+          - ["Fibre optique", "À compléter"]
+          - ["Redondance", "À compléter"]
+          - ["Débits", "À compléter"]
+          - ["Disponibilité", "À compléter"]
+          - ["Latence", "À compléter"]
+
+  - title: "6.4 Gaz"
+    tables:
+      - title: "Gaz"
+        headers:
+          - "Paramètre"
+          - "Valeur"
+        rows:
+          - ["Gaz naturel", "À compléter"]
+          - ["Gaz industriels", "À compléter"]
+          - ["Fournisseurs", "À compléter"]
+          - ["Contraintes", "À compléter"]
+
+  - title: "6.5 Combustibles"
+    tables:
+      - title: "Combustibles"
+        headers:
+          - "Paramètre"
+          - "Valeur"
+        rows:
+          - ["Diesel", "À compléter"]
+          - ["GPL", "À compléter"]
+          - ["Approvisionnement", "À compléter"]
+          - ["Stockage", "À compléter"]
+
+  - title: "7. Ressources locales"
+    bullets:
+      - "Main-d’œuvre qualifiée"
+      - "Entreprises locales"
+      - "Fabricants"
+      - "Prestataires de maintenance"
+      - "Laboratoires"
+      - "Disponibilité des compétences"
+
+  - title: "8. Logistique"
+    bullets:
+      - "Ports"
+      - "Aéroports"
+      - "Routes"
+      - "Douanes"
+      - "Délais d’importation"
+      - "Contraintes logistiques"
+      - "Stock stratégique recommandé"
+
+  - title: "9. Disponibilité des matériels et services"
+    bullets:
+      - "Équipements process"
+      - "CVC"
+      - "Électricité"
+      - "Instrumentation"
+      - "Automatisme"
+      - "IT / OT"
+      - "Pièces de rechange"
+      - "Prestations de maintenance"
+
+  - title: "10. Contraintes culturelles et organisationnelles"
+    bullets:
+      - "Langues de travail"
+      - "Calendrier local"
+      - "Jours fériés"
+      - "Ramadan"
+      - "Organisation du travail"
+      - "Contraintes administratives"
+      - "Autorisations spécifiques"
+
+  - title: "11. Analyse des risques pays"
+    bullets:
+      - "Géopolitiques"
+      - "Logistiques"
+      - "Climatiques"
+      - "Réglementaires"
+      - "Ressources"
+      - "Approvisionnement"
+      - "Main-d’œuvre"
+      - "Sécurité"
+      - "Les risques identifiés alimentent le document RHYAD-004 – Registre des Risques."
+
+  - title: "12. Analyse des écarts avec les standards du Groupe"
+    tables:
+      - title: "Analyse des écarts avec les standards du Groupe"
+        headers:
+          - "Standard CEVA"
+          - "Situation locale"
+          - "Écart"
+          - "Impact"
+          - "Recommandation RHYAD"
+          - "Validation CEVA"
+        rows:
+          - ["À compléter", "À compléter", "À compléter", "À compléter", "À compléter", "À compléter"]
+
+  - title: "13. Recommandations RHYAD"
+    bullets:
+      - "Adaptations architecturales"
+      - "Adaptations process"
+      - "Adaptations des utilités"
+      - "Stratégie énergétique"
+      - "Stratégie de maintenance"
+      - "Logistique"
+      - "Stockage stratégique"
+      - "Évolution future du Campus"
+      - "Toutes les recommandations devront être justifiées techniquement."
+
+  - title: "14. Validation"
+    tables:
+      - title: "Validation"
+        headers:
+          - "Fonction"
+          - "Nom"
+          - "Date"
+          - "Signature"
+        rows:
+          - ["CEVA", "À compléter", "À compléter", "À compléter"]
+          - ["RHYAD", "À compléter", "À compléter", "À compléter"]
