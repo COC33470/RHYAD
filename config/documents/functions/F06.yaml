@@ -1,0 +1,257 @@
+reference: CEVA-RHYAD-100-F06
+title: Gestion des Flux
+revision: Rev1.0
+status: Validated
+chapters:
+- title: 1. Objet
+  blocks:
+  - type: text
+    text: La fonction F06 -- Gestion des Flux définit les exigences fonctionnelles relatives à l'organisation, la séparation,
+      la maîtrise et l'optimisation des flux du Campus CEVA RHYAD.
+  - type: text
+    text: Elle couvre l'ensemble des flux internes nécessaires au fonctionnement de l'installation afin de garantir la sécurité,
+      la conformité GMP/BPF, la fluidité des opérations et la prévention des contaminations croisées.
+  - type: text
+    text: Le présent document décrit les besoins fonctionnels sans préjuger des solutions techniques qui seront retenues.
+  text: 'La fonction F06 -- Gestion des Flux définit les exigences fonctionnelles relatives à l''organisation, la séparation,
+    la maîtrise et l''optimisation des flux du Campus CEVA RHYAD.
+
+
+    Elle couvre l''ensemble des flux internes nécessaires au fonctionnement de l''installation afin de garantir la sécurité,
+    la conformité GMP/BPF, la fluidité des opérations et la prévention des contaminations croisées.
+
+
+    Le présent document décrit les besoins fonctionnels sans préjuger des solutions techniques qui seront retenues.'
+- title: 2. Objectifs
+  blocks:
+  - type: text
+    text: 'La fonction doit permettre :'
+  - type: list
+    items:
+    - la maîtrise des flux de personnel ;
+    - la maîtrise des flux matières ;
+    - la maîtrise des flux produits ;
+    - la maîtrise des flux déchets ;
+    - la maîtrise des flux équipements ;
+    - la séparation des flux incompatibles ;
+    - la fluidité des déplacements ;
+    - la limitation des risques de contamination croisée.
+  text: 'La fonction doit permettre :'
+  bullets:
+  - la maîtrise des flux de personnel ;
+  - la maîtrise des flux matières ;
+  - la maîtrise des flux produits ;
+  - la maîtrise des flux déchets ;
+  - la maîtrise des flux équipements ;
+  - la séparation des flux incompatibles ;
+  - la fluidité des déplacements ;
+  - la limitation des risques de contamination croisée.
+- title: 3. Périmètre
+  blocks:
+  - type: text
+    text: 'La fonction couvre notamment :'
+  - type: list
+    items:
+    - les circulations du personnel ;
+    - les circulations des matières premières ;
+    - les circulations des consommables ;
+    - les circulations des produits intermédiaires ;
+    - les circulations des produits finis ;
+    - les circulations des déchets ;
+    - les circulations des équipements ;
+    - les SAS ;
+    - les ascenseurs et monte-charges ;
+    - les circulations extérieures directement liées aux bâtiments.
+  - type: text
+    text: 'Sont exclus :'
+  - type: list
+    items:
+    - la gestion logistique externe ;
+    - les procédures opératoires ;
+    - les procédures qualité.
+  text: 'La fonction couvre notamment :
+
+
+    Sont exclus :'
+  bullets:
+  - les circulations du personnel ;
+  - les circulations des matières premières ;
+  - les circulations des consommables ;
+  - les circulations des produits intermédiaires ;
+  - les circulations des produits finis ;
+  - les circulations des déchets ;
+  - les circulations des équipements ;
+  - les SAS ;
+  - les ascenseurs et monte-charges ;
+  - les circulations extérieures directement liées aux bâtiments.
+  - la gestion logistique externe ;
+  - les procédures opératoires ;
+  - les procédures qualité.
+- title: 4. Exigences fonctionnelles
+- title: F06-01 -- Séparation des flux
+  blocks:
+  - type: text
+    text: Les flux incompatibles doivent être physiquement ou fonctionnellement séparés.
+  - type: text
+    text: 'Cette séparation concerne notamment :'
+  - type: list
+    items:
+    - personnel / matières ;
+    - produits propres / déchets ;
+    - flux GMP / non GMP ;
+    - produits conformes / produits en quarantaine.
+  text: 'Les flux incompatibles doivent être physiquement ou fonctionnellement séparés.
+
+
+    Cette séparation concerne notamment :'
+  bullets:
+  - personnel / matières ;
+  - produits propres / déchets ;
+  - flux GMP / non GMP ;
+  - produits conformes / produits en quarantaine.
+- title: F06-02 -- Circulation du personnel
+  blocks:
+  - type: text
+    text: Les déplacements du personnel doivent limiter les croisements inutiles et respecter les exigences de biosécurité
+      et de sûreté.
+  text: Les déplacements du personnel doivent limiter les croisements inutiles et respecter les exigences de biosécurité et
+    de sûreté.
+- title: F06-03 -- Circulation des matières
+  blocks:
+  - type: text
+    text: Les matières premières et consommables doivent pouvoir être acheminés vers les zones de production sans risque de
+      contamination.
+  text: Les matières premières et consommables doivent pouvoir être acheminés vers les zones de production sans risque de
+    contamination.
+- title: F06-04 -- Circulation des produits
+  blocks:
+  - type: text
+    text: Les produits intermédiaires et finis doivent suivre un cheminement cohérent, limitant les manipulations et les risques
+      de confusion.
+  text: Les produits intermédiaires et finis doivent suivre un cheminement cohérent, limitant les manipulations et les risques
+    de confusion.
+- title: F06-05 -- Gestion des déchets
+  blocks:
+  - type: text
+    text: Les flux de déchets doivent être indépendants des flux de production et permettre une évacuation sécurisée.
+  text: Les flux de déchets doivent être indépendants des flux de production et permettre une évacuation sécurisée.
+- title: F06-06 -- Continuité des flux
+  blocks:
+  - type: text
+    text: L'organisation des circulations doit limiter les interruptions d'exploitation et permettre le maintien des activités
+      essentielles en cas d'indisponibilité d'un cheminement.
+  text: L'organisation des circulations doit limiter les interruptions d'exploitation et permettre le maintien des activités
+    essentielles en cas d'indisponibilité d'un cheminement.
+- title: F06-07 -- Traçabilité
+  blocks:
+  - type: text
+    text: Les mouvements des produits et des équipements doivent pouvoir être tracés conformément aux exigences du projet.
+  text: Les mouvements des produits et des équipements doivent pouvoir être tracés conformément aux exigences du projet.
+- title: F06-08 -- Flexibilité
+  blocks:
+  - type: text
+    text: Les circulations doivent permettre les évolutions futures des procédés et des capacités de production sans modification
+      majeure des infrastructures.
+  text: Les circulations doivent permettre les évolutions futures des procédés et des capacités de production sans modification
+    majeure des infrastructures.
+- title: 5. Interfaces
+  blocks:
+  - type: text
+    text: 'La fonction F06 est en interface avec l''ensemble des fonctions du projet, notamment :'
+  - type: list
+    items:
+    - F01 --- Réception et Expédition
+    - F02 --- Stockage des Matières Premières et Consommables
+    - F03 --- Préparation des Matières Premières et Solutions
+    - F04 --- Production des Autovaccins
+    - F05 --- Conditionnement et Expédition des Produits
+    - F07 --- Lavage, Stérilisation et Préparation des Équipements
+    - F08 --- Contrôle Qualité
+    - F09 --- Utilités Industrielles
+    - F10 --- Maintenance et Exploitation Technique
+    - F11 --- Gestion des Déchets et Effluents
+    - F12 --- Sûreté, Protection des Actifs et Contrôle des Accès
+  text: 'La fonction F06 est en interface avec l''ensemble des fonctions du projet, notamment :'
+  bullets:
+  - F01 --- Réception et Expédition
+  - F02 --- Stockage des Matières Premières et Consommables
+  - F03 --- Préparation des Matières Premières et Solutions
+  - F04 --- Production des Autovaccins
+  - F05 --- Conditionnement et Expédition des Produits
+  - F07 --- Lavage, Stérilisation et Préparation des Équipements
+  - F08 --- Contrôle Qualité
+  - F09 --- Utilités Industrielles
+  - F10 --- Maintenance et Exploitation Technique
+  - F11 --- Gestion des Déchets et Effluents
+  - F12 --- Sûreté, Protection des Actifs et Contrôle des Accès
+- title: 6. Contraintes
+  blocks:
+  - type: list
+    items:
+    - exigences GMP/BPF ;
+    - principes de marche en avant ;
+    - contraintes de biosécurité ;
+    - exigences de sûreté ;
+    - contraintes de manutention ;
+    - contraintes climatiques locales ;
+    - exigences d'accessibilité et de maintenance.
+  bullets:
+  - exigences GMP/BPF ;
+  - principes de marche en avant ;
+  - contraintes de biosécurité ;
+  - exigences de sûreté ;
+  - contraintes de manutention ;
+  - contraintes climatiques locales ;
+  - exigences d'accessibilité et de maintenance.
+- title: 7. Critères de performance
+  blocks:
+  - type: list
+    items:
+    - circulation fluide des personnes et des marchandises ;
+    - maîtrise des contaminations croisées ;
+    - exploitation sûre ;
+    - maintenance facilitée ;
+    - adaptation aux évolutions futures du Campus ;
+    - organisation robuste des flux en situation normale et dégradée.
+  bullets:
+  - circulation fluide des personnes et des marchandises ;
+  - maîtrise des contaminations croisées ;
+  - exploitation sûre ;
+  - maintenance facilitée ;
+  - adaptation aux évolutions futures du Campus ;
+  - organisation robuste des flux en situation normale et dégradée.
+- title: 8. Documents associés
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-001A-ACAP
+    - CEVA-RHYAD-200-DT-F06-01 et suivants
+    - CEVA-RHYAD-300-DB01 — Process
+    - CEVA-RHYAD-300-DB02 — Architecture
+    - CEVA-RHYAD-300-DB09 — Logistique
+    - CEVA-RHYAD-500-REG03 — Registre des Risques
+    - CEVA-RHYAD-500-REG04 — Registre des Hypothèses
+    - CEVA-RHYAD-500-REG05 — Registre des Interfaces
+  bullets:
+  - CEVA-RHYAD-001A-ACAP
+  - CEVA-RHYAD-200-DT-F06-01 et suivants
+  - CEVA-RHYAD-300-DB01 — Process
+  - CEVA-RHYAD-300-DB02 — Architecture
+  - CEVA-RHYAD-300-DB09 — Logistique
+  - CEVA-RHYAD-500-REG03 — Registre des Risques
+  - CEVA-RHYAD-500-REG04 — Registre des Hypothèses
+  - CEVA-RHYAD-500-REG05 — Registre des Interfaces
+- title: 9. Critères de validation
+  blocks:
+  - type: list
+    items:
+    - les principes de circulation auront été approuvés par le Maître d'Ouvrage ;
+    - les interfaces entre les différentes fonctions auront été identifiées ;
+    - les risques liés aux flux auront été évalués ;
+    - les hypothèses de conception auront été enregistrées dans les DT associés.
+  bullets:
+  - les principes de circulation auront été approuvés par le Maître d'Ouvrage ;
+  - les interfaces entre les différentes fonctions auront été identifiées ;
+  - les risques liés aux flux auront été évalués ;
+  - les hypothèses de conception auront été enregistrées dans les DT associés.
+- title: Fin du document

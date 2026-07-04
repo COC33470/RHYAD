@@ -101,3 +101,11 @@ documents:
     status: "Validated"
     family: "100"
     source: "config/documents/functions/F05.yaml"
+
+  - code: "F06"
+    official_code: "CEVA-RHYAD-100-F06"
+    title: "Gestion des Flux"
+    revision: "Rev1.0"
+    status: "Validated"
+    family: "100"
+    source: "config/documents/functions/F06.yaml"
