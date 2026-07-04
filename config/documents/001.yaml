@@ -1,19 +1,168 @@
-reference: RHYAD-001
-title: Charte Projet
-subtitle: Squelette documentaire - Révision A1.0
+reference: "001"
+title: "Charte Projet"
+subtitle: "CEVA – Campus de Production d’Autovaccins – Royaume d’Arabie Saoudite"
+status: "Working Draft"
+revision: "Rev.0.1"
 
 chapters:
   - title: "1. Objet"
-    text: "À compléter après validation du contenu."
+    text: >
+      La présente Charte Projet formalise le lancement du projet et constitue le document de
+      référence définissant son cadre général.
 
-  - title: "2. Contexte"
-    text: "À compléter après validation du contenu."
+      Elle précise les objectifs, le périmètre, les acteurs, les responsabilités, les principes
+      de gouvernance ainsi que les modalités générales de pilotage du projet.
+
+      La Charte Projet est approuvée au démarrage du projet et constitue la référence
+      documentaire de l’ensemble des intervenants.
+
+  - title: "2. Présentation du projet"
+    bullets:
+      - "Nom du projet : Campus CEVA – Production d’Autovaccins"
+      - "Client : CEVA Santé Animale"
+      - "Localisation : Royaume d’Arabie Saoudite"
+      - "Nature du projet : Conception et réalisation d’un campus industriel destiné à la production d’autovaccins vétérinaires, conçu pour une montée en capacité progressive de 100–300 L à 1000 L, conformément aux exigences réglementaires et aux standards du Groupe CEVA."
 
   - title: "3. Objectifs du projet"
-    text: "À compléter après validation du contenu."
+    bullets:
+      - "Concevoir un campus conforme aux exigences GMP/BPF applicables."
+      - "Garantir la qualité et la sécurité des produits."
+      - "Assurer une montée en capacité de production de 100–300 L vers 1000 L."
+      - "Optimiser les flux de personnes, de matières et de déchets."
+      - "Intégrer les contraintes réglementaires et techniques propres au Royaume d’Arabie Saoudite."
+      - "Concevoir un site évolutif et facilement maintenable."
+      - "Optimiser les coûts d’investissement (CAPEX) et d’exploitation (OPEX)."
+      - "Intégrer, lorsque pertinent, des variantes techniques innovantes permettant d’améliorer la performance énergétique, la résilience et la durabilité des installations."
 
-  - title: "4. Gouvernance"
-    text: "À compléter après validation du contenu."
+  - title: "4. Périmètre"
+    text: >
+      Le projet couvre notamment les domaines suivants :
+    bullets:
+      - "Process de production."
+      - "Architecture."
+      - "Utilités industrielles."
+      - "Chauffage, Ventilation et Climatisation (CVC/HVAC)."
+      - "Électricité."
+      - "Instrumentation et automatisme."
+      - "Systèmes d’Information (IT/OT)."
+      - "Maintenance."
+      - "Logistique."
+      - "Contrôle Qualité."
+      - "Gestion des déchets et effluents."
+      - "Sûreté, protection des actifs et contrôle des accès."
+      - "Administration, formation et services généraux."
+      - "Gouvernance du Campus."
+      - "Le périmètre détaillé est défini dans le Programme Fonctionnel RHYAD-002."
 
-  - title: "5. Annexes"
-    text: "À compléter après validation du contenu."
+  - title: "5. Parties prenantes"
+    bullets:
+      - "Maîtrise d’Ouvrage : CEVA Santé Animale"
+      - "Assistance à Maîtrise d’Ouvrage : RHYAD"
+      - "Équipe Projet : À compléter."
+      - "Bureaux d’Études : À compléter."
+      - "Entreprises : À compléter."
+
+  - title: "6. Organisation du projet"
+    text: >
+      Le projet est conduit selon la méthodologie documentaire RHYAD.
+
+      Les principales phases sont :
+    bullets:
+      - "Programmation."
+      - "Design Basis."
+      - "Avant-Projet Sommaire (APS)."
+      - "Avant-Projet Détaillé (APD)."
+      - "Projet (PRO)."
+      - "Dossier de Consultation des Entreprises (DCE)."
+      - "Études d’Exécution (EXE)."
+      - "VISA."
+      - "Dossier des Ouvrages Exécutés (DOE)."
+
+  - title: "7. Gouvernance"
+    text: >
+      Le pilotage du projet repose notamment sur :
+    bullets:
+      - "des réunions de pilotage ;"
+      - "des ateliers fonctionnels ;"
+      - "des revues techniques ;"
+      - "le suivi documentaire ;"
+      - "la gestion des décisions ;"
+      - "la gestion des risques ;"
+      - "le suivi des actions."
+
+  - title: "8. Livrables"
+    text: >
+      Les livrables du projet sont organisés conformément à l’arborescence documentaire RHYAD.
+
+      Les principaux documents sont :
+    bullets:
+      - "RHYAD-001 — Charte Projet."
+      - "RHYAD-001A — Analyse de Contexte et d’Adaptation du Projet (ACAP)."
+      - "RHYAD-002 — Programme Fonctionnel."
+      - "Design Basis."
+      - "Registres projet."
+      - "Dossiers d’études."
+
+  - title: "9. Gestion documentaire"
+    text: >
+      Tous les documents du projet sont :
+    bullets:
+      - "identifiés de manière unique ;"
+      - "soumis à un indice de révision ;"
+      - "approuvés avant diffusion ;"
+      - "archivés conformément au Plan Directeur Documentaire."
+      - "La gestion documentaire est décrite dans le document RHYAD-006 – Plan Directeur Documentaire."
+
+  - title: "10. Gestion des risques"
+    text: >
+      Les risques sont identifiés, analysés, suivis et mis à jour dans le RHYAD-004 – Registre
+      des Risques.
+
+  - title: "11. Gestion des décisions"
+    text: >
+      Les décisions prises au cours du projet sont consignées dans le RHYAD-005 – Registre des
+      Décisions.
+
+  - title: "12. Gestion des hypothèses"
+    text: >
+      Les hypothèses de conception sont enregistrées et suivies dans le DT-000 – Registre des
+      Hypothèses de Conception.
+
+      Toute hypothèse validée devient une donnée d’entrée pour les phases de conception.
+
+  - title: "13. Planning général"
+    text: >
+      Le projet est organisé selon les phases suivantes :
+    bullets:
+      - "1. Programmation."
+      - "2. Design Basis."
+      - "3. APS."
+      - "4. APD."
+      - "5. PRO."
+      - "6. DCE."
+      - "7. EXE."
+      - "8. VISA."
+      - "9. DOE."
+
+  - title: "14. Critères de réussite"
+    text: >
+      Le projet sera considéré comme réussi si :
+    bullets:
+      - "les besoins fonctionnels exprimés par CEVA sont satisfaits ;"
+      - "les exigences réglementaires sont respectées ;"
+      - "le Campus est évolutif et maintenable ;"
+      - "les interfaces entre disciplines sont maîtrisées ;"
+      - "les coûts et les délais sont maîtrisés ;"
+      - "les choix techniques sont adaptés au contexte local et justifiés par des analyses documentées."
+
+  - title: "15. Validation"
+    tables:
+      - title: "Validation"
+        headers:
+          - "Fonction"
+          - "Nom"
+          - "Date"
+          - "Signature"
+        rows:
+          - ["CEVA", "", "", ""]
+          - ["RHYAD", "", "", ""]
