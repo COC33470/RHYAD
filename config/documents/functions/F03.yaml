@@ -1,0 +1,257 @@
+reference: CEVA-RHYAD-100-F03
+title: Préparation des Matières Premières et Solutions
+revision: Rev1.0
+status: Validated
+chapters:
+- title: 1. Objet
+  blocks:
+  - type: text
+    text: La fonction F03 -- Préparation des Matières Premières et Solutions définit les exigences fonctionnelles relatives
+      aux opérations de préparation des matières premières, réactifs, milieux, solutions et composants nécessaires aux activités
+      de production du Campus CEVA RHYAD.
+  - type: text
+    text: Cette fonction décrit les besoins du projet sans préjuger des solutions techniques qui seront retenues lors des
+      phases de conception.
+  text: 'La fonction F03 -- Préparation des Matières Premières et Solutions définit les exigences fonctionnelles relatives
+    aux opérations de préparation des matières premières, réactifs, milieux, solutions et composants nécessaires aux activités
+    de production du Campus CEVA RHYAD.
+
+
+    Cette fonction décrit les besoins du projet sans préjuger des solutions techniques qui seront retenues lors des phases
+    de conception.'
+- title: 2. Objectifs
+  blocks:
+  - type: text
+    text: 'La fonction doit permettre :'
+  - type: list
+    items:
+    - la préparation des matières premières dans des conditions maîtrisées ;
+    - la préparation des solutions nécessaires aux procédés de production ;
+    - la prévention des contaminations croisées ;
+    - la traçabilité complète des opérations ;
+    - la sécurité des opérateurs ;
+    - la disponibilité des préparations pour la production.
+  text: 'La fonction doit permettre :'
+  bullets:
+  - la préparation des matières premières dans des conditions maîtrisées ;
+  - la préparation des solutions nécessaires aux procédés de production ;
+  - la prévention des contaminations croisées ;
+  - la traçabilité complète des opérations ;
+  - la sécurité des opérateurs ;
+  - la disponibilité des préparations pour la production.
+- title: 3. Périmètre
+  blocks:
+  - type: text
+    text: 'La fonction couvre notamment :'
+  - type: list
+    items:
+    - les zones de pesée ;
+    - les zones de préparation ;
+    - les salles de dissolution et de mélange ;
+    - les zones de préparation des milieux ;
+    - les zones de préparation des tampons ;
+    - les zones de stockage intermédiaire avant production ;
+    - les circulations internes associées.
+  - type: text
+    text: 'Sont exclus :'
+  - type: list
+    items:
+    - les opérations de production des autovaccins ;
+    - les procédures opératoires (SOP) ;
+    - les recettes de fabrication ;
+    - la gestion informatique des données de production.
+  text: 'La fonction couvre notamment :
+
+
+    Sont exclus :'
+  bullets:
+  - les zones de pesée ;
+  - les zones de préparation ;
+  - les salles de dissolution et de mélange ;
+  - les zones de préparation des milieux ;
+  - les zones de préparation des tampons ;
+  - les zones de stockage intermédiaire avant production ;
+  - les circulations internes associées.
+  - les opérations de production des autovaccins ;
+  - les procédures opératoires (SOP) ;
+  - les recettes de fabrication ;
+  - la gestion informatique des données de production.
+- title: 4. Exigences fonctionnelles
+- title: F03-01 -- Conditions environnementales
+  blocks:
+  - type: text
+    text: Les opérations de préparation doivent être réalisées dans des environnements compatibles avec les exigences GMP/BPF
+      et la nature des produits manipulés.
+  text: Les opérations de préparation doivent être réalisées dans des environnements compatibles avec les exigences GMP/BPF
+    et la nature des produits manipulés.
+- title: F03-02 -- Prévention des contaminations
+  blocks:
+  - type: text
+    text: L'organisation des locaux et des flux doit limiter les risques de contamination croisée entre produits, matières
+      et opérateurs.
+  text: L'organisation des locaux et des flux doit limiter les risques de contamination croisée entre produits, matières et
+    opérateurs.
+- title: F03-03 -- Pesée et dosage
+  blocks:
+  - type: text
+    text: Les espaces doivent permettre la réalisation des opérations de pesée, de dosage et de préparation dans des conditions
+      garantissant la précision et la reproductibilité.
+  text: Les espaces doivent permettre la réalisation des opérations de pesée, de dosage et de préparation dans des conditions
+    garantissant la précision et la reproductibilité.
+- title: F03-04 -- Traçabilité
+  blocks:
+  - type: text
+    text: 'Chaque préparation doit pouvoir être tracée :'
+  - type: list
+    items:
+    - matières utilisées ;
+    - opérateur ;
+    - équipements utilisés ;
+    - date et heure ;
+    - numéro de lot ;
+    - destination.
+  text: 'Chaque préparation doit pouvoir être tracée :'
+  bullets:
+  - matières utilisées ;
+  - opérateur ;
+  - équipements utilisés ;
+  - date et heure ;
+  - numéro de lot ;
+  - destination.
+- title: F03-05 -- Nettoyage
+  blocks:
+  - type: text
+    text: Les installations doivent permettre le nettoyage et, le cas échéant, la désinfection des équipements et des locaux
+      conformément aux exigences du procédé.
+  text: Les installations doivent permettre le nettoyage et, le cas échéant, la désinfection des équipements et des locaux
+    conformément aux exigences du procédé.
+- title: F03-06 -- Sécurité
+  blocks:
+  - type: text
+    text: 'Les installations doivent assurer :'
+  - type: list
+    items:
+    - la sécurité des opérateurs ;
+    - la maîtrise des risques chimiques et biologiques ;
+    - la protection des produits ;
+    - la protection de l'environnement de travail.
+  text: 'Les installations doivent assurer :'
+  bullets:
+  - la sécurité des opérateurs ;
+  - la maîtrise des risques chimiques et biologiques ;
+  - la protection des produits ;
+  - la protection de l'environnement de travail.
+- title: F03-07 -- Ergonomie
+  blocks:
+  - type: text
+    text: Les postes de travail doivent être conçus afin de limiter les contraintes physiques et de faciliter les opérations
+      de préparation.
+  text: Les postes de travail doivent être conçus afin de limiter les contraintes physiques et de faciliter les opérations
+    de préparation.
+- title: F03-08 -- Continuité d'activité
+  blocks:
+  - type: text
+    text: Les dispositions retenues doivent garantir la disponibilité des préparations nécessaires au maintien des activités
+      de production.
+  text: Les dispositions retenues doivent garantir la disponibilité des préparations nécessaires au maintien des activités
+    de production.
+- title: 5. Interfaces
+  blocks:
+  - type: text
+    text: 'La fonction F03 est en interface avec :'
+  - type: list
+    items:
+    - F02 --- Stockage des Matières Premières et Consommables
+    - F04 --- Production des Autovaccins
+    - F06 --- Gestion des Flux
+    - F07 --- Lavage, Stérilisation et Préparation des Équipements
+    - F08 --- Contrôle Qualité
+    - F09 --- Utilités Industrielles
+    - F10 --- Maintenance et Exploitation Technique
+    - F13 --- SI, Automatismes et Cybersécurité
+  text: 'La fonction F03 est en interface avec :'
+  bullets:
+  - F02 --- Stockage des Matières Premières et Consommables
+  - F04 --- Production des Autovaccins
+  - F06 --- Gestion des Flux
+  - F07 --- Lavage, Stérilisation et Préparation des Équipements
+  - F08 --- Contrôle Qualité
+  - F09 --- Utilités Industrielles
+  - F10 --- Maintenance et Exploitation Technique
+  - F13 --- SI, Automatismes et Cybersécurité
+- title: 6. Contraintes
+  blocks:
+  - type: text
+    text: 'Les études devront notamment prendre en compte :'
+  - type: list
+    items:
+    - les exigences GMP/BPF ;
+    - les contraintes de confinement ;
+    - les exigences de sécurité chimique et biologique ;
+    - les conditions environnementales requises ;
+    - la traçabilité des préparations ;
+    - les contraintes liées au nettoyage et à la décontamination.
+  text: 'Les études devront notamment prendre en compte :'
+  bullets:
+  - les exigences GMP/BPF ;
+  - les contraintes de confinement ;
+  - les exigences de sécurité chimique et biologique ;
+  - les conditions environnementales requises ;
+  - la traçabilité des préparations ;
+  - les contraintes liées au nettoyage et à la décontamination.
+- title: 7. Critères de performance
+  blocks:
+  - type: text
+    text: 'La fonction devra permettre :'
+  - type: list
+    items:
+    - une préparation fiable et reproductible ;
+    - la maîtrise des contaminations ;
+    - une traçabilité complète des opérations ;
+    - un niveau élevé de sécurité pour les opérateurs ;
+    - une exploitation simple et efficace ;
+    - une évolutivité compatible avec les développements futurs du Campus.
+  text: 'La fonction devra permettre :'
+  bullets:
+  - une préparation fiable et reproductible ;
+  - la maîtrise des contaminations ;
+  - une traçabilité complète des opérations ;
+  - un niveau élevé de sécurité pour les opérateurs ;
+  - une exploitation simple et efficace ;
+  - une évolutivité compatible avec les développements futurs du Campus.
+- title: 8. Documents associés
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-001A-ACAP
+    - CEVA-RHYAD-200-DT-F03-01 et suivants
+    - CEVA-RHYAD-300-DB01 --- Process
+    - CEVA-RHYAD-300-DB03 --- CVC / HVAC
+    - CEVA-RHYAD-300-DB04 --- Utilités
+    - CEVA-RHYAD-500-REG04 --- Registre des Hypothèses
+    - CEVA-RHYAD-500-REG05 --- Registre des Interfaces
+  bullets:
+  - CEVA-RHYAD-001A-ACAP
+  - CEVA-RHYAD-200-DT-F03-01 et suivants
+  - CEVA-RHYAD-300-DB01 --- Process
+  - CEVA-RHYAD-300-DB03 --- CVC / HVAC
+  - CEVA-RHYAD-300-DB04 --- Utilités
+  - CEVA-RHYAD-500-REG04 --- Registre des Hypothèses
+  - CEVA-RHYAD-500-REG05 --- Registre des Interfaces
+- title: 9. Critères de validation
+  blocks:
+  - type: text
+    text: 'La fonction F03 sera considérée comme validée lorsque :'
+  - type: list
+    items:
+    - les besoins fonctionnels seront approuvés par le Maître d'Ouvrage ;
+    - les interfaces auront été identifiées ;
+    - les données techniques nécessaires auront été collectées ;
+    - les hypothèses de conception auront été enregistrées dans les DT associés.
+  text: 'La fonction F03 sera considérée comme validée lorsque :'
+  bullets:
+  - les besoins fonctionnels seront approuvés par le Maître d'Ouvrage ;
+  - les interfaces auront été identifiées ;
+  - les données techniques nécessaires auront été collectées ;
+  - les hypothèses de conception auront été enregistrées dans les DT associés.
+- title: Fin du document

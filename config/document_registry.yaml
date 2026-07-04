@@ -77,3 +77,11 @@ documents:
     status: "Validated"
     family: "100"
     source: "config/documents/functions/F02.yaml"
+
+  - code: "F03"
+    official_code: "CEVA-RHYAD-100-F03"
+    title: "Préparation des Matières Premières et Solutions"
+    revision: "Rev1.0"
+    status: "Validated"
+    family: "100"
+    source: "config/documents/functions/F03.yaml"
