@@ -160,6 +160,86 @@ class RhyadCliTest(unittest.TestCase):
             self.assertIn("OK config/document_registry.yaml", output)
             self.assertIn("OK tests: OK", output)
 
+    def test_impact_prints_impacted_documents_and_traceability_origin(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            _write_cli_fixture(root)
+            (root / "knowledge" / "traceability.yaml").write_text(
+                "\n".join(
+                    [
+                        "traceability:",
+                        "  - source: D-014",
+                        "    destination: CEVA-RHYAD-002-PF",
+                        "    relation: decision",
+                        "  - source: D-014",
+                        "    destination: CEVA-RHYAD-100-F01",
+                        "    relation: decision",
+                    ]
+                ),
+                encoding="utf-8",
+            )
+            stream = io.StringIO()
+
+            exit_code = rhyad.command_impact("D-014", root=root, stream=stream)
+
+            self.assertEqual(exit_code, 0)
+            output = stream.getvalue()
+            self.assertIn("Objet analysé: D-014", output)
+            self.assertIn("CEVA-RHYAD-002-PF (decision)", output)
+            self.assertIn("CEVA-RHYAD-100-F01 (decision)", output)
+            self.assertIn("Nombre d'impacts: 2", output)
+            self.assertIn("Origine des relations:", output)
+
+    def test_dashboard_prints_project_documents_knowledge_tests_and_latest_generation(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            _write_cli_fixture(root)
+            (root / "knowledge" / "decisions.yaml").write_text(
+                "decisions:\n  - id: D-001\n", encoding="utf-8"
+            )
+            (root / "knowledge" / "risks.yaml").write_text(
+                "risks:\n  - id: R-001\n  - id: R-002\n", encoding="utf-8"
+            )
+            (root / "knowledge" / "assumptions.yaml").write_text("assumptions: []\n", encoding="utf-8")
+            (root / "knowledge" / "requirements.yaml").write_text(
+                "requirements:\n  - id: REQ-001\n", encoding="utf-8"
+            )
+            (root / "knowledge" / "interfaces.yaml").write_text("interfaces: []\n", encoding="utf-8")
+            docx = root / "output" / "docx" / "000" / "CEVA-RHYAD-002-PF_Rev0.1.docx"
+            pdf = root / "output" / "pdf" / "000" / "CEVA-RHYAD-002-PF_Rev0.1.pdf"
+            docx.parent.mkdir(parents=True, exist_ok=True)
+            pdf.parent.mkdir(parents=True, exist_ok=True)
+            docx.write_text("docx", encoding="utf-8")
+            pdf.write_text("pdf", encoding="utf-8")
+            stream = io.StringIO()
+
+            def fake_runner(command, timeout=None):
+                if command == ["python3", "-m", "unittest", "discover"]:
+                    return rhyad.CommandResult(0, "Ran 25 tests in 0.1s\n\nOK")
+                if command == ["git", "rev-parse", "--abbrev-ref", "HEAD"]:
+                    return rhyad.CommandResult(0, "develop")
+                if command == ["git", "log", "-1", "--pretty=%h %s"]:
+                    return rhyad.CommandResult(0, "abc1234 Test commit")
+                return rhyad.CommandResult(1, "unexpected")
+
+            exit_code = rhyad.command_dashboard(root=root, runner=fake_runner, stream=stream)
+
+            self.assertEqual(exit_code, 0)
+            output = stream.getvalue()
+            self.assertIn("Projet: Test Project", output)
+            self.assertIn("Client: Test Client", output)
+            self.assertIn("Branche Git: develop", output)
+            self.assertIn("Dernier commit: abc1234 Test commit", output)
+            self.assertIn("- nombre total: 2", output)
+            self.assertIn("- générés: 1", output)
+            self.assertIn("- en attente: 1", output)
+            self.assertIn("- décisions: 1", output)
+            self.assertIn("- risques: 2", output)
+            self.assertIn("- exigences: 1", output)
+            self.assertIn("- nombre: 25", output)
+            self.assertIn("- résultat: OK", output)
+            self.assertIn("Dernière génération:", output)
+
 
 if __name__ == "__main__":
     unittest.main()

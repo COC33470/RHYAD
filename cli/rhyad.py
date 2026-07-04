@@ -2,7 +2,10 @@ import shutil
 import subprocess
 import sys
 from dataclasses import dataclass
+from datetime import datetime
 from pathlib import Path
+
+from engine.core.impact_engine import get_impacts
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -23,6 +26,8 @@ Usage:
   rhyad validate
   rhyad list
   rhyad doctor
+  rhyad impact <object>
+  rhyad dashboard
   rhyad help
 
 Compatibility:
@@ -32,6 +37,8 @@ Compatibility:
   python3 scripts/rhyad.py validate
   python3 scripts/rhyad.py list
   python3 scripts/rhyad.py doctor
+  python3 scripts/rhyad.py impact D-014
+  python3 scripts/rhyad.py dashboard
 """
 
 
@@ -133,6 +140,89 @@ def knowledge_file_count(root):
     return sum(1 for path in knowledge_dir.iterdir() if path.is_file())
 
 
+def count_yaml_list_entries(path, key):
+    if not path.exists():
+        return 0
+
+    lines = path.read_text(encoding="utf-8").splitlines()
+    in_section = False
+    count = 0
+
+    for raw_line in lines:
+        stripped = raw_line.strip()
+        if stripped == f"{key}: []":
+            return 0
+        if stripped == f"{key}:":
+            in_section = True
+            continue
+        if in_section and raw_line and not raw_line.startswith(" "):
+            break
+        if in_section and raw_line.startswith("  - "):
+            count += 1
+
+    return count
+
+
+def knowledge_counts(root):
+    knowledge_dir = root / "knowledge"
+    return {
+        "decisions": count_yaml_list_entries(knowledge_dir / "decisions.yaml", "decisions"),
+        "risks": count_yaml_list_entries(knowledge_dir / "risks.yaml", "risks"),
+        "assumptions": count_yaml_list_entries(knowledge_dir / "assumptions.yaml", "assumptions"),
+        "requirements": count_yaml_list_entries(knowledge_dir / "requirements.yaml", "requirements"),
+        "interfaces": count_yaml_list_entries(knowledge_dir / "interfaces.yaml", "interfaces"),
+    }
+
+
+def generated_document_count(root, registry):
+    generated = 0
+    for document in registry:
+        official_code = document.get("official_code")
+        revision = document.get("revision")
+        family = document.get("family")
+        if not official_code or not revision or not family:
+            continue
+
+        stem = f"{official_code}_{revision}"
+        docx_path = root / "output" / "docx" / family / f"{stem}.docx"
+        pdf_path = root / "output" / "pdf" / family / f"{stem}.pdf"
+        if docx_path.exists() and pdf_path.exists():
+            generated += 1
+
+    return generated
+
+
+def latest_generation(root):
+    output_dir = root / "output"
+    if not output_dir.exists():
+        return "Aucune"
+
+    files = [path for path in output_dir.rglob("*") if path.is_file()]
+    if not files:
+        return "Aucune"
+
+    latest = max(files, key=lambda path: path.stat().st_mtime)
+    timestamp = datetime.fromtimestamp(latest.stat().st_mtime).isoformat(timespec="seconds")
+    return f"{timestamp} - {latest.relative_to(root)}"
+
+
+def test_summary(runner=None):
+    if runner is None:
+        runner = run_command
+
+    result = runner(["python3", "-m", "unittest", "discover"], timeout=60)
+    count = "unknown"
+    for line in result.output.splitlines():
+        stripped = line.strip()
+        if stripped.startswith("Ran ") and " tests" in stripped:
+            count = stripped.split()[1]
+            break
+    return {
+        "count": count,
+        "result": "OK" if result.returncode == 0 else "FAILED",
+    }
+
+
 def run_command(command, timeout=None):
     try:
         result = subprocess.run(
@@ -212,6 +302,51 @@ def command_list(root=ROOT, stream=sys.stdout):
     return 0
 
 
+def command_impact(obj, root=ROOT, stream=sys.stdout):
+    result = get_impacts(obj, root / "knowledge", root / "config" / "document_registry.yaml")
+
+    print(f"Objet analysé: {result['source']}", file=stream)
+    print("Documents impactés:", file=stream)
+    if result["impacts"]:
+        for impact in result["impacts"]:
+            print(f"- {impact['destination']} ({impact['relation']})", file=stream)
+    else:
+        print("- Aucun impact identifié", file=stream)
+    print(f"Nombre d'impacts: {result['impact_count']}", file=stream)
+    print(f"Origine des relations: {result['traceability_path']}", file=stream)
+    return 0
+
+
+def command_dashboard(root=ROOT, runner=run_command, stream=sys.stdout):
+    project_config = load_project_summary(root / "config" / "project.yaml")
+    registry = load_registry_documents(root / "config" / "document_registry.yaml")
+    project = project_config.get("project", {})
+    generated = generated_document_count(root, registry)
+    tests = test_summary(runner=runner)
+    counts = knowledge_counts(root)
+
+    print("RHYAD dashboard", file=stream)
+    print(f"Projet: {project.get('name', '')}", file=stream)
+    print(f"Client: {project.get('client', '')}", file=stream)
+    print(f"Branche Git: {_git_output(['rev-parse', '--abbrev-ref', 'HEAD'], runner=runner)}", file=stream)
+    print(f"Dernier commit: {_git_output(['log', '-1', '--pretty=%h %s'], runner=runner)}", file=stream)
+    print("Documents:", file=stream)
+    print(f"- nombre total: {len(registry)}", file=stream)
+    print(f"- générés: {generated}", file=stream)
+    print(f"- en attente: {max(len(registry) - generated, 0)}", file=stream)
+    print("Knowledge Core:", file=stream)
+    print(f"- décisions: {counts['decisions']}", file=stream)
+    print(f"- risques: {counts['risks']}", file=stream)
+    print(f"- hypothèses: {counts['assumptions']}", file=stream)
+    print(f"- exigences: {counts['requirements']}", file=stream)
+    print(f"- interfaces: {counts['interfaces']}", file=stream)
+    print("Tests:", file=stream)
+    print(f"- nombre: {tests['count']}", file=stream)
+    print(f"- résultat: {tests['result']}", file=stream)
+    print(f"Dernière génération: {latest_generation(root)}", file=stream)
+    return 0
+
+
 def _check_path(label, path):
     return label, path.exists(), str(path)
 
@@ -268,6 +403,13 @@ def main(argv=None):
         return command_list()
     if command == "doctor":
         return command_doctor()
+    if command == "impact":
+        if len(argv) != 2:
+            print("Usage: rhyad impact <object>")
+            return 2
+        return command_impact(argv[1])
+    if command == "dashboard":
+        return command_dashboard()
 
     print(f"Unknown command: {command}")
     print("Run: rhyad help")

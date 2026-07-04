@@ -169,6 +169,8 @@ rhyad generate 002
 rhyad import 003
 rhyad validate
 rhyad doctor
+rhyad impact D-014
+rhyad dashboard
 ```
 
 Sans alias, utiliser la forme compatible :
@@ -180,6 +182,8 @@ python3 scripts/rhyad.py generate 002
 python3 scripts/rhyad.py import 003
 python3 scripts/rhyad.py validate
 python3 scripts/rhyad.py doctor
+python3 scripts/rhyad.py impact D-014
+python3 scripts/rhyad.py dashboard
 ```
 
 Les scripts historiques restent disponibles. Générer le Programme Fonctionnel :
@@ -245,6 +249,40 @@ python3 scripts/import_validated.py 002
 python3 scripts/main.py 002
 python3 -m unittest discover
 ```
+
+## Analyse d'impacts documentaires
+
+Le moteur d'analyse d'impacts lit exclusivement les relations déclarées dans `knowledge/traceability.yaml`. Aucune relation documentaire n'est codée en dur.
+
+La commande :
+
+```bash
+python3 scripts/rhyad.py impact D-014
+```
+
+affiche :
+
+- l'objet analysé ;
+- les documents impactés ;
+- le nombre d'impacts ;
+- l'origine des relations.
+
+Exemples :
+
+```bash
+python3 scripts/rhyad.py impact D-014
+python3 scripts/rhyad.py impact CEVA-RHYAD-300-DB03
+```
+
+L'API interne `get_impacts()` est disponible dans `engine/core/impact_engine.py`. Elle prépare les futures commandes de propagation comme `rhyad meeting` et `rhyad update`, sans modifier les documents existants.
+
+Le tableau de bord projet est disponible avec :
+
+```bash
+python3 scripts/rhyad.py dashboard
+```
+
+Il affiche le projet, le client, l'état Git, les documents générés ou en attente, les volumes du Knowledge Core, le résultat des tests et la dernière génération détectée dans `output/`.
 
 Lancer les tests :
 
