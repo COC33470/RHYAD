@@ -167,6 +167,7 @@ rhyad status
 rhyad list
 rhyad generate 002
 rhyad import 003
+rhyad paste 003
 rhyad validate
 rhyad doctor
 rhyad impact D-014
@@ -182,6 +183,7 @@ python3 scripts/rhyad.py status
 python3 scripts/rhyad.py list
 python3 scripts/rhyad.py generate 002
 python3 scripts/rhyad.py import 003
+python3 scripts/rhyad.py paste 003
 python3 scripts/rhyad.py validate
 python3 scripts/rhyad.py doctor
 python3 scripts/rhyad.py impact D-014
@@ -245,6 +247,27 @@ python3 scripts/rhyad.py import DB01
 ```
 
 Le Markdown validé est la source d'entrée. Le script ne rédige pas de contenu : si une information obligatoire est absente, il utilise le référentiel officiel lorsque c'est possible ou affiche une erreur explicite.
+
+### RHYAD Paste
+
+La commande `paste` permet d'importer un contenu validé directement depuis le presse-papiers, sans créer manuellement le fichier Markdown.
+
+Exemple :
+
+```bash
+python3 scripts/rhyad.py paste 003
+```
+
+La CLI affiche le document cible, puis attend le collage du contenu validé. Terminer la saisie avec `Ctrl+D` sur macOS/Linux, ou `Ctrl+Z` puis Entrée sur Windows.
+
+La commande écrit automatiquement `inbox/validated/003.md`, puis réutilise le pipeline existant :
+
+- conversion Markdown vers YAML RHYAD ;
+- génération DOCX ;
+- génération PDF ;
+- exécution des tests ;
+- commit Git ;
+- archivage du Markdown traité.
 
 Les commandes historiques restent disponibles :
 

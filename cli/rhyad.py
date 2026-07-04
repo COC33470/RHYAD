@@ -1,3 +1,4 @@
+import re
 import shutil
 import subprocess
 import sys
@@ -24,6 +25,7 @@ Usage:
   rhyad status
   rhyad generate <document>
   rhyad import <document>
+  rhyad paste <document>
   rhyad validate
   rhyad list
   rhyad doctor
@@ -37,6 +39,7 @@ Compatibility:
   python3 scripts/rhyad.py status
   python3 scripts/rhyad.py generate 002
   python3 scripts/rhyad.py import 003
+  python3 scripts/rhyad.py paste 003
   python3 scripts/rhyad.py validate
   python3 scripts/rhyad.py list
   python3 scripts/rhyad.py doctor
@@ -112,6 +115,30 @@ def load_registry_documents(path):
         documents.append(current)
 
     return documents
+
+
+def _normalize_document_lookup(value):
+    code = str(value).strip().upper()
+
+    for prefix in ("DB", "REG", "DT"):
+        match = re.fullmatch(rf"{prefix}[-_ ]?(\d{{1,3}})", code)
+        if match:
+            return f"{prefix}-{int(match.group(1)):03d}"
+
+    return code
+
+
+def find_registry_entry(root, document):
+    requested_code = str(document).strip().upper()
+    normalized_code = _normalize_document_lookup(requested_code)
+    accepted_codes = {requested_code, normalized_code}
+
+    for entry in load_registry_documents(root / "config" / "document_registry.yaml"):
+        entry_code = str(entry.get("code", "")).strip().upper()
+        if entry_code in accepted_codes:
+            return entry
+
+    return None
 
 
 def load_repository_titles(path):
@@ -257,6 +284,109 @@ def _test_status(runner=run_command):
 def _print_process_result(result, stream):
     if result.output:
         print(result.output, file=stream)
+    return result.returncode
+
+
+def _extract_prefixed_value(output, prefix):
+    lines = output.splitlines()
+    for index, line in enumerate(lines):
+        if line.strip() == prefix:
+            for following in lines[index + 1 :]:
+                if following.strip():
+                    return following.strip()
+            return ""
+        if line.startswith(prefix):
+            return line[len(prefix) :].strip()
+    return ""
+
+
+def summarize_import_output(output, returncode=0):
+    docx_path = _extract_prefixed_value(output, "DOCX produit:")
+    pdf_path = _extract_prefixed_value(output, "PDF produit:")
+
+    tests = "Non disponible"
+    test_match = re.search(r"Ran\s+(\d+)\s+tests?", output)
+    if test_match:
+        tests = f"{test_match.group(1)} {'OK' if re.search(r'(?m)^OK$', output) else 'FAILED'}"
+    elif re.search(r"(?m)^OK$", output):
+        tests = "OK"
+
+    commit = "Non créé"
+    commit_match = re.search(r"\[[^\]\n]+\s+([0-9a-f]{7,40})\]", output)
+    if commit_match:
+        commit = commit_match.group(1)
+    elif returncode == 0:
+        commit_message = _extract_prefixed_value(output, "Commit demandé:")
+        if commit_message:
+            commit = commit_message
+
+    return {
+        "docx": "OK" if docx_path else ("FAILED" if returncode else "Non confirmé"),
+        "pdf": "OK" if pdf_path else ("FAILED" if returncode else "Non confirmé"),
+        "tests": tests,
+        "commit": commit,
+    }
+
+
+def command_paste(document, root=ROOT, stdin=sys.stdin, runner=run_command, stream=sys.stdout):
+    registry_entry = find_registry_entry(root, document)
+    if not registry_entry:
+        print(f"Document inconnu dans config/document_registry.yaml: {document}", file=stream)
+        return 1
+
+    document_code = str(registry_entry.get("code", document)).strip().upper()
+    official_code = registry_entry.get("official_code", document_code)
+
+    print("-" * 50, file=stream)
+    print("RHYAD Import interactif", file=stream)
+    print("", file=stream)
+    print("Document :", file=stream)
+    print(official_code, file=stream)
+    print("", file=stream)
+    print("Collez maintenant le contenu validé.", file=stream)
+    print("", file=stream)
+    print("Terminez par :", file=stream)
+    print("Ctrl+D (macOS/Linux)", file=stream)
+    print("Ctrl+Z puis Entrée (Windows)", file=stream)
+    print("-" * 50, file=stream)
+
+    content = stdin.read()
+    if not content.strip():
+        print("Erreur: contenu vide.", file=stream)
+        return 1
+
+    validated_dir = root / "inbox" / "validated"
+    validated_dir.mkdir(parents=True, exist_ok=True)
+    markdown_path = validated_dir / f"{document_code}.md"
+    markdown_path.write_text(content, encoding="utf-8")
+
+    result = runner(["python3", "scripts/import_validated.py", document_code])
+    summary = summarize_import_output(result.output, result.returncode)
+
+    print("", file=stream)
+    print("Document :", file=stream)
+    print(official_code, file=stream)
+    print("", file=stream)
+    print("Lignes importées :", file=stream)
+    print(len(content.splitlines()), file=stream)
+    print("", file=stream)
+    print("DOCX :", file=stream)
+    print(summary["docx"], file=stream)
+    print("", file=stream)
+    print("PDF :", file=stream)
+    print(summary["pdf"], file=stream)
+    print("", file=stream)
+    print("Tests :", file=stream)
+    print(summary["tests"], file=stream)
+    print("", file=stream)
+    print("Commit :", file=stream)
+    print(summary["commit"], file=stream)
+
+    if result.returncode != 0 and result.output:
+        print("", file=stream)
+        print("Sortie pipeline :", file=stream)
+        print(result.output, file=stream)
+
     return result.returncode
 
 
@@ -434,6 +564,11 @@ def main(argv=None):
             print("Usage: rhyad import <document>")
             return 2
         return command_import(argv[1])
+    if command == "paste":
+        if len(argv) != 2:
+            print("Usage: rhyad paste <document>")
+            return 2
+        return command_paste(argv[1])
     if command == "validate":
         return command_validate()
     if command == "list":

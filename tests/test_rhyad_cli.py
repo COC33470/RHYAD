@@ -69,6 +69,25 @@ def _write_cli_fixture(root):
     (root / "output").mkdir()
 
 
+def _append_registry_document(root, code, official_code, family="000"):
+    path = root / "config" / "document_registry.yaml"
+    source_code = str(code).strip("'\"")
+    with open(path, "a", encoding="utf-8") as f:
+        f.write(
+            "\n".join(
+                [
+                    "",
+                    f"  - code: {code}",
+                    f"    official_code: {official_code}",
+                    "    revision: Rev0.1",
+                    f"    family: '{family}'",
+                    f"    source: config/documents/{source_code}.yaml",
+                    "",
+                ]
+            )
+        )
+
+
 class RhyadCliTest(unittest.TestCase):
     def test_load_project_summary_and_registry_documents(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -110,6 +129,103 @@ class RhyadCliTest(unittest.TestCase):
         self.assertEqual(commands[0], ["python3", "scripts/main.py", "002"])
         self.assertEqual(commands[1], ["python3", "scripts/import_validated.py", "003"])
         self.assertEqual(commands[2], ["python3", "-m", "unittest", "discover"])
+
+    def test_paste_rejects_unknown_document(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            _write_cli_fixture(root)
+            stream = io.StringIO()
+            commands = []
+
+            def fake_runner(command, timeout=None):
+                commands.append(command)
+                return rhyad.CommandResult(0, "unexpected")
+
+            exit_code = rhyad.command_paste(
+                "003",
+                root=root,
+                stdin=io.StringIO("# Glossaire\n"),
+                runner=fake_runner,
+                stream=stream,
+            )
+
+            self.assertEqual(exit_code, 1)
+            self.assertEqual(commands, [])
+            self.assertFalse((root / "inbox" / "validated" / "003.md").exists())
+            self.assertIn("Document inconnu", stream.getvalue())
+
+    def test_paste_rejects_empty_import(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            _write_cli_fixture(root)
+            _append_registry_document(root, "'003'", "CEVA-RHYAD-003-GLOSSAIRE")
+            stream = io.StringIO()
+            commands = []
+
+            def fake_runner(command, timeout=None):
+                commands.append(command)
+                return rhyad.CommandResult(0, "unexpected")
+
+            exit_code = rhyad.command_paste(
+                "003",
+                root=root,
+                stdin=io.StringIO("  \n\n"),
+                runner=fake_runner,
+                stream=stream,
+            )
+
+            self.assertEqual(exit_code, 1)
+            self.assertEqual(commands, [])
+            self.assertFalse((root / "inbox" / "validated" / "003.md").exists())
+            self.assertIn("Erreur: contenu vide.", stream.getvalue())
+
+    def test_paste_creates_markdown_launches_pipeline_and_prints_summary(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            _write_cli_fixture(root)
+            _append_registry_document(root, "'003'", "CEVA-RHYAD-003-GLOSSAIRE")
+            stream = io.StringIO()
+            commands = []
+            markdown = "# Glossaire\n\nTexte validé.\n"
+
+            def fake_runner(command, timeout=None):
+                commands.append(command)
+                return rhyad.CommandResult(
+                    0,
+                    "\n".join(
+                        [
+                            "YAML généré: config/documents/003.yaml",
+                            "DOCX produit: output/docx/000/CEVA-RHYAD-003-GLOSSAIRE_Rev0.1.docx",
+                            "PDF produit: output/pdf/000/CEVA-RHYAD-003-GLOSSAIRE_Rev0.1.pdf",
+                            "Résultat tests:",
+                            "Ran 36 tests in 0.1s",
+                            "",
+                            "OK",
+                            "Sortie Git:",
+                            "[main abc1234] Integrate validated 003",
+                        ]
+                    ),
+                )
+
+            exit_code = rhyad.command_paste(
+                "003",
+                root=root,
+                stdin=io.StringIO(markdown),
+                runner=fake_runner,
+                stream=stream,
+            )
+
+            self.assertEqual(exit_code, 0)
+            self.assertEqual(commands, [["python3", "scripts/import_validated.py", "003"]])
+            self.assertEqual((root / "inbox" / "validated" / "003.md").read_text(encoding="utf-8"), markdown)
+            output = stream.getvalue()
+            self.assertIn("RHYAD Import interactif", output)
+            self.assertIn("CEVA-RHYAD-003-GLOSSAIRE", output)
+            self.assertIn("Lignes importées :\n3", output)
+            self.assertIn("DOCX :\nOK", output)
+            self.assertIn("PDF :\nOK", output)
+            self.assertIn("Tests :\n36 OK", output)
+            self.assertIn("Commit :\nabc1234", output)
 
     def test_status_prints_project_git_registry_knowledge_and_tests(self):
         with tempfile.TemporaryDirectory() as tmp:
