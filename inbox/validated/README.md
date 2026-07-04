@@ -45,5 +45,6 @@ Règles :
 - Les titres Markdown deviennent des chapitres YAML.
 - Les listes Markdown deviennent des `bullets`.
 - Les tableaux Markdown simples deviennent des `tables`.
-- Le script ne supprime jamais les fichiers de ce dossier.
+- Après succès, le Markdown est déplacé dans `inbox/processed/`.
+- En cas d'erreur, le Markdown est déplacé dans `inbox/rejected/` avec un fichier `.log`.
 - Si une métadonnée n’est pas présente, le script utilise le code demandé ou le titre du référentiel officiel lorsque c’est possible.

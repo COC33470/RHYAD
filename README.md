@@ -160,17 +160,19 @@ Générer la fonction F01 :
 python3 scripts/main.py F01
 ```
 
-## Import de contenu validé
+## Production documentaire automatisée
 
-Un contenu validé peut être déposé au format Markdown dans `inbox/validated/`, puis importé en une seule commande.
+La chaîne automatisée permet de produire un document validé à partir d'un unique fichier Markdown.
 
-Exemple :
+L'utilisateur dépose le contenu validé dans `inbox/validated/` :
 
 ```text
 inbox/validated/002.md
+inbox/validated/F01.md
+inbox/validated/DB01.md
 ```
 
-Commande :
+Puis lance une seule commande :
 
 ```bash
 python3 scripts/import_validated.py 002
@@ -179,17 +181,35 @@ python3 scripts/import_validated.py 002
 Le script :
 
 - lit `inbox/validated/<CODE>.md` ;
-- extrait `reference`, `title`, `subtitle`, `revision` et `status` lorsque ces métadonnées sont présentes ;
+- identifie le code, la référence, le titre, la révision, le statut et la famille documentaire depuis le Markdown ou `config/document_registry.yaml` lorsque l'information y existe ;
 - convertit les titres Markdown en chapitres YAML ;
 - convertit les listes Markdown en `bullets` YAML ;
 - convertit les tableaux Markdown simples en `tables` YAML ;
-- écrit `config/documents/<CODE>.yaml` ;
+- écrit ou remplace le YAML source dans `config/documents/` ;
 - exécute `python3 scripts/main.py <CODE>` ;
 - exécute `python3 -m unittest discover` ;
 - vérifie les fichiers DOCX/PDF produits ;
-- exécute `git add .` puis `git commit -m "Integrate validated <CODE> content"`.
+- déplace le Markdown traité dans `inbox/processed/` ;
+- déplace le Markdown rejeté dans `inbox/rejected/` avec un fichier `.log` en cas d'erreur ;
+- journalise l'import dans `logs/import.log` ;
+- exécute `git add .` puis `git commit -m "Integrate validated <CODE>"`.
 
-Le fichier Markdown reste dans `inbox/validated/` après import. Le Markdown validé est la source de vérité ; si une information obligatoire est absente, le script utilise le référentiel officiel lorsque c’est possible ou affiche une erreur explicite.
+Exemples :
+
+```bash
+python3 scripts/import_validated.py 003
+python3 scripts/import_validated.py F01
+python3 scripts/import_validated.py DB01
+```
+
+Le Markdown validé est la source d'entrée. Le script ne rédige pas de contenu : si une information obligatoire est absente, il utilise le référentiel officiel lorsque c'est possible ou affiche une erreur explicite.
+
+Les commandes historiques restent disponibles :
+
+```bash
+python3 scripts/main.py 002
+python3 -m unittest discover
+```
 
 Lancer les tests :
 
