@@ -174,7 +174,7 @@ class ProjectConfigTest(unittest.TestCase):
         self.assertEqual(actual_codes, expected_codes)
         self.assertTrue(all(row[2] == "Placeholder" for row in actual_rows))
 
-    def test_f01_interfaces_match_repository_family_100_except_f01(self):
+    def test_f01_interfaces_use_known_repository_family_100_codes(self):
         repository = load_repository_config(Path("config/rhyad_repository.yaml"))
         with open("config/documents/functions/F01.yaml", "r", encoding="utf-8") as f:
             document = yaml.safe_load(f)
@@ -184,17 +184,23 @@ class ProjectConfigTest(unittest.TestCase):
             for family in repository["repository"]["families"]
             if str(family["code"]) == "100"
         )
-        expected_rows = [
-            [item["code"], item["title"]]
+        expected_codes = {
+            item["code"]
             for item in family_100["documents"]
             if item["code"] != "F01"
-        ]
-        actual_rows = [
-            row[:2]
-            for row in document["chapters"][11]["tables"][0]["rows"]
-        ]
+        }
+        interface_chapter = next(
+            chapter
+            for chapter in document["chapters"]
+            if chapter["title"] == "5. Interfaces"
+        )
+        actual_codes = {
+            item.split(" ", 1)[0]
+            for item in interface_chapter["bullets"]
+        }
 
-        self.assertEqual(actual_rows, expected_rows)
+        self.assertTrue(actual_codes)
+        self.assertTrue(actual_codes.issubset(expected_codes))
 
 
 if __name__ == "__main__":

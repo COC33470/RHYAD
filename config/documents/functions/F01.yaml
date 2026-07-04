@@ -1,190 +1,127 @@
 reference: CEVA-RHYAD-100-F01
-title: F01 — Réception et Expédition
-subtitle: Chapitre fonctionnel - Révision A1.0
-revision: "Rev0.1"
-
+title: Réception et Expédition
+revision: Rev1.0
+status: Validated
 chapters:
-  - title: "1. Objet de la fonction"
-    text: >
-      Décrire le rôle attendu de la fonction Réception et Expédition dans le Programme
-      Fonctionnel RHYAD. Le contenu détaillé, les dimensionnements, les capacités, les volumes,
-      les surfaces, les effectifs et les flux quantifiés restent à confirmer.
+- title: 1. Objet
+  text: 'La fonction F01 -- Réception et Expédition définit les exigences
 
-  - title: "2. Périmètre fonctionnel"
-    text: >
-      Le périmètre fonctionnel couvre les opérations de réception, contrôle d'entrée,
-      orientation, préparation d'expédition et remise aux circuits aval ou externes. Les limites
-      exactes entre cette fonction et les autres fonctions du programme sont à confirmer.
+    fonctionnelles relatives à la réception, au contrôle, au stockage
 
-  - title: "3. Activités couvertes"
-    text: "Les activités ci-dessous structurent le périmètre à instruire, sans constituer une procédure d'exploitation."
-    tables:
-      - title: "Activités couvertes"
-        headers:
-          - "Activité"
-          - "Description fonctionnelle"
-          - "Données à confirmer"
-        rows:
-          - ["Réception physique", "Accueil et prise en compte des flux entrants.", "Typologie des flux, volumes, fréquences et contraintes de contrôle."]
-          - ["Contrôle d'entrée", "Vérification fonctionnelle des éléments reçus avant orientation.", "Critères de contrôle, responsabilités et points d'arrêt."]
-          - ["Identification et orientation", "Affectation des flux vers les fonctions ou zones concernées.", "Règles d'identification, traçabilité et interfaces système."]
-          - ["Préparation des expéditions", "Regroupement et mise à disposition des flux sortants.", "Conditionnement, documents associés et contraintes de départ."]
-          - ["Remise au transport ou circuit aval", "Transfert vers un destinataire interne ou externe.", "Responsabilités, horaires, quais, moyens et preuves de transfert."]
+    temporaire et à l''expédition des matières, consommables, équipements et
 
-  - title: "4. Intrants / extrants"
-    text: >
-      Les intrants et extrants de la fonction doivent être confirmés lors de la consolidation du
-      programme fonctionnel. Aucune valeur de volume, capacité ou fréquence n'est validée à ce stade.
-    tables:
-      - title: "Flux entrants / sortants"
-        headers:
-          - "Sens"
-          - "Flux"
-          - "Origine / destination"
-          - "Données à confirmer"
-        rows:
-          - ["Entrant", "Matières premières et consommables", "Origine externe ou fonction amont à confirmer.", "Typologie, volumes, conditions de réception."]
-          - ["Entrant", "Équipements, pièces ou supports logistiques", "Origine externe ou interne à confirmer.", "Conditionnement, contrôle, destination."]
-          - ["Sortant", "Produits ou éléments prêts à expédier", "Destination externe ou fonction aval à confirmer.", "Documents, conditions de départ, responsabilités."]
-          - ["Sortant", "Flux documentaires associés", "Destinataires internes ou externes à confirmer.", "Support, validation, archivage."]
-          - ["Entrant / sortant", "Flux non standards ou exceptionnels", "Origine et destination à confirmer.", "Conditions particulières, autorisations, traçabilité."]
+    produits finis du Campus CEVA RHYAD.
 
-  - title: "5. Utilisateurs et responsabilités"
-    text: >
-      Les utilisateurs, rôles et responsabilités doivent être confirmés avec l'organisation
-      projet et les futurs exploitants. Les effectifs, plages horaires, niveaux d'habilitation
-      et responsabilités détaillées ne sont pas définis à ce stade.
-    bullets:
-      - "Utilisateurs opérationnels : à confirmer."
-      - "Responsables de réception et expédition : à confirmer."
-      - "Interfaces qualité, logistique, sûreté, maintenance et IT / OT : à confirmer."
-      - "Niveaux d'autorisation et règles de supervision : à confirmer."
 
-  - title: "6. Flux entrants"
-    text: >
-      Les flux entrants devront être décrits par nature, condition de réception, point d'entrée,
-      contrôle attendu, orientation et données de traçabilité. Les quantités, fréquences,
-      créneaux, supports et contraintes spécifiques sont à confirmer.
+    Cette fonction décrit les besoins du projet sans préjuger des solutions
 
-  - title: "7. Flux sortants"
-    text: >
-      Les flux sortants devront être décrits par nature, destination, condition de préparation,
-      documentation associée, preuve de transfert et exigences de traçabilité. Les volumes,
-      fréquences, horaires, modes de transport et contraintes associées sont à confirmer.
+    techniques qui seront retenues lors des phases de conception.'
+- title: 2. Objectifs
+  text: 'La fonction doit permettre :'
+  bullets:
+  - la réception sécurisée des flux entrants ;
+  - l'expédition sécurisée des flux sortants ;
+  - la séparation des flux propres et des flux potentiellement contaminés ;
+  - la traçabilité complète des mouvements ;
+  - la maîtrise des conditions de conservation pendant les opérations logistiques ;
+  - la continuité des opérations de réception et d'expédition.
+- title: 3. Périmètre
+  text: 'La fonction couvre notamment :
 
-  - title: "8. Exigences fonctionnelles"
-    text: >
-      Les exigences ci-dessous constituent une structure de collecte. Elles devront être
-      confirmées, complétées et validées avant rédaction du contenu détaillé.
-    tables:
-      - title: "Exigences fonctionnelles"
-        headers:
-          - "Thème"
-          - "Exigence à instruire"
-          - "Statut"
-        rows:
-          - ["Traçabilité", "Identifier et tracer les flux entrants et sortants.", "À confirmer"]
-          - ["Séparation des flux", "Définir les règles de séparation entre flux, statuts et conditions de traitement.", "À confirmer"]
-          - ["Contrôle d'entrée", "Préciser les contrôles requis avant orientation vers les fonctions aval.", "À confirmer"]
-          - ["Préparation expédition", "Définir les conditions de préparation, documentation et remise des flux sortants.", "À confirmer"]
-          - ["Sûreté et accès", "Définir les règles d'accès, d'autorisation et de contrôle des zones concernées.", "À confirmer"]
-          - ["Interfaces système", "Identifier les besoins d'enregistrement, scan, étiquetage ou intégration IT / OT.", "À confirmer"]
 
-  - title: "9. Locaux et zones fonctionnelles"
-    text: >
-      Les locaux et zones fonctionnelles devront être définis après validation du schéma de
-      flux, des contraintes qualité, des exigences de sûreté et des besoins d'exploitation.
-      Les surfaces, capacités, dimensions, implantations et nombres de postes sont à confirmer.
-    bullets:
-      - "Zone de réception : à confirmer."
-      - "Zone de contrôle d'entrée : à confirmer."
-      - "Zone de préparation expédition : à confirmer."
-      - "Zone d'attente, de litige ou de flux non standard : à confirmer."
-      - "Interfaces avec accès, quais, sas, locaux support et circulations : à confirmer."
+    Sont exclus :'
+  bullets:
+  - quais de réception ;
+  - quais d'expédition ;
+  - zones de contrôle ;
+  - zones d'attente ;
+  - stockage tampon ;
+  - contrôle documentaire des livraisons ;
+  - circulation des véhicules de livraison ;
+  - circulation interne des marchandises.
+  - les procédés de fabrication ;
+  - les procédures d'exploitation ;
+  - la gestion des stocks (ERP/WMS) ;
+  - les procédures qualité.
+- title: 4. Exigences fonctionnelles
+- title: F01-01 -- Séparation des flux
+  text: 'Les flux entrants et sortants doivent être organisés afin d''éviter les
 
-  - title: "10. Équipements et moyens associés"
-    text: >
-      Les équipements, moyens logistiques, systèmes d'identification, supports informatiques et
-      moyens de manutention nécessaires à la fonction sont à confirmer. Aucun nombre, capacité
-      ou modèle d'équipement n'est validé à ce stade.
-    bullets:
-      - "Moyens de manutention : à confirmer."
-      - "Moyens d'identification et de traçabilité : à confirmer."
-      - "Postes de contrôle et de saisie : à confirmer."
-      - "Supports de conditionnement ou préparation : à confirmer."
-      - "Moyens de sûreté et contrôle d'accès : à confirmer."
+    croisements susceptibles d''entraîner des risques de contamination, de
 
-  - title: "11. Contraintes qualité / GMP"
-    text: >
-      Les contraintes qualité et GMP applicables à la fonction doivent être précisées par les
-      référentiels projet validés. Cette section ne constitue pas une procédure qualité et ne
-      définit pas encore les modes opératoires détaillés.
-    bullets:
-      - "Statuts qualité applicables aux flux entrants et sortants : à confirmer."
-      - "Conditions de séparation, identification et libération : à confirmer."
-      - "Exigences documentaires et preuves de contrôle : à confirmer."
-      - "Conditions d'acceptation, rejet, quarantaine ou litige : à confirmer."
-      - "Exigences d'hygiène, nettoyage, contamination croisée ou environnement : à confirmer."
+    sécurité ou d''exploitation.'
+- title: F01-02 -- Contrôle des livraisons
+  text: 'Chaque livraison doit pouvoir être : - identifiée ; - contrôlée ; -
 
-  - title: "12. Interfaces avec les autres fonctions"
-    text: >
-      Les interfaces ci-dessous sont listées selon l'arborescence officielle F02 à F15. La
-      nature précise de chaque interface, les flux concernés et les données échangées restent à
-      confirmer.
-    tables:
-      - title: "Interfaces avec F02 à F15"
-        headers:
-          - "Code"
-          - "Fonction"
-          - "Interface à confirmer"
-        rows:
-          - ["F02", "Stockage des Matières Premières et Consommables", "À confirmer"]
-          - ["F03", "Préparation des Matières Premières et Solutions", "À confirmer"]
-          - ["F04", "Production des Autovaccins", "À confirmer"]
-          - ["F05", "Conditionnement et Expédition des Produits", "À confirmer"]
-          - ["F06", "Gestion des Flux", "À confirmer"]
-          - ["F07", "Lavage, Stérilisation et Préparation des Équipements", "À confirmer"]
-          - ["F08", "Contrôle Qualité", "À confirmer"]
-          - ["F09", "Utilités Industrielles", "À confirmer"]
-          - ["F10", "Maintenance et Exploitation Technique", "À confirmer"]
-          - ["F11", "Gestion des Déchets et Effluents", "À confirmer"]
-          - ["F12", "Sûreté, Protection des Actifs et Contrôle des Accès", "À confirmer"]
-          - ["F13", "Systèmes d’Information, Automatismes et Cybersécurité", "À confirmer"]
-          - ["F14", "Administration, Formation et Services Généraux", "À confirmer"]
-          - ["F15", "Gouvernance du Campus et Fonctions Transverses", "À confirmer"]
+    enregistrée ; - tracée.'
+- title: F01-03 -- Stockage tampon
+  text: 'Des zones de stockage tampon doivent permettre : - l''attente avant
 
-  - title: "13. Données à confirmer"
-    text: >
-      Les données ci-dessous doivent être confirmées avant toute rédaction détaillée ou
-      dimensionnement de la fonction.
-    tables:
-      - title: "Données à confirmer"
-        headers:
-          - "Donnée"
-          - "Statut"
-          - "Commentaire"
-        rows:
-          - ["Typologie des flux entrants et sortants", "À confirmer", "À valider avec le programme fonctionnel global."]
-          - ["Volumes, fréquences et saisonnalités", "À confirmer", "Aucune valeur validée à ce stade."]
-          - ["Surfaces, capacités et implantations", "À confirmer", "Aucune valeur validée à ce stade."]
-          - ["Effectifs, horaires et organisation d'exploitation", "À confirmer", "Aucune hypothèse d'effectif validée à ce stade."]
-          - ["Équipements et moyens de manutention", "À confirmer", "Liste et dimensionnement à établir ultérieurement."]
-          - ["Exigences qualité, GMP, sûreté et traçabilité", "À confirmer", "À consolider avec les référentiels applicables."]
+    contrôle ; - l''attente avant mise à disposition ; - l''attente avant
 
-  - title: "14. Points ouverts"
-    text: >
-      Les points ouverts seront consolidés après validation des données d'entrée du programme
-      fonctionnel, des hypothèses de flux, des exigences qualité et des interfaces avec les
-      autres fonctions.
-    bullets:
-      - "Limites exactes du périmètre F01 : à confirmer."
-      - "Flux à intégrer dans le périmètre F01 : à confirmer."
-      - "Contraintes d'accès, sûreté et contrôle : à confirmer."
-      - "Données nécessaires au dimensionnement : à confirmer."
-      - "Interfaces critiques avec les autres fonctions : à confirmer."
+    expédition.'
+- title: F01-04 -- Conditions environnementales
+  text: 'Les conditions de température, d''humidité et de propreté doivent être
 
-  - title: "15. Annexes"
-    text: >
-      Les annexes seront ajoutées après validation du contenu fonctionnel. Les schémas de flux,
-      matrices d'interfaces, hypothèses de dimensionnement et références documentaires restent
-      à confirmer.
+    compatibles avec la nature des produits réceptionnés ou expédiés.'
+- title: F01-05 -- Traçabilité
+  text: 'Chaque mouvement doit être traçable : - date ; - heure ; - origine ; -
+
+    destination ; - opérateur ; - référence documentaire.'
+- title: F01-06 -- Accessibilité
+  text: 'Les installations doivent permettre : - la réception poids lourds ; -
+
+    les véhicules utilitaires ; - les opérations de manutention ; - l''accès
+
+    des secours.'
+- title: F01-07 -- Sécurité
+  text: 'Les opérations doivent garantir : - la sécurité des personnes ; - la
+
+    sécurité des biens ; - la protection des produits ; - le contrôle des
+
+    accès.'
+- title: F01-08 -- Continuité d'activité
+  text: 'Les dispositions retenues doivent limiter les interruptions des
+
+    opérations logistiques et permettre la continuité des flux essentiels.'
+- title: 5. Interfaces
+  bullets:
+  - F02 --- Stockage des Matières Premières et Consommables
+  - F05 --- Conditionnement et Expédition des Produits
+  - F06 --- Gestion des Flux
+  - F08 --- Contrôle Qualité
+  - F09 --- Utilités Industrielles
+  - F12 --- Sûreté, Protection des Actifs et Contrôle des Accès
+  - F13 --- SI, Automatismes et Cybersécurité
+  - F14 --- Administration, Formation et Services Généraux
+- title: 6. Contraintes
+  bullets:
+  - exigences GMP/BPF ;
+  - réglementation saoudienne applicable ;
+  - contraintes climatiques locales ;
+  - exigences de sûreté du site ;
+  - contraintes de circulation interne ;
+  - exigences de traçabilité CEVA.
+- title: 7. Critères de performance
+  bullets:
+  - réception fiable des marchandises ;
+  - expédition conforme des produits ;
+  - traçabilité complète des opérations ;
+  - maîtrise des flux logistiques ;
+  - exploitation simple et sécurisée ;
+  - évolutivité compatible avec les développements futurs du campus.
+- title: 8. Documents associés
+  bullets:
+  - CEVA-RHYAD-001A-ACAP
+  - CEVA-RHYAD-200-DT-F01-01 et suivants
+  - CEVA-RHYAD-300-DB09 --- Logistique
+  - CEVA-RHYAD-500-REG04 --- Registre des Hypothèses
+  - CEVA-RHYAD-500-REG05 --- Registre des Interfaces
+- title: 9. Critères de validation
+  text: 'La fonction F01 sera considérée comme validée lorsque :'
+  bullets:
+  - les besoins fonctionnels seront approuvés par le Maître d'Ouvrage ;
+  - les interfaces auront été identifiées ;
+  - les données techniques nécessaires auront été collectées ;
+  - les hypothèses de conception auront été enregistrées dans les DT associés.
+- title: Fin du document

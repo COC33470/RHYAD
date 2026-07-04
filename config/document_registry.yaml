@@ -64,6 +64,8 @@ documents:
 
   - code: "F01"
     official_code: "CEVA-RHYAD-100-F01"
-    revision: "Rev0.1"
+    title: "Réception et Expédition"
+    revision: "Rev1.0"
+    status: "Validated"
     family: "100"
     source: "config/documents/functions/F01.yaml"
