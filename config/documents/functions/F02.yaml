@@ -4,19 +4,33 @@ revision: Rev1.0
 status: Validated
 chapters:
 - title: 1. Objet
-  text: 'La fonction F02 -- Stockage des Matières Premières et Consommables
+  blocks:
+  - type: text
+    text: La fonction F02 -- Stockage des Matières Premières et Consommables définit les exigences fonctionnelles relatives
+      au stockage des matières premières, consommables, réactifs, emballages et produits nécessaires au fonctionnement du
+      Campus CEVA RHYAD.
+  - type: text
+    text: Cette fonction décrit les besoins du projet sans préjuger des solutions techniques qui seront retenues lors des
+      phases de conception.
+  text: 'La fonction F02 -- Stockage des Matières Premières et Consommables définit les exigences fonctionnelles relatives
+    au stockage des matières premières, consommables, réactifs, emballages et produits nécessaires au fonctionnement du Campus
+    CEVA RHYAD.
 
-    définit les exigences fonctionnelles relatives au stockage des matières
 
-    premières, consommables, réactifs, emballages et produits nécessaires au
-
-    fonctionnement du Campus CEVA RHYAD.
-
-
-    Cette fonction décrit les besoins du projet sans préjuger des solutions
-
-    techniques qui seront retenues lors des phases de conception.'
+    Cette fonction décrit les besoins du projet sans préjuger des solutions techniques qui seront retenues lors des phases
+    de conception.'
 - title: 2. Objectifs
+  blocks:
+  - type: text
+    text: 'La fonction doit permettre :'
+  - type: list
+    items:
+    - le stockage sécurisé des matières premières et consommables ;
+    - le maintien des conditions de conservation requises ;
+    - la séparation des différentes catégories de produits ;
+    - la disponibilité permanente des produits nécessaires à la production ;
+    - la traçabilité complète des mouvements de stock ;
+    - la maîtrise des risques de contamination et de dégradation.
   text: 'La fonction doit permettre :'
   bullets:
   - le stockage sécurisé des matières premières et consommables ;
@@ -26,6 +40,26 @@ chapters:
   - la traçabilité complète des mouvements de stock ;
   - la maîtrise des risques de contamination et de dégradation.
 - title: 3. Périmètre
+  blocks:
+  - type: text
+    text: 'La fonction couvre notamment :'
+  - type: list
+    items:
+    - les magasins de matières premières ;
+    - les magasins de consommables ;
+    - les magasins de produits chimiques ;
+    - les chambres froides et locaux réfrigérés ;
+    - les zones de quarantaine ;
+    - les zones de libération qualité ;
+    - les zones de stockage temporaire ;
+    - les circulations internes associées.
+  - type: text
+    text: 'Sont exclus :'
+  - type: list
+    items:
+    - la gestion informatique des stocks (ERP/WMS) ;
+    - les procédures qualité ;
+    - les procédures d'exploitation.
   text: 'La fonction couvre notamment :
 
 
@@ -44,21 +78,34 @@ chapters:
   - les procédures d'exploitation.
 - title: 4. Exigences fonctionnelles
 - title: F02-01 -- Conditions de conservation
-  text: 'Les espaces de stockage doivent maintenir les conditions
-
-    environnementales adaptées aux produits stockés.'
+  blocks:
+  - type: text
+    text: Les espaces de stockage doivent maintenir les conditions environnementales adaptées aux produits stockés.
+  text: Les espaces de stockage doivent maintenir les conditions environnementales adaptées aux produits stockés.
 - title: F02-02 -- Séparation des produits
-  text: 'Les différentes catégories de produits doivent pouvoir être séparées
-
-    selon leur nature, leur statut qualité ou leur niveau de risque.'
+  blocks:
+  - type: text
+    text: Les différentes catégories de produits doivent pouvoir être séparées selon leur nature, leur statut qualité ou leur
+      niveau de risque.
+  text: Les différentes catégories de produits doivent pouvoir être séparées selon leur nature, leur statut qualité ou leur
+    niveau de risque.
 - title: F02-03 -- Quarantaine
-  text: 'Des zones dédiées doivent permettre l''isolement des produits en attente
-
-    de contrôle ou de libération.'
+  blocks:
+  - type: text
+    text: Des zones dédiées doivent permettre l'isolement des produits en attente de contrôle ou de libération.
+  text: Des zones dédiées doivent permettre l'isolement des produits en attente de contrôle ou de libération.
 - title: F02-04 -- Traçabilité
-  text: 'Chaque mouvement doit être enregistré afin d''assurer une traçabilité
-
-    complète :'
+  blocks:
+  - type: text
+    text: 'Chaque mouvement doit être enregistré afin d''assurer une traçabilité complète :'
+  - type: list
+    items:
+    - identification ;
+    - date ;
+    - localisation ;
+    - quantité ;
+    - statut.
+  text: 'Chaque mouvement doit être enregistré afin d''assurer une traçabilité complète :'
   bullets:
   - identification ;
   - date ;
@@ -66,10 +113,21 @@ chapters:
   - quantité ;
   - statut.
 - title: F02-05 -- Rotation des stocks
-  text: 'L''organisation du stockage doit permettre l''application des règles de
-
-    gestion des stocks définies par le Maître d''Ouvrage.'
+  blocks:
+  - type: text
+    text: L'organisation du stockage doit permettre l'application des règles de gestion des stocks définies par le Maître
+      d'Ouvrage.
+  text: L'organisation du stockage doit permettre l'application des règles de gestion des stocks définies par le Maître d'Ouvrage.
 - title: F02-06 -- Accessibilité
+  blocks:
+  - type: text
+    text: 'Les produits doivent rester facilement accessibles pour :'
+  - type: list
+    items:
+    - les opérations de réception ;
+    - les prélèvements ;
+    - l'approvisionnement de la production ;
+    - les inventaires.
   text: 'Les produits doivent rester facilement accessibles pour :'
   bullets:
   - les opérations de réception ;
@@ -77,6 +135,15 @@ chapters:
   - l'approvisionnement de la production ;
   - les inventaires.
 - title: F02-07 -- Sécurité
+  blocks:
+  - type: text
+    text: 'Les installations doivent assurer :'
+  - type: list
+    items:
+    - la protection des personnes ;
+    - la protection des produits ;
+    - la prévention des incompatibilités chimiques ;
+    - le contrôle des accès.
   text: 'Les installations doivent assurer :'
   bullets:
   - la protection des personnes ;
@@ -84,10 +151,25 @@ chapters:
   - la prévention des incompatibilités chimiques ;
   - le contrôle des accès.
 - title: F02-08 -- Continuité d'activité
-  text: 'Les dispositions retenues doivent garantir la disponibilité des matières
-
-    premières et consommables nécessaires aux activités critiques du Campus.'
+  blocks:
+  - type: text
+    text: Les dispositions retenues doivent garantir la disponibilité des matières premières et consommables nécessaires aux
+      activités critiques du Campus.
+  text: Les dispositions retenues doivent garantir la disponibilité des matières premières et consommables nécessaires aux
+    activités critiques du Campus.
 - title: 5. Interfaces
+  blocks:
+  - type: list
+    items:
+    - F01 --- Réception et Expédition
+    - F03 --- Préparation des Matières Premières et Solutions
+    - F04 --- Production des Autovaccins
+    - F06 --- Gestion des Flux
+    - F08 --- Contrôle Qualité
+    - F09 --- Utilités Industrielles
+    - F10 --- Maintenance et Exploitation Technique
+    - F12 --- Sûreté, Protection des Actifs et Contrôle des Accès
+    - F13 --- SI, Automatismes et Cybersécurité
   bullets:
   - F01 --- Réception et Expédition
   - F03 --- Préparation des Matières Premières et Solutions
@@ -99,6 +181,15 @@ chapters:
   - F12 --- Sûreté, Protection des Actifs et Contrôle des Accès
   - F13 --- SI, Automatismes et Cybersécurité
 - title: 6. Contraintes
+  blocks:
+  - type: list
+    items:
+    - exigences GMP/BPF ;
+    - conditions de conservation des produits ;
+    - exigences de sécurité incendie ;
+    - contraintes climatiques locales ;
+    - exigences de traçabilité ;
+    - contraintes liées aux produits dangereux et aux incompatibilités chimiques.
   bullets:
   - exigences GMP/BPF ;
   - conditions de conservation des produits ;
@@ -107,6 +198,15 @@ chapters:
   - exigences de traçabilité ;
   - contraintes liées aux produits dangereux et aux incompatibilités chimiques.
 - title: 7. Critères de performance
+  blocks:
+  - type: list
+    items:
+    - conservation conforme des produits ;
+    - disponibilité permanente des matières premières et consommables ;
+    - traçabilité complète des stocks ;
+    - gestion sécurisée des produits ;
+    - exploitation simple et efficace ;
+    - capacité d'évolution compatible avec les extensions futures du Campus.
   bullets:
   - conservation conforme des produits ;
   - disponibilité permanente des matières premières et consommables ;
@@ -115,6 +215,15 @@ chapters:
   - exploitation simple et efficace ;
   - capacité d'évolution compatible avec les extensions futures du Campus.
 - title: 8. Documents associés
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-001A-ACAP
+    - CEVA-RHYAD-200-DT-F02-01 et suivants
+    - CEVA-RHYAD-300-DB09 --- Logistique
+    - CEVA-RHYAD-300-DB04 --- Utilités
+    - CEVA-RHYAD-500-REG04 --- Registre des Hypothèses
+    - CEVA-RHYAD-500-REG05 --- Registre des Interfaces
   bullets:
   - CEVA-RHYAD-001A-ACAP
   - CEVA-RHYAD-200-DT-F02-01 et suivants
@@ -123,6 +232,15 @@ chapters:
   - CEVA-RHYAD-500-REG04 --- Registre des Hypothèses
   - CEVA-RHYAD-500-REG05 --- Registre des Interfaces
 - title: 9. Critères de validation
+  blocks:
+  - type: text
+    text: 'La fonction F02 sera considérée comme validée lorsque :'
+  - type: list
+    items:
+    - les besoins fonctionnels seront approuvés par le Maître d'Ouvrage ;
+    - les interfaces auront été identifiées ;
+    - les données techniques nécessaires auront été collectées ;
+    - les hypothèses de conception auront été enregistrées dans les DT associés.
   text: 'La fonction F02 sera considérée comme validée lorsque :'
   bullets:
   - les besoins fonctionnels seront approuvés par le Maître d'Ouvrage ;

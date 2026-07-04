@@ -46,6 +46,7 @@ METADATA_KEYS = {
     "sous titre": "subtitle",
     "revision": "revision",
     "révision": "revision",
+    "version": "revision",
     "status": "status",
     "statut": "status",
 }
@@ -151,6 +152,19 @@ def _parse_metadata_line(line):
     return key, _clean_value(match.group(2))
 
 
+def _parse_bold_metadata_line(line):
+    match = re.match(r"^\*\*([A-Za-zÀ-ÿ _-]+)\s*:\*\*\s*(.+?)\s*$", line)
+    if not match:
+        return None
+
+    key = METADATA_KEYS.get(match.group(1).strip().lower())
+    if not key:
+        return None
+
+    value = match.group(2).rstrip("\\").strip()
+    return key, _clean_value(value)
+
+
 def extract_metadata(markdown_text):
     lines = markdown_text.splitlines()
     metadata = {}
@@ -186,6 +200,44 @@ def extract_metadata(markdown_text):
     return metadata, lines[body_start:]
 
 
+def _looks_like_document_reference(value, code):
+    text = str(value).strip().upper()
+    code = str(code).strip().upper()
+    return text == code or text.startswith("CEVA-RHYAD-") or text.startswith(f"RHYAD-{code}")
+
+
+def _consume_leading_markdown_metadata(metadata, body_lines, code):
+    index = 0
+    while index < len(body_lines):
+        line = body_lines[index]
+        stripped = line.strip()
+        if not stripped or _is_horizontal_rule(stripped):
+            index += 1
+            continue
+
+        parsed = _parse_metadata_line(stripped) or _parse_bold_metadata_line(stripped)
+        if parsed:
+            key, value = parsed
+            metadata[key] = value
+            index += 1
+            continue
+
+        heading = _heading(line)
+        if heading:
+            if _looks_like_document_reference(heading, code):
+                metadata.setdefault("reference", heading)
+                index += 1
+                continue
+            if not metadata.get("title") and not re.match(r"^\d+\.", heading):
+                metadata["title"] = heading
+                index += 1
+                continue
+
+        break
+
+    return body_lines[index:]
+
+
 def _split_markdown_table_row(line):
     row = line.strip()
     if row.startswith("|"):
@@ -210,6 +262,11 @@ def _is_table_start(lines, index):
     )
 
 
+def _is_horizontal_rule(line):
+    stripped = line.strip()
+    return bool(stripped) and set(stripped) == {"-"} and len(stripped) >= 5
+
+
 def _list_item(line):
     match = re.match(r"^\s*(?:[-*+]|\d+\.)\s+(.+)$", line)
     return match.group(1).strip() if match else None
@@ -218,6 +275,65 @@ def _list_item(line):
 def _heading(line):
     match = re.match(r"^(#{1,6})\s+(.+?)\s*$", line)
     return match.group(2).strip() if match else None
+
+
+def _append_text_block(chapter, text):
+    text = text.strip()
+    if not text:
+        return
+
+    chapter.setdefault("blocks", []).append({"type": "text", "text": text})
+    if chapter.get("text"):
+        chapter["text"] = f"{chapter['text']}\n\n{text}"
+    else:
+        chapter["text"] = text
+
+
+def _append_bullet_block(chapter, items):
+    clean_items = [item.strip() for item in items if item and item.strip()]
+    if not clean_items:
+        return
+
+    blocks = chapter.setdefault("blocks", [])
+    if blocks and blocks[-1].get("type") == "list":
+        blocks[-1].setdefault("items", []).extend(clean_items)
+    else:
+        blocks.append({"type": "list", "items": clean_items})
+
+    chapter.setdefault("bullets", []).extend(clean_items)
+
+
+def _append_table_block(chapter, table):
+    chapter.setdefault("blocks", []).append({"type": "table", **table})
+    chapter.setdefault("tables", []).append(table)
+
+
+def _pending_paragraphs(pending_text):
+    paragraphs = []
+    current = []
+    for line in pending_text:
+        if line == "":
+            if current:
+                paragraphs.append(" ".join(current).strip())
+                current = []
+            continue
+        current.append(line.strip())
+
+    if current:
+        paragraphs.append(" ".join(current).strip())
+
+    return [paragraph for paragraph in paragraphs if paragraph]
+
+
+def _split_inline_list(paragraph):
+    match = re.search(r":\s+-\s+", paragraph)
+    if not match:
+        return paragraph, []
+
+    prefix = paragraph[: match.start() + 1].rstrip()
+    rest = paragraph[match.end() :].strip()
+    items = [item.strip() for item in re.split(r"\s+-\s+", rest) if item.strip()]
+    return prefix, items
 
 
 def _flush_text(chapter, pending_text):
@@ -233,12 +349,12 @@ def _flush_text(chapter, pending_text):
     if not pending_text:
         return
 
-    text = "\n".join(pending_text).strip()
-    if text:
-        if chapter.get("text"):
-            chapter["text"] = f"{chapter['text']}\n\n{text}"
-        else:
-            chapter["text"] = text
+    for paragraph in _pending_paragraphs(pending_text):
+        prefix, inline_items = _split_inline_list(paragraph)
+        _append_text_block(chapter, prefix)
+        if inline_items:
+            _append_bullet_block(chapter, inline_items)
+
     pending_text.clear()
 
 
@@ -265,6 +381,27 @@ def _parse_table(lines, index):
     return {"headers": headers, "rows": rows}, index
 
 
+def _collect_list_item(lines, index):
+    item = _list_item(lines[index])
+    parts = [item]
+    index += 1
+
+    while index < len(lines):
+        line = lines[index]
+        stripped = line.strip()
+        if not stripped:
+            break
+        if _heading(line) or _list_item(line) or _is_horizontal_rule(line) or _is_table_start(lines, index):
+            break
+        if line.startswith(" ") or line.startswith("\t"):
+            parts.append(stripped)
+            index += 1
+            continue
+        break
+
+    return " ".join(parts).strip(), index
+
+
 def parse_markdown_body(lines):
     chapters = []
     current = None
@@ -273,6 +410,11 @@ def parse_markdown_body(lines):
 
     while index < len(lines):
         line = lines[index]
+        if _is_horizontal_rule(line):
+            _flush_text(current, pending_text)
+            index += 1
+            continue
+
         heading = _heading(line)
         if heading:
             _flush_text(current, pending_text)
@@ -289,14 +431,14 @@ def parse_markdown_body(lines):
             _flush_text(current, pending_text)
             table, index = _parse_table(lines, index)
             table["title"] = current["title"]
-            current.setdefault("tables", []).append(table)
+            _append_table_block(current, table)
             continue
 
         item = _list_item(line)
         if current is not None and item:
             _flush_text(current, pending_text)
-            current.setdefault("bullets", []).append(item)
-            index += 1
+            item, index = _collect_list_item(lines, index)
+            _append_bullet_block(current, [item])
             continue
 
         if current is not None:
@@ -318,6 +460,7 @@ def markdown_to_document(
 ):
     metadata, body_lines = extract_metadata(markdown_text)
     code = code.upper()
+    body_lines = _consume_leading_markdown_metadata(metadata, body_lines, code)
 
     if not metadata.get("reference"):
         metadata["reference"] = default_reference or code

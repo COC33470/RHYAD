@@ -44,6 +44,60 @@ def _validate_figure_references(data, label):
         _require_string(figure, "id", figure_label)
 
 
+def _validate_bullet_items(items, label):
+    if not isinstance(items, list):
+        raise ValueError(f"{label} must be a list.")
+    for item_index, item in enumerate(items, start=1):
+        if not isinstance(item, str) or not item.strip():
+            raise ValueError(f"{label}[{item_index}] must be a non-empty string.")
+
+
+def _validate_table_data(table, table_label):
+    _require_mapping(table, table_label)
+
+    title = table.get("title")
+    if title is not None and not isinstance(title, str):
+        raise ValueError(f"{table_label}.title must be a string when provided.")
+
+    headers = table.get("headers")
+    if not isinstance(headers, list) or not headers:
+        raise ValueError(f"{table_label}.headers must be a non-empty list.")
+    for header_index, header in enumerate(headers, start=1):
+        if not isinstance(header, str) or not header.strip():
+            raise ValueError(f"{table_label}.headers[{header_index}] must be a non-empty string.")
+
+    rows = table.get("rows")
+    if not isinstance(rows, list) or not rows:
+        raise ValueError(f"{table_label}.rows must be a non-empty list.")
+    for row_index, row in enumerate(rows, start=1):
+        row_label = f"{table_label}.rows[{row_index}]"
+        if not isinstance(row, list):
+            raise ValueError(f"{row_label} must be a list.")
+        if len(row) != len(headers):
+            raise ValueError(f"{row_label} must contain {len(headers)} values.")
+
+
+def _validate_blocks(chapter, chapter_label):
+    blocks = chapter.get("blocks")
+    if blocks is None:
+        return
+    if not isinstance(blocks, list) or not blocks:
+        raise ValueError(f"{chapter_label}.blocks must be a non-empty list when provided.")
+
+    for block_index, block in enumerate(blocks, start=1):
+        block_label = f"{chapter_label}.blocks[{block_index}]"
+        _require_mapping(block, block_label)
+        block_type = block.get("type")
+        if block_type == "text":
+            _require_string(block, "text", block_label)
+        elif block_type == "list":
+            _validate_bullet_items(block.get("items"), f"{block_label}.items")
+        elif block_type == "table":
+            _validate_table_data(block, block_label)
+        else:
+            raise ValueError(f"{block_label}.type must be one of: text, list, table.")
+
+
 def validate_document_config(data, yaml_path: Path):
     label = str(yaml_path)
     _require_mapping(data, label)
@@ -71,47 +125,18 @@ def validate_document_config(data, yaml_path: Path):
             raise ValueError(f"{chapter_label}.text must be a string when provided.")
 
         _validate_figure_references(chapter, chapter_label)
+        _validate_blocks(chapter, chapter_label)
 
         bullets = chapter.get("bullets")
         if bullets is not None:
-            if not isinstance(bullets, list):
-                raise ValueError(f"{chapter_label}.bullets must be a list when provided.")
-            for item_index, item in enumerate(bullets, start=1):
-                if not isinstance(item, str) or not item.strip():
-                    raise ValueError(
-                        f"{chapter_label}.bullets[{item_index}] must be a non-empty string."
-                    )
+            _validate_bullet_items(bullets, f"{chapter_label}.bullets")
 
         tables = chapter.get("tables")
         if tables is not None:
             if not isinstance(tables, list) or not tables:
                 raise ValueError(f"{chapter_label}.tables must be a non-empty list when provided.")
             for table_index, table in enumerate(tables, start=1):
-                table_label = f"{chapter_label}.tables[{table_index}]"
-                _require_mapping(table, table_label)
-
-                title = table.get("title")
-                if title is not None and not isinstance(title, str):
-                    raise ValueError(f"{table_label}.title must be a string when provided.")
-
-                headers = table.get("headers")
-                if not isinstance(headers, list) or not headers:
-                    raise ValueError(f"{table_label}.headers must be a non-empty list.")
-                for header_index, header in enumerate(headers, start=1):
-                    if not isinstance(header, str) or not header.strip():
-                        raise ValueError(
-                            f"{table_label}.headers[{header_index}] must be a non-empty string."
-                        )
-
-                rows = table.get("rows")
-                if not isinstance(rows, list) or not rows:
-                    raise ValueError(f"{table_label}.rows must be a non-empty list.")
-                for row_index, row in enumerate(rows, start=1):
-                    row_label = f"{table_label}.rows[{row_index}]"
-                    if not isinstance(row, list):
-                        raise ValueError(f"{row_label} must be a list.")
-                    if len(row) != len(headers):
-                        raise ValueError(f"{row_label} must contain {len(headers)} values.")
+                _validate_table_data(table, f"{chapter_label}.tables[{table_index}]")
 
 
 def _resolve_optional_path(path_value, project_root):
@@ -193,6 +218,31 @@ def _add_figures(document, figure_refs, registry, project_root):
             document.add_paragraph(f"Figure {figure_id} - {caption}")
 
 
+def _render_blocks(document, chapter):
+    for block in chapter.get("blocks", []):
+        block_type = block["type"]
+        if block_type == "text":
+            document.add_paragraph(block["text"])
+        elif block_type == "list":
+            for item in block["items"]:
+                document.add_paragraph(item, style="List Bullet")
+        elif block_type == "table":
+            add_data_table(document, block)
+
+
+def _render_legacy_chapter_content(document, chapter):
+    if "text" in chapter:
+        document.add_paragraph(chapter["text"])
+
+    if "bullets" in chapter:
+        for item in chapter["bullets"]:
+            document.add_paragraph(item, style="List Bullet")
+
+    if "tables" in chapter:
+        for table in chapter["tables"]:
+            add_data_table(document, table)
+
+
 def build_document(yaml_path: Path, output_path: Path, project_config=None, project_root=None):
     with open(yaml_path, "r", encoding="utf-8") as f:
         data = yaml.safe_load(f)
@@ -216,16 +266,10 @@ def build_document(yaml_path: Path, output_path: Path, project_config=None, proj
     for chapter in data["chapters"]:
         doc.add_heading(chapter["title"], level=1)
 
-        if "text" in chapter:
-            doc.add_paragraph(chapter["text"])
-
-        if "bullets" in chapter:
-            for item in chapter["bullets"]:
-                doc.add_paragraph(item, style="List Bullet")
-
-        if "tables" in chapter:
-            for table in chapter["tables"]:
-                add_data_table(doc, table)
+        if "blocks" in chapter:
+            _render_blocks(doc, chapter)
+        else:
+            _render_legacy_chapter_content(doc, chapter)
 
         _add_figures(doc, chapter.get("figures", []), figures_registry, project_root)
 

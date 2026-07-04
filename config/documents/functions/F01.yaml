@@ -4,19 +4,31 @@ revision: Rev1.0
 status: Validated
 chapters:
 - title: 1. Objet
-  text: 'La fonction F01 -- Réception et Expédition définit les exigences
+  blocks:
+  - type: text
+    text: La fonction F01 -- Réception et Expédition définit les exigences fonctionnelles relatives à la réception, au contrôle,
+      au stockage temporaire et à l'expédition des matières, consommables, équipements et produits finis du Campus CEVA RHYAD.
+  - type: text
+    text: Cette fonction décrit les besoins du projet sans préjuger des solutions techniques qui seront retenues lors des
+      phases de conception.
+  text: 'La fonction F01 -- Réception et Expédition définit les exigences fonctionnelles relatives à la réception, au contrôle,
+    au stockage temporaire et à l''expédition des matières, consommables, équipements et produits finis du Campus CEVA RHYAD.
 
-    fonctionnelles relatives à la réception, au contrôle, au stockage
 
-    temporaire et à l''expédition des matières, consommables, équipements et
-
-    produits finis du Campus CEVA RHYAD.
-
-
-    Cette fonction décrit les besoins du projet sans préjuger des solutions
-
-    techniques qui seront retenues lors des phases de conception.'
+    Cette fonction décrit les besoins du projet sans préjuger des solutions techniques qui seront retenues lors des phases
+    de conception.'
 - title: 2. Objectifs
+  blocks:
+  - type: text
+    text: 'La fonction doit permettre :'
+  - type: list
+    items:
+    - la réception sécurisée des flux entrants ;
+    - l'expédition sécurisée des flux sortants ;
+    - la séparation des flux propres et des flux potentiellement contaminés ;
+    - la traçabilité complète des mouvements ;
+    - la maîtrise des conditions de conservation pendant les opérations logistiques ;
+    - la continuité des opérations de réception et d'expédition.
   text: 'La fonction doit permettre :'
   bullets:
   - la réception sécurisée des flux entrants ;
@@ -26,6 +38,27 @@ chapters:
   - la maîtrise des conditions de conservation pendant les opérations logistiques ;
   - la continuité des opérations de réception et d'expédition.
 - title: 3. Périmètre
+  blocks:
+  - type: text
+    text: 'La fonction couvre notamment :'
+  - type: list
+    items:
+    - quais de réception ;
+    - quais d'expédition ;
+    - zones de contrôle ;
+    - zones d'attente ;
+    - stockage tampon ;
+    - contrôle documentaire des livraisons ;
+    - circulation des véhicules de livraison ;
+    - circulation interne des marchandises.
+  - type: text
+    text: 'Sont exclus :'
+  - type: list
+    items:
+    - les procédés de fabrication ;
+    - les procédures d'exploitation ;
+    - la gestion des stocks (ERP/WMS) ;
+    - les procédures qualité.
   text: 'La fonction couvre notamment :
 
 
@@ -45,46 +78,120 @@ chapters:
   - les procédures qualité.
 - title: 4. Exigences fonctionnelles
 - title: F01-01 -- Séparation des flux
-  text: 'Les flux entrants et sortants doivent être organisés afin d''éviter les
-
-    croisements susceptibles d''entraîner des risques de contamination, de
-
-    sécurité ou d''exploitation.'
+  blocks:
+  - type: text
+    text: Les flux entrants et sortants doivent être organisés afin d'éviter les croisements susceptibles d'entraîner des
+      risques de contamination, de sécurité ou d'exploitation.
+  text: Les flux entrants et sortants doivent être organisés afin d'éviter les croisements susceptibles d'entraîner des risques
+    de contamination, de sécurité ou d'exploitation.
 - title: F01-02 -- Contrôle des livraisons
-  text: 'Chaque livraison doit pouvoir être : - identifiée ; - contrôlée ; -
-
-    enregistrée ; - tracée.'
+  blocks:
+  - type: text
+    text: 'Chaque livraison doit pouvoir être :'
+  - type: list
+    items:
+    - identifiée ;
+    - contrôlée ;
+    - enregistrée ;
+    - tracée.
+  text: 'Chaque livraison doit pouvoir être :'
+  bullets:
+  - identifiée ;
+  - contrôlée ;
+  - enregistrée ;
+  - tracée.
 - title: F01-03 -- Stockage tampon
-  text: 'Des zones de stockage tampon doivent permettre : - l''attente avant
-
-    contrôle ; - l''attente avant mise à disposition ; - l''attente avant
-
-    expédition.'
+  blocks:
+  - type: text
+    text: 'Des zones de stockage tampon doivent permettre :'
+  - type: list
+    items:
+    - l'attente avant contrôle ;
+    - l'attente avant mise à disposition ;
+    - l'attente avant expédition.
+  text: 'Des zones de stockage tampon doivent permettre :'
+  bullets:
+  - l'attente avant contrôle ;
+  - l'attente avant mise à disposition ;
+  - l'attente avant expédition.
 - title: F01-04 -- Conditions environnementales
-  text: 'Les conditions de température, d''humidité et de propreté doivent être
-
-    compatibles avec la nature des produits réceptionnés ou expédiés.'
+  blocks:
+  - type: text
+    text: Les conditions de température, d'humidité et de propreté doivent être compatibles avec la nature des produits réceptionnés
+      ou expédiés.
+  text: Les conditions de température, d'humidité et de propreté doivent être compatibles avec la nature des produits réceptionnés
+    ou expédiés.
 - title: F01-05 -- Traçabilité
-  text: 'Chaque mouvement doit être traçable : - date ; - heure ; - origine ; -
-
-    destination ; - opérateur ; - référence documentaire.'
+  blocks:
+  - type: text
+    text: 'Chaque mouvement doit être traçable :'
+  - type: list
+    items:
+    - date ;
+    - heure ;
+    - origine ;
+    - destination ;
+    - opérateur ;
+    - référence documentaire.
+  text: 'Chaque mouvement doit être traçable :'
+  bullets:
+  - date ;
+  - heure ;
+  - origine ;
+  - destination ;
+  - opérateur ;
+  - référence documentaire.
 - title: F01-06 -- Accessibilité
-  text: 'Les installations doivent permettre : - la réception poids lourds ; -
-
-    les véhicules utilitaires ; - les opérations de manutention ; - l''accès
-
-    des secours.'
+  blocks:
+  - type: text
+    text: 'Les installations doivent permettre :'
+  - type: list
+    items:
+    - la réception poids lourds ;
+    - les véhicules utilitaires ;
+    - les opérations de manutention ;
+    - l'accès des secours.
+  text: 'Les installations doivent permettre :'
+  bullets:
+  - la réception poids lourds ;
+  - les véhicules utilitaires ;
+  - les opérations de manutention ;
+  - l'accès des secours.
 - title: F01-07 -- Sécurité
-  text: 'Les opérations doivent garantir : - la sécurité des personnes ; - la
-
-    sécurité des biens ; - la protection des produits ; - le contrôle des
-
-    accès.'
+  blocks:
+  - type: text
+    text: 'Les opérations doivent garantir :'
+  - type: list
+    items:
+    - la sécurité des personnes ;
+    - la sécurité des biens ;
+    - la protection des produits ;
+    - le contrôle des accès.
+  text: 'Les opérations doivent garantir :'
+  bullets:
+  - la sécurité des personnes ;
+  - la sécurité des biens ;
+  - la protection des produits ;
+  - le contrôle des accès.
 - title: F01-08 -- Continuité d'activité
-  text: 'Les dispositions retenues doivent limiter les interruptions des
-
-    opérations logistiques et permettre la continuité des flux essentiels.'
+  blocks:
+  - type: text
+    text: Les dispositions retenues doivent limiter les interruptions des opérations logistiques et permettre la continuité
+      des flux essentiels.
+  text: Les dispositions retenues doivent limiter les interruptions des opérations logistiques et permettre la continuité
+    des flux essentiels.
 - title: 5. Interfaces
+  blocks:
+  - type: list
+    items:
+    - F02 --- Stockage des Matières Premières et Consommables
+    - F05 --- Conditionnement et Expédition des Produits
+    - F06 --- Gestion des Flux
+    - F08 --- Contrôle Qualité
+    - F09 --- Utilités Industrielles
+    - F12 --- Sûreté, Protection des Actifs et Contrôle des Accès
+    - F13 --- SI, Automatismes et Cybersécurité
+    - F14 --- Administration, Formation et Services Généraux
   bullets:
   - F02 --- Stockage des Matières Premières et Consommables
   - F05 --- Conditionnement et Expédition des Produits
@@ -95,6 +202,15 @@ chapters:
   - F13 --- SI, Automatismes et Cybersécurité
   - F14 --- Administration, Formation et Services Généraux
 - title: 6. Contraintes
+  blocks:
+  - type: list
+    items:
+    - exigences GMP/BPF ;
+    - réglementation saoudienne applicable ;
+    - contraintes climatiques locales ;
+    - exigences de sûreté du site ;
+    - contraintes de circulation interne ;
+    - exigences de traçabilité CEVA.
   bullets:
   - exigences GMP/BPF ;
   - réglementation saoudienne applicable ;
@@ -103,6 +219,15 @@ chapters:
   - contraintes de circulation interne ;
   - exigences de traçabilité CEVA.
 - title: 7. Critères de performance
+  blocks:
+  - type: list
+    items:
+    - réception fiable des marchandises ;
+    - expédition conforme des produits ;
+    - traçabilité complète des opérations ;
+    - maîtrise des flux logistiques ;
+    - exploitation simple et sécurisée ;
+    - évolutivité compatible avec les développements futurs du campus.
   bullets:
   - réception fiable des marchandises ;
   - expédition conforme des produits ;
@@ -111,6 +236,14 @@ chapters:
   - exploitation simple et sécurisée ;
   - évolutivité compatible avec les développements futurs du campus.
 - title: 8. Documents associés
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-001A-ACAP
+    - CEVA-RHYAD-200-DT-F01-01 et suivants
+    - CEVA-RHYAD-300-DB09 --- Logistique
+    - CEVA-RHYAD-500-REG04 --- Registre des Hypothèses
+    - CEVA-RHYAD-500-REG05 --- Registre des Interfaces
   bullets:
   - CEVA-RHYAD-001A-ACAP
   - CEVA-RHYAD-200-DT-F01-01 et suivants
@@ -118,6 +251,15 @@ chapters:
   - CEVA-RHYAD-500-REG04 --- Registre des Hypothèses
   - CEVA-RHYAD-500-REG05 --- Registre des Interfaces
 - title: 9. Critères de validation
+  blocks:
+  - type: text
+    text: 'La fonction F01 sera considérée comme validée lorsque :'
+  - type: list
+    items:
+    - les besoins fonctionnels seront approuvés par le Maître d'Ouvrage ;
+    - les interfaces auront été identifiées ;
+    - les données techniques nécessaires auront été collectées ;
+    - les hypothèses de conception auront été enregistrées dans les DT associés.
   text: 'La fonction F01 sera considérée comme validée lorsque :'
   bullets:
   - les besoins fonctionnels seront approuvés par le Maître d'Ouvrage ;

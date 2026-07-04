@@ -117,6 +117,50 @@ Texte validé.
         )
         validate_document_config(document, "TST-001.yaml")
 
+    def test_markdown_to_document_preserves_paragraph_list_order_and_inline_lists(self):
+        markdown = """reference: "TST-002"
+title: "Test Lists"
+
+# 1. Périmètre
+
+La fonction couvre notamment :
+
+- Flux entrants
+- Flux sortants
+
+Sont exclus :
+
+- Procédures qualité
+
+# 2. Exigence
+
+Chaque livraison doit pouvoir être : - identifiée ; - contrôlée ; -
+enregistrée ; - tracée.
+"""
+
+        document = markdown_to_document(markdown, "TST-002")
+        perimeter_blocks = document["chapters"][0]["blocks"]
+        requirement_blocks = document["chapters"][1]["blocks"]
+
+        self.assertEqual(
+            perimeter_blocks,
+            [
+                {"type": "text", "text": "La fonction couvre notamment :"},
+                {"type": "list", "items": ["Flux entrants", "Flux sortants"]},
+                {"type": "text", "text": "Sont exclus :"},
+                {"type": "list", "items": ["Procédures qualité"]},
+            ],
+        )
+        self.assertEqual(requirement_blocks[0], {"type": "text", "text": "Chaque livraison doit pouvoir être :"})
+        self.assertEqual(
+            requirement_blocks[1],
+            {
+                "type": "list",
+                "items": ["identifiée ;", "contrôlée ;", "enregistrée ;", "tracée."],
+            },
+        )
+        validate_document_config(document, "TST-002.yaml")
+
     def test_markdown_to_document_uses_repository_title_when_title_missing(self):
         markdown = "Texte validé."
 

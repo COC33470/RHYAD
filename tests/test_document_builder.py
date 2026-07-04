@@ -131,6 +131,54 @@ class DocumentBuilderTest(unittest.TestCase):
             self.assertIn("Rev0.1", table_text)
             self.assertIn("Validated", table_text)
 
+    def test_build_document_renders_ordered_blocks(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            yaml_path = root / "F01.yaml"
+            yaml_path.write_text(
+                "\n".join(
+                    [
+                        "reference: CEVA-RHYAD-100-F01",
+                        "title: Réception et Expédition",
+                        "chapters:",
+                        "  - title: 3. Périmètre",
+                        "    blocks:",
+                        "      - type: text",
+                        "        text: 'La fonction couvre notamment :'",
+                        "      - type: list",
+                        "        items:",
+                        "          - Flux entrants",
+                        "          - Flux sortants",
+                        "      - type: text",
+                        "        text: 'Sont exclus :'",
+                        "      - type: list",
+                        "        items:",
+                        "          - Procédures qualité",
+                    ]
+                ),
+                encoding="utf-8",
+            )
+
+            output_path = root / "output" / "docx" / "CEVA-RHYAD-100-F01.docx"
+            build_document(yaml_path, output_path, project_root=root)
+
+            generated = Document(output_path)
+            paragraph_texts = [p.text for p in generated.paragraphs]
+            paragraph_styles = {p.text: p.style.name for p in generated.paragraphs if p.text}
+
+            expected_order = [
+                "La fonction couvre notamment :",
+                "Flux entrants",
+                "Flux sortants",
+                "Sont exclus :",
+                "Procédures qualité",
+            ]
+            positions = [paragraph_texts.index(text) for text in expected_order]
+
+            self.assertEqual(positions, sorted(positions))
+            self.assertEqual(paragraph_styles["Flux entrants"], "List Bullet")
+            self.assertEqual(paragraph_styles["Procédures qualité"], "List Bullet")
+
     def test_validate_document_config_requires_chapters(self):
         with self.assertRaisesRegex(ValueError, "chapters"):
             validate_document_config(
