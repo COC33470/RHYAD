@@ -148,7 +148,41 @@ python3 -m pip install -r requirements.txt
 
 ## Commandes
 
-Générer le Programme Fonctionnel :
+La commande unifiée RHYAD est disponible via :
+
+```bash
+python3 scripts/rhyad.py help
+```
+
+Alias optionnel :
+
+```bash
+alias rhyad='python3 scripts/rhyad.py'
+```
+
+Commandes principales :
+
+```bash
+rhyad status
+rhyad list
+rhyad generate 002
+rhyad import 003
+rhyad validate
+rhyad doctor
+```
+
+Sans alias, utiliser la forme compatible :
+
+```bash
+python3 scripts/rhyad.py status
+python3 scripts/rhyad.py list
+python3 scripts/rhyad.py generate 002
+python3 scripts/rhyad.py import 003
+python3 scripts/rhyad.py validate
+python3 scripts/rhyad.py doctor
+```
+
+Les scripts historiques restent disponibles. Générer le Programme Fonctionnel :
 
 ```bash
 python3 scripts/main.py 002
@@ -175,7 +209,7 @@ inbox/validated/DB01.md
 Puis lance une seule commande :
 
 ```bash
-python3 scripts/import_validated.py 002
+python3 scripts/rhyad.py import 002
 ```
 
 Le script :
@@ -197,9 +231,9 @@ Le script :
 Exemples :
 
 ```bash
-python3 scripts/import_validated.py 003
-python3 scripts/import_validated.py F01
-python3 scripts/import_validated.py DB01
+python3 scripts/rhyad.py import 003
+python3 scripts/rhyad.py import F01
+python3 scripts/rhyad.py import DB01
 ```
 
 Le Markdown validé est la source d'entrée. Le script ne rédige pas de contenu : si une information obligatoire est absente, il utilise le référentiel officiel lorsque c'est possible ou affiche une erreur explicite.
@@ -207,6 +241,7 @@ Le Markdown validé est la source d'entrée. Le script ne rédige pas de contenu
 Les commandes historiques restent disponibles :
 
 ```bash
+python3 scripts/import_validated.py 002
 python3 scripts/main.py 002
 python3 -m unittest discover
 ```
