@@ -4,6 +4,14 @@ Générateur documentaire YAML pour le projet RHYAD.
 
 Le dépôt produit des livrables DOCX/PDF avec la charte CEVA, le logo, le cartouche documentaire, la page de garde, le tableau `Document Control`, le pied de page et la table des matières Word.
 
+## Séparation Documentaire
+
+Les documents `CEVA-RHYAD-xxx` sont les documents projet destinés au client. Ils décrivent la méthode, la gouvernance et les livrables du projet sans exposer l'architecture interne du logiciel RHYAD ni ses outils de développement.
+
+La documentation `RHYAD-SYS` est strictement interne à RHYAD. Elle est placée dans `docs/internal/` et couvre les sujets système, les conventions de développement et les automatisations du moteur documentaire.
+
+Les deux référentiels sont indépendants : un document client `CEVA-RHYAD-xxx` ne référence pas la documentation interne `RHYAD-SYS`.
+
 ## Référentiel Officiel
 
 Le référentiel documentaire validé est décrit dans `config/rhyad_repository.yaml`.
