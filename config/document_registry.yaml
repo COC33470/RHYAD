@@ -117,3 +117,11 @@ documents:
     status: "Validated"
     family: "100"
     source: "config/documents/functions/F07.yaml"
+
+  - code: "F08"
+    official_code: "CEVA-RHYAD-100-F08"
+    title: "Contrôle Qualité"
+    revision: "Rev1.0"
+    status: "Validated"
+    family: "100"
+    source: "config/documents/functions/F08.yaml"
