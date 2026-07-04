@@ -31,7 +31,7 @@ documents:
     source: "config/documents/003.yaml"
 
   - code: "004"
-    official_code: "CEVA-RHYAD-000-004"
+    official_code: "CEVA-RHYAD-004-REGISTRE DES RISQUES"
     title: "Registre des Risques"
     revision: "Rev1.0"
     status: "Validated"
