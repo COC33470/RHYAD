@@ -85,3 +85,11 @@ documents:
     status: "Validated"
     family: "100"
     source: "config/documents/functions/F03.yaml"
+
+  - code: "F04"
+    official_code: "CEVA-RHYAD-100-F04"
+    title: "Production des Autovaccins"
+    revision: "Rev1.0"
+    status: "Validated"
+    family: "100"
+    source: "config/documents/functions/F04.yaml"

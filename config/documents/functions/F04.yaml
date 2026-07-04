@@ -1,0 +1,254 @@
+reference: CEVA-RHYAD-100-F04
+title: Production des Autovaccins
+revision: Rev1.0
+status: Validated
+chapters:
+- title: 1. Objet
+  blocks:
+  - type: text
+    text: La fonction F04 -- Production des Autovaccins définit les exigences fonctionnelles relatives aux activités de production
+      des autovaccins vétérinaires au sein du Campus CEVA RHYAD.
+  - type: text
+    text: Elle couvre l'ensemble des espaces et fonctions nécessaires à la fabrication, depuis l'introduction des matières
+      préparées jusqu'au transfert des produits vers les étapes de contrôle qualité, de conditionnement ou de stockage intermédiaire.
+  - type: text
+    text: Le présent document décrit exclusivement les besoins fonctionnels du projet et ne définit ni les procédés de fabrication,
+      ni les recettes de production.
+  text: 'La fonction F04 -- Production des Autovaccins définit les exigences fonctionnelles relatives aux activités de production
+    des autovaccins vétérinaires au sein du Campus CEVA RHYAD.
+
+
+    Elle couvre l''ensemble des espaces et fonctions nécessaires à la fabrication, depuis l''introduction des matières préparées
+    jusqu''au transfert des produits vers les étapes de contrôle qualité, de conditionnement ou de stockage intermédiaire.
+
+
+    Le présent document décrit exclusivement les besoins fonctionnels du projet et ne définit ni les procédés de fabrication,
+    ni les recettes de production.'
+- title: 2. Objectifs
+  blocks:
+  - type: list
+    items:
+    - production d'autovaccins conforme GMP/BPF ;
+    - maîtrise des contaminations croisées ;
+    - flexibilité des installations ;
+    - protection du personnel, des produits et de l'environnement ;
+    - disponibilité élevée des infrastructures critiques ;
+    - évolutivité du Campus.
+  bullets:
+  - production d'autovaccins conforme GMP/BPF ;
+  - maîtrise des contaminations croisées ;
+  - flexibilité des installations ;
+  - protection du personnel, des produits et de l'environnement ;
+  - disponibilité élevée des infrastructures critiques ;
+  - évolutivité du Campus.
+- title: 3. Périmètre
+  blocks:
+  - type: text
+    text: 'La fonction couvre notamment :'
+  - type: list
+    items:
+    - salles de production ;
+    - salles de culture ;
+    - salles de préparation finale ;
+    - locaux techniques associés ;
+    - SAS personnel et matériel ;
+    - zones de transfert ;
+    - circulations de production.
+  - type: text
+    text: 'Sont exclus :'
+  - type: list
+    items:
+    - procédures de fabrication ;
+    - paramètres de production ;
+    - recettes MES ;
+    - procédures qualité ;
+    - procédures d'exploitation.
+  text: 'La fonction couvre notamment :
+
+
+    Sont exclus :'
+  bullets:
+  - salles de production ;
+  - salles de culture ;
+  - salles de préparation finale ;
+  - locaux techniques associés ;
+  - SAS personnel et matériel ;
+  - zones de transfert ;
+  - circulations de production.
+  - procédures de fabrication ;
+  - paramètres de production ;
+  - recettes MES ;
+  - procédures qualité ;
+  - procédures d'exploitation.
+- title: 4. Exigences fonctionnelles
+- title: F04-01 -- Conformité GMP/BPF
+  blocks:
+  - type: text
+    text: Les installations doivent permettre une production conforme aux exigences réglementaires applicables.
+  text: Les installations doivent permettre une production conforme aux exigences réglementaires applicables.
+- title: F04-02 -- Confinement
+  blocks:
+  - type: text
+    text: Les locaux doivent assurer un niveau de confinement adapté.
+  text: Les locaux doivent assurer un niveau de confinement adapté.
+- title: F04-03 -- Traitement d'air des salles blanches
+  blocks:
+  - type: text
+    text: 'Le traitement d''air doit garantir :'
+  - type: list
+    items:
+    - la classe de propreté requise ;
+    - les cascades de pression ;
+    - la température et l'humidité ;
+    - les renouvellements d'air ;
+    - la continuité de fonctionnement.
+  - type: text
+    text: Le traitement d'air des salles blanches est une infrastructure critique.
+  text: 'Le traitement d''air doit garantir :
+
+
+    Le traitement d''air des salles blanches est une infrastructure critique.'
+  bullets:
+  - la classe de propreté requise ;
+  - les cascades de pression ;
+  - la température et l'humidité ;
+  - les renouvellements d'air ;
+  - la continuité de fonctionnement.
+- title: F04-04 -- Flux
+  blocks:
+  - type: text
+    text: 'Les flux suivants doivent être maîtrisés :'
+  - type: list
+    items:
+    - personnel ;
+    - matières ;
+    - produits ;
+    - déchets ;
+    - matériels.
+  text: 'Les flux suivants doivent être maîtrisés :'
+  bullets:
+  - personnel ;
+  - matières ;
+  - produits ;
+  - déchets ;
+  - matériels.
+- title: F04-05 -- Flexibilité
+  blocks:
+  - type: text
+    text: Les installations doivent permettre l'évolution des procédés.
+  text: Les installations doivent permettre l'évolution des procédés.
+- title: F04-06 -- Nettoyage
+  blocks:
+  - type: text
+    text: Les locaux et équipements doivent permettre le nettoyage et la décontamination.
+  text: Les locaux et équipements doivent permettre le nettoyage et la décontamination.
+- title: F04-07 -- Traçabilité
+  blocks:
+  - type: text
+    text: Chaque opération doit être traçable.
+  text: Chaque opération doit être traçable.
+- title: F04-08 -- Continuité d'activité
+  blocks:
+  - type: text
+    text: Les fonctions critiques doivent bénéficier d'un haut niveau de disponibilité.
+  text: Les fonctions critiques doivent bénéficier d'un haut niveau de disponibilité.
+- title: 5. Interfaces
+  blocks:
+  - type: list
+    items:
+    - F03
+    - F05
+    - F06
+    - F07
+    - F08
+    - F09
+    - F10
+    - F12
+    - F13
+  bullets:
+  - F03
+  - F05
+  - F06
+  - F07
+  - F08
+  - F09
+  - F10
+  - F12
+  - F13
+- title: 6. Contraintes
+  blocks:
+  - type: list
+    items:
+    - exigences GMP/BPF ;
+    - biosécurité ;
+    - confinement biologique ;
+    - climat d'Arabie Saoudite ;
+    - disponibilité des infrastructures critiques ;
+    - nettoyage et décontamination ;
+    - qualification et validation.
+  bullets:
+  - exigences GMP/BPF ;
+  - biosécurité ;
+  - confinement biologique ;
+  - climat d'Arabie Saoudite ;
+  - disponibilité des infrastructures critiques ;
+  - nettoyage et décontamination ;
+  - qualification et validation.
+- title: 7. Critères de performance
+  blocks:
+  - type: list
+    items:
+    - conformité réglementaire ;
+    - maîtrise des contaminations ;
+    - disponibilité élevée ;
+    - exploitation sûre ;
+    - maintenance facilitée ;
+    - évolutivité.
+  bullets:
+  - conformité réglementaire ;
+  - maîtrise des contaminations ;
+  - disponibilité élevée ;
+  - exploitation sûre ;
+  - maintenance facilitée ;
+  - évolutivité.
+- title: 8. Documents associés
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-001A-ACAP
+    - CEVA-RHYAD-200-DT-F04-01 et suivants
+    - CEVA-RHYAD-300-DB01 — Process
+    - CEVA-RHYAD-300-DB03 — CVC / HVAC
+    - CEVA-RHYAD-300-DB04 — Utilités
+    - CEVA-RHYAD-300-DB05 — Électricité
+    - CEVA-RHYAD-300-DB06 — Automatisme, IT / OT et Cybersécurité
+    - CEVA-RHYAD-500-REG03 — Registre des Risques
+    - CEVA-RHYAD-500-REG04 — Registre des Hypothèses
+    - CEVA-RHYAD-500-REG05 — Registre des Interfaces
+  bullets:
+  - CEVA-RHYAD-001A-ACAP
+  - CEVA-RHYAD-200-DT-F04-01 et suivants
+  - CEVA-RHYAD-300-DB01 — Process
+  - CEVA-RHYAD-300-DB03 — CVC / HVAC
+  - CEVA-RHYAD-300-DB04 — Utilités
+  - CEVA-RHYAD-300-DB05 — Électricité
+  - CEVA-RHYAD-300-DB06 — Automatisme, IT / OT et Cybersécurité
+  - CEVA-RHYAD-500-REG03 — Registre des Risques
+  - CEVA-RHYAD-500-REG04 — Registre des Hypothèses
+  - CEVA-RHYAD-500-REG05 — Registre des Interfaces
+- title: 9. Critères de validation
+  blocks:
+  - type: list
+    items:
+    - besoins approuvés ;
+    - interfaces identifiées ;
+    - infrastructures critiques définies ;
+    - données techniques collectées ;
+    - hypothèses enregistrées.
+  bullets:
+  - besoins approuvés ;
+  - interfaces identifiées ;
+  - infrastructures critiques définies ;
+  - données techniques collectées ;
+  - hypothèses enregistrées.
+- title: Fin du document
