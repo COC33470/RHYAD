@@ -1,4 +1,15 @@
-decisions: []
+decisions:
+  - id: "D-0001"
+    title: "Validation du document CEVA-RHYAD-003-GLOSSAIRE"
+    description: "Validation du document CEVA-RHYAD-003-GLOSSAIRE."
+    status: "Validated"
+    date: "À compléter"
+    source: "CEVA-RHYAD-003-GLOSSAIRE"
+    impacts:
+      - "CEVA-RHYAD-003-GLOSSAIRE"
+    references:
+      - "CEVA-RHYAD-003-GLOSSAIRE"
+
 schema:
   required_fields:
     - "id"

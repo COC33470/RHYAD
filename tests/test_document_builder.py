@@ -92,6 +92,45 @@ class DocumentBuilderTest(unittest.TestCase):
             self.assertIn("NUMPAGES", footer_xml)
             self.assertIn("INTERNAL", footer_xml)
 
+    def test_build_document_prefers_document_revision_and_status(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            yaml_path = root / "003.yaml"
+            yaml_path.write_text(
+                "\n".join(
+                    [
+                        "reference: CEVA-RHYAD-003-GLOSSAIRE",
+                        "title: Glossaire",
+                        "revision: Rev0.1",
+                        "status: Validated",
+                        "chapters:",
+                        "  - title: 1. Objet",
+                        "    text: Texte validé.",
+                    ]
+                ),
+                encoding="utf-8",
+            )
+
+            output_path = root / "output" / "docx" / "CEVA-RHYAD-003-GLOSSAIRE.docx"
+            project_config = {
+                "project": {"name": "Test Project"},
+                "document": {
+                    "revision": "A1.0",
+                    "status": "DRAFT",
+                    "confidentiality": "INTERNAL",
+                },
+            }
+
+            build_document(yaml_path, output_path, project_config=project_config, project_root=root)
+
+            generated = Document(output_path)
+            table_text = "\n".join(
+                cell.text for table in generated.tables for row in table.rows for cell in row.cells
+            )
+
+            self.assertIn("Rev0.1", table_text)
+            self.assertIn("Validated", table_text)
+
     def test_validate_document_config_requires_chapters(self):
         with self.assertRaisesRegex(ValueError, "chapters"):
             validate_document_config(
