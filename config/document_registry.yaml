@@ -109,3 +109,11 @@ documents:
     status: "Validated"
     family: "100"
     source: "config/documents/functions/F06.yaml"
+
+  - code: "F07"
+    official_code: "CEVA-RHYAD-100-F07"
+    title: "Lavage, Stérilisation et Préparation des Équipements"
+    revision: "Rev1.0"
+    status: "Validated"
+    family: "100"
+    source: "config/documents/functions/F07.yaml"

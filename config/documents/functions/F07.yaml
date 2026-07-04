@@ -1,0 +1,280 @@
+reference: CEVA-RHYAD-100-F07
+title: Lavage, Stérilisation et Préparation des Équipements
+revision: Rev1.0
+status: Validated
+chapters:
+- title: 1. Objet
+  blocks:
+  - type: text
+    text: La fonction F07 -- Lavage, Stérilisation et Préparation des Équipements définit les exigences fonctionnelles relatives
+      au nettoyage, à la décontamination, à la stérilisation, au séchage, au stockage et à la préparation des équipements
+      réutilisables nécessaires aux activités du Campus CEVA RHYAD.
+  - type: text
+    text: Elle couvre les équipements de production, de laboratoire et les accessoires nécessitant une préparation avant leur
+      remise en service.
+  - type: text
+    text: Le présent document décrit les besoins fonctionnels du projet sans définir les procédés de nettoyage, les cycles
+      de stérilisation ni les procédures opératoires.
+  text: 'La fonction F07 -- Lavage, Stérilisation et Préparation des Équipements définit les exigences fonctionnelles relatives
+    au nettoyage, à la décontamination, à la stérilisation, au séchage, au stockage et à la préparation des équipements réutilisables
+    nécessaires aux activités du Campus CEVA RHYAD.
+
+
+    Elle couvre les équipements de production, de laboratoire et les accessoires nécessitant une préparation avant leur remise
+    en service.
+
+
+    Le présent document décrit les besoins fonctionnels du projet sans définir les procédés de nettoyage, les cycles de stérilisation
+    ni les procédures opératoires.'
+- title: 2. Objectifs
+  blocks:
+  - type: text
+    text: 'La fonction doit permettre :'
+  - type: list
+    items:
+    - le nettoyage des équipements réutilisables ;
+    - la décontamination lorsque nécessaire ;
+    - la stérilisation des matériels concernés ;
+    - le séchage et le stockage avant réutilisation ;
+    - la préparation des équipements pour les opérations de production ;
+    - la maîtrise des contaminations croisées ;
+    - la traçabilité complète des opérations.
+  text: 'La fonction doit permettre :'
+  bullets:
+  - le nettoyage des équipements réutilisables ;
+  - la décontamination lorsque nécessaire ;
+  - la stérilisation des matériels concernés ;
+  - le séchage et le stockage avant réutilisation ;
+  - la préparation des équipements pour les opérations de production ;
+  - la maîtrise des contaminations croisées ;
+  - la traçabilité complète des opérations.
+- title: 3. Périmètre
+  blocks:
+  - type: text
+    text: 'La fonction couvre notamment :'
+  - type: list
+    items:
+    - les locaux de lavage ;
+    - les locaux de stérilisation ;
+    - les autoclaves ;
+    - les laveurs industriels ;
+    - les zones de séchage ;
+    - les zones de stockage des équipements propres ;
+    - les SAS de transfert ;
+    - les circulations associées.
+  - type: text
+    text: 'Sont exclus :'
+  - type: list
+    items:
+    - les procédures de nettoyage ;
+    - les paramètres de stérilisation ;
+    - les qualifications d'équipements ;
+    - les procédures qualité.
+  text: 'La fonction couvre notamment :
+
+
+    Sont exclus :'
+  bullets:
+  - les locaux de lavage ;
+  - les locaux de stérilisation ;
+  - les autoclaves ;
+  - les laveurs industriels ;
+  - les zones de séchage ;
+  - les zones de stockage des équipements propres ;
+  - les SAS de transfert ;
+  - les circulations associées.
+  - les procédures de nettoyage ;
+  - les paramètres de stérilisation ;
+  - les qualifications d'équipements ;
+  - les procédures qualité.
+- title: 4. Exigences fonctionnelles
+- title: F07-01 -- Séparation des flux
+  blocks:
+  - type: text
+    text: Les équipements sales et les équipements propres doivent suivre des cheminements distincts afin d'éviter toute recontamination.
+  text: Les équipements sales et les équipements propres doivent suivre des cheminements distincts afin d'éviter toute recontamination.
+- title: F07-02 -- Conditions environnementales
+  blocks:
+  - type: text
+    text: 'Les locaux doivent offrir des conditions adaptées aux différentes étapes :'
+  - type: list
+    items:
+    - réception des matériels sales ;
+    - lavage ;
+    - séchage ;
+    - stérilisation ;
+    - refroidissement ;
+    - stockage des matériels propres.
+  text: 'Les locaux doivent offrir des conditions adaptées aux différentes étapes :'
+  bullets:
+  - réception des matériels sales ;
+  - lavage ;
+  - séchage ;
+  - stérilisation ;
+  - refroidissement ;
+  - stockage des matériels propres.
+- title: F07-03 -- Préparation des équipements
+  blocks:
+  - type: text
+    text: Les équipements doivent pouvoir être préparés, assemblés et conditionnés avant leur transfert vers les zones de
+      production.
+  text: Les équipements doivent pouvoir être préparés, assemblés et conditionnés avant leur transfert vers les zones de production.
+- title: F07-04 -- Traçabilité
+  blocks:
+  - type: text
+    text: 'Chaque équipement doit pouvoir être tracé :'
+  - type: list
+    items:
+    - identification ;
+    - cycle de lavage ;
+    - cycle de stérilisation ;
+    - date ;
+    - opérateur ;
+    - destination.
+  text: 'Chaque équipement doit pouvoir être tracé :'
+  bullets:
+  - identification ;
+  - cycle de lavage ;
+  - cycle de stérilisation ;
+  - date ;
+  - opérateur ;
+  - destination.
+- title: F07-05 -- Continuité d'activité
+  blocks:
+  - type: text
+    text: Les installations devront garantir la disponibilité des équipements nécessaires aux activités critiques du Campus.
+  - type: text
+    text: Les équipements critiques feront l'objet d'une analyse de redondance adaptée.
+  text: 'Les installations devront garantir la disponibilité des équipements nécessaires aux activités critiques du Campus.
+
+
+    Les équipements critiques feront l''objet d''une analyse de redondance adaptée.'
+- title: F07-06 -- Sécurité
+  blocks:
+  - type: text
+    text: 'Les installations doivent assurer :'
+  - type: list
+    items:
+    - la sécurité des opérateurs ;
+    - la maîtrise des risques thermiques ;
+    - la maîtrise des risques chimiques ;
+    - la maîtrise des risques biologiques.
+  text: 'Les installations doivent assurer :'
+  bullets:
+  - la sécurité des opérateurs ;
+  - la maîtrise des risques thermiques ;
+  - la maîtrise des risques chimiques ;
+  - la maîtrise des risques biologiques.
+- title: F07-07 -- Maintenabilité
+  blocks:
+  - type: text
+    text: 'Les équipements devront être facilement accessibles afin de permettre :'
+  - type: list
+    items:
+    - la maintenance préventive ;
+    - la maintenance corrective ;
+    - les opérations de qualification ;
+    - les contrôles réglementaires.
+  text: 'Les équipements devront être facilement accessibles afin de permettre :'
+  bullets:
+  - la maintenance préventive ;
+  - la maintenance corrective ;
+  - les opérations de qualification ;
+  - les contrôles réglementaires.
+- title: 5. Interfaces
+  blocks:
+  - type: list
+    items:
+    - F03 --- Préparation des Matières Premières et Solutions
+    - F04 --- Production des Autovaccins
+    - F05 --- Conditionnement et Expédition des Produits
+    - F06 --- Gestion des Flux
+    - F08 --- Contrôle Qualité
+    - F09 --- Utilités Industrielles
+    - F10 --- Maintenance et Exploitation Technique
+    - F11 --- Gestion des Déchets et Effluents
+  bullets:
+  - F03 --- Préparation des Matières Premières et Solutions
+  - F04 --- Production des Autovaccins
+  - F05 --- Conditionnement et Expédition des Produits
+  - F06 --- Gestion des Flux
+  - F08 --- Contrôle Qualité
+  - F09 --- Utilités Industrielles
+  - F10 --- Maintenance et Exploitation Technique
+  - F11 --- Gestion des Déchets et Effluents
+- title: 6. Contraintes
+  blocks:
+  - type: list
+    items:
+    - exigences GMP/BPF ;
+    - exigences de biosécurité ;
+    - contraintes de séparation propre/sale ;
+    - exigences de qualification des équipements ;
+    - contraintes de maintenance ;
+    - exigences de traçabilité ;
+    - conditions climatiques locales.
+  bullets:
+  - exigences GMP/BPF ;
+  - exigences de biosécurité ;
+  - contraintes de séparation propre/sale ;
+  - exigences de qualification des équipements ;
+  - contraintes de maintenance ;
+  - exigences de traçabilité ;
+  - conditions climatiques locales.
+- title: 7. Critères de performance
+  blocks:
+  - type: list
+    items:
+    - disponibilité permanente des équipements nécessaires à la production ;
+    - maîtrise des contaminations croisées ;
+    - traçabilité complète des cycles ;
+    - exploitation simple et sécurisée ;
+    - maintenance facilitée ;
+    - évolutivité compatible avec les futurs développements du Campus.
+  bullets:
+  - disponibilité permanente des équipements nécessaires à la production ;
+  - maîtrise des contaminations croisées ;
+  - traçabilité complète des cycles ;
+  - exploitation simple et sécurisée ;
+  - maintenance facilitée ;
+  - évolutivité compatible avec les futurs développements du Campus.
+- title: 8. Documents associés
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-001A-ACAP
+    - CEVA-RHYAD-200-DT-F07-01 et suivants
+    - CEVA-RHYAD-300-DB01 — Process
+    - CEVA-RHYAD-300-DB03 — CVC / HVAC
+    - CEVA-RHYAD-300-DB04 — Utilités
+    - CEVA-RHYAD-300-DB05 — Électricité
+    - CEVA-RHYAD-500-REG03 — Registre des Risques
+    - CEVA-RHYAD-500-REG04 — Registre des Hypothèses
+    - CEVA-RHYAD-500-REG05 — Registre des Interfaces
+  bullets:
+  - CEVA-RHYAD-001A-ACAP
+  - CEVA-RHYAD-200-DT-F07-01 et suivants
+  - CEVA-RHYAD-300-DB01 — Process
+  - CEVA-RHYAD-300-DB03 — CVC / HVAC
+  - CEVA-RHYAD-300-DB04 — Utilités
+  - CEVA-RHYAD-300-DB05 — Électricité
+  - CEVA-RHYAD-500-REG03 — Registre des Risques
+  - CEVA-RHYAD-500-REG04 — Registre des Hypothèses
+  - CEVA-RHYAD-500-REG05 — Registre des Interfaces
+- title: 9. Critères de validation
+  blocks:
+  - type: text
+    text: 'La fonction F07 sera considérée comme validée lorsque :'
+  - type: list
+    items:
+    - les besoins fonctionnels seront approuvés par le Maître d'Ouvrage ;
+    - les interfaces auront été identifiées ;
+    - les données techniques nécessaires auront été collectées ;
+    - les hypothèses de conception auront été enregistrées dans les DT associés.
+  text: 'La fonction F07 sera considérée comme validée lorsque :'
+  bullets:
+  - les besoins fonctionnels seront approuvés par le Maître d'Ouvrage ;
+  - les interfaces auront été identifiées ;
+  - les données techniques nécessaires auront été collectées ;
+  - les hypothèses de conception auront été enregistrées dans les DT associés.
+- title: Fin du document
