@@ -1,0 +1,241 @@
+reference: CEVA-RHYAD-100-F11
+title: Gestion des Déchets et Effluents
+revision: Rev1.0
+status: Validated
+chapters:
+- title: 1. Objet
+  blocks:
+  - type: text
+    text: La fonction F11 -- Gestion des Déchets et Effluents définit les exigences fonctionnelles relatives à la collecte,
+      au tri, au stockage temporaire, au traitement et à l'évacuation des déchets solides, liquides et gazeux générés par
+      les activités du Campus CEVA RHYAD.
+  - type: text
+    text: Elle couvre l'ensemble des flux de déchets produits par les bâtiments industriels, laboratoires, bâtiments administratifs
+      et installations techniques.
+  - type: text
+    text: Le présent document décrit les besoins fonctionnels du projet sans définir les procédures d'exploitation, de collecte
+      ou d'élimination.
+  text: 'La fonction F11 -- Gestion des Déchets et Effluents définit les exigences fonctionnelles relatives à la collecte,
+    au tri, au stockage temporaire, au traitement et à l''évacuation des déchets solides, liquides et gazeux générés par les
+    activités du Campus CEVA RHYAD.
+
+
+    Elle couvre l''ensemble des flux de déchets produits par les bâtiments industriels, laboratoires, bâtiments administratifs
+    et installations techniques.
+
+
+    Le présent document décrit les besoins fonctionnels du projet sans définir les procédures d''exploitation, de collecte
+    ou d''élimination.'
+- title: 2. Objectifs
+  blocks:
+  - type: list
+    items:
+    - maîtrise des flux de déchets ;
+    - protection des personnes et de l'environnement ;
+    - respect des exigences réglementaires ;
+    - prévention des contaminations ;
+    - traçabilité des déchets ;
+    - continuité des activités du Campus.
+  bullets:
+  - maîtrise des flux de déchets ;
+  - protection des personnes et de l'environnement ;
+  - respect des exigences réglementaires ;
+  - prévention des contaminations ;
+  - traçabilité des déchets ;
+  - continuité des activités du Campus.
+- title: 3. Périmètre
+- title: Déchets solides
+  blocks:
+  - type: list
+    items:
+    - déchets industriels banals ;
+    - déchets industriels dangereux ;
+    - déchets biologiques ;
+    - déchets chimiques ;
+    - consommables contaminés ;
+    - emballages ;
+    - déchets de maintenance.
+  bullets:
+  - déchets industriels banals ;
+  - déchets industriels dangereux ;
+  - déchets biologiques ;
+  - déchets chimiques ;
+  - consommables contaminés ;
+  - emballages ;
+  - déchets de maintenance.
+- title: Effluents liquides
+  blocks:
+  - type: list
+    items:
+    - eaux industrielles ;
+    - effluents de laboratoire ;
+    - effluents biologiques ;
+    - effluents chimiques ;
+    - eaux de nettoyage.
+  bullets:
+  - eaux industrielles ;
+  - effluents de laboratoire ;
+  - effluents biologiques ;
+  - effluents chimiques ;
+  - eaux de nettoyage.
+- title: Effluents gazeux
+  blocks:
+  - type: list
+    items:
+    - rejets des laboratoires ;
+    - rejets des installations techniques ;
+    - rejets des systèmes de traitement d'air.
+  - type: text
+    text: Elle couvre également les locaux déchets, stockages temporaires, zones de collecte et installations de prétraitement
+      lorsque nécessaires.
+  bullets:
+  - rejets des laboratoires ;
+  - rejets des installations techniques ;
+  - rejets des systèmes de traitement d'air.
+  text: Elle couvre également les locaux déchets, stockages temporaires, zones de collecte et installations de prétraitement
+    lorsque nécessaires.
+- title: 4. Exigences fonctionnelles
+- title: F11-01 -- Séparation des flux
+  blocks:
+  - type: text
+    text: Les différentes catégories de déchets et d'effluents doivent être gérées séparément.
+  text: Les différentes catégories de déchets et d'effluents doivent être gérées séparément.
+- title: F11-02 -- Stockage temporaire
+  blocks:
+  - type: text
+    text: Stockage temporaire sécurisé avant enlèvement ou traitement.
+  text: Stockage temporaire sécurisé avant enlèvement ou traitement.
+- title: F11-03 -- Prévention des contaminations
+  blocks:
+  - type: text
+    text: Les flux de déchets ne doivent jamais interférer avec les flux de production, de personnel, de produits ni les zones
+      propres.
+  text: Les flux de déchets ne doivent jamais interférer avec les flux de production, de personnel, de produits ni les zones
+    propres.
+- title: F11-04 -- Traçabilité
+  blocks:
+  - type: text
+    text: Traçabilité de l'origine, de la nature, de la quantité, de la date, de la destination et du mode d'élimination.
+  text: Traçabilité de l'origine, de la nature, de la quantité, de la date, de la destination et du mode d'élimination.
+- title: F11-05 -- Protection de l'environnement
+  blocks:
+  - type: text
+    text: Limiter les risques de pollution. Prévoir rétention et confinement lorsque nécessaire.
+  text: Limiter les risques de pollution. Prévoir rétention et confinement lorsque nécessaire.
+- title: F11-06 -- Sécurité
+  blocks:
+  - type: text
+    text: 'Assurer :'
+  - type: list
+    items:
+    - sécurité des opérateurs ;
+    - protection de l'environnement ;
+    - maîtrise des risques chimiques ;
+    - maîtrise des risques biologiques ;
+    - prévention des incendies.
+  text: 'Assurer :'
+  bullets:
+  - sécurité des opérateurs ;
+  - protection de l'environnement ;
+  - maîtrise des risques chimiques ;
+  - maîtrise des risques biologiques ;
+  - prévention des incendies.
+- title: F11-07 -- Continuité d'activité
+  blocks:
+  - type: text
+    text: Permettre la poursuite des activités sans interruption liée aux déchets ou effluents.
+  text: Permettre la poursuite des activités sans interruption liée aux déchets ou effluents.
+- title: 5. Interfaces
+  blocks:
+  - type: list
+    items:
+    - F04
+    - F05
+    - F06
+    - F07
+    - F08
+    - F09
+    - F10
+    - F12
+  bullets:
+  - F04
+  - F05
+  - F06
+  - F07
+  - F08
+  - F09
+  - F10
+  - F12
+- title: 6. Contraintes
+  blocks:
+  - type: list
+    items:
+    - exigences GMP/BPF ;
+    - réglementation environnementale applicable ;
+    - biosécurité ;
+    - contraintes climatiques locales ;
+    - confinement ;
+    - stockage des déchets dangereux ;
+    - prescriptions des autorités locales.
+  bullets:
+  - exigences GMP/BPF ;
+  - réglementation environnementale applicable ;
+  - biosécurité ;
+  - contraintes climatiques locales ;
+  - confinement ;
+  - stockage des déchets dangereux ;
+  - prescriptions des autorités locales.
+- title: 7. Critères de performance
+  blocks:
+  - type: list
+    items:
+    - gestion sécurisée des déchets et effluents ;
+    - maîtrise des risques environnementaux ;
+    - traçabilité complète ;
+    - exploitation simple et sécurisée ;
+    - maintenance facilitée ;
+    - évolutivité.
+  bullets:
+  - gestion sécurisée des déchets et effluents ;
+  - maîtrise des risques environnementaux ;
+  - traçabilité complète ;
+  - exploitation simple et sécurisée ;
+  - maintenance facilitée ;
+  - évolutivité.
+- title: 8. Documents associés
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-001A-ACAP
+    - CEVA-RHYAD-200-DT-F11-01 et suivants
+    - CEVA-RHYAD-300-DB01 — Process
+    - CEVA-RHYAD-300-DB03 — CVC / HVAC
+    - CEVA-RHYAD-300-DB04 — Utilités
+    - CEVA-RHYAD-300-DB08 — Développement Durable
+    - CEVA-RHYAD-500-REG03 — Registre des Risques
+    - CEVA-RHYAD-500-REG04 — Registre des Hypothèses
+    - CEVA-RHYAD-500-REG05 — Registre des Interfaces
+  bullets:
+  - CEVA-RHYAD-001A-ACAP
+  - CEVA-RHYAD-200-DT-F11-01 et suivants
+  - CEVA-RHYAD-300-DB01 — Process
+  - CEVA-RHYAD-300-DB03 — CVC / HVAC
+  - CEVA-RHYAD-300-DB04 — Utilités
+  - CEVA-RHYAD-300-DB08 — Développement Durable
+  - CEVA-RHYAD-500-REG03 — Registre des Risques
+  - CEVA-RHYAD-500-REG04 — Registre des Hypothèses
+  - CEVA-RHYAD-500-REG05 — Registre des Interfaces
+- title: 9. Critères de validation
+  blocks:
+  - type: list
+    items:
+    - besoins fonctionnels approuvés ;
+    - filières de déchets et d'effluents identifiées ;
+    - interfaces validées ;
+    - hypothèses de conception enregistrées dans les DT associés.
+  bullets:
+  - besoins fonctionnels approuvés ;
+  - filières de déchets et d'effluents identifiées ;
+  - interfaces validées ;
+  - hypothèses de conception enregistrées dans les DT associés.
+- title: Fin du document

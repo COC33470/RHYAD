@@ -141,3 +141,11 @@ documents:
     status: "Validated"
     family: "100"
     source: "config/documents/functions/F10.yaml"
+
+  - code: "F11"
+    official_code: "CEVA-RHYAD-100-F11"
+    title: "Gestion des Déchets et Effluents"
+    revision: "Rev1.0"
+    status: "Validated"
+    family: "100"
+    source: "config/documents/functions/F11.yaml"
