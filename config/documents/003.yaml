@@ -153,9 +153,3 @@ chapters:
       - "Les principes méthodologiques sont détaillés exclusivement dans CEVA-RHYAD-000-MTH01."
       - "knowledge/glossary.yaml est la source unique de vérité."
       - "Le cycle documentaire RHYAD est : Draft → Review → Validated → Published → Obsolete."
-
-  - title: "10. Décision"
-    text: >
-      Je considère cette version comme la version Alpha du Glossaire RHYAD. Elle est suffisamment
-      mature pour être intégrée dans le logiciel RHYAD et servira désormais de référentiel
-      terminologique unique pour tous les développements et tous les futurs documents du projet.
