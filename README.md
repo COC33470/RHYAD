@@ -181,6 +181,7 @@ rhyad doctor
 rhyad impact D-014
 rhyad figures list
 rhyad figures check
+rhyad ui
 rhyad trace suggest
 rhyad trace approve
 rhyad dashboard
@@ -199,6 +200,7 @@ python3 scripts/rhyad.py doctor
 python3 scripts/rhyad.py impact D-014
 python3 scripts/rhyad.py figures list
 python3 scripts/rhyad.py figures check
+python3 scripts/rhyad.py ui
 python3 scripts/rhyad.py trace suggest
 python3 scripts/rhyad.py trace approve
 python3 scripts/rhyad.py dashboard
@@ -215,6 +217,32 @@ Générer la fonction F01 :
 ```bash
 python3 scripts/main.py F01
 ```
+
+## Interface RHYAD
+
+L'interface terminal RHYAD fournit une entrée métier unique pour piloter le projet sans manipuler directement les commandes techniques.
+
+Lancer l'interface :
+
+```bash
+python3 scripts/rhyad.py ui
+```
+
+Menus disponibles :
+
+- Tableau de bord
+- Documents
+- Réunions
+- Décisions
+- Actions
+- Risques
+- Design Basis
+- Données Techniques
+- Générer les livrables
+- Synchroniser le projet
+- Administration
+
+Les opérations restent réalisées par les fonctions existantes de RHYAD, mais l'utilisateur les déclenche depuis des menus métier.
 
 ## Production documentaire automatisée
 

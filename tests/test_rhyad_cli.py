@@ -361,6 +361,70 @@ class RhyadCliTest(unittest.TestCase):
             self.assertIn("Figures non utilisées: 1", output)
             self.assertIn("FIG-000-001", output)
 
+    def test_ui_opens_main_menu_and_exits_cleanly(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            _write_cli_fixture(root)
+            stream = io.StringIO()
+            inputs = iter(["0"])
+
+            exit_code = rhyad.command_ui(root=root, stream=stream, input_func=lambda: next(inputs))
+
+            self.assertEqual(exit_code, 0)
+            output = stream.getvalue()
+            self.assertIn("RHYAD", output)
+            self.assertIn("Assistant AMO / Maîtrise d'Œuvre Industrielle", output)
+            self.assertIn("Projet actif :", output)
+            self.assertIn("Test Project", output)
+            self.assertIn("0. Quitter", output)
+            self.assertIn("Fermeture de l'interface RHYAD.", output)
+
+    def test_ui_navigates_documents_menu(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            _write_cli_fixture(root)
+            stream = io.StringIO()
+            inputs = iter(["2", "0", "0"])
+
+            exit_code = rhyad.command_ui(root=root, stream=stream, input_func=lambda: next(inputs))
+
+            self.assertEqual(exit_code, 0)
+            output = stream.getvalue()
+            self.assertIn("Menu Documents", output)
+            self.assertIn("1. Afficher tous les documents", output)
+            self.assertIn("6. Générer un document", output)
+
+    def test_ui_displays_dashboard(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            _write_cli_fixture(root)
+            stream = io.StringIO()
+            inputs = iter(["1", "", "0"])
+
+            def fake_runner(command, timeout=None):
+                if command == ["git", "rev-parse", "--abbrev-ref", "HEAD"]:
+                    return rhyad.CommandResult(0, "develop")
+                if command == ["git", "status", "--short"]:
+                    return rhyad.CommandResult(0, "")
+                return rhyad.CommandResult(0, "")
+
+            exit_code = rhyad.command_ui(
+                root=root,
+                runner=fake_runner,
+                stream=stream,
+                input_func=lambda: next(inputs),
+            )
+
+            self.assertEqual(exit_code, 0)
+            output = stream.getvalue()
+            self.assertIn("Tableau de bord", output)
+            self.assertIn("Projet : Test Project", output)
+            self.assertIn("Git : develop / clean", output)
+            self.assertIn("Dernière génération : Aucune", output)
+            self.assertIn("Documents Draft :", output)
+            self.assertIn("Décisions ouvertes :", output)
+            self.assertIn("Prochaine réunion :", output)
+
     def test_dashboard_prints_project_documents_knowledge_tests_and_latest_generation(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

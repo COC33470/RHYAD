@@ -33,6 +33,7 @@ Usage:
   rhyad impact <object>
   rhyad figures list
   rhyad figures check
+  rhyad ui
   rhyad trace suggest
   rhyad trace approve
   rhyad dashboard
@@ -49,6 +50,7 @@ Compatibility:
   python3 scripts/rhyad.py impact D-014
   python3 scripts/rhyad.py figures list
   python3 scripts/rhyad.py figures check
+  python3 scripts/rhyad.py ui
   python3 scripts/rhyad.py trace suggest
   python3 scripts/rhyad.py trace approve
   python3 scripts/rhyad.py dashboard
@@ -491,6 +493,402 @@ def command_figures(args, root=ROOT, stream=sys.stdout):
     return 1 if result["missing"] or result["unsupported"] else 0
 
 
+def _read_ui_input(input_func, stream, prompt="Choix : "):
+    print(prompt, end="", file=stream)
+    try:
+        return input_func().strip()
+    except EOFError:
+        return "0"
+
+
+def _ui_wait(input_func, stream):
+    print("", file=stream)
+    print("Entrée pour continuer...", end="", file=stream)
+    try:
+        input_func()
+    except EOFError:
+        pass
+
+
+def _load_document_summary(root, document):
+    source = document.get("source", "")
+    path = Path(source)
+    if source and not path.is_absolute():
+        path = root / path
+
+    summary = {
+        "reference": document.get("official_code", ""),
+        "title": "",
+        "revision": document.get("revision", ""),
+        "status": "",
+    }
+    if not path.exists():
+        return summary
+
+    for raw_line in path.read_text(encoding="utf-8").splitlines():
+        if raw_line.startswith("chapters:"):
+            break
+        stripped = raw_line.strip()
+        if not stripped or ":" not in stripped:
+            continue
+        key, value = _parse_scalar(stripped)
+        if key in summary:
+            summary[key] = value
+
+    return summary
+
+
+def _documents_for_ui(root):
+    registry = load_registry_documents(root / "config" / "document_registry.yaml")
+    repository_titles = load_repository_titles(root / "config" / "rhyad_repository.yaml")
+    documents = []
+    for document in registry:
+        summary = _load_document_summary(root, document)
+        code = document.get("code", "")
+        title = summary.get("title") or repository_titles.get(code.upper(), "")
+        documents.append(
+            {
+                "code": code,
+                "official_code": document.get("official_code", ""),
+                "family": document.get("family", ""),
+                "title": title,
+                "revision": summary.get("revision") or document.get("revision", ""),
+                "status": summary.get("status", ""),
+            }
+        )
+    return documents
+
+
+def _document_state(status):
+    value = str(status).strip().lower()
+    if not value:
+        return None
+    if "published" in value or "publié" in value:
+        return "Published"
+    if "validated" in value or "validé" in value or "valide" in value:
+        return "Validated"
+    if "review" in value or "revue" in value:
+        return "Review"
+    if "draft" in value or "brouillon" in value or "working" in value:
+        return "Draft"
+    return None
+
+
+def _document_state_counts(root):
+    counts = {"Draft": 0, "Review": 0, "Validated": 0, "Published": 0}
+    for document in _documents_for_ui(root):
+        state = _document_state(document.get("status", ""))
+        if state in counts:
+            counts[state] += 1
+    return counts
+
+
+def _open_items_count(path, key):
+    if not path.exists():
+        return 0
+
+    closed_statuses = {
+        "closed",
+        "clôturé",
+        "cloture",
+        "done",
+        "terminé",
+        "termine",
+        "validated",
+        "validé",
+        "valide",
+        "published",
+        "obsolete",
+    }
+    lines = path.read_text(encoding="utf-8").splitlines()
+    in_section = False
+    entries = []
+    current_status = None
+
+    for raw_line in lines:
+        stripped = raw_line.strip()
+        if stripped == f"{key}: []":
+            return 0
+        if stripped == f"{key}:":
+            in_section = True
+            continue
+        if in_section and raw_line and not raw_line.startswith(" "):
+            break
+        if in_section and raw_line.startswith("  - "):
+            if current_status is not None:
+                entries.append(current_status)
+            current_status = ""
+            if "status:" in stripped:
+                _, current_status = _parse_scalar(stripped[2:])
+            continue
+        if in_section and current_status is not None and stripped.startswith("status:"):
+            _, current_status = _parse_scalar(stripped)
+
+    if current_status is not None:
+        entries.append(current_status)
+
+    return sum(1 for status in entries if str(status).strip().lower() not in closed_statuses)
+
+
+def _impacted_documents_count(root):
+    path = root / "knowledge" / "traceability.yaml"
+    if not path.exists():
+        return 0
+    destinations = set()
+    for raw_line in path.read_text(encoding="utf-8").splitlines():
+        stripped = raw_line.strip()
+        if stripped.startswith("destination:"):
+            _, value = _parse_scalar(stripped)
+            if value:
+                destinations.add(value)
+    return len(destinations)
+
+
+def _next_meeting(root):
+    path = root / "knowledge" / "meetings.yaml"
+    if not path.exists():
+        return "À planifier"
+    for raw_line in path.read_text(encoding="utf-8").splitlines():
+        stripped = raw_line.strip()
+        if stripped.startswith("date:"):
+            _, value = _parse_scalar(stripped)
+            if value and value not in {"À compléter", "A compléter"}:
+                return value
+    return "À planifier"
+
+
+def _git_summary(runner):
+    branch = _git_output(["rev-parse", "--abbrev-ref", "HEAD"], runner=runner)
+    status = _git_output(["status", "--short"], runner=runner)
+    state = "clean" if not status else "modifié"
+    return f"{branch} / {state}"
+
+
+def _print_ui_home(root, runner, stream):
+    project_config = load_project_summary(root / "config" / "project.yaml")
+    project = project_config.get("project", {})
+    project_name = project.get("name", "")
+
+    print("====================================================", file=stream)
+    print("RHYAD", file=stream)
+    print("Assistant AMO / Maîtrise d'Œuvre Industrielle", file=stream)
+    print("====================================================", file=stream)
+    print("", file=stream)
+    print("Projet actif :", file=stream)
+    print(project_name, file=stream)
+    print("", file=stream)
+    print("----------------------------------------------------", file=stream)
+    print("", file=stream)
+    print("1. Tableau de bord", file=stream)
+    print("", file=stream)
+    print("2. Documents", file=stream)
+    print("", file=stream)
+    print("3. Réunions", file=stream)
+    print("", file=stream)
+    print("4. Décisions", file=stream)
+    print("", file=stream)
+    print("5. Actions", file=stream)
+    print("", file=stream)
+    print("6. Risques", file=stream)
+    print("", file=stream)
+    print("7. Design Basis", file=stream)
+    print("", file=stream)
+    print("8. Données Techniques", file=stream)
+    print("", file=stream)
+    print("9. Générer les livrables", file=stream)
+    print("", file=stream)
+    print("10. Synchroniser le projet", file=stream)
+    print("", file=stream)
+    print("11. Administration", file=stream)
+    print("", file=stream)
+    print("0. Quitter", file=stream)
+    print("", file=stream)
+    print("----------------------------------------------------", file=stream)
+
+
+def _print_ui_dashboard(root, runner, stream):
+    project_config = load_project_summary(root / "config" / "project.yaml")
+    project = project_config.get("project", {})
+    states = _document_state_counts(root)
+
+    print("Tableau de bord", file=stream)
+    print("", file=stream)
+    print(f"Projet : {project.get('name', '')}", file=stream)
+    print(f"Git : {_git_summary(runner)}", file=stream)
+    print(f"Dernière génération : {latest_generation(root)}", file=stream)
+    print(f"Documents Draft : {states['Draft']}", file=stream)
+    print(f"Documents Review : {states['Review']}", file=stream)
+    print(f"Documents Validated : {states['Validated']}", file=stream)
+    print(f"Documents Published : {states['Published']}", file=stream)
+    print(f"Décisions ouvertes : {_open_items_count(root / 'knowledge' / 'decisions.yaml', 'decisions')}", file=stream)
+    print(f"Actions ouvertes : {_open_items_count(root / 'knowledge' / 'actions.yaml', 'actions')}", file=stream)
+    print(f"Risques ouverts : {_open_items_count(root / 'knowledge' / 'risks.yaml', 'risks')}", file=stream)
+    print(f"Documents impactés : {_impacted_documents_count(root)}", file=stream)
+    print(f"Prochaine réunion : {_next_meeting(root)}", file=stream)
+
+
+def _print_documents(documents, stream):
+    print("Documents", file=stream)
+    for document in documents:
+        status = document.get("status") or "À définir"
+        print(
+            f"{document['official_code']} | {document['title']} | famille {document['family']} | {status}",
+            file=stream,
+        )
+
+
+def _ui_documents(root, runner, stream, input_func):
+    while True:
+        print("Menu Documents", file=stream)
+        print("1. Afficher tous les documents", file=stream)
+        print("2. Filtrer par famille", file=stream)
+        print("3. Afficher le statut", file=stream)
+        print("4. Ouvrir un document", file=stream)
+        print("5. Mettre à jour un document", file=stream)
+        print("6. Générer un document", file=stream)
+        print("0. Retour", file=stream)
+        choice = _read_ui_input(input_func, stream)
+
+        if choice == "0":
+            return
+
+        documents = _documents_for_ui(root)
+        if choice == "1":
+            _print_documents(documents, stream)
+            _ui_wait(input_func, stream)
+            continue
+        if choice == "2":
+            family = _read_ui_input(input_func, stream, "Famille : ")
+            _print_documents([doc for doc in documents if doc["family"] == family], stream)
+            _ui_wait(input_func, stream)
+            continue
+        if choice == "3":
+            _print_documents(documents, stream)
+            _ui_wait(input_func, stream)
+            continue
+        if choice == "4":
+            code = _read_ui_input(input_func, stream, "Document : ")
+            document = next((doc for doc in documents if doc["code"].upper() == code.upper()), None)
+            if document:
+                _print_documents([document], stream)
+            else:
+                print("Document non trouvé.", file=stream)
+            _ui_wait(input_func, stream)
+            continue
+        if choice == "5":
+            code = _read_ui_input(input_func, stream, "Document : ")
+            command_paste(code, root=root, runner=runner, stream=stream)
+            _ui_wait(input_func, stream)
+            continue
+        if choice == "6":
+            code = _read_ui_input(input_func, stream, "Document : ")
+            command_generate(code, runner=runner, stream=stream)
+            _ui_wait(input_func, stream)
+            continue
+
+        print("Choix non reconnu.", file=stream)
+
+
+def _ui_simple_menu(title, actions, stream, input_func):
+    print(title, file=stream)
+    for action in actions:
+        print(f"- {action}", file=stream)
+    print("", file=stream)
+    print("0. Retour", file=stream)
+    _read_ui_input(input_func, stream)
+
+
+def _ui_generate_deliverables(runner, stream, input_func):
+    print("Générer les livrables", file=stream)
+    code = _read_ui_input(input_func, stream, "Document : ")
+    if code:
+        command_generate(code, runner=runner, stream=stream)
+    _ui_wait(input_func, stream)
+
+
+def _ui_sync_project(runner, stream, input_func):
+    print("Synchroniser le projet", file=stream)
+    print(f"État du projet : {_git_summary(runner)}", file=stream)
+    print("Aucune synchronisation distante n'est lancée automatiquement.", file=stream)
+    _ui_wait(input_func, stream)
+
+
+def command_ui(root=ROOT, runner=run_command, stream=sys.stdout, input_func=input):
+    while True:
+        _print_ui_home(root, runner, stream)
+        choice = _read_ui_input(input_func, stream)
+
+        if choice == "0":
+            print("Fermeture de l'interface RHYAD.", file=stream)
+            return 0
+        if choice == "1":
+            _print_ui_dashboard(root, runner, stream)
+            _ui_wait(input_func, stream)
+            continue
+        if choice == "2":
+            _ui_documents(root, runner, stream, input_func)
+            continue
+        if choice == "3":
+            _ui_simple_menu(
+                "Menu Réunions",
+                (
+                    "Créer une réunion",
+                    "Coller un compte rendu",
+                    "Analyser les décisions, actions, risques et documents impactés",
+                    "Proposer les mises à jour",
+                ),
+                stream,
+                input_func,
+            )
+            continue
+        if choice == "4":
+            _ui_simple_menu(
+                "Menu Décisions",
+                (
+                    "Consulter les décisions",
+                    "Créer une décision",
+                    "Voir les impacts documentaires",
+                    "Lancer la propagation",
+                ),
+                stream,
+                input_func,
+            )
+            continue
+        if choice == "5":
+            _ui_simple_menu("Menu Actions", ("Consulter les actions", "Créer une action", "Modifier le statut"), stream, input_func)
+            continue
+        if choice == "6":
+            _ui_simple_menu(
+                "Menu Risques",
+                (
+                    "Consulter les risques",
+                    "Créer un risque",
+                    "Modifier son statut",
+                    "Voir les documents associés",
+                ),
+                stream,
+                input_func,
+            )
+            continue
+        if choice == "7":
+            _ui_simple_menu("Design Basis", ("Consulter les Design Basis", "Voir les documents à produire"), stream, input_func)
+            continue
+        if choice == "8":
+            _ui_simple_menu("Données Techniques", ("Consulter les données techniques", "Voir les hypothèses associées"), stream, input_func)
+            continue
+        if choice == "9":
+            _ui_generate_deliverables(runner, stream, input_func)
+            continue
+        if choice == "10":
+            _ui_sync_project(runner, stream, input_func)
+            continue
+        if choice == "11":
+            _ui_simple_menu("Administration", ("Afficher l'état du projet", "Contrôler l'environnement"), stream, input_func)
+            continue
+
+        print("Choix non reconnu.", file=stream)
+
+
 def command_trace(args, root=ROOT, stream=sys.stdout):
     if not args:
         print("Usage: rhyad trace suggest|approve", file=stream)
@@ -621,6 +1019,8 @@ def main(argv=None):
         return command_impact(argv[1])
     if command == "figures":
         return command_figures(argv[1:])
+    if command == "ui":
+        return command_ui()
     if command == "trace":
         return command_trace(argv[1:])
     if command == "dashboard":
