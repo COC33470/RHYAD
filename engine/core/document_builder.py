@@ -2,7 +2,14 @@ from pathlib import Path
 from datetime import date
 import yaml
 from docx import Document
+from docx.shared import Inches
 
+from engine.core.figures import (
+    figure_index,
+    load_figures_registry,
+    resolve_figure_path,
+    validate_figure_extension,
+)
 from engine.styles.ceva_style import (
     add_cover_page,
     add_data_table,
@@ -24,6 +31,19 @@ def _require_string(data, key, label):
     return value
 
 
+def _validate_figure_references(data, label):
+    figures = data.get("figures")
+    if figures is None:
+        return
+    if not isinstance(figures, list):
+        raise ValueError(f"{label}.figures must be a list when provided.")
+
+    for index, figure in enumerate(figures, start=1):
+        figure_label = f"{label}.figures[{index}]"
+        _require_mapping(figure, figure_label)
+        _require_string(figure, "id", figure_label)
+
+
 def validate_document_config(data, yaml_path: Path):
     label = str(yaml_path)
     _require_mapping(data, label)
@@ -34,6 +54,8 @@ def validate_document_config(data, yaml_path: Path):
     subtitle = data.get("subtitle")
     if subtitle is not None and not isinstance(subtitle, str):
         raise ValueError(f"{label}.subtitle must be a string when provided.")
+
+    _validate_figure_references(data, label)
 
     chapters = data.get("chapters")
     if not isinstance(chapters, list) or not chapters:
@@ -47,6 +69,8 @@ def validate_document_config(data, yaml_path: Path):
         text = chapter.get("text")
         if text is not None and not isinstance(text, str):
             raise ValueError(f"{chapter_label}.text must be a string when provided.")
+
+        _validate_figure_references(chapter, chapter_label)
 
         bullets = chapter.get("bullets")
         if bullets is not None:
@@ -125,6 +149,50 @@ def _metadata(data, project_config):
     }
 
 
+def _figures_registry(project_root):
+    if project_root is None:
+        return {"figures": []}
+    return load_figures_registry(Path(project_root) / "config" / "figures_registry.yaml")
+
+
+def _warn_figure(message):
+    print(f"WARNING: {message}")
+
+
+def _add_figures(document, figure_refs, registry, project_root):
+    if not figure_refs:
+        return
+
+    figures = figure_index(registry)
+    for figure_ref in figure_refs:
+        figure_id = figure_ref["id"]
+        figure = figures.get(figure_id)
+        if not figure:
+            _warn_figure(f"Figure not declared in config/figures_registry.yaml: {figure_id}")
+            continue
+
+        figure_path = resolve_figure_path(project_root or Path.cwd(), figure)
+        if not validate_figure_extension(figure_path):
+            _warn_figure(
+                f"Unsupported figure format for {figure_id}: {figure_path.suffix or 'no extension'}"
+            )
+            continue
+
+        if not figure_path.exists():
+            _warn_figure(f"Figure file not found for {figure_id}: {figure_path}")
+            continue
+
+        try:
+            document.add_picture(str(figure_path), width=Inches(6.0))
+        except Exception as exc:
+            _warn_figure(f"Figure could not be inserted for {figure_id}: {exc}")
+            continue
+
+        caption = figure.get("caption") or figure.get("title", "")
+        if caption:
+            document.add_paragraph(f"Figure {figure_id} - {caption}")
+
+
 def build_document(yaml_path: Path, output_path: Path, project_config=None, project_root=None):
     with open(yaml_path, "r", encoding="utf-8") as f:
         data = yaml.safe_load(f)
@@ -136,11 +204,14 @@ def build_document(yaml_path: Path, output_path: Path, project_config=None, proj
     branding = (project_config or {}).get("branding", {})
     logo_path = _resolve_optional_path(branding.get("logo_ceva"), project_root)
     metadata = _metadata(data, project_config or {})
+    figures_registry = _figures_registry(project_root)
 
     setup_document_shell(doc, metadata, logo_path=logo_path)
     add_cover_page(doc, metadata, logo_path=logo_path)
     add_document_control_table(doc, metadata)
     add_table_of_contents(doc)
+
+    _add_figures(doc, data.get("figures", []), figures_registry, project_root)
 
     for chapter in data["chapters"]:
         doc.add_heading(chapter["title"], level=1)
@@ -155,6 +226,8 @@ def build_document(yaml_path: Path, output_path: Path, project_config=None, proj
         if "tables" in chapter:
             for table in chapter["tables"]:
                 add_data_table(doc, table)
+
+        _add_figures(doc, chapter.get("figures", []), figures_registry, project_root)
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     doc.save(output_path)

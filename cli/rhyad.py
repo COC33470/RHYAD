@@ -6,6 +6,7 @@ from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 
+from engine.core.figures import check_figures, load_figures_registry, resolve_figure_path
 from engine.core.impact_engine import get_impacts
 from engine.core.traceability_suggester import suggest_traceability
 
@@ -30,6 +31,8 @@ Usage:
   rhyad list
   rhyad doctor
   rhyad impact <object>
+  rhyad figures list
+  rhyad figures check
   rhyad trace suggest
   rhyad trace approve
   rhyad dashboard
@@ -44,6 +47,8 @@ Compatibility:
   python3 scripts/rhyad.py list
   python3 scripts/rhyad.py doctor
   python3 scripts/rhyad.py impact D-014
+  python3 scripts/rhyad.py figures list
+  python3 scripts/rhyad.py figures check
   python3 scripts/rhyad.py trace suggest
   python3 scripts/rhyad.py trace approve
   python3 scripts/rhyad.py dashboard
@@ -452,6 +457,40 @@ def command_impact(obj, root=ROOT, stream=sys.stdout):
     return 0
 
 
+def command_figures(args, root=ROOT, stream=sys.stdout):
+    if not args or args[0] not in {"list", "check"}:
+        print("Usage: rhyad figures list|check", file=stream)
+        return 2
+
+    registry_path = root / "config" / "figures_registry.yaml"
+    if args[0] == "list":
+        registry = load_figures_registry(registry_path)
+        print("Figures RHYAD", file=stream)
+        for figure in registry.get("figures", []):
+            used_in = ", ".join(figure.get("used_in", [])) or "-"
+            print(
+                f"{figure['id']} | {figure['title']} | {figure['file']} | {figure['status']} | {used_in}",
+                file=stream,
+            )
+        return 0
+
+    result = check_figures(root, registry_path)
+    print("Figures RHYAD check", file=stream)
+    print(f"Figures déclarées: {result['declared']}", file=stream)
+    print(f"Fichiers existants: {len(result['existing'])}", file=stream)
+    print(f"Figures manquantes: {len(result['missing'])}", file=stream)
+    for figure in result["missing"]:
+        print(f"- {figure['id']}: {resolve_figure_path(root, figure)}", file=stream)
+    print(f"Formats non supportés: {len(result['unsupported'])}", file=stream)
+    for figure in result["unsupported"]:
+        print(f"- {figure['id']}: {figure['file']}", file=stream)
+    print(f"Figures non utilisées: {len(result['unused'])}", file=stream)
+    for figure in result["unused"]:
+        print(f"- {figure['id']}", file=stream)
+
+    return 1 if result["missing"] or result["unsupported"] else 0
+
+
 def command_trace(args, root=ROOT, stream=sys.stdout):
     if not args:
         print("Usage: rhyad trace suggest|approve", file=stream)
@@ -580,6 +619,8 @@ def main(argv=None):
             print("Usage: rhyad impact <object>")
             return 2
         return command_impact(argv[1])
+    if command == "figures":
+        return command_figures(argv[1:])
     if command == "trace":
         return command_trace(argv[1:])
     if command == "dashboard":

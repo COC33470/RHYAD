@@ -1,0 +1,20 @@
+figures:
+  - id: "FIG-000-001"
+    title: "Exemple de figure"
+    family: "000"
+    file: "assets/figures/000/example.png"
+    caption: "Exemple de légende"
+    source: "RHYAD"
+    status: "Draft"
+    used_in: []
+
+formats:
+  supported:
+    - "PNG"
+    - "JPG"
+    - "JPEG"
+  future:
+    - "SVG"
+    - "PDF"
+    - "Mermaid"
+    - "Draw.io"

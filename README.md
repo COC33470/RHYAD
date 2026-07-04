@@ -171,6 +171,8 @@ rhyad paste 003
 rhyad validate
 rhyad doctor
 rhyad impact D-014
+rhyad figures list
+rhyad figures check
 rhyad trace suggest
 rhyad trace approve
 rhyad dashboard
@@ -187,6 +189,8 @@ python3 scripts/rhyad.py paste 003
 python3 scripts/rhyad.py validate
 python3 scripts/rhyad.py doctor
 python3 scripts/rhyad.py impact D-014
+python3 scripts/rhyad.py figures list
+python3 scripts/rhyad.py figures check
 python3 scripts/rhyad.py trace suggest
 python3 scripts/rhyad.py trace approve
 python3 scripts/rhyad.py dashboard
@@ -310,6 +314,69 @@ python3 scripts/rhyad.py dashboard
 ```
 
 Il affiche le projet, le client, l'état Git, les documents générés ou en attente, les volumes du Knowledge Core, le résultat des tests et la dernière génération détectée dans `output/`.
+
+## Gestion des figures
+
+Les figures, schémas et graphiques sont déclarés dans `config/figures_registry.yaml`. Le registre conserve l'identifiant, le titre, la famille documentaire, le fichier image, la légende, la source, le statut et les documents utilisateurs.
+
+Les images sont stockées dans :
+
+```text
+assets/figures/000/
+assets/figures/100/
+assets/figures/200/
+assets/figures/300/
+assets/figures/400/
+assets/figures/500/
+assets/figures/600/
+assets/figures/shared/
+```
+
+Formats image supportés pour insertion DOCX :
+
+- PNG
+- JPG
+- JPEG
+
+Les formats SVG, PDF, Mermaid et Draw.io sont réservés pour une extension future.
+
+Exemple d'entrée de registre :
+
+```yaml
+figures:
+  - id: FIG-000-001
+    title: Exemple de figure
+    family: "000"
+    file: assets/figures/000/example.png
+    caption: Exemple de légende
+    source: RHYAD
+    status: Draft
+    used_in: []
+```
+
+Exemple d'utilisation dans un YAML documentaire :
+
+```yaml
+chapters:
+  - title: "1. Schéma de principe"
+    text: "Le schéma de principe est présenté ci-dessous."
+    figures:
+      - id: FIG-000-001
+```
+
+Lister les figures :
+
+```bash
+python3 scripts/rhyad.py figures list
+```
+
+Vérifier le registre :
+
+```bash
+python3 scripts/rhyad.py figures check
+```
+
+Si une image déclarée est absente, la génération du document continue et affiche un warning clair.
 
 ## Suggestions de traçabilité
 

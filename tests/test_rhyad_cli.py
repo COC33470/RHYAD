@@ -88,6 +88,30 @@ def _append_registry_document(root, code, official_code, family="000"):
         )
 
 
+def _write_figures_registry(root, file_path="assets/figures/000/test.png", used_in=None):
+    used_in = used_in or []
+    registry_path = root / "config" / "figures_registry.yaml"
+    used_lines = "\n".join(f"      - \"{item}\"" for item in used_in) if used_in else "[]"
+    registry_path.write_text(
+        "\n".join(
+            [
+                "figures:",
+                "  - id: \"FIG-000-001\"",
+                "    title: \"Figure test\"",
+                "    family: \"000\"",
+                f"    file: \"{file_path}\"",
+                "    caption: \"Légende test\"",
+                "    source: \"RHYAD\"",
+                "    status: \"Draft\"",
+                "    used_in:" if used_in else "    used_in: []",
+                used_lines if used_in else "",
+            ]
+        ).rstrip()
+        + "\n",
+        encoding="utf-8",
+    )
+
+
 class RhyadCliTest(unittest.TestCase):
     def test_load_project_summary_and_registry_documents(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -305,6 +329,37 @@ class RhyadCliTest(unittest.TestCase):
             self.assertIn("CEVA-RHYAD-100-F01 (decision)", output)
             self.assertIn("Nombre d'impacts: 2", output)
             self.assertIn("Origine des relations:", output)
+
+    def test_figures_list_prints_registry_entries(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            _write_cli_fixture(root)
+            _write_figures_registry(root, used_in=["CEVA-RHYAD-002-PF"])
+            stream = io.StringIO()
+
+            exit_code = rhyad.command_figures(["list"], root=root, stream=stream)
+
+            self.assertEqual(exit_code, 0)
+            output = stream.getvalue()
+            self.assertIn("Figures RHYAD", output)
+            self.assertIn("FIG-000-001 | Figure test | assets/figures/000/test.png | Draft", output)
+            self.assertIn("CEVA-RHYAD-002-PF", output)
+
+    def test_figures_check_reports_existing_missing_and_unused(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            _write_cli_fixture(root)
+            _write_figures_registry(root)
+            stream = io.StringIO()
+
+            exit_code = rhyad.command_figures(["check"], root=root, stream=stream)
+
+            self.assertEqual(exit_code, 1)
+            output = stream.getvalue()
+            self.assertIn("Figures déclarées: 1", output)
+            self.assertIn("Figures manquantes: 1", output)
+            self.assertIn("Figures non utilisées: 1", output)
+            self.assertIn("FIG-000-001", output)
 
     def test_dashboard_prints_project_documents_knowledge_tests_and_latest_generation(self):
         with tempfile.TemporaryDirectory() as tmp:
