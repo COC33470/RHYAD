@@ -1,16 +1,70 @@
-reference: RHYAD-003
-title: Glossaire
-subtitle: Squelette documentaire - Révision A1.0
+reference: "CEVA-RHYAD-003-GLOSSAIRE"
+title: "Glossaire"
+revision: "Rev0.1"
+status: "Working Draft"
 
 chapters:
   - title: "1. Objet"
-    text: "À compléter après validation du contenu."
+    text: >
+      Le présent document définit la structure du glossaire RHYAD-CEVA.
 
-  - title: "2. Termes projet"
-    text: "À compléter après validation du contenu."
+      Le contenu terminologique est alimenté progressivement depuis knowledge/glossary.yaml,
+      après validation des termes, acronymes et définitions.
 
-  - title: "3. Abréviations"
-    text: "À compléter après validation du contenu."
+  - title: "2. Domaine d'application"
+    text: >
+      Le glossaire couvre la terminologie applicable aux documents RHYAD du projet.
 
-  - title: "4. Références terminologiques"
-    text: "À compléter après validation du contenu."
+  - title: "3. Règles d'utilisation"
+    text: >
+      Aucun terme, acronyme ou définition n'est intégré sans validation préalable.
+
+      Les données validées sont destinées à être consolidées dans knowledge/glossary.yaml.
+
+  - title: "4. Définitions"
+    text: >
+      Section réservée aux définitions validées.
+
+  - title: "5. Acronymes"
+    text: >
+      Section réservée aux acronymes validés.
+
+  - title: "6. Terminologie Process"
+    text: >
+      Section réservée à la terminologie Process validée.
+
+  - title: "7. Terminologie GMP / BPF"
+    text: >
+      Section réservée à la terminologie GMP / BPF validée.
+
+  - title: "8. Terminologie Architecture"
+    text: >
+      Section réservée à la terminologie Architecture validée.
+
+  - title: "9. Terminologie CVC / HVAC"
+    text: >
+      Section réservée à la terminologie CVC / HVAC validée.
+
+  - title: "10. Terminologie Utilités"
+    text: >
+      Section réservée à la terminologie Utilités validée.
+
+  - title: "11. Terminologie Électricité"
+    text: >
+      Section réservée à la terminologie Électricité validée.
+
+  - title: "12. Terminologie Instrumentation & Automatisme"
+    text: >
+      Section réservée à la terminologie Instrumentation & Automatisme validée.
+
+  - title: "13. Terminologie IT / OT"
+    text: >
+      Section réservée à la terminologie IT / OT validée.
+
+  - title: "14. Terminologie Maintenance"
+    text: >
+      Section réservée à la terminologie Maintenance validée.
+
+  - title: "15. Références"
+    text: >
+      Section réservée aux références terminologiques validées.
