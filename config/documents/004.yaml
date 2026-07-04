@@ -1,0 +1,244 @@
+reference: CEVA-RHYAD-000-004
+title: Registre des Risques
+revision: Rev1.0
+status: Validated
+chapters:
+- title: 1. Objet
+  text: 'Le présent document constitue le registre unique des risques du projet RHYAD.
+
+
+    Il recense l’ensemble des risques susceptibles d’affecter la programmation, la conception, la réalisation, la mise en
+    service et la coordination documentaire du Campus CEVA.
+
+
+    Il constitue la référence commune utilisée par :
+
+
+    Le registre couvre uniquement les risques liés au projet. Les risques d’exploitation future du Campus sont exclus du présent
+    document.'
+  bullets:
+  - le Maître d’Ouvrage ;
+  - l’AMO ;
+  - les bureaux d’études ;
+  - les entreprises ;
+  - les futurs Design Basis.
+- title: 2. Domaine d’application
+  text: 'Le registre couvre notamment :'
+  bullets:
+  - les risques de programmation ;
+  - les risques techniques ;
+  - les risques réglementaires ;
+  - les risques liés au contexte local (ACAP) ;
+  - les risques environnementaux ;
+  - les risques documentaires ;
+  - les risques d’interfaces ;
+  - les risques liés au planning ;
+  - les risques liés aux décisions de conception.
+- title: 3. Documents de référence
+  bullets:
+  - CEVA-RHYAD-001-CHARTE — Charte Projet
+  - CEVA-RHYAD-001A-ACAP — Analyse de Contexte et d’Adaptation du Projet
+  - CEVA-RHYAD-003-GLOSSAIRE — Glossaire
+  - CEVA-RHYAD-000-MTH01 — Guide Méthodologique RHYAD
+  - CEVA-RHYAD-200-DT000 — Registre des Hypothèses
+  - CEVA-RHYAD-005-REGISTRE DES DECISIONS — Registre des Décisions
+- title: 4. Classification des risques
+  tables:
+  - headers:
+    - Code
+    - Famille
+    rows:
+    - - R-PROJ
+      - Projet
+    - - R-PROG
+      - Programmation
+    - - R-ARC
+      - Architecture
+    - - R-PROC
+      - Process
+    - - R-HVAC
+      - CVC / HVAC
+    - - R-UTIL
+      - Utilités
+    - - R-ELEC
+      - Électricité
+    - - R-IT
+      - IT / OT
+    - - R-SEC
+      - Sécurité / Sûreté
+    - - R-MAIN
+      - Maintenance
+    - - R-LOG
+      - Logistique
+    - - R-ENV
+      - Environnement
+    - - R-REG
+      - Réglementaire
+    - - R-DOC
+      - Documentation
+    - - R-INT
+      - Interfaces
+    - - R-LOC
+      - Contexte local (ACAP)
+    title: 4. Classification des risques
+- title: 5. Méthode d’évaluation
+- title: Probabilité
+  tables:
+  - headers:
+    - Niveau
+    - Définition
+    rows:
+    - - '1'
+      - Très faible
+    - - '2'
+      - Faible
+    - - '3'
+      - Moyenne
+    - - '4'
+      - Forte
+    - - '5'
+      - Très forte
+    title: Probabilité
+- title: Gravité
+  tables:
+  - headers:
+    - Niveau
+    - Définition
+    rows:
+    - - '1'
+      - Faible
+    - - '2'
+      - Limitée
+    - - '3'
+      - Significative
+    - - '4'
+      - Majeure
+    - - '5'
+      - Critique
+    title: Gravité
+- title: Criticité
+  text: Criticité = Probabilité × Gravité
+  tables:
+  - headers:
+    - Score
+    - Niveau
+    rows:
+    - - 1 à 4
+      - Faible
+    - - 5 à 9
+      - Modéré
+    - - 10 à 15
+      - Important
+    - - 16 à 25
+      - Critique
+    title: Criticité
+- title: 6. Registre des risques
+  tables:
+  - headers:
+    - Référence
+    - Famille
+    - Description
+    - Cause
+    - Conséquence
+    - Phase concernée
+    - Document d’origine
+    - P
+    - G
+    - C
+    - Mesures de maîtrise
+    - Responsable
+    - Statut
+    rows:
+    - - À compléter
+      - À compléter
+      - À compléter
+      - À compléter
+      - À compléter
+      - À compléter
+      - À compléter
+      - À compléter
+      - À compléter
+      - À compléter
+      - À compléter
+      - À compléter
+      - À compléter
+    title: 6. Registre des risques
+- title: 7. Risques issus de l’ACAP
+  text: 'Cette section recense les risques identifiés dans l’Analyse de Contexte et d’Adaptation du Projet.
+
+
+    Exemples :'
+  bullets:
+  - climat désertique ;
+  - températures extrêmes ;
+  - tempêtes de sable ;
+  - disponibilité de l’eau ;
+  - qualité et stabilité du réseau électrique ;
+  - contraintes réglementaires locales ;
+  - disponibilité des compétences ;
+  - chaîne logistique ;
+  - contexte géopolitique.
+- title: 8. Risques techniques
+  text: 'Cette section regroupe les risques liés aux disciplines techniques :'
+  bullets:
+  - Process ;
+  - Architecture ;
+  - CVC / HVAC ;
+  - Utilités ;
+  - Électricité ;
+  - IT / OT ;
+  - Instrumentation ;
+  - Infrastructures critiques.
+- title: 9. Risques documentaires
+  text: 'Cette section est spécifique à la méthode RHYAD.
+
+
+    Elle couvre notamment :'
+  bullets:
+  - incohérence documentaire ;
+  - duplication d’information ;
+  - absence de traçabilité ;
+  - absence de validation ;
+  - interfaces non identifiées ;
+  - impacts documentaires non propagés.
+- title: 10. Risques liés aux interfaces
+  text: 'Le registre recense les risques liés aux interfaces entre disciplines :'
+  bullets:
+  - Process ↔ Architecture ;
+  - Process ↔ CVC ;
+  - CVC ↔ Utilités ;
+  - Utilités ↔ Électricité ;
+  - Électricité ↔ IT / OT ;
+  - Maintenance ↔ Architecture ;
+  - Sécurité ↔ IT / OT ;
+  - Architecture ↔ Logistique.
+- title: 11. Traitement des risques
+  text: 'Pour chaque risque devront être précisés :'
+  bullets:
+  - mesure d’évitement ;
+  - mesure de réduction ;
+  - mesure de transfert ;
+  - mesure d’acceptation ;
+  - risque résiduel.
+- title: 12. Liens documentaires
+  text: 'Chaque risque devra référencer :'
+  bullets:
+  - le Programme Fonctionnel concerné ;
+  - le DT concerné ;
+  - le Design Basis concerné ;
+  - les décisions associées ;
+  - les actions associées.
+- title: 13. Règles de gestion
+  bullets:
+  - Chaque risque possède un identifiant unique.
+  - Un risque n’est décrit qu’une seule fois.
+  - Les autres documents référencent le présent registre.
+  - Toute modification du registre est enregistrée dans le CEVA-RHYAD-005-REGISTRE DES DECISIONS.
+  - 'Les risques sont revus à chaque jalon du projet : APS, APD, PRO, DCE, EXE, Mise en service.'
+  - Les risques sont mis à jour après chaque réunion de projet ayant un impact sur leur évaluation ou leur traitement.
+- title: 14. Annexes
+- title: Annexe A — Matrice de criticité
+  text: Matrice graphique Probabilité × Gravité (5 × 5).
+- title: Annexe B — Historique des révisions
+  text: Suivi des versions du registre.
+- title: Fin du document

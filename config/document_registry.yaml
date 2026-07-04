@@ -30,6 +30,14 @@ documents:
     family: "000"
     source: "config/documents/003.yaml"
 
+  - code: "004"
+    official_code: "CEVA-RHYAD-000-004"
+    title: "Registre des Risques"
+    revision: "Rev1.0"
+    status: "Validated"
+    family: "000"
+    source: "config/documents/004.yaml"
+
   - code: "MTH01"
     official_code: "CEVA-RHYAD-000-MTH01"
     title: "Guide Méthodologique RHYAD"
