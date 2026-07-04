@@ -10,6 +10,7 @@ from engine.utils.pdf import convert_docx_to_pdf
 
 CONFIG_DIR = ROOT / "config" / "documents"
 PROJECT_CONFIG = ROOT / "config" / "project.yaml"
+REPOSITORY_CONFIG = ROOT / "config" / "rhyad_repository.yaml"
 
 
 def _require_mapping(data, label):
@@ -59,15 +60,54 @@ def load_project_config(path: Path):
     return data
 
 
+def load_repository_config(path: Path):
+    if not path.exists():
+        return {}
+
+    with open(path, "r", encoding="utf-8") as f:
+        data = yaml.safe_load(f)
+
+    _require_mapping(data, str(path))
+    repository = data.get("repository")
+    _require_mapping(repository, f"{path}.repository")
+    families = repository.get("families")
+    if not isinstance(families, list) or not families:
+        raise ValueError(f"{path}.repository.families must be a non-empty list.")
+
+    return data
+
+
+def find_repository_document(repository_config, code):
+    repository = (repository_config or {}).get("repository") or {}
+    for family in repository.get("families", []):
+        family_code = str(family.get("code", "")).upper()
+        for document in family.get("documents", []):
+            document_code = str(document.get("code", "")).upper()
+            if document_code == code:
+                return {
+                    "family_code": family_code,
+                    "family_title": family.get("title", ""),
+                    "document": document,
+                }
+    return None
+
+
 def resolve_output_dir(project_config, key, fallback):
     value = (project_config.get("output") or {}).get(key, fallback)
     path = Path(value)
     return path if path.is_absolute() else ROOT / path
 
 
+def resolve_family_output_dir(project_config, key, fallback, repository_entry):
+    output_dir = resolve_output_dir(project_config, key, fallback)
+    if repository_entry:
+        output_dir = output_dir / repository_entry["family_code"]
+    return output_dir
+
+
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python3 scripts/main.py F01")
+        print("Usage: python3 scripts/main.py 002")
         return 1
 
     code = sys.argv[1].upper()
@@ -79,14 +119,16 @@ def main():
 
     try:
         project_config = load_project_config(PROJECT_CONFIG)
+        repository_config = load_repository_config(REPOSITORY_CONFIG)
     except ValueError as exc:
-        print("Project configuration invalid.")
+        print("Configuration invalid.")
         print(exc)
         return 1
 
+    repository_entry = find_repository_document(repository_config, code)
     project_code = (project_config.get("project") or {}).get("code", "RHYAD")
-    output_docx = resolve_output_dir(project_config, "docx", "output/docx")
-    output_pdf = resolve_output_dir(project_config, "pdf", "output/pdf")
+    output_docx = resolve_family_output_dir(project_config, "docx", "output/docx", repository_entry)
+    output_pdf = resolve_family_output_dir(project_config, "pdf", "output/pdf", repository_entry)
     docx_path = output_docx / f"{project_code}-{code}.docx"
 
     try:

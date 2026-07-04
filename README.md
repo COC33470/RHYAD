@@ -1,69 +1,149 @@
 # RHYAD Document Engine
 
-Générateur documentaire YAML pour le projet RHYAD. Le flux actuel reste volontairement simple :
+Générateur documentaire YAML pour le projet RHYAD.
+
+Le dépôt produit des livrables DOCX/PDF avec la charte CEVA, le logo, le cartouche documentaire, la page de garde, le tableau `Document Control`, le pied de page et la table des matières Word.
+
+## Référentiel Officiel
+
+Le référentiel documentaire validé est décrit dans `config/rhyad_repository.yaml`.
 
 ```text
-config/documents/<CODE>.yaml -> DOCX -> PDF
+000 — Documents de Gouvernance Projet
+- 000 Modèle documentaire RHYAD-CEVA
+- 001 Charte Projet
+- 001A ACAP – Analyse de Contexte et d’Adaptation du Projet
+- 002 Programme Fonctionnel
+- 003 Glossaire
+- 004 Registre des Risques
+- 005 Registre des Décisions
+- 006 Plan Directeur Documentaire
+
+100 — Fonctions du Programme Fonctionnel
+- F01 Réception et Expédition
+- F02 Stockage des Matières Premières et Consommables
+- F03 Préparation des Matières Premières et Solutions
+- F04 Production des Autovaccins
+- F05 Conditionnement et Expédition des Produits
+- F06 Gestion des Flux
+- F07 Lavage, Stérilisation et Préparation des Équipements
+- F08 Contrôle Qualité
+- F09 Utilités Industrielles
+- F10 Maintenance et Exploitation Technique
+- F11 Gestion des Déchets et Effluents
+- F12 Sûreté, Protection des Actifs et Contrôle des Accès
+- F13 Systèmes d’Information, Automatismes et Cybersécurité
+- F14 Administration, Formation et Services Généraux
+- F15 Gouvernance du Campus et Fonctions Transverses
+
+200 — DT
+- DT-000 Registre des Hypothèses de Conception
+- DT-F01-xx à DT-F15-xx
+
+300 — Design Basis
+- DB-001 Process
+- DB-002 Architecture
+- DB-003 CVC / HVAC
+- DB-004 Utilités
+- DB-005 Électricité
+- DB-006 IT / OT
+- DB-007 Maintenance
+- DB-008 Sécurité / Sûreté
+- DB-009 Logistique
+- DB-010 Instrumentation & Automatisme
+
+400 — Réunions
+- R00 Kick-off
+- R01 Réunion de Programmation Fonctionnelle
+- R02 Réunion IT / OT
+- R03 Process
+- R04 Utilités
+
+500 — Registres Projet
+- REG-001 Registre des Actions
+- REG-002 Registre des Décisions
+- REG-003 Registre des Risques
+- REG-004 Registre des Hypothèses
+- REG-005 Registre des Interfaces
+
+600 — Dossiers d’Études
+- APS
+- APD
+- PRO
+- DCE
+- EXE
+- VISA
+- DOE
 ```
 
-Le moteur générique lit un fichier document YAML, applique le style CEVA, ajoute les métadonnées projet issues de `config/project.yaml`, puis exporte le DOCX en PDF avec LibreOffice.
+## Documents YAML
+
+Les documents générables sont définis dans `config/documents/<CODE>.yaml`.
+
+Squelettes actuellement disponibles :
+
+- `000` — Modèle documentaire RHYAD-CEVA
+- `001` — Charte Projet
+- `001A` — ACAP – Analyse de Contexte et d’Adaptation du Projet
+- `002` — Programme Fonctionnel
+- `003` — Glossaire
+- `006` — Plan Directeur Documentaire
+- `F01` — Réception et Expédition
+
+Ces fichiers sont des squelettes. Les contenus complets ne doivent être rédigés qu’après validation.
+
+## Sorties
+
+Les sorties sont classées par famille officielle :
+
+```text
+output/docx/000 ... output/docx/600
+output/pdf/000  ... output/pdf/600
+output/xlsx/000 ... output/xlsx/600
+```
+
+Exemples :
+
+```text
+output/docx/000/RHYAD-002.docx
+output/pdf/000/RHYAD-002.pdf
+output/docx/100/RHYAD-F01.docx
+output/pdf/100/RHYAD-F01.pdf
+```
 
 ## Prérequis
 
 - Python 3.10 ou supérieur
 - LibreOffice installé et disponible via `soffice` ou `libreoffice` dans le `PATH`
 
-Installation des dépendances Python :
+Installation :
 
 ```bash
 python3 -m pip install -r requirements.txt
 ```
 
-## Configuration
+## Commandes
 
-La configuration projet est centralisée dans `config/project.yaml` :
+Générer le Programme Fonctionnel :
 
-- `project.code` sert au préfixe des fichiers générés, par exemple `RHYAD-F01.docx`.
-- `document.revision`, `document.status` et `document.confidentiality` sont ajoutés aux métadonnées du document.
-- `branding.logo_ceva` est optionnel. Si le fichier existe, il est inséré dans la page de titre ; sinon la génération continue.
-- `output.docx` et `output.pdf` définissent les dossiers de sortie.
+```bash
+python3 scripts/main.py 002
+```
 
-Chaque document est défini dans `config/documents/<CODE>.yaml` avec :
-
-- `reference`
-- `title`
-- `subtitle` optionnel
-- `chapters`, liste non vide de chapitres avec `title`, puis `text` et/ou `bullets`
-
-## Génération
-
-Pour générer la procédure F01 :
+Générer la fonction F01 :
 
 ```bash
 python3 scripts/main.py F01
 ```
 
-Sorties attendues :
-
-```text
-output/docx/RHYAD-F01.docx
-output/pdf/RHYAD-F01.pdf
-```
-
-Si LibreOffice est absent ou échoue, le script affiche une erreur explicite et retourne un code d'échec.
-
-## Tests
-
-Les tests minimaux utilisent `unittest`, sans framework supplémentaire :
+Lancer les tests :
 
 ```bash
 python3 -m unittest discover
 ```
 
-Ils vérifient la validation YAML, la génération DOCX, l'utilisation de `project.yaml` et la robustesse du wrapper PDF sans lancer LibreOffice.
+## Configuration
 
-## Dépendances
+`config/project.yaml` contient les métadonnées projet, la révision, le statut, la confidentialité, les auteurs, les approbateurs, le logo CEVA et les chemins de sortie racine.
 
-- `python-docx` : génération DOCX
-- `pyyaml` : lecture des configurations YAML
-- `reportlab`, `openpyxl`, `pillow` : réservées aux futurs exports ou enrichissements documentaires ; elles ne sont pas nécessaires au flux F01 actuel
+`config/rhyad_repository.yaml` contient la nomenclature officielle et permet au générateur de router les livrables dans la bonne famille.

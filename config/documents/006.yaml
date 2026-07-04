@@ -1,18 +1,18 @@
-reference: RHYAD-F01
-title: Réception et Expédition
+reference: RHYAD-006
+title: Plan Directeur Documentaire
 subtitle: Squelette documentaire - Révision A1.0
 
 chapters:
   - title: "1. Objet"
     text: "À compléter après validation du contenu."
 
-  - title: "2. Domaine fonctionnel"
+  - title: "2. Organisation documentaire"
     text: "À compléter après validation du contenu."
 
-  - title: "3. Exigences fonctionnelles"
+  - title: "3. Codification"
     text: "À compléter après validation du contenu."
 
-  - title: "4. Interfaces"
+  - title: "4. Flux de validation"
     text: "À compléter après validation du contenu."
 
   - title: "5. Annexes"
