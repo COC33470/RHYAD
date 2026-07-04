@@ -1,19 +1,108 @@
-reference: RHYAD-000
-title: Modèle documentaire RHYAD-CEVA
-subtitle: Squelette documentaire - Révision A1.0
+reference: "000"
+title: "Modèle documentaire RHYAD-CEVA"
+subtitle: "Document de gouvernance projet"
+status: "Validé"
 
 chapters:
   - title: "1. Objet"
-    text: "À compléter après validation du contenu."
+    text: >
+      Le modèle documentaire RHYAD-CEVA constitue le modèle unique utilisé pour l’ensemble des
+      documents du projet.
+    bullets:
+      - "une identité graphique homogène ;"
+      - "une gestion documentaire cohérente ;"
+      - "une présentation professionnelle conforme à la charte graphique CEVA ;"
+      - "une uniformisation des styles, tableaux, en-têtes et pieds de page."
 
-  - title: "2. Périmètre"
-    text: "À compléter après validation du contenu."
+  - title: "2. Références"
+    bullets:
+      - "Charte graphique CEVA (Brand Guidelines), fournie par le client"
+      - "Méthode documentaire RHYAD"
 
-  - title: "3. Structure documentaire"
-    text: "À compléter après validation du contenu."
+  - title: "3. Contenu du modèle"
+    text: >
+      Le modèle documentaire définit les éléments communs applicables à l’ensemble des documents
+      RHYAD-CEVA.
 
-  - title: "4. Règles de présentation"
-    text: "À compléter après validation du contenu."
+  - title: "3.1 Page de garde"
+    text: "La page de garde comprend :"
+    bullets:
+      - "Logo CEVA"
+      - "Nom du projet"
+      - "Nom du document"
+      - "Référence documentaire"
+      - "Révision"
+      - "Date"
+      - "Confidentialité"
+      - "Société émettrice"
 
-  - title: "5. Annexes"
-    text: "À compléter après validation du contenu."
+  - title: "3.2 En-tête"
+    text: "L’en-tête comprend :"
+    bullets:
+      - "Logo CEVA"
+      - "Nom du projet"
+      - "Référence documentaire"
+      - "Révision"
+
+  - title: "3.3 Pied de page"
+    text: "Le pied de page comprend :"
+    bullets:
+      - "Numéro de page"
+      - "Révision"
+      - "Date"
+      - "Confidentialité"
+
+  - title: "4. Styles"
+    text: "Le modèle comprend les styles suivants :"
+    bullets:
+      - "Titre 1"
+      - "Titre 2"
+      - "Titre 3"
+      - "Corps de texte"
+      - "Tableau"
+      - "Légende"
+      - "Note"
+      - "Recommandation RHYAD"
+
+  - title: "5. Tableaux"
+    text: "Tous les tableaux utilisent :"
+    bullets:
+      - "même typographie ;"
+      - "même taille ;"
+      - "même style de bordure ;"
+      - "même palette de couleurs CEVA."
+
+  - title: "6. Numérotation"
+    text: >
+      Les documents suivent la nomenclature RHYAD validée.
+
+      Exemples :
+    bullets:
+      - "001 — Charte Projet"
+      - "001A — ACAP"
+      - "002 — Programme Fonctionnel"
+      - "DB-001"
+      - "DT-FT01-01"
+      - "REG-001"
+
+  - title: "7. Table des matières"
+    text: "La table des matières est automatique."
+
+  - title: "8. Historique des révisions"
+    text: "L’historique des révisions est présent sur tous les documents."
+
+  - title: "9. Diffusion"
+    text: "La diffusion est présente sur tous les documents."
+
+  - title: "10. Confidentialité"
+    text: "La confidentialité est présente sur tous les documents."
+
+  - title: "11. Règles documentaires"
+    bullets:
+      - "Une information = une seule source."
+      - "Une décision validée = une révision documentaire."
+      - "Tous les documents utilisent ce modèle."
+      - "Aucune modification de mise en page spécifique par document."
+
+  - title: "12. Statut"
+    text: "Document de référence de l’ensemble du projet RHYAD."
