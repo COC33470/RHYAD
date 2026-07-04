@@ -1,3 +1,5 @@
+from pathlib import Path
+
 from docx.shared import Pt, RGBColor, Cm
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from engine.styles.colors import CEVA_BLUE, CEVA_AQUA, CEVA_SLATE
@@ -41,7 +43,26 @@ def setup_document(document):
     h3.font.bold = True
     h3.font.color.rgb = hex_to_rgb(CEVA_AQUA)
 
-def add_title(document, ref, title, subtitle):
+def add_optional_logo(document, logo_path):
+    if not logo_path:
+        return False
+
+    path = Path(logo_path)
+    if not path.exists():
+        return False
+
+    try:
+        p = document.add_paragraph()
+        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        p.add_run().add_picture(str(path), width=Cm(4.0))
+        return True
+    except Exception:
+        return False
+
+
+def add_title(document, ref, title, subtitle, logo_path=None):
+    add_optional_logo(document, logo_path)
+
     p = document.add_paragraph()
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     r = p.add_run(ref)

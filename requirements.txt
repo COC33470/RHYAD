@@ -1,5 +1,8 @@
+# Active runtime dependencies
 python-docx
+pyyaml
+
+# Reserved for planned exports or document enrichments
 reportlab
 openpyxl
 pillow
-pyyaml

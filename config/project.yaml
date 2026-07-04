@@ -1,0 +1,30 @@
+project:
+  code: RHYAD
+  name: CEVA - Vaccine Manufacturing Facility
+  client: CEVA Santé Animale
+  location: Riyadh, Saudi Arabia
+
+document:
+  revision: A1.0
+  status: DRAFT
+  language: fr
+  confidentiality: CEVA INTERNAL
+
+authors:
+  author: Kévin Coignat
+  company: C O C EURL
+  role: Assistant Maîtrise d'Ouvrage
+
+approval:
+  checker: ""
+  approver: ""
+
+branding:
+  logo_ceva: assets/logos/ceva.png
+  logo_rhyad: assets/logos/rhyad.png
+
+output:
+  docx: output/docx
+  pdf: output/pdf
+  xlsx: output/xlsx
+  pptx: output/pptx
