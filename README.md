@@ -170,6 +170,8 @@ rhyad import 003
 rhyad validate
 rhyad doctor
 rhyad impact D-014
+rhyad trace suggest
+rhyad trace approve
 rhyad dashboard
 ```
 
@@ -183,6 +185,8 @@ python3 scripts/rhyad.py import 003
 python3 scripts/rhyad.py validate
 python3 scripts/rhyad.py doctor
 python3 scripts/rhyad.py impact D-014
+python3 scripts/rhyad.py trace suggest
+python3 scripts/rhyad.py trace approve
 python3 scripts/rhyad.py dashboard
 ```
 
@@ -283,6 +287,37 @@ python3 scripts/rhyad.py dashboard
 ```
 
 Il affiche le projet, le client, l'état Git, les documents générés ou en attente, les volumes du Knowledge Core, le résultat des tests et la dernière génération détectée dans `output/`.
+
+## Suggestions de traçabilité
+
+Les liens de traçabilité ne doivent pas être inventés. Le mode suggestion analyse uniquement les références documentaires explicites trouvées dans :
+
+- les YAML existants de `config/documents/` ;
+- les contenus Markdown présents dans `inbox/validated/` ;
+- les codes déclarés dans `config/document_registry.yaml` ;
+- le Knowledge Core déjà alimenté.
+
+Créer les propositions :
+
+```bash
+python3 scripts/rhyad.py trace suggest
+```
+
+Le résultat est écrit dans :
+
+```text
+knowledge/traceability_suggestions.yaml
+```
+
+Chaque proposition contient une preuve : fichier source, emplacement, référence détectée et texte d'origine. Le fichier validé `knowledge/traceability.yaml` n'est jamais modifié par cette commande.
+
+La commande de validation future est réservée :
+
+```bash
+python3 scripts/rhyad.py trace approve
+```
+
+À ce stade, elle n'approuve rien automatiquement et rappelle qu'une validation manuelle est requise.
 
 Lancer les tests :
 

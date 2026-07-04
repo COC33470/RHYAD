@@ -6,6 +6,7 @@ from datetime import datetime
 from pathlib import Path
 
 from engine.core.impact_engine import get_impacts
+from engine.core.traceability_suggester import suggest_traceability
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -27,6 +28,8 @@ Usage:
   rhyad list
   rhyad doctor
   rhyad impact <object>
+  rhyad trace suggest
+  rhyad trace approve
   rhyad dashboard
   rhyad help
 
@@ -38,6 +41,8 @@ Compatibility:
   python3 scripts/rhyad.py list
   python3 scripts/rhyad.py doctor
   python3 scripts/rhyad.py impact D-014
+  python3 scripts/rhyad.py trace suggest
+  python3 scripts/rhyad.py trace approve
   python3 scripts/rhyad.py dashboard
 """
 
@@ -317,6 +322,38 @@ def command_impact(obj, root=ROOT, stream=sys.stdout):
     return 0
 
 
+def command_trace(args, root=ROOT, stream=sys.stdout):
+    if not args:
+        print("Usage: rhyad trace suggest|approve", file=stream)
+        return 2
+
+    action = args[0]
+    if action == "suggest":
+        result = suggest_traceability(
+            documents_dir=root / "config" / "documents",
+            inbox_validated_dir=root / "inbox" / "validated",
+            knowledge_dir=root / "knowledge",
+            registry_path=root / "config" / "document_registry.yaml",
+            suggestions_path=root / "knowledge" / "traceability_suggestions.yaml",
+        )
+        print("Suggestions de traçabilité", file=stream)
+        print(f"Fichier: {result['suggestions_path']}", file=stream)
+        print(f"Nombre de propositions: {result['suggestion_count']}", file=stream)
+        print("knowledge/traceability.yaml n'a pas été modifié.", file=stream)
+        return 0
+
+    if action == "approve":
+        print(
+            "Validation automatique non activée. Vérifier knowledge/traceability_suggestions.yaml manuellement.",
+            file=stream,
+        )
+        print("knowledge/traceability.yaml n'a pas été modifié.", file=stream)
+        return 0
+
+    print("Usage: rhyad trace suggest|approve", file=stream)
+    return 2
+
+
 def command_dashboard(root=ROOT, runner=run_command, stream=sys.stdout):
     project_config = load_project_summary(root / "config" / "project.yaml")
     registry = load_registry_documents(root / "config" / "document_registry.yaml")
@@ -408,6 +445,8 @@ def main(argv=None):
             print("Usage: rhyad impact <object>")
             return 2
         return command_impact(argv[1])
+    if command == "trace":
+        return command_trace(argv[1:])
     if command == "dashboard":
         return command_dashboard()
 

@@ -1,0 +1,562 @@
+generated_at: '2026-07-04T19:22:29.980151+00:00'
+status: proposed
+traceability_suggestions:
+- source: CEVA-RHYAD-000-MODELE
+  destination: DB-001
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/000.yaml
+    location: $.chapters[8].bullets[3]
+    matched_reference: DB-001
+    text: DB-001
+- source: CEVA-RHYAD-000-MODELE
+  destination: REG-001
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/000.yaml
+    location: $.chapters[8].bullets[5]
+    matched_reference: REG-001
+    text: REG-001
+- source: CEVA-RHYAD-001-CHARTE
+  destination: CEVA-RHYAD-002-PF
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/001.yaml
+    location: $.chapters[3].bullets[14]
+    matched_reference: RHYAD-002
+    text: Le périmètre détaillé est défini dans le Programme Fonctionnel RHYAD-002.
+- source: CEVA-RHYAD-001-CHARTE
+  destination: CEVA-RHYAD-001A-ACAP
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/001.yaml
+    location: $.chapters[7].bullets[1]
+    matched_reference: RHYAD-001A
+    text: RHYAD-001A — Analyse de Contexte et d’Adaptation du Projet (ACAP).
+- source: CEVA-RHYAD-001-CHARTE
+  destination: RHYAD-006
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/001.yaml
+    location: $.chapters[8].bullets[4]
+    matched_reference: RHYAD-006
+    text: La gestion documentaire est décrite dans le document RHYAD-006 – Plan Directeur Documentaire.
+- source: CEVA-RHYAD-001-CHARTE
+  destination: RHYAD-004
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/001.yaml
+    location: $.chapters[9].text
+    matched_reference: RHYAD-004
+    text: 'Les risques sont identifiés, analysés, suivis et mis à jour dans le RHYAD-004 – Registre des Risques.
+
+      '
+- source: CEVA-RHYAD-001-CHARTE
+  destination: RHYAD-005
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/001.yaml
+    location: $.chapters[10].text
+    matched_reference: RHYAD-005
+    text: 'Les décisions prises au cours du projet sont consignées dans le RHYAD-005 – Registre des Décisions.
+
+      '
+- source: CEVA-RHYAD-001-CHARTE
+  destination: DT-000
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/001.yaml
+    location: $.chapters[11].text
+    matched_reference: DT-000
+    text: 'Les hypothèses de conception sont enregistrées et suivies dans le DT-000 – Registre des Hypothèses de Conception.
+
+      Toute hypothèse validée devient une donnée d’entrée pour les phases de conception.
+
+      '
+- source: CEVA-RHYAD-001A-ACAP
+  destination: RHYAD-004
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/001A.yaml
+    location: $.chapters[15].bullets[8]
+    matched_reference: RHYAD-004
+    text: Les risques identifiés alimentent le document RHYAD-004 – Registre des Risques.
+- source: CEVA-RHYAD-002-PF
+  destination: CEVA-RHYAD-100-F01
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[3].text
+    matched_reference: F01
+    text: 'Le Programme Fonctionnel couvre l’ensemble des fonctions nécessaires à la conception, à la réalisation et à l’exploitation
+      du Campus.
+
+      Les fonctions sont organisées en quinze chapitres fonctionnels (F01 à F15).
+
+      '
+- source: CEVA-RHYAD-002-PF
+  destination: F15
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[3].text
+    matched_reference: F15
+    text: 'Le Programme Fonctionnel couvre l’ensemble des fonctions nécessaires à la conception, à la réalisation et à l’exploitation
+      du Campus.
+
+      Les fonctions sont organisées en quinze chapitres fonctionnels (F01 à F15).
+
+      '
+- source: CEVA-RHYAD-002-PF
+  destination: CEVA-RHYAD-001-CHARTE
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[4].tables[0].rows[0][0]
+    matched_reference: RHYAD-001
+    text: RHYAD-001
+- source: CEVA-RHYAD-002-PF
+  destination: CEVA-RHYAD-001A-ACAP
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[4].tables[0].rows[1][0]
+    matched_reference: RHYAD-001A
+    text: RHYAD-001A
+- source: CEVA-RHYAD-002-PF
+  destination: RHYAD-003
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[4].tables[0].rows[2][0]
+    matched_reference: RHYAD-003
+    text: RHYAD-003
+- source: CEVA-RHYAD-002-PF
+  destination: RHYAD-004
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[4].tables[0].rows[3][0]
+    matched_reference: RHYAD-004
+    text: RHYAD-004
+- source: CEVA-RHYAD-002-PF
+  destination: RHYAD-005
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[4].tables[0].rows[4][0]
+    matched_reference: RHYAD-005
+    text: RHYAD-005
+- source: CEVA-RHYAD-002-PF
+  destination: RHYAD-006
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[4].tables[0].rows[5][0]
+    matched_reference: RHYAD-006
+    text: RHYAD-006
+- source: CEVA-RHYAD-002-PF
+  destination: DT-000
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[6].text
+    matched_reference: DT-000
+    text: 'Les hypothèses de conception sont suivies dans le DT-000 – Registre des Hypothèses de Conception.
+
+      Le présent document ne reprend que les hypothèses ayant une incidence directe sur les besoins fonctionnels.
+
+      '
+- source: CEVA-RHYAD-002-PF
+  destination: F02
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[9].tables[0].rows[1][0]
+    matched_reference: F02
+    text: F02
+- source: CEVA-RHYAD-002-PF
+  destination: F03
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[9].tables[0].rows[2][0]
+    matched_reference: F03
+    text: F03
+- source: CEVA-RHYAD-002-PF
+  destination: F04
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[9].tables[0].rows[3][0]
+    matched_reference: F04
+    text: F04
+- source: CEVA-RHYAD-002-PF
+  destination: F05
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[9].tables[0].rows[4][0]
+    matched_reference: F05
+    text: F05
+- source: CEVA-RHYAD-002-PF
+  destination: F06
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[9].tables[0].rows[5][0]
+    matched_reference: F06
+    text: F06
+- source: CEVA-RHYAD-002-PF
+  destination: F07
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[9].tables[0].rows[6][0]
+    matched_reference: F07
+    text: F07
+- source: CEVA-RHYAD-002-PF
+  destination: F08
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[9].tables[0].rows[7][0]
+    matched_reference: F08
+    text: F08
+- source: CEVA-RHYAD-002-PF
+  destination: F09
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[9].tables[0].rows[8][0]
+    matched_reference: F09
+    text: F09
+- source: CEVA-RHYAD-002-PF
+  destination: F10
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[9].tables[0].rows[9][0]
+    matched_reference: F10
+    text: F10
+- source: CEVA-RHYAD-002-PF
+  destination: F11
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[9].tables[0].rows[10][0]
+    matched_reference: F11
+    text: F11
+- source: CEVA-RHYAD-002-PF
+  destination: F12
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[9].tables[0].rows[11][0]
+    matched_reference: F12
+    text: F12
+- source: CEVA-RHYAD-002-PF
+  destination: F13
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[9].tables[0].rows[12][0]
+    matched_reference: F13
+    text: F13
+- source: CEVA-RHYAD-002-PF
+  destination: F14
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[9].tables[0].rows[13][0]
+    matched_reference: F14
+    text: F14
+- source: CEVA-RHYAD-002-PF
+  destination: RHYAD-F02
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[11].tables[0].rows[1][1]
+    matched_reference: RHYAD-F02
+    text: RHYAD-F02
+- source: CEVA-RHYAD-002-PF
+  destination: RHYAD-F03
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[11].tables[0].rows[2][1]
+    matched_reference: RHYAD-F03
+    text: RHYAD-F03
+- source: CEVA-RHYAD-002-PF
+  destination: RHYAD-F04
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[11].tables[0].rows[3][1]
+    matched_reference: RHYAD-F04
+    text: RHYAD-F04
+- source: CEVA-RHYAD-002-PF
+  destination: RHYAD-F05
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[11].tables[0].rows[4][1]
+    matched_reference: RHYAD-F05
+    text: RHYAD-F05
+- source: CEVA-RHYAD-002-PF
+  destination: RHYAD-F06
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[11].tables[0].rows[5][1]
+    matched_reference: RHYAD-F06
+    text: RHYAD-F06
+- source: CEVA-RHYAD-002-PF
+  destination: RHYAD-F07
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[11].tables[0].rows[6][1]
+    matched_reference: RHYAD-F07
+    text: RHYAD-F07
+- source: CEVA-RHYAD-002-PF
+  destination: RHYAD-F08
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[11].tables[0].rows[7][1]
+    matched_reference: RHYAD-F08
+    text: RHYAD-F08
+- source: CEVA-RHYAD-002-PF
+  destination: RHYAD-F09
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[11].tables[0].rows[8][1]
+    matched_reference: RHYAD-F09
+    text: RHYAD-F09
+- source: CEVA-RHYAD-002-PF
+  destination: RHYAD-F10
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[11].tables[0].rows[9][1]
+    matched_reference: RHYAD-F10
+    text: RHYAD-F10
+- source: CEVA-RHYAD-002-PF
+  destination: RHYAD-F11
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[11].tables[0].rows[10][1]
+    matched_reference: RHYAD-F11
+    text: RHYAD-F11
+- source: CEVA-RHYAD-002-PF
+  destination: RHYAD-F12
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[11].tables[0].rows[11][1]
+    matched_reference: RHYAD-F12
+    text: RHYAD-F12
+- source: CEVA-RHYAD-002-PF
+  destination: RHYAD-F13
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[11].tables[0].rows[12][1]
+    matched_reference: RHYAD-F13
+    text: RHYAD-F13
+- source: CEVA-RHYAD-002-PF
+  destination: RHYAD-F14
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[11].tables[0].rows[13][1]
+    matched_reference: RHYAD-F14
+    text: RHYAD-F14
+- source: CEVA-RHYAD-002-PF
+  destination: RHYAD-F15
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/002.yaml
+    location: $.chapters[11].tables[0].rows[14][1]
+    matched_reference: RHYAD-F15
+    text: RHYAD-F15
+- source: CEVA-RHYAD-100-F01
+  destination: F02
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/functions/F01.yaml
+    location: $.chapters[11].text
+    matched_reference: F02
+    text: 'Les interfaces ci-dessous sont listées selon l''arborescence officielle F02 à F15. La nature précise de chaque
+      interface, les flux concernés et les données échangées restent à confirmer.
+
+      '
+- source: CEVA-RHYAD-100-F01
+  destination: F15
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/functions/F01.yaml
+    location: $.chapters[11].text
+    matched_reference: F15
+    text: 'Les interfaces ci-dessous sont listées selon l''arborescence officielle F02 à F15. La nature précise de chaque
+      interface, les flux concernés et les données échangées restent à confirmer.
+
+      '
+- source: CEVA-RHYAD-100-F01
+  destination: F03
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/functions/F01.yaml
+    location: $.chapters[11].tables[0].rows[1][0]
+    matched_reference: F03
+    text: F03
+- source: CEVA-RHYAD-100-F01
+  destination: F04
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/functions/F01.yaml
+    location: $.chapters[11].tables[0].rows[2][0]
+    matched_reference: F04
+    text: F04
+- source: CEVA-RHYAD-100-F01
+  destination: F05
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/functions/F01.yaml
+    location: $.chapters[11].tables[0].rows[3][0]
+    matched_reference: F05
+    text: F05
+- source: CEVA-RHYAD-100-F01
+  destination: F06
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/functions/F01.yaml
+    location: $.chapters[11].tables[0].rows[4][0]
+    matched_reference: F06
+    text: F06
+- source: CEVA-RHYAD-100-F01
+  destination: F07
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/functions/F01.yaml
+    location: $.chapters[11].tables[0].rows[5][0]
+    matched_reference: F07
+    text: F07
+- source: CEVA-RHYAD-100-F01
+  destination: F08
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/functions/F01.yaml
+    location: $.chapters[11].tables[0].rows[6][0]
+    matched_reference: F08
+    text: F08
+- source: CEVA-RHYAD-100-F01
+  destination: F09
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/functions/F01.yaml
+    location: $.chapters[11].tables[0].rows[7][0]
+    matched_reference: F09
+    text: F09
+- source: CEVA-RHYAD-100-F01
+  destination: F10
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/functions/F01.yaml
+    location: $.chapters[11].tables[0].rows[8][0]
+    matched_reference: F10
+    text: F10
+- source: CEVA-RHYAD-100-F01
+  destination: F11
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/functions/F01.yaml
+    location: $.chapters[11].tables[0].rows[9][0]
+    matched_reference: F11
+    text: F11
+- source: CEVA-RHYAD-100-F01
+  destination: F12
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/functions/F01.yaml
+    location: $.chapters[11].tables[0].rows[10][0]
+    matched_reference: F12
+    text: F12
+- source: CEVA-RHYAD-100-F01
+  destination: F13
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/functions/F01.yaml
+    location: $.chapters[11].tables[0].rows[11][0]
+    matched_reference: F13
+    text: F13
+- source: CEVA-RHYAD-100-F01
+  destination: F14
+  relation: explicit-reference
+  status: proposed
+  evidence:
+    source_file: config/documents/functions/F01.yaml
+    location: $.chapters[11].tables[0].rows[12][0]
+    matched_reference: F14
+    text: F14
