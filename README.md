@@ -136,6 +136,37 @@ Générer la fonction F01 :
 python3 scripts/main.py F01
 ```
 
+## Import de contenu validé
+
+Un contenu validé peut être déposé au format Markdown dans `inbox/validated/`, puis importé en une seule commande.
+
+Exemple :
+
+```text
+inbox/validated/002.md
+```
+
+Commande :
+
+```bash
+python3 scripts/import_validated.py 002
+```
+
+Le script :
+
+- lit `inbox/validated/<CODE>.md` ;
+- extrait `reference`, `title`, `subtitle`, `revision` et `status` lorsque ces métadonnées sont présentes ;
+- convertit les titres Markdown en chapitres YAML ;
+- convertit les listes Markdown en `bullets` YAML ;
+- convertit les tableaux Markdown simples en `tables` YAML ;
+- écrit `config/documents/<CODE>.yaml` ;
+- exécute `python3 scripts/main.py <CODE>` ;
+- exécute `python3 -m unittest discover` ;
+- vérifie les fichiers DOCX/PDF produits ;
+- exécute `git add .` puis `git commit -m "Integrate validated <CODE> content"`.
+
+Le fichier Markdown reste dans `inbox/validated/` après import. Le Markdown validé est la source de vérité ; si une information obligatoire est absente, le script utilise le référentiel officiel lorsque c’est possible ou affiche une erreur explicite.
+
 Lancer les tests :
 
 ```bash
