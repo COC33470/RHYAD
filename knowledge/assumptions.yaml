@@ -1,0 +1,11 @@
+assumptions: []
+schema:
+  required_fields:
+    - "id"
+    - "hypothesis"
+    - "justification"
+    - "source"
+    - "impacts"
+    - "status"
+  list_fields:
+    - "impacts"

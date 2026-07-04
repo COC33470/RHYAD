@@ -1,0 +1,8 @@
+glossary: []
+schema:
+  required_fields:
+    - "id"
+    - "acronym"
+    - "definition"
+    - "source"
+    - "status"

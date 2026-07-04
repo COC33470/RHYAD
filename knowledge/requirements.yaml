@@ -1,0 +1,11 @@
+requirements: []
+schema:
+  required_fields:
+    - "id"
+    - "category"
+    - "requirement"
+    - "source"
+    - "references"
+    - "status"
+  list_fields:
+    - "references"

@@ -1,0 +1,10 @@
+interfaces: []
+schema:
+  required_fields:
+    - "id"
+    - "origin"
+    - "destination"
+    - "description"
+    - "documents"
+  list_fields:
+    - "documents"

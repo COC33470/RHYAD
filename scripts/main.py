@@ -6,12 +6,14 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from engine.core.document_builder import build_document
+from engine.core.knowledge_core import load_knowledge_core
 from engine.utils.pdf import convert_docx_to_pdf
 
 CONFIG_DIR = ROOT / "config" / "documents"
 PROJECT_CONFIG = ROOT / "config" / "project.yaml"
 REPOSITORY_CONFIG = ROOT / "config" / "rhyad_repository.yaml"
 DOCUMENT_REGISTRY_CONFIG = ROOT / "config" / "document_registry.yaml"
+KNOWLEDGE_DIR = ROOT / "knowledge"
 
 
 def _require_mapping(data, label):
@@ -171,6 +173,7 @@ def main():
         project_config = load_project_config(PROJECT_CONFIG)
         repository_config = load_repository_config(REPOSITORY_CONFIG)
         registry_config = load_document_registry_config(DOCUMENT_REGISTRY_CONFIG)
+        load_knowledge_core(KNOWLEDGE_DIR)
     except ValueError as exc:
         print("Configuration invalid.")
         print(exc)

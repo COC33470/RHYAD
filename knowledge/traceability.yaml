@@ -1,0 +1,6 @@
+traceability: []
+schema:
+  required_fields:
+    - "source"
+    - "destination"
+    - "relation"

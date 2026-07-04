@@ -1,0 +1,12 @@
+risks: []
+schema:
+  required_fields:
+    - "id"
+    - "title"
+    - "description"
+    - "probability"
+    - "impact"
+    - "mitigation"
+    - "owner"
+    - "status"
+    - "references"

@@ -1,0 +1,15 @@
+meetings: []
+schema:
+  required_fields:
+    - "id"
+    - "type"
+    - "date"
+    - "attendees"
+    - "actions"
+    - "decisions"
+    - "risks"
+  list_fields:
+    - "attendees"
+    - "actions"
+    - "decisions"
+    - "risks"

@@ -1,0 +1,13 @@
+source: "config/project.yaml"
+client: "CEVA Santé Animale"
+project:
+  code: "RHYAD"
+  name: "CEVA - Vaccine Manufacturing Facility"
+location: "Riyadh, Saudi Arabia"
+current_revision: "A1.0"
+status: "DRAFT"
+units: []
+languages:
+  - "fr"
+global_parameters:
+  confidentiality: "CEVA INTERNAL"

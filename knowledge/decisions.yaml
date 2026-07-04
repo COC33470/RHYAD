@@ -1,0 +1,14 @@
+decisions: []
+schema:
+  required_fields:
+    - "id"
+    - "title"
+    - "description"
+    - "status"
+    - "date"
+    - "source"
+    - "impacts"
+    - "references"
+  list_fields:
+    - "impacts"
+    - "references"

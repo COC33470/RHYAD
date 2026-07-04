@@ -78,19 +78,43 @@ Le référentiel documentaire validé est décrit dans `config/rhyad_repository.
 
 ## Documents YAML
 
-Les documents générables sont définis dans `config/documents/<CODE>.yaml`.
+Les documents générables sont déclarés dans `config/document_registry.yaml`, qui associe chaque code RHYAD à son code documentaire officiel, sa famille de sortie et son fichier source YAML.
 
 Squelettes actuellement disponibles :
 
-- `000` — Modèle documentaire RHYAD-CEVA
-- `001` — Charte Projet
-- `001A` — ACAP – Analyse de Contexte et d’Adaptation du Projet
-- `002` — Programme Fonctionnel
-- `003` — Glossaire
-- `006` — Plan Directeur Documentaire
-- `F01` — Réception et Expédition
+- `config/documents/000.yaml` — Modèle documentaire RHYAD-CEVA
+- `config/documents/001.yaml` — Charte Projet
+- `config/documents/001A.yaml` — ACAP – Analyse de Contexte et d’Adaptation du Projet
+- `config/documents/002.yaml` — Programme Fonctionnel
+- `config/documents/003.yaml` — Glossaire
+- `config/documents/006.yaml` — Plan Directeur Documentaire
+- `config/documents/functions/F01.yaml` — Réception et Expédition
 
-Ces fichiers sont des squelettes. Les contenus complets ne doivent être rédigés qu’après validation.
+Ces fichiers restent compatibles avec le moteur documentaire existant. Les contenus complets ne doivent être rédigés qu’après validation.
+
+## Knowledge Core
+
+Le dossier `knowledge/` constitue le futur référentiel documentaire unique de RHYAD. Il centralise progressivement les informations projet structurées afin que les documents YAML puissent les lire sans dupliquer les données.
+
+Principe directeur :
+
+```text
+Une information = une seule source
+```
+
+Fichiers du Knowledge Core :
+
+- `knowledge/project.yaml` : métadonnées projet issues de `config/project.yaml`.
+- `knowledge/glossary.yaml` : acronymes et définitions.
+- `knowledge/decisions.yaml` : décisions, impacts et références.
+- `knowledge/risks.yaml` : risques, mitigations, responsables et statuts.
+- `knowledge/assumptions.yaml` : hypothèses de conception et impacts.
+- `knowledge/requirements.yaml` : exigences projet et références.
+- `knowledge/interfaces.yaml` : interfaces entre origines, destinations et documents.
+- `knowledge/meetings.yaml` : structure destinée aux comptes rendus.
+- `knowledge/traceability.yaml` : relations entre sources et documents impactés.
+
+À ce stade, le moteur charge le Knowledge Core sans modifier les documents existants. Les futures mises à jour pourront propager les données validées vers les documents concernés, tout en conservant une source documentaire unique.
 
 ## Sorties
 
@@ -105,10 +129,10 @@ output/xlsx/000 ... output/xlsx/600
 Exemples :
 
 ```text
-output/docx/000/RHYAD-002.docx
-output/pdf/000/RHYAD-002.pdf
-output/docx/100/RHYAD-F01.docx
-output/pdf/100/RHYAD-F01.pdf
+output/docx/000/CEVA-RHYAD-002-PF_Rev0.1.docx
+output/pdf/000/CEVA-RHYAD-002-PF_Rev0.1.pdf
+output/docx/100/CEVA-RHYAD-100-F01_Rev0.1.docx
+output/pdf/100/CEVA-RHYAD-100-F01_Rev0.1.pdf
 ```
 
 ## Prérequis
@@ -178,3 +202,7 @@ python3 -m unittest discover
 `config/project.yaml` contient les métadonnées projet, la révision, le statut, la confidentialité, les auteurs, les approbateurs, le logo CEVA et les chemins de sortie racine.
 
 `config/rhyad_repository.yaml` contient la nomenclature officielle et permet au générateur de router les livrables dans la bonne famille.
+
+`config/document_registry.yaml` contient la codification officielle des documents générables, leur révision de sortie, leur famille et leur source YAML.
+
+`knowledge/` contient le Knowledge Core RHYAD. Il deviendra progressivement la source unique de vérité pour les données projet validées.
