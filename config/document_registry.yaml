@@ -33,8 +33,8 @@ documents:
   - code: "MTH01"
     official_code: "CEVA-RHYAD-000-MTH01"
     title: "Guide Méthodologique RHYAD"
-    revision: "Rev0.1"
-    status: "Draft"
+    revision: "Rev1.0"
+    status: "Validated"
     family: "000"
     source: "config/documents/MTH01.yaml"
 
