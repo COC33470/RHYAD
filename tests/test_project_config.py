@@ -121,6 +121,28 @@ class ProjectConfigTest(unittest.TestCase):
 
         self.assertEqual(actual_rows, expected_rows)
 
+    def test_f01_interfaces_match_repository_family_100_except_f01(self):
+        repository = load_repository_config(Path("config/rhyad_repository.yaml"))
+        with open("config/documents/F01.yaml", "r", encoding="utf-8") as f:
+            document = yaml.safe_load(f)
+
+        family_100 = next(
+            family
+            for family in repository["repository"]["families"]
+            if str(family["code"]) == "100"
+        )
+        expected_rows = [
+            [item["code"], item["title"]]
+            for item in family_100["documents"]
+            if item["code"] != "F01"
+        ]
+        actual_rows = [
+            row[:2]
+            for row in document["chapters"][11]["tables"][0]["rows"]
+        ]
+
+        self.assertEqual(actual_rows, expected_rows)
+
 
 if __name__ == "__main__":
     unittest.main()
