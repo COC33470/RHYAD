@@ -46,6 +46,14 @@ documents:
     family: "000"
     source: "config/documents/005.yaml"
 
+  - code: "006"
+    official_code: "CEVA-RHYAD-006-PDD"
+    title: "Plan Directeur Documentaire"
+    revision: "Rev1.0"
+    status: "Validated"
+    family: "000"
+    source: "config/documents/006.yaml"
+
   - code: "MTH01"
     official_code: "CEVA-RHYAD-000-MTH01"
     title: "Guide Méthodologique RHYAD"

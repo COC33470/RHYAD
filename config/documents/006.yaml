@@ -1,19 +1,171 @@
-reference: RHYAD-006
+reference: CEVA-RHYAD-006-PDD
 title: Plan Directeur Documentaire
-subtitle: Squelette documentaire - Révision A1.0
-
+revision: Rev1.0
+status: Validated
 chapters:
-  - title: "1. Objet"
-    text: "À compléter après validation du contenu."
+- title: 1. Objet
+  text: 'Le présent document définit l''organisation documentaire du projet RHYAD.
 
-  - title: "2. Organisation documentaire"
-    text: "À compléter après validation du contenu."
 
-  - title: "3. Codification"
-    text: "À compléter après validation du contenu."
+    Il constitue le référentiel de gestion des documents produits pendant la
 
-  - title: "4. Flux de validation"
-    text: "À compléter après validation du contenu."
+    programmation, la conception, la réalisation et la clôture du projet.
 
-  - title: "5. Annexes"
-    text: "À compléter après validation du contenu."
+
+    Il garantit :'
+  bullets:
+  - une structure documentaire unique ;
+  - une gestion cohérente des versions ;
+  - la traçabilité des modifications ;
+  - la maîtrise des interfaces documentaires.
+- title: 2. Domaine d'application
+  text: 'Le présent plan s''applique à l''ensemble des documents produits dans le
+
+    cadre du projet RHYAD.
+
+
+    Il couvre :'
+  bullets:
+  - les documents de gouvernance ;
+  - les documents fonctionnels ;
+  - les données techniques ;
+  - les Design Basis ;
+  - les réunions ;
+  - les registres ;
+  - les dossiers d'études.
+- title: 3. Principes documentaires
+  text: 'La gestion documentaire RHYAD repose sur les principes suivants :'
+  bullets:
+  - une information = une seule source ;
+  - un document = une responsabilité identifiée ;
+  - une modification = une analyse des impacts documentaires ;
+  - une décision = une traçabilité complète ;
+  - une version = un historique conservé.
+- title: 4. Arborescence documentaire officielle
+- title: 000 --- Gouvernance Projet
+  bullets:
+  - CEVA-RHYAD-001-CHARTE
+  - CEVA-RHYAD-001A-ACAP
+  - CEVA-RHYAD-002-PF
+  - CEVA-RHYAD-003-GLOSSAIRE
+  - CEVA-RHYAD-004-REGISTRE DES RISQUES
+  - CEVA-RHYAD-005-REGISTRE DES DECISIONS
+  - CEVA-RHYAD-006-PDD
+  - CEVA-RHYAD-000-MTH01
+- title: 100 --- Programme Fonctionnel
+  bullets:
+  - CEVA-RHYAD-100-F01 à F15
+- title: 200 --- Données Techniques
+  bullets:
+  - CEVA-RHYAD-200-DT000
+  - CEVA-RHYAD-200-DT-F01-xx à DT-F15-xx
+- title: 300 --- Design Basis
+  bullets:
+  - CEVA-RHYAD-300-DB01 à DB10
+- title: 400 --- Réunions
+  bullets:
+  - CEVA-RHYAD-400-R00 à R04
+- title: 500 --- Registres Projet
+  bullets:
+  - CEVA-RHYAD-500-REG01 à REG05
+- title: 600 --- Dossiers d'Études
+  bullets:
+  - APS
+  - APD
+  - PRO
+  - DCE
+  - EXE
+  - VISA
+  - DOE
+- title: 5. Convention de nommage
+  text: 'Chaque document suit la convention :
+
+
+    `CEVA-RHYAD-XXX-YYY`
+
+
+    Exemples :'
+  bullets:
+  - CEVA-RHYAD-100-F09
+  - CEVA-RHYAD-200-DT-F09-01
+  - CEVA-RHYAD-300-DB04
+  - CEVA-RHYAD-500-REG02
+- title: 6. Cycle de vie documentaire
+  bullets:
+  - Création
+  - Rédaction
+  - Revue
+  - Validation
+  - Publication
+  - Révision
+  - Archivage
+  text: Chaque évolution est historisée.
+- title: 7. Gestion des versions
+  text: 'Chaque document comporte :
+
+
+    Les versions obsolètes sont archivées et restent consultables.'
+  bullets:
+  - une référence ;
+  - une version ;
+  - un statut ;
+  - une date ;
+  - un historique des révisions.
+- title: 8. Gestion des responsabilités
+  text: 'Chaque document identifie :'
+  bullets:
+  - son rédacteur ;
+  - son relecteur ;
+  - son valideur ;
+  - son responsable documentaire.
+- title: 9. Gestion des interfaces documentaires
+  text: 'Chaque document identifie :'
+  bullets:
+  - ses documents d'entrée ;
+  - ses documents de sortie ;
+  - les documents liés ;
+  - les documents impactés par une modification.
+- title: 10. Gestion des impacts documentaires
+  text: 'Toute modification d''un document entraîne une analyse des impacts.
+
+
+    Les documents impactés sont :'
+  bullets:
+  - identifiés ;
+  - mis à jour ;
+  - tracés dans le Registre des Décisions.
+- title: 11. Source documentaire unique
+  text: 'Les documents sources sont conservés dans le dépôt RHYAD.
+
+
+    Les formats DOCX et PDF sont des livrables générés automatiquement à
+
+    partir des fichiers sources.
+
+
+    Les documents générés ne constituent jamais la source de référence.'
+- title: 12. Qualité documentaire
+  text: 'Chaque document doit respecter :'
+  bullets:
+  - cohérence documentaire ;
+  - absence de duplication ;
+  - traçabilité des décisions ;
+  - lisibilité ;
+  - homogénéité de présentation ;
+  - respect de la méthode RHYAD.
+- title: 13. Règles de gestion
+  bullets:
+  - Une information n'est présente qu'une seule fois dans le référentiel.
+  - Toute modification est propagée vers les documents concernés.
+  - Toute décision est enregistrée dans le Registre des Décisions.
+  - Toute évolution documentaire est historisée.
+  - Les documents générés (DOCX, PDF) ne sont jamais modifiés directement.
+  - Le dépôt RHYAD constitue la source documentaire officielle du projet.
+- title: 14. Annexes
+- title: Annexe A --- Arborescence documentaire
+  text: Représentation graphique de l'organisation documentaire RHYAD.
+- title: Annexe B --- Workflow documentaire
+  text: Description du cycle de validation des documents.
+- title: Annexe C --- Historique des révisions
+  text: Suivi des versions du Plan Directeur Documentaire.
+- title: Fin du document
