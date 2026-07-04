@@ -1,0 +1,196 @@
+reference: CEVA-RHYAD-005-REGISTRE DES DECISIONS
+title: Registre des Décisions
+revision: Rev1.0
+status: Validated
+chapters:
+- title: 1. Objet
+  text: 'Le présent document constitue le registre unique des décisions du projet
+
+    RHYAD.
+
+
+    Il assure la traçabilité de l''ensemble des décisions prises pendant la
+
+    programmation, la conception, la réalisation et la mise en service du
+
+    projet.
+
+
+    Chaque décision est identifiée, justifiée, validée, historisée et reliée
+
+    aux documents qu''elle impacte.'
+- title: 2. Domaine d'application
+  text: 'Le registre couvre notamment :'
+  bullets:
+  - les décisions de gouvernance ;
+  - les décisions fonctionnelles ;
+  - les décisions techniques ;
+  - les arbitrages du Maître d'Ouvrage ;
+  - les validations des Design Drivers ;
+  - les validations des pondérations de la matrice multicritère ;
+  - les validations des Design Basis ;
+  - les décisions documentaires.
+- title: 3. Documents de référence
+  bullets:
+  - CEVA-RHYAD-001-CHARTE --- Charte Projet
+  - CEVA-RHYAD-002-PF --- Programme Fonctionnel
+  - CEVA-RHYAD-004-REGISTRE DES RISQUES --- Registre des Risques
+  - CEVA-RHYAD-006-PDD --- Plan Directeur Documentaire
+  - CEVA-RHYAD-000-MTH01 --- Guide Méthodologique RHYAD
+  - CEVA-RHYAD-400-Rxx --- Réunions
+  - CEVA-RHYAD-500-REG01 --- Registre des Actions
+- title: 4. Principes
+  text: 'Le registre des décisions constitue la référence unique pour toutes les
+
+    décisions du projet.
+
+
+    Chaque décision :'
+  bullets:
+  - possède un identifiant unique ;
+  - est enregistrée une seule fois ;
+  - est datée ;
+  - est validée par l'autorité compétente ;
+  - référence les documents concernés ;
+  - reste consultable même après son application.
+- title: 5. Classification des décisions
+  tables:
+  - headers:
+    - Code
+    - Famille
+    rows:
+    - - DEC-GOV
+      - Gouvernance
+    - - DEC-PROG
+      - Programmation
+    - - DEC-FON
+      - Fonctionnelle
+    - - DEC-TECH
+      - Technique
+    - - DEC-DB
+      - Design Basis
+    - - DEC-RISK
+      - Gestion des risques
+    - - DEC-DOC
+      - Documentation
+    - - DEC-PLAN
+      - Planning
+    - - DEC-BUD
+      - Budget
+    - - DEC-MOA
+      - Décision du Maître d'Ouvrage
+    title: 5. Classification des décisions
+- title: 6. Registre des décisions
+  tables:
+  - headers:
+    - Référence
+    - Date
+    - Famille
+    - Objet
+    - Décision
+    - Justification
+    - Validée par
+    - Documents impactés
+    - Actions associées
+    - Statut
+    rows:
+    - - À compléter
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 6. Registre des décisions
+- title: 7. Sources des décisions
+  text: 'Les décisions peuvent provenir :'
+  bullets:
+  - des réunions de projet ;
+  - des ateliers fonctionnels ;
+  - des ateliers techniques ;
+  - des revues APS/APD/PRO ;
+  - des analyses de variantes ;
+  - des demandes du Maître d'Ouvrage ;
+  - des évolutions réglementaires ;
+  - des analyses de risques.
+- title: 8. Cycle de vie d'une décision
+  bullets:
+  - Proposition
+  - Analyse
+  - Validation
+  - Mise en œuvre
+  - Vérification des impacts documentaires
+  - Clôture
+  text: 'Une décision clôturée reste présente dans le registre à des fins de
+
+    traçabilité.'
+- title: 9. Gestion des impacts documentaires
+  tables:
+  - headers:
+    - Document
+    - Action
+    rows:
+    - - CEVA-RHYAD-100-F09
+      - Mise à jour
+    - - CEVA-RHYAD-200-DT-F09-01
+      - Compléter
+    - - CEVA-RHYAD-300-DB04
+      - Réviser
+    - - CEVA-RHYAD-500-REG04
+      - Mettre à jour
+    title: 9. Gestion des impacts documentaires
+- title: 10. Lien avec les Design Drivers
+  text: 'Les décisions relatives aux Design Drivers, aux pondérations de la
+
+    matrice multicritère et au choix des variantes doivent être enregistrées
+
+    dans le présent registre avec une référence vers le Design Basis
+
+    concerné.'
+- title: 11. Lien avec les risques
+  text: 'Toute décision ayant un impact sur un risque doit référencer :'
+  bullets:
+  - le risque concerné ;
+  - l'évolution de son niveau de criticité ;
+  - les mesures de maîtrise associées.
+- title: 12. Lien avec les actions
+  text: 'Chaque décision peut générer une ou plusieurs actions.
+
+
+    Les actions sont suivies dans le **CEVA-RHYAD-500-REG01 --- Registre des
+
+    Actions**.'
+- title: 13. Règles de gestion
+  bullets:
+  - Chaque décision possède un identifiant unique.
+  - Une décision ne peut être enregistrée qu'une seule fois.
+  - Toute décision doit être justifiée.
+  - Toute décision doit identifier ses impacts documentaires.
+  - Toute décision est liée, si nécessaire, aux risques et aux actions
+  - Les décisions sont revues à chaque jalon du projet.
+  text: concernés.
+- title: 14. Propagation documentaire
+  text: 'Toute décision validée entraîne une analyse des impacts documentaires.
+
+
+    Les documents identifiés sont mis à jour conformément au Plan Directeur
+
+    Documentaire.
+
+
+    Cette propagation garantit :'
+  bullets:
+  - la cohérence documentaire ;
+  - la traçabilité des évolutions ;
+  - l'application du principe « Une information = une seule source ».
+- title: 15. Annexes
+- title: Annexe A --- Historique des révisions
+  text: Suivi des versions du registre.
+- title: Annexe B --- Liste des décisions structurantes
+  text: 'Cette annexe recense les décisions majeures ayant un impact sur
+
+    l''organisation générale du projet ou sur la méthode RHYAD.'
+- title: Fin du document
