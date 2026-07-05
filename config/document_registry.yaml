@@ -173,3 +173,11 @@ documents:
     status: "Validated"
     family: "100"
     source: "config/documents/functions/F14.yaml"
+
+  - code: "F15"
+    official_code: "CEVA-RHYAD-100-F15"
+    title: "Développement Futur et Réserves Foncières"
+    revision: "Rev1.0"
+    status: "Validated"
+    family: "100"
+    source: "config/documents/functions/F15.yaml"
