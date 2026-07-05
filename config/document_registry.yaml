@@ -157,3 +157,11 @@ documents:
     status: "Validated"
     family: "100"
     source: "config/documents/functions/F12.yaml"
+
+  - code: "F13"
+    official_code: "CEVA-RHYAD-100-F13"
+    title: "Systèmes d’Information, Automatismes et Cybersécurité"
+    revision: "Rev1.0"
+    status: "Validated"
+    family: "100"
+    source: "config/documents/functions/F13.yaml"
