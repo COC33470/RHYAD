@@ -149,3 +149,11 @@ documents:
     status: "Validated"
     family: "100"
     source: "config/documents/functions/F11.yaml"
+
+  - code: "F12"
+    official_code: "CEVA-RHYAD-100-F12"
+    title: "Sûreté, Protection des Actifs et Contrôle des Accès"
+    revision: "Rev1.0"
+    status: "Validated"
+    family: "100"
+    source: "config/documents/functions/F12.yaml"

@@ -1,0 +1,239 @@
+reference: CEVA-RHYAD-100-F12
+title: Sûreté, Protection des Actifs et Contrôle des Accès
+revision: Rev1.0
+status: Validated
+chapters:
+- title: 1. Objet
+  blocks:
+  - type: text
+    text: La fonction F12 -- Sûreté, Protection des Actifs et Contrôle des Accès définit les exigences fonctionnelles relatives
+      à la protection des personnes, des installations, des équipements, des produits, des informations et des infrastructures
+      critiques du Campus CEVA RHYAD.
+  - type: text
+    text: Elle couvre les dispositifs de sûreté physique nécessaires au maintien de l'intégrité du site tout au long de son
+      exploitation.
+  - type: text
+    text: Le présent document ne traite pas de la cybersécurité, qui fait l'objet de la fonction F13.
+  text: 'La fonction F12 -- Sûreté, Protection des Actifs et Contrôle des Accès définit les exigences fonctionnelles relatives
+    à la protection des personnes, des installations, des équipements, des produits, des informations et des infrastructures
+    critiques du Campus CEVA RHYAD.
+
+
+    Elle couvre les dispositifs de sûreté physique nécessaires au maintien de l''intégrité du site tout au long de son exploitation.
+
+
+    Le présent document ne traite pas de la cybersécurité, qui fait l''objet de la fonction F13.'
+- title: 2. Objectifs
+  blocks:
+  - type: list
+    items:
+    - protection des personnes ;
+    - protection des bâtiments ;
+    - protection des installations critiques ;
+    - protection des produits pharmaceutiques ;
+    - protection des informations sensibles sous leur forme physique ;
+    - contrôle des accès ;
+    - détection des intrusions ;
+    - continuité des activités.
+  bullets:
+  - protection des personnes ;
+  - protection des bâtiments ;
+  - protection des installations critiques ;
+  - protection des produits pharmaceutiques ;
+  - protection des informations sensibles sous leur forme physique ;
+  - contrôle des accès ;
+  - détection des intrusions ;
+  - continuité des activités.
+- title: 3. Périmètre
+- title: Protection périmétrique
+  blocks:
+  - type: list
+    items:
+    - clôtures ;
+    - portails ;
+    - postes de garde ;
+    - contrôle des véhicules ;
+    - contrôle des visiteurs.
+  bullets:
+  - clôtures ;
+  - portails ;
+  - postes de garde ;
+  - contrôle des véhicules ;
+  - contrôle des visiteurs.
+- title: Protection des bâtiments
+  blocks:
+  - type: list
+    items:
+    - contrôle d'accès ;
+    - gestion des badges ;
+    - sas sécurisés ;
+    - portes sécurisées ;
+    - compartimentage des zones.
+  bullets:
+  - contrôle d'accès ;
+  - gestion des badges ;
+  - sas sécurisés ;
+  - portes sécurisées ;
+  - compartimentage des zones.
+- title: Surveillance
+  blocks:
+  - type: list
+    items:
+    - vidéosurveillance ;
+    - détection d'intrusion ;
+    - supervision centralisée ;
+    - alarmes techniques de sûreté.
+  bullets:
+  - vidéosurveillance ;
+  - détection d'intrusion ;
+  - supervision centralisée ;
+  - alarmes techniques de sûreté.
+- title: Protection des actifs
+  blocks:
+  - type: list
+    items:
+    - équipements critiques ;
+    - laboratoires ;
+    - locaux techniques ;
+    - magasins ;
+    - archives ;
+    - zones informatiques.
+  bullets:
+  - équipements critiques ;
+  - laboratoires ;
+  - locaux techniques ;
+  - magasins ;
+  - archives ;
+  - zones informatiques.
+- title: 4. Exigences fonctionnelles
+- title: F12-01 -- Zonage de sûreté
+  blocks:
+  - type: text
+    text: Le Campus devra être organisé en niveaux de sûreté adaptés.
+  text: Le Campus devra être organisé en niveaux de sûreté adaptés.
+- title: F12-02 -- Contrôle des accès
+  blocks:
+  - type: text
+    text: Accès limité aux seules personnes autorisées avec niveaux d'autorisation adaptables.
+  text: Accès limité aux seules personnes autorisées avec niveaux d'autorisation adaptables.
+- title: F12-03 -- Protection des infrastructures critiques
+  blocks:
+  - type: text
+    text: Protection renforcée des locaux électriques, salles serveurs, salles de supervision, CTA des salles blanches, centrales
+      utilités et installations de stockage des données.
+  text: Protection renforcée des locaux électriques, salles serveurs, salles de supervision, CTA des salles blanches, centrales
+    utilités et installations de stockage des données.
+- title: F12-04 -- Surveillance
+  blocks:
+  - type: text
+    text: Surveillance continue des zones sensibles avec historisation des événements.
+  text: Surveillance continue des zones sensibles avec historisation des événements.
+- title: F12-05 -- Gestion des visiteurs
+  blocks:
+  - type: text
+    text: Les visiteurs devront être identifiés, enregistrés et accompagnés.
+  text: Les visiteurs devront être identifiés, enregistrés et accompagnés.
+- title: F12-06 -- Continuité d'activité
+  blocks:
+  - type: text
+    text: Les systèmes critiques devront disposer d'une alimentation secourue adaptée.
+  text: Les systèmes critiques devront disposer d'une alimentation secourue adaptée.
+- title: F12-07 -- Intégration avec les autres systèmes
+  blocks:
+  - type: text
+    text: Interface avec GTB/GTC, contrôle d'accès, vidéosurveillance, SSI et systèmes informatiques autorisés.
+  text: Interface avec GTB/GTC, contrôle d'accès, vidéosurveillance, SSI et systèmes informatiques autorisés.
+- title: 5. Interfaces
+  blocks:
+  - type: list
+    items:
+    - F01
+    - F04
+    - F05
+    - F08
+    - F09
+    - F10
+    - F11
+    - F13
+    - F14
+  bullets:
+  - F01
+  - F04
+  - F05
+  - F08
+  - F09
+  - F10
+  - F11
+  - F13
+  - F14
+- title: 6. Contraintes
+  blocks:
+  - type: list
+    items:
+    - exigences du Maître d'Ouvrage ;
+    - exigences réglementaires locales ;
+    - contraintes GMP/BPF ;
+    - biosécurité ;
+    - climat local ;
+    - protection des infrastructures critiques.
+  bullets:
+  - exigences du Maître d'Ouvrage ;
+  - exigences réglementaires locales ;
+  - contraintes GMP/BPF ;
+  - biosécurité ;
+  - climat local ;
+  - protection des infrastructures critiques.
+- title: 7. Critères de performance
+  blocks:
+  - type: list
+    items:
+    - maîtrise des accès ;
+    - protection des installations critiques ;
+    - détection rapide ;
+    - continuité des systèmes de sûreté ;
+    - exploitation simple et évolutive ;
+    - adaptation aux futurs développements.
+  bullets:
+  - maîtrise des accès ;
+  - protection des installations critiques ;
+  - détection rapide ;
+  - continuité des systèmes de sûreté ;
+  - exploitation simple et évolutive ;
+  - adaptation aux futurs développements.
+- title: 8. Documents associés
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-001A-ACAP
+    - CEVA-RHYAD-200-DT-F12-01 et suivants
+    - CEVA-RHYAD-300-DB02 — Architecture
+    - CEVA-RHYAD-300-DB05 — Électricité
+    - CEVA-RHYAD-300-DB06 — Automatisme, IT / OT et Cybersécurité
+    - CEVA-RHYAD-300-DB07 — Sûreté et Sécurité
+    - CEVA-RHYAD-500-REG03 — Registre des Risques
+    - CEVA-RHYAD-500-REG04 — Registre des Hypothèses
+    - CEVA-RHYAD-500-REG05 — Registre des Interfaces
+  bullets:
+  - CEVA-RHYAD-001A-ACAP
+  - CEVA-RHYAD-200-DT-F12-01 et suivants
+  - CEVA-RHYAD-300-DB02 — Architecture
+  - CEVA-RHYAD-300-DB05 — Électricité
+  - CEVA-RHYAD-300-DB06 — Automatisme, IT / OT et Cybersécurité
+  - CEVA-RHYAD-300-DB07 — Sûreté et Sécurité
+  - CEVA-RHYAD-500-REG03 — Registre des Risques
+  - CEVA-RHYAD-500-REG04 — Registre des Hypothèses
+  - CEVA-RHYAD-500-REG05 — Registre des Interfaces
+- title: 9. Critères de validation
+  blocks:
+  - type: list
+    items:
+    - niveaux de sûreté définis ;
+    - infrastructures critiques identifiées ;
+    - interfaces validées ;
+    - hypothèses enregistrées dans les DT associés.
+  bullets:
+  - niveaux de sûreté définis ;
+  - infrastructures critiques identifiées ;
+  - interfaces validées ;
+  - hypothèses enregistrées dans les DT associés.
+- title: Fin du document
