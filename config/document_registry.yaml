@@ -165,3 +165,11 @@ documents:
     status: "Validated"
     family: "100"
     source: "config/documents/functions/F13.yaml"
+
+  - code: "F14"
+    official_code: "CEVA-RHYAD-100-F14"
+    title: "Administration, Formation et Services Généraux"
+    revision: "Rev1.0"
+    status: "Validated"
+    family: "100"
+    source: "config/documents/functions/F14.yaml"

@@ -1,0 +1,223 @@
+reference: CEVA-RHYAD-100-F14
+title: Administration, Formation et Services Généraux
+revision: Rev1.0
+status: Validated
+chapters:
+- title: 1. Objet
+  blocks:
+  - type: text
+    text: La fonction F14 -- Administration, Formation et Services Généraux définit les exigences fonctionnelles relatives
+      aux espaces administratifs, aux locaux de formation, aux services aux collaborateurs et aux fonctions de support nécessaires
+      au fonctionnement du Campus CEVA RHYAD.
+  - type: text
+    text: Elle couvre les bâtiments tertiaires ainsi que les espaces communs participant au bon fonctionnement du site industriel.
+  - type: text
+    text: Le présent document décrit exclusivement les besoins fonctionnels du projet et ne définit pas l'organisation interne
+      du Maître d'Ouvrage.
+  text: 'La fonction F14 -- Administration, Formation et Services Généraux définit les exigences fonctionnelles relatives
+    aux espaces administratifs, aux locaux de formation, aux services aux collaborateurs et aux fonctions de support nécessaires
+    au fonctionnement du Campus CEVA RHYAD.
+
+
+    Elle couvre les bâtiments tertiaires ainsi que les espaces communs participant au bon fonctionnement du site industriel.
+
+
+    Le présent document décrit exclusivement les besoins fonctionnels du projet et ne définit pas l''organisation interne
+    du Maître d''Ouvrage.'
+- title: 2. Objectifs
+  blocks:
+  - type: list
+    items:
+    - administration du Campus ;
+    - accueil des visiteurs ;
+    - gestion du site ;
+    - formation du personnel ;
+    - réunions techniques ;
+    - bien-être des collaborateurs ;
+    - fonctionnement des services généraux.
+  bullets:
+  - administration du Campus ;
+  - accueil des visiteurs ;
+  - gestion du site ;
+  - formation du personnel ;
+  - réunions techniques ;
+  - bien-être des collaborateurs ;
+  - fonctionnement des services généraux.
+- title: 3. Périmètre
+- title: Administration
+  blocks:
+  - type: list
+    items:
+    - accueil ;
+    - bureaux ;
+    - open spaces ;
+    - bureaux de direction ;
+    - salles de réunion ;
+    - salles de visioconférence ;
+    - salles de projet.
+  bullets:
+  - accueil ;
+  - bureaux ;
+  - open spaces ;
+  - bureaux de direction ;
+  - salles de réunion ;
+  - salles de visioconférence ;
+  - salles de projet.
+- title: Formation
+  blocks:
+  - type: list
+    items:
+    - salles de formation ;
+    - salles informatiques ;
+    - espaces de démonstration ;
+    - locaux de formation pratique.
+  bullets:
+  - salles de formation ;
+  - salles informatiques ;
+  - espaces de démonstration ;
+  - locaux de formation pratique.
+- title: Services généraux
+  blocks:
+  - type: list
+    items:
+    - restauration ;
+    - cafétérias ;
+    - locaux sociaux ;
+    - vestiaires non GMP ;
+    - sanitaires ;
+    - locaux de premiers secours ;
+    - locaux de reprographie ;
+    - archives administratives.
+  bullets:
+  - restauration ;
+  - cafétérias ;
+  - locaux sociaux ;
+  - vestiaires non GMP ;
+  - sanitaires ;
+  - locaux de premiers secours ;
+  - locaux de reprographie ;
+  - archives administratives.
+- title: 4. Exigences fonctionnelles
+- title: F14-01 -- Fonctionnalité
+  blocks:
+  - type: text
+    text: Les espaces devront permettre les activités administratives et de support.
+  text: Les espaces devront permettre les activités administratives et de support.
+- title: F14-02 -- Flexibilité
+  blocks:
+  - type: text
+    text: Les espaces administratifs devront être facilement reconfigurables.
+  text: Les espaces administratifs devront être facilement reconfigurables.
+- title: F14-03 -- Formation
+  blocks:
+  - type: text
+    text: Le Campus devra disposer d'espaces adaptés aux formations internes, réglementaires, techniques et aux réunions de
+      projet.
+  text: Le Campus devra disposer d'espaces adaptés aux formations internes, réglementaires, techniques et aux réunions de
+    projet.
+- title: F14-04 -- Confort
+  blocks:
+  - type: text
+    text: Conditions adaptées de température, qualité d'air, acoustique, éclairage et ergonomie.
+  text: Conditions adaptées de température, qualité d'air, acoustique, éclairage et ergonomie.
+- title: F14-05 -- Accessibilité
+  blocks:
+  - type: text
+    text: Les bâtiments devront être accessibles conformément aux réglementations applicables.
+  text: Les bâtiments devront être accessibles conformément aux réglementations applicables.
+- title: F14-06 -- Services aux collaborateurs
+  blocks:
+  - type: text
+    text: Prévoir restauration, détente, sanitaires et locaux sociaux.
+  text: Prévoir restauration, détente, sanitaires et locaux sociaux.
+- title: F14-07 -- Maintenabilité
+  blocks:
+  - type: text
+    text: Les bâtiments devront faciliter la maintenance sans perturber les activités.
+  text: Les bâtiments devront faciliter la maintenance sans perturber les activités.
+- title: 5. Interfaces
+  blocks:
+  - type: list
+    items:
+    - F01
+    - F10
+    - F12
+    - F13
+    - F15
+  bullets:
+  - F01
+  - F10
+  - F12
+  - F13
+  - F15
+- title: 6. Contraintes
+  blocks:
+  - type: list
+    items:
+    - exigences du Maître d'Ouvrage ;
+    - contraintes climatiques de l'Arabie Saoudite ;
+    - accessibilité ;
+    - confort des utilisateurs ;
+    - sécurité incendie ;
+    - sûreté des bâtiments administratifs.
+  bullets:
+  - exigences du Maître d'Ouvrage ;
+  - contraintes climatiques de l'Arabie Saoudite ;
+  - accessibilité ;
+  - confort des utilisateurs ;
+  - sécurité incendie ;
+  - sûreté des bâtiments administratifs.
+- title: 7. Critères de performance
+  blocks:
+  - type: list
+    items:
+    - fonctionnement efficace ;
+    - espaces confortables et évolutifs ;
+    - conditions adaptées à la formation ;
+    - maintenance facilitée ;
+    - consommation énergétique optimisée ;
+    - adaptation aux évolutions futures.
+  bullets:
+  - fonctionnement efficace ;
+  - espaces confortables et évolutifs ;
+  - conditions adaptées à la formation ;
+  - maintenance facilitée ;
+  - consommation énergétique optimisée ;
+  - adaptation aux évolutions futures.
+- title: 8. Documents associés
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-001A-ACAP
+    - CEVA-RHYAD-200-DT-F14-01 et suivants
+    - CEVA-RHYAD-300-DB02 — Architecture
+    - CEVA-RHYAD-300-DB03 — CVC / HVAC
+    - CEVA-RHYAD-300-DB05 — Électricité
+    - CEVA-RHYAD-300-DB06 — Automatisme, IT / OT et Cybersécurité
+    - CEVA-RHYAD-500-REG03 — Registre des Risques
+    - CEVA-RHYAD-500-REG04 — Registre des Hypothèses
+    - CEVA-RHYAD-500-REG05 — Registre des Interfaces
+  bullets:
+  - CEVA-RHYAD-001A-ACAP
+  - CEVA-RHYAD-200-DT-F14-01 et suivants
+  - CEVA-RHYAD-300-DB02 — Architecture
+  - CEVA-RHYAD-300-DB03 — CVC / HVAC
+  - CEVA-RHYAD-300-DB05 — Électricité
+  - CEVA-RHYAD-300-DB06 — Automatisme, IT / OT et Cybersécurité
+  - CEVA-RHYAD-500-REG03 — Registre des Risques
+  - CEVA-RHYAD-500-REG04 — Registre des Hypothèses
+  - CEVA-RHYAD-500-REG05 — Registre des Interfaces
+- title: 9. Critères de validation
+  blocks:
+  - type: list
+    items:
+    - besoins approuvés ;
+    - interfaces identifiées ;
+    - hypothèses enregistrées dans les DT associés ;
+    - besoins en surfaces et capacités validés.
+  bullets:
+  - besoins approuvés ;
+  - interfaces identifiées ;
+  - hypothèses enregistrées dans les DT associés ;
+  - besoins en surfaces et capacités validés.
+- title: Fin du document
