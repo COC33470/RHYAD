@@ -58,7 +58,7 @@ chapters:
 - title: 200 --- Données Techniques
   bullets:
   - CEVA-RHYAD-200-DT000
-  - CEVA-RHYAD-200-DT-F01-xx à DT-F15-xx
+  - CEVA-RHYAD-200-F01-DT01 à CEVA-RHYAD-200-F15-DT01
 - title: 300 --- Design Basis
   bullets:
   - CEVA-RHYAD-300-DB01 à DB10
@@ -87,7 +87,7 @@ chapters:
     Exemples :'
   bullets:
   - CEVA-RHYAD-100-F09
-  - CEVA-RHYAD-200-DT-F09-01
+  - CEVA-RHYAD-200-F09-DT01
   - CEVA-RHYAD-300-DB04
   - CEVA-RHYAD-500-REG02
 - title: 6. Cycle de vie documentaire

@@ -292,34 +292,35 @@ def _aligned_table_start(lines, index):
     if index >= len(lines):
         return None
 
+    def collect_header_lines(start_index, max_header_lines=6):
+        header_lines = []
+        current_index = start_index
+        while current_index < len(lines):
+            line = lines[current_index]
+            if _is_aligned_table_separator(line):
+                return (header_lines, current_index) if header_lines else None
+            if not _is_aligned_table_header_line(line):
+                return None
+            header_lines.append(line)
+            if len(header_lines) >= max_header_lines:
+                return None
+            current_index += 1
+        return None
+
     if _is_aligned_table_border(lines[index]):
-        if (
-            index + 2 < len(lines)
-            and _is_aligned_table_header_line(lines[index + 1])
-            and _is_aligned_table_separator(lines[index + 2])
-        ):
-            return [lines[index + 1]], index + 2, True
-        if (
-            index + 3 < len(lines)
-            and _is_aligned_table_header_line(lines[index + 1])
-            and _is_aligned_table_header_line(lines[index + 2])
-            and _is_aligned_table_separator(lines[index + 3])
-        ):
-            return [lines[index + 1], lines[index + 2]], index + 3, True
+        collected = collect_header_lines(index + 1)
+        if collected:
+            header_lines, separator_index = collected
+            return header_lines, separator_index, True
         return None
 
     if not _is_aligned_table_header_line(lines[index]):
         return None
 
-    if index + 1 < len(lines) and _is_aligned_table_separator(lines[index + 1]):
-        return [lines[index]], index + 1, False
-
-    if (
-        index + 2 < len(lines)
-        and _is_aligned_table_header_line(lines[index + 1])
-        and _is_aligned_table_separator(lines[index + 2])
-    ):
-        return [lines[index], lines[index + 1]], index + 2, False
+    collected = collect_header_lines(index)
+    if collected:
+        header_lines, separator_index = collected
+        return header_lines, separator_index, False
 
     return None
 

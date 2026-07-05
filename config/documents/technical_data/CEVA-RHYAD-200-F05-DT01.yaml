@@ -1,0 +1,560 @@
+reference: CEVA-RHYAD-200-F05-DT01
+title: Conditionnement et Expédition des Produits — Données Techniques d'Entrée
+revision: Rev1.0
+status: Draft
+chapters:
+- title: Objet
+  blocks:
+  - type: text
+    text: Le présent document a pour objet de recenser l'ensemble des données techniques nécessaires à la conception de la
+      fonction **F05 -- Conditionnement et Expédition des Produits**.
+  - type: text
+    text: Il constitue le document de référence pour le dimensionnement des zones de conditionnement, des équipements, des
+      flux, des utilités et des interfaces logistiques.
+  text: 'Le présent document a pour objet de recenser l''ensemble des données techniques nécessaires à la conception de la
+    fonction **F05 -- Conditionnement et Expédition des Produits**.
+
+
+    Il constitue le document de référence pour le dimensionnement des zones de conditionnement, des équipements, des flux,
+    des utilités et des interfaces logistiques.'
+- title: Documents associés
+- title: Programme Fonctionnel
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-100-F05 --- Conditionnement et Expédition des Produits
+  bullets:
+  - CEVA-RHYAD-100-F05 --- Conditionnement et Expédition des Produits
+- title: Design Basis
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-300-DB001 --- Process
+    - CEVA-RHYAD-300-DB002 --- Architecture
+    - CEVA-RHYAD-300-DB003 --- CVC / HVAC
+    - CEVA-RHYAD-300-DB004 --- Utilités
+    - CEVA-RHYAD-300-DB009 --- Logistique
+  bullets:
+  - CEVA-RHYAD-300-DB001 --- Process
+  - CEVA-RHYAD-300-DB002 --- Architecture
+  - CEVA-RHYAD-300-DB003 --- CVC / HVAC
+  - CEVA-RHYAD-300-DB004 --- Utilités
+  - CEVA-RHYAD-300-DB009 --- Logistique
+- title: 1. Produits à conditionner
+  blocks:
+  - type: table
+    headers:
+    - Produit
+    - Présentation
+    - Conditionnement primaire
+    - Conditionnement secondaire
+    - Commentaires CEVA
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 1. Produits à conditionner
+  tables:
+  - headers:
+    - Produit
+    - Présentation
+    - Conditionnement primaire
+    - Conditionnement secondaire
+    - Commentaires CEVA
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 1. Produits à conditionner
+- title: 2. Capacités de conditionnement
+  blocks:
+  - type: table
+    headers:
+    - Paramètre
+    - Phase 1
+    - Phase 2
+    - Commentaires
+    rows:
+    - - Lots par semaine
+      - ''
+      - ''
+      - ''
+    - - Flacons / heure
+      - ''
+      - ''
+      - ''
+    - - Capacité journalière
+      - ''
+      - ''
+      - ''
+    - - Temps de changement de série
+      - ''
+      - ''
+      - ''
+    title: 2. Capacités de conditionnement
+  tables:
+  - headers:
+    - Paramètre
+    - Phase 1
+    - Phase 2
+    - Commentaires
+    rows:
+    - - Lots par semaine
+      - ''
+      - ''
+      - ''
+    - - Flacons / heure
+      - ''
+      - ''
+      - ''
+    - - Capacité journalière
+      - ''
+      - ''
+      - ''
+    - - Temps de changement de série
+      - ''
+      - ''
+      - ''
+    title: 2. Capacités de conditionnement
+- title: 3. Équipements de conditionnement
+  blocks:
+  - type: table
+    headers:
+    - Équipement
+    - Capacité
+    - Quantité
+    - Redondance
+    - Évolutivité
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 3. Équipements de conditionnement
+  tables:
+  - headers:
+    - Équipement
+    - Capacité
+    - Quantité
+    - Redondance
+    - Évolutivité
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 3. Équipements de conditionnement
+- title: 4. Identification et traçabilité
+  blocks:
+  - type: table
+    headers:
+    - Élément
+    - Exigence
+    - Commentaires
+    rows:
+    - - Étiquetage
+      - ''
+      - ''
+    - - Codification
+      - ''
+      - ''
+    - - Numéro de lot
+      - ''
+      - ''
+    - - Date de péremption
+      - ''
+      - ''
+    - - Sérialisation
+      - ''
+      - ''
+    - - Intégration ERP / MES
+      - ''
+      - ''
+    title: 4. Identification et traçabilité
+  tables:
+  - headers:
+    - Élément
+    - Exigence
+    - Commentaires
+    rows:
+    - - Étiquetage
+      - ''
+      - ''
+    - - Codification
+      - ''
+      - ''
+    - - Numéro de lot
+      - ''
+      - ''
+    - - Date de péremption
+      - ''
+      - ''
+    - - Sérialisation
+      - ''
+      - ''
+    - - Intégration ERP / MES
+      - ''
+      - ''
+    title: 4. Identification et traçabilité
+- title: 5. Contrôles en ligne
+  blocks:
+  - type: table
+    headers:
+    - Contrôle
+    - Méthode
+    - Fréquence
+    - Responsable
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 5. Contrôles en ligne
+  tables:
+  - headers:
+    - Contrôle
+    - Méthode
+    - Fréquence
+    - Responsable
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 5. Contrôles en ligne
+- title: 6. Stock tampon
+  blocks:
+  - type: table
+    headers:
+    - Élément
+    - Capacité
+    - Conditions de stockage
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 6. Stock tampon
+  tables:
+  - headers:
+    - Élément
+    - Capacité
+    - Conditions de stockage
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 6. Stock tampon
+- title: 7. Expédition
+  blocks:
+  - type: table
+    headers:
+    - Élément
+    - Exigence
+    - Commentaires
+    rows:
+    - - Température d'expédition
+      - ''
+      - ''
+    - - Type d'emballage
+      - ''
+      - ''
+    - - Chaîne du froid
+      - ''
+      - ''
+    - - Délai maximal
+      - ''
+      - ''
+    - - Transporteurs
+      - ''
+      - ''
+    title: 7. Expédition
+  tables:
+  - headers:
+    - Élément
+    - Exigence
+    - Commentaires
+    rows:
+    - - Température d'expédition
+      - ''
+      - ''
+    - - Type d'emballage
+      - ''
+      - ''
+    - - Chaîne du froid
+      - ''
+      - ''
+    - - Délai maximal
+      - ''
+      - ''
+    - - Transporteurs
+      - ''
+      - ''
+    title: 7. Expédition
+- title: 8. Utilités nécessaires
+  blocks:
+  - type: table
+    headers:
+    - Utilité
+    - Besoin
+    - Commentaires
+    rows:
+    - - Électricité
+      - ''
+      - ''
+    - - Air comprimé
+      - ''
+      - ''
+    - - Réseau informatique
+      - ''
+      - ''
+    - - Eau
+      - ''
+      - ''
+    title: 8. Utilités nécessaires
+  tables:
+  - headers:
+    - Utilité
+    - Besoin
+    - Commentaires
+    rows:
+    - - Électricité
+      - ''
+      - ''
+    - - Air comprimé
+      - ''
+      - ''
+    - - Réseau informatique
+      - ''
+      - ''
+    - - Eau
+      - ''
+      - ''
+    title: 8. Utilités nécessaires
+- title: 9. Interfaces
+  blocks:
+  - type: table
+    headers:
+    - Fonction
+    - Nature de l'interface
+    - Commentaires
+    rows:
+    - - F04
+      - Réception des produits finis
+      - ''
+    - - F08
+      - Libération qualité
+      - ''
+    - - F09
+      - Utilités
+      - ''
+    - - F13
+      - SI / Traçabilité
+      - ''
+    title: 9. Interfaces
+  tables:
+  - headers:
+    - Fonction
+    - Nature de l'interface
+    - Commentaires
+    rows:
+    - - F04
+      - Réception des produits finis
+      - ''
+    - - F08
+      - Libération qualité
+      - ''
+    - - F09
+      - Utilités
+      - ''
+    - - F13
+      - SI / Traçabilité
+      - ''
+    title: 9. Interfaces
+- title: 10. Contraintes GMP/BPF
+  blocks:
+  - type: table
+    headers:
+    - Sujet
+    - Exigence
+    - Commentaires
+    rows:
+    - - Classification des locaux
+      - ''
+      - ''
+    - - Conditions environnementales
+      - ''
+      - ''
+    - - Gestion des contaminations croisées
+      - ''
+      - ''
+    - - Nettoyage
+      - ''
+      - ''
+    - - Traçabilité documentaire
+      - ''
+      - ''
+    title: 10. Contraintes GMP/BPF
+  tables:
+  - headers:
+    - Sujet
+    - Exigence
+    - Commentaires
+    rows:
+    - - Classification des locaux
+      - ''
+      - ''
+    - - Conditions environnementales
+      - ''
+      - ''
+    - - Gestion des contaminations croisées
+      - ''
+      - ''
+    - - Nettoyage
+      - ''
+      - ''
+    - - Traçabilité documentaire
+      - ''
+      - ''
+    title: 10. Contraintes GMP/BPF
+- title: 11. Données de dimensionnement
+  blocks:
+  - type: table
+    headers:
+    - Élément
+    - Valeur
+    - Hypothèse
+    - Validation
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 11. Données de dimensionnement
+  tables:
+  - headers:
+    - Élément
+    - Valeur
+    - Hypothèse
+    - Validation
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 11. Données de dimensionnement
+- title: 12. Hypothèses de conception
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Hypothèse
+    - Impact
+    - Référence CEVA-RHYAD-500-REG04
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 12. Hypothèses de conception
+  tables:
+  - headers:
+    - N°
+    - Hypothèse
+    - Impact
+    - Référence CEVA-RHYAD-500-REG04
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 12. Hypothèses de conception
+- title: 13. Décisions prises
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Décision
+    - Date
+    - Référence CEVA-RHYAD-500-REG02
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 13. Décisions prises
+  tables:
+  - headers:
+    - N°
+    - Décision
+    - Date
+    - Référence CEVA-RHYAD-500-REG02
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 13. Décisions prises
+- title: 14. Actions
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Action
+    - Responsable
+    - Échéance
+    - Référence CEVA-RHYAD-500-REG01
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 14. Actions
+  tables:
+  - headers:
+    - N°
+    - Action
+    - Responsable
+    - Échéance
+    - Référence CEVA-RHYAD-500-REG01
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 14. Actions
+- title: Remarques RHYAD
+  blocks:
+  - type: list
+    items:
+    - Formats de conditionnement commercial.
+    - Exigences de traçabilité (ERP, MES, sérialisation si applicable).
+    - Contraintes de maintien de la chaîne du froid.
+    - Capacités d'expédition selon les marchés desservis.
+    - Interfaces avec le Contrôle Qualité, les Utilités et les Systèmes d'Information.
+  bullets:
+  - Formats de conditionnement commercial.
+  - Exigences de traçabilité (ERP, MES, sérialisation si applicable).
+  - Contraintes de maintien de la chaîne du froid.
+  - Capacités d'expédition selon les marchés desservis.
+  - Interfaces avec le Contrôle Qualité, les Utilités et les Systèmes d'Information.
+- title: Fin du document

@@ -73,7 +73,7 @@ La gestion documentaire RHYAD repose sur les principes suivants :
 ## 200 --- Données Techniques
 
 -   CEVA-RHYAD-200-DT000
--   CEVA-RHYAD-200-DT-F01-xx à DT-F15-xx
+-   CEVA-RHYAD-200-F01-DT01 à CEVA-RHYAD-200-F15-DT01
 
 ## 300 --- Design Basis
 
@@ -108,7 +108,7 @@ Chaque document suit la convention :
 Exemples :
 
 -   CEVA-RHYAD-100-F09
--   CEVA-RHYAD-200-DT-F09-01
+-   CEVA-RHYAD-200-F09-DT01
 -   CEVA-RHYAD-300-DB04
 -   CEVA-RHYAD-500-REG02
 

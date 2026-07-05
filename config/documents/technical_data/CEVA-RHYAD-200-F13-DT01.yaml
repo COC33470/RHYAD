@@ -1,0 +1,822 @@
+reference: CEVA-RHYAD-200-F13-DT01
+title: Systèmes d’Information, Automatismes et Cybersécurité — Données Techniques d'Entrée
+revision: Rev1.0
+status: Draft
+chapters:
+- title: Objet
+  blocks:
+  - type: text
+    text: Le présent document a pour objet de recenser l'ensemble des données techniques nécessaires à la conception des systèmes
+      d'information (IT), des systèmes industriels (OT), des automatismes et des dispositifs de cybersécurité du Campus CEVA.
+  - type: text
+    text: Il couvre les infrastructures numériques, les systèmes de supervision, les réseaux, les automatismes industriels
+      et les mesures de protection des données et des installations critiques.
+  text: 'Le présent document a pour objet de recenser l''ensemble des données techniques nécessaires à la conception des systèmes
+    d''information (IT), des systèmes industriels (OT), des automatismes et des dispositifs de cybersécurité du Campus CEVA.
+
+
+    Il couvre les infrastructures numériques, les systèmes de supervision, les réseaux, les automatismes industriels et les
+    mesures de protection des données et des installations critiques.'
+- title: Documents associés
+- title: Programme Fonctionnel
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-100-F13
+  bullets:
+  - CEVA-RHYAD-100-F13
+- title: Design Basis
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-300-DB005 --- Électricité
+    - CEVA-RHYAD-300-DB006 --- IT / OT
+    - CEVA-RHYAD-300-DB008 --- Sécurité / Sûreté
+    - CEVA-RHYAD-300-DB010 --- Instrumentation & Automatisme
+  bullets:
+  - CEVA-RHYAD-300-DB005 --- Électricité
+  - CEVA-RHYAD-300-DB006 --- IT / OT
+  - CEVA-RHYAD-300-DB008 --- Sécurité / Sûreté
+  - CEVA-RHYAD-300-DB010 --- Instrumentation & Automatisme
+- title: 1. Architecture générale des systèmes
+  blocks:
+  - type: table
+    headers:
+    - Domaine
+    - Exigence
+    - Commentaires CEVA
+    rows:
+    - - Réseau IT
+      - ''
+      - ''
+    - - Réseau OT
+      - ''
+      - ''
+    - - Réseau invités
+      - ''
+      - ''
+    - - Téléphonie
+      - ''
+      - ''
+    - - Wi-Fi
+      - ''
+      - ''
+    - - Interconnexion des bâtiments
+      - ''
+      - ''
+    title: 1. Architecture générale des systèmes
+  tables:
+  - headers:
+    - Domaine
+    - Exigence
+    - Commentaires CEVA
+    rows:
+    - - Réseau IT
+      - ''
+      - ''
+    - - Réseau OT
+      - ''
+      - ''
+    - - Réseau invités
+      - ''
+      - ''
+    - - Téléphonie
+      - ''
+      - ''
+    - - Wi-Fi
+      - ''
+      - ''
+    - - Interconnexion des bâtiments
+      - ''
+      - ''
+    title: 1. Architecture générale des systèmes
+- title: 2. Architecture IT / OT
+  blocks:
+  - type: table
+    headers:
+    - Élément
+    - Description
+    - Niveau de criticité
+    - Commentaires
+    rows:
+    - - ERP
+      - ''
+      - ''
+      - ''
+    - - MES
+      - ''
+      - ''
+      - ''
+    - - LIMS
+      - ''
+      - ''
+      - ''
+    - - SCADA
+      - ''
+      - ''
+      - ''
+    - - Historian
+      - ''
+      - ''
+      - ''
+    - - PLC / Automates
+      - ''
+      - ''
+      - ''
+    - - BMS / GTB
+      - ''
+      - ''
+      - ''
+    - - GMAO
+      - ''
+      - ''
+      - ''
+    title: 2. Architecture IT / OT
+  tables:
+  - headers:
+    - Élément
+    - Description
+    - Niveau de criticité
+    - Commentaires
+    rows:
+    - - ERP
+      - ''
+      - ''
+      - ''
+    - - MES
+      - ''
+      - ''
+      - ''
+    - - LIMS
+      - ''
+      - ''
+      - ''
+    - - SCADA
+      - ''
+      - ''
+      - ''
+    - - Historian
+      - ''
+      - ''
+      - ''
+    - - PLC / Automates
+      - ''
+      - ''
+      - ''
+    - - BMS / GTB
+      - ''
+      - ''
+      - ''
+    - - GMAO
+      - ''
+      - ''
+      - ''
+    title: 2. Architecture IT / OT
+- title: 3. Réseaux
+  blocks:
+  - type: table
+    headers:
+    - Réseau
+    - Disponibilité requise
+    - Redondance
+    - Commentaires
+    rows:
+    - - Backbone
+      - ''
+      - ''
+      - ''
+    - - Fibre optique
+      - ''
+      - ''
+      - ''
+    - - Réseau OT
+      - ''
+      - ''
+      - ''
+    - - Réseau IT
+      - ''
+      - ''
+      - ''
+    - - Wi-Fi industriel
+      - ''
+      - ''
+      - ''
+    title: 3. Réseaux
+  tables:
+  - headers:
+    - Réseau
+    - Disponibilité requise
+    - Redondance
+    - Commentaires
+    rows:
+    - - Backbone
+      - ''
+      - ''
+      - ''
+    - - Fibre optique
+      - ''
+      - ''
+      - ''
+    - - Réseau OT
+      - ''
+      - ''
+      - ''
+    - - Réseau IT
+      - ''
+      - ''
+      - ''
+    - - Wi-Fi industriel
+      - ''
+      - ''
+      - ''
+    title: 3. Réseaux
+- title: 4. Infrastructures critiques numériques
+  blocks:
+  - type: table
+    headers:
+    - Infrastructure
+    - Niveau de disponibilité
+    - Redondance
+    - Mode dégradé
+    - Commentaires
+    rows:
+    - - Data Center
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 4. Infrastructures critiques numériques
+  - type: text
+    text: Serveurs OT
+  - type: text
+    text: Serveurs IT
+  - type: text
+    text: Baies réseau
+  - type: text
+    text: Sauvegardes
+  - type: text
+    text: SCADA
+  - type: text
+    text: Historian
+  tables:
+  - headers:
+    - Infrastructure
+    - Niveau de disponibilité
+    - Redondance
+    - Mode dégradé
+    - Commentaires
+    rows:
+    - - Data Center
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 4. Infrastructures critiques numériques
+  text: 'Serveurs OT
+
+
+    Serveurs IT
+
+
+    Baies réseau
+
+
+    Sauvegardes
+
+
+    SCADA
+
+
+    Historian'
+- title: 5. Cybersécurité
+  blocks:
+  - type: table
+    headers:
+    - Sujet
+    - Exigence
+    - Référence
+    - Commentaires
+    rows:
+    - - Segmentation IT / OT
+      - ''
+      - ''
+      - ''
+    - - Pare-feu
+      - ''
+      - ''
+      - ''
+    - - Gestion des identités
+      - ''
+      - ''
+      - ''
+    - - MFA
+      - ''
+      - ''
+      - ''
+    - - Gestion des privilèges
+      - ''
+      - ''
+      - ''
+    - - Journalisation
+      - ''
+      - ''
+      - ''
+    - - Détection d'intrusion
+      - ''
+      - ''
+      - ''
+    - - Antivirus / EDR
+      - ''
+      - ''
+      - ''
+    - - Chiffrement
+      - ''
+      - ''
+      - ''
+    title: 5. Cybersécurité
+  tables:
+  - headers:
+    - Sujet
+    - Exigence
+    - Référence
+    - Commentaires
+    rows:
+    - - Segmentation IT / OT
+      - ''
+      - ''
+      - ''
+    - - Pare-feu
+      - ''
+      - ''
+      - ''
+    - - Gestion des identités
+      - ''
+      - ''
+      - ''
+    - - MFA
+      - ''
+      - ''
+      - ''
+    - - Gestion des privilèges
+      - ''
+      - ''
+      - ''
+    - - Journalisation
+      - ''
+      - ''
+      - ''
+    - - Détection d'intrusion
+      - ''
+      - ''
+      - ''
+    - - Antivirus / EDR
+      - ''
+      - ''
+      - ''
+    - - Chiffrement
+      - ''
+      - ''
+      - ''
+    title: 5. Cybersécurité
+- title: 6. Protection des données
+  blocks:
+  - type: table
+    headers:
+    - Donnée
+    - Niveau de sensibilité
+    - Protection requise
+    - Commentaires
+    rows:
+    - - Données de production
+      - ''
+      - ''
+      - ''
+    - - Recettes de fabrication
+      - ''
+      - ''
+      - ''
+    - - Données QC
+      - ''
+      - ''
+      - ''
+    - - Données vétérinaires
+      - ''
+      - ''
+      - ''
+    - - Documentation GMP
+      - ''
+      - ''
+      - ''
+    - - Plans et maquettes
+      - ''
+      - ''
+      - ''
+    title: 6. Protection des données
+  tables:
+  - headers:
+    - Donnée
+    - Niveau de sensibilité
+    - Protection requise
+    - Commentaires
+    rows:
+    - - Données de production
+      - ''
+      - ''
+      - ''
+    - - Recettes de fabrication
+      - ''
+      - ''
+      - ''
+    - - Données QC
+      - ''
+      - ''
+      - ''
+    - - Données vétérinaires
+      - ''
+      - ''
+      - ''
+    - - Documentation GMP
+      - ''
+      - ''
+      - ''
+    - - Plans et maquettes
+      - ''
+      - ''
+      - ''
+    title: 6. Protection des données
+- title: 7. Espionnage industriel et protection des actifs numériques
+  blocks:
+  - type: table
+    headers:
+    - Risque
+    - Mesures de protection
+    - Responsable
+    - Commentaires
+    rows:
+    - - Vol de données
+      - ''
+      - ''
+      - ''
+    - - Intrusion réseau
+      - ''
+      - ''
+      - ''
+    - - Sabotage informatique
+      - ''
+      - ''
+      - ''
+    - - Ransomware
+      - ''
+      - ''
+      - ''
+    - - Fuite d'informations confidentielles
+      - ''
+      - ''
+      - ''
+    title: 7. Espionnage industriel et protection des actifs numériques
+  - type: text
+    text: '> Décision RHYAD validée : la protection contre l''espionnage industriel > est une exigence de conception du Campus
+      et devra être prise en compte > dès les phases de programmation.'
+  tables:
+  - headers:
+    - Risque
+    - Mesures de protection
+    - Responsable
+    - Commentaires
+    rows:
+    - - Vol de données
+      - ''
+      - ''
+      - ''
+    - - Intrusion réseau
+      - ''
+      - ''
+      - ''
+    - - Sabotage informatique
+      - ''
+      - ''
+      - ''
+    - - Ransomware
+      - ''
+      - ''
+      - ''
+    - - Fuite d'informations confidentielles
+      - ''
+      - ''
+      - ''
+    title: 7. Espionnage industriel et protection des actifs numériques
+  text: '> Décision RHYAD validée : la protection contre l''espionnage industriel > est une exigence de conception du Campus
+    et devra être prise en compte > dès les phases de programmation.'
+- title: 8. Continuité d'activité
+  blocks:
+  - type: table
+    headers:
+    - Élément
+    - Temps maximal d'interruption
+    - Solution prévue
+    - Commentaires
+    rows:
+    - - ERP
+      - ''
+      - ''
+      - ''
+    title: 8. Continuité d'activité
+  - type: text
+    text: MES
+  - type: text
+    text: SCADA
+  - type: text
+    text: LIMS
+  - type: text
+    text: Réseau OT
+  - type: text
+    text: Réseau IT
+  tables:
+  - headers:
+    - Élément
+    - Temps maximal d'interruption
+    - Solution prévue
+    - Commentaires
+    rows:
+    - - ERP
+      - ''
+      - ''
+      - ''
+    title: 8. Continuité d'activité
+  text: 'MES
+
+
+    SCADA
+
+
+    LIMS
+
+
+    Réseau OT
+
+
+    Réseau IT'
+- title: 9. Interfaces
+  blocks:
+  - type: table
+    headers:
+    - Fonction
+    - Nature de l'interface
+    - Commentaires
+    rows:
+    - - F04
+      - Production
+      - ''
+    - - F08
+      - Contrôle Qualité
+      - ''
+    - - F09
+      - Utilités
+      - ''
+    - - F10
+      - Maintenance
+      - ''
+    - - F12
+      - Sûreté
+      - ''
+    - - F15
+      - Gouvernance
+      - ''
+    title: 9. Interfaces
+  tables:
+  - headers:
+    - Fonction
+    - Nature de l'interface
+    - Commentaires
+    rows:
+    - - F04
+      - Production
+      - ''
+    - - F08
+      - Contrôle Qualité
+      - ''
+    - - F09
+      - Utilités
+      - ''
+    - - F10
+      - Maintenance
+      - ''
+    - - F12
+      - Sûreté
+      - ''
+    - - F15
+      - Gouvernance
+      - ''
+    title: 9. Interfaces
+- title: 10. Conformité
+  blocks:
+  - type: table
+    headers:
+    - Référentiel
+    - Applicable
+    - Commentaires
+    rows:
+    - - Standards Groupe CEVA
+      - ''
+      - ''
+    - - IEC 62443
+      - ''
+      - ''
+    - - GMP / BPF
+      - ''
+      - ''
+    - - Exigences locales
+      - ''
+      - ''
+    title: 10. Conformité
+  tables:
+  - headers:
+    - Référentiel
+    - Applicable
+    - Commentaires
+    rows:
+    - - Standards Groupe CEVA
+      - ''
+      - ''
+    - - IEC 62443
+      - ''
+      - ''
+    - - GMP / BPF
+      - ''
+      - ''
+    - - Exigences locales
+      - ''
+      - ''
+    title: 10. Conformité
+- title: 11. Données de dimensionnement
+  blocks:
+  - type: table
+    headers:
+    - Élément
+    - Valeur
+    - Hypothèse
+    - Validation
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 11. Données de dimensionnement
+  tables:
+  - headers:
+    - Élément
+    - Valeur
+    - Hypothèse
+    - Validation
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 11. Données de dimensionnement
+- title: 12. Hypothèses de conception
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Hypothèse
+    - Impact
+    - Référence CEVA-RHYAD-500-REG04
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 12. Hypothèses de conception
+  tables:
+  - headers:
+    - N°
+    - Hypothèse
+    - Impact
+    - Référence CEVA-RHYAD-500-REG04
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 12. Hypothèses de conception
+- title: 13. Décisions prises
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Décision
+    - Date
+    - Référence CEVA-RHYAD-500-REG02
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 13. Décisions prises
+  tables:
+  - headers:
+    - N°
+    - Décision
+    - Date
+    - Référence CEVA-RHYAD-500-REG02
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 13. Décisions prises
+- title: 14. Actions
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Action
+    - Responsable
+    - Échéance
+    - Référence CEVA-RHYAD-500-REG01
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 14. Actions
+  tables:
+  - headers:
+    - N°
+    - Action
+    - Responsable
+    - Échéance
+    - Référence CEVA-RHYAD-500-REG01
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 14. Actions
+- title: Remarques RHYAD
+  blocks:
+  - type: text
+    text: Le projet RHYAD s'appuiera sur les standards IT/OT du Groupe CEVA, qui constitueront la base de conception des systèmes
+      numériques.
+  - type: text
+    text: 'Ce projet étant le premier site CEVA en Arabie Saoudite, les solutions retenues devront être examinées de manière
+      critique afin de vérifier leur adéquation avec :'
+  - type: list
+    items:
+    - les infrastructures télécom locales ;
+    - les contraintes réglementaires saoudiennes ;
+    - les délais d'approvisionnement ;
+    - la disponibilité des compétences locales ;
+    - les risques géopolitiques et logistiques identifiés dans l'ACAP.
+  - type: text
+    text: Une réunion spécifique IT/OT sera organisée avec la Direction IT de CEVA après la première réunion de programmation.
+      Elle permettra de recueillir les standards Groupe, d'identifier les adaptations nécessaires et d'enregistrer les actions
+      dans le registre projet.
+  text: 'Le projet RHYAD s''appuiera sur les standards IT/OT du Groupe CEVA, qui constitueront la base de conception des systèmes
+    numériques.
+
+
+    Ce projet étant le premier site CEVA en Arabie Saoudite, les solutions retenues devront être examinées de manière critique
+    afin de vérifier leur adéquation avec :
+
+
+    Une réunion spécifique IT/OT sera organisée avec la Direction IT de CEVA après la première réunion de programmation. Elle
+    permettra de recueillir les standards Groupe, d''identifier les adaptations nécessaires et d''enregistrer les actions
+    dans le registre projet.'
+  bullets:
+  - les infrastructures télécom locales ;
+  - les contraintes réglementaires saoudiennes ;
+  - les délais d'approvisionnement ;
+  - la disponibilité des compétences locales ;
+  - les risques géopolitiques et logistiques identifiés dans l'ACAP.
+- title: Recommandation RHYAD
+  blocks:
+  - type: text
+    text: 'Le DB-006 --- IT / OT devra comporter une architecture de référence distinguant clairement :'
+  - type: list
+    items:
+    - le réseau IT d'entreprise ;
+    - le réseau OT industriel ;
+    - les zones démilitarisées (DMZ) ;
+    - les systèmes critiques ;
+    - les accès distants ;
+    - les interfaces avec les équipements de production.
+  - type: text
+    text: Cette architecture devra respecter les principes de segmentation et de défense en profondeur, tout en restant compatible
+      avec les standards CEVA et les exigences de cybersécurité industrielle, notamment IEC 62443.
+  text: 'Le DB-006 --- IT / OT devra comporter une architecture de référence distinguant clairement :
+
+
+    Cette architecture devra respecter les principes de segmentation et de défense en profondeur, tout en restant compatible
+    avec les standards CEVA et les exigences de cybersécurité industrielle, notamment IEC 62443.'
+  bullets:
+  - le réseau IT d'entreprise ;
+  - le réseau OT industriel ;
+  - les zones démilitarisées (DMZ) ;
+  - les systèmes critiques ;
+  - les accès distants ;
+  - les interfaces avec les équipements de production.
+- title: Fin du document

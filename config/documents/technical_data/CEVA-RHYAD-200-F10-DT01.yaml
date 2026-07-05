@@ -1,0 +1,591 @@
+reference: CEVA-RHYAD-200-F10-DT01
+title: Maintenance et Exploitation Technique — Données Techniques d'Entrée
+revision: Rev1.0
+status: Draft
+chapters:
+- title: Objet
+  blocks:
+  - type: text
+    text: Le présent document a pour objet de recenser l'ensemble des données techniques nécessaires à la conception des installations
+      de maintenance et des moyens d'exploitation du Campus CEVA.
+  - type: text
+    text: Il définit les exigences permettant d'assurer une maintenance sûre, efficace et compatible avec la continuité de
+      la production.
+  text: 'Le présent document a pour objet de recenser l''ensemble des données techniques nécessaires à la conception des installations
+    de maintenance et des moyens d''exploitation du Campus CEVA.
+
+
+    Il définit les exigences permettant d''assurer une maintenance sûre, efficace et compatible avec la continuité de la production.'
+- title: Documents associés
+- title: Programme Fonctionnel
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-100-F10
+  bullets:
+  - CEVA-RHYAD-100-F10
+- title: Design Basis
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-300-DB001 --- Process
+    - CEVA-RHYAD-300-DB002 --- Architecture
+    - CEVA-RHYAD-300-DB003 --- CVC / HVAC
+    - CEVA-RHYAD-300-DB004 --- Utilités
+    - CEVA-RHYAD-300-DB005 --- Électricité
+    - CEVA-RHYAD-300-DB007 --- Maintenance
+    - CEVA-RHYAD-300-DB010 --- Instrumentation & Automatisme
+  bullets:
+  - CEVA-RHYAD-300-DB001 --- Process
+  - CEVA-RHYAD-300-DB002 --- Architecture
+  - CEVA-RHYAD-300-DB003 --- CVC / HVAC
+  - CEVA-RHYAD-300-DB004 --- Utilités
+  - CEVA-RHYAD-300-DB005 --- Électricité
+  - CEVA-RHYAD-300-DB007 --- Maintenance
+  - CEVA-RHYAD-300-DB010 --- Instrumentation & Automatisme
+- title: 1. Organisation de la maintenance
+  blocks:
+  - type: table
+    headers:
+    - Élément
+    - Exigence
+    - Commentaires CEVA
+    rows:
+    - - Maintenance interne
+      - ''
+      - ''
+    - - Maintenance externalisée
+      - ''
+      - ''
+    - - Astreinte
+      - ''
+      - ''
+    - - Horaires d'intervention
+      - ''
+      - ''
+    - - Organisation GMAO
+      - ''
+      - ''
+    title: 1. Organisation de la maintenance
+  tables:
+  - headers:
+    - Élément
+    - Exigence
+    - Commentaires CEVA
+    rows:
+    - - Maintenance interne
+      - ''
+      - ''
+    - - Maintenance externalisée
+      - ''
+      - ''
+    - - Astreinte
+      - ''
+      - ''
+    - - Horaires d'intervention
+      - ''
+      - ''
+    - - Organisation GMAO
+      - ''
+      - ''
+    title: 1. Organisation de la maintenance
+- title: 2. Inventaire des équipements maintenables
+  blocks:
+  - type: table
+    headers:
+    - Famille d'équipement
+    - Quantité estimée
+    - Criticité
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 2. Inventaire des équipements maintenables
+  tables:
+  - headers:
+    - Famille d'équipement
+    - Quantité estimée
+    - Criticité
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 2. Inventaire des équipements maintenables
+- title: 3. Maintenance préventive
+  blocks:
+  - type: table
+    headers:
+    - Équipement
+    - Fréquence
+    - Temps estimé
+    - Arrêt de production requis
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 3. Maintenance préventive
+  tables:
+  - headers:
+    - Équipement
+    - Fréquence
+    - Temps estimé
+    - Arrêt de production requis
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 3. Maintenance préventive
+- title: 4. Maintenance corrective
+  blocks:
+  - type: table
+    headers:
+    - Équipement
+    - Temps maximal d'intervention
+    - Temps maximal d'arrêt admissible
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 4. Maintenance corrective
+  tables:
+  - headers:
+    - Équipement
+    - Temps maximal d'intervention
+    - Temps maximal d'arrêt admissible
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 4. Maintenance corrective
+- title: 5. Maintenance prédictive
+  blocks:
+  - type: table
+    headers:
+    - Équipement
+    - Paramètres surveillés
+    - Méthode
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 5. Maintenance prédictive
+  tables:
+  - headers:
+    - Équipement
+    - Paramètres surveillés
+    - Méthode
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 5. Maintenance prédictive
+- title: 6. Accessibilité des équipements
+  blocks:
+  - type: table
+    headers:
+    - Équipement
+    - Accès exploitation
+    - Accès maintenance
+    - Moyen de levage nécessaire
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 6. Accessibilité des équipements
+  tables:
+  - headers:
+    - Équipement
+    - Accès exploitation
+    - Accès maintenance
+    - Moyen de levage nécessaire
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 6. Accessibilité des équipements
+- title: 7. Pièces de rechange
+  blocks:
+  - type: table
+    headers:
+    - Famille
+    - Stock sur site
+    - Stock fournisseur
+    - Délai d'approvisionnement
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 7. Pièces de rechange
+  tables:
+  - headers:
+    - Famille
+    - Stock sur site
+    - Stock fournisseur
+    - Délai d'approvisionnement
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 7. Pièces de rechange
+- title: 8. Ateliers et locaux maintenance
+  blocks:
+  - type: table
+    headers:
+    - Local
+    - Surface estimée
+    - Fonction
+    - Commentaires
+    rows:
+    - - Atelier maintenance
+      - ''
+      - ''
+      - ''
+    - - Magasin pièces
+      - ''
+      - ''
+      - ''
+    - - Local outillage
+      - ''
+      - ''
+      - ''
+    - - Zone de maintenance temporaire
+      - ''
+      - ''
+      - ''
+    title: 8. Ateliers et locaux maintenance
+  tables:
+  - headers:
+    - Local
+    - Surface estimée
+    - Fonction
+    - Commentaires
+    rows:
+    - - Atelier maintenance
+      - ''
+      - ''
+      - ''
+    - - Magasin pièces
+      - ''
+      - ''
+      - ''
+    - - Local outillage
+      - ''
+      - ''
+      - ''
+    - - Zone de maintenance temporaire
+      - ''
+      - ''
+      - ''
+    title: 8. Ateliers et locaux maintenance
+- title: 9. Moyens de manutention
+  blocks:
+  - type: table
+    headers:
+    - Équipement
+    - Utilisation
+    - Capacité
+    - Commentaires
+    rows:
+    - - Pont roulant
+      - ''
+      - ''
+      - ''
+    - - Potence
+      - ''
+      - ''
+      - ''
+    - - Chariot élévateur
+      - ''
+      - ''
+      - ''
+    - - Transpalette
+      - ''
+      - ''
+      - ''
+    title: 9. Moyens de manutention
+  tables:
+  - headers:
+    - Équipement
+    - Utilisation
+    - Capacité
+    - Commentaires
+    rows:
+    - - Pont roulant
+      - ''
+      - ''
+      - ''
+    - - Potence
+      - ''
+      - ''
+      - ''
+    - - Chariot élévateur
+      - ''
+      - ''
+      - ''
+    - - Transpalette
+      - ''
+      - ''
+      - ''
+    title: 9. Moyens de manutention
+- title: 10. Interfaces
+  blocks:
+  - type: table
+    headers:
+    - Fonction
+    - Nature de l'interface
+    - Commentaires
+    rows:
+    - - F04
+      - Production
+      - ''
+    - - F07
+      - Lavage / Stérilisation
+      - ''
+    - - F09
+      - Utilités
+      - ''
+    - - F13
+      - GMAO / Automatisme
+      - ''
+    title: 10. Interfaces
+  tables:
+  - headers:
+    - Fonction
+    - Nature de l'interface
+    - Commentaires
+    rows:
+    - - F04
+      - Production
+      - ''
+    - - F07
+      - Lavage / Stérilisation
+      - ''
+    - - F09
+      - Utilités
+      - ''
+    - - F13
+      - GMAO / Automatisme
+      - ''
+    title: 10. Interfaces
+- title: 11. Continuité d'exploitation
+  blocks:
+  - type: table
+    headers:
+    - Élément
+    - Exigence
+    - Commentaires
+    rows:
+    - - Maintenance sans arrêt de production
+      - ''
+      - ''
+    - - Équipements redondants
+      - ''
+      - ''
+    - - Bypass
+      - ''
+      - ''
+    - - Réserves d'exploitation
+      - ''
+      - ''
+    title: 11. Continuité d'exploitation
+  tables:
+  - headers:
+    - Élément
+    - Exigence
+    - Commentaires
+    rows:
+    - - Maintenance sans arrêt de production
+      - ''
+      - ''
+    - - Équipements redondants
+      - ''
+      - ''
+    - - Bypass
+      - ''
+      - ''
+    - - Réserves d'exploitation
+      - ''
+      - ''
+    title: 11. Continuité d'exploitation
+- title: 12. Données de dimensionnement
+  blocks:
+  - type: table
+    headers:
+    - Élément
+    - Valeur
+    - Hypothèse
+    - Validation
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 12. Données de dimensionnement
+  tables:
+  - headers:
+    - Élément
+    - Valeur
+    - Hypothèse
+    - Validation
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 12. Données de dimensionnement
+- title: 13. Hypothèses de conception
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Hypothèse
+    - Impact
+    - Référence CEVA-RHYAD-500-REG04
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 13. Hypothèses de conception
+  tables:
+  - headers:
+    - N°
+    - Hypothèse
+    - Impact
+    - Référence CEVA-RHYAD-500-REG04
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 13. Hypothèses de conception
+- title: 14. Décisions prises
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Décision
+    - Date
+    - Référence CEVA-RHYAD-500-REG02
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 14. Décisions prises
+  tables:
+  - headers:
+    - N°
+    - Décision
+    - Date
+    - Référence CEVA-RHYAD-500-REG02
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 14. Décisions prises
+- title: 15. Actions
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Action
+    - Responsable
+    - Échéance
+    - Référence CEVA-RHYAD-500-REG01
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 15. Actions
+  tables:
+  - headers:
+    - N°
+    - Action
+    - Responsable
+    - Échéance
+    - Référence CEVA-RHYAD-500-REG01
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 15. Actions
+- title: Remarques RHYAD
+  blocks:
+  - type: text
+    text: 'Les études devront notamment vérifier :'
+  - type: list
+    items:
+    - l'accessibilité de tous les équipements sans démontage majeur ;
+    - la possibilité d'intervenir sur les équipements critiques avec un impact minimal sur la production ;
+    - les réserves d'espace nécessaires au remplacement futur des équipements ;
+    - la disponibilité locale des pièces de rechange et des compétences techniques, conformément à l'ACAP ;
+    - les interfaces entre la GMAO, les automatismes et les équipements critiques.
+  - type: text
+    text: Les données collectées alimenteront directement les DB Maintenance, Architecture, Utilités, Électricité, Instrumentation
+      et Process.
+  text: 'Les études devront notamment vérifier :
+
+
+    Les données collectées alimenteront directement les DB Maintenance, Architecture, Utilités, Électricité, Instrumentation
+    et Process.'
+  bullets:
+  - l'accessibilité de tous les équipements sans démontage majeur ;
+  - la possibilité d'intervenir sur les équipements critiques avec un impact minimal sur la production ;
+  - les réserves d'espace nécessaires au remplacement futur des équipements ;
+  - la disponibilité locale des pièces de rechange et des compétences techniques, conformément à l'ACAP ;
+  - les interfaces entre la GMAO, les automatismes et les équipements critiques.
+- title: Recommandation RHYAD
+  blocks:
+  - type: text
+    text: 'En phase APS, réaliser une revue de maintenabilité pour chaque équipement critique afin de vérifier :'
+  - type: list
+    items:
+    - les dégagements de maintenance ;
+    - les moyens de levage nécessaires ;
+    - les cheminements d'extraction ;
+    - les possibilités de maintenance sans arrêt de production ;
+    - les réserves pour les extensions futures.
+  text: 'En phase APS, réaliser une revue de maintenabilité pour chaque équipement critique afin de vérifier :'
+  bullets:
+  - les dégagements de maintenance ;
+  - les moyens de levage nécessaires ;
+  - les cheminements d'extraction ;
+  - les possibilités de maintenance sans arrêt de production ;
+  - les réserves pour les extensions futures.
+- title: Fin du document

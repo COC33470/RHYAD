@@ -1,0 +1,501 @@
+reference: CEVA-RHYAD-200-F02-DT01
+title: Stockage des Matières Premières et Consommables — Données Techniques d'Entrée
+revision: Rev1.0
+status: Draft
+chapters:
+- title: Objet
+  blocks:
+  - type: text
+    text: Le présent document a pour objet de recenser l'ensemble des données techniques nécessaires à la conception de la
+      fonction **F02 -- Stockage des Matières Premières et Consommables**.
+  - type: text
+    text: Il constitue le document de référence permettant de définir les besoins de stockage, les contraintes d'exploitation,
+      les exigences réglementaires et les données de dimensionnement associées.
+  text: 'Le présent document a pour objet de recenser l''ensemble des données techniques nécessaires à la conception de la
+    fonction **F02 -- Stockage des Matières Premières et Consommables**.
+
+
+    Il constitue le document de référence permettant de définir les besoins de stockage, les contraintes d''exploitation,
+    les exigences réglementaires et les données de dimensionnement associées.'
+- title: Documents associés
+- title: Programme Fonctionnel
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-100-F02 --- Stockage des Matières Premières et Consommables
+  bullets:
+  - CEVA-RHYAD-100-F02 --- Stockage des Matières Premières et Consommables
+- title: Design Basis
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-300-DB001 --- Process
+    - CEVA-RHYAD-300-DB002 --- Architecture
+    - CEVA-RHYAD-300-DB004 --- Utilités
+    - CEVA-RHYAD-300-DB007 --- Sûreté et Sécurité
+    - CEVA-RHYAD-300-DB009 --- Logistique
+  bullets:
+  - CEVA-RHYAD-300-DB001 --- Process
+  - CEVA-RHYAD-300-DB002 --- Architecture
+  - CEVA-RHYAD-300-DB004 --- Utilités
+  - CEVA-RHYAD-300-DB007 --- Sûreté et Sécurité
+  - CEVA-RHYAD-300-DB009 --- Logistique
+- title: 1. Inventaire des matières premières
+  blocks:
+  - type: table
+    headers:
+    - Matière première
+    - Utilisation
+    - Volume annuel
+    - Conditionnement
+    - Fournisseur
+    - Commentaires CEVA
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 1. Inventaire des matières premières
+  tables:
+  - headers:
+    - Matière première
+    - Utilisation
+    - Volume annuel
+    - Conditionnement
+    - Fournisseur
+    - Commentaires CEVA
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 1. Inventaire des matières premières
+- title: 2. Conditions de stockage
+  blocks:
+  - type: table
+    headers:
+    - Produit
+    - Température
+    - Hygrométrie
+    - Lumière
+    - Durée maximale
+    - Contraintes particulières
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 2. Conditions de stockage
+  tables:
+  - headers:
+    - Produit
+    - Température
+    - Hygrométrie
+    - Lumière
+    - Durée maximale
+    - Contraintes particulières
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 2. Conditions de stockage
+- title: 3. Consommables
+  blocks:
+  - type: table
+    headers:
+    - Consommable
+    - Volume annuel
+    - Conditionnement
+    - Stock de sécurité
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 3. Consommables
+  tables:
+  - headers:
+    - Consommable
+    - Volume annuel
+    - Conditionnement
+    - Stock de sécurité
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 3. Consommables
+- title: 4. Produits dangereux
+  blocks:
+  - type: table
+    headers:
+    - Produit
+    - Classification
+    - Local spécifique
+    - Rétention
+    - Particularités
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 4. Produits dangereux
+  tables:
+  - headers:
+    - Produit
+    - Classification
+    - Local spécifique
+    - Rétention
+    - Particularités
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 4. Produits dangereux
+- title: 5. Produits réfrigérés
+  blocks:
+  - type: table
+    headers:
+    - Produit
+    - Température
+    - Volume
+    - Redondance
+    - Surveillance
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 5. Produits réfrigérés
+  tables:
+  - headers:
+    - Produit
+    - Température
+    - Volume
+    - Redondance
+    - Surveillance
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 5. Produits réfrigérés
+- title: 6. Produits congelés
+  blocks:
+  - type: table
+    headers:
+    - Produit
+    - Température
+    - Volume
+    - Temps admissible hors froid
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 6. Produits congelés
+  tables:
+  - headers:
+    - Produit
+    - Température
+    - Volume
+    - Temps admissible hors froid
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 6. Produits congelés
+- title: 7. Gestion des stocks
+  blocks:
+  - type: table
+    headers:
+    - Élément
+    - Réponse CEVA
+    rows:
+    - - Stock minimum
+      - ''
+    - - Stock maximum
+      - ''
+    - - Rotation moyenne
+      - ''
+    - - Traçabilité
+      - ''
+    - - FIFO / FEFO
+      - ''
+    - - Gestion informatique
+      - ''
+    title: 7. Gestion des stocks
+  tables:
+  - headers:
+    - Élément
+    - Réponse CEVA
+    rows:
+    - - Stock minimum
+      - ''
+    - - Stock maximum
+      - ''
+    - - Rotation moyenne
+      - ''
+    - - Traçabilité
+      - ''
+    - - FIFO / FEFO
+      - ''
+    - - Gestion informatique
+      - ''
+    title: 7. Gestion des stocks
+- title: 8. Flux internes
+  blocks:
+  - type: table
+    headers:
+    - Origine
+    - Destination
+    - Moyen de manutention
+    - Fréquence
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 8. Flux internes
+  tables:
+  - headers:
+    - Origine
+    - Destination
+    - Moyen de manutention
+    - Fréquence
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 8. Flux internes
+- title: 9. Équipements de stockage
+  blocks:
+  - type: table
+    headers:
+    - Équipement
+    - Quantité
+    - Particularités
+    - Extension future
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 9. Équipements de stockage
+  tables:
+  - headers:
+    - Équipement
+    - Quantité
+    - Particularités
+    - Extension future
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 9. Équipements de stockage
+- title: 10. Évolution des capacités
+  blocks:
+  - type: table
+    headers:
+    - Élément
+    - Phase 100--300 L
+    - Phase 1000 L
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 10. Évolution des capacités
+  tables:
+  - headers:
+    - Élément
+    - Phase 100--300 L
+    - Phase 1000 L
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 10. Évolution des capacités
+- title: 11. Contraintes réglementaires
+  blocks:
+  - type: table
+    headers:
+    - Sujet
+    - Exigence
+    - Référence
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 11. Contraintes réglementaires
+  tables:
+  - headers:
+    - Sujet
+    - Exigence
+    - Référence
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 11. Contraintes réglementaires
+- title: 12. Données de dimensionnement
+  blocks:
+  - type: table
+    headers:
+    - Élément
+    - Valeur
+    - Hypothèse
+    - Validation
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 12. Données de dimensionnement
+  tables:
+  - headers:
+    - Élément
+    - Valeur
+    - Hypothèse
+    - Validation
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 12. Données de dimensionnement
+- title: 13. Hypothèses de conception
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Hypothèse
+    - Impact
+    - Référence CEVA-RHYAD-500-REG04
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 13. Hypothèses de conception
+  tables:
+  - headers:
+    - N°
+    - Hypothèse
+    - Impact
+    - Référence CEVA-RHYAD-500-REG04
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 13. Hypothèses de conception
+- title: 14. Décisions prises
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Décision
+    - Date
+    - Référence CEVA-RHYAD-500-REG02
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 14. Décisions prises
+  tables:
+  - headers:
+    - N°
+    - Décision
+    - Date
+    - Référence CEVA-RHYAD-500-REG02
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 14. Décisions prises
+- title: 15. Actions
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Action
+    - Responsable
+    - Échéance
+    - Référence CEVA-RHYAD-500-REG01
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 15. Actions
+  tables:
+  - headers:
+    - N°
+    - Action
+    - Responsable
+    - Échéance
+    - Référence CEVA-RHYAD-500-REG01
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 15. Actions
+- title: Fin du document

@@ -1,0 +1,602 @@
+reference: CEVA-RHYAD-200-F06-DT01
+title: Gestion des Flux — Données Techniques d'Entrée
+revision: Rev1.0
+status: Draft
+chapters:
+- title: Objet
+  blocks:
+  - type: text
+    text: Le présent document a pour objet de définir l'ensemble des données techniques nécessaires à la conception des flux
+      internes du Campus CEVA.
+  - type: text
+    text: Il couvre les flux de personnel, de matières, de produits, de déchets, d'équipements et de maintenance afin de garantir
+      la sécurité biologique, la conformité GMP/BPF et l'efficacité opérationnelle.
+  text: 'Le présent document a pour objet de définir l''ensemble des données techniques nécessaires à la conception des flux
+    internes du Campus CEVA.
+
+
+    Il couvre les flux de personnel, de matières, de produits, de déchets, d''équipements et de maintenance afin de garantir
+    la sécurité biologique, la conformité GMP/BPF et l''efficacité opérationnelle.'
+- title: Documents associés
+- title: Programme Fonctionnel
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-100-F06 --- Gestion des Flux
+  bullets:
+  - CEVA-RHYAD-100-F06 --- Gestion des Flux
+- title: Design Basis
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-300-DB001 --- Process
+    - CEVA-RHYAD-300-DB002 --- Architecture
+    - CEVA-RHYAD-300-DB003 --- CVC / HVAC
+    - CEVA-RHYAD-300-DB009 --- Logistique
+  bullets:
+  - CEVA-RHYAD-300-DB001 --- Process
+  - CEVA-RHYAD-300-DB002 --- Architecture
+  - CEVA-RHYAD-300-DB003 --- CVC / HVAC
+  - CEVA-RHYAD-300-DB009 --- Logistique
+- title: 1. Flux de personnel
+  blocks:
+  - type: table
+    headers:
+    - Catégorie
+    - Effectif
+    - Fréquence
+    - Point d'entrée
+    - Point de sortie
+    - Contraintes GMP
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 1. Flux de personnel
+  tables:
+  - headers:
+    - Catégorie
+    - Effectif
+    - Fréquence
+    - Point d'entrée
+    - Point de sortie
+    - Contraintes GMP
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 1. Flux de personnel
+- title: 2. Flux de matières premières
+  blocks:
+  - type: table
+    headers:
+    - Matière
+    - Origine
+    - Destination
+    - Mode de transport
+    - Fréquence
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 2. Flux de matières premières
+  tables:
+  - headers:
+    - Matière
+    - Origine
+    - Destination
+    - Mode de transport
+    - Fréquence
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 2. Flux de matières premières
+- title: 3. Flux des produits intermédiaires
+  blocks:
+  - type: table
+    headers:
+    - Produit
+    - Origine
+    - Destination
+    - Conditions de transport
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 3. Flux des produits intermédiaires
+  tables:
+  - headers:
+    - Produit
+    - Origine
+    - Destination
+    - Conditions de transport
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 3. Flux des produits intermédiaires
+- title: 4. Flux des produits finis
+  blocks:
+  - type: table
+    headers:
+    - Produit
+    - Origine
+    - Destination
+    - Conditions
+    - Fréquence
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 4. Flux des produits finis
+  tables:
+  - headers:
+    - Produit
+    - Origine
+    - Destination
+    - Conditions
+    - Fréquence
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 4. Flux des produits finis
+- title: 5. Flux des consommables
+  blocks:
+  - type: table
+    headers:
+    - Consommable
+    - Origine
+    - Destination
+    - Stock tampon
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 5. Flux des consommables
+  tables:
+  - headers:
+    - Consommable
+    - Origine
+    - Destination
+    - Stock tampon
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 5. Flux des consommables
+- title: 6. Flux des déchets
+  blocks:
+  - type: table
+    headers:
+    - Déchet
+    - Catégorie
+    - Origine
+    - Destination
+    - Mode d'évacuation
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 6. Flux des déchets
+  tables:
+  - headers:
+    - Déchet
+    - Catégorie
+    - Origine
+    - Destination
+    - Mode d'évacuation
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 6. Flux des déchets
+- title: 7. Flux des équipements
+  blocks:
+  - type: table
+    headers:
+    - Équipement
+    - Origine
+    - Destination
+    - Nettoyage requis
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 7. Flux des équipements
+  tables:
+  - headers:
+    - Équipement
+    - Origine
+    - Destination
+    - Nettoyage requis
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 7. Flux des équipements
+- title: 8. Flux de maintenance
+  blocks:
+  - type: table
+    headers:
+    - Intervention
+    - Local concerné
+    - Fréquence
+    - Impact production
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 8. Flux de maintenance
+  tables:
+  - headers:
+    - Intervention
+    - Local concerné
+    - Fréquence
+    - Impact production
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 8. Flux de maintenance
+- title: 9. Moyens de manutention
+  blocks:
+  - type: table
+    headers:
+    - Moyen
+    - Utilisation
+    - Zone
+    - Particularités
+    - Commentaires
+    rows:
+    - - Transpalette
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Chariot
+      - ''
+      - ''
+      - ''
+      - ''
+    - - AGV (si applicable)
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Autre
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 9. Moyens de manutention
+  tables:
+  - headers:
+    - Moyen
+    - Utilisation
+    - Zone
+    - Particularités
+    - Commentaires
+    rows:
+    - - Transpalette
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Chariot
+      - ''
+      - ''
+      - ''
+      - ''
+    - - AGV (si applicable)
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Autre
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 9. Moyens de manutention
+- title: 10. Interfaces
+  blocks:
+  - type: table
+    headers:
+    - Fonction
+    - Nature de l'interface
+    - Commentaires
+    rows:
+    - - F01
+      - Réception
+      - ''
+    - - F02
+      - Stockage
+      - ''
+    - - F03
+      - Préparation
+      - ''
+    - - F04
+      - Production
+      - ''
+    - - F05
+      - Conditionnement
+      - ''
+    - - F07
+      - Lavage
+      - ''
+    - - F08
+      - Contrôle Qualité
+      - ''
+    - - F11
+      - Déchets
+      - ''
+    title: 10. Interfaces
+  tables:
+  - headers:
+    - Fonction
+    - Nature de l'interface
+    - Commentaires
+    rows:
+    - - F01
+      - Réception
+      - ''
+    - - F02
+      - Stockage
+      - ''
+    - - F03
+      - Préparation
+      - ''
+    - - F04
+      - Production
+      - ''
+    - - F05
+      - Conditionnement
+      - ''
+    - - F07
+      - Lavage
+      - ''
+    - - F08
+      - Contrôle Qualité
+      - ''
+    - - F11
+      - Déchets
+      - ''
+    title: 10. Interfaces
+- title: 11. Contraintes GMP/BPF
+  blocks:
+  - type: table
+    headers:
+    - Sujet
+    - Exigence
+    - Commentaires
+    rows:
+    - - Séparation des flux
+      - ''
+      - ''
+    - - Flux propres / sales
+      - ''
+      - ''
+    - - Flux personnel / matières
+      - ''
+      - ''
+    - - Sas
+      - ''
+      - ''
+    - - Circuits à sens unique
+      - ''
+      - ''
+    - - Prévention des contaminations croisées
+      - ''
+      - ''
+    title: 11. Contraintes GMP/BPF
+  tables:
+  - headers:
+    - Sujet
+    - Exigence
+    - Commentaires
+    rows:
+    - - Séparation des flux
+      - ''
+      - ''
+    - - Flux propres / sales
+      - ''
+      - ''
+    - - Flux personnel / matières
+      - ''
+      - ''
+    - - Sas
+      - ''
+      - ''
+    - - Circuits à sens unique
+      - ''
+      - ''
+    - - Prévention des contaminations croisées
+      - ''
+      - ''
+    title: 11. Contraintes GMP/BPF
+- title: 12. Données de dimensionnement
+  blocks:
+  - type: table
+    headers:
+    - Élément
+    - Valeur
+    - Hypothèse
+    - Validation
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 12. Données de dimensionnement
+  tables:
+  - headers:
+    - Élément
+    - Valeur
+    - Hypothèse
+    - Validation
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 12. Données de dimensionnement
+- title: 13. Hypothèses de conception
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Hypothèse
+    - Impact
+    - Référence CEVA-RHYAD-500-REG04
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 13. Hypothèses de conception
+  tables:
+  - headers:
+    - N°
+    - Hypothèse
+    - Impact
+    - Référence CEVA-RHYAD-500-REG04
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 13. Hypothèses de conception
+- title: 14. Décisions prises
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Décision
+    - Date
+    - Référence CEVA-RHYAD-500-REG02
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 14. Décisions prises
+  tables:
+  - headers:
+    - N°
+    - Décision
+    - Date
+    - Référence CEVA-RHYAD-500-REG02
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 14. Décisions prises
+- title: 15. Actions
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Action
+    - Responsable
+    - Échéance
+    - Référence CEVA-RHYAD-500-REG01
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 15. Actions
+  tables:
+  - headers:
+    - N°
+    - Action
+    - Responsable
+    - Échéance
+    - Référence CEVA-RHYAD-500-REG01
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 15. Actions
+- title: Remarques RHYAD
+  blocks:
+  - type: list
+    items:
+    - Séparation stricte des flux propres, sales et biologiques.
+    - Absence de croisements entre les flux de personnel, de matières, de produits et de déchets.
+    - Interfaces avec les zones classées GMP.
+    - Prise en compte de l'évolution de capacité de 100--300 L vers 1000 L.
+    - Intégration des contraintes logistiques propres au Royaume d'Arabie Saoudite.
+    - Les schémas de circulation alimenteront les DB Process, Architecture, CVC/HVAC et Logistique ainsi que les études APS/APD.
+  bullets:
+  - Séparation stricte des flux propres, sales et biologiques.
+  - Absence de croisements entre les flux de personnel, de matières, de produits et de déchets.
+  - Interfaces avec les zones classées GMP.
+  - Prise en compte de l'évolution de capacité de 100--300 L vers 1000 L.
+  - Intégration des contraintes logistiques propres au Royaume d'Arabie Saoudite.
+  - Les schémas de circulation alimenteront les DB Process, Architecture, CVC/HVAC et Logistique ainsi que les études APS/APD.
+- title: Fin du document

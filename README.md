@@ -46,7 +46,7 @@ Le référentiel documentaire validé est décrit dans `config/rhyad_repository.
 
 200 — DT
 - DT-000 Registre des Hypothèses de Conception
-- DT-F01-xx à DT-F15-xx
+- CEVA-RHYAD-200-F01-DT01 à CEVA-RHYAD-200-F15-DT01
 
 300 — Design Basis
 - DB-001 Process

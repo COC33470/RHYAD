@@ -1,0 +1,680 @@
+reference: CEVA-RHYAD-200-F07-DT01
+title: Lavage, Stérilisation et Préparation des Équipements — Données Techniques d'Entrée
+revision: Rev1.0
+status: Draft
+chapters:
+- title: Objet
+  blocks:
+  - type: text
+    text: Le présent document a pour objet de recenser l'ensemble des données techniques nécessaires à la conception des installations
+      de lavage, de stérilisation, de préparation et de stockage des équipements réutilisables intervenant dans la production
+      des autovaccins.
+  - type: text
+    text: Il constitue le document de référence pour le dimensionnement des équipements, des locaux, des utilités et des flux
+      associés.
+  text: 'Le présent document a pour objet de recenser l''ensemble des données techniques nécessaires à la conception des installations
+    de lavage, de stérilisation, de préparation et de stockage des équipements réutilisables intervenant dans la production
+    des autovaccins.
+
+
+    Il constitue le document de référence pour le dimensionnement des équipements, des locaux, des utilités et des flux associés.'
+- title: Documents associés
+- title: Programme Fonctionnel
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-100-F07 --- Lavage, Stérilisation et Préparation des Équipements
+  bullets:
+  - CEVA-RHYAD-100-F07 --- Lavage, Stérilisation et Préparation des Équipements
+- title: Design Basis
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-300-DB001 --- Process
+    - CEVA-RHYAD-300-DB002 --- Architecture
+    - CEVA-RHYAD-300-DB003 --- CVC / HVAC
+    - CEVA-RHYAD-300-DB004 --- Utilités
+    - CEVA-RHYAD-300-DB007 --- Maintenance
+    - CEVA-RHYAD-300-DB010 --- Instrumentation & Automatisme
+  bullets:
+  - CEVA-RHYAD-300-DB001 --- Process
+  - CEVA-RHYAD-300-DB002 --- Architecture
+  - CEVA-RHYAD-300-DB003 --- CVC / HVAC
+  - CEVA-RHYAD-300-DB004 --- Utilités
+  - CEVA-RHYAD-300-DB007 --- Maintenance
+  - CEVA-RHYAD-300-DB010 --- Instrumentation & Automatisme
+- title: 1. Inventaire des équipements à traiter
+  blocks:
+  - type: table
+    headers:
+    - Équipement
+    - Quantité
+    - Dimensions
+    - Matériau
+    - Fréquence de lavage
+    - Commentaires CEVA
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 1. Inventaire des équipements à traiter
+  tables:
+  - headers:
+    - Équipement
+    - Quantité
+    - Dimensions
+    - Matériau
+    - Fréquence de lavage
+    - Commentaires CEVA
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 1. Inventaire des équipements à traiter
+- title: 2. Types d'opérations
+  blocks:
+  - type: table
+    headers:
+    - Opération
+    - Description
+    - Équipement concerné
+    - Commentaires
+    rows:
+    - - Lavage
+      - ''
+      - ''
+      - ''
+    - - Rinçage
+      - ''
+      - ''
+      - ''
+    - - Désinfection
+      - ''
+      - ''
+      - ''
+    - - Stérilisation
+      - ''
+      - ''
+      - ''
+    - - Séchage
+      - ''
+      - ''
+      - ''
+    - - Stockage
+      - ''
+      - ''
+      - ''
+    title: 2. Types d'opérations
+  tables:
+  - headers:
+    - Opération
+    - Description
+    - Équipement concerné
+    - Commentaires
+    rows:
+    - - Lavage
+      - ''
+      - ''
+      - ''
+    - - Rinçage
+      - ''
+      - ''
+      - ''
+    - - Désinfection
+      - ''
+      - ''
+      - ''
+    - - Stérilisation
+      - ''
+      - ''
+      - ''
+    - - Séchage
+      - ''
+      - ''
+      - ''
+    - - Stockage
+      - ''
+      - ''
+      - ''
+    title: 2. Types d'opérations
+- title: 3. Modes opératoires
+  blocks:
+  - type: table
+    headers:
+    - Équipement
+    - Manuel
+    - Semi-automatique
+    - Automatique
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 3. Modes opératoires
+  tables:
+  - headers:
+    - Équipement
+    - Manuel
+    - Semi-automatique
+    - Automatique
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 3. Modes opératoires
+- title: 4. Équipements de lavage
+  blocks:
+  - type: table
+    headers:
+    - Équipement
+    - Capacité
+    - Quantité
+    - Redondance
+    - Extension future
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 4. Équipements de lavage
+  tables:
+  - headers:
+    - Équipement
+    - Capacité
+    - Quantité
+    - Redondance
+    - Extension future
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 4. Équipements de lavage
+- title: 5. Équipements de stérilisation
+  blocks:
+  - type: table
+    headers:
+    - Équipement
+    - Technologie
+    - Capacité
+    - Quantité
+    - Commentaires
+    rows:
+    - - Autoclave
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Tunnel
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Autre
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 5. Équipements de stérilisation
+  tables:
+  - headers:
+    - Équipement
+    - Technologie
+    - Capacité
+    - Quantité
+    - Commentaires
+    rows:
+    - - Autoclave
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Tunnel
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Autre
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 5. Équipements de stérilisation
+- title: 6. Utilités nécessaires
+  blocks:
+  - type: table
+    headers:
+    - Utilité
+    - Besoin
+    - Débit
+    - Pression
+    - Température
+    - Commentaires
+    rows:
+    - - Eau industrielle
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Eau purifiée
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Eau PPI
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Vapeur propre
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Air comprimé
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Électricité
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 6. Utilités nécessaires
+  tables:
+  - headers:
+    - Utilité
+    - Besoin
+    - Débit
+    - Pression
+    - Température
+    - Commentaires
+    rows:
+    - - Eau industrielle
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Eau purifiée
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Eau PPI
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Vapeur propre
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Air comprimé
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Électricité
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 6. Utilités nécessaires
+- title: 7. Consommables
+  blocks:
+  - type: table
+    headers:
+    - Consommable
+    - Utilisation
+    - Consommation estimée
+    - Commentaires
+    rows:
+    - - Détergent
+      - ''
+      - ''
+      - ''
+    - - Désinfectant
+      - ''
+      - ''
+      - ''
+    - - Autres produits
+      - ''
+      - ''
+      - ''
+    title: 7. Consommables
+  tables:
+  - headers:
+    - Consommable
+    - Utilisation
+    - Consommation estimée
+    - Commentaires
+    rows:
+    - - Détergent
+      - ''
+      - ''
+      - ''
+    - - Désinfectant
+      - ''
+      - ''
+      - ''
+    - - Autres produits
+      - ''
+      - ''
+      - ''
+    title: 7. Consommables
+- title: 8. Flux
+  blocks:
+  - type: table
+    headers:
+    - Flux
+    - Origine
+    - Destination
+    - Contraintes
+    - Commentaires
+    rows:
+    - - Matériel sale
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Matériel propre
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Personnel
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Déchets
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 8. Flux
+  tables:
+  - headers:
+    - Flux
+    - Origine
+    - Destination
+    - Contraintes
+    - Commentaires
+    rows:
+    - - Matériel sale
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Matériel propre
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Personnel
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Déchets
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 8. Flux
+- title: 9. Contraintes GMP/BPF
+  blocks:
+  - type: table
+    headers:
+    - Sujet
+    - Exigence
+    - Commentaires
+    rows:
+    - - Séparation propre / sale
+      - ''
+      - ''
+    - - Marche en avant
+      - ''
+      - ''
+    - - Validation des cycles
+      - ''
+      - ''
+    - - Qualification des équipements
+      - ''
+      - ''
+    - - Traçabilité
+      - ''
+      - ''
+    title: 9. Contraintes GMP/BPF
+  tables:
+  - headers:
+    - Sujet
+    - Exigence
+    - Commentaires
+    rows:
+    - - Séparation propre / sale
+      - ''
+      - ''
+    - - Marche en avant
+      - ''
+      - ''
+    - - Validation des cycles
+      - ''
+      - ''
+    - - Qualification des équipements
+      - ''
+      - ''
+    - - Traçabilité
+      - ''
+      - ''
+    title: 9. Contraintes GMP/BPF
+- title: 10. Monitoring et contrôle
+  blocks:
+  - type: table
+    headers:
+    - Élément
+    - Exigence
+    - Commentaires
+    rows:
+    - - Température
+      - ''
+      - ''
+    - - Pression
+      - ''
+      - ''
+    - - Temps de cycle
+      - ''
+      - ''
+    - - Enregistrement des données
+      - ''
+      - ''
+    - - Alarmes
+      - ''
+      - ''
+    title: 10. Monitoring et contrôle
+  tables:
+  - headers:
+    - Élément
+    - Exigence
+    - Commentaires
+    rows:
+    - - Température
+      - ''
+      - ''
+    - - Pression
+      - ''
+      - ''
+    - - Temps de cycle
+      - ''
+      - ''
+    - - Enregistrement des données
+      - ''
+      - ''
+    - - Alarmes
+      - ''
+      - ''
+    title: 10. Monitoring et contrôle
+- title: 11. Données de dimensionnement
+  blocks:
+  - type: table
+    headers:
+    - Élément
+    - Valeur
+    - Hypothèse
+    - Validation
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 11. Données de dimensionnement
+  tables:
+  - headers:
+    - Élément
+    - Valeur
+    - Hypothèse
+    - Validation
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 11. Données de dimensionnement
+- title: 12. Hypothèses de conception
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Hypothèse
+    - Impact
+    - Référence CEVA-RHYAD-500-REG04
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 12. Hypothèses de conception
+  tables:
+  - headers:
+    - N°
+    - Hypothèse
+    - Impact
+    - Référence CEVA-RHYAD-500-REG04
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 12. Hypothèses de conception
+- title: 13. Décisions prises
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Décision
+    - Date
+    - Référence CEVA-RHYAD-500-REG02
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 13. Décisions prises
+  tables:
+  - headers:
+    - N°
+    - Décision
+    - Date
+    - Référence CEVA-RHYAD-500-REG02
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 13. Décisions prises
+- title: 14. Actions
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Action
+    - Responsable
+    - Échéance
+    - Référence CEVA-RHYAD-500-REG01
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 14. Actions
+  tables:
+  - headers:
+    - N°
+    - Action
+    - Responsable
+    - Échéance
+    - Référence CEVA-RHYAD-500-REG01
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 14. Actions
+- title: Remarques RHYAD
+  blocks:
+  - type: list
+    items:
+    - Identifier les équipements réutilisables et ceux à usage unique.
+    - Définir la stratégie de lavage (manuel, COP, CIP, laveur GMP, etc.).
+    - Définir les besoins de stérilisation (autoclaves, vapeur propre, autres procédés).
+    - Définir les exigences de validation des cycles.
+    - Définir les interfaces avec les utilités critiques.
+    - Prendre en compte les deux phases du projet (100--300 L puis 1000 L).
+  bullets:
+  - Identifier les équipements réutilisables et ceux à usage unique.
+  - Définir la stratégie de lavage (manuel, COP, CIP, laveur GMP, etc.).
+  - Définir les besoins de stérilisation (autoclaves, vapeur propre, autres procédés).
+  - Définir les exigences de validation des cycles.
+  - Définir les interfaces avec les utilités critiques.
+  - Prendre en compte les deux phases du projet (100--300 L puis 1000 L).
+- title: Recommandation RHYAD
+  blocks:
+  - type: text
+    text: Ajouter en phase APS un synoptique des flux **sale → propre → stérile** afin de valider les flux GMP et l'implantation
+      des locaux.
+  text: Ajouter en phase APS un synoptique des flux **sale → propre → stérile** afin de valider les flux GMP et l'implantation
+    des locaux.
+- title: Fin du document

@@ -1,0 +1,694 @@
+reference: CEVA-RHYAD-200-F12-DT01
+title: Sûreté, Protection des Actifs et Contrôle des Accès — Données Techniques d'Entrée
+revision: Rev1.0
+status: Draft
+chapters:
+- title: Objet
+  blocks:
+  - type: text
+    text: Le présent document a pour objet de recenser l'ensemble des données techniques nécessaires à la conception des systèmes
+      de sûreté (Security) du Campus CEVA.
+  - type: text
+    text: Il couvre la protection des personnes, des bâtiments, des équipements, des matières, des produits, des informations
+      sensibles et des infrastructures critiques contre les actes de malveillance, d'intrusion, de sabotage, de vol ou de
+      dégradation.
+  text: 'Le présent document a pour objet de recenser l''ensemble des données techniques nécessaires à la conception des systèmes
+    de sûreté (Security) du Campus CEVA.
+
+
+    Il couvre la protection des personnes, des bâtiments, des équipements, des matières, des produits, des informations sensibles
+    et des infrastructures critiques contre les actes de malveillance, d''intrusion, de sabotage, de vol ou de dégradation.'
+- title: Documents associés
+- title: Programme Fonctionnel
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-100-F12
+  bullets:
+  - CEVA-RHYAD-100-F12
+- title: Design Basis
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-300-DB002 --- Architecture
+    - CEVA-RHYAD-300-DB005 --- Électricité
+    - CEVA-RHYAD-300-DB006 --- IT / OT
+    - CEVA-RHYAD-300-DB008 --- Sécurité / Sûreté
+    - CEVA-RHYAD-300-DB010 --- Instrumentation & Automatisme
+  bullets:
+  - CEVA-RHYAD-300-DB002 --- Architecture
+  - CEVA-RHYAD-300-DB005 --- Électricité
+  - CEVA-RHYAD-300-DB006 --- IT / OT
+  - CEVA-RHYAD-300-DB008 --- Sécurité / Sûreté
+  - CEVA-RHYAD-300-DB010 --- Instrumentation & Automatisme
+- title: 1. Analyse des actifs à protéger
+  blocks:
+  - type: table
+    headers:
+    - Actif
+    - Niveau de criticité
+    - Menaces identifiées
+    - Commentaires CEVA
+    rows:
+    - - Personnel
+      - ''
+      - ''
+      - ''
+    title: 1. Analyse des actifs à protéger
+  - type: text
+    text: Animaux (si présents)
+  - type: text
+    text: Matières premières
+  - type: text
+    text: Produits en cours
+  - type: text
+    text: Produits finis
+  - type: text
+    text: Laboratoires
+  - type: text
+    text: Utilités critiques
+  - type: text
+    text: Données industrielles
+  - type: text
+    text: Infrastructures IT
+  - type: text
+    text: Bâtiments administratifs
+  tables:
+  - headers:
+    - Actif
+    - Niveau de criticité
+    - Menaces identifiées
+    - Commentaires CEVA
+    rows:
+    - - Personnel
+      - ''
+      - ''
+      - ''
+    title: 1. Analyse des actifs à protéger
+  text: 'Animaux (si présents)
+
+
+    Matières premières
+
+
+    Produits en cours
+
+
+    Produits finis
+
+
+    Laboratoires
+
+
+    Utilités critiques
+
+
+    Données industrielles
+
+
+    Infrastructures IT
+
+
+    Bâtiments administratifs'
+- title: 2. Contrôle des accès
+  blocks:
+  - type: table
+    headers:
+    - Zone
+    - Niveau d'accès
+    - Mode d'authentification
+    - Gestion des visiteurs
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 2. Contrôle des accès
+  tables:
+  - headers:
+    - Zone
+    - Niveau d'accès
+    - Mode d'authentification
+    - Gestion des visiteurs
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 2. Contrôle des accès
+- title: 3. Zonage de sécurité
+  blocks:
+  - type: table
+    headers:
+    - Zone
+    - Niveau de sécurité
+    - Restrictions
+    - Commentaires
+    rows:
+    - - Périmètre du site
+      - ''
+      - ''
+      - ''
+    - - Bâtiments administratifs
+      - ''
+      - ''
+      - ''
+    - - Production
+      - ''
+      - ''
+      - ''
+    - - Laboratoires
+      - ''
+      - ''
+      - ''
+    - - Utilités
+      - ''
+      - ''
+      - ''
+    - - Data room
+      - ''
+      - ''
+      - ''
+    - - Locaux techniques
+      - ''
+      - ''
+      - ''
+    title: 3. Zonage de sécurité
+  tables:
+  - headers:
+    - Zone
+    - Niveau de sécurité
+    - Restrictions
+    - Commentaires
+    rows:
+    - - Périmètre du site
+      - ''
+      - ''
+      - ''
+    - - Bâtiments administratifs
+      - ''
+      - ''
+      - ''
+    - - Production
+      - ''
+      - ''
+      - ''
+    - - Laboratoires
+      - ''
+      - ''
+      - ''
+    - - Utilités
+      - ''
+      - ''
+      - ''
+    - - Data room
+      - ''
+      - ''
+      - ''
+    - - Locaux techniques
+      - ''
+      - ''
+      - ''
+    title: 3. Zonage de sécurité
+- title: 4. Surveillance
+  blocks:
+  - type: table
+    headers:
+    - Moyen
+    - Zone couverte
+    - Enregistrement
+    - Durée de conservation
+    - Commentaires
+    rows:
+    - - Vidéosurveillance
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 4. Surveillance
+  - type: text
+    text: Détection intrusion
+  - type: text
+    text: Contrôle périmétrique
+  - type: text
+    text: Rondes de sécurité
+  tables:
+  - headers:
+    - Moyen
+    - Zone couverte
+    - Enregistrement
+    - Durée de conservation
+    - Commentaires
+    rows:
+    - - Vidéosurveillance
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 4. Surveillance
+  text: 'Détection intrusion
+
+
+    Contrôle périmétrique
+
+
+    Rondes de sécurité'
+- title: 5. Gestion des visiteurs
+  blocks:
+  - type: table
+    headers:
+    - Élément
+    - Exigence
+    - Commentaires
+    rows:
+    - - Accueil
+      - ''
+      - ''
+    - - Badges temporaires
+      - ''
+      - ''
+    - - Accompagnement
+      - ''
+      - ''
+    - - Accès sous-traitants
+      - ''
+      - ''
+    - - Journal des visites
+      - ''
+      - ''
+    title: 5. Gestion des visiteurs
+  tables:
+  - headers:
+    - Élément
+    - Exigence
+    - Commentaires
+    rows:
+    - - Accueil
+      - ''
+      - ''
+    - - Badges temporaires
+      - ''
+      - ''
+    - - Accompagnement
+      - ''
+      - ''
+    - - Accès sous-traitants
+      - ''
+      - ''
+    - - Journal des visites
+      - ''
+      - ''
+    title: 5. Gestion des visiteurs
+- title: 6. Gestion des accès d'urgence
+  blocks:
+  - type: table
+    headers:
+    - Situation
+    - Procédure
+    - Commentaires
+    rows:
+    - - Évacuation
+      - ''
+      - ''
+    - - Intervention secours
+      - ''
+      - ''
+    - - Intervention forces de l'ordre
+      - ''
+      - ''
+    - - Accès pompiers
+      - ''
+      - ''
+    title: 6. Gestion des accès d'urgence
+  tables:
+  - headers:
+    - Situation
+    - Procédure
+    - Commentaires
+    rows:
+    - - Évacuation
+      - ''
+      - ''
+    - - Intervention secours
+      - ''
+      - ''
+    - - Intervention forces de l'ordre
+      - ''
+      - ''
+    - - Accès pompiers
+      - ''
+      - ''
+    title: 6. Gestion des accès d'urgence
+- title: 7. Protection des infrastructures critiques
+  blocks:
+  - type: table
+    headers:
+    - Infrastructure
+    - Niveau de protection
+    - Redondance
+    - Commentaires
+    rows:
+    - - Poste électrique
+      - ''
+      - ''
+      - ''
+    - - Local serveurs
+      - ''
+      - ''
+      - ''
+    - - Centrale utilités
+      - ''
+      - ''
+      - ''
+    - - Stockage produits sensibles
+      - ''
+      - ''
+      - ''
+    - - Réservoirs
+      - ''
+      - ''
+      - ''
+    title: 7. Protection des infrastructures critiques
+  tables:
+  - headers:
+    - Infrastructure
+    - Niveau de protection
+    - Redondance
+    - Commentaires
+    rows:
+    - - Poste électrique
+      - ''
+      - ''
+      - ''
+    - - Local serveurs
+      - ''
+      - ''
+      - ''
+    - - Centrale utilités
+      - ''
+      - ''
+      - ''
+    - - Stockage produits sensibles
+      - ''
+      - ''
+      - ''
+    - - Réservoirs
+      - ''
+      - ''
+      - ''
+    title: 7. Protection des infrastructures critiques
+- title: 8. Gestion des situations exceptionnelles
+  blocks:
+  - type: table
+    headers:
+    - Situation
+    - Impact potentiel
+    - Mesures prévues
+    - Commentaires
+    rows:
+    - - Intrusion
+      - ''
+      - ''
+      - ''
+    - - Sabotage
+      - ''
+      - ''
+      - ''
+    - - Vol
+      - ''
+      - ''
+      - ''
+    - - Manifestation
+      - ''
+      - ''
+      - ''
+    - - Attentat
+      - ''
+      - ''
+      - ''
+    - - Conflit armé
+      - ''
+      - ''
+      - ''
+    - - Menace terroriste
+      - ''
+      - ''
+      - ''
+    - - Fermeture des frontières
+      - ''
+      - ''
+      - ''
+    title: 8. Gestion des situations exceptionnelles
+  - type: text
+    text: '> Décision RHYAD validée : les scénarios de conflit et d''instabilité > géopolitique doivent être étudiés dans
+      le cadre de la sûreté, même > s''ils relèvent principalement du management du projet.'
+  tables:
+  - headers:
+    - Situation
+    - Impact potentiel
+    - Mesures prévues
+    - Commentaires
+    rows:
+    - - Intrusion
+      - ''
+      - ''
+      - ''
+    - - Sabotage
+      - ''
+      - ''
+      - ''
+    - - Vol
+      - ''
+      - ''
+      - ''
+    - - Manifestation
+      - ''
+      - ''
+      - ''
+    - - Attentat
+      - ''
+      - ''
+      - ''
+    - - Conflit armé
+      - ''
+      - ''
+      - ''
+    - - Menace terroriste
+      - ''
+      - ''
+      - ''
+    - - Fermeture des frontières
+      - ''
+      - ''
+      - ''
+    title: 8. Gestion des situations exceptionnelles
+  text: '> Décision RHYAD validée : les scénarios de conflit et d''instabilité > géopolitique doivent être étudiés dans le
+    cadre de la sûreté, même > s''ils relèvent principalement du management du projet.'
+- title: 9. Interfaces
+  blocks:
+  - type: table
+    headers:
+    - Fonction
+    - Nature de l'interface
+    - Commentaires
+    rows:
+    - - F09
+      - Utilités critiques
+      - ''
+    - - F10
+      - Maintenance
+      - ''
+    - - F13
+      - IT / OT et cybersécurité
+      - ''
+    - - F14
+      - Administration
+      - ''
+    - - F15
+      - Gouvernance et gestion de crise
+      - ''
+    title: 9. Interfaces
+  tables:
+  - headers:
+    - Fonction
+    - Nature de l'interface
+    - Commentaires
+    rows:
+    - - F09
+      - Utilités critiques
+      - ''
+    - - F10
+      - Maintenance
+      - ''
+    - - F13
+      - IT / OT et cybersécurité
+      - ''
+    - - F14
+      - Administration
+      - ''
+    - - F15
+      - Gouvernance et gestion de crise
+      - ''
+    title: 9. Interfaces
+- title: 10. Contraintes réglementaires
+  blocks:
+  - type: table
+    headers:
+    - Sujet
+    - Exigence
+    - Référence
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 10. Contraintes réglementaires
+  tables:
+  - headers:
+    - Sujet
+    - Exigence
+    - Référence
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 10. Contraintes réglementaires
+- title: 11. Données de dimensionnement
+  blocks:
+  - type: table
+    headers:
+    - Élément
+    - Valeur
+    - Hypothèse
+    - Validation
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 11. Données de dimensionnement
+  tables:
+  - headers:
+    - Élément
+    - Valeur
+    - Hypothèse
+    - Validation
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 11. Données de dimensionnement
+- title: 12. Hypothèses de conception
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Hypothèse
+    - Impact
+    - Référence CEVA-RHYAD-500-REG04
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 12. Hypothèses de conception
+  tables:
+  - headers:
+    - N°
+    - Hypothèse
+    - Impact
+    - Référence CEVA-RHYAD-500-REG04
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 12. Hypothèses de conception
+- title: 13. Décisions prises
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Décision
+    - Date
+    - Référence CEVA-RHYAD-500-REG02
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 13. Décisions prises
+  tables:
+  - headers:
+    - N°
+    - Décision
+    - Date
+    - Référence CEVA-RHYAD-500-REG02
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 13. Décisions prises
+- title: 14. Actions
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Action
+    - Responsable
+    - Échéance
+    - Référence CEVA-RHYAD-500-REG01
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 14. Actions
+  tables:
+  - headers:
+    - N°
+    - Action
+    - Responsable
+    - Échéance
+    - Référence CEVA-RHYAD-500-REG01
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 14. Actions
+- title: Remarques RHYAD
+  blocks:
+  - type: text
+    text: La sûreté devra être conçue selon une approche de défense en profondeur combinant la protection périmétrique, le
+      contrôle des accès, la surveillance des bâtiments, la protection des infrastructures critiques, la gestion des visiteurs
+      et la préparation aux situations exceptionnelles.
+  - type: text
+    text: Le document prend en compte les risques liés au contexte géopolitique sans les confondre avec les risques projet.
+      Les mesures de protection devront être définies en cohérence avec les standards du Groupe CEVA et les exigences locales.
+  - type: text
+    text: Les aspects de cybersécurité sont traités dans le document **CEVA-RHYAD-200-F13-DT01**, tout en conservant des interfaces
+      fortes avec le présent document.
+  text: 'La sûreté devra être conçue selon une approche de défense en profondeur combinant la protection périmétrique, le
+    contrôle des accès, la surveillance des bâtiments, la protection des infrastructures critiques, la gestion des visiteurs
+    et la préparation aux situations exceptionnelles.
+
+
+    Le document prend en compte les risques liés au contexte géopolitique sans les confondre avec les risques projet. Les
+    mesures de protection devront être définies en cohérence avec les standards du Groupe CEVA et les exigences locales.
+
+
+    Les aspects de cybersécurité sont traités dans le document **CEVA-RHYAD-200-F13-DT01**, tout en conservant des interfaces
+    fortes avec le présent document.'
+- title: Fin du document

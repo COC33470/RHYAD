@@ -187,6 +187,16 @@ title: "Technical Data"
   -------------- -------------- -------------- -------------- ----------------------
 
   ----------------------------------------------------------------------------------
+
+# 4. En-tête sur trois lignes
+
+  --------------------------------------------------------------------------
+  Produit        Température    Volume         Temps          Commentaires
+                                               admissible
+                                               hors froid
+  -------------- -------------- -------------- -------------- --------------
+
+  --------------------------------------------------------------------------
 """
 
         document = markdown_to_document(markdown, "TST-003")
@@ -204,6 +214,10 @@ title: "Technical Data"
         self.assertEqual(
             document["chapters"][2]["tables"][0]["headers"],
             ["N°", "Action", "Responsable", "Échéance", "Référence CEVA-RHYAD-500-REG01"],
+        )
+        self.assertEqual(
+            document["chapters"][3]["tables"][0]["headers"],
+            ["Produit", "Température", "Volume", "Temps admissible hors froid", "Commentaires"],
         )
         validate_document_config(document, "TST-003.yaml")
 

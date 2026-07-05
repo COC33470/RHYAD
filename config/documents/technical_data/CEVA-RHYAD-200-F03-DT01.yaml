@@ -1,0 +1,666 @@
+reference: CEVA-RHYAD-200-F03-DT01
+title: Préparation des Matières Premières et Solutions — Données Techniques d'Entrée
+revision: Rev1.0
+status: Draft
+chapters:
+- title: Objet
+  blocks:
+  - type: text
+    text: Le présent document a pour objet de recenser l'ensemble des données techniques nécessaires à la conception de la
+      fonction **F03 -- Préparation des Matières Premières et Solutions**.
+  - type: text
+    text: Il constitue le document de référence pour le dimensionnement des locaux, des équipements, des utilités et des flux
+      associés aux opérations de préparation.
+  text: 'Le présent document a pour objet de recenser l''ensemble des données techniques nécessaires à la conception de la
+    fonction **F03 -- Préparation des Matières Premières et Solutions**.
+
+
+    Il constitue le document de référence pour le dimensionnement des locaux, des équipements, des utilités et des flux associés
+    aux opérations de préparation.'
+- title: Documents associés
+- title: Programme Fonctionnel
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-100-F03 --- Préparation des Matières Premières et Solutions
+  bullets:
+  - CEVA-RHYAD-100-F03 --- Préparation des Matières Premières et Solutions
+- title: Design Basis
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-300-DB001 --- Process
+    - CEVA-RHYAD-300-DB002 --- Architecture
+    - CEVA-RHYAD-300-DB003 --- CVC / HVAC
+    - CEVA-RHYAD-300-DB004 --- Utilités
+    - CEVA-RHYAD-300-DB007 --- Sûreté et Sécurité
+  bullets:
+  - CEVA-RHYAD-300-DB001 --- Process
+  - CEVA-RHYAD-300-DB002 --- Architecture
+  - CEVA-RHYAD-300-DB003 --- CVC / HVAC
+  - CEVA-RHYAD-300-DB004 --- Utilités
+  - CEVA-RHYAD-300-DB007 --- Sûreté et Sécurité
+- title: 1. Matières premières préparées
+  blocks:
+  - type: table
+    headers:
+    - Matière première
+    - Famille
+    - Utilisation
+    - Conditionnement
+    - Quantité par lot
+    - Commentaires CEVA
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 1. Matières premières préparées
+  tables:
+  - headers:
+    - Matière première
+    - Famille
+    - Utilisation
+    - Conditionnement
+    - Quantité par lot
+    - Commentaires CEVA
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 1. Matières premières préparées
+- title: 2. Solutions préparées
+  blocks:
+  - type: table
+    headers:
+    - Solution
+    - Utilisation
+    - Concentration
+    - Volume par lot
+    - Volume annuel
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 2. Solutions préparées
+  tables:
+  - headers:
+    - Solution
+    - Utilisation
+    - Concentration
+    - Volume par lot
+    - Volume annuel
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 2. Solutions préparées
+- title: 3. Capacités de production
+  blocks:
+  - type: table
+    headers:
+    - Paramètre
+    - Phase 1
+    - Phase 2
+    - Commentaires
+    rows:
+    - - Volume nominal
+      - 100 à 300 L
+      - 1000 L
+      - ''
+    - - Nombre de préparations / semaine
+      - ''
+      - ''
+      - ''
+    - - Nombre de lots / semaine
+      - ''
+      - ''
+      - ''
+    title: 3. Capacités de production
+  tables:
+  - headers:
+    - Paramètre
+    - Phase 1
+    - Phase 2
+    - Commentaires
+    rows:
+    - - Volume nominal
+      - 100 à 300 L
+      - 1000 L
+      - ''
+    - - Nombre de préparations / semaine
+      - ''
+      - ''
+      - ''
+    - - Nombre de lots / semaine
+      - ''
+      - ''
+      - ''
+    title: 3. Capacités de production
+- title: 4. Équipements de préparation
+  blocks:
+  - type: table
+    headers:
+    - Équipement
+    - Volume utile
+    - Quantité
+    - Redondance
+    - Extension 1000 L
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 4. Équipements de préparation
+  tables:
+  - headers:
+    - Équipement
+    - Volume utile
+    - Quantité
+    - Redondance
+    - Extension 1000 L
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 4. Équipements de préparation
+- title: 5. Paramètres procédé
+  blocks:
+  - type: table
+    headers:
+    - Paramètre
+    - Valeur
+    - Tolérance
+    - Commentaires
+    rows:
+    - - Température
+      - ''
+      - ''
+      - ''
+    - - Temps de mélange
+      - ''
+      - ''
+      - ''
+    - - Vitesse d'agitation
+      - ''
+      - ''
+      - ''
+    - - pH
+      - ''
+      - ''
+      - ''
+    - - Conductivité
+      - ''
+      - ''
+      - ''
+    - - Autres paramètres critiques
+      - ''
+      - ''
+      - ''
+    title: 5. Paramètres procédé
+  tables:
+  - headers:
+    - Paramètre
+    - Valeur
+    - Tolérance
+    - Commentaires
+    rows:
+    - - Température
+      - ''
+      - ''
+      - ''
+    - - Temps de mélange
+      - ''
+      - ''
+      - ''
+    - - Vitesse d'agitation
+      - ''
+      - ''
+      - ''
+    - - pH
+      - ''
+      - ''
+      - ''
+    - - Conductivité
+      - ''
+      - ''
+      - ''
+    - - Autres paramètres critiques
+      - ''
+      - ''
+      - ''
+    title: 5. Paramètres procédé
+- title: 6. Matières consommables
+  blocks:
+  - type: table
+    headers:
+    - Désignation
+    - Utilisation
+    - Consommation estimée
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 6. Matières consommables
+  tables:
+  - headers:
+    - Désignation
+    - Utilisation
+    - Consommation estimée
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 6. Matières consommables
+- title: 7. Utilités nécessaires
+  blocks:
+  - type: table
+    headers:
+    - Utilité
+    - Besoin
+    - Débit
+    - Pression
+    - Température
+    - Commentaires
+    rows:
+    - - Eau Purifiée
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Eau PPI (si applicable)
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Air comprimé
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Vapeur
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Eau glacée
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Électricité
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 7. Utilités nécessaires
+  tables:
+  - headers:
+    - Utilité
+    - Besoin
+    - Débit
+    - Pression
+    - Température
+    - Commentaires
+    rows:
+    - - Eau Purifiée
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Eau PPI (si applicable)
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Air comprimé
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Vapeur
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Eau glacée
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Électricité
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 7. Utilités nécessaires
+- title: 8. Nettoyage
+  blocks:
+  - type: table
+    headers:
+    - Équipement
+    - Mode de nettoyage
+    - CIP
+    - SIP
+    - Manuel
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 8. Nettoyage
+  tables:
+  - headers:
+    - Équipement
+    - Mode de nettoyage
+    - CIP
+    - SIP
+    - Manuel
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 8. Nettoyage
+- title: 9. Flux
+  blocks:
+  - type: table
+    headers:
+    - Flux
+    - Origine
+    - Destination
+    - Fréquence
+    - Commentaires
+    rows:
+    - - Matières premières
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Solutions préparées
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Déchets
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Personnel
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 9. Flux
+  tables:
+  - headers:
+    - Flux
+    - Origine
+    - Destination
+    - Fréquence
+    - Commentaires
+    rows:
+    - - Matières premières
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Solutions préparées
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Déchets
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Personnel
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 9. Flux
+- title: 10. Contraintes GMP
+  blocks:
+  - type: table
+    headers:
+    - Sujet
+    - Exigence
+    - Commentaires
+    rows:
+    - - Classification des locaux
+      - ''
+      - ''
+    - - Pressions différentielles
+      - ''
+      - ''
+    - - Température
+      - ''
+      - ''
+    - - Hygrométrie
+      - ''
+      - ''
+    - - Traçabilité
+      - ''
+      - ''
+    - - Nettoyage
+      - ''
+      - ''
+    title: 10. Contraintes GMP
+  tables:
+  - headers:
+    - Sujet
+    - Exigence
+    - Commentaires
+    rows:
+    - - Classification des locaux
+      - ''
+      - ''
+    - - Pressions différentielles
+      - ''
+      - ''
+    - - Température
+      - ''
+      - ''
+    - - Hygrométrie
+      - ''
+      - ''
+    - - Traçabilité
+      - ''
+      - ''
+    - - Nettoyage
+      - ''
+      - ''
+    title: 10. Contraintes GMP
+- title: 11. Évolution des capacités
+  blocks:
+  - type: table
+    headers:
+    - Élément
+    - 100--300 L
+    - 1000 L
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 11. Évolution des capacités
+  tables:
+  - headers:
+    - Élément
+    - 100--300 L
+    - 1000 L
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 11. Évolution des capacités
+- title: 12. Données de dimensionnement
+  blocks:
+  - type: table
+    headers:
+    - Élément
+    - Valeur
+    - Hypothèse
+    - Validation
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 12. Données de dimensionnement
+  tables:
+  - headers:
+    - Élément
+    - Valeur
+    - Hypothèse
+    - Validation
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 12. Données de dimensionnement
+- title: 13. Hypothèses de conception
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Hypothèse
+    - Impact
+    - Référence CEVA-RHYAD-500-REG04
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 13. Hypothèses de conception
+  tables:
+  - headers:
+    - N°
+    - Hypothèse
+    - Impact
+    - Référence CEVA-RHYAD-500-REG04
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 13. Hypothèses de conception
+- title: 14. Décisions prises
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Décision
+    - Date
+    - Référence CEVA-RHYAD-500-REG02
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 14. Décisions prises
+  tables:
+  - headers:
+    - N°
+    - Décision
+    - Date
+    - Référence CEVA-RHYAD-500-REG02
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 14. Décisions prises
+- title: 15. Actions
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Action
+    - Responsable
+    - Échéance
+    - Référence CEVA-RHYAD-500-REG01
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 15. Actions
+  tables:
+  - headers:
+    - N°
+    - Action
+    - Responsable
+    - Échéance
+    - Référence CEVA-RHYAD-500-REG01
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 15. Actions
+- title: Remarques RHYAD
+  blocks:
+  - type: list
+    items:
+    - 'Deux scénarios de capacité : **100--300 L** et **1000 L**.'
+    - Les volumes servent au dimensionnement des équipements pour les deux phases.
+    - Les besoins en utilités sont exprimés pour les deux scénarios afin d'alimenter directement les Design Basis.
+    - Les données procédé seront complétées avec CEVA lors des ateliers techniques.
+  bullets:
+  - 'Deux scénarios de capacité : **100--300 L** et **1000 L**.'
+  - Les volumes servent au dimensionnement des équipements pour les deux phases.
+  - Les besoins en utilités sont exprimés pour les deux scénarios afin d'alimenter directement les Design Basis.
+  - Les données procédé seront complétées avec CEVA lors des ateliers techniques.
+- title: Fin du document

@@ -1,0 +1,363 @@
+reference: CEVA-RHYAD-200-F15-DT01
+title: Développement Futur et Réserves Foncières — Données Techniques d'Entrée
+revision: Rev1.0
+status: Draft
+chapters:
+- title: Objet
+  blocks:
+  - type: text
+    text: Définir l'ensemble des données nécessaires à la coordination des études et à la maîtrise des interfaces entre les
+      disciplines afin de garantir une conception cohérente du projet.
+  - type: text
+    text: '> **Principe méthodologique RHYAD**\ > Les documents RHYAD définissent les exigences de conception permettant >
+      la future exploitation du Campus. Ils ne décrivent jamais les > procédures d''exploitation, les modes opératoires, les
+      SOP, la GMAO ou > l''organisation future de CEVA.'
+  text: 'Définir l''ensemble des données nécessaires à la coordination des études et à la maîtrise des interfaces entre les
+    disciplines afin de garantir une conception cohérente du projet.
+
+
+    > **Principe méthodologique RHYAD**\ > Les documents RHYAD définissent les exigences de conception permettant > la future
+    exploitation du Campus. Ils ne décrivent jamais les > procédures d''exploitation, les modes opératoires, les SOP, la GMAO
+    ou > l''organisation future de CEVA.'
+- title: Documents associés
+- title: Programme Fonctionnel
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-100-F15
+  bullets:
+  - CEVA-RHYAD-100-F15
+- title: Design Basis
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-300-DB001 à CEVA-RHYAD-300-DB010
+    - CEVA-RHYAD-000-001 --- Charte Projet
+    - CEVA-RHYAD-000-MTH01 --- Guide Méthodologique RHYAD
+  bullets:
+  - CEVA-RHYAD-300-DB001 à CEVA-RHYAD-300-DB010
+  - CEVA-RHYAD-000-001 --- Charte Projet
+  - CEVA-RHYAD-000-MTH01 --- Guide Méthodologique RHYAD
+- title: 1. Interfaces techniques
+  blocks:
+  - type: table
+    headers:
+    - Discipline
+    - Interfaces principales
+    - Documents associés
+    rows:
+    - - Process
+      - Architecture, CVC, Utilités
+      - DB001
+    - - Architecture
+      - Toutes disciplines
+      - DB002
+    - - CVC / HVAC
+      - Process, Utilités, Architecture
+      - DB003
+    - - Utilités
+      - Process, CVC, Électricité
+      - DB004
+    - - Électricité
+      - Utilités, IT / OT
+      - DB005
+    - - IT / OT
+      - Automatismes, Sécurité
+      - DB006
+    - - Maintenance
+      - Toutes disciplines
+      - DB007
+    - - Sécurité / Sûreté
+      - Architecture, IT / OT
+      - DB008
+    - - Logistique
+      - Process, Architecture
+      - DB009
+    - - Instrumentation & Automatisme
+      - Process, Utilités
+      - DB010
+    title: 1. Interfaces techniques
+  tables:
+  - headers:
+    - Discipline
+    - Interfaces principales
+    - Documents associés
+    rows:
+    - - Process
+      - Architecture, CVC, Utilités
+      - DB001
+    - - Architecture
+      - Toutes disciplines
+      - DB002
+    - - CVC / HVAC
+      - Process, Utilités, Architecture
+      - DB003
+    - - Utilités
+      - Process, CVC, Électricité
+      - DB004
+    - - Électricité
+      - Utilités, IT / OT
+      - DB005
+    - - IT / OT
+      - Automatismes, Sécurité
+      - DB006
+    - - Maintenance
+      - Toutes disciplines
+      - DB007
+    - - Sécurité / Sûreté
+      - Architecture, IT / OT
+      - DB008
+    - - Logistique
+      - Process, Architecture
+      - DB009
+    - - Instrumentation & Automatisme
+      - Process, Utilités
+      - DB010
+    title: 1. Interfaces techniques
+- title: 2. Données d'entrée des études
+  blocks:
+  - type: text
+    text: Lister les informations à obtenir du Maître d'Ouvrage avant le lancement des études APS.
+  text: Lister les informations à obtenir du Maître d'Ouvrage avant le lancement des études APS.
+- title: 3. Données de sortie attendues
+  blocks:
+  - type: list
+    items:
+    - APS
+    - APD
+    - PRO
+    - DCE
+    - EXE
+    - DOE
+  bullets:
+  - APS
+  - APD
+  - PRO
+  - DCE
+  - EXE
+  - DOE
+- title: 4. Gestion des interfaces
+  blocks:
+  - type: text
+    text: 'Identifier les interfaces critiques entre :'
+  - type: list
+    items:
+    - disciplines techniques ;
+    - entreprises ;
+    - autorités ;
+    - exploitant ;
+    - fournisseurs d'équipements.
+  text: 'Identifier les interfaces critiques entre :'
+  bullets:
+  - disciplines techniques ;
+  - entreprises ;
+  - autorités ;
+  - exploitant ;
+  - fournisseurs d'équipements.
+- title: 5. Gestion des modifications
+  blocks:
+  - type: text
+    text: 'Recenser les évolutions de programme ayant un impact sur :'
+  - type: list
+    items:
+    - les études ;
+    - les coûts ;
+    - le planning ;
+    - les risques ;
+    - les autres documents RHYAD.
+  text: 'Recenser les évolutions de programme ayant un impact sur :'
+  bullets:
+  - les études ;
+  - les coûts ;
+  - le planning ;
+  - les risques ;
+  - les autres documents RHYAD.
+- title: 6. Validation des hypothèses
+  blocks:
+  - type: text
+    text: 'Liens avec :'
+  - type: list
+    items:
+    - CEVA-RHYAD-200-DT000
+    - CEVA-RHYAD-500-REG03 --- Registre des Risques
+    - CEVA-RHYAD-500-REG02 --- Registre des Décisions
+    - CEVA-RHYAD-500-REG04 --- Registre des Hypothèses
+  text: 'Liens avec :'
+  bullets:
+  - CEVA-RHYAD-200-DT000
+  - CEVA-RHYAD-500-REG03 --- Registre des Risques
+  - CEVA-RHYAD-500-REG02 --- Registre des Décisions
+  - CEVA-RHYAD-500-REG04 --- Registre des Hypothèses
+- title: 7. Coordination BIM
+  blocks:
+  - type: list
+    items:
+    - Niveau de développement attendu (LOD).
+    - Échanges IFC.
+    - Coordination spatiale.
+    - Clash Detection.
+    - Gestion documentaire BIM.
+  bullets:
+  - Niveau de développement attendu (LOD).
+  - Échanges IFC.
+  - Coordination spatiale.
+  - Clash Detection.
+  - Gestion documentaire BIM.
+- title: 8. Revues de conception
+  blocks:
+  - type: list
+    items:
+    - Revue Process.
+    - Revue Architecture.
+    - Revue CVC / HVAC.
+    - Revue Utilités.
+    - Revue Sécurité / Sûreté.
+    - Revue Maintenabilité.
+    - Revue Exploitabilité (sous l'angle des exigences de conception).
+  bullets:
+  - Revue Process.
+  - Revue Architecture.
+  - Revue CVC / HVAC.
+  - Revue Utilités.
+  - Revue Sécurité / Sûreté.
+  - Revue Maintenabilité.
+  - Revue Exploitabilité (sous l'angle des exigences de conception).
+- title: 9. Données de dimensionnement
+  blocks:
+  - type: table
+    headers:
+    - Élément
+    - Valeur
+    - Hypothèse
+    - Validation
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 9. Données de dimensionnement
+  tables:
+  - headers:
+    - Élément
+    - Valeur
+    - Hypothèse
+    - Validation
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 9. Données de dimensionnement
+- title: 10. Hypothèses
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Hypothèse
+    - Impact
+    - Référence CEVA-RHYAD-500-REG04
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 10. Hypothèses
+  tables:
+  - headers:
+    - N°
+    - Hypothèse
+    - Impact
+    - Référence CEVA-RHYAD-500-REG04
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 10. Hypothèses
+- title: 11. Décisions
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Décision
+    - Date
+    - Référence CEVA-RHYAD-500-REG02
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 11. Décisions
+  tables:
+  - headers:
+    - N°
+    - Décision
+    - Date
+    - Référence CEVA-RHYAD-500-REG02
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 11. Décisions
+- title: 12. Actions
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Action
+    - Responsable
+    - Échéance
+    - Référence CEVA-RHYAD-500-REG01
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 12. Actions
+  tables:
+  - headers:
+    - N°
+    - Action
+    - Responsable
+    - Échéance
+    - Référence CEVA-RHYAD-500-REG01
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 12. Actions
+- title: Remarques RHYAD
+  blocks:
+  - type: text
+    text: Ce document pilote la coordination des études. Il garantit la cohérence entre les disciplines, les livrables et
+      les interfaces techniques.
+  - type: text
+    text: 'Il ne traite pas :'
+  - type: list
+    items:
+    - de l'organisation future de CEVA ;
+    - des procédures d'exploitation ;
+    - des SOP ;
+    - de la GMAO ;
+    - des modes opératoires.
+  - type: text
+    text: Ces éléments relèvent des documents d'exploitation élaborés après la conception.
+  text: 'Ce document pilote la coordination des études. Il garantit la cohérence entre les disciplines, les livrables et les
+    interfaces techniques.
+
+
+    Il ne traite pas :
+
+
+    Ces éléments relèvent des documents d''exploitation élaborés après la conception.'
+  bullets:
+  - de l'organisation future de CEVA ;
+  - des procédures d'exploitation ;
+  - des SOP ;
+  - de la GMAO ;
+  - des modes opératoires.
+- title: Fin du document

@@ -1,0 +1,662 @@
+reference: CEVA-RHYAD-200-F11-DT01
+title: Gestion des Déchets et Effluents — Données Techniques d'Entrée
+revision: Rev1.0
+status: Draft
+chapters:
+- title: Objet
+  blocks:
+  - type: text
+    text: Le présent document a pour objet de recenser l'ensemble des données techniques nécessaires à la conception des systèmes
+      de gestion des déchets et des effluents produits par le Campus CEVA.
+  - type: text
+    text: Il couvre les déchets issus des activités de production, des laboratoires, des utilités, de la maintenance, des
+      bureaux et des espaces communs.
+  text: 'Le présent document a pour objet de recenser l''ensemble des données techniques nécessaires à la conception des systèmes
+    de gestion des déchets et des effluents produits par le Campus CEVA.
+
+
+    Il couvre les déchets issus des activités de production, des laboratoires, des utilités, de la maintenance, des bureaux
+    et des espaces communs.'
+- title: Documents associés
+- title: Programme Fonctionnel
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-100-F11
+  bullets:
+  - CEVA-RHYAD-100-F11
+- title: Design Basis
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-300-DB001 --- Process
+    - CEVA-RHYAD-300-DB002 --- Architecture
+    - CEVA-RHYAD-300-DB003 --- CVC / HVAC
+    - CEVA-RHYAD-300-DB004 --- Utilités
+    - CEVA-RHYAD-300-DB009 --- Logistique
+  bullets:
+  - CEVA-RHYAD-300-DB001 --- Process
+  - CEVA-RHYAD-300-DB002 --- Architecture
+  - CEVA-RHYAD-300-DB003 --- CVC / HVAC
+  - CEVA-RHYAD-300-DB004 --- Utilités
+  - CEVA-RHYAD-300-DB009 --- Logistique
+- title: 1. Inventaire des déchets
+  blocks:
+  - type: table
+    headers:
+    - Famille
+    - Origine
+    - Quantité estimée
+    - Mode de stockage
+    - Filière d'élimination
+    - Commentaires CEVA
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 1. Inventaire des déchets
+  tables:
+  - headers:
+    - Famille
+    - Origine
+    - Quantité estimée
+    - Mode de stockage
+    - Filière d'élimination
+    - Commentaires CEVA
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 1. Inventaire des déchets
+- title: 2. Déchets de production
+  blocks:
+  - type: table
+    headers:
+    - Déchet
+    - Catégorie
+    - Conditionnement
+    - Fréquence
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 2. Déchets de production
+  tables:
+  - headers:
+    - Déchet
+    - Catégorie
+    - Conditionnement
+    - Fréquence
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 2. Déchets de production
+- title: 3. Déchets biologiques
+  blocks:
+  - type: table
+    headers:
+    - Déchet
+    - Niveau de risque
+    - Prétraitement
+    - Filière
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 3. Déchets biologiques
+  - type: text
+    text: '> **Point à confirmer avec CEVA :** définir précisément les catégories > de déchets biologiques produites par les
+      procédés d''autovaccins et les > exigences réglementaires associées.'
+  tables:
+  - headers:
+    - Déchet
+    - Niveau de risque
+    - Prétraitement
+    - Filière
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 3. Déchets biologiques
+  text: '> **Point à confirmer avec CEVA :** définir précisément les catégories > de déchets biologiques produites par les
+    procédés d''autovaccins et les > exigences réglementaires associées.'
+- title: 4. Déchets de laboratoire
+  blocks:
+  - type: table
+    headers:
+    - Déchet
+    - Origine
+    - Quantité
+    - Traitement
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 4. Déchets de laboratoire
+  tables:
+  - headers:
+    - Déchet
+    - Origine
+    - Quantité
+    - Traitement
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 4. Déchets de laboratoire
+- title: 5. Déchets de maintenance
+  blocks:
+  - type: table
+    headers:
+    - Déchet
+    - Origine
+    - Filière
+    - Commentaires
+    rows:
+    - - Huiles
+      - ''
+      - ''
+      - ''
+    - - Filtres
+      - ''
+      - ''
+      - ''
+    - - Batteries
+      - ''
+      - ''
+      - ''
+    - - Lampes
+      - ''
+      - ''
+      - ''
+    - - Pièces usagées
+      - ''
+      - ''
+      - ''
+    title: 5. Déchets de maintenance
+  tables:
+  - headers:
+    - Déchet
+    - Origine
+    - Filière
+    - Commentaires
+    rows:
+    - - Huiles
+      - ''
+      - ''
+      - ''
+    - - Filtres
+      - ''
+      - ''
+      - ''
+    - - Batteries
+      - ''
+      - ''
+      - ''
+    - - Lampes
+      - ''
+      - ''
+      - ''
+    - - Pièces usagées
+      - ''
+      - ''
+      - ''
+    title: 5. Déchets de maintenance
+- title: 6. Déchets administratifs et services généraux
+  blocks:
+  - type: table
+    headers:
+    - Déchet
+    - Origine
+    - Collecte
+    - Valorisation
+    - Commentaires
+    rows:
+    - - Papier
+      - Bureaux
+      - ''
+      - ''
+      - ''
+    - - Carton
+      - Bureaux
+      - ''
+      - ''
+      - ''
+    - - Plastique
+      - Espaces communs
+      - ''
+      - ''
+      - ''
+    - - Déchets alimentaires
+      - Cafétéria
+      - ''
+      - ''
+      - ''
+    - - Déchets ménagers
+      - Campus
+      - ''
+      - ''
+      - ''
+    - - DEEE
+      - Informatique
+      - ''
+      - ''
+      - ''
+    title: 6. Déchets administratifs et services généraux
+  tables:
+  - headers:
+    - Déchet
+    - Origine
+    - Collecte
+    - Valorisation
+    - Commentaires
+    rows:
+    - - Papier
+      - Bureaux
+      - ''
+      - ''
+      - ''
+    - - Carton
+      - Bureaux
+      - ''
+      - ''
+      - ''
+    - - Plastique
+      - Espaces communs
+      - ''
+      - ''
+      - ''
+    - - Déchets alimentaires
+      - Cafétéria
+      - ''
+      - ''
+      - ''
+    - - Déchets ménagers
+      - Campus
+      - ''
+      - ''
+      - ''
+    - - DEEE
+      - Informatique
+      - ''
+      - ''
+      - ''
+    title: 6. Déchets administratifs et services généraux
+- title: 7. Effluents
+  blocks:
+  - type: table
+    headers:
+    - Effluent
+    - Origine
+    - Débit estimé
+    - Traitement
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 7. Effluents
+  tables:
+  - headers:
+    - Effluent
+    - Origine
+    - Débit estimé
+    - Traitement
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 7. Effluents
+- title: 8. Stockage temporaire
+  blocks:
+  - type: table
+    headers:
+    - Déchet
+    - Capacité
+    - Durée maximale
+    - Contraintes
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 8. Stockage temporaire
+  tables:
+  - headers:
+    - Déchet
+    - Capacité
+    - Durée maximale
+    - Contraintes
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 8. Stockage temporaire
+- title: 9. Circuits de collecte
+  blocks:
+  - type: table
+    headers:
+    - Déchet
+    - Origine
+    - Destination
+    - Fréquence
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 9. Circuits de collecte
+  tables:
+  - headers:
+    - Déchet
+    - Origine
+    - Destination
+    - Fréquence
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 9. Circuits de collecte
+- title: 10. Contraintes réglementaires
+  blocks:
+  - type: table
+    headers:
+    - Sujet
+    - Exigence
+    - Commentaires
+    rows:
+    - - Tri
+      - ''
+      - ''
+    - - Traçabilité
+      - ''
+      - ''
+    - - Stockage
+      - ''
+      - ''
+    - - Transport
+      - ''
+      - ''
+    - - Élimination
+      - ''
+      - ''
+    title: 10. Contraintes réglementaires
+  tables:
+  - headers:
+    - Sujet
+    - Exigence
+    - Commentaires
+    rows:
+    - - Tri
+      - ''
+      - ''
+    - - Traçabilité
+      - ''
+      - ''
+    - - Stockage
+      - ''
+      - ''
+    - - Transport
+      - ''
+      - ''
+    - - Élimination
+      - ''
+      - ''
+    title: 10. Contraintes réglementaires
+- title: 11. Interfaces
+  blocks:
+  - type: table
+    headers:
+    - Fonction
+    - Nature de l'interface
+    - Commentaires
+    rows:
+    - - F04
+      - Production
+      - ''
+    - - F07
+      - Lavage / Stérilisation
+      - ''
+    - - F08
+      - Contrôle Qualité
+      - ''
+    - - F09
+      - Utilités
+      - ''
+    - - F10
+      - Maintenance
+      - ''
+    - - F14
+      - Administration
+      - ''
+    title: 11. Interfaces
+  tables:
+  - headers:
+    - Fonction
+    - Nature de l'interface
+    - Commentaires
+    rows:
+    - - F04
+      - Production
+      - ''
+    - - F07
+      - Lavage / Stérilisation
+      - ''
+    - - F08
+      - Contrôle Qualité
+      - ''
+    - - F09
+      - Utilités
+      - ''
+    - - F10
+      - Maintenance
+      - ''
+    - - F14
+      - Administration
+      - ''
+    title: 11. Interfaces
+- title: 12. Données de dimensionnement
+  blocks:
+  - type: table
+    headers:
+    - Élément
+    - Valeur
+    - Hypothèse
+    - Validation
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 12. Données de dimensionnement
+  tables:
+  - headers:
+    - Élément
+    - Valeur
+    - Hypothèse
+    - Validation
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 12. Données de dimensionnement
+- title: 13. Hypothèses de conception
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Hypothèse
+    - Impact
+    - Référence CEVA-RHYAD-500-REG04
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 13. Hypothèses de conception
+  tables:
+  - headers:
+    - N°
+    - Hypothèse
+    - Impact
+    - Référence CEVA-RHYAD-500-REG04
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 13. Hypothèses de conception
+- title: 14. Décisions prises
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Décision
+    - Date
+    - Référence CEVA-RHYAD-500-REG02
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 14. Décisions prises
+  tables:
+  - headers:
+    - N°
+    - Décision
+    - Date
+    - Référence CEVA-RHYAD-500-REG02
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 14. Décisions prises
+- title: 15. Actions
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Action
+    - Responsable
+    - Échéance
+    - Référence CEVA-RHYAD-500-REG01
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 15. Actions
+  tables:
+  - headers:
+    - N°
+    - Action
+    - Responsable
+    - Échéance
+    - Référence CEVA-RHYAD-500-REG01
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 15. Actions
+- title: Remarques RHYAD
+  blocks:
+  - type: text
+    text: La stratégie de gestion des déchets couvre l'ensemble des activités du Campus.
+  - type: text
+    text: 'Les études devront définir :'
+  - type: list
+    items:
+    - les circuits de collecte séparés ;
+    - les capacités de stockage temporaire ;
+    - les besoins en traitement des effluents ;
+    - les interfaces avec les prestataires locaux ;
+    - les exigences réglementaires applicables en Arabie Saoudite.
+  - type: text
+    text: La définition détaillée des déchets biologiques sera établie avec CEVA. RHYAD traduit ces besoins en exigences de
+      conception.
+  text: 'La stratégie de gestion des déchets couvre l''ensemble des activités du Campus.
+
+
+    Les études devront définir :
+
+
+    La définition détaillée des déchets biologiques sera établie avec CEVA. RHYAD traduit ces besoins en exigences de conception.'
+  bullets:
+  - les circuits de collecte séparés ;
+  - les capacités de stockage temporaire ;
+  - les besoins en traitement des effluents ;
+  - les interfaces avec les prestataires locaux ;
+  - les exigences réglementaires applicables en Arabie Saoudite.
+- title: Recommandation RHYAD
+  blocks:
+  - type: text
+    text: 'Ajouter en phase APS une matrice de gestion des déchets croisant :'
+  - type: list
+    items:
+    - type de déchet ;
+    - origine ;
+    - niveau de risque ;
+    - mode de collecte ;
+    - stockage ;
+    - traitement ;
+    - filière d'élimination.
+  - type: text
+    text: Cette matrice servira de support de validation avec CEVA et aux études Process, Architecture et Logistique.
+  text: 'Ajouter en phase APS une matrice de gestion des déchets croisant :
+
+
+    Cette matrice servira de support de validation avec CEVA et aux études Process, Architecture et Logistique.'
+  bullets:
+  - type de déchet ;
+  - origine ;
+  - niveau de risque ;
+  - mode de collecte ;
+  - stockage ;
+  - traitement ;
+  - filière d'élimination.
+- title: Fin du document

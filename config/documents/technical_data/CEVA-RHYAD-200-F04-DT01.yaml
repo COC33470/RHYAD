@@ -1,0 +1,698 @@
+reference: CEVA-RHYAD-200-F04-DT01
+title: Production des Autovaccins — Données Techniques d'Entrée
+revision: Rev1.0
+status: Draft
+chapters:
+- title: Objet
+  blocks:
+  - type: text
+    text: Le présent document a pour objet de recenser l'ensemble des données techniques nécessaires à la conception de la
+      fonction **F04 -- Production des Autovaccins**.
+  - type: text
+    text: Il constitue le document de référence pour le dimensionnement des zones de production, des équipements de procédé,
+      des utilités, des interfaces GMP/BPF et des contraintes d'exploitation.
+  text: 'Le présent document a pour objet de recenser l''ensemble des données techniques nécessaires à la conception de la
+    fonction **F04 -- Production des Autovaccins**.
+
+
+    Il constitue le document de référence pour le dimensionnement des zones de production, des équipements de procédé, des
+    utilités, des interfaces GMP/BPF et des contraintes d''exploitation.'
+- title: Documents associés
+- title: Programme Fonctionnel
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-100-F04 --- Production des Autovaccins
+  bullets:
+  - CEVA-RHYAD-100-F04 --- Production des Autovaccins
+- title: Design Basis
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-300-DB001 --- Process
+    - CEVA-RHYAD-300-DB002 --- Architecture
+    - CEVA-RHYAD-300-DB003 --- CVC / HVAC
+    - CEVA-RHYAD-300-DB004 --- Utilités
+    - CEVA-RHYAD-300-DB005 --- Électricité
+    - CEVA-RHYAD-300-DB007 --- Sûreté et Sécurité
+    - CEVA-RHYAD-300-DB010 --- Instrumentation & Automatisme
+  bullets:
+  - CEVA-RHYAD-300-DB001 --- Process
+  - CEVA-RHYAD-300-DB002 --- Architecture
+  - CEVA-RHYAD-300-DB003 --- CVC / HVAC
+  - CEVA-RHYAD-300-DB004 --- Utilités
+  - CEVA-RHYAD-300-DB005 --- Électricité
+  - CEVA-RHYAD-300-DB007 --- Sûreté et Sécurité
+  - CEVA-RHYAD-300-DB010 --- Instrumentation & Automatisme
+- title: 1. Produits fabriqués
+  blocks:
+  - type: table
+    headers:
+    - Produit
+    - Espèce animale
+    - Type de vaccin
+    - Nombre de lots/an
+    - Commentaires CEVA
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 1. Produits fabriqués
+  tables:
+  - headers:
+    - Produit
+    - Espèce animale
+    - Type de vaccin
+    - Nombre de lots/an
+    - Commentaires CEVA
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 1. Produits fabriqués
+- title: 2. Capacités de production
+  blocks:
+  - type: table
+    headers:
+    - Paramètre
+    - Phase 1
+    - Phase 2
+    - Commentaires
+    rows:
+    - - Volume de production
+      - 100 à 300 L
+      - 1000 L
+      - ''
+    - - Nombre de campagnes/an
+      - ''
+      - ''
+      - ''
+    - - Nombre de lots/semaine
+      - ''
+      - ''
+      - ''
+    - - Durée moyenne d'un lot
+      - ''
+      - ''
+      - ''
+    title: 2. Capacités de production
+  tables:
+  - headers:
+    - Paramètre
+    - Phase 1
+    - Phase 2
+    - Commentaires
+    rows:
+    - - Volume de production
+      - 100 à 300 L
+      - 1000 L
+      - ''
+    - - Nombre de campagnes/an
+      - ''
+      - ''
+      - ''
+    - - Nombre de lots/semaine
+      - ''
+      - ''
+      - ''
+    - - Durée moyenne d'un lot
+      - ''
+      - ''
+      - ''
+    title: 2. Capacités de production
+- title: 3. Étapes du procédé
+  blocks:
+  - type: table
+    headers:
+    - Étape
+    - Description
+    - Équipement principal
+    - Durée
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 3. Étapes du procédé
+  tables:
+  - headers:
+    - Étape
+    - Description
+    - Équipement principal
+    - Durée
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 3. Étapes du procédé
+- title: 4. Équipements de production
+  blocks:
+  - type: table
+    headers:
+    - Équipement
+    - Volume utile
+    - Quantité
+    - Redondance
+    - Extension 1000 L
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 4. Équipements de production
+  tables:
+  - headers:
+    - Équipement
+    - Volume utile
+    - Quantité
+    - Redondance
+    - Extension 1000 L
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 4. Équipements de production
+- title: 5. Paramètres critiques du procédé
+  blocks:
+  - type: table
+    headers:
+    - Paramètre
+    - Valeur
+    - Tolérance
+    - Critique (Oui/Non)
+    - Commentaires
+    rows:
+    - - Température
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Temps
+      - ''
+      - ''
+      - ''
+      - ''
+    - - pH
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Agitation
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Pression
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Autres paramètres critiques
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 5. Paramètres critiques du procédé
+  tables:
+  - headers:
+    - Paramètre
+    - Valeur
+    - Tolérance
+    - Critique (Oui/Non)
+    - Commentaires
+    rows:
+    - - Température
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Temps
+      - ''
+      - ''
+      - ''
+      - ''
+    - - pH
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Agitation
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Pression
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Autres paramètres critiques
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 5. Paramètres critiques du procédé
+- title: 6. Besoins en utilités
+  blocks:
+  - type: table
+    headers:
+    - Utilité
+    - Besoin
+    - Débit
+    - Pression
+    - Température
+    - Criticité
+    - Commentaires
+    rows:
+    - - Eau Purifiée
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 6. Besoins en utilités
+  - type: text
+    text: Eau PPI
+  - type: text
+    text: Vapeur propre
+  - type: text
+    text: Air comprimé
+  - type: text
+    text: Gaz techniques
+  - type: text
+    text: Eau glacée
+  - type: text
+    text: Électricité
+  tables:
+  - headers:
+    - Utilité
+    - Besoin
+    - Débit
+    - Pression
+    - Température
+    - Criticité
+    - Commentaires
+    rows:
+    - - Eau Purifiée
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 6. Besoins en utilités
+  text: 'Eau PPI
+
+
+    Vapeur propre
+
+
+    Air comprimé
+
+
+    Gaz techniques
+
+
+    Eau glacée
+
+
+    Électricité'
+- title: 7. Contraintes GMP/BPF
+  blocks:
+  - type: table
+    headers:
+    - Élément
+    - Exigence
+    - Commentaires
+    rows:
+    - - Classification des locaux
+      - ''
+      - ''
+    - - Cascade de pression
+      - ''
+      - ''
+    - - Température
+      - ''
+      - ''
+    - - Hygrométrie
+      - ''
+      - ''
+    - - Traçabilité
+      - ''
+      - ''
+    - - Monitoring environnemental
+      - ''
+      - ''
+    - - Nettoyage
+      - ''
+      - ''
+    title: 7. Contraintes GMP/BPF
+  tables:
+  - headers:
+    - Élément
+    - Exigence
+    - Commentaires
+    rows:
+    - - Classification des locaux
+      - ''
+      - ''
+    - - Cascade de pression
+      - ''
+      - ''
+    - - Température
+      - ''
+      - ''
+    - - Hygrométrie
+      - ''
+      - ''
+    - - Traçabilité
+      - ''
+      - ''
+    - - Monitoring environnemental
+      - ''
+      - ''
+    - - Nettoyage
+      - ''
+      - ''
+    title: 7. Contraintes GMP/BPF
+- title: 8. Nettoyage et décontamination
+  blocks:
+  - type: table
+    headers:
+    - Équipement
+    - CIP
+    - SIP
+    - Manuel
+    - Décontamination
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 8. Nettoyage et décontamination
+  tables:
+  - headers:
+    - Équipement
+    - CIP
+    - SIP
+    - Manuel
+    - Décontamination
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 8. Nettoyage et décontamination
+- title: 9. Flux
+  blocks:
+  - type: table
+    headers:
+    - Flux
+    - Origine
+    - Destination
+    - Fréquence
+    - Commentaires
+    rows:
+    - - Matières premières
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Produits intermédiaires
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Produits finis
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Déchets
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Personnel
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 9. Flux
+  tables:
+  - headers:
+    - Flux
+    - Origine
+    - Destination
+    - Fréquence
+    - Commentaires
+    rows:
+    - - Matières premières
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Produits intermédiaires
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Produits finis
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Déchets
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Personnel
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 9. Flux
+- title: 10. Interfaces
+  blocks:
+  - type: table
+    headers:
+    - Fonction
+    - Interface
+    - Commentaires
+    rows:
+    - - F03
+      - Préparation
+      - ''
+    - - F05
+      - Conditionnement
+      - ''
+    - - F08
+      - Contrôle Qualité
+      - ''
+    - - F09
+      - Utilités
+      - ''
+    - - F10
+      - Maintenance
+      - ''
+    title: 10. Interfaces
+  tables:
+  - headers:
+    - Fonction
+    - Interface
+    - Commentaires
+    rows:
+    - - F03
+      - Préparation
+      - ''
+    - - F05
+      - Conditionnement
+      - ''
+    - - F08
+      - Contrôle Qualité
+      - ''
+    - - F09
+      - Utilités
+      - ''
+    - - F10
+      - Maintenance
+      - ''
+    title: 10. Interfaces
+- title: 11. Évolution des capacités
+  blocks:
+  - type: table
+    headers:
+    - Élément
+    - 100--300 L
+    - 1000 L
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 11. Évolution des capacités
+  tables:
+  - headers:
+    - Élément
+    - 100--300 L
+    - 1000 L
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 11. Évolution des capacités
+- title: 12. Données de dimensionnement
+  blocks:
+  - type: table
+    headers:
+    - Élément
+    - Valeur
+    - Hypothèse
+    - Validation
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 12. Données de dimensionnement
+  tables:
+  - headers:
+    - Élément
+    - Valeur
+    - Hypothèse
+    - Validation
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 12. Données de dimensionnement
+- title: 13. Hypothèses de conception
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Hypothèse
+    - Impact
+    - Référence CEVA-RHYAD-500-REG04
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 13. Hypothèses de conception
+  tables:
+  - headers:
+    - N°
+    - Hypothèse
+    - Impact
+    - Référence CEVA-RHYAD-500-REG04
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 13. Hypothèses de conception
+- title: 14. Décisions prises
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Décision
+    - Date
+    - Référence CEVA-RHYAD-500-REG02
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 14. Décisions prises
+  tables:
+  - headers:
+    - N°
+    - Décision
+    - Date
+    - Référence CEVA-RHYAD-500-REG02
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 14. Décisions prises
+- title: 15. Actions
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Action
+    - Responsable
+    - Échéance
+    - Référence CEVA-RHYAD-500-REG01
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 15. Actions
+  tables:
+  - headers:
+    - N°
+    - Action
+    - Responsable
+    - Échéance
+    - Référence CEVA-RHYAD-500-REG01
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 15. Actions
+- title: Remarques RHYAD
+  blocks:
+  - type: list
+    items:
+    - Évolution du site de **100--300 L** vers **1000 L**.
+    - Modularité des installations.
+    - Compatibilité avec une architecture évolutive.
+    - Alimentation des Design Basis Process, Architecture, CVC, Utilités, Électricité, Instrumentation et Maintenance.
+    - Les paramètres critiques du procédé seront renseignés avec CEVA lors des ateliers techniques.
+    - Un tableau des **Critical Process Parameters (CPP)** et des **Critical Quality Attributes (CQA)** pourra être ajouté
+      lorsqu'ils seront disponibles, conformément au principe « une information = une seule source ».
+  bullets:
+  - Évolution du site de **100--300 L** vers **1000 L**.
+  - Modularité des installations.
+  - Compatibilité avec une architecture évolutive.
+  - Alimentation des Design Basis Process, Architecture, CVC, Utilités, Électricité, Instrumentation et Maintenance.
+  - Les paramètres critiques du procédé seront renseignés avec CEVA lors des ateliers techniques.
+  - Un tableau des **Critical Process Parameters (CPP)** et des **Critical Quality Attributes (CQA)** pourra être ajouté lorsqu'ils
+    seront disponibles, conformément au principe « une information = une seule source ».
+- title: Fin du document

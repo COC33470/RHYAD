@@ -1,4 +1,4 @@
-reference: CEVA-RHYAD-200-DT-FT01-01
+reference: CEVA-RHYAD-200-F01-DT01
 title: Réception et Expédition — Données Techniques d'Entrée
 revision: Rev1.0
 status: Draft
@@ -22,22 +22,22 @@ chapters:
   blocks:
   - type: list
     items:
-    - CEVA-RHYAD-100-F01 — Réception et Expédition
+    - CEVA-RHYAD-100-F01 --- Réception et Expédition
   bullets:
-  - CEVA-RHYAD-100-F01 — Réception et Expédition
+  - CEVA-RHYAD-100-F01 --- Réception et Expédition
 - title: Design Basis
   blocks:
   - type: list
     items:
-    - CEVA-RHYAD-300-DB001 — Process
-    - CEVA-RHYAD-300-DB002 — Architecture
-    - CEVA-RHYAD-300-DB004 — Utilités
-    - CEVA-RHYAD-300-DB009 — Logistique
+    - CEVA-RHYAD-300-DB001 --- Process
+    - CEVA-RHYAD-300-DB002 --- Architecture
+    - CEVA-RHYAD-300-DB004 --- Utilités
+    - CEVA-RHYAD-300-DB009 --- Logistique
   bullets:
-  - CEVA-RHYAD-300-DB001 — Process
-  - CEVA-RHYAD-300-DB002 — Architecture
-  - CEVA-RHYAD-300-DB004 — Utilités
-  - CEVA-RHYAD-300-DB009 — Logistique
+  - CEVA-RHYAD-300-DB001 --- Process
+  - CEVA-RHYAD-300-DB002 --- Architecture
+  - CEVA-RHYAD-300-DB004 --- Utilités
+  - CEVA-RHYAD-300-DB009 --- Logistique
 - title: 1. Réception des matières premières
   blocks:
   - type: table

@@ -139,7 +139,7 @@ en compte dans chaque Design Basis concernée.
 # 8. Documents associés
 
 -   CEVA-RHYAD-001A-ACAP
--   CEVA-RHYAD-200-DT-F15-01 et suivants
+-   CEVA-RHYAD-200-F15-DT01
 -   CEVA-RHYAD-300-DB00 --- Design Basis Général
 -   CEVA-RHYAD-300-DB02 --- Architecture
 -   CEVA-RHYAD-300-DB03 --- CVC / HVAC

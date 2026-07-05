@@ -1,0 +1,674 @@
+reference: CEVA-RHYAD-200-F14-DT01
+title: Administration, Formation et Services Généraux — Données Techniques d'Entrée
+revision: Rev1.0
+status: Draft
+chapters:
+- title: Objet
+  blocks:
+  - type: text
+    text: Le présent document a pour objet de définir les données techniques nécessaires à la conception des espaces administratifs,
+      de formation, des services généraux et des espaces de vie du Campus CEVA.
+  - type: text
+    text: Il couvre l'ensemble des fonctions tertiaires nécessaires au bon fonctionnement du site.
+  text: 'Le présent document a pour objet de définir les données techniques nécessaires à la conception des espaces administratifs,
+    de formation, des services généraux et des espaces de vie du Campus CEVA.
+
+
+    Il couvre l''ensemble des fonctions tertiaires nécessaires au bon fonctionnement du site.'
+- title: Documents associés
+- title: Programme Fonctionnel
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-100-F14
+  bullets:
+  - CEVA-RHYAD-100-F14
+- title: Design Basis
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-300-DB002 --- Architecture
+    - CEVA-RHYAD-300-DB003 --- CVC / HVAC
+    - CEVA-RHYAD-300-DB004 --- Utilités
+    - CEVA-RHYAD-300-DB005 --- Électricité
+    - CEVA-RHYAD-300-DB006 --- IT / OT
+  bullets:
+  - CEVA-RHYAD-300-DB002 --- Architecture
+  - CEVA-RHYAD-300-DB003 --- CVC / HVAC
+  - CEVA-RHYAD-300-DB004 --- Utilités
+  - CEVA-RHYAD-300-DB005 --- Électricité
+  - CEVA-RHYAD-300-DB006 --- IT / OT
+- title: 1. Organisation administrative
+  blocks:
+  - type: table
+    headers:
+    - Service
+    - Effectif
+    - Surface estimée
+    - Particularités
+    - Commentaires
+    rows:
+    - - Direction
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Administration
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Finance
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Ressources Humaines
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Achats
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Supply Chain
+      - ''
+      - ''
+      - ''
+      - ''
+    - - HSE
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Assurance Qualité
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Informatique
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 1. Organisation administrative
+  tables:
+  - headers:
+    - Service
+    - Effectif
+    - Surface estimée
+    - Particularités
+    - Commentaires
+    rows:
+    - - Direction
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Administration
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Finance
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Ressources Humaines
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Achats
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Supply Chain
+      - ''
+      - ''
+      - ''
+      - ''
+    - - HSE
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Assurance Qualité
+      - ''
+      - ''
+      - ''
+      - ''
+    - - Informatique
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 1. Organisation administrative
+- title: 2. Espaces de travail
+  blocks:
+  - type: table
+    headers:
+    - Local
+    - Capacité
+    - Particularités
+    - Commentaires
+    rows:
+    - - Bureaux individuels
+      - ''
+      - ''
+      - ''
+    - - Open spaces
+      - ''
+      - ''
+      - ''
+    - - Bureaux partagés
+      - ''
+      - ''
+      - ''
+    - - Espaces collaboratifs
+      - ''
+      - ''
+      - ''
+    - - Salles de confidentialité
+      - ''
+      - ''
+      - ''
+    title: 2. Espaces de travail
+  tables:
+  - headers:
+    - Local
+    - Capacité
+    - Particularités
+    - Commentaires
+    rows:
+    - - Bureaux individuels
+      - ''
+      - ''
+      - ''
+    - - Open spaces
+      - ''
+      - ''
+      - ''
+    - - Bureaux partagés
+      - ''
+      - ''
+      - ''
+    - - Espaces collaboratifs
+      - ''
+      - ''
+      - ''
+    - - Salles de confidentialité
+      - ''
+      - ''
+      - ''
+    title: 2. Espaces de travail
+- title: 3. Réunions et collaboration
+  blocks:
+  - type: table
+    headers:
+    - Local
+    - Capacité
+    - Équipements
+    - Commentaires
+    rows:
+    - - Salle de réunion principale
+      - ''
+      - ''
+      - ''
+    - - Petites salles de réunion
+      - ''
+      - ''
+      - ''
+    - - Salle visioconférence
+      - ''
+      - ''
+      - ''
+    - - Salle de crise
+      - ''
+      - ''
+      - ''
+    title: 3. Réunions et collaboration
+  - type: text
+    text: '> Décision RHYAD validée : une seconde grande salle de réunion ne sera > étudiée qu''après validation du besoin
+      par CEVA.'
+  tables:
+  - headers:
+    - Local
+    - Capacité
+    - Équipements
+    - Commentaires
+    rows:
+    - - Salle de réunion principale
+      - ''
+      - ''
+      - ''
+    - - Petites salles de réunion
+      - ''
+      - ''
+      - ''
+    - - Salle visioconférence
+      - ''
+      - ''
+      - ''
+    - - Salle de crise
+      - ''
+      - ''
+      - ''
+    title: 3. Réunions et collaboration
+  text: '> Décision RHYAD validée : une seconde grande salle de réunion ne sera > étudiée qu''après validation du besoin par
+    CEVA.'
+- title: 4. Formation
+  blocks:
+  - type: table
+    headers:
+    - Local
+    - Capacité
+    - Particularités
+    - Commentaires
+    rows:
+    - - Salle de formation
+      - ''
+      - ''
+      - ''
+    - - Zone de formation pratique
+      - ''
+      - ''
+      - ''
+    - - Formation GMP
+      - ''
+      - ''
+      - ''
+    - - Formation sécurité
+      - ''
+      - ''
+      - ''
+    title: 4. Formation
+  tables:
+  - headers:
+    - Local
+    - Capacité
+    - Particularités
+    - Commentaires
+    rows:
+    - - Salle de formation
+      - ''
+      - ''
+      - ''
+    - - Zone de formation pratique
+      - ''
+      - ''
+      - ''
+    - - Formation GMP
+      - ''
+      - ''
+      - ''
+    - - Formation sécurité
+      - ''
+      - ''
+      - ''
+    title: 4. Formation
+- title: 5. Services aux collaborateurs
+  blocks:
+  - type: table
+    headers:
+    - Local
+    - Capacité
+    - Commentaires
+    rows:
+    - - Vestiaires
+      - ''
+      - ''
+    - - Sanitaires
+      - ''
+      - ''
+    - - Salle de pause
+      - ''
+      - ''
+    - - Cafétéria
+      - ''
+      - ''
+    - - Local premiers secours
+      - ''
+      - ''
+    title: 5. Services aux collaborateurs
+  tables:
+  - headers:
+    - Local
+    - Capacité
+    - Commentaires
+    rows:
+    - - Vestiaires
+      - ''
+      - ''
+    - - Sanitaires
+      - ''
+      - ''
+    - - Salle de pause
+      - ''
+      - ''
+    - - Cafétéria
+      - ''
+      - ''
+    - - Local premiers secours
+      - ''
+      - ''
+    title: 5. Services aux collaborateurs
+- title: 6. Accueil
+  blocks:
+  - type: table
+    headers:
+    - Élément
+    - Exigence
+    - Commentaires
+    rows:
+    - - Hall d'accueil
+      - ''
+      - ''
+    - - Contrôle visiteurs
+      - ''
+      - ''
+    - - Zone d'attente
+      - ''
+      - ''
+    - - Accueil fournisseurs
+      - ''
+      - ''
+    title: 6. Accueil
+  tables:
+  - headers:
+    - Élément
+    - Exigence
+    - Commentaires
+    rows:
+    - - Hall d'accueil
+      - ''
+      - ''
+    - - Contrôle visiteurs
+      - ''
+      - ''
+    - - Zone d'attente
+      - ''
+      - ''
+    - - Accueil fournisseurs
+      - ''
+      - ''
+    title: 6. Accueil
+- title: 7. Mobilier et équipements
+  blocks:
+  - type: table
+    headers:
+    - Équipement
+    - Exigence
+    - Commentaires
+    rows:
+    - - Mobilier
+      - ''
+      - ''
+    - - Audiovisuel
+      - ''
+      - ''
+    - - Téléphonie
+      - ''
+      - ''
+    - - Wi-Fi
+      - ''
+      - ''
+    - - Signalétique
+      - ''
+      - ''
+    title: 7. Mobilier et équipements
+  tables:
+  - headers:
+    - Équipement
+    - Exigence
+    - Commentaires
+    rows:
+    - - Mobilier
+      - ''
+      - ''
+    - - Audiovisuel
+      - ''
+      - ''
+    - - Téléphonie
+      - ''
+      - ''
+    - - Wi-Fi
+      - ''
+      - ''
+    - - Signalétique
+      - ''
+      - ''
+    title: 7. Mobilier et équipements
+- title: 8. Interfaces
+  blocks:
+  - type: table
+    headers:
+    - Fonction
+    - Nature de l'interface
+    - Commentaires
+    rows:
+    - - F10
+      - Maintenance
+      - ''
+    - - F12
+      - Sûreté
+      - ''
+    - - F13
+      - IT / OT
+      - ''
+    - - F15
+      - Gouvernance
+      - ''
+    title: 8. Interfaces
+  tables:
+  - headers:
+    - Fonction
+    - Nature de l'interface
+    - Commentaires
+    rows:
+    - - F10
+      - Maintenance
+      - ''
+    - - F12
+      - Sûreté
+      - ''
+    - - F13
+      - IT / OT
+      - ''
+    - - F15
+      - Gouvernance
+      - ''
+    title: 8. Interfaces
+- title: 9. Performance environnementale
+  blocks:
+  - type: table
+    headers:
+    - Sujet
+    - Exigence
+    - Commentaires
+    rows:
+    - - Confort thermique
+      - ''
+      - ''
+    - - Qualité de l'air
+      - ''
+      - ''
+    - - Acoustique
+      - ''
+      - ''
+    - - Éclairage naturel
+      - ''
+      - ''
+    - - Performance énergétique
+      - ''
+      - ''
+    title: 9. Performance environnementale
+  tables:
+  - headers:
+    - Sujet
+    - Exigence
+    - Commentaires
+    rows:
+    - - Confort thermique
+      - ''
+      - ''
+    - - Qualité de l'air
+      - ''
+      - ''
+    - - Acoustique
+      - ''
+      - ''
+    - - Éclairage naturel
+      - ''
+      - ''
+    - - Performance énergétique
+      - ''
+      - ''
+    title: 9. Performance environnementale
+- title: 10. Données de dimensionnement
+  blocks:
+  - type: table
+    headers:
+    - Élément
+    - Valeur
+    - Hypothèse
+    - Validation
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 10. Données de dimensionnement
+  tables:
+  - headers:
+    - Élément
+    - Valeur
+    - Hypothèse
+    - Validation
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 10. Données de dimensionnement
+- title: 11. Hypothèses de conception
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Hypothèse
+    - Impact
+    - Référence CEVA-RHYAD-500-REG04
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 11. Hypothèses de conception
+  tables:
+  - headers:
+    - N°
+    - Hypothèse
+    - Impact
+    - Référence CEVA-RHYAD-500-REG04
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 11. Hypothèses de conception
+- title: 12. Décisions prises
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Décision
+    - Date
+    - Référence CEVA-RHYAD-500-REG02
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 12. Décisions prises
+  tables:
+  - headers:
+    - N°
+    - Décision
+    - Date
+    - Référence CEVA-RHYAD-500-REG02
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 12. Décisions prises
+- title: 13. Actions
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Action
+    - Responsable
+    - Échéance
+    - Référence CEVA-RHYAD-500-REG01
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 13. Actions
+  tables:
+  - headers:
+    - N°
+    - Action
+    - Responsable
+    - Échéance
+    - Référence CEVA-RHYAD-500-REG01
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 13. Actions
+- title: Remarques RHYAD
+  blocks:
+  - type: text
+    text: Les espaces tertiaires devront être conçus selon les mêmes principes de qualité que les installations industrielles,
+      tout en répondant aux exigences de confort, de flexibilité et de collaboration.
+  - type: text
+    text: 'Une attention particulière sera portée à :'
+  - type: list
+    items:
+    - l'évolutivité des espaces administratifs ;
+    - l'intégration des outils collaboratifs et de visioconférence ;
+    - la qualité des espaces de formation, essentiels pour les activités GMP et HSE ;
+    - la séparation des flux visiteurs, collaborateurs et zones de production ;
+    - l'intégration des exigences de sûreté et de cybersécurité dans les espaces tertiaires.
+  text: 'Les espaces tertiaires devront être conçus selon les mêmes principes de qualité que les installations industrielles,
+    tout en répondant aux exigences de confort, de flexibilité et de collaboration.
+
+
+    Une attention particulière sera portée à :'
+  bullets:
+  - l'évolutivité des espaces administratifs ;
+  - l'intégration des outils collaboratifs et de visioconférence ;
+  - la qualité des espaces de formation, essentiels pour les activités GMP et HSE ;
+  - la séparation des flux visiteurs, collaborateurs et zones de production ;
+  - l'intégration des exigences de sûreté et de cybersécurité dans les espaces tertiaires.
+- title: Recommandation RHYAD
+  blocks:
+  - type: text
+    text: Ajouter une étude d'occupation des espaces tertiaires (Workplace Strategy) en phases APS/APD afin d'ajuster les
+      surfaces administratives, les salles de réunion et les espaces collaboratifs aux besoins réels de CEVA, tout en limitant
+      les surcoûts de construction et d'exploitation.
+  text: Ajouter une étude d'occupation des espaces tertiaires (Workplace Strategy) en phases APS/APD afin d'ajuster les surfaces
+    administratives, les salles de réunion et les espaces collaboratifs aux besoins réels de CEVA, tout en limitant les surcoûts
+    de construction et d'exploitation.
+- title: Fin du document
