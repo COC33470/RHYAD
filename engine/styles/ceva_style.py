@@ -373,9 +373,18 @@ def add_data_table(document, table_data):
 
     table = document.add_table(rows=1, cols=len(headers))
     table.style = "Table Grid"
+    table.alignment = WD_TABLE_ALIGNMENT.CENTER
+    table.autofit = False
+
+    width = _content_width(document.sections[0])
+    width_twips = _width_twips(width)
+    _set_table_width(table, width)
+    column_widths = [width_twips // len(headers)] * len(headers)
+    column_widths[-1] = width_twips - sum(column_widths[:-1])
 
     for index, header in enumerate(headers):
         cell = table.rows[0].cells[index]
+        _set_cell_width(cell, column_widths[index])
         cell.vertical_alignment = WD_ALIGN_VERTICAL.CENTER
         _set_cell_shading(cell, CEVA_BLUE)
         _add_text(cell.paragraphs[0], header, size=8, bold=True, color="FFFFFF")
@@ -383,6 +392,7 @@ def add_data_table(document, table_data):
     for data_row in rows:
         row = table.add_row().cells
         for index, value in enumerate(data_row):
+            _set_cell_width(row[index], column_widths[index])
             row[index].vertical_alignment = WD_ALIGN_VERTICAL.CENTER
             display_value = "-" if value is None or value == "" else value
             _add_text(row[index].paragraphs[0], display_value, size=8)

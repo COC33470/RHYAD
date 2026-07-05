@@ -161,6 +161,52 @@ enregistrée ; - tracée.
         )
         validate_document_config(document, "TST-002.yaml")
 
+    def test_markdown_to_document_converts_aligned_tables(self):
+        markdown = """reference: "TST-003"
+title: "Technical Data"
+
+# 1. Données
+
+  Donnée                           Valeur   Commentaires CEVA
+  -------------------------------- -------- -------------------
+  Nombre de livraisons / semaine
+  Nombre de camions / jour
+
+# 2. Table vide
+
+  -------------------------------------------------------------------------------
+  Famille        Conditionnement   Température    Particularités   Commentaires
+  -------------- ----------------- -------------- ---------------- --------------
+
+  -------------------------------------------------------------------------------
+
+# 3. En-tête long
+
+  N°             Action         Responsable    Échéance       Référence
+                                                              CEVA-RHYAD-500-REG01
+  -------------- -------------- -------------- -------------- ----------------------
+
+  ----------------------------------------------------------------------------------
+"""
+
+        document = markdown_to_document(markdown, "TST-003")
+
+        self.assertEqual(document["chapters"][0]["tables"][0]["headers"], ["Donnée", "Valeur", "Commentaires CEVA"])
+        self.assertEqual(
+            document["chapters"][0]["tables"][0]["rows"][0],
+            ["Nombre de livraisons / semaine", "", ""],
+        )
+        self.assertEqual(
+            document["chapters"][1]["tables"][0]["headers"],
+            ["Famille", "Conditionnement", "Température", "Particularités", "Commentaires"],
+        )
+        self.assertEqual(document["chapters"][1]["tables"][0]["rows"], [["", "", "", "", ""]])
+        self.assertEqual(
+            document["chapters"][2]["tables"][0]["headers"],
+            ["N°", "Action", "Responsable", "Échéance", "Référence CEVA-RHYAD-500-REG01"],
+        )
+        validate_document_config(document, "TST-003.yaml")
+
     def test_markdown_to_document_uses_repository_title_when_title_missing(self):
         markdown = "Texte validé."
 

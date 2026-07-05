@@ -1,0 +1,451 @@
+reference: CEVA-RHYAD-200-DT-FT01-01
+title: Réception et Expédition — Données Techniques d'Entrée
+revision: Rev1.0
+status: Draft
+chapters:
+- title: Objet
+  blocks:
+  - type: text
+    text: Le présent document a pour objet de recenser l'ensemble des données techniques nécessaires à la conception de la
+      fonction **F01 -- Réception et Expédition**.
+  - type: text
+    text: Il constitue le document de référence permettant de définir les besoins fonctionnels, les contraintes d'exploitation
+      et les données de dimensionnement associées à cette fonction.
+  text: 'Le présent document a pour objet de recenser l''ensemble des données techniques nécessaires à la conception de la
+    fonction **F01 -- Réception et Expédition**.
+
+
+    Il constitue le document de référence permettant de définir les besoins fonctionnels, les contraintes d''exploitation
+    et les données de dimensionnement associées à cette fonction.'
+- title: Documents associés
+- title: Programme Fonctionnel
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-100-F01 — Réception et Expédition
+  bullets:
+  - CEVA-RHYAD-100-F01 — Réception et Expédition
+- title: Design Basis
+  blocks:
+  - type: list
+    items:
+    - CEVA-RHYAD-300-DB001 — Process
+    - CEVA-RHYAD-300-DB002 — Architecture
+    - CEVA-RHYAD-300-DB004 — Utilités
+    - CEVA-RHYAD-300-DB009 — Logistique
+  bullets:
+  - CEVA-RHYAD-300-DB001 — Process
+  - CEVA-RHYAD-300-DB002 — Architecture
+  - CEVA-RHYAD-300-DB004 — Utilités
+  - CEVA-RHYAD-300-DB009 — Logistique
+- title: 1. Réception des matières premières
+  blocks:
+  - type: table
+    headers:
+    - Donnée
+    - Valeur
+    - Commentaires CEVA
+    rows:
+    - - Nombre de livraisons / semaine
+      - ''
+      - ''
+    - - Nombre de camions / jour
+      - ''
+      - ''
+    - - Horaires de livraison
+      - ''
+      - ''
+    - - Type de véhicules
+      - ''
+      - ''
+    - - Température contrôlée
+      - ''
+      - ''
+    - - Livraison réfrigérée
+      - ''
+      - ''
+    - - Livraison congelée
+      - ''
+      - ''
+    - - Livraison ambiante
+      - ''
+      - ''
+    - - Contraintes particulières
+      - ''
+      - ''
+    title: 1. Réception des matières premières
+  tables:
+  - headers:
+    - Donnée
+    - Valeur
+    - Commentaires CEVA
+    rows:
+    - - Nombre de livraisons / semaine
+      - ''
+      - ''
+    - - Nombre de camions / jour
+      - ''
+      - ''
+    - - Horaires de livraison
+      - ''
+      - ''
+    - - Type de véhicules
+      - ''
+      - ''
+    - - Température contrôlée
+      - ''
+      - ''
+    - - Livraison réfrigérée
+      - ''
+      - ''
+    - - Livraison congelée
+      - ''
+      - ''
+    - - Livraison ambiante
+      - ''
+      - ''
+    - - Contraintes particulières
+      - ''
+      - ''
+    title: 1. Réception des matières premières
+- title: 2. Matières reçues
+  blocks:
+  - type: table
+    headers:
+    - Famille
+    - Conditionnement
+    - Température
+    - Particularités
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 2. Matières reçues
+  tables:
+  - headers:
+    - Famille
+    - Conditionnement
+    - Température
+    - Particularités
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 2. Matières reçues
+- title: 3. Produits expédiés
+  blocks:
+  - type: table
+    headers:
+    - Produit
+    - Conditionnement
+    - Température
+    - Destination
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 3. Produits expédiés
+  tables:
+  - headers:
+    - Produit
+    - Conditionnement
+    - Température
+    - Destination
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 3. Produits expédiés
+- title: 4. Contrôles à réception
+  blocks:
+  - type: table
+    headers:
+    - Contrôle
+    - Responsable
+    - Fréquence
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 4. Contrôles à réception
+  tables:
+  - headers:
+    - Contrôle
+    - Responsable
+    - Fréquence
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 4. Contrôles à réception
+- title: 5. Flux
+  blocks:
+  - type: table
+    headers:
+    - Flux
+    - Sens
+    - Particularités
+    - Commentaires
+    rows:
+    - - Matières premières
+      - ''
+      - ''
+      - ''
+    - - Consommables
+      - ''
+      - ''
+      - ''
+    - - Produits finis
+      - ''
+      - ''
+      - ''
+    - - Déchets
+      - ''
+      - ''
+      - ''
+    - - Personnel
+      - ''
+      - ''
+      - ''
+    title: 5. Flux
+  tables:
+  - headers:
+    - Flux
+    - Sens
+    - Particularités
+    - Commentaires
+    rows:
+    - - Matières premières
+      - ''
+      - ''
+      - ''
+    - - Consommables
+      - ''
+      - ''
+      - ''
+    - - Produits finis
+      - ''
+      - ''
+      - ''
+    - - Déchets
+      - ''
+      - ''
+      - ''
+    - - Personnel
+      - ''
+      - ''
+      - ''
+    title: 5. Flux
+- title: 6. Équipements
+  blocks:
+  - type: table
+    headers:
+    - Équipement
+    - Quantité
+    - Particularités
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 6. Équipements
+  tables:
+  - headers:
+    - Équipement
+    - Quantité
+    - Particularités
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 6. Équipements
+- title: 7. Interfaces
+  blocks:
+  - type: table
+    headers:
+    - Fonction
+    - Nature de l'interface
+    - Commentaires
+    rows:
+    - - F02
+      - ''
+      - ''
+    - - F04
+      - ''
+      - ''
+    - - F09
+      - ''
+      - ''
+    - - F11
+      - ''
+      - ''
+    title: 7. Interfaces
+  tables:
+  - headers:
+    - Fonction
+    - Nature de l'interface
+    - Commentaires
+    rows:
+    - - F02
+      - ''
+      - ''
+    - - F04
+      - ''
+      - ''
+    - - F09
+      - ''
+      - ''
+    - - F11
+      - ''
+      - ''
+    title: 7. Interfaces
+- title: 8. Contraintes réglementaires
+  blocks:
+  - type: table
+    headers:
+    - Sujet
+    - Exigence
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+    title: 8. Contraintes réglementaires
+  tables:
+  - headers:
+    - Sujet
+    - Exigence
+    - Commentaires
+    rows:
+    - - ''
+      - ''
+      - ''
+    title: 8. Contraintes réglementaires
+- title: 9. Données de dimensionnement
+  blocks:
+  - type: table
+    headers:
+    - Élément
+    - Valeur
+    - Hypothèse
+    - Validation
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 9. Données de dimensionnement
+  tables:
+  - headers:
+    - Élément
+    - Valeur
+    - Hypothèse
+    - Validation
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 9. Données de dimensionnement
+- title: 10. Hypothèses de conception
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Hypothèse
+    - Impact
+    - Référence CEVA-RHYAD-500-REG04
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 10. Hypothèses de conception
+  tables:
+  - headers:
+    - N°
+    - Hypothèse
+    - Impact
+    - Référence CEVA-RHYAD-500-REG04
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 10. Hypothèses de conception
+- title: 11. Décisions prises
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Décision
+    - Date
+    - Référence CEVA-RHYAD-500-REG02
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 11. Décisions prises
+  tables:
+  - headers:
+    - N°
+    - Décision
+    - Date
+    - Référence CEVA-RHYAD-500-REG02
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+    title: 11. Décisions prises
+- title: 12. Actions
+  blocks:
+  - type: table
+    headers:
+    - N°
+    - Action
+    - Responsable
+    - Échéance
+    - Référence CEVA-RHYAD-500-REG01
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 12. Actions
+  tables:
+  - headers:
+    - N°
+    - Action
+    - Responsable
+    - Échéance
+    - Référence CEVA-RHYAD-500-REG01
+    rows:
+    - - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    title: 12. Actions
+- title: Fin du document

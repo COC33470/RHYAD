@@ -181,3 +181,11 @@ documents:
     status: "Validated"
     family: "100"
     source: "config/documents/functions/F15.yaml"
+
+  - code: "DT-FT01-01"
+    official_code: "CEVA-RHYAD-200-DT-FT01-01"
+    title: "Réception et Expédition — Données Techniques d'Entrée"
+    revision: "Rev1.0"
+    status: "Draft"
+    family: "200"
+    source: "config/documents/technical_data/DT-FT01-01.yaml"

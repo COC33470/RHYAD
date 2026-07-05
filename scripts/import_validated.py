@@ -262,6 +262,68 @@ def _is_table_start(lines, index):
     )
 
 
+def _dash_segments(line):
+    return [(match.start(), match.end()) for match in re.finditer(r"-{3,}", line)]
+
+
+def _is_aligned_table_separator(line):
+    stripped = line.strip()
+    if not stripped or any(char not in {"-", " "} for char in stripped):
+        return False
+    return len(_dash_segments(line)) >= 2
+
+
+def _is_aligned_table_border(line):
+    return _is_horizontal_rule(line) and len(_dash_segments(line)) == 1
+
+
+def _is_aligned_table_header_line(line):
+    stripped = line.strip()
+    return (
+        bool(stripped)
+        and "|" not in line
+        and not _heading(line)
+        and not _list_item(line)
+        and not _is_horizontal_rule(line)
+    )
+
+
+def _aligned_table_start(lines, index):
+    if index >= len(lines):
+        return None
+
+    if _is_aligned_table_border(lines[index]):
+        if (
+            index + 2 < len(lines)
+            and _is_aligned_table_header_line(lines[index + 1])
+            and _is_aligned_table_separator(lines[index + 2])
+        ):
+            return [lines[index + 1]], index + 2, True
+        if (
+            index + 3 < len(lines)
+            and _is_aligned_table_header_line(lines[index + 1])
+            and _is_aligned_table_header_line(lines[index + 2])
+            and _is_aligned_table_separator(lines[index + 3])
+        ):
+            return [lines[index + 1], lines[index + 2]], index + 3, True
+        return None
+
+    if not _is_aligned_table_header_line(lines[index]):
+        return None
+
+    if index + 1 < len(lines) and _is_aligned_table_separator(lines[index + 1]):
+        return [lines[index]], index + 1, False
+
+    if (
+        index + 2 < len(lines)
+        and _is_aligned_table_header_line(lines[index + 1])
+        and _is_aligned_table_separator(lines[index + 2])
+    ):
+        return [lines[index], lines[index + 1]], index + 2, False
+
+    return None
+
+
 def _is_horizontal_rule(line):
     stripped = line.strip()
     return bool(stripped) and set(stripped) == {"-"} and len(stripped) >= 5
@@ -381,6 +443,82 @@ def _parse_table(lines, index):
     return {"headers": headers, "rows": rows}, index
 
 
+def _extract_aligned_cells(line, spans):
+    cells = []
+    for column_index, (start, _end) in enumerate(spans):
+        next_start = spans[column_index + 1][0] if column_index + 1 < len(spans) else None
+        if len(line) <= start:
+            cells.append("")
+            continue
+        value = line[start:next_start].strip() if next_start is not None else line[start:].strip()
+        cells.append(value)
+    return cells
+
+
+def _merge_header_lines(header_lines, spans):
+    headers = [""] * len(spans)
+    for header_line in header_lines:
+        cells = _extract_aligned_cells(header_line, spans)
+        for index, cell in enumerate(cells):
+            if cell:
+                headers[index] = f"{headers[index]} {cell}".strip()
+    return headers
+
+
+def _parse_aligned_table(lines, index):
+    start = _aligned_table_start(lines, index)
+    if not start:
+        raise ImportErrorWithContext("Aligned table parser called on a non-table line.")
+
+    header_lines, separator_index, has_top_border = start
+    separator_line = lines[separator_index]
+    spans = _dash_segments(separator_line)
+    headers = _merge_header_lines(header_lines, spans)
+    if any(not header for header in headers):
+        raise ImportErrorWithContext(f"Aligned table header contains an empty column: {header_lines}")
+
+    rows = []
+    index = separator_index + 1
+
+    while index < len(lines):
+        line = lines[index]
+        stripped = line.strip()
+
+        if not stripped:
+            next_index = index + 1
+            while next_index < len(lines) and not lines[next_index].strip():
+                next_index += 1
+            if next_index < len(lines) and _is_aligned_table_border(lines[next_index]):
+                index = next_index + 1
+                break
+            break
+
+        if _is_aligned_table_border(line):
+            index += 1
+            break
+
+        if _heading(line) or _list_item(line) or _is_horizontal_rule(line):
+            break
+
+        if _is_aligned_table_separator(line):
+            index += 1
+            continue
+
+        row = _extract_aligned_cells(line, spans)
+        if len(row) != len(headers):
+            raise ImportErrorWithContext(
+                f"Aligned table row has {len(row)} cells, expected {len(headers)}: {line}"
+            )
+        if any(cell for cell in row):
+            rows.append(row)
+        index += 1
+
+    if not rows:
+        rows.append([""] * len(headers))
+
+    return {"headers": headers, "rows": rows}, index
+
+
 def _collect_list_item(lines, index):
     item = _list_item(lines[index])
     parts = [item]
@@ -410,6 +548,13 @@ def parse_markdown_body(lines):
 
     while index < len(lines):
         line = lines[index]
+        if current is not None and _aligned_table_start(lines, index):
+            _flush_text(current, pending_text)
+            table, index = _parse_aligned_table(lines, index)
+            table["title"] = current["title"]
+            _append_table_block(current, table)
+            continue
+
         if _is_horizontal_rule(line):
             _flush_text(current, pending_text)
             index += 1
@@ -504,8 +649,19 @@ def markdown_to_document(
     return document
 
 
+class _NoAliasSafeDumper(yaml.SafeDumper):
+    def ignore_aliases(self, data):
+        return True
+
+
 def dump_document_yaml(document):
-    return yaml.safe_dump(document, allow_unicode=True, sort_keys=False, width=120)
+    return yaml.dump(
+        document,
+        Dumper=_NoAliasSafeDumper,
+        allow_unicode=True,
+        sort_keys=False,
+        width=120,
+    )
 
 
 def run_checked(command):
