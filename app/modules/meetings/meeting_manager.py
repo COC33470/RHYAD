@@ -11,9 +11,11 @@ from typing import Optional
 import zipfile
 
 from app.modules.meetings.extracted_meeting_data import MeetingExtractionResult
+from app.modules.meetings.meeting_reasoning import MeetingReasoningResult
 from app.modules.meetings.models import MeetingArtifactPaths, MeetingPostAnalysisResult, TranscriptionResult
 from app.services.meeting_data_extraction_service import MeetingDataExtractionService
 from app.services.meeting_analysis_service import MeetingAnalysisService
+from app.services.meeting_reasoning_service import MeetingReasoningService
 from app.services.transcription_service import (
     SUPPORTED_AUDIO_EXTENSIONS,
     FFMpegAudioPreprocessor,
@@ -55,6 +57,7 @@ class MeetingManager:
         transcription_service: Optional[TranscriptionService] = None,
         analysis_service: Optional[MeetingAnalysisService] = None,
         data_extraction_service: Optional[MeetingDataExtractionService] = None,
+        reasoning_service: Optional[MeetingReasoningService] = None,
         executor: Optional[ThreadPoolExecutor] = None,
         logger: Optional[logging.Logger] = None,
     ):
@@ -71,6 +74,7 @@ class MeetingManager:
             glossary_path=self.project_root / "config" / "meeting_glossary.yaml"
         )
         self.data_extraction_service = data_extraction_service or MeetingDataExtractionService()
+        self.reasoning_service = reasoning_service or MeetingReasoningService()
         self.executor = executor or ThreadPoolExecutor(max_workers=1, thread_name_prefix="rhyad-meeting")
 
     @classmethod
@@ -229,8 +233,44 @@ class MeetingManager:
             self.logger.exception("Meeting data extraction failed: %s", source)
             raise
 
-    def generate_deliverables(self, transcript_cleaned_path: Path) -> MeetingExtractionResult:
-        return self.extract_meeting_data(transcript_cleaned_path)
+    def reason_meeting(
+        self,
+        transcript_cleaned_path: Path,
+        meeting_summary_path: Optional[Path] = None,
+        meeting_id: Optional[str] = None,
+    ) -> MeetingReasoningResult:
+        self.paths.ensure()
+        requested_source = Path(transcript_cleaned_path).expanduser().resolve()
+        source = self._resolve_transcript_source(requested_source, "transcript_cleaned.md")
+        if not source.exists():
+            raise FileNotFoundError(f"Cleaned transcript file not found: {requested_source}")
+        if source.suffix.lower() not in {".md", ".txt"}:
+            raise MeetingManagerError(f"Unsupported transcript format: {source.suffix}. Expected .md or .txt")
+
+        meeting_id = meeting_id or self._meeting_id_from_transcript(source)
+        output_dir = self._output_dir_for_transcript(requested_source, meeting_id)
+        summary_path = (
+            Path(meeting_summary_path).expanduser().resolve()
+            if meeting_summary_path
+            else self._infer_summary_path(source, meeting_id, output_dir)
+        )
+
+        try:
+            self.logger.info("Starting meeting reasoning: %s", source)
+            result = self.reasoning_service.reason(
+                transcript_cleaned_path=source,
+                output_dir=output_dir,
+                meeting_id=meeting_id,
+                meeting_summary_path=summary_path,
+            )
+            self.logger.info("Meeting reasoning completed: %s", meeting_id)
+            return result
+        except Exception:
+            self.logger.exception("Meeting reasoning failed: %s", source)
+            raise
+
+    def generate_deliverables(self, transcript_cleaned_path: Path) -> MeetingReasoningResult:
+        return self.reason_meeting(transcript_cleaned_path)
 
     def start_processing_job(self, audio_path: Path, meeting_id: Optional[str] = None) -> Future:
         return self.executor.submit(self.process_audio, audio_path, meeting_id)

@@ -244,14 +244,16 @@ class MeetingManagerTest(unittest.TestCase):
             decisions = result.paths.decision_log_path.read_text(encoding="utf-8")
             risks = result.paths.risk_register_update_path.read_text(encoding="utf-8")
             impacts = result.paths.document_impact_log_path.read_text(encoding="utf-8")
+            graph = result.paths.meeting_knowledge_graph_path.read_text(encoding="utf-8")
 
             self.assertIn("## 3. Sujets traités", minutes)
-            self.assertIn("## 10. Prochaine étape", minutes)
-            self.assertIn("## 7. Alertes", dashboard)
-            self.assertIn("| ID | Action | Responsable | Échéance | Priorité | Statut | Source |", actions)
-            self.assertIn("| ID | Décision | Contexte | Valideur | Date | Impact documentaire |", decisions)
-            self.assertIn("| ID | Risque | Cause | Impact | Mesure proposée | Criticité | Statut |", risks)
-            self.assertIn("| ID | Document concerné | Modification à faire | Source | Priorité | Statut |", impacts)
+            self.assertIn("Meeting Manager Alpha 0.4", minutes)
+            self.assertIn("## Documents à produire", dashboard)
+            self.assertIn("Identifier le fournisseur d'électricité local", actions)
+            self.assertIn("| ID | Décision | Contexte | Valideur | Date | Impact documentaire | Confiance | Validation |", decisions)
+            self.assertIn("| ID | Risque | Cause | Impact | Probabilité | Gravité | Criticité | Responsable | Plan d'action | Confiance | Statut |", risks)
+            self.assertIn("| ID | Document concerné | Modification à faire | Source métier | Priorité | Confiance | Statut |", impacts)
+            self.assertIn('"nodes"', graph)
 
     def test_import_zip_detects_m4a_and_copies_to_audio_dir(self):
         with tempfile.TemporaryDirectory() as tmp:

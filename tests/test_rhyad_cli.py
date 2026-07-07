@@ -399,6 +399,46 @@ class RhyadCliTest(unittest.TestCase):
             self.assertIn("Dashboard prefill:", output)
             self.assertIn("Document impact log:", output)
 
+    def test_meetings_reason_reports_alpha_04_outputs(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            _write_cli_fixture(root)
+            transcript_path = root / "data" / "meetings" / "transcripts" / "transcript_cleaned.md"
+            transcript_path.parent.mkdir(parents=True)
+            transcript_path.write_text("- [00:00:01 --> 00:00:03] UPS et microcoupures.\n", encoding="utf-8")
+            stream = io.StringIO()
+
+            class FakeMeetingManager:
+                def reason_meeting(self, path):
+                    self.transcript_path = path
+                    output_dir = root / "data" / "meetings" / "outputs"
+                    return SimpleNamespace(
+                        meeting_id="transcript_cleaned",
+                        paths=SimpleNamespace(
+                            meeting_minutes_prefill_path=output_dir / "meeting_minutes_prefill.md",
+                            dashboard_prefill_path=output_dir / "dashboard_prefill.md",
+                            action_log_path=output_dir / "action_log.md",
+                            decision_log_path=output_dir / "decision_log.md",
+                            risk_register_update_path=output_dir / "risk_register_update.md",
+                            document_impact_log_path=output_dir / "document_impact_log.md",
+                            meeting_knowledge_graph_path=output_dir / "meeting_knowledge_graph.json",
+                        ),
+                    )
+
+                def shutdown(self):
+                    self.shutdown_called = True
+
+            fake_manager = FakeMeetingManager()
+            with patch("cli.rhyad.MeetingManager.from_project", return_value=fake_manager):
+                exit_code = rhyad.command_meetings(["reason", str(transcript_path)], root=root, stream=stream)
+
+            self.assertEqual(exit_code, 0)
+            self.assertTrue(fake_manager.shutdown_called)
+            self.assertEqual(fake_manager.transcript_path, transcript_path)
+            output = stream.getvalue()
+            self.assertIn("Meeting minutes prefill:", output)
+            self.assertIn("Meeting knowledge graph:", output)
+
     def test_paste_rejects_unknown_document(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

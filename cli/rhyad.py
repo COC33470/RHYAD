@@ -41,6 +41,7 @@ Usage:
   rhyad meetings clean <transcript_file>
   rhyad meetings analyze <transcript_file>
   rhyad meetings extract <transcript_cleaned_file>
+  rhyad meetings reason <transcript_cleaned_file>
   rhyad meetings generate-deliverables <transcript_cleaned_file>
   rhyad ui
   rhyad trace suggest
@@ -64,6 +65,7 @@ Compatibility:
   python3 scripts/rhyad.py meetings clean data/meetings/transcripts/transcript.txt
   python3 scripts/rhyad.py meetings analyze data/meetings/transcripts/transcript.txt
   python3 scripts/rhyad.py meetings extract data/meetings/transcripts/transcript_cleaned.md
+  python3 scripts/rhyad.py meetings reason data/meetings/transcripts/transcript_cleaned.md
   python3 scripts/rhyad.py meetings generate-deliverables data/meetings/transcripts/transcript_cleaned.md
   python3 scripts/rhyad.py ui
   python3 scripts/rhyad.py trace suggest
@@ -513,12 +515,13 @@ def command_figures(args, root=ROOT, stream=sys.stdout):
 
 
 def command_meetings(args, root=ROOT, stream=sys.stdout):
-    if len(args) != 2 or args[0] not in {"import", "transcribe", "clean", "analyze", "extract", "generate-deliverables"}:
+    if len(args) != 2 or args[0] not in {"import", "transcribe", "clean", "analyze", "extract", "reason", "generate-deliverables"}:
         print("Usage: rhyad meetings import <audio_or_zip>", file=stream)
         print("       rhyad meetings transcribe <audio_file>", file=stream)
         print("       rhyad meetings clean <transcript_file>", file=stream)
         print("       rhyad meetings analyze <transcript_file>", file=stream)
         print("       rhyad meetings extract <transcript_cleaned_file>", file=stream)
+        print("       rhyad meetings reason <transcript_cleaned_file>", file=stream)
         print("       rhyad meetings generate-deliverables <transcript_cleaned_file>", file=stream)
         return 2
 
@@ -561,8 +564,12 @@ def command_meetings(args, root=ROOT, stream=sys.stdout):
             print(f"Document impact log: {extraction.paths.document_impact_log_path}", file=stream)
             return 0
 
-        if args[0] == "generate-deliverables":
-            extraction = manager.generate_deliverables(Path(args[1]))
+        if args[0] in {"reason", "generate-deliverables"}:
+            extraction = (
+                manager.reason_meeting(Path(args[1]))
+                if args[0] == "reason"
+                else manager.generate_deliverables(Path(args[1]))
+            )
             print("RHYAD Meeting Manager", file=stream)
             print(f"Meeting ID: {extraction.meeting_id}", file=stream)
             print(f"Meeting minutes prefill: {extraction.paths.meeting_minutes_prefill_path}", file=stream)
@@ -571,6 +578,9 @@ def command_meetings(args, root=ROOT, stream=sys.stdout):
             print(f"Decision log: {extraction.paths.decision_log_path}", file=stream)
             print(f"Risk register update: {extraction.paths.risk_register_update_path}", file=stream)
             print(f"Document impact log: {extraction.paths.document_impact_log_path}", file=stream)
+            knowledge_graph = getattr(extraction.paths, "meeting_knowledge_graph_path", None)
+            if knowledge_graph:
+                print(f"Meeting knowledge graph: {knowledge_graph}", file=stream)
             return 0
 
         result = manager.process_audio(Path(args[1]))

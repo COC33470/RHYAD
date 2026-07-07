@@ -210,6 +210,7 @@ rhyad meetings transcribe chemin/reunion.m4a
 rhyad meetings clean data/meetings/transcripts/transcript.txt
 rhyad meetings analyze data/meetings/transcripts/transcript.txt
 rhyad meetings extract data/meetings/transcripts/transcript_cleaned.md
+rhyad meetings reason data/meetings/transcripts/transcript_cleaned.md
 rhyad meetings generate-deliverables data/meetings/transcripts/transcript_cleaned.md
 rhyad ui
 rhyad trace suggest
@@ -235,6 +236,7 @@ python3 scripts/rhyad.py meetings transcribe chemin/reunion.m4a
 python3 scripts/rhyad.py meetings clean data/meetings/transcripts/transcript.txt
 python3 scripts/rhyad.py meetings analyze data/meetings/transcripts/transcript.txt
 python3 scripts/rhyad.py meetings extract data/meetings/transcripts/transcript_cleaned.md
+python3 scripts/rhyad.py meetings reason data/meetings/transcripts/transcript_cleaned.md
 python3 scripts/rhyad.py meetings generate-deliverables data/meetings/transcripts/transcript_cleaned.md
 python3 scripts/rhyad.py ui
 python3 scripts/rhyad.py trace suggest
@@ -242,13 +244,15 @@ python3 scripts/rhyad.py trace approve
 python3 scripts/rhyad.py dashboard
 ```
 
-## RHYAD Meeting Manager Alpha 0.3
+## RHYAD Meeting Manager Alpha 0.4
 
 Le module Meeting Manager importe un fichier audio local `.m4a`, `.mp3` ou `.wav`, le normalise avec `ffmpeg`, segmente les fichiers longs, puis lance une transcription française via le backend configuré.
 
 Alpha 0.2 ajoute une étape `post_transcription_cleanup`. Elle ne cherche pas une transcription parfaite mot à mot : elle nettoie les erreurs lexicales les plus fréquentes avec un dictionnaire métier, puis extrait des éléments exploitables pour le programme fonctionnel, les contraintes de site, les utilités, le froid, les modules, les flux, le planning, la réglementation et les risques projet.
 
 Alpha 0.3 ajoute l'extraction structurée pour préremplir les modèles CEVA-RHYAD : compte rendu, dashboard R05, actions, décisions, risques et impacts documentaires.
+
+Alpha 0.4 ajoute un raisonnement métier AMO / ingénierie. La transcription nettoyée et le résumé deviennent des sources d'information : le service reconstruit les sujets projet, reformule les actions et décisions, enrichit les risques avec probabilité, gravité, criticité, responsable et plan d'action, puis produit un dashboard orienté pilotage.
 
 Configuration :
 
@@ -277,6 +281,7 @@ python3 scripts/rhyad.py meetings transcribe /chemin/local/reunion.m4a
 python3 scripts/rhyad.py meetings clean data/meetings/transcripts/transcript.txt
 python3 scripts/rhyad.py meetings analyze data/meetings/transcripts/transcript.txt
 python3 scripts/rhyad.py meetings extract data/meetings/transcripts/transcript_cleaned.md
+python3 scripts/rhyad.py meetings reason data/meetings/transcripts/transcript_cleaned.md
 python3 scripts/rhyad.py meetings generate-deliverables data/meetings/transcripts/transcript_cleaned.md
 ```
 
@@ -288,7 +293,9 @@ La commande `meetings analyze` relance le nettoyage et l'extraction métier depu
 
 La commande `meetings extract` utilise `transcript_cleaned.md`, `meeting_summary_draft.md` et `transcript.json` lorsqu'ils existent. Elle produit un préremplissage de compte rendu CEVA-RHYAD et un dashboard compatible avec le modèle R05, utilisé comme première slide de contenu des présentations projet.
 
-La commande `meetings generate-deliverables` régénère les livrables projet préremplis depuis `transcript_cleaned.md`.
+La commande `meetings reason` utilise `transcript_cleaned.md` et `meeting_summary_draft.md` lorsqu'il existe. Elle produit un modèle métier Alpha 0.4 exploitable pour le compte rendu CEVA-RHYAD, le dashboard, les registres et `meeting_knowledge_graph.json`.
+
+La commande `meetings generate-deliverables` régénère les livrables projet préremplis depuis `transcript_cleaned.md` avec le moteur de raisonnement Alpha 0.4.
 
 Sorties locales :
 
@@ -305,10 +312,11 @@ data/meetings/outputs/<meeting_id>/risk_register_update.md
 data/meetings/outputs/<meeting_id>/document_impact_log.md
 data/meetings/outputs/<meeting_id>/meeting_minutes_prefill.md
 data/meetings/outputs/<meeting_id>/dashboard_prefill.md
+data/meetings/outputs/<meeting_id>/meeting_knowledge_graph.json
 data/meetings/outputs/meeting_manager.log
 ```
 
-`meeting_summary_draft.md` reste la synthèse Alpha 0.1. Les fichiers Alpha 0.2 et Alpha 0.3 sont des brouillons internes RHYAD à qualifier avant tout livrable client. Le backend `openai` est réservé dans la configuration pour une intégration API ultérieure.
+`meeting_summary_draft.md` reste la synthèse Alpha 0.1. Les fichiers Alpha 0.2, Alpha 0.3 et Alpha 0.4 sont des brouillons internes RHYAD à qualifier avant tout livrable client. Le backend `openai` est réservé dans la configuration pour une intégration API ultérieure.
 
 Les scripts historiques restent disponibles. Générer le Programme Fonctionnel :
 
