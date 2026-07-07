@@ -1,4 +1,5 @@
 from concurrent.futures import Future, ThreadPoolExecutor
+from dataclasses import replace
 from datetime import datetime
 import json
 import logging
@@ -9,7 +10,9 @@ import tempfile
 from typing import Optional
 import zipfile
 
-from app.modules.meetings.models import MeetingArtifactPaths, TranscriptionResult
+from app.modules.meetings.extracted_meeting_data import MeetingExtractionResult
+from app.modules.meetings.models import MeetingArtifactPaths, MeetingPostAnalysisResult, TranscriptionResult
+from app.services.meeting_data_extraction_service import MeetingDataExtractionService
 from app.services.meeting_analysis_service import MeetingAnalysisService
 from app.services.transcription_service import (
     SUPPORTED_AUDIO_EXTENSIONS,
@@ -51,6 +54,7 @@ class MeetingManager:
         project_root: Path,
         transcription_service: Optional[TranscriptionService] = None,
         analysis_service: Optional[MeetingAnalysisService] = None,
+        data_extraction_service: Optional[MeetingDataExtractionService] = None,
         executor: Optional[ThreadPoolExecutor] = None,
         logger: Optional[logging.Logger] = None,
     ):
@@ -62,12 +66,11 @@ class MeetingManager:
         )
         self.logger = logger or configure_meeting_logger(self.project_root)
         self.config = TranscriptionConfig.from_project(self.project_root)
-        self.transcription_service = transcription_service or TranscriptionService(
-            config=self.config,
-            audio_preprocessor=FFMpegAudioPreprocessor(self.config, logger=self.logger),
-            logger=self.logger,
+        self.transcription_service = transcription_service
+        self.analysis_service = analysis_service or MeetingAnalysisService(
+            glossary_path=self.project_root / "config" / "meeting_glossary.yaml"
         )
-        self.analysis_service = analysis_service or MeetingAnalysisService()
+        self.data_extraction_service = data_extraction_service or MeetingDataExtractionService()
         self.executor = executor or ThreadPoolExecutor(max_workers=1, thread_name_prefix="rhyad-meeting")
 
     @classmethod
@@ -113,7 +116,8 @@ class MeetingManager:
 
         try:
             self.logger.info("Starting meeting transcription: %s", selected_audio)
-            segments = self.transcription_service.transcribe_audio(stored_audio)
+            transcription_service = self._get_transcription_service()
+            segments = transcription_service.transcribe_audio(stored_audio)
             analysis_draft = self.analysis_service.prepare_draft(segments)
             result = TranscriptionResult(
                 meeting_id=meeting_id,
@@ -123,18 +127,110 @@ class MeetingManager:
                 transcript_json_path=transcript_json_path,
                 summary_draft_path=summary_draft_path,
                 segments=segments,
-                language=self.transcription_service.config.language,
-                backend=self.transcription_service.config.backend,
-                model_name=self.transcription_service.config.model_name,
+                language=transcription_service.config.language,
+                backend=transcription_service.config.backend,
+                model_name=transcription_service.config.model_name,
                 created_at=datetime.now().isoformat(timespec="seconds"),
                 analysis_draft=analysis_draft,
             )
+            self._write_outputs(result)
+            post_analysis = self.analyze_transcript(result.transcript_text_path, meeting_id=meeting_id)
+            result = replace(result, post_analysis=post_analysis)
             self._write_outputs(result)
             self.logger.info("Meeting transcription completed: %s", meeting_id)
             return result
         except Exception:
             self.logger.exception("Meeting transcription failed: %s", selected_audio)
             raise
+
+    def analyze_transcript(self, transcript_path: Path, meeting_id: Optional[str] = None) -> MeetingPostAnalysisResult:
+        self.paths.ensure()
+        source = Path(transcript_path).expanduser().resolve()
+        if not source.exists():
+            raise FileNotFoundError(f"Transcript file not found: {source}")
+        if source.suffix.lower() not in {".txt", ".md"}:
+            raise MeetingManagerError(f"Unsupported transcript format: {source.suffix}. Expected .txt or .md")
+
+        meeting_id = meeting_id or self._meeting_id_from_transcript(source)
+        transcript_cleaned_path = source.parent / "transcript_cleaned.md"
+        output_dir = self.paths.outputs_dir / meeting_id
+
+        try:
+            self.logger.info("Starting meeting transcript analysis: %s", source)
+            result = self.analysis_service.analyze_transcript_file(
+                transcript_path=source,
+                transcript_cleaned_path=transcript_cleaned_path,
+                output_dir=output_dir,
+                meeting_id=meeting_id,
+            )
+            self.logger.info("Meeting transcript analysis completed: %s", meeting_id)
+            return result
+        except Exception:
+            self.logger.exception("Meeting transcript analysis failed: %s", source)
+            raise
+
+    def clean_transcript(self, transcript_path: Path, meeting_id: Optional[str] = None) -> Path:
+        self.paths.ensure()
+        requested_source = Path(transcript_path).expanduser().resolve()
+        source = self._resolve_transcript_source(requested_source, "transcript.txt")
+        if not source.exists():
+            raise FileNotFoundError(f"Transcript file not found: {requested_source}")
+        if source.suffix.lower() not in {".txt", ".md"}:
+            raise MeetingManagerError(f"Unsupported transcript format: {source.suffix}. Expected .txt or .md")
+
+        meeting_id = meeting_id or self._meeting_id_from_transcript(source)
+        transcript_cleaned_path = requested_source.parent / "transcript_cleaned.md"
+
+        try:
+            self.logger.info("Starting meeting transcript cleanup: %s", source)
+            result = self.analysis_service.clean_transcript_file(
+                transcript_path=source,
+                transcript_cleaned_path=transcript_cleaned_path,
+                meeting_id=meeting_id,
+            )
+            self.logger.info("Meeting transcript cleanup completed: %s", result)
+            return result
+        except Exception:
+            self.logger.exception("Meeting transcript cleanup failed: %s", source)
+            raise
+
+    def extract_meeting_data(
+        self,
+        transcript_cleaned_path: Path,
+        meeting_summary_path: Optional[Path] = None,
+        transcript_json_path: Optional[Path] = None,
+        meeting_id: Optional[str] = None,
+    ) -> MeetingExtractionResult:
+        self.paths.ensure()
+        requested_source = Path(transcript_cleaned_path).expanduser().resolve()
+        source = self._resolve_transcript_source(requested_source, "transcript_cleaned.md")
+        if not source.exists():
+            raise FileNotFoundError(f"Cleaned transcript file not found: {requested_source}")
+        if source.suffix.lower() not in {".md", ".txt"}:
+            raise MeetingManagerError(f"Unsupported transcript format: {source.suffix}. Expected .md or .txt")
+
+        meeting_id = meeting_id or self._meeting_id_from_transcript(source)
+        output_dir = self._output_dir_for_transcript(requested_source, meeting_id)
+        summary_path = Path(meeting_summary_path).expanduser().resolve() if meeting_summary_path else self._infer_summary_path(source, meeting_id, output_dir)
+        json_path = Path(transcript_json_path).expanduser().resolve() if transcript_json_path else self._infer_transcript_json_path(source)
+
+        try:
+            self.logger.info("Starting meeting data extraction: %s", source)
+            result = self.data_extraction_service.extract(
+                transcript_cleaned_path=source,
+                output_dir=output_dir,
+                meeting_id=meeting_id,
+                meeting_summary_path=summary_path,
+                transcript_json_path=json_path,
+            )
+            self.logger.info("Meeting data extraction completed: %s", meeting_id)
+            return result
+        except Exception:
+            self.logger.exception("Meeting data extraction failed: %s", source)
+            raise
+
+    def generate_deliverables(self, transcript_cleaned_path: Path) -> MeetingExtractionResult:
+        return self.extract_meeting_data(transcript_cleaned_path)
 
     def start_processing_job(self, audio_path: Path, meeting_id: Optional[str] = None) -> Future:
         return self.executor.submit(self.process_audio, audio_path, meeting_id)
@@ -146,11 +242,78 @@ class MeetingManager:
         timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
         return f"{timestamp}-{_safe_slug(audio_path.stem)}"
 
+    def _meeting_id_from_transcript(self, transcript_path: Path) -> str:
+        transcripts_root = self.paths.transcripts_dir.resolve()
+        try:
+            relative = transcript_path.resolve().relative_to(transcripts_root)
+        except ValueError:
+            return _safe_slug(transcript_path.stem)
+
+        if len(relative.parts) > 1:
+            return _safe_slug(relative.parts[0])
+        return _safe_slug(transcript_path.stem)
+
+    def _output_dir_for_transcript(self, transcript_path: Path, meeting_id: str) -> Path:
+        transcripts_root = self.paths.transcripts_dir.resolve()
+        try:
+            relative = transcript_path.resolve().relative_to(transcripts_root)
+        except ValueError:
+            return self.paths.outputs_dir / meeting_id
+
+        if len(relative.parts) > 1:
+            return self.paths.outputs_dir / meeting_id
+        return self.paths.outputs_dir
+
+    def _infer_summary_path(self, transcript_path: Path, meeting_id: str, output_dir: Path) -> Path:
+        candidates = [
+            output_dir / "meeting_summary_draft.md",
+            self.paths.outputs_dir / meeting_id / "meeting_summary_draft.md",
+            self.paths.outputs_dir / "meeting_summary_draft.md",
+            transcript_path.parent / "meeting_summary_draft.md",
+        ]
+        for candidate in candidates:
+            if candidate.exists():
+                return candidate
+        return candidates[0]
+
+    def _infer_transcript_json_path(self, transcript_path: Path) -> Path:
+        candidate = transcript_path.parent / "transcript.json"
+        if candidate.exists():
+            return candidate
+        return transcript_path.with_suffix(".json")
+
+    def _resolve_transcript_source(self, requested_source: Path, filename: str) -> Path:
+        if requested_source.exists():
+            return requested_source
+        try:
+            relative = requested_source.relative_to(self.paths.transcripts_dir.resolve())
+        except ValueError:
+            return requested_source
+
+        if len(relative.parts) == 1 and relative.name == filename:
+            candidates = sorted(
+                self.paths.transcripts_dir.glob(f"*/{filename}"),
+                key=lambda path: path.stat().st_mtime,
+                reverse=True,
+            )
+            if candidates:
+                return candidates[0].resolve()
+        return requested_source
+
     def _store_audio(self, audio_path: Path, meeting_id: str) -> Path:
         destination = self.paths.audio_dir / f"{meeting_id}{audio_path.suffix.lower()}"
         if audio_path.resolve() != destination.resolve():
             shutil.copy2(audio_path, destination)
         return destination
+
+    def _get_transcription_service(self) -> TranscriptionService:
+        if self.transcription_service is None:
+            self.transcription_service = TranscriptionService(
+                config=self.config,
+                audio_preprocessor=FFMpegAudioPreprocessor(self.config, logger=self.logger),
+                logger=self.logger,
+            )
+        return self.transcription_service
 
     def _copy_audio_to_project(self, audio_path: Path) -> Path:
         destination = self.paths.audio_dir / audio_path.name

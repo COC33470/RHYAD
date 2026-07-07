@@ -1,6 +1,6 @@
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any
+from typing import Any, Optional
 
 
 def format_timestamp(seconds: float) -> str:
@@ -61,6 +61,34 @@ class MeetingAnalysisDraft:
 
 
 @dataclass(frozen=True)
+class MeetingPostAnalysisResult:
+    meeting_id: str
+    source_transcript_path: Path
+    transcript_cleaned_path: Path
+    meeting_minutes_draft_path: Path
+    action_log_path: Path
+    decision_log_path: Path
+    risk_register_update_path: Path
+    document_impact_log_path: Path
+    created_at: str
+    extracted_topics: dict[str, list[str]] = field(default_factory=dict)
+    actions: list[str] = field(default_factory=list)
+    decisions: list[str] = field(default_factory=list)
+    risks: list[str] = field(default_factory=list)
+    document_impacts: list[str] = field(default_factory=list)
+
+    def artifact_paths(self) -> list[Path]:
+        return [
+            self.transcript_cleaned_path,
+            self.meeting_minutes_draft_path,
+            self.action_log_path,
+            self.decision_log_path,
+            self.risk_register_update_path,
+            self.document_impact_log_path,
+        ]
+
+
+@dataclass(frozen=True)
 class TranscriptionResult:
     meeting_id: str
     source_audio_path: Path
@@ -74,6 +102,7 @@ class TranscriptionResult:
     model_name: str
     created_at: str
     analysis_draft: MeetingAnalysisDraft = field(default_factory=MeetingAnalysisDraft)
+    post_analysis: Optional[MeetingPostAnalysisResult] = None
 
     def transcript_text(self) -> str:
         lines = []
@@ -97,4 +126,7 @@ class TranscriptionResult:
             "summary_draft_path": str(self.summary_draft_path),
             "segments": [segment.to_dict() for segment in self.segments],
             "analysis_draft": self.analysis_draft.to_dict(),
+            "post_analysis_paths": [str(path) for path in self.post_analysis.artifact_paths()]
+            if self.post_analysis
+            else [],
         }

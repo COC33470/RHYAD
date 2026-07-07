@@ -245,6 +245,160 @@ class RhyadCliTest(unittest.TestCase):
             self.assertIn("Imported audio:", output)
             self.assertIn("Réunion n01 CEVA.m4a", output)
 
+    def test_meetings_analyze_reports_alpha_02_outputs(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            _write_cli_fixture(root)
+            transcript_path = root / "data" / "meetings" / "transcripts" / "meeting-test" / "transcript.txt"
+            transcript_path.parent.mkdir(parents=True)
+            transcript_path.write_text("[00:00:01 --> 00:00:03] Il faut vérifier les UPS.\n", encoding="utf-8")
+            stream = io.StringIO()
+
+            class FakeMeetingManager:
+                def analyze_transcript(self, path):
+                    self.transcript_path = path
+                    return SimpleNamespace(
+                        meeting_id="meeting-test",
+                        transcript_cleaned_path=transcript_path.parent / "transcript_cleaned.md",
+                        meeting_minutes_draft_path=root / "data" / "meetings" / "outputs" / "meeting-test" / "meeting_minutes_draft.md",
+                        action_log_path=root / "data" / "meetings" / "outputs" / "meeting-test" / "action_log.md",
+                        decision_log_path=root / "data" / "meetings" / "outputs" / "meeting-test" / "decision_log.md",
+                        risk_register_update_path=root
+                        / "data"
+                        / "meetings"
+                        / "outputs"
+                        / "meeting-test"
+                        / "risk_register_update.md",
+                        document_impact_log_path=root
+                        / "data"
+                        / "meetings"
+                        / "outputs"
+                        / "meeting-test"
+                        / "document_impact_log.md",
+                    )
+
+                def shutdown(self):
+                    self.shutdown_called = True
+
+            fake_manager = FakeMeetingManager()
+            with patch("cli.rhyad.MeetingManager.from_project", return_value=fake_manager):
+                exit_code = rhyad.command_meetings(["analyze", str(transcript_path)], root=root, stream=stream)
+
+            self.assertEqual(exit_code, 0)
+            self.assertTrue(fake_manager.shutdown_called)
+            self.assertEqual(fake_manager.transcript_path, transcript_path)
+            output = stream.getvalue()
+            self.assertIn("RHYAD Meeting Manager", output)
+            self.assertIn("Cleaned transcript:", output)
+            self.assertIn("Meeting minutes draft:", output)
+            self.assertIn("Document impact log:", output)
+
+    def test_meetings_clean_reports_cleaned_transcript(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            _write_cli_fixture(root)
+            transcript_path = root / "data" / "meetings" / "transcripts" / "transcript.txt"
+            transcript_path.parent.mkdir(parents=True)
+            transcript_path.write_text("[00:00:01 --> 00:00:03] Il faut vérifier les UPS.\n", encoding="utf-8")
+            stream = io.StringIO()
+
+            class FakeMeetingManager:
+                def clean_transcript(self, path):
+                    self.transcript_path = path
+                    return transcript_path.parent / "transcript_cleaned.md"
+
+                def shutdown(self):
+                    self.shutdown_called = True
+
+            fake_manager = FakeMeetingManager()
+            with patch("cli.rhyad.MeetingManager.from_project", return_value=fake_manager):
+                exit_code = rhyad.command_meetings(["clean", str(transcript_path)], root=root, stream=stream)
+
+            self.assertEqual(exit_code, 0)
+            self.assertTrue(fake_manager.shutdown_called)
+            self.assertEqual(fake_manager.transcript_path, transcript_path)
+            self.assertIn("Cleaned transcript:", stream.getvalue())
+
+    def test_meetings_extract_reports_alpha_03_outputs(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            _write_cli_fixture(root)
+            transcript_path = root / "data" / "meetings" / "transcripts" / "meeting-test" / "transcript_cleaned.md"
+            transcript_path.parent.mkdir(parents=True)
+            transcript_path.write_text("- [00:00:01 --> 00:00:03] Il faut vérifier les UPS.\n", encoding="utf-8")
+            stream = io.StringIO()
+
+            class FakeMeetingManager:
+                def extract_meeting_data(self, path):
+                    self.transcript_path = path
+                    output_dir = root / "data" / "meetings" / "outputs" / "meeting-test"
+                    return SimpleNamespace(
+                        meeting_id="meeting-test",
+                        paths=SimpleNamespace(
+                            meeting_minutes_prefill_path=output_dir / "meeting_minutes_prefill.md",
+                            dashboard_prefill_path=output_dir / "dashboard_prefill.md",
+                            action_log_path=output_dir / "action_log.md",
+                            decision_log_path=output_dir / "decision_log.md",
+                            risk_register_update_path=output_dir / "risk_register_update.md",
+                            document_impact_log_path=output_dir / "document_impact_log.md",
+                        ),
+                    )
+
+                def shutdown(self):
+                    self.shutdown_called = True
+
+            fake_manager = FakeMeetingManager()
+            with patch("cli.rhyad.MeetingManager.from_project", return_value=fake_manager):
+                exit_code = rhyad.command_meetings(["extract", str(transcript_path)], root=root, stream=stream)
+
+            self.assertEqual(exit_code, 0)
+            self.assertTrue(fake_manager.shutdown_called)
+            self.assertEqual(fake_manager.transcript_path, transcript_path)
+            output = stream.getvalue()
+            self.assertIn("Meeting minutes prefill:", output)
+            self.assertIn("Dashboard prefill:", output)
+            self.assertIn("Risk register update:", output)
+
+    def test_meetings_generate_deliverables_reports_alpha_03_outputs(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            _write_cli_fixture(root)
+            transcript_path = root / "data" / "meetings" / "transcripts" / "transcript_cleaned.md"
+            transcript_path.parent.mkdir(parents=True)
+            transcript_path.write_text("- [00:00:01 --> 00:00:03] Il faut vérifier les UPS.\n", encoding="utf-8")
+            stream = io.StringIO()
+
+            class FakeMeetingManager:
+                def generate_deliverables(self, path):
+                    self.transcript_path = path
+                    output_dir = root / "data" / "meetings" / "outputs"
+                    return SimpleNamespace(
+                        meeting_id="transcript_cleaned",
+                        paths=SimpleNamespace(
+                            meeting_minutes_prefill_path=output_dir / "meeting_minutes_prefill.md",
+                            dashboard_prefill_path=output_dir / "dashboard_prefill.md",
+                            action_log_path=output_dir / "action_log.md",
+                            decision_log_path=output_dir / "decision_log.md",
+                            risk_register_update_path=output_dir / "risk_register_update.md",
+                            document_impact_log_path=output_dir / "document_impact_log.md",
+                        ),
+                    )
+
+                def shutdown(self):
+                    self.shutdown_called = True
+
+            fake_manager = FakeMeetingManager()
+            with patch("cli.rhyad.MeetingManager.from_project", return_value=fake_manager):
+                exit_code = rhyad.command_meetings(["generate-deliverables", str(transcript_path)], root=root, stream=stream)
+
+            self.assertEqual(exit_code, 0)
+            self.assertTrue(fake_manager.shutdown_called)
+            self.assertEqual(fake_manager.transcript_path, transcript_path)
+            output = stream.getvalue()
+            self.assertIn("Meeting minutes prefill:", output)
+            self.assertIn("Dashboard prefill:", output)
+            self.assertIn("Document impact log:", output)
+
     def test_paste_rejects_unknown_document(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

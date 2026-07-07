@@ -1,0 +1,283 @@
+corrections:
+  estricité: électricité
+  écronique: électronique
+  rabise au lit: Arabie Saoudite
+  l'armi solid: Arabie Saoudite
+  rabit sa audite: Arabie Saoudite
+  sa audite: Saoudite
+  master-sins: master seeds
+  master-sin: master seed
+  souchets: souches
+  congestures: congélateurs
+  programme fonctionnale: programme fonctionnel
+  programmes fonctionnales: programmes fonctionnels
+  appel d'offre: appel d'offres
+  appel d offres: appel d'offres
+  autobax: autovaccin
+  autoraxin: autovaccin
+
+terms:
+  - canonical: CEVA
+    aliases:
+      - ceva
+      - céva
+      - séva
+  - canonical: RHYAD
+    aliases:
+      - rhyad
+      - riad
+      - riyad
+  - canonical: Arabie Saoudite
+    aliases:
+      - arabie saoudite
+      - ksa
+  - canonical: autovaccin
+    aliases:
+      - autovaccin
+      - autovaccins
+      - vaccin autogène
+      - vaccin autogene
+  - canonical: vétérinaire
+    aliases:
+      - vétérinaire
+      - veterinaire
+      - vétérinaires
+      - vétérinaire prescripteur
+  - canonical: UPS
+    aliases:
+      - ups
+      - onduleur
+      - onduleurs
+  - canonical: microcoupures
+    aliases:
+      - micro coupures
+      - micro-coupures
+      - microcoupure
+  - canonical: URS
+    aliases:
+      - urs
+      - user requirement specification
+  - canonical: BSL2
+    aliases:
+      - bsl2
+      - bsl 2
+      - biosafety level 2
+  - canonical: master seeds
+    aliases:
+      - master seed
+      - master-seeds
+  - canonical: souches
+    aliases:
+      - souche
+      - souches
+  - canonical: sas
+    aliases:
+      - airlock
+      - pal
+      - mal
+  - canonical: appel d'offres
+    aliases:
+      - tender
+      - rfq
+  - canonical: module
+    aliases:
+      - module
+      - modules
+      - modulaire
+      - modulaires
+  - canonical: couloir
+    aliases:
+      - couloir
+      - couloirs
+  - canonical: stockage
+    aliases:
+      - stockage
+      - stockages
+      - magasin
+  - canonical: congélateurs
+    aliases:
+      - congélateur
+      - congelateur
+      - congelateurs
+  - canonical: déchets
+    aliases:
+      - déchets
+      - dechets
+      - effluents
+  - canonical: flux matières
+    aliases:
+      - flux matières
+      - flux matieres
+      - flux matériel
+      - flux materiel
+  - canonical: flux personnel
+    aliases:
+      - flux personnel
+      - flux personnes
+      - flux des personnes
+  - canonical: réglementation
+    aliases:
+      - réglementation
+      - reglementation
+      - réglementaire
+      - reglementaire
+  - canonical: autorités
+    aliases:
+      - autorites
+      - sfda
+  - canonical: terrain
+    aliases:
+      - terrain
+      - terrains
+  - canonical: dashboard
+    aliases:
+      - dashboard
+      - tableau de bord
+      - r05
+  - canonical: compte rendu
+    aliases:
+      - compte rendu
+      - compte-rendu
+  - canonical: registre des décisions
+    aliases:
+      - registre des décisions
+      - registre des decisions
+      - decision log
+  - canonical: registre des actions
+    aliases:
+      - registre des actions
+      - action log
+  - canonical: registre des risques
+    aliases:
+      - registre des risques
+      - risk register
+
+extraction_topics:
+  programme_fonctionnel:
+    title: Programme fonctionnel
+    keywords:
+      - programme fonctionnel
+      - fonction
+      - sous-fonction
+      - réception
+      - expédition
+      - stockage
+      - contrôle qualité
+      - maintenance
+      - déchets
+      - effluents
+    documents:
+      - CEVA-RHYAD-002-PF
+      - CEVA-RHYAD-100-F01..F15
+      - CEVA-RHYAD-200-F01..F15-DT01
+  site_arabie_saoudite:
+    title: Contraintes site Arabie Saoudite
+    keywords:
+      - Arabie Saoudite
+      - KSA
+      - site
+      - climatique
+      - terrain
+      - local
+    documents:
+      - CEVA-RHYAD-002-PF
+      - DB002 Architecture
+      - DB003 Bâtiment
+  electricite_ups_microcoupures:
+    title: Alimentation électrique / UPS / microcoupures
+    keywords:
+      - électricité
+      - UPS
+      - onduleur
+      - microcoupures
+      - coupure
+      - surtension
+      - alimentation
+    documents:
+      - CEVA-RHYAD-200-F09-DT01
+      - DB004 Utilités
+      - DB010 Sécurité
+  froid_souches_master_seeds:
+    title: Froid / congélateurs / souches / master seeds
+    keywords:
+      - froid
+      - chambre froide
+      - congélateurs
+      - souches
+      - master seeds
+      - collection
+    documents:
+      - CEVA-RHYAD-100-F02
+      - CEVA-RHYAD-200-F02-DT01
+      - DB006 Production
+      - DB007 Qualité
+  modules_couloirs_sas_bsl2:
+    title: Modules / couloirs / sas / BSL2
+    keywords:
+      - module
+      - modulaire
+      - couloir
+      - sas
+      - BSL2
+      - airlock
+      - PAL
+      - MAL
+    documents:
+      - CEVA-RHYAD-002-PF
+      - DB001 Process
+      - DB002 Architecture
+      - DB008 Biosécurité
+  flux_matieres_dechets_personnel:
+    title: Flux matières / déchets / personnel
+    keywords:
+      - flux
+      - matière
+      - matériel
+      - personnel
+      - déchets
+      - effluents
+      - accès
+    documents:
+      - CEVA-RHYAD-100-F06
+      - CEVA-RHYAD-100-F11
+      - CEVA-RHYAD-200-F06-DT01
+  terrain_calendrier_appel_offres:
+    title: Terrain / calendrier / septembre / appel d'offres
+    keywords:
+      - terrain
+      - calendrier
+      - septembre
+      - appel d'offres
+      - tender
+      - planning
+      - délai
+    documents:
+      - CEVA-RHYAD-400-R05
+      - CEVA-RHYAD-004-REGISTRE_DES_RISQUES
+  reglementation_autorites_urs:
+    title: Réglementation / autorités / URS
+    keywords:
+      - réglementation
+      - autorités
+      - SFDA
+      - URS
+      - GMP
+      - BPF
+      - qualité
+    documents:
+      - CEVA-RHYAD-002-PF
+      - DB007 Qualité
+      - DB010 Sécurité
+  risques_projet:
+    title: Risques projet
+    keywords:
+      - risque
+      - risques
+      - blocage
+      - bloquant
+      - retard
+      - sécuriser
+      - problème
+    documents:
+      - CEVA-RHYAD-004-REGISTRE_DES_RISQUES
+      - CEVA-RHYAD-400-R05

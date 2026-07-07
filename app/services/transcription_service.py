@@ -7,7 +7,10 @@ import subprocess
 import tempfile
 from typing import Callable, Optional, Protocol, Sequence
 
-import yaml
+try:
+    import yaml
+except ImportError:
+    yaml = None
 
 from app.modules.meetings.models import TranscriptSegment
 
@@ -42,7 +45,7 @@ class TranscriptionConfig:
     @classmethod
     def from_project(cls, project_root: Path) -> "TranscriptionConfig":
         config_path = project_root / "config" / "meeting_manager.yaml"
-        if not config_path.exists():
+        if not config_path.exists() or yaml is None:
             return cls()
 
         raw = yaml.safe_load(config_path.read_text(encoding="utf-8")) or {}

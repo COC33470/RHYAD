@@ -21,7 +21,10 @@ class FakeTranscriber:
                 index=1,
                 start=0.0,
                 end=2.0,
-                text="Décision validée pour CEVA-RHYAD-002-PF avant le 12/07.",
+                text=(
+                    "Décision validée pour CEVA-RHYAD-002-PF avant le 12/07. "
+                    "Il faut identifier les UPS pour les micro coupures en Arabie Saoudite."
+                ),
             )
         ]
 
@@ -65,6 +68,13 @@ class MeetingManagerTest(unittest.TestCase):
             self.assertTrue(result.transcript_text_path.exists())
             self.assertTrue(result.transcript_json_path.exists())
             self.assertTrue(result.summary_draft_path.exists())
+            self.assertIsNotNone(result.post_analysis)
+            self.assertTrue(result.post_analysis.transcript_cleaned_path.exists())
+            self.assertTrue(result.post_analysis.meeting_minutes_draft_path.exists())
+            self.assertTrue(result.post_analysis.action_log_path.exists())
+            self.assertTrue(result.post_analysis.decision_log_path.exists())
+            self.assertTrue(result.post_analysis.risk_register_update_path.exists())
+            self.assertTrue(result.post_analysis.document_impact_log_path.exists())
 
             transcript_text = result.transcript_text_path.read_text(encoding="utf-8")
             self.assertIn("[00:00:00 --> 00:00:02]", transcript_text)
@@ -75,11 +85,173 @@ class MeetingManagerTest(unittest.TestCase):
             self.assertEqual(transcript_json["backend"], "fake")
             self.assertEqual(transcript_json["segments"][0]["text"], result.segments[0].text)
             self.assertEqual(transcript_json["analysis_draft"]["documents"], ["CEVA-RHYAD-002-PF"])
+            self.assertIn("meeting_minutes_draft.md", transcript_json["post_analysis_paths"][1])
 
             summary = result.summary_draft_path.read_text(encoding="utf-8")
             self.assertIn("## Extraction IA à préparer", summary)
             self.assertIn("### Décisions candidates", summary)
             self.assertIn("CEVA-RHYAD-002-PF", summary)
+
+            cleaned = result.post_analysis.transcript_cleaned_path.read_text(encoding="utf-8")
+            self.assertIn("microcoupures", cleaned)
+            self.assertIn("UPS", cleaned)
+
+            minutes = result.post_analysis.meeting_minutes_draft_path.read_text(encoding="utf-8")
+            self.assertIn("Alimentation électrique / UPS / microcoupures", minutes)
+            self.assertIn("Contraintes site Arabie Saoudite", minutes)
+
+    def test_analyze_transcript_creates_alpha_02_outputs(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            transcript_dir = root / "data" / "meetings" / "transcripts" / "meeting-existing"
+            transcript_dir.mkdir(parents=True)
+            transcript_path = transcript_dir / "transcript.txt"
+            transcript_path.write_text(
+                "\n".join(
+                    [
+                        "[00:00:01 --> 00:00:05] programme fonctionnale et contraintes de site en rabise au lit.",
+                        "[00:00:05 --> 00:00:09] Il faut regarder les UPS pour les micro coupures.",
+                        "[00:00:09 --> 00:00:13] Point risque sur les souches et les master-sins en congélateurs.",
+                    ]
+                )
+                + "\n",
+                encoding="utf-8",
+            )
+
+            manager = MeetingManager(project_root=root, transcription_service=None)
+            result = manager.analyze_transcript(transcript_path)
+            manager.shutdown()
+
+            self.assertEqual(result.meeting_id, "meeting-existing")
+            for path in result.artifact_paths():
+                self.assertTrue(path.exists(), path)
+
+            cleaned = result.transcript_cleaned_path.read_text(encoding="utf-8")
+            self.assertIn("programme fonctionnel", cleaned)
+            self.assertIn("Arabie Saoudite", cleaned)
+            self.assertIn("master seeds", cleaned)
+
+            risk_log = result.risk_register_update_path.read_text(encoding="utf-8")
+            self.assertIn("souches", risk_log)
+            self.assertIn("master seeds", risk_log)
+
+    def test_extract_meeting_data_creates_alpha_03_prefill_outputs(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            transcript_dir = root / "data" / "meetings" / "transcripts" / "20260707-meeting-existing"
+            output_dir = root / "data" / "meetings" / "outputs" / "20260707-meeting-existing"
+            transcript_dir.mkdir(parents=True)
+            output_dir.mkdir(parents=True)
+            transcript_path = transcript_dir / "transcript_cleaned.md"
+            transcript_path.write_text(
+                "\n".join(
+                    [
+                        "# Transcription nettoyée",
+                        "- [00:00:01 --> 00:00:05] Le programme fonctionnel doit intégrer les contraintes du site en Arabie Saoudite.",
+                        "- [00:00:05 --> 00:00:09] Il faut identifier les UPS pour les microcoupures.",
+                        "- [00:00:09 --> 00:00:13] Point risque sur les souches et les master seeds en congélateurs.",
+                        "- [00:00:13 --> 00:00:17] Le terrain est attendu en septembre pour préparer l'appel d'offres.",
+                    ]
+                )
+                + "\n",
+                encoding="utf-8",
+            )
+            (output_dir / "meeting_summary_draft.md").write_text("# Summary\n", encoding="utf-8")
+            (transcript_dir / "transcript.json").write_text('{"created_at": "2026-07-07T10:00:00"}\n', encoding="utf-8")
+
+            manager = MeetingManager(project_root=root, transcription_service=None)
+            result = manager.extract_meeting_data(transcript_path)
+            manager.shutdown()
+
+            self.assertEqual(result.meeting_id, "20260707-meeting-existing")
+            for path in result.artifact_paths():
+                self.assertTrue(path.exists(), path)
+
+            minutes = result.paths.meeting_minutes_prefill_path.read_text(encoding="utf-8")
+            self.assertIn("Compte rendu CEVA-RHYAD prérempli", minutes)
+            self.assertIn("Informations réunion", minutes)
+            self.assertIn("Exigences techniques candidates", minutes)
+
+            dashboard = result.paths.dashboard_prefill_path.read_text(encoding="utf-8")
+            self.assertIn("Dashboard projet prérempli - CEVA-RHYAD-400-R05", dashboard)
+            self.assertIn("## 1. État du projet", dashboard)
+            self.assertIn("## 6. Prochaines étapes", dashboard)
+
+            self.assertTrue(result.data.actions)
+            self.assertTrue(result.data.risks)
+            self.assertTrue(result.data.document_impacts)
+            self.assertTrue(result.data.technical_requirements)
+
+    def test_clean_transcript_creates_themed_cleaned_transcript(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            transcript_dir = root / "data" / "meetings" / "transcripts"
+            transcript_dir.mkdir(parents=True)
+            transcript_path = transcript_dir / "transcript.txt"
+            transcript_path.write_text(
+                "\n".join(
+                    [
+                        "[00:00:01 --> 00:00:05] programme fonctionnale et contraintes en rabise au lit.",
+                        "[00:00:05 --> 00:00:09] Il faut regarder les UPS pour les micro coupures.",
+                        "[00:00:09 --> 00:00:13] phrase bruitée avec un situite.",
+                    ]
+                )
+                + "\n",
+                encoding="utf-8",
+            )
+
+            manager = MeetingManager(project_root=root, transcription_service=None)
+            cleaned_path = manager.clean_transcript(transcript_path)
+            manager.shutdown()
+
+            self.assertEqual(cleaned_path.resolve(), (transcript_dir / "transcript_cleaned.md").resolve())
+            cleaned = cleaned_path.read_text(encoding="utf-8")
+            self.assertIn("## Vue par thèmes", cleaned)
+            self.assertIn("## Transcription nettoyée horodatée", cleaned)
+            self.assertIn("programme fonctionnel", cleaned)
+            self.assertIn("Arabie Saoudite", cleaned)
+            self.assertIn("microcoupures", cleaned)
+            self.assertIn("[à vérifier]", cleaned)
+
+    def test_generate_deliverables_writes_root_outputs_for_root_transcript(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            transcript_dir = root / "data" / "meetings" / "transcripts"
+            transcript_dir.mkdir(parents=True)
+            transcript_path = transcript_dir / "transcript_cleaned.md"
+            transcript_path.write_text(
+                "\n".join(
+                    [
+                        "# Transcription nettoyée",
+                        "## Transcription nettoyée horodatée",
+                        "- [00:00:01 --> 00:00:05] Le programme fonctionnel doit intégrer les contraintes du site en Arabie Saoudite.",
+                        "- [00:00:05 --> 00:00:09] Il faut identifier les UPS pour les microcoupures.",
+                        "- [00:00:09 --> 00:00:13] Point risque sur les souches et les master seeds en congélateurs.",
+                    ]
+                )
+                + "\n",
+                encoding="utf-8",
+            )
+
+            manager = MeetingManager(project_root=root, transcription_service=None)
+            result = manager.generate_deliverables(transcript_path)
+            manager.shutdown()
+
+            self.assertEqual(result.output_dir, root / "data" / "meetings" / "outputs")
+            minutes = result.paths.meeting_minutes_prefill_path.read_text(encoding="utf-8")
+            dashboard = result.paths.dashboard_prefill_path.read_text(encoding="utf-8")
+            actions = result.paths.action_log_path.read_text(encoding="utf-8")
+            decisions = result.paths.decision_log_path.read_text(encoding="utf-8")
+            risks = result.paths.risk_register_update_path.read_text(encoding="utf-8")
+            impacts = result.paths.document_impact_log_path.read_text(encoding="utf-8")
+
+            self.assertIn("## 3. Sujets traités", minutes)
+            self.assertIn("## 10. Prochaine étape", minutes)
+            self.assertIn("## 7. Alertes", dashboard)
+            self.assertIn("| ID | Action | Responsable | Échéance | Priorité | Statut | Source |", actions)
+            self.assertIn("| ID | Décision | Contexte | Valideur | Date | Impact documentaire |", decisions)
+            self.assertIn("| ID | Risque | Cause | Impact | Mesure proposée | Criticité | Statut |", risks)
+            self.assertIn("| ID | Document concerné | Modification à faire | Source | Priorité | Statut |", impacts)
 
     def test_import_zip_detects_m4a_and_copies_to_audio_dir(self):
         with tempfile.TemporaryDirectory() as tmp:

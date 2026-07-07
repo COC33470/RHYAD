@@ -6,13 +6,15 @@ from datetime import datetime
 from pathlib import Path
 
 from app.modules.meetings.meeting_manager import MeetingManager
-from engine.core.figures import check_figures, load_figures_registry, resolve_figure_path
-from engine.core.impact_engine import get_impacts
-from engine.core.traceability_suggester import suggest_traceability
-from engine.utils.pdf import find_libreoffice_executable
 
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def find_libreoffice_executable():
+    from engine.utils.pdf import find_libreoffice_executable as _find_libreoffice_executable
+
+    return _find_libreoffice_executable()
 
 
 @dataclass
@@ -36,6 +38,10 @@ Usage:
   rhyad figures check
   rhyad meetings import <audio_or_zip>
   rhyad meetings transcribe <audio_file>
+  rhyad meetings clean <transcript_file>
+  rhyad meetings analyze <transcript_file>
+  rhyad meetings extract <transcript_cleaned_file>
+  rhyad meetings generate-deliverables <transcript_cleaned_file>
   rhyad ui
   rhyad trace suggest
   rhyad trace approve
@@ -55,6 +61,10 @@ Compatibility:
   python3 scripts/rhyad.py figures check
   python3 scripts/rhyad.py meetings import reunion.zip
   python3 scripts/rhyad.py meetings transcribe data/meetings/audio/reunion.m4a
+  python3 scripts/rhyad.py meetings clean data/meetings/transcripts/transcript.txt
+  python3 scripts/rhyad.py meetings analyze data/meetings/transcripts/transcript.txt
+  python3 scripts/rhyad.py meetings extract data/meetings/transcripts/transcript_cleaned.md
+  python3 scripts/rhyad.py meetings generate-deliverables data/meetings/transcripts/transcript_cleaned.md
   python3 scripts/rhyad.py ui
   python3 scripts/rhyad.py trace suggest
   python3 scripts/rhyad.py trace approve
@@ -450,6 +460,8 @@ def command_list(root=ROOT, stream=sys.stdout):
 
 
 def command_impact(obj, root=ROOT, stream=sys.stdout):
+    from engine.core.impact_engine import get_impacts
+
     result = get_impacts(obj, root / "knowledge", root / "config" / "document_registry.yaml")
 
     print(f"Objet analysé: {result['source']}", file=stream)
@@ -465,6 +477,8 @@ def command_impact(obj, root=ROOT, stream=sys.stdout):
 
 
 def command_figures(args, root=ROOT, stream=sys.stdout):
+    from engine.core.figures import check_figures, load_figures_registry, resolve_figure_path
+
     if not args or args[0] not in {"list", "check"}:
         print("Usage: rhyad figures list|check", file=stream)
         return 2
@@ -499,9 +513,13 @@ def command_figures(args, root=ROOT, stream=sys.stdout):
 
 
 def command_meetings(args, root=ROOT, stream=sys.stdout):
-    if len(args) != 2 or args[0] not in {"import", "transcribe"}:
+    if len(args) != 2 or args[0] not in {"import", "transcribe", "clean", "analyze", "extract", "generate-deliverables"}:
         print("Usage: rhyad meetings import <audio_or_zip>", file=stream)
         print("       rhyad meetings transcribe <audio_file>", file=stream)
+        print("       rhyad meetings clean <transcript_file>", file=stream)
+        print("       rhyad meetings analyze <transcript_file>", file=stream)
+        print("       rhyad meetings extract <transcript_cleaned_file>", file=stream)
+        print("       rhyad meetings generate-deliverables <transcript_cleaned_file>", file=stream)
         return 2
 
     manager = None
@@ -511,6 +529,48 @@ def command_meetings(args, root=ROOT, stream=sys.stdout):
             imported_path = manager.import_audio_source(Path(args[1]))
             print("RHYAD Meeting Manager", file=stream)
             print(f"Imported audio: {imported_path}", file=stream)
+            return 0
+
+        if args[0] == "analyze":
+            analysis = manager.analyze_transcript(Path(args[1]))
+            print("RHYAD Meeting Manager", file=stream)
+            print(f"Meeting ID: {analysis.meeting_id}", file=stream)
+            print(f"Cleaned transcript: {analysis.transcript_cleaned_path}", file=stream)
+            print(f"Meeting minutes draft: {analysis.meeting_minutes_draft_path}", file=stream)
+            print(f"Action log: {analysis.action_log_path}", file=stream)
+            print(f"Decision log: {analysis.decision_log_path}", file=stream)
+            print(f"Risk register update: {analysis.risk_register_update_path}", file=stream)
+            print(f"Document impact log: {analysis.document_impact_log_path}", file=stream)
+            return 0
+
+        if args[0] == "clean":
+            cleaned_path = manager.clean_transcript(Path(args[1]))
+            print("RHYAD Meeting Manager", file=stream)
+            print(f"Cleaned transcript: {cleaned_path}", file=stream)
+            return 0
+
+        if args[0] == "extract":
+            extraction = manager.extract_meeting_data(Path(args[1]))
+            print("RHYAD Meeting Manager", file=stream)
+            print(f"Meeting ID: {extraction.meeting_id}", file=stream)
+            print(f"Meeting minutes prefill: {extraction.paths.meeting_minutes_prefill_path}", file=stream)
+            print(f"Dashboard prefill: {extraction.paths.dashboard_prefill_path}", file=stream)
+            print(f"Action log: {extraction.paths.action_log_path}", file=stream)
+            print(f"Decision log: {extraction.paths.decision_log_path}", file=stream)
+            print(f"Risk register update: {extraction.paths.risk_register_update_path}", file=stream)
+            print(f"Document impact log: {extraction.paths.document_impact_log_path}", file=stream)
+            return 0
+
+        if args[0] == "generate-deliverables":
+            extraction = manager.generate_deliverables(Path(args[1]))
+            print("RHYAD Meeting Manager", file=stream)
+            print(f"Meeting ID: {extraction.meeting_id}", file=stream)
+            print(f"Meeting minutes prefill: {extraction.paths.meeting_minutes_prefill_path}", file=stream)
+            print(f"Dashboard prefill: {extraction.paths.dashboard_prefill_path}", file=stream)
+            print(f"Action log: {extraction.paths.action_log_path}", file=stream)
+            print(f"Decision log: {extraction.paths.decision_log_path}", file=stream)
+            print(f"Risk register update: {extraction.paths.risk_register_update_path}", file=stream)
+            print(f"Document impact log: {extraction.paths.document_impact_log_path}", file=stream)
             return 0
 
         result = manager.process_audio(Path(args[1]))
@@ -527,6 +587,14 @@ def command_meetings(args, root=ROOT, stream=sys.stdout):
     print(f"Transcript TXT: {result.transcript_text_path}", file=stream)
     print(f"Transcript JSON: {result.transcript_json_path}", file=stream)
     print(f"Summary draft: {result.summary_draft_path}", file=stream)
+    post_analysis = getattr(result, "post_analysis", None)
+    if post_analysis:
+        print(f"Cleaned transcript: {post_analysis.transcript_cleaned_path}", file=stream)
+        print(f"Meeting minutes draft: {post_analysis.meeting_minutes_draft_path}", file=stream)
+        print(f"Action log: {post_analysis.action_log_path}", file=stream)
+        print(f"Decision log: {post_analysis.decision_log_path}", file=stream)
+        print(f"Risk register update: {post_analysis.risk_register_update_path}", file=stream)
+        print(f"Document impact log: {post_analysis.document_impact_log_path}", file=stream)
     print(f"Segments: {len(result.segments)}", file=stream)
     return 0
 
@@ -1011,6 +1079,8 @@ def command_ui(root=ROOT, runner=run_command, stream=sys.stdout, input_func=inpu
 
 
 def command_trace(args, root=ROOT, stream=sys.stdout):
+    from engine.core.traceability_suggester import suggest_traceability
+
     if not args:
         print("Usage: rhyad trace suggest|approve", file=stream)
         return 2
