@@ -146,7 +146,7 @@ output/pdf/100/CEVA-RHYAD-100-F01_Rev0.1.pdf
 ## Prérequis
 
 - Python 3.10 ou supérieur
-- LibreOffice installé et disponible via `soffice` ou `libreoffice` dans le `PATH`
+- LibreOffice installé via `soffice` ou `libreoffice` dans le `PATH`, ou via `/Applications/LibreOffice.app` sur macOS
 
 Installation :
 

@@ -1,5 +1,4 @@
 import re
-import shutil
 import subprocess
 import sys
 from dataclasses import dataclass
@@ -9,6 +8,7 @@ from pathlib import Path
 from engine.core.figures import check_figures, load_figures_registry, resolve_figure_path
 from engine.core.impact_engine import get_impacts
 from engine.core.traceability_suggester import suggest_traceability
+from engine.utils.pdf import find_libreoffice_executable
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -1041,7 +1041,7 @@ def _check_path(label, path):
 def command_doctor(root=ROOT, runner=run_command, stream=sys.stdout):
     checks = []
     checks.append(("Python", bool(sys.executable), sys.executable))
-    libreoffice = shutil.which("soffice") or shutil.which("libreoffice")
+    libreoffice = find_libreoffice_executable()
     checks.append(("LibreOffice / soffice", bool(libreoffice), libreoffice or "not found"))
     checks.append(_check_path("config/project.yaml", root / "config" / "project.yaml"))
     checks.append(_check_path("config/document_registry.yaml", root / "config" / "document_registry.yaml"))

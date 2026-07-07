@@ -2,6 +2,7 @@ import io
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 from cli import rhyad
 
@@ -315,7 +316,8 @@ class RhyadCliTest(unittest.TestCase):
                 self.assertEqual(command, ["python3", "-m", "unittest", "discover"])
                 return rhyad.CommandResult(0, "OK")
 
-            exit_code = rhyad.command_doctor(root=root, runner=fake_runner, stream=stream)
+            with patch("cli.rhyad.find_libreoffice_executable", return_value="/usr/bin/soffice"):
+                exit_code = rhyad.command_doctor(root=root, runner=fake_runner, stream=stream)
 
             self.assertEqual(exit_code, 0)
             output = stream.getvalue()
