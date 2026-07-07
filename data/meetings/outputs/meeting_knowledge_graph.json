@@ -1,0 +1,921 @@
+{
+  "meeting": {
+    "project": "CEVA Riyadh Campus Project",
+    "meeting_date": "À confirmer",
+    "subject": "Réunion de cadrage terrain, programme, modules et appel d'offres",
+    "participants": [
+      "Thomas",
+      "Bertrand",
+      "Jean",
+      "Vincent",
+      "Tiffany",
+      "Christophe"
+    ],
+    "purpose": "Transformer la transcription en données projet exploitables RHYAD.",
+    "confidence": "medium",
+    "validation_note": ""
+  },
+  "topics": [
+    {
+      "id": "programme_fonctionnel",
+      "subject": "Structuration du programme fonctionnel RHYAD",
+      "decisions": [
+        "D-001"
+      ],
+      "actions": [
+        "A-001",
+        "A-002"
+      ],
+      "risks": [
+        "R-001"
+      ],
+      "documents": [
+        "CEVA-RHYAD-002-PF",
+        "CEVA-RHYAD-100-F01..F15",
+        "CEVA-RHYAD-200-F01..F15-DT01"
+      ],
+      "requirements": [
+        "REQ-001"
+      ],
+      "persons": [],
+      "confidence": "high"
+    },
+    {
+      "id": "site_ksa",
+      "subject": "Contraintes du site en Arabie Saoudite",
+      "decisions": [
+        "D-002"
+      ],
+      "actions": [
+        "A-003",
+        "A-004"
+      ],
+      "risks": [
+        "R-002"
+      ],
+      "documents": [
+        "CEVA-RHYAD-002-PF",
+        "DB002 Architecture",
+        "DB003 Bâtiment"
+      ],
+      "requirements": [
+        "REQ-002"
+      ],
+      "persons": [],
+      "confidence": "high"
+    },
+    {
+      "id": "electricite_ups",
+      "subject": "Continuité électrique et protection UPS",
+      "decisions": [
+        "D-003"
+      ],
+      "actions": [
+        "A-005",
+        "A-006",
+        "A-007"
+      ],
+      "risks": [
+        "R-003"
+      ],
+      "documents": [
+        "CEVA-RHYAD-200-F09-DT01",
+        "DB004 Utilités",
+        "DB010 Sécurité",
+        "CEVA-RHYAD-400-R05"
+      ],
+      "requirements": [
+        "REQ-003"
+      ],
+      "persons": [],
+      "confidence": "high"
+    },
+    {
+      "id": "froid_souches",
+      "subject": "Conservation des souches et master seeds",
+      "decisions": [
+        "D-004"
+      ],
+      "actions": [
+        "A-008",
+        "A-009"
+      ],
+      "risks": [
+        "R-004"
+      ],
+      "documents": [
+        "CEVA-RHYAD-100-F02",
+        "CEVA-RHYAD-200-F02-DT01",
+        "DB006 Production",
+        "DB007 Qualité"
+      ],
+      "requirements": [
+        "REQ-004"
+      ],
+      "persons": [],
+      "confidence": "high"
+    },
+    {
+      "id": "modules_flux_bsl2",
+      "subject": "Architecture modulaire, sas et flux BSL2",
+      "decisions": [
+        "D-005"
+      ],
+      "actions": [
+        "A-010",
+        "A-011"
+      ],
+      "risks": [
+        "R-005"
+      ],
+      "documents": [
+        "CEVA-RHYAD-002-PF",
+        "CEVA-RHYAD-100-F06",
+        "CEVA-RHYAD-100-F11",
+        "DB001 Process",
+        "DB002 Architecture",
+        "DB008 Biosécurité"
+      ],
+      "requirements": [
+        "REQ-005"
+      ],
+      "persons": [],
+      "confidence": "high"
+    },
+    {
+      "id": "terrain_planning_tender",
+      "subject": "Terrain, planning et appel d'offres",
+      "decisions": [
+        "D-006"
+      ],
+      "actions": [
+        "A-012",
+        "A-013"
+      ],
+      "risks": [
+        "R-006"
+      ],
+      "documents": [
+        "CEVA-RHYAD-400-R05",
+        "CEVA-RHYAD-004-REGISTRE_DES_RISQUES",
+        "DB003 Bâtiment"
+      ],
+      "requirements": [
+        "REQ-006"
+      ],
+      "persons": [],
+      "confidence": "high"
+    },
+    {
+      "id": "reglementation_urs",
+      "subject": "Réglementation, autorités et URS",
+      "decisions": [
+        "D-007"
+      ],
+      "actions": [
+        "A-014",
+        "A-015"
+      ],
+      "risks": [
+        "R-007"
+      ],
+      "documents": [
+        "CEVA-RHYAD-002-PF",
+        "DB007 Qualité",
+        "DB008 Biosécurité",
+        "CEVA-RHYAD-004-REGISTRE_DES_RISQUES"
+      ],
+      "requirements": [
+        "REQ-007"
+      ],
+      "persons": [],
+      "confidence": "high"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "meeting:current",
+      "type": "MeetingContext",
+      "label": "Réunion de cadrage terrain, programme, modules et appel d'offres",
+      "confidence": "medium"
+    },
+    {
+      "id": "topic:programme_fonctionnel",
+      "type": "Sujet",
+      "label": "Structuration du programme fonctionnel RHYAD",
+      "confidence": "high"
+    },
+    {
+      "id": "decision:D-001",
+      "type": "Decision",
+      "label": "Le programme fonctionnel doit rester la structure de référence pour organiser les besoins métier F01 à F15.",
+      "confidence": "high"
+    },
+    {
+      "id": "action:A-001",
+      "type": "Action",
+      "label": "Consolider le programme fonctionnel par fonctions F01 à F15 afin de relier chaque besoin aux DT correspondantes.",
+      "confidence": "high"
+    },
+    {
+      "id": "action:A-002",
+      "type": "Action",
+      "label": "Identifier les informations manquantes par fonction avant de les transmettre aux bureaux d'études.",
+      "confidence": "high"
+    },
+    {
+      "id": "risk:R-001",
+      "type": "Risk",
+      "label": "Les besoins fonctionnels peuvent rester incomplets ou dispersés entre plusieurs documents.",
+      "confidence": "high"
+    },
+    {
+      "id": "requirement:REQ-001",
+      "type": "Requirement",
+      "label": "Chaque fonction du programme doit disposer de ses contraintes, interfaces et données d'entrée traçables.",
+      "confidence": "high"
+    },
+    {
+      "id": "document:CEVA-RHYAD-002-PF",
+      "type": "Document",
+      "label": "CEVA-RHYAD-002-PF",
+      "confidence": "high"
+    },
+    {
+      "id": "document:CEVA-RHYAD-100-F01..F15",
+      "type": "Document",
+      "label": "CEVA-RHYAD-100-F01..F15",
+      "confidence": "high"
+    },
+    {
+      "id": "document:CEVA-RHYAD-200-F01..F15-DT01",
+      "type": "Document",
+      "label": "CEVA-RHYAD-200-F01..F15-DT01",
+      "confidence": "high"
+    },
+    {
+      "id": "topic:site_ksa",
+      "type": "Sujet",
+      "label": "Contraintes du site en Arabie Saoudite",
+      "confidence": "high"
+    },
+    {
+      "id": "decision:D-002",
+      "type": "Decision",
+      "label": "Les contraintes de site en Arabie Saoudite doivent être consolidées avant le gel des choix d'implantation.",
+      "confidence": "high"
+    },
+    {
+      "id": "action:A-003",
+      "type": "Action",
+      "label": "Consolider l'analyse de contexte Arabie Saoudite afin d'identifier les contraintes climatiques, réglementaires et d'accès au site.",
+      "confidence": "high"
+    },
+    {
+      "id": "action:A-004",
+      "type": "Action",
+      "label": "Vérifier les contraintes locales de raccordement, d'autorisation et de construction avant l'appel d'offres constructeur.",
+      "confidence": "high"
+    },
+    {
+      "id": "risk:R-002",
+      "type": "Risk",
+      "label": "Les contraintes locales du site peuvent remettre en cause les hypothèses de conception.",
+      "confidence": "high"
+    },
+    {
+      "id": "requirement:REQ-002",
+      "type": "Requirement",
+      "label": "La conception doit intégrer les contraintes climatiques et réglementaires de l'Arabie Saoudite.",
+      "confidence": "high"
+    },
+    {
+      "id": "document:DB002 Architecture",
+      "type": "Document",
+      "label": "DB002 Architecture",
+      "confidence": "high"
+    },
+    {
+      "id": "document:DB003 Bâtiment",
+      "type": "Document",
+      "label": "DB003 Bâtiment",
+      "confidence": "high"
+    },
+    {
+      "id": "topic:electricite_ups",
+      "type": "Sujet",
+      "label": "Continuité électrique et protection UPS",
+      "confidence": "high"
+    },
+    {
+      "id": "decision:D-003",
+      "type": "Decision",
+      "label": "La stratégie UPS et continuité électrique doit être arbitrée avant le gel des DT utilités et des principes de sûreté de fonctionnement.",
+      "confidence": "high"
+    },
+    {
+      "id": "action:A-005",
+      "type": "Action",
+      "label": "Identifier le fournisseur d'électricité local afin de confirmer les contraintes d'alimentation électrique du site.",
+      "confidence": "high"
+    },
+    {
+      "id": "action:A-006",
+      "type": "Action",
+      "label": "Qualifier le besoin UPS pour les fonctions critiques, notamment contrôle, congélateurs, automatisme et équipements process.",
+      "confidence": "high"
+    },
+    {
+      "id": "action:A-007",
+      "type": "Action",
+      "label": "Définir les scénarios de microcoupures et les durées admissibles par famille d'équipements.",
+      "confidence": "high"
+    },
+    {
+      "id": "risk:R-003",
+      "type": "Risk",
+      "label": "Les microcoupures peuvent perturber les équipements critiques et les systèmes de contrôle.",
+      "confidence": "high"
+    },
+    {
+      "id": "requirement:REQ-003",
+      "type": "Requirement",
+      "label": "Les équipements critiques doivent être protégés contre les microcoupures selon leur criticité process et qualité.",
+      "confidence": "high"
+    },
+    {
+      "id": "document:CEVA-RHYAD-200-F09-DT01",
+      "type": "Document",
+      "label": "CEVA-RHYAD-200-F09-DT01",
+      "confidence": "high"
+    },
+    {
+      "id": "document:DB004 Utilités",
+      "type": "Document",
+      "label": "DB004 Utilités",
+      "confidence": "high"
+    },
+    {
+      "id": "document:DB010 Sécurité",
+      "type": "Document",
+      "label": "DB010 Sécurité",
+      "confidence": "high"
+    },
+    {
+      "id": "document:CEVA-RHYAD-400-R05",
+      "type": "Document",
+      "label": "CEVA-RHYAD-400-R05",
+      "confidence": "high"
+    },
+    {
+      "id": "topic:froid_souches",
+      "type": "Sujet",
+      "label": "Conservation des souches et master seeds",
+      "confidence": "high"
+    },
+    {
+      "id": "decision:D-004",
+      "type": "Decision",
+      "label": "Le choix des master seeds devra être validé avant le lancement des études détaillées.",
+      "confidence": "high"
+    },
+    {
+      "id": "action:A-008",
+      "type": "Action",
+      "label": "Définir la stratégie de conservation des souches et master seeds, incluant température, redondance et surveillance.",
+      "confidence": "high"
+    },
+    {
+      "id": "action:A-009",
+      "type": "Action",
+      "label": "Identifier les volumes et familles de souches à stocker afin de dimensionner congélateurs et stockage froid.",
+      "confidence": "high"
+    },
+    {
+      "id": "risk:R-004",
+      "type": "Risk",
+      "label": "Une perte de froid peut compromettre la conservation des souches et master seeds.",
+      "confidence": "high"
+    },
+    {
+      "id": "requirement:REQ-004",
+      "type": "Requirement",
+      "label": "Les souches et master seeds doivent disposer d'une conservation maîtrisée, surveillée et secourue.",
+      "confidence": "high"
+    },
+    {
+      "id": "document:CEVA-RHYAD-100-F02",
+      "type": "Document",
+      "label": "CEVA-RHYAD-100-F02",
+      "confidence": "high"
+    },
+    {
+      "id": "document:CEVA-RHYAD-200-F02-DT01",
+      "type": "Document",
+      "label": "CEVA-RHYAD-200-F02-DT01",
+      "confidence": "high"
+    },
+    {
+      "id": "document:DB006 Production",
+      "type": "Document",
+      "label": "DB006 Production",
+      "confidence": "high"
+    },
+    {
+      "id": "document:DB007 Qualité",
+      "type": "Document",
+      "label": "DB007 Qualité",
+      "confidence": "high"
+    },
+    {
+      "id": "topic:modules_flux_bsl2",
+      "type": "Sujet",
+      "label": "Architecture modulaire, sas et flux BSL2",
+      "confidence": "high"
+    },
+    {
+      "id": "decision:D-005",
+      "type": "Decision",
+      "label": "L'organisation des sas, couloirs et flux doit être validée comme donnée d'entrée du programme et des Design Basis.",
+      "confidence": "high"
+    },
+    {
+      "id": "action:A-010",
+      "type": "Action",
+      "label": "Cartographier les flux matières, personnel, déchets et équipements pour vérifier les croisements et interfaces entre modules.",
+      "confidence": "high"
+    },
+    {
+      "id": "action:A-011",
+      "type": "Action",
+      "label": "Clarifier si les sas et couloirs critiques sont intégrés dans les modules ou traités comme ouvrages séparés.",
+      "confidence": "high"
+    },
+    {
+      "id": "risk:R-005",
+      "type": "Risk",
+      "label": "Une mauvaise organisation des flux peut créer des croisements incompatibles avec les exigences biosécurité et GMP.",
+      "confidence": "high"
+    },
+    {
+      "id": "requirement:REQ-005",
+      "type": "Requirement",
+      "label": "Les flux matières, personnel et déchets doivent être séparés et compatibles avec les exigences BSL2/GMP.",
+      "confidence": "high"
+    },
+    {
+      "id": "document:CEVA-RHYAD-100-F06",
+      "type": "Document",
+      "label": "CEVA-RHYAD-100-F06",
+      "confidence": "high"
+    },
+    {
+      "id": "document:CEVA-RHYAD-100-F11",
+      "type": "Document",
+      "label": "CEVA-RHYAD-100-F11",
+      "confidence": "high"
+    },
+    {
+      "id": "document:DB001 Process",
+      "type": "Document",
+      "label": "DB001 Process",
+      "confidence": "high"
+    },
+    {
+      "id": "document:DB008 Biosécurité",
+      "type": "Document",
+      "label": "DB008 Biosécurité",
+      "confidence": "high"
+    },
+    {
+      "id": "topic:terrain_planning_tender",
+      "type": "Sujet",
+      "label": "Terrain, planning et appel d'offres",
+      "confidence": "high"
+    },
+    {
+      "id": "decision:D-006",
+      "type": "Decision",
+      "label": "Le choix du terrain doit être stabilisé avant de figer les données techniques transmises pour l'appel d'offres constructeur.",
+      "confidence": "high"
+    },
+    {
+      "id": "action:A-012",
+      "type": "Action",
+      "label": "Obtenir la confirmation du terrain cible afin de sécuriser les hypothèses de surface, accès, raccordements et permis.",
+      "confidence": "high"
+    },
+    {
+      "id": "action:A-013",
+      "type": "Action",
+      "label": "Préparer le dossier technique d'appel d'offres en distinguant les données confirmées et les hypothèses dépendantes du terrain.",
+      "confidence": "high"
+    },
+    {
+      "id": "risk:R-006",
+      "type": "Risk",
+      "label": "L'absence de terrain confirmé peut bloquer le planning et retarder l'appel d'offres.",
+      "confidence": "high"
+    },
+    {
+      "id": "requirement:REQ-006",
+      "type": "Requirement",
+      "label": "Les données terrain doivent être confirmées avant le gel des hypothèses de conception locale.",
+      "confidence": "high"
+    },
+    {
+      "id": "document:CEVA-RHYAD-004-REGISTRE_DES_RISQUES",
+      "type": "Document",
+      "label": "CEVA-RHYAD-004-REGISTRE_DES_RISQUES",
+      "confidence": "high"
+    },
+    {
+      "id": "topic:reglementation_urs",
+      "type": "Sujet",
+      "label": "Réglementation, autorités et URS",
+      "confidence": "high"
+    },
+    {
+      "id": "decision:D-007",
+      "type": "Decision",
+      "label": "La position réglementaire et les exigences URS doivent être confirmées avant d'engager les choix détaillés qualité et biosécurité.",
+      "confidence": "high"
+    },
+    {
+      "id": "action:A-014",
+      "type": "Action",
+      "label": "Organiser une clarification réglementaire avec les autorités ou référents CEVA afin de confirmer les exigences applicables aux autovaccins.",
+      "confidence": "high"
+    },
+    {
+      "id": "action:A-015",
+      "type": "Action",
+      "label": "Aligner l'URS, le programme fonctionnel et les DT sur le niveau GMP réellement applicable.",
+      "confidence": "high"
+    },
+    {
+      "id": "risk:R-007",
+      "type": "Risk",
+      "label": "Une interprétation réglementaire incomplète peut imposer une reprise du programme ou du layout.",
+      "confidence": "high"
+    },
+    {
+      "id": "requirement:REQ-007",
+      "type": "Requirement",
+      "label": "Le programme et les DT doivent intégrer uniquement des exigences réglementaires confirmées.",
+      "confidence": "high"
+    }
+  ],
+  "edges": [
+    {
+      "source": "meeting:current",
+      "target": "topic:programme_fonctionnel",
+      "relation": "covers"
+    },
+    {
+      "source": "topic:programme_fonctionnel",
+      "target": "decision:D-001",
+      "relation": "decision"
+    },
+    {
+      "source": "topic:programme_fonctionnel",
+      "target": "action:A-001",
+      "relation": "action"
+    },
+    {
+      "source": "topic:programme_fonctionnel",
+      "target": "action:A-002",
+      "relation": "action"
+    },
+    {
+      "source": "topic:programme_fonctionnel",
+      "target": "risk:R-001",
+      "relation": "risk"
+    },
+    {
+      "source": "topic:programme_fonctionnel",
+      "target": "requirement:REQ-001",
+      "relation": "requirement"
+    },
+    {
+      "source": "topic:programme_fonctionnel",
+      "target": "document:CEVA-RHYAD-002-PF",
+      "relation": "document"
+    },
+    {
+      "source": "topic:programme_fonctionnel",
+      "target": "document:CEVA-RHYAD-100-F01..F15",
+      "relation": "document"
+    },
+    {
+      "source": "topic:programme_fonctionnel",
+      "target": "document:CEVA-RHYAD-200-F01..F15-DT01",
+      "relation": "document"
+    },
+    {
+      "source": "meeting:current",
+      "target": "topic:site_ksa",
+      "relation": "covers"
+    },
+    {
+      "source": "topic:site_ksa",
+      "target": "decision:D-002",
+      "relation": "decision"
+    },
+    {
+      "source": "topic:site_ksa",
+      "target": "action:A-003",
+      "relation": "action"
+    },
+    {
+      "source": "topic:site_ksa",
+      "target": "action:A-004",
+      "relation": "action"
+    },
+    {
+      "source": "topic:site_ksa",
+      "target": "risk:R-002",
+      "relation": "risk"
+    },
+    {
+      "source": "topic:site_ksa",
+      "target": "requirement:REQ-002",
+      "relation": "requirement"
+    },
+    {
+      "source": "topic:site_ksa",
+      "target": "document:CEVA-RHYAD-002-PF",
+      "relation": "document"
+    },
+    {
+      "source": "topic:site_ksa",
+      "target": "document:DB002 Architecture",
+      "relation": "document"
+    },
+    {
+      "source": "topic:site_ksa",
+      "target": "document:DB003 Bâtiment",
+      "relation": "document"
+    },
+    {
+      "source": "meeting:current",
+      "target": "topic:electricite_ups",
+      "relation": "covers"
+    },
+    {
+      "source": "topic:electricite_ups",
+      "target": "decision:D-003",
+      "relation": "decision"
+    },
+    {
+      "source": "topic:electricite_ups",
+      "target": "action:A-005",
+      "relation": "action"
+    },
+    {
+      "source": "topic:electricite_ups",
+      "target": "action:A-006",
+      "relation": "action"
+    },
+    {
+      "source": "topic:electricite_ups",
+      "target": "action:A-007",
+      "relation": "action"
+    },
+    {
+      "source": "topic:electricite_ups",
+      "target": "risk:R-003",
+      "relation": "risk"
+    },
+    {
+      "source": "topic:electricite_ups",
+      "target": "requirement:REQ-003",
+      "relation": "requirement"
+    },
+    {
+      "source": "topic:electricite_ups",
+      "target": "document:CEVA-RHYAD-200-F09-DT01",
+      "relation": "document"
+    },
+    {
+      "source": "topic:electricite_ups",
+      "target": "document:DB004 Utilités",
+      "relation": "document"
+    },
+    {
+      "source": "topic:electricite_ups",
+      "target": "document:DB010 Sécurité",
+      "relation": "document"
+    },
+    {
+      "source": "topic:electricite_ups",
+      "target": "document:CEVA-RHYAD-400-R05",
+      "relation": "document"
+    },
+    {
+      "source": "meeting:current",
+      "target": "topic:froid_souches",
+      "relation": "covers"
+    },
+    {
+      "source": "topic:froid_souches",
+      "target": "decision:D-004",
+      "relation": "decision"
+    },
+    {
+      "source": "topic:froid_souches",
+      "target": "action:A-008",
+      "relation": "action"
+    },
+    {
+      "source": "topic:froid_souches",
+      "target": "action:A-009",
+      "relation": "action"
+    },
+    {
+      "source": "topic:froid_souches",
+      "target": "risk:R-004",
+      "relation": "risk"
+    },
+    {
+      "source": "topic:froid_souches",
+      "target": "requirement:REQ-004",
+      "relation": "requirement"
+    },
+    {
+      "source": "topic:froid_souches",
+      "target": "document:CEVA-RHYAD-100-F02",
+      "relation": "document"
+    },
+    {
+      "source": "topic:froid_souches",
+      "target": "document:CEVA-RHYAD-200-F02-DT01",
+      "relation": "document"
+    },
+    {
+      "source": "topic:froid_souches",
+      "target": "document:DB006 Production",
+      "relation": "document"
+    },
+    {
+      "source": "topic:froid_souches",
+      "target": "document:DB007 Qualité",
+      "relation": "document"
+    },
+    {
+      "source": "meeting:current",
+      "target": "topic:modules_flux_bsl2",
+      "relation": "covers"
+    },
+    {
+      "source": "topic:modules_flux_bsl2",
+      "target": "decision:D-005",
+      "relation": "decision"
+    },
+    {
+      "source": "topic:modules_flux_bsl2",
+      "target": "action:A-010",
+      "relation": "action"
+    },
+    {
+      "source": "topic:modules_flux_bsl2",
+      "target": "action:A-011",
+      "relation": "action"
+    },
+    {
+      "source": "topic:modules_flux_bsl2",
+      "target": "risk:R-005",
+      "relation": "risk"
+    },
+    {
+      "source": "topic:modules_flux_bsl2",
+      "target": "requirement:REQ-005",
+      "relation": "requirement"
+    },
+    {
+      "source": "topic:modules_flux_bsl2",
+      "target": "document:CEVA-RHYAD-002-PF",
+      "relation": "document"
+    },
+    {
+      "source": "topic:modules_flux_bsl2",
+      "target": "document:CEVA-RHYAD-100-F06",
+      "relation": "document"
+    },
+    {
+      "source": "topic:modules_flux_bsl2",
+      "target": "document:CEVA-RHYAD-100-F11",
+      "relation": "document"
+    },
+    {
+      "source": "topic:modules_flux_bsl2",
+      "target": "document:DB001 Process",
+      "relation": "document"
+    },
+    {
+      "source": "topic:modules_flux_bsl2",
+      "target": "document:DB002 Architecture",
+      "relation": "document"
+    },
+    {
+      "source": "topic:modules_flux_bsl2",
+      "target": "document:DB008 Biosécurité",
+      "relation": "document"
+    },
+    {
+      "source": "meeting:current",
+      "target": "topic:terrain_planning_tender",
+      "relation": "covers"
+    },
+    {
+      "source": "topic:terrain_planning_tender",
+      "target": "decision:D-006",
+      "relation": "decision"
+    },
+    {
+      "source": "topic:terrain_planning_tender",
+      "target": "action:A-012",
+      "relation": "action"
+    },
+    {
+      "source": "topic:terrain_planning_tender",
+      "target": "action:A-013",
+      "relation": "action"
+    },
+    {
+      "source": "topic:terrain_planning_tender",
+      "target": "risk:R-006",
+      "relation": "risk"
+    },
+    {
+      "source": "topic:terrain_planning_tender",
+      "target": "requirement:REQ-006",
+      "relation": "requirement"
+    },
+    {
+      "source": "topic:terrain_planning_tender",
+      "target": "document:CEVA-RHYAD-400-R05",
+      "relation": "document"
+    },
+    {
+      "source": "topic:terrain_planning_tender",
+      "target": "document:CEVA-RHYAD-004-REGISTRE_DES_RISQUES",
+      "relation": "document"
+    },
+    {
+      "source": "topic:terrain_planning_tender",
+      "target": "document:DB003 Bâtiment",
+      "relation": "document"
+    },
+    {
+      "source": "meeting:current",
+      "target": "topic:reglementation_urs",
+      "relation": "covers"
+    },
+    {
+      "source": "topic:reglementation_urs",
+      "target": "decision:D-007",
+      "relation": "decision"
+    },
+    {
+      "source": "topic:reglementation_urs",
+      "target": "action:A-014",
+      "relation": "action"
+    },
+    {
+      "source": "topic:reglementation_urs",
+      "target": "action:A-015",
+      "relation": "action"
+    },
+    {
+      "source": "topic:reglementation_urs",
+      "target": "risk:R-007",
+      "relation": "risk"
+    },
+    {
+      "source": "topic:reglementation_urs",
+      "target": "requirement:REQ-007",
+      "relation": "requirement"
+    },
+    {
+      "source": "topic:reglementation_urs",
+      "target": "document:CEVA-RHYAD-002-PF",
+      "relation": "document"
+    },
+    {
+      "source": "topic:reglementation_urs",
+      "target": "document:DB007 Qualité",
+      "relation": "document"
+    },
+    {
+      "source": "topic:reglementation_urs",
+      "target": "document:DB008 Biosécurité",
+      "relation": "document"
+    },
+    {
+      "source": "topic:reglementation_urs",
+      "target": "document:CEVA-RHYAD-004-REGISTRE_DES_RISQUES",
+      "relation": "document"
+    }
+  ]
+}

@@ -1,0 +1,3510 @@
+# Transcription nettoyée - 20260707-204320-R_union_n01_CEVA
+
+## Source
+
+- Transcript source: `/Users/kevincoignat/Documents/00 - COC EURL/02 - Chantiers/19 - CEVA/02 - ARABIE SAOUDITE/00 - Administratif/00 - AMO/GITHUB/RHYAD/data/meetings/transcripts/20260707-204320-R_union_n01_CEVA/transcript.txt`
+- Dictionnaire métier: `/Users/kevincoignat/Documents/00 - COC EURL/02 - Chantiers/19 - CEVA/02 - ARABIE SAOUDITE/00 - Administratif/00 - AMO/GITHUB/RHYAD/config/meeting_glossary.yaml`
+- Nettoyage: corrections lexicales RHYAD/CEVA et suppression des lignes sans valeur métier.
+- Limite: les intervenants ne sont pas inférés.
+
+## Vue par thèmes
+
+### Programme fonctionnel
+
+- [00:00:25 --> 00:00:30] Donc les programmes fonctionnels, ce que la programme fonctionnel, c'est toutes les parties de métiers.
+- [00:00:33 --> 00:00:41] ensuite sur la partie expédition, réception du matériel et un situite, jusqu'à la partie où ça [à vérifier]
+- [00:00:57 --> 00:01:01] vrai qu'on parlait stockage, on le fait un poulet et le process, mais on n'a pas fait
+- [00:01:07 --> 00:01:12] seul et même document, et ça va nous donner à chaque fois, chaque fonction va nous donner des
+- [00:05:29 --> 00:05:31] la partie fonctionne.
+- [00:05:36 --> 00:05:38] réception expédition,
+- [00:05:38 --> 00:05:41] hop, stockage de matière première et consommable.
+- [00:05:46 --> 00:05:48] conditionnement expédition des produits,
+- [00:05:54 --> 00:05:55] si beaucoup de fonctionments-tats qui sont le gérer
+- [00:06:34 --> 00:06:35] qu'est-ce qui va être en maintenance,
+- [00:06:41 --> 00:06:44] Donc, est-ce qu'il faut qu'on fasse du stockage de matériel,
+- [00:06:49 --> 00:06:51] Est-ce qu'on va y faire du stockage sur place?
+- ... 51 autre(s) extrait(s) dans le transcript nettoyé.
+
+### Contraintes site Arabie Saoudite
+
+- [00:01:28 --> 00:01:35] regarder. On a aussi des documents liées, la Arabie Saoudite, par exemple, à l'alisie de
+- [00:01:35 --> 00:01:41] contact, c'est à l'aptation du projet, qui va être sur les conditions climatiques, on doit
+- [00:02:16 --> 00:02:33] j'ai, et donc ça me donne l'ensemble des contraintes liées au site, après les
+- [00:02:39 --> 00:02:48] c'était à trouver sa rouxerche par rapport à l'équivalent anédis de Arabie Saoudite, ils [à vérifier]
+- [00:06:48 --> 00:06:49] on a Arabie Saoudite.
+- [00:06:51 --> 00:06:53] Oh, quand on a Arabie Saoudite,
+- [00:10:51 --> 00:10:53] c'est vrai que, entre les différents sites,
+- [00:25:10 --> 00:25:11] ce qui est construction local,
+- [00:27:23 --> 00:27:26] Donc, j'allais visiter qu'à tous les consites, notamment,
+- [00:28:11 --> 00:28:14] il y a des réglementations locales.
+- [00:29:43 --> 00:29:47] Donc, ça va nécessiter de d'agrandir un peu les audio.
+- [00:31:48 --> 00:31:52] il y a eu un campus création d'un campus local.
+- ... 55 autre(s) extrait(s) dans le transcript nettoyé.
+
+### Alimentation électrique / UPS / microcoupures
+
+- [00:01:41 --> 00:01:48] s'adapter, les problèmes d'alimentation en électricité, les problèmes d'alimentation en
+- [00:01:48 --> 00:01:52] haute, c'est-à-dire. Pour ce que pour avoir regardé d'habitude, niveau électricité, ils sont
+- [00:01:52 --> 00:02:01] quand même assez stables, et ils sont même des coupures moins longues qu'en France, ou
+- [00:03:12 --> 00:03:19] les seuls m'il y a des congélateurs pour l'ensemble. Mais si on a des coupures plus longues
+- [00:04:17 --> 00:04:20] Sur les coupures, à ce qu'on peut se dire aussi,
+- [00:04:20 --> 00:04:25] à ce qu'on met des UPS pour la partie contrôle et se garder, quand même,
+- [00:04:48 --> 00:04:51] C'est surtout des microcoupures.
+- [00:04:52 --> 00:04:55] Ouare des coupures assez courtes d'une antenne de minutes.
+- [00:23:43 --> 00:23:44] problème de coupure... [à vérifier]
+- [00:23:44 --> 00:23:45] coupure avecricité,
+- [00:33:51 --> 00:33:53] de pouvoir une autre, et ça va être coups.
+- [02:07:20 --> 02:07:23] Et là, c'est pas l'électricité qui a planté.
+
+### Froid / congélateurs / souches / master seeds
+
+- [00:03:03 --> 00:03:07] Donc on a des congélateurs, ça se consigne dans le caisson d'un lit, et c'est
+- [00:03:12 --> 00:03:19] les seuls m'il y a des congélateurs pour l'ensemble. Mais si on a des coupures plus longues
+- [00:03:26 --> 00:03:31] soucis. Donc c'est plutôt sur la partie froid, chambrofroid, pour la conservation des [à vérifier]
+- [00:03:52 --> 00:03:54] Là, on a des souches, ils sont congelés.
+- [00:03:58 --> 00:04:00] Ils envoient leurs souches.
+- [00:04:00 --> 00:04:03] On est identifiés et les souches qu'on va choisir.
+- [00:04:03 --> 00:04:06] Ou les 10 sont nos gardes de collection.
+- [00:04:06 --> 00:04:09] C'est celle-là qu'on va, on va faire sur la pelle des master seeds,
+- [00:10:08 --> 00:10:11] la souches peut changer un fait.
+- [00:10:45 --> 00:10:46] le choix des souches de main,
+- [00:16:27 --> 00:16:29] J'ai fait 15 jours avec une cellule souches.
+- [00:23:20 --> 00:23:22] ça va vérifier les congelateurs,
+- ... 5 autre(s) extrait(s) dans le transcript nettoyé.
+
+### Modules / couloirs / sas / BSL2
+
+- [00:00:47 --> 00:00:51] d'apprendre du bâtiment. Même si c'est d'apprendre du module, que vous l'avez dit, aussi
+- [00:00:51 --> 00:00:57] vraiment, j'irai dans le module, ce module, quand même nous donner des contraintes, et c'est
+- [00:05:55 --> 00:05:56] par les module directement là-dedans,
+- [00:06:09 --> 00:06:11] Est-ce qu'il a intégré dans chaque module,
+- [00:06:11 --> 00:06:12] ou il y a un module à part?
+- [00:16:43 --> 00:16:45] Pour un peu bonus, en fait, pour les module,
+- [00:16:47 --> 00:16:49] D'ailleurs, comme vous, on a des stockage qui étaient à part des module.
+- [00:22:55 --> 00:22:57] Pour les module en effet des yeux,
+- [00:23:41 --> 00:23:42] Et ces module, ils sont... [à vérifier]
+- [00:23:54 --> 00:23:55] chaque module,
+- [00:24:31 --> 00:24:32] dans chaque module,
+- [00:24:49 --> 00:24:51] tous les éléments des module.
+- ... 91 autre(s) extrait(s) dans le transcript nettoyé.
+
+### Flux matières / déchets / personnel
+
+- [00:00:33 --> 00:00:41] ensuite sur la partie expédition, réception du matériel et un situite, jusqu'à la partie où ça [à vérifier]
+- [00:05:38 --> 00:05:41] hop, stockage de matière première et consommable.
+- [00:05:42 --> 00:05:44] qui faudrait identifier, préparation des matières
+- [00:05:48 --> 00:05:51] gestion des flux d'un point du pigeonneral, [à vérifier]
+- [00:06:41 --> 00:06:44] Donc, est-ce qu'il faut qu'on fasse du stockage de matériel,
+- [00:06:46 --> 00:06:47] si on a du matériel,
+- [00:07:08 --> 00:07:10] C'est-à-dire que j'essaie des déchets et fluents.
+- [00:07:10 --> 00:07:14] C'est-à-dire que c'est sur tes protections des effectifs et contrôles des accès.
+- [00:08:24 --> 00:08:26] les flux interne, les équipements de stockage,
+- [00:33:12 --> 00:33:15] les traitements, des déchets, des choses que nous avons.
+- [00:49:07 --> 00:49:16] et puis les, les, les, le personnel venez par ici, t'as les vestirs ici, une salle de
+- [00:52:32 --> 00:52:35] Là par contre, c'est moins génant. Il y a clé les déchets.
+- ... 11 autre(s) extrait(s) dans le transcript nettoyé.
+
+### Terrain / calendrier / septembre / appel d'offres
+
+- [00:27:36 --> 00:27:40] Et en le coin, on a fait un appel d'offres par au module.
+- [00:32:42 --> 00:32:47] Le BSI, l'agriculture, nous avez attribué ici ce terrain-là.
+- [00:33:15 --> 00:33:19] Mais en fait, le problème, c'est que ce terrain, il n'y a pas bien l'ilisé. [à vérifier]
+- [00:33:53 --> 00:33:59] Du coup, on est en train de chercher un terrain.
+- [00:33:59 --> 00:34:02] Alors, mais pour le monde à terrain,
+- [00:34:06 --> 00:34:08] Et il y a des attributs des terrain qui sont,
+- [00:34:35 --> 00:34:39] Au petit dire, le terrain est prêts
+- [00:34:41 --> 00:34:44] Donc, j'ai un calendrier pour... [à vérifier]
+- [00:35:13 --> 00:35:17] les chaînes techniques, les dossiers pour l'appel d'offres,
+- [00:35:17 --> 00:35:21] mais c'est vrai qu'on aura besoin de toute façon du terrain.
+- [00:35:21 --> 00:35:24] Le terrain, on l'a rapport en septembre, en fait.
+- [00:39:57 --> 00:39:59] et après, on a quand même très septembre,
+- ... 24 autre(s) extrait(s) dans le transcript nettoyé.
+
+### Réglementation / autorités / URS
+
+- [00:02:33 --> 00:02:39] documents, bon, le glossaire. La qualité en fait de la distribution de l'esprit
+- [00:03:03 --> 00:03:07] Donc on a des congélateurs, ça se consigne dans le caisson d'un lit, et c'est
+- [00:03:12 --> 00:03:19] les seuls m'il y a des congélateurs pour l'ensemble. Mais si on a des coupures plus longues
+- [00:03:58 --> 00:04:00] Ils envoient leurs souches.
+- [00:04:09 --> 00:04:12] de des moeurs qui possident, c'est celle-là qui s'est utilisé.
+- [00:08:30 --> 00:08:33] et d'ailleurs, qui va nous, comme je disais,
+- [00:09:10 --> 00:09:11] toujours une activée.
+- [00:13:47 --> 00:13:52] Alors, donc, des fermenteurs, des processus, je vais traiter tous les paramètres.
+- [00:15:28 --> 00:15:33] Et ça, du coup, on est à l'histoire pour un 15 jours.
+- [00:15:33 --> 00:15:35] Et ça, on l'est pas dans 15 jours.
+- [00:16:11 --> 00:16:14] Et vous trouvez sur plusieurs sous-genres en même temps, plusieurs bagues?
+- [00:16:27 --> 00:16:29] J'ai fait 15 jours avec une cellule souches.
+- ... 61 autre(s) extrait(s) dans le transcript nettoyé.
+
+### Risques projet
+
+- [00:01:41 --> 00:01:48] s'adapter, les problèmes d'alimentation en électricité, les problèmes d'alimentation en
+- [00:04:13 --> 00:04:15] Donc effectivement, ça, c'est un point risque.
+- [00:05:12 --> 00:05:13] comme le registre des risques,
+- [00:10:23 --> 00:10:24] Parce qu'en fait, le risque,
+- [00:10:24 --> 00:10:27] c'est l'analyse risque,
+- [00:10:41 --> 00:10:42] pour sécuriser ça,
+- [00:11:33 --> 00:11:34] c'est problème.
+- [00:23:43 --> 00:23:44] problème de coupure... [à vérifier]
+- [00:29:08 --> 00:29:10] bah, c'est pas problème.
+- [00:32:03 --> 00:32:07] Donc, c'est beaucoup, il essaye d'experts en retard.
+- [00:33:15 --> 00:33:19] Mais en fait, le problème, c'est que ce terrain, il n'y a pas bien l'ilisé. [à vérifier]
+- [00:40:59 --> 00:41:02] Et pour beaucoup nous aider à faire ce problème.
+- ... 24 autre(s) extrait(s) dans le transcript nettoyé.
+
+## Transcription nettoyée horodatée
+
+- [00:00:00 --> 00:00:08] des marques de réunion? Oui, donc du coup là, sur les documents, donc une première partie qui va vraiment
+- [00:00:08 --> 00:00:18] nous dire la marcha sur. Et va donner tous les documents qui sont alliés au projet. Donc ça c'est le premier
+- [00:00:18 --> 00:00:25] document métodologie. Donc dedans, on va y retrouver par exemple les différents sous-dosiers. [à vérifier]
+- [00:00:25 --> 00:00:30] Donc les programmes fonctionnels, ce que la programme fonctionnel, c'est toutes les parties de métiers.
+- [00:00:30 --> 00:00:33] Donc on le disait, là, pour la partie de l'véterinaire, qui va chercher, qui arrive
+- [00:00:33 --> 00:00:41] ensuite sur la partie expédition, réception du matériel et un situite, jusqu'à la partie où ça [à vérifier]
+- [00:00:41 --> 00:00:47] renvoie le vaccin. Parce que chaque part, chaque sous-function va nous donner des contraintes,
+- [00:00:47 --> 00:00:51] d'apprendre du bâtiment. Même si c'est d'apprendre du module, que vous l'avez dit, aussi
+- [00:00:51 --> 00:00:57] vraiment, j'irai dans le module, ce module, quand même nous donner des contraintes, et c'est
+- [00:00:57 --> 00:01:01] vrai qu'on parlait stockage, on le fait un poulet et le process, mais on n'a pas fait
+- [00:01:01 --> 00:01:07] pour effectivement faire des contraintes. Donc il faut vraiment que tout soit, soit dans un
+- [00:01:07 --> 00:01:12] seul et même document, et ça va nous donner à chaque fois, chaque fonction va nous donner des
+- [00:01:12 --> 00:01:16] contraintes. Et à la fin, on va avoir une série de contraintes, et on verra avec les
+- [00:01:16 --> 00:01:21] bureaux d'études, comme on y a un pont, ici c'est braille, donc c'est un peu le principe. [à vérifier]
+- [00:01:21 --> 00:01:28] Je pour détaillage, je vais vous enverrer ensuite si vous avez sa minute pour un peu plus pour les
+- [00:01:28 --> 00:01:35] regarder. On a aussi des documents liées, la Arabie Saoudite, par exemple, à l'alisie de
+- [00:01:35 --> 00:01:41] contact, c'est à l'aptation du projet, qui va être sur les conditions climatiques, on doit
+- [00:01:41 --> 00:01:48] s'adapter, les problèmes d'alimentation en électricité, les problèmes d'alimentation en
+- [00:01:48 --> 00:01:52] haute, c'est-à-dire. Pour ce que pour avoir regardé d'habitude, niveau électricité, ils sont
+- [00:01:52 --> 00:02:01] quand même assez stables, et ils sont même des coupures moins longues qu'en France, ou
+- [00:02:01 --> 00:02:06] ils sont pas de sal duquel, ils n'ont pas réagréable, mais les plus fréquentes.
+- [00:02:06 --> 00:02:16] Oui, c'est que j'étais avec Thomas, les gens ils sont salegues, j'ai tout de tout en
+- [00:02:16 --> 00:02:33] j'ai, et donc ça me donne l'ensemble des contraintes liées au site, après les
+- [00:02:33 --> 00:02:39] documents, bon, le glossaire. La qualité en fait de la distribution de l'esprit
+- [00:02:39 --> 00:02:48] c'était à trouver sa rouxerche par rapport à l'équivalent anédis de Arabie Saoudite, ils [à vérifier]
+- [00:02:48 --> 00:02:56] ont dédoné à tout. C'est plutôt sûr, c'est plutôt sûr, c'est ça qu'on peut
+- [00:02:56 --> 00:03:02] juste, en fait le patrimoine de ça, c'est d'abord les soucis.
+- [00:03:03 --> 00:03:07] Donc on a des congélateurs, ça se consigne dans le caisson d'un lit, et c'est
+- [00:03:07 --> 00:03:12] celui-là qu'il faut, il faut racclaimre, regardez, la oui, il y a plus de rizx, c'est-à-dire [à vérifier]
+- [00:03:12 --> 00:03:19] les seuls m'il y a des congélateurs pour l'ensemble. Mais si on a des coupures plus longues
+- [00:03:19 --> 00:03:26] de pour raison, il faut racclaimer une sécurité sur la place pour l'aide pour les [à vérifier]
+- [00:03:26 --> 00:03:31] soucis. Donc c'est plutôt sur la partie froid, chambrofroid, pour la conservation des [à vérifier]
+- [00:03:31 --> 00:03:33] qu'on disait entre deux et demi-degrés?
+- [00:03:33 --> 00:03:40] Non, non, c'est parce que c'est parce que j'ai des séparaux de ça, ils sont dans des frigidères sympa.
+- [00:03:40 --> 00:03:46] Mais il n'y reste pas que quand ça arrive, ça va dans un fricot, on leur permet en culture,
+- [00:03:46 --> 00:03:49] et on les garde pas longtemps, en fait.
+- [00:03:49 --> 00:03:52] Il n'y a pas c'est quand on a produit un vaccin qui marche.
+- [00:03:52 --> 00:03:54] Là, on a des souches, ils sont congelés.
+- [00:03:54 --> 00:03:55] Ah, et c'est celle-là.
+- [00:03:55 --> 00:03:57] Ah, c'est vrai, il faut pas les garder.
+- [00:03:58 --> 00:04:00] Ils envoient leurs souches.
+- [00:04:00 --> 00:04:03] On est identifiés et les souches qu'on va choisir.
+- [00:04:03 --> 00:04:06] Ou les 10 sont nos gardes de collection.
+- [00:04:06 --> 00:04:09] C'est celle-là qu'on va, on va faire sur la pelle des master seeds,
+- [00:04:09 --> 00:04:12] de des moeurs qui possident, c'est celle-là qui s'est utilisé.
+- [00:04:13 --> 00:04:15] Donc effectivement, ça, c'est un point risque.
+- [00:04:16 --> 00:04:17] Il faut identifier.
+- [00:04:17 --> 00:04:20] Sur les coupures, à ce qu'on peut se dire aussi,
+- [00:04:20 --> 00:04:25] à ce qu'on met des UPS pour la partie contrôle et se garder, quand même,
+- [00:04:25 --> 00:04:28] les... des endulants. [à vérifier]
+- [00:04:28 --> 00:04:34] Alors, on va dire sur sur les outils et l'électronique.
+- [00:04:34 --> 00:04:36] Ça m'occupe.
+- [00:04:36 --> 00:04:41] Donc, c'est qu'on va aussi une aide quand ils envoient
+- [00:04:41 --> 00:04:44] sur tension.
+- [00:04:44 --> 00:04:46] On a un petit peu de théâtre.
+- [00:04:46 --> 00:04:48] Sur tout que, à priori, on aurait bien Saoudite.
+- [00:04:48 --> 00:04:51] C'est surtout des microcoupures.
+- [00:04:52 --> 00:04:55] Ouare des coupures assez courtes d'une antenne de minutes.
+- [00:04:55 --> 00:04:56] Ça fait ça un moyen.
+- [00:04:56 --> 00:04:58] Ça permet de continuer à bosser.
+- [00:04:58 --> 00:05:00] Et puis surtout, ça permet d'atteindre mieux, en fait,
+- [00:05:00 --> 00:05:02] de l'effet de... même. [à vérifier]
+- [00:05:02 --> 00:05:04] Soit de la sur tension, ça de la sur tension.
+- [00:05:06 --> 00:05:08] On rendra un peu trop dans le détail.
+- [00:05:08 --> 00:05:09] Ah, ça.
+- [00:05:09 --> 00:05:12] Et donc, après d'autres documents,
+- [00:05:12 --> 00:05:13] comme le registre des risques,
+- [00:05:13 --> 00:05:15] comment ça a disputer,
+- [00:05:15 --> 00:05:18] le registre des decisions qui permettra en fait d'avoir
+- [00:05:18 --> 00:05:21] une continuité sur des decisions qui a été prise de savoir
+- [00:05:21 --> 00:05:23] quant à ce qu'il y a été prise par qui
+- [00:05:23 --> 00:05:26] et de revenir dessus.
+- [00:05:26 --> 00:05:28] Donc ça, c'est pour la partie 0.
+- [00:05:28 --> 00:05:29] Donc, ce que je vous disais,
+- [00:05:29 --> 00:05:31] la partie fonctionne.
+- [00:05:31 --> 00:05:33] Par exemple, parce que j'avais identifié,
+- [00:05:33 --> 00:05:34] mais il faut qu'on y travaille,
+- [00:05:34 --> 00:05:36] parce qu'il faut que je rajoute les vétérinaire.
+- [00:05:36 --> 00:05:38] réception expédition,
+- [00:05:38 --> 00:05:41] hop, stockage de matière première et consommable.
+- [00:05:41 --> 00:05:42] Donc, sur là,
+- [00:05:42 --> 00:05:44] qui faudrait identifier, préparation des matières
+- [00:05:44 --> 00:05:45] premières et solutions,
+- [00:05:45 --> 00:05:46] production des autres vaccins,
+- [00:05:46 --> 00:05:48] conditionnement expédition des produits,
+- [00:05:48 --> 00:05:51] gestion des flux d'un point du pigeonneral, [à vérifier]
+- [00:05:51 --> 00:05:53] d'avoir gestérisation préparation des équipements.
+- [00:05:53 --> 00:05:54] Donc, à voir,
+- [00:05:54 --> 00:05:55] si beaucoup de fonctionments-tats qui sont le gérer
+- [00:05:55 --> 00:05:56] par les module directement là-dedans,
+- [00:05:56 --> 00:05:58] on va remplir voir,
+- [00:05:58 --> 00:06:00] où vous avez un contre-calité,
+- [00:06:00 --> 00:06:01] je suppose, avec... [à vérifier]
+- [00:06:01 --> 00:06:02] Ouais.
+- [00:06:03 --> 00:06:04] J'ai un pique.
+- [00:06:06 --> 00:06:08] Putain, c'est un contre-calité,
+- [00:06:08 --> 00:06:09] c'est génial.
+- [00:06:09 --> 00:06:11] Est-ce qu'il a intégré dans chaque module,
+- [00:06:11 --> 00:06:12] ou il y a un module à part?
+- [00:06:13 --> 00:06:15] Donc, il y a un dédeceil de loque qui s'est allé. [à vérifier]
+- [00:06:15 --> 00:06:18] Donc, il y a un dédeceil de loque qui s'est allé. [à vérifier]
+- [00:06:18 --> 00:06:20] Donc, c'est le dédeceil de loque qui s'est allé. [à vérifier]
+- [00:06:20 --> 00:06:22] Donc, c'est tout ce qui est,
+- [00:06:22 --> 00:06:25] bah,
+- [00:06:25 --> 00:06:27] tu peux me la profiter, etc.
+- [00:06:27 --> 00:06:29] Donc, il vient être répertorié là-dedans.
+- [00:06:29 --> 00:06:30] Tout ce qui est maintenant,
+- [00:06:30 --> 00:06:31] c'est expotation technique,
+- [00:06:31 --> 00:06:33] qui aura son importance pour,
+- [00:06:33 --> 00:06:34] bien dire,
+- [00:06:34 --> 00:06:35] qu'est-ce qui va être en maintenance,
+- [00:06:35 --> 00:06:38] qu'elle va être la fréquence de matements?
+- [00:06:38 --> 00:06:41] Qu'est-ce qui va découer de ça en termes de riste?
+- [00:06:41 --> 00:06:44] Donc, est-ce qu'il faut qu'on fasse du stockage de matériel,
+- [00:06:44 --> 00:06:45] qui est aussi liée à l'endroit?
+- [00:06:45 --> 00:06:46] C'est-à-dire que,
+- [00:06:46 --> 00:06:47] si on a du matériel,
+- [00:06:47 --> 00:06:48] qu'on ne peut pas voir rapidement,
+- [00:06:48 --> 00:06:49] on a Arabie Saoudite.
+- [00:06:49 --> 00:06:51] Est-ce qu'on va y faire du stockage sur place?
+- [00:06:51 --> 00:06:53] Oh, quand on a Arabie Saoudite,
+- [00:06:53 --> 00:06:54] on a rabit de mot,
+- [00:06:54 --> 00:06:56] tout les équipements en fait.
+- [00:06:56 --> 00:06:57] Mais, on va voir.
+- [00:06:57 --> 00:06:58] Et c'est vrai qu'on a une faite,
+- [00:06:58 --> 00:07:01] il y aura des choses de stockage.
+- [00:07:01 --> 00:07:03] Donc, ça, il faudrait identifier les besoins.
+- [00:07:05 --> 00:07:07] Donc, c'est-à-dire qu'il faut donner des intifiers des besoins? [à vérifier]
+- [00:07:08 --> 00:07:10] C'est-à-dire que j'essaie des déchets et fluents.
+- [00:07:10 --> 00:07:14] C'est-à-dire que c'est sur tes protections des effectifs et contrôles des accès.
+- [00:07:14 --> 00:07:16] Donc, c'est-à-dire que la partie sur tes sectifs,
+- [00:07:16 --> 00:07:19] la partie c'est bien sécurité,
+- [00:07:19 --> 00:07:21] informatique et automatisme.
+- [00:07:21 --> 00:07:22] Est-ce qu'on s'âge,
+- [00:07:22 --> 00:07:24] on aurait plutôt une réunion d'édiaire avec l'hélité?
+- [00:07:24 --> 00:07:25] Avec ça, c'est vrai.
+- [00:07:25 --> 00:07:26] C'est l'hélité.
+- [00:07:28 --> 00:07:29] Donc, c'est-à-dire que c'est une réunion d'édiaire là-dessus,
+- [00:07:29 --> 00:07:31] avec le directement qui vous donnez,
+- [00:07:31 --> 00:07:32] qui va qu'il me dire.
+- [00:07:33 --> 00:07:34] Il a covencé et réfléchir en fait.
+- [00:07:39 --> 00:07:40] Je pense à belatter.
+- [00:07:40 --> 00:07:42] En fait, il y a un groupe de travail maintenant,
+- [00:07:42 --> 00:07:43] qui est lancé.
+- [00:07:44 --> 00:07:46] Donc, j'ai... [à vérifier]
+- [00:07:46 --> 00:07:47] Je l'ai... [à vérifier]
+- [00:07:47 --> 00:07:49] Comment ça s'embrouette?
+- [00:07:49 --> 00:07:51] Il est responsable de chaque... [à vérifier]
+- [00:07:52 --> 00:07:54] Et puis le principe de ça,
+- [00:07:54 --> 00:07:56] c'est-à-dire qu'il pourrait toutes ces informations,
+- [00:07:56 --> 00:07:57] pour pas qu'il est perte,
+- [00:07:57 --> 00:07:59] et que ça soit remis dans un document unique
+- [00:07:59 --> 00:08:00] derrière, en donne,
+- [00:08:00 --> 00:08:01] aux diverses intervenants.
+- [00:08:02 --> 00:08:05] M. Tratif, formation et service généraux,
+- [00:08:05 --> 00:08:08] forcément, et après, de mon futur et réservant,
+- [00:08:08 --> 00:08:09] on fonctionne.
+- [00:08:09 --> 00:08:11] Il pourrait appeler les fonctions.
+- [00:08:11 --> 00:08:14] De ces fonctions, on a ce que je vous disais,
+- [00:08:14 --> 00:08:17] des tableaux,
+- [00:08:17 --> 00:08:20] typiquement, on a, sur le stockage,
+- [00:08:20 --> 00:08:21] les types de... [à vérifier]
+- [00:08:21 --> 00:08:24] les produits réfugiés, les produits congelés, les gestions des stock,
+- [00:08:24 --> 00:08:26] les flux interne, les équipements de stockage,
+- [00:08:26 --> 00:08:27] donc tout ça à remplir.
+- [00:08:27 --> 00:08:30] Ce qui va nous donner la toute base de données du programme,
+- [00:08:30 --> 00:08:33] et d'ailleurs, qui va nous, comme je disais,
+- [00:08:33 --> 00:08:36] nous permettre de faire un carrier des changements.
+- [00:08:36 --> 00:08:40] Donc ça, un peu long, un peu fatidieux au départ.
+- [00:08:40 --> 00:08:42] Je pense que vous en pensez,
+- [00:08:42 --> 00:08:44] mais derrière, ça me permettra vraiment
+- [00:08:44 --> 00:08:46] dans répondre à la globalité de l'acte de monge,
+- [00:08:46 --> 00:08:47] et de votre culture.
+- [00:08:47 --> 00:08:49] C'est beaucoup de processes,
+- [00:08:49 --> 00:08:51] mais pour un humble bill.
+- [00:08:52 --> 00:08:56] Mais c'est moi qui vous n'occupe.
+- [00:08:56 --> 00:08:59] Tout ce que vous avez un faire,
+- [00:08:59 --> 00:09:01] c'est-à-dire que les revenus,
+- [00:09:01 --> 00:09:04] voilà, on m'a terminé sa batterie.
+- [00:09:04 --> 00:09:07] Donc, juste, c'est rapide, c'est vrai que
+- [00:09:07 --> 00:09:10] un autovaccin, c'est un vaccin,
+- [00:09:10 --> 00:09:11] toujours une activée.
+- [00:09:11 --> 00:09:13] Donc, ça veut dire qu'on est activée,
+- [00:09:13 --> 00:09:14] ça veut dire qu'on m'occupe,
+- [00:09:14 --> 00:09:16] ça va actuellement,
+- [00:09:16 --> 00:09:19] qu'on entue, on utilise,
+- [00:09:19 --> 00:09:21] l'intégralité soit du virus,
+- [00:09:21 --> 00:09:22] soit de la batterie,
+- [00:09:22 --> 00:09:24] et on fiche, en fait,
+- [00:09:24 --> 00:09:26] avec du format, en général.
+- [00:09:26 --> 00:09:31] Donc, c'est un vaccin,
+- [00:09:31 --> 00:09:56] ou il n'y a pas de
+- [00:09:56 --> 00:09:59] un petit vaccin Covid ou Paris,
+- [00:09:59 --> 00:10:03] pour moi, c'est que le produit est déposé.
+- [00:10:03 --> 00:10:06] Lorsque nous, c'est le process.
+- [00:10:06 --> 00:10:08] Donc, pour tout, plus qu'en fait,
+- [00:10:08 --> 00:10:11] la souches peut changer un fait.
+- [00:10:11 --> 00:10:16] Donc, en fait, on est autorisé sur un processus.
+- [00:10:16 --> 00:10:18] C'est très beau d'un point de vue administratif sur process,
+- [00:10:18 --> 00:10:21] mais derrière, c'est très légère sur la maison en place.
+- [00:10:21 --> 00:10:23] C'est pas très beau, c'est... [à vérifier]
+- [00:10:23 --> 00:10:24] Parce qu'en fait, le risque,
+- [00:10:24 --> 00:10:27] c'est l'analyse risque,
+- [00:10:27 --> 00:10:29] on va pas vacciner,
+- [00:10:29 --> 00:10:30] l'interromter,
+- [00:10:30 --> 00:10:33] donc il y a quand même une prise en compte,
+- [00:10:33 --> 00:10:36] de l'une durée scolimité.
+- [00:10:36 --> 00:10:38] Alors, c'est vrai que,
+- [00:10:38 --> 00:10:39] ici, il n'y a pas de aimènes.
+- [00:10:39 --> 00:10:40] Donc, qu'elles sont,
+- [00:10:40 --> 00:10:41] qu'elles qu'on peut faire,
+- [00:10:41 --> 00:10:42] pour sécuriser ça,
+- [00:10:42 --> 00:10:44] c'est l'expertise,
+- [00:10:44 --> 00:10:45] pendant un moment,
+- [00:10:45 --> 00:10:46] le choix des souches de main,
+- [00:10:46 --> 00:10:47] c'est ça qui était termin,
+- [00:10:47 --> 00:10:49] l'efficacité du vaccin.
+- [00:10:49 --> 00:10:51] La deuxième chose, c'est l'information,
+- [00:10:51 --> 00:10:53] c'est vrai que, entre les différents sites,
+- [00:10:53 --> 00:10:54] aujourd'hui,
+- [00:10:54 --> 00:10:55] c'est-à-dire,
+- [00:10:55 --> 00:10:56] d'autovaccin chez Céva,
+- [00:10:56 --> 00:10:57] donc, en trois,
+- [00:10:57 --> 00:10:58] qu'ils font du virale.
+- [00:10:58 --> 00:10:59] Donc, en fait,
+- [00:10:59 --> 00:11:00] ça donne une expérience,
+- [00:11:00 --> 00:11:01] on va expertise,
+- [00:11:01 --> 00:11:02] et il y en a qui,
+- [00:11:02 --> 00:11:03] du vrai,
+- [00:11:03 --> 00:11:05] qu'on faisait des essais,
+- [00:11:05 --> 00:11:06] de formules,
+- [00:11:06 --> 00:11:08] de voir la... [à vérifier]
+- [00:11:08 --> 00:11:10] c'est très dévoil.
+- [00:11:10 --> 00:11:13] On fait des tests sur l'en sur des 1e volailles.
+- [00:11:13 --> 00:11:14] Et puis sur le canard,
+- [00:11:14 --> 00:11:16] il rajait pas de la même façon.
+- [00:11:16 --> 00:11:17] Là, on s'est dit que,
+- [00:11:17 --> 00:11:18] vaccination,
+- [00:11:18 --> 00:11:20] c'est assez, et puis des fois,
+- [00:11:20 --> 00:11:22] de l'eau, vous avez des vaccins
+- [00:11:22 --> 00:11:24] ont testé deux injections,
+- [00:11:24 --> 00:11:25] puis t'as des vêtons,
+- [00:11:25 --> 00:11:26] quittés des vaccins,
+- [00:11:26 --> 00:11:27] qui parchait pas,
+- [00:11:27 --> 00:11:29] qu'ils étaient 5 injections.
+- [00:11:29 --> 00:11:31] Et, quand on a une ou,
+- [00:11:31 --> 00:11:33] et bah, à trois injections,
+- [00:11:33 --> 00:11:34] c'est problème.
+- [00:11:34 --> 00:11:36] C'est un produit,
+- [00:11:36 --> 00:11:38] alors qui est responsable.
+- [00:11:38 --> 00:11:39] En de tous vaccins,
+- [00:11:39 --> 00:11:40] c'est le vêtot qui a responsable.
+- [00:11:40 --> 00:11:41] C'est lui,
+- [00:11:41 --> 00:11:43] c'est une renfrance,
+- [00:11:43 --> 00:11:44] en fait,
+- [00:11:44 --> 00:11:45] c'est le vêtérer d'air,
+- [00:11:45 --> 00:11:46] qui fait,
+- [00:11:46 --> 00:11:47] c'est une de,
+- [00:11:47 --> 00:11:48] comment on appelle ça,
+- [00:11:48 --> 00:11:49] c'est une... [à vérifier]
+- [00:11:49 --> 00:11:50] de prescriptions,
+- [00:11:50 --> 00:11:52] de prescriptions,
+- [00:11:52 --> 00:11:53] sur mesure,
+- [00:11:53 --> 00:11:54] qu'en fait,
+- [00:11:54 --> 00:11:56] c'est le vêtot qui,
+- [00:11:56 --> 00:11:58] qui choisit les sous,
+- [00:11:58 --> 00:11:59] c'est qui a responsable.
+- [00:11:59 --> 00:12:00] Donc, en plus rence,
+- [00:12:00 --> 00:12:01] c'est-à-dire,
+- [00:12:01 --> 00:12:02] si le vage,
+- [00:12:02 --> 00:12:03] c'est vraiment sûrement,
+- [00:12:03 --> 00:12:04] c'est-à-dire que c'est responsable.
+- [00:12:05 --> 00:12:06] Le vêtot,
+- [00:12:06 --> 00:12:07] on en,
+- [00:12:07 --> 00:12:08] en, en, en, en, en, en, en, en,
+- [00:12:08 --> 00:12:09] c'est sur prescriptions,
+- [00:12:09 --> 00:12:10] donc c'est le vêtot qui s'en regarde.
+- [00:12:10 --> 00:12:11] Là, vous,
+- [00:12:11 --> 00:12:12] c'est, c'est, vous,
+- [00:12:12 --> 00:12:13] les vêtots qui allaient faire des,
+- [00:12:13 --> 00:12:14] non,
+- [00:12:14 --> 00:12:15] le, le, le,
+- [00:12:15 --> 00:12:16] en,
+- [00:12:16 --> 00:12:17] le,
+- [00:12:17 --> 00:12:18] le,
+- [00:12:18 --> 00:12:20] donc la range dans la prescriptions.
+- [00:12:20 --> 00:12:21] Donc, dans le cas d'un n'수verage,
+- [00:12:21 --> 00:12:22] c'est le v monastery dont,
+- [00:12:22 --> 00:12:23] qu'ils, vous appellent,
+- [00:12:23 --> 00:12:24] pour faire des prélevant,
+- [00:12:24 --> 00:12:25] c'est des veraïtà,
+- [00:12:25 --> 00:12:26] nos verts,
+- [00:12:26 --> 00:12:29] dans le vêtot,
+- [00:12:29 --> 00:12:30] ир pas très,
+- [00:12:30 --> 00:12:31] simple,
+- [00:12:31 --> 00:12:32] ça va dire,
+- [00:12:32 --> 00:12:34] bah,
+- [00:12:34 --> 00:12:35] c'est,
+- [00:12:35 --> 00:12:36] coup,
+- [00:12:36 --> 00:12:38] c'est un curieux conjère le vage,
+- [00:12:38 --> 00:12:39] et bon,
+- [00:12:39 --> 00:12:45] c'est le vêtot qui va dire
+- [00:12:45 --> 00:12:53] c'est comme avec ça, avec ça, il y a deux phases et une phase biologique, donc on produit notre antigenne,
+- [00:12:53 --> 00:12:58] donc là ça sera plutôt du virus, donc on va produire du virus.
+- [00:12:58 --> 00:13:07] Et quand on a notre titre, on a d'un ce qu'on voulait, en fait, on va inactiver le virus.
+- [00:13:07 --> 00:13:12] Donc, phase virale, en fait, c'est contaminé, en fait, c'est pas terrible.
+- [00:13:12 --> 00:13:18] On est d'active, donc le produit devient stéril, et on y a le contrôle d'inactération.
+- [00:13:18 --> 00:13:24] Et ça, c'est dans les processes suivies, c'est vraiment, c'est quelque chose qui est important.
+- [00:13:24 --> 00:13:29] Et ensuite, on fait ce qu'on appelle la formulation répartition, qui est une phase de stéril.
+- [00:13:29 --> 00:13:33] Et puisque c'est un injectable, donc c'est des processes... [à vérifier]
+- [00:13:33 --> 00:13:35] Nous le avancés là-bas.
+- [00:13:35 --> 00:13:37] Donc, on a du tout le droit d'enlever.
+- [00:13:37 --> 00:13:41] La différence en fait avec un accident, c'est qu'un accident, en fait, il y a une cuille, j'ai été illiter.
+- [00:13:41 --> 00:13:47] On a fait 50 000 flaccons, donc on faisait des processus automatics.
+- [00:13:47 --> 00:13:52] Alors, donc, des fermenteurs, des processus, je vais traiter tous les paramètres.
+- [00:13:52 --> 00:13:56] Lorsque nous, dans notre cas, c'est 200 litres en fait.
+- [00:13:56 --> 00:13:58] C'est-à-dire, on va faire de 400 000 doses.
+- [00:13:59 --> 00:14:01] Donc, il est marqué terminé vers moi.
+- [00:14:01 --> 00:14:08] Il y a un contraire pour 300 000 millions de doses à l'année chez un intégrateur.
+- [00:14:08 --> 00:14:10] Tu peux le jouer.
+- [00:14:10 --> 00:14:12] Ah non.
+- [00:14:12 --> 00:14:15] Mais, je ne me suis pas cette contrainte qu'on devait absolument un petit peu au projet,
+- [00:14:15 --> 00:14:18] qui était-t-il dire demain, on va partir sur l'équipe de mille litres?
+- [00:14:18 --> 00:14:19] Ah, il voudrait.
+- [00:14:19 --> 00:14:21] Mais c'est pas si simple.
+- [00:14:21 --> 00:14:24] J'ai réfléchi, mais j'ai pas encore la solution.
+- [00:14:24 --> 00:14:28] Pour l'instant, je me suis rendu pour l'instant, là, dans ça, de solid.
+- [00:14:28 --> 00:14:33] C'est plus le direction, c'est d'occer encore autre chose.
+- [00:14:33 --> 00:14:35] Mais ce qui n'est pas compris, voyez-le, l'espace?
+- [00:14:35 --> 00:14:39] Pas bien, l'espace, je suis pas sûr qu'on est bien de faire du back-t-à-dire.
+- [00:14:39 --> 00:14:43] Donc, l'espace back-t-à-dire, ils sont pour réussir à venir à ça, pour le back-t-dire.
+- [00:14:43 --> 00:14:45] Parce qu'on s'est amené des contres en de sa propre.
+- [00:14:45 --> 00:14:46] Oui, voilà.
+- [00:14:46 --> 00:14:50] Donc, ensuite, à la fin, il y a le contrôle et la digération,
+- [00:14:50 --> 00:14:54] donc il y a un contrôle de sterité, donc il y a qu'un jour, en fait, de contrôle de sterité et la libération,
+- [00:14:54 --> 00:14:55] de produits.
+- [00:14:55 --> 00:14:58] C'est un procès juste, très bien, bien.
+- [00:14:58 --> 00:14:59] C'est assez... [à vérifier]
+- [00:15:00 --> 00:15:02] pour 4 cent de flaccons.
+- [00:15:02 --> 00:15:06] On aussi, il y a aussi une étage vieux qu'on a, tout le monde fait... [à vérifier]
+- [00:15:06 --> 00:15:08] Oui, oui, oui, on peut faire... [à vérifier]
+- [00:15:08 --> 00:15:12] Il dit que c'est long de 100 000 de flaccons, c'est pour 200 000 flaccons.
+- [00:15:12 --> 00:15:16] Oui, c'est des doses de 0, 4, on peut faire des doses de 0, 3, 20,
+- [00:15:16 --> 00:15:18] j'ai cette en m'attête, c'est... [à vérifier]
+- [00:15:18 --> 00:15:22] Tovement que d'autres doses, par flaccons, c'est ça, oui, on est de faire ça.
+- [00:15:22 --> 00:15:24] Et là, tu parles de 4 fondos, j'ai pas... [à vérifier]
+- [00:15:24 --> 00:15:26] 4 cent de flaccons de flaccons.
+- [00:15:26 --> 00:15:28] 4 cent mille doses.
+- [00:15:28 --> 00:15:33] Et ça, du coup, on est à l'histoire pour un 15 jours.
+- [00:15:33 --> 00:15:35] Et ça, on l'est pas dans 15 jours.
+- [00:15:35 --> 00:15:37] Et le temps de production de... [à vérifier]
+- [00:15:37 --> 00:15:39] Pour arriver à ça?
+- [00:15:39 --> 00:15:44] Le... ça dépend des virus, c'est un équipe plus vite, un équipe plus pas vite. [à vérifier]
+- [00:15:44 --> 00:15:46] En général, c'est une semaine.
+- [00:15:46 --> 00:15:51] Mais quand on fait, alors, un virus, on le verra dans le design du... [à vérifier]
+- [00:15:51 --> 00:15:53] Il faut produire d'abord des cellules.
+- [00:15:53 --> 00:15:57] Et globalement, il faut, de fois plus de temps pour pas des cellules.
+- [00:15:57 --> 00:16:02] Et ensuite, tu vas contaminer des cellules avec ton virus.
+- [00:16:02 --> 00:16:05] Et donc ça, ça prend moins d'une semaine.
+- [00:16:05 --> 00:16:11] Et après, il y a une exciliation qui peut producir un certain temps et le contrôle d'inactivation.
+- [00:16:11 --> 00:16:14] Et vous trouvez sur plusieurs sous-genres en même temps, plusieurs bagues?
+- [00:16:14 --> 00:16:17] Non, ça n'a pas trop... [à vérifier]
+- [00:16:17 --> 00:16:19] Non, oui, on peut... [à vérifier]
+- [00:16:19 --> 00:16:23] Sur une de mes journées, on va travailler quelque chose.
+- [00:16:23 --> 00:16:25] Bien, après, on peut les incuber.
+- [00:16:25 --> 00:16:27] Ce n'est pas, c'est pas... [à vérifier]
+- [00:16:27 --> 00:16:29] J'ai fait 15 jours avec une cellule souches.
+- [00:16:29 --> 00:16:31] Non, c'est laissé pas ça, en fait.
+- [00:16:31 --> 00:16:35] Et on peut intercaler les globalement des caméliétés aussi.
+- [00:16:35 --> 00:16:39] C'est surtout ça, ça va nous permettre de voir qu'il y avait le besoin de stockage.
+- [00:16:39 --> 00:16:40] Oui, tout à fait.
+- [00:16:40 --> 00:16:41] Mais ça, je l'ai fait.
+- [00:16:41 --> 00:16:43] Dans les... dans les... dans les calculs de... [à vérifier]
+- [00:16:43 --> 00:16:45] Pour un peu bonus, en fait, pour les module,
+- [00:16:45 --> 00:16:47] et effectivement, j'ai... [à vérifier]
+- [00:16:47 --> 00:16:49] D'ailleurs, comme vous, on a des stockage qui étaient à part des module.
+- [00:16:49 --> 00:16:51] Donc, il y a fallant qu'on fait le besoin de stockage.
+- [00:16:51 --> 00:16:54] Alors, c'est plus le stockage des bâtirs premières,
+- [00:16:54 --> 00:16:57] parce que le stockage des encours de fabrication
+- [00:16:57 --> 00:16:59] et des choses comme ça, en fait.
+- [00:16:59 --> 00:17:00] Et le stockage des dos... [à vérifier]
+- [00:17:00 --> 00:17:02] Et des produits finis.
+- [00:17:02 --> 00:17:05] Alors, le vaccin d'équipe est libéré, il s'en va en fait.
+- [00:17:05 --> 00:17:06] Oui, mais vous avez des équipes.
+- [00:17:06 --> 00:17:07] Donc, il y a 15 jours.
+- [00:17:07 --> 00:17:08] Bon, c'est 15 jours, ça va ça.
+- [00:17:08 --> 00:17:10] Et on ne peut pas avoir de l'eau, qui arrive en même temps,
+- [00:17:10 --> 00:17:11] soit c'est 15 jours.
+- [00:17:11 --> 00:17:13] Ou 3, 6, 6, 6, on va... [à vérifier]
+- [00:17:13 --> 00:17:15] C'est vrai que ça sera droit à 3, le haut, et tout à fait.
+- [00:17:17 --> 00:17:20] Donc, on a acheté pour les mains.
+- [00:17:20 --> 00:17:25] Donc, les donc serre processus très bien-uels.
+- [00:17:25 --> 00:17:28] Il y a une variabilité des sous-champettes,
+- [00:17:28 --> 00:17:31] à la fois des sous-champus, des sous-champus, des sous-champus.
+- [00:17:31 --> 00:17:35] Mais du nombre de sous-champus, ça va de 8 pour le haut pour nous.
+- [00:17:35 --> 00:17:40] De formation, on a des formées à celui-use à accueuse.
+- [00:17:40 --> 00:17:45] On a eu 8 d'euros, donc, en fait, c'est plus ça, c'est pas le process.
+- [00:17:46 --> 00:17:50] La taille de l'eau, on peut aller d'un litre à 200 litres.
+- [00:17:50 --> 00:17:52] Voir au moins d'un litre, en fait.
+- [00:17:52 --> 00:17:57] C'est en fait une chambre, où les chausses du belle... [à vérifier]
+- [00:17:57 --> 00:18:02] C'est une chambre, c'est un chambre, c'est un chambre.
+- [00:18:02 --> 00:18:04] C'est un chambre, c'est un chambre.
+- [00:18:04 --> 00:18:07] Moi, il faut qu'il le baille chez moi.
+- [00:18:07 --> 00:18:10] Et c'est une production à la bande.
+- [00:18:10 --> 00:18:12] Donc, c'est vraiment mon stockporn.
+- [00:18:12 --> 00:18:18] Donc, ça, c'est l'impolée, les principes de l'autorexin.
+- [00:18:18 --> 00:18:22] Alors, ensuite, j'ai préparé un petit... [à vérifier]
+- [00:18:22 --> 00:18:24] Il j'ai appris, en fait, que les... [à vérifier]
+- [00:18:24 --> 00:18:28] La présentation qu'on avait fait, c'est... [à vérifier]
+- [00:18:28 --> 00:18:40] Et c'est bien celle de Jordi.
+- [00:18:40 --> 00:18:42] C'est ça bien.
+- [00:18:44 --> 00:18:51] Donc, juste comment... [à vérifier]
+- [00:18:51 --> 00:18:56] J'ai travaillé avec qui j'ai mis, en fait, dans le... [à vérifier]
+- [00:18:56 --> 00:18:58] Alors, c'est... [à vérifier]
+- [00:18:58 --> 00:19:00] Marc, il voulait pas que... [à vérifier]
+- [00:19:00 --> 00:19:03] C'est en beau listre ou les équipes.
+- [00:19:03 --> 00:19:05] Donc, c'est pour ça que j'étais un peu... [à vérifier]
+- [00:19:05 --> 00:19:06] C'est un peu... [à vérifier]
+- [00:19:06 --> 00:19:08] Donc, c'est pour vrai que j'ai de votre... [à vérifier]
+- [00:19:08 --> 00:19:12] Et qui me poussait à prendre des gens... [à vérifier]
+- [00:19:12 --> 00:19:14] C'est donc... [à vérifier]
+- [00:19:14 --> 00:19:15] Dans... [à vérifier]
+- [00:19:15 --> 00:19:16] Mais il y a quand même... [à vérifier]
+- [00:19:16 --> 00:19:19] C'est mon comité un peu de pilotage, en fait.
+- [00:19:19 --> 00:19:20] Donc, après... [à vérifier]
+- [00:19:20 --> 00:19:23] Voilà, on va voir comment on travaille ensemble.
+- [00:19:23 --> 00:19:25] Globalement... [à vérifier]
+- [00:19:25 --> 00:19:28] Un générique, il y a un service d'un générique.
+- [00:19:28 --> 00:19:29] J'essaie là.
+- [00:19:29 --> 00:19:30] Je sais pas si vous les connaissez.
+- [00:19:30 --> 00:19:31] Puis, il ne connaît pas... [à vérifier]
+- [00:19:32 --> 00:19:33] Le fait que... [à vérifier]
+- [00:19:33 --> 00:19:34] Le filitaire... [à vérifier]
+- [00:19:34 --> 00:19:35] Le fait que c'était mon réchaire, en fait.
+- [00:19:35 --> 00:19:39] Donc, eux, ils dépendent de GMSQ, c'est-à-dire d'industrielle.
+- [00:19:39 --> 00:19:40] J'essaie là.
+- [00:19:40 --> 00:19:41] Ils construisent les usines.
+- [00:19:41 --> 00:19:45] Mais, Autorexin, c'est pas considéré comme de l'usine lourde.
+- [00:19:45 --> 00:19:46] Et c'est vrai que... [à vérifier]
+- [00:19:46 --> 00:19:51] Le enfance par exemple, en Europe, on cons이른 pas l'autorexin comme un produit industriel.
+- [00:19:51 --> 00:19:52] C'est... [à vérifier]
+- [00:19:52 --> 00:19:56] Et c'est pensé qu'on peut avoir un règlementation particulière.
+- [00:19:56 --> 00:19:59] C'est... c'est... c'est... c'est... c'est... c'est... c'est... c'est... c'est... c'est... c'est... c'est... voilà. [à vérifier]
+- [00:19:59 --> 00:20:00] Salut, Monsieur, que vous tu t'étais.
+- [00:20:00 --> 00:20:04] Donc... du coup je l'ai... bon... je l'ai l'évoit pour discuter avec eux, pour voir. [à vérifier]
+- [00:20:04 --> 00:20:07] Le but... c'est qu'ils soient au courant qui donne aussi leur avis. [à vérifier]
+- [00:20:07 --> 00:20:10] Mais... il... il y a l'ortemite. [à vérifier]
+- [00:20:10 --> 00:20:12] Donc... va... [à vérifier]
+- [00:20:12 --> 00:20:16] et c'est sécurisé le process pour qu'on le face en sensant.
+- [00:20:16 --> 00:20:20] Mais c'est vrai que le choix,
+- [00:20:20 --> 00:20:25] il doit participer,
+- [00:20:25 --> 00:20:27] mais par exemple les on ne pas choisir.
+- [00:20:27 --> 00:20:30] Et sur l'épuis, on a été à l'épuis,
+- [00:20:30 --> 00:20:33] le choix de l'architecte.
+- [00:20:33 --> 00:20:37] Donc je suis là pour essayer de voir,
+- [00:20:37 --> 00:20:38] au bon moment avec eux.
+- [00:20:38 --> 00:20:40] À côté de ça, il y a à Christophe Rinaldin.
+- [00:20:40 --> 00:20:43] Alors lui c'est dans plus une tôt-à-t-il connait?
+- [00:20:43 --> 00:20:47] Donc lui c'est les bâtiments en fait,
+- [00:20:47 --> 00:20:50] mais pas forcément les bâtiments enregistriènent.
+- [00:20:50 --> 00:20:51] Par contre toi?
+- [00:20:51 --> 00:20:53] Oui, c'est une surprise.
+- [00:20:53 --> 00:20:56] Pas sur l'épuis, mais à Rien, oui.
+- [00:20:56 --> 00:20:57] Ah bah, oui.
+- [00:20:57 --> 00:21:01] Oui, il est plutôt effecté à tout ce qui est un tertière sur l'épuis.
+- [00:21:01 --> 00:21:04] Oui, parce qu'il y a un JMSP, dans notre service pour tous les fois.
+- [00:21:04 --> 00:21:06] Bah oui, pas c'est eux.
+- [00:21:06 --> 00:21:08] Mais pas c'est parce qu'il fait... [à vérifier]
+- [00:21:08 --> 00:21:10] Oui, il a fait... [à vérifier]
+- [00:21:10 --> 00:21:12] Il fait... [à vérifier]
+- [00:21:12 --> 00:21:14] Bah, c'est... [à vérifier]
+- [00:21:14 --> 00:21:15] Ikat.
+- [00:21:16 --> 00:21:17] Ikat, c'est lui en fait.
+- [00:21:17 --> 00:21:19] Non, c'est surtout où Gaitan.
+- [00:21:19 --> 00:21:22] Et il est venu en fut port de Gaitan, en fut port technique.
+- [00:21:22 --> 00:21:23] Gaitan, il est... [à vérifier]
+- [00:21:23 --> 00:21:26] Gaitan, c'est le choix de projet de l'épuis de Gaitan.
+- [00:21:26 --> 00:21:27] Oui, mais les tous, il est tout ça.
+- [00:21:27 --> 00:21:28] Il était tout ça.
+- [00:21:28 --> 00:21:29] C'est... [à vérifier]
+- [00:21:29 --> 00:21:31] En fait, c'est quand même l'éxité de c'est-à-dire.
+- [00:21:31 --> 00:21:32] Et moi, alors moi, je... [à vérifier]
+- [00:21:32 --> 00:21:35] Je rêvais chez c'est-à-dire, il y a un peu plus dix ans.
+- [00:21:35 --> 00:21:37] Et j'ai pris la direction du vac.
+- [00:21:37 --> 00:21:40] Et on va dire, il y a un projet, il faut qu'on soit venu c'est.
+- [00:21:40 --> 00:21:43] Déjà, avec un mot Gaitan qui... [à vérifier]
+- [00:21:43 --> 00:21:45] C'était similion.
+- [00:21:45 --> 00:21:47] Il y avait 6 celles blanches.
+- [00:21:47 --> 00:21:48] En ordent d'être.
+- [00:21:48 --> 00:21:50] On a fait télécontreur.
+- [00:21:50 --> 00:21:52] Et j'ai un génial qui était d'en Roger.
+- [00:21:53 --> 00:21:55] Moi, je pensais qu'il y avait une structure, en fait.
+- [00:21:55 --> 00:21:57] Et j'ai réalisé que... [à vérifier]
+- [00:21:57 --> 00:21:58] Il a géné... [à vérifier]
+- [00:21:58 --> 00:21:59] Et parce qu'il y avait... [à vérifier]
+- [00:21:59 --> 00:22:01] Ardopavillé, t'as pas regardé.
+- [00:22:01 --> 00:22:03] Et il était tout seul le point bon dansier.
+- [00:22:04 --> 00:22:05] Et la gêneur ou le c'est moi, il est... [à vérifier]
+- [00:22:05 --> 00:22:07] J'ai dit, bêté, t'as bien dérit, en anglais,
+- [00:22:07 --> 00:22:09] en anglais, en anglais, en anglais.
+- [00:22:09 --> 00:22:11] En anglais du tout.
+- [00:22:11 --> 00:22:14] Donc, d'écoute, c'est vrai que je me suis dit pour ce projet-là.
+- [00:22:14 --> 00:22:15] Je connais c'est vrai.
+- [00:22:15 --> 00:22:16] Je me... [à vérifier]
+- [00:22:16 --> 00:22:17] Tout le monde... [à vérifier]
+- [00:22:17 --> 00:22:20] Donc, comme ça, on aura les personnes pour à dire, on va... [à vérifier]
+- [00:22:20 --> 00:22:21] O, j'ai de bon courant.
+- [00:22:22 --> 00:22:23] Donc, tout le monde est dans le plus.
+- [00:22:23 --> 00:22:25] Donc, il y a... [à vérifier]
+- [00:22:25 --> 00:22:26] Il y a Christophe.
+- [00:22:26 --> 00:22:28] Et donc, Christophe, il dépend de l'aridomélicole.
+- [00:22:28 --> 00:22:31] Donc, c'est à moyen de... [à vérifier]
+- [00:22:31 --> 00:22:33] Donc, c'est vrai que... [à vérifier]
+- [00:22:33 --> 00:22:35] Je l'ai d'accord.
+- [00:22:35 --> 00:22:37] Et c'est vrai que... [à vérifier]
+- [00:22:37 --> 00:22:39] J'ai d'excesses, c'est direct avec pas.
+- [00:22:39 --> 00:22:41] Donc, c'est à ce parti.
+- [00:22:41 --> 00:22:42] Euh... [à vérifier]
+- [00:22:42 --> 00:22:44] Ensuite, il y a la qualité.
+- [00:22:44 --> 00:22:46] Donc, qu'on veut, c'est les... [à vérifier]
+- [00:22:46 --> 00:22:49] Qualifications, validations et méthodes.
+- [00:22:49 --> 00:22:51] Donc, c'est... [à vérifier]
+- [00:22:51 --> 00:22:52] C'est... [à vérifier]
+- [00:22:52 --> 00:22:53] C'est plus... [à vérifier]
+- [00:22:53 --> 00:22:54] Process.
+- [00:22:54 --> 00:22:55] Donc, tous les... [à vérifier]
+- [00:22:55 --> 00:22:57] Pour les module en effet des yeux,
+- [00:22:57 --> 00:22:58] ce qu'on appelle des URS,
+- [00:22:58 --> 00:23:01] user requirement... [à vérifier]
+- [00:23:01 --> 00:23:03] Specification.
+- [00:23:03 --> 00:23:04] Pour le... [à vérifier]
+- [00:23:04 --> 00:23:05] Le contrat.
+- [00:23:05 --> 00:23:06] Et donc, là, effectivement,
+- [00:23:06 --> 00:23:08] tout ce qui sera là-dedans,
+- [00:23:08 --> 00:23:09] sera testé.
+- [00:23:10 --> 00:23:11] Donc, et sur le plan,
+- [00:23:11 --> 00:23:12] enfin... [à vérifier]
+- [00:23:12 --> 00:23:14] Donc, les pressions,
+- [00:23:14 --> 00:23:15] les détails pressions,
+- [00:23:15 --> 00:23:17] les températures,
+- [00:23:17 --> 00:23:19] toutes le bonitoreignes,
+- [00:23:19 --> 00:23:20] tout ça sera... [à vérifier]
+- [00:23:20 --> 00:23:22] ça va vérifier les congelateurs,
+- [00:23:22 --> 00:23:23] les équipants.
+- [00:23:23 --> 00:23:25] Il n'y a pas beaucoup d'équipants.
+- [00:23:25 --> 00:23:28] Donc, en fait, il n'y a pas de systèmes de l'inéautomatique
+- [00:23:28 --> 00:23:29] de choses comme ça.
+- [00:23:29 --> 00:23:31] Mais, par contre, il y a comme des congelateurs,
+- [00:23:31 --> 00:23:33] des celles froides, des celles froides,
+- [00:23:33 --> 00:23:34] des celles froides.
+- [00:23:34 --> 00:23:36] Donc, on vérifie que... [à vérifier]
+- [00:23:36 --> 00:23:37] ça sera bien chaud,
+- [00:23:37 --> 00:23:38] partout, de façon obligée,
+- [00:23:38 --> 00:23:39] dans toute la pièce.
+- [00:23:39 --> 00:23:40] Et... [à vérifier]
+- [00:23:40 --> 00:23:41] Et que... [à vérifier]
+- [00:23:41 --> 00:23:42] Et ces module, ils sont... [à vérifier]
+- [00:23:42 --> 00:23:43] par exemple,
+- [00:23:43 --> 00:23:44] problème de coupure... [à vérifier]
+- [00:23:44 --> 00:23:45] coupure avecricité,
+- [00:23:45 --> 00:23:46] ils sont indépendants,
+- [00:23:46 --> 00:23:47] ça nous devir... [à vérifier]
+- [00:23:47 --> 00:23:51] C'est un choix qu'il faudra faire.
+- [00:23:51 --> 00:23:53] Pour la solution, ils sont indépendants.
+- [00:23:53 --> 00:23:54] Donc, c'est... [à vérifier]
+- [00:23:54 --> 00:23:55] chaque module,
+- [00:23:55 --> 00:23:56] rassant,
+- [00:23:56 --> 00:23:57] on va avoir... [à vérifier]
+- [00:23:57 --> 00:23:58] d'entrer.
+- [00:23:58 --> 00:23:59] Et après,
+- [00:23:59 --> 00:24:00] c'est... [à vérifier]
+- [00:24:00 --> 00:24:01] comment on va faire, en fait,
+- [00:24:01 --> 00:24:03] au niveau du... [à vérifier]
+- [00:24:03 --> 00:24:04] de l'arri... [à vérifier]
+- [00:24:04 --> 00:24:05] de l'arriver.
+- [00:24:05 --> 00:24:06] En fait... [à vérifier]
+- [00:24:06 --> 00:24:07] Ce qui est rare peut-être des systèmes,
+- [00:24:07 --> 00:24:08] au donnant,
+- [00:24:08 --> 00:24:09] ou un peu trop en donnant,
+- [00:24:09 --> 00:24:10] si on est sur un plus un,
+- [00:24:10 --> 00:24:11] ou un deuxième,
+- [00:24:11 --> 00:24:12] pourquoi pas,
+- [00:24:12 --> 00:24:13] mais si on a dû... [à vérifier]
+- [00:24:13 --> 00:24:14] du... [à vérifier]
+- [00:24:14 --> 00:24:17] 8h,
+- [00:24:17 --> 00:24:18] ça, c'est... [à vérifier]
+- [00:24:18 --> 00:24:19] Par contre chose quoi.
+- [00:24:19 --> 00:24:21] Bah, en fait, il y a... [à vérifier]
+- [00:24:21 --> 00:24:22] Et par exemple,
+- [00:24:22 --> 00:24:23] les traitements d'air, c'est pareil.
+- [00:24:23 --> 00:24:25] Alors, c'est sûr que par exemple,
+- [00:24:25 --> 00:24:26] l'eau,
+- [00:24:26 --> 00:24:27] l'operifie,
+- [00:24:27 --> 00:24:28] je dis,
+- [00:24:28 --> 00:24:29] t'avais... [à vérifier]
+- [00:24:29 --> 00:24:31] un producteur,
+- [00:24:31 --> 00:24:32] dans chaque module,
+- [00:24:32 --> 00:24:33] donc,
+- [00:24:33 --> 00:24:35] on va peut-être faire passer l'étude.
+- [00:24:35 --> 00:24:36] C'est vrai,
+- [00:24:36 --> 00:24:37] c'est... [à vérifier]
+- [00:24:37 --> 00:24:38] c'est pas encore... [à vérifier]
+- [00:24:38 --> 00:24:39] c'est pas... [à vérifier]
+- [00:24:39 --> 00:24:40] je suis en fasse de réflexion,
+- [00:24:40 --> 00:24:41] enfin,
+- [00:24:41 --> 00:24:42] je suis pas... [à vérifier]
+- [00:24:42 --> 00:24:43] mais effectivement,
+- [00:24:43 --> 00:24:44] je... [à vérifier]
+- [00:24:44 --> 00:24:45] bien... [à vérifier]
+- [00:24:45 --> 00:24:46] des alliens... [à vérifier]
+- [00:24:46 --> 00:24:48] pour pouvoir se recher.
+- [00:24:48 --> 00:24:49] Ça, c'est déjà,
+- [00:24:49 --> 00:24:51] tous les éléments des module.
+- [00:24:52 --> 00:24:53] C'est vrai.
+- [00:24:53 --> 00:24:55] On peut aller avoir des... [à vérifier]
+- [00:24:55 --> 00:24:56] les ordres,
+- [00:24:56 --> 00:24:57] ou c'est vrai.
+- [00:24:57 --> 00:24:58] C'est vrai, c'est vrai, c'est vrai.
+- [00:25:00 --> 00:25:01] Pour voir... [à vérifier]
+- [00:25:01 --> 00:25:02] Et je voulais vous entrer,
+- [00:25:02 --> 00:25:03] et à l'heure après,
+- [00:25:03 --> 00:25:04] oui,
+- [00:25:04 --> 00:25:05] ils sortent d'être... [à vérifier]
+- [00:25:05 --> 00:25:06] Et en fait,
+- [00:25:06 --> 00:25:07] donc là,
+- [00:25:07 --> 00:25:08] ici,
+- [00:25:08 --> 00:25:09] j'ai... [à vérifier]
+- [00:25:09 --> 00:25:10] le... [à vérifier]
+- [00:25:10 --> 00:25:11] ce qui est construction local,
+- [00:25:11 --> 00:25:12] et ce qui est modulant,
+- [00:25:12 --> 00:25:13] c'est... [à vérifier]
+- [00:25:13 --> 00:25:14] c'est... [à vérifier]
+- [00:25:14 --> 00:25:15] c'est... [à vérifier]
+- [00:25:15 --> 00:25:17] c'est... [à vérifier]
+- [00:25:17 --> 00:25:19] urglectu pour justement
+- [00:25:19 --> 00:25:20] fiorabiliser... [à vérifier]
+- [00:25:20 --> 00:25:21] c'est... [à vérifier]
+- [00:25:21 --> 00:25:22] c... [à vérifier]
+- [00:25:22 --> 00:25:24] le choix... [à vérifier]
+- [00:25:24 --> 00:25:25] en fait... [à vérifier]
+- [00:25:25 --> 00:25:26] le lapel d'œuvre.
+- [00:25:26 --> 00:25:27] Comme je,
+- [00:25:27 --> 00:25:28] les... [à vérifier]
+- [00:25:28 --> 00:25:29] le... [à vérifier]
+- [00:25:29 --> 00:25:30] le... [à vérifier]
+- [00:25:30 --> 00:25:31] le... [à vérifier]
+- [00:25:31 --> 00:25:32] le... [à vérifier]
+- [00:25:32 --> 00:25:33] le... [à vérifier]
+- [00:25:33 --> 00:25:33] le... [à vérifier]
+- [00:25:33 --> 00:25:34] le... [à vérifier]
+- [00:25:34 --> 00:25:35] le... [à vérifier]
+- [00:25:35 --> 00:25:36] le... [à vérifier]
+- [00:25:36 --> 00:25:37] le... [à vérifier]
+- [00:25:37 --> 00:25:38] le... [à vérifier]
+- [00:25:38 --> 00:25:39] le... [à vérifier]
+- [00:25:39 --> 00:25:40] le... [à vérifier]
+- [00:25:40 --> 00:25:42] le... [à vérifier]
+- [00:25:42 --> 00:25:43] le... [à vérifier]
+- [00:25:43 --> 00:25:44] le... [à vérifier]
+- [00:25:44 --> 00:25:45] le... [à vérifier]
+- [00:25:45 --> 00:25:46] le... [à vérifier]
+- [00:25:46 --> 00:25:47] le... [à vérifier]
+- [00:25:47 --> 00:25:57] qui ferait test, donc, en fait, effectivement, c'est, alors là, on écrit tout, donc... [à vérifier]
+- [00:25:57 --> 00:26:02] Je ne sais pas, c'est confi d'enselle, c'est vraiment quelque chose.
+- [00:26:02 --> 00:26:07] Oui, mais c'est pas, mais je pense que j'ai eu des contrats de confi d'océrité avec ça.
+- [00:26:07 --> 00:26:10] Non, il faut peut-être que j'en signalais.
+- [00:26:10 --> 00:26:13] Très qu'on va s'y dire contre d'océrité, je ne sais pas.
+- [00:26:13 --> 00:26:16] C'est pas si des globales, ou si c'est pas j'ai pas projet.
+- [00:26:16 --> 00:26:20] C'est le global remetit, c'est mieux, c'est de dormir pour qu'à d'alongar, donc... [à vérifier]
+- [00:26:20 --> 00:26:22] Non, vraiment, c'est... [à vérifier]
+- [00:26:22 --> 00:26:25] Et donc ensuite, process avec ça.
+- [00:26:25 --> 00:26:30] Alors moi, j'ai fait la production de... [à vérifier]
+- [00:26:30 --> 00:26:33] Alors le moi, je suis vétérinaire, je ne suis pas technique, je suis... [à vérifier]
+- [00:26:33 --> 00:26:37] Et en fait, je dirais, j'ai des sociétés, donc... [à vérifier]
+- [00:26:37 --> 00:26:42] Par contre, j'avais l'intérêt sur l'utilisation de l'autre.
+- [00:26:42 --> 00:26:45] Mais ça fait des années que je suis aussi de la production.
+- [00:26:45 --> 00:26:49] Et donc, directement, j'ai construit des trucs, donc... [à vérifier]
+- [00:26:49 --> 00:26:51] Voilà, c'est pour ça qui m'ont mis là.
+- [00:26:51 --> 00:26:53] Mais donc... [à vérifier]
+- [00:26:53 --> 00:26:58] Donc là, Peter Schnour, il était en guillet, et dit donc, il était dans tout ce qui était... [à vérifier]
+- [00:26:58 --> 00:27:01] ...industrialisation. [à vérifier]
+- [00:27:01 --> 00:27:03] Et donc, il reprend, c'était... [à vérifier]
+- [00:27:03 --> 00:27:05] Parce qu'en fait, chaque... [à vérifier]
+- [00:27:05 --> 00:27:08] En fait, les outils avec ça, c'était des liés à jour loin.
+- [00:27:08 --> 00:27:11] On est en faisant chacun nos soupes dans du coin.
+- [00:27:11 --> 00:27:14] Et il y en a 7, je sais pas, avec chacun des différents.
+- [00:27:14 --> 00:27:17] Et c'est vrai que moi, quand j'ai commencé à travailler le dossier,
+- [00:27:17 --> 00:27:20] en fait, en m'a dit, construit des unités module,
+- [00:27:20 --> 00:27:22] qu'on pourrait pas être partout dans le... [à vérifier]
+- [00:27:22 --> 00:27:23] C'était ça.
+- [00:27:23 --> 00:27:26] Donc, j'allais visiter qu'à tous les consites, notamment,
+- [00:27:26 --> 00:27:29] environ que je... parce que je peux laisser moi, qu'on s'avoir... [à vérifier]
+- [00:27:29 --> 00:27:36] Quel est le meilleur design process pour faire ça, en fait.
+- [00:27:36 --> 00:27:40] Et en le coin, on a fait un appel d'offres par au module.
+- [00:27:40 --> 00:27:43] Donc, c'est lui qu'il a reprends ça,
+- [00:27:43 --> 00:27:45] parce que moi, je suis en enfin de... [à vérifier]
+- [00:27:45 --> 00:27:47] je suis pas moins l'artiste.
+- [00:27:47 --> 00:27:50] C'est pas moi qui l'enstre le truc, mais... [à vérifier]
+- [00:27:50 --> 00:27:53] Je veux quand même que ça... c'est vrai que c'est un peu mauvaisier, [à vérifier]
+- [00:27:53 --> 00:27:55] donc c'est... j'ai... j'ai... c'est faire que ça, ça, ça... [à vérifier]
+- [00:27:55 --> 00:27:58] Donc, Peter Schnour, ils sont train de relire,
+- [00:27:58 --> 00:28:01] assez précisément, les... les URS. [à vérifier]
+- [00:28:01 --> 00:28:05] Donc, quand on fait ça, effectivement, il faut adapter au réglementation.
+- [00:28:05 --> 00:28:07] À la réglementation.
+- [00:28:07 --> 00:28:11] Et donc, on a pas sas de questions, là, sur les questions, sur l'aspect,
+- [00:28:11 --> 00:28:14] il y a des réglementations locales.
+- [00:28:14 --> 00:28:17] Et on essaye d'assoupler pour les autorités.
+- [00:28:17 --> 00:28:19] Oui, ce qu'on disait l'autre jour où ils étaient en l'adentir.
+- [00:28:19 --> 00:28:22] Oui, et de lui faire, lui redancez.
+- [00:28:22 --> 00:28:26] Oh, je suis... ça, c'est qu'à une vachement... [à vérifier]
+- [00:28:26 --> 00:28:28] Je suis important, ce point.
+- [00:28:28 --> 00:28:32] Oui, oui, oui, oui, parce que, en fait, tout à circulation d'air,
+- [00:28:32 --> 00:28:36] il y a des particules, des pensées, et moins tard-là,
+- [00:28:36 --> 00:28:38] puis c'est qu'au plus... [à vérifier]
+- [00:28:38 --> 00:28:40] C'est sûr d'ailleurs, comme elle.
+- [00:28:40 --> 00:28:41] Donc oui, c'est important.
+- [00:28:41 --> 00:28:42] Oui, c'est important.
+- [00:28:42 --> 00:28:44] Mais, j'ai pensé que... [à vérifier]
+- [00:28:44 --> 00:28:47] Oui, j'aurais des contrées.
+- [00:28:47 --> 00:28:49] Et c'est pas la suffisante.
+- [00:28:50 --> 00:28:53] Donc, c'est-à-dire, on me pense à vraiment, on se compte sur ce sujet.
+- [00:28:53 --> 00:28:57] Je voudrais, sur Julien, là, on a écrit justement,
+- [00:28:57 --> 00:29:03] et on voudrait favoriser une réunion avec l'agence française,
+- [00:29:03 --> 00:29:04] en fait.
+- [00:29:04 --> 00:29:05] Et ils ont déjà des contacts.
+- [00:29:05 --> 00:29:08] Donc, j'ai appelé les gens de l'agence, qui m'ont dit,
+- [00:29:08 --> 00:29:10] bah, c'est pas problème.
+- [00:29:10 --> 00:29:13] On a un contrat avec eux, justement, des choses.
+- [00:29:13 --> 00:29:16] Donc, on pourrait très bien faire le réunion et dire ce qu'on fait,
+- [00:29:16 --> 00:29:17] en France.
+- [00:29:17 --> 00:29:21] Et, en fait, il tient qu'il y ait sur le fait que ce soit processus spagnol.
+- [00:29:21 --> 00:29:23] Oui, c'est... [à vérifier]
+- [00:29:23 --> 00:29:24] C'est... [à vérifier]
+- [00:29:24 --> 00:29:26] C'est... [à vérifier]
+- [00:29:26 --> 00:29:27] C'est... [à vérifier]
+- [00:29:27 --> 00:29:29] C'est quoi l'énergie, l'union?
+- [00:29:29 --> 00:29:31] On va aller, c'est... [à vérifier]
+- [00:29:31 --> 00:29:32] Oui, non.
+- [00:29:32 --> 00:29:34] Et, en fait, c'était... [à vérifier]
+- [00:29:34 --> 00:29:35] Pour eux, c'était... [à vérifier]
+- [00:29:35 --> 00:29:36] C'était... [à vérifier]
+- [00:29:36 --> 00:29:37] C'était... [à vérifier]
+- [00:29:37 --> 00:29:38] C'était de la question, quoi.
+- [00:29:39 --> 00:29:43] Et donc, la deuxième chose, il nous a offert rajouté quelques sasses.
+- [00:29:43 --> 00:29:47] Donc, ça va nécessiter de d'agrandir un peu les audio.
+- [00:29:47 --> 00:29:49] Par rapport à ce qu'on avait fait.
+- [00:29:49 --> 00:29:51] Mais est-ce qu'il n'est pas forcément... [à vérifier]
+- [00:29:51 --> 00:29:55] Parce que sur le blinding, c'était un peu étroit en fait.
+- [00:29:55 --> 00:29:56] Et finalement, c'est... [à vérifier]
+- [00:29:56 --> 00:29:58] C'est... c'est un avantage à l'en fait. [à vérifier]
+- [00:29:58 --> 00:29:59] Je... je l'ai fait de bonnes. [à vérifier]
+- [00:29:59 --> 00:30:00] Il est grand bien longueur.
+- [00:30:01 --> 00:30:17] C'est difficile de dire une longueur, il n'y a rien, c'est pas l'unité et pas son argent, parce que je parlais de l'unité en fait ça vous j'ai l'unité.
+- [00:30:17 --> 00:30:19] On a rajouté une idée.
+- [00:30:19 --> 00:30:21] On a l'unité.
+- [00:30:21 --> 00:30:25] On a l'unité, on a l'unité, on a l'unité, on a l'unité, on a l'unité.
+- [00:30:25 --> 00:30:28] Ensuite, bien sûr, il faut faire rentrer le achesseux.
+- [00:30:28 --> 00:30:31] C'est le responsable de le achesseux.
+- [00:30:31 --> 00:30:35] Le légal, c'est Florian Dobreck, donc là, il y a d'un pour tout le monde.
+- [00:30:35 --> 00:30:38] Le reste de la joie de Tiffany.
+- [00:30:38 --> 00:30:41] Donc là aussi, il participe de la IT.
+- [00:30:41 --> 00:30:43] C'est Vincent Vino.
+- [00:30:43 --> 00:30:48] Et la finie de la finie de la finie de la finie de la finie de la finie de la finie de la finie de la finie de la finie de la finie de la finie.
+- [00:30:48 --> 00:30:53] Donc, pas le matartelli, c'est le camillo comme ça, il y a eu beaucoup de l'un.
+- [00:30:53 --> 00:30:56] Et il y a eu le coordinateur.
+- [00:30:56 --> 00:30:58] Parce que c'est un projet pas uniquement.
+- [00:30:58 --> 00:31:05] Il y a eu un d'accord qui a été signé avec les ministères, notamment de la agriculture.
+- [00:31:05 --> 00:31:14] Et dans cette accord, il y a des comment un aspect de vaccin Grim,
+- [00:31:14 --> 00:31:22] achent-off, voilà, il y a bien, mais qui se réfaît par c'est-à-dire qu'il y a une espérage,
+- [00:31:22 --> 00:31:26] l'exemple, il y a une prophétie pour essayer des radicales.
+- [00:31:26 --> 00:31:34] Il y a une espérue de notre pathogétique qui s'appelle Coccelose, du de la promis.
+- [00:31:34 --> 00:31:40] Et puis il y a le verse du Chapo, du Chapo, du Chapo, du Chapo.
+- [00:31:40 --> 00:31:44] Et donc, et plus l'interacte, il y a cinq aspects.
+- [00:31:44 --> 00:31:48] Donc, moi, je vous coupe que de la semaine de production,
+- [00:31:48 --> 00:31:52] il y a eu un campus création d'un campus local.
+- [00:31:52 --> 00:31:57] Donc, évillement, c'est pas trop de ce qu'on appelle la vête.
+- [00:31:57 --> 00:32:01] C'est-à-dire Afrique, médaliste et Eturki.
+- [00:32:01 --> 00:32:03] Et il suffit sur ça.
+- [00:32:03 --> 00:32:07] Donc, c'est beaucoup, il essaye d'experts en retard.
+- [00:32:07 --> 00:32:11] En réglementation, et Bertrand l'Etat-Lague, c'est business.
+- [00:32:11 --> 00:32:16] En fait, c'est le responsable technique de la zone, en fait.
+- [00:32:16 --> 00:32:18] Tout de l'aille, les besoins... [à vérifier]
+- [00:32:18 --> 00:32:20] Tout ce que c'est, là, de vous l'envoyer, d'ailleurs.
+- [00:32:20 --> 00:32:21] Ouais, ouais, ouais.
+- [00:32:21 --> 00:32:24] Donc, il y a un code GDIO, il y a un code pour nous.
+- [00:32:24 --> 00:32:27] Pour BSI, BSI.
+- [00:32:27 --> 00:32:28] Code GDIO.
+- [00:32:28 --> 00:32:31] GDIO, c'est le outil de gestion de chez Cera.
+- [00:32:31 --> 00:32:36] C'est un code, c'est plus facile à faire entrer dans CSA.
+- [00:32:36 --> 00:32:42] Donc, la situation, aujourd'hui, on y est allée en Amrille.
+- [00:32:42 --> 00:32:47] Le BSI, l'agriculture, nous avez attribué ici ce terrain-là.
+- [00:32:47 --> 00:32:49] On était les noirs.
+- [00:32:49 --> 00:32:51] Il y a 20 000 baccarrés.
+- [00:32:51 --> 00:32:55] A côté, ils sont en train de faire un laboratoire à 16.
+- [00:32:55 --> 00:32:57] Donc, un laboratoire.
+- [00:32:57 --> 00:33:02] En fait, de suivi, en fait, des pâteaux gètes.
+- [00:33:02 --> 00:33:04] D'arabilité de breinte.
+- [00:33:04 --> 00:33:07] BSI, BSI, 2, BSI, 3, BSI, 3, BSI, 3, BSI, 3, BSI.
+- [00:33:07 --> 00:33:08] C'est le produit.
+- [00:33:08 --> 00:33:12] Il y a des pratiques parce qu'il y a très longs d'un musulisé,
+- [00:33:12 --> 00:33:15] les traitements, des déchets, des choses que nous avons.
+- [00:33:15 --> 00:33:19] Mais en fait, le problème, c'est que ce terrain, il n'y a pas bien l'ilisé. [à vérifier]
+- [00:33:19 --> 00:33:22] Et il permet pas d'avoir des situations.
+- [00:33:22 --> 00:33:25] Et la vieillisation, la basse, ça peut prendre,
+- [00:33:25 --> 00:33:29] ça ne se voit où les gens, et le chaleur d'exouillis qui se voit,
+- [00:33:29 --> 00:33:31] ça va pas être, on s'est géré.
+- [00:33:31 --> 00:33:35] Donc, du coup, on n'a pas... [à vérifier]
+- [00:33:35 --> 00:33:37] Mais il y a beaucoup de laboratoires, il va quand même le bas.
+- [00:33:37 --> 00:33:39] Il y a beaucoup de laboratoires.
+- [00:33:39 --> 00:33:40] Ils ont quand-il passé, en fait?
+- [00:33:40 --> 00:33:41] Ils ont quand-il passé?
+- [00:33:41 --> 00:33:42] Ils ont quand-il passé?
+- [00:33:42 --> 00:33:44] Là, c'est les barraquements pour le monde.
+- [00:33:44 --> 00:33:47] Il y a un fait des pâteaux, des tomes, un peu partout.
+- [00:33:47 --> 00:33:49] Et c'est pas encore assez bon.
+- [00:33:49 --> 00:33:51] La magnère, l'installation, mais j'attends quand-il, c'est assez long,
+- [00:33:51 --> 00:33:53] de pouvoir une autre, et ça va être coups.
+- [00:33:53 --> 00:33:59] Du coup, on est en train de chercher un terrain.
+- [00:33:59 --> 00:34:02] Alors, mais pour le monde à terrain,
+- [00:34:02 --> 00:34:06] donc l'idéal, c'est d'aller au ministère de l'industrie.
+- [00:34:06 --> 00:34:08] Et il y a des attributs des terrain qui sont,
+- [00:34:08 --> 00:34:11] ce qui n'est pas le bout d'on, qui sont prêts à être construits,
+- [00:34:11 --> 00:34:14] et qui en plus perdrait d'avoir d'opportunités,
+- [00:34:14 --> 00:34:16] d'opportunités, d'opportunités, d'opportunités,
+- [00:34:16 --> 00:34:20] d'opportunités, d'opportunités, d'opportunités, d'opportunités.
+- [00:34:20 --> 00:34:24] Donc, oui, ça fait, c'est une différence.
+- [00:34:24 --> 00:34:26] C'est très simple.
+- [00:34:26 --> 00:34:30] Donc, du coup, il faut concrèer une filière locale.
+- [00:34:30 --> 00:34:32] Donc, on a en cours.
+- [00:34:32 --> 00:34:34] On va faire le givier avec nos des souhaités,
+- [00:34:34 --> 00:34:35] après la filière locale.
+- [00:34:35 --> 00:34:39] Au petit dire, le terrain est prêts
+- [00:34:39 --> 00:34:41] et faire la tête d'offre consultaire.
+- [00:34:41 --> 00:34:44] Donc, j'ai un calendrier pour... [à vérifier]
+- [00:34:44 --> 00:34:47] Et en parallèle, on a les discussions réglementaires
+- [00:34:47 --> 00:34:50] avec le givier.
+- [00:34:50 --> 00:34:53] Donc, voilà, c'est la situation, elle est là.
+- [00:34:53 --> 00:34:56] Donc, on n'est pas complètement à la bourre,
+- [00:34:56 --> 00:34:59] mais on n'est pas... [à vérifier]
+- [00:34:59 --> 00:35:02] Donc, ça, c'est des slags d'un que je suis déjà certainé,
+- [00:35:02 --> 00:35:03] comme il était directeur.
+- [00:35:03 --> 00:35:07] Donc, j'ai dit que j'ai rajouté... [à vérifier]
+- [00:35:07 --> 00:35:10] Globalement, en fait, il faut préparer
+- [00:35:10 --> 00:35:13] ce qui s'appelle la récoise,
+- [00:35:13 --> 00:35:17] les chaînes techniques, les dossiers pour l'appel d'offres,
+- [00:35:17 --> 00:35:21] mais c'est vrai qu'on aura besoin de toute façon du terrain.
+- [00:35:21 --> 00:35:24] Le terrain, on l'a rapport en septembre, en fait.
+- [00:35:24 --> 00:35:26] Donc, pour filialiser les sérets,
+- [00:35:26 --> 00:35:29] qu'on peut commencer, déjà revoir le plan.
+- [00:35:29 --> 00:35:32] On peut se rendre pour commencer à l'information,
+- [00:35:32 --> 00:35:34] tout ce que tu posse que tu as l'île-là.
+- [00:35:34 --> 00:35:35] C'est vrai.
+- [00:35:35 --> 00:35:37] Tout ce qu'on peut gagner comme contre,
+- [00:35:37 --> 00:35:38] la situation.
+- [00:35:38 --> 00:35:40] C'est vrai, c'est vrai.
+- [00:35:40 --> 00:35:42] On peut se donner que vous vous remettre en place.
+- [00:35:42 --> 00:35:44] On a de me faire gagner un... [à vérifier]
+- [00:35:44 --> 00:35:45] Oui, c'est vrai.
+- [00:35:45 --> 00:35:46] Il faut le faire.
+- [00:35:46 --> 00:35:47] Oui, c'est vrai.
+- [00:35:47 --> 00:35:49] Ça va être vestu à remplir, etc.
+- [00:35:49 --> 00:35:53] Mais j'ai aussi mis en place un logiciel pour la gérer.
+- [00:35:53 --> 00:35:55] Tout sera intercomité.
+- [00:35:55 --> 00:35:56] J'ai fait une information,
+- [00:35:56 --> 00:35:57] tu dois les informations,
+- [00:35:57 --> 00:35:59] t'as tous les documents qui m'ont espétais,
+- [00:35:59 --> 00:36:01] ce qui fait que d'ailleurs,
+- [00:36:01 --> 00:36:03] tu veux avoir les caillers d'échanges
+- [00:36:03 --> 00:36:05] pour les blos études, qui m'ont espétais toujours.
+- [00:36:05 --> 00:36:07] Les comptes interchitelles,
+- [00:36:07 --> 00:36:09] qui m'ont situé à jour où on dit,
+- [00:36:09 --> 00:36:10] bon, il y a un stockage,
+- [00:36:10 --> 00:36:11] ton stockage, etc,
+- [00:36:11 --> 00:36:12] ton produit.
+- [00:36:12 --> 00:36:14] Ça, ça va aussi aider
+- [00:36:14 --> 00:36:16] à faire les plans rapidement.
+- [00:36:16 --> 00:36:18] Et ça me permet aussi,
+- [00:36:18 --> 00:36:19] d'acharcher les bureaux d'études,
+- [00:36:19 --> 00:36:20] parce qu'aujourd'hui,
+- [00:36:20 --> 00:36:21] on ne les a pas s'épure d'études.
+- [00:36:21 --> 00:36:23] On a commencé, on discutait
+- [00:36:23 --> 00:36:24] un petit peu,
+- [00:36:24 --> 00:36:25] le haut d'année en dehous,
+- [00:36:25 --> 00:36:26] mais on... [à vérifier]
+- [00:36:26 --> 00:36:27] Alors,
+- [00:36:27 --> 00:36:29] on a commencé.
+- [00:36:29 --> 00:36:33] Là, c'est plus le travail du constructeur local.
+- [00:36:33 --> 00:36:35] Il y a une question.
+- [00:36:35 --> 00:36:36] On parle dessus.
+- [00:36:36 --> 00:36:37] Il y a eu... [à vérifier]
+- [00:36:37 --> 00:36:38] Non, non, non, on est... [à vérifier]
+- [00:36:38 --> 00:36:39] Pour l'instant,
+- [00:36:39 --> 00:36:41] on ne va pas se faire m'aller porte en fait.
+- [00:36:41 --> 00:36:42] Donc, pour l'instant,
+- [00:36:42 --> 00:36:44] on donne un vue d'eau,
+- [00:36:44 --> 00:36:46] donc il y a un acte magène,
+- [00:36:46 --> 00:36:49] qui travaille avec un constructeur
+- [00:36:49 --> 00:36:50] à bureau d'études.
+- [00:36:50 --> 00:36:51] En fait,
+- [00:36:51 --> 00:36:52] nous avons le permis de construire
+- [00:36:52 --> 00:36:53] à tout ça.
+- [00:36:53 --> 00:36:54] Donc,
+- [00:36:54 --> 00:36:56] le deuxième métade,
+- [00:36:56 --> 00:36:59] il est intérêt d'aller bien en études
+- [00:36:59 --> 00:37:00] et constructeur.
+- [00:37:00 --> 00:37:02] Donc, c'est vrai que
+- [00:37:02 --> 00:37:05] on voudrait aussi avoir
+- [00:37:05 --> 00:37:06] des droits européens.
+- [00:37:06 --> 00:37:07] Oui, c'est... [à vérifier]
+- [00:37:07 --> 00:37:08] Oui, c'est... [à vérifier]
+- [00:37:08 --> 00:37:09] Oui, c'est... [à vérifier]
+- [00:37:09 --> 00:37:10] C'est pareil très gros.
+- [00:37:10 --> 00:37:11] En fait, parce que... [à vérifier]
+- [00:37:11 --> 00:37:12] Là, il faut pas... [à vérifier]
+- [00:37:12 --> 00:37:13] le... [à vérifier]
+- [00:37:13 --> 00:37:14] c'est pas... [à vérifier]
+- [00:37:14 --> 00:37:15] c'est... [à vérifier]
+- [00:37:15 --> 00:37:16] c'est... [à vérifier]
+- [00:37:16 --> 00:37:17] C'est... [à vérifier]
+- [00:37:17 --> 00:37:18] Mieux.
+- [00:37:18 --> 00:37:19] Donc, on... [à vérifier]
+- [00:37:19 --> 00:37:20] faut... [à vérifier]
+- [00:37:20 --> 00:37:21] on faut... [à vérifier]
+- [00:37:21 --> 00:37:23] T'avoir un trogour.
+- [00:37:23 --> 00:37:24] Je me suis... [à vérifier]
+- [00:37:24 --> 00:37:26] quand je construit le labours de... [à vérifier]
+- [00:37:26 --> 00:37:28] Biogénovae.
+- [00:37:28 --> 00:37:29] Bon, donc,
+- [00:37:29 --> 00:37:30] on a... [à vérifier]
+- [00:37:30 --> 00:37:31] Je n'ai... [à vérifier]
+- [00:37:31 --> 00:37:32] J'ai... [à vérifier]
+- [00:37:32 --> 00:37:33] J'ai... [à vérifier]
+- [00:37:33 --> 00:37:34] Il y a... [à vérifier]
+- [00:37:34 --> 00:37:42] et donc du coup, il y a un grand qui est vu, il y a un 5 qui posent les questions partout dans le site.
+- [00:37:42 --> 00:37:50] Donc, donc pour leur mid-fingueur pour moi, c'est un peu rond, mais aujourd'hui il y a une société française,
+- [00:37:50 --> 00:37:53] ou bien facile, qui n'y a pas besoin d'organiser.
+- [00:37:53 --> 00:37:57] Déjà on va la cliquer, qui sont implantés, on a la vision d'it.
+- [00:37:58 --> 00:38:07] Alors, c'est pas à l'endiffingueur, c'est comme on s'est film, qui tire qu'il meurt.
+- [00:38:07 --> 00:38:11] Et qu'il meurt quand on en fait, on se fera le jeu de l'air en frère.
+- [00:38:11 --> 00:38:18] Il y a aussi une politique rouge où j'ai de tout ménager à peu près tout le monde.
+- [00:38:18 --> 00:38:23] Donc voilà, on donnait là, mais c'est vrai que j'ai pas de moi, j'ai pas de dire à la thé.
+- [00:38:23 --> 00:38:28] Je vous dis quelque part que, on va donner tous les aimants dans tous les cas,
+- [00:38:28 --> 00:38:31] tu fais notre plant de l'ensemble des bâtiments.
+- [00:38:31 --> 00:38:34] On va en parler parce qu'il faut qu'il y a un chetat.
+- [00:38:34 --> 00:38:38] Il faut avoir fait qu'il besoin pour envoyer les aimants.
+- [00:38:38 --> 00:38:43] Donc là, je vais vous proposer avec quelque chose pour bien comprendre qui fait quoi dans le bord.
+- [00:38:43 --> 00:38:48] Parce qu'on peut aller au-delà de des plans, six besoins.
+- [00:38:49 --> 00:38:50] Alors, c'est en prenant.
+- [00:38:50 --> 00:38:58] Alors, juste au niveau, le lieu, risdait au tour de l'avours n'était du urbain.
+- [00:38:58 --> 00:38:59] Il y avait la retengue.
+- [00:38:59 --> 00:39:00] Et là, où il y avait la photo.
+- [00:39:00 --> 00:39:02] Donc, en fait, c'est du sol du urbain.
+- [00:39:02 --> 00:39:05] C'est pas du désert sable, en fait.
+- [00:39:05 --> 00:39:07] C'est-à-dire, c'est du désert.
+- [00:39:07 --> 00:39:08] Non, ouais, c'est du désert.
+- [00:39:08 --> 00:39:09] Non, ouais, c'est du désert.
+- [00:39:09 --> 00:39:11] C'est du désert.
+- [00:39:11 --> 00:39:12] C'est du désert.
+- [00:39:12 --> 00:39:15] C'est du désert, c'est sûr.
+- [00:39:15 --> 00:39:18] Mais le seul urbain, c'est pas l'édule de vrai.
+- [00:39:18 --> 00:39:23] C'est le seul urbain, c'est juste un temps, en fait.
+- [00:39:23 --> 00:39:26] Mais de souce, c'est quand même assez du urbain.
+- [00:39:26 --> 00:39:29] Donc, c'est tout ce que je peux dire.
+- [00:39:29 --> 00:39:32] Mais après, il y a effectivement.
+- [00:39:32 --> 00:39:39] Parce que je vous disais, c'est parce que là, je trouve trop d'en vrai.
+- [00:39:39 --> 00:39:43] C'est quand on va donner le bébé comme ça,
+- [00:39:43 --> 00:39:48] à l'espèce de groupement locale, de bureau d'études et d'entreprises.
+- [00:39:48 --> 00:39:51] C'est le meilleur moyen qui essaye de répondre très bas,
+- [00:39:51 --> 00:39:54] pour ensuite aider les faits.
+- [00:39:54 --> 00:39:57] Si on vient qu'à d'une projet d'aime départ,
+- [00:39:57 --> 00:39:59] et après, on a quand même très septembre,
+- [00:39:59 --> 00:40:01] on peut faire un truc qui est assez cadré,
+- [00:40:01 --> 00:40:03] trouver un bureau d'études qui derrière nous aider à monter
+- [00:40:03 --> 00:40:05] tout ce qui est la partie ingénieurie.
+- [00:40:05 --> 00:40:09] Après, on donne ce bébé-là comme on peut faire sur un projet français.
+- [00:40:09 --> 00:40:11] On donne ce bébé-là à l'entreprise,
+- [00:40:11 --> 00:40:13] ou nos chiffres.
+- [00:40:13 --> 00:40:15] C'est que toi, ce qui s'est passé sur le restre.
+- [00:40:15 --> 00:40:17] Le restre, on va faire un cas, il est change pour éviter
+- [00:40:17 --> 00:40:19] que tu ne puisse pas comparer des offres en frail.
+- [00:40:19 --> 00:40:21] Il y avait un cas et des charges précis.
+- [00:40:21 --> 00:40:24] Avec juste une petite, il faut être précis.
+- [00:40:24 --> 00:40:28] Et à la fois, être suffisamment ouvert sur certains postes,
+- [00:40:28 --> 00:40:30] parce que là-bas, ils ont des habitudes pour ce type.
+- [00:40:30 --> 00:40:31] On n'a pas long.
+- [00:40:31 --> 00:40:32] C'est-à-dire qu'ils sont à voir,
+- [00:40:32 --> 00:40:36] la petite latitude de ils peuvent varianter sur certains sujets.
+- [00:40:36 --> 00:40:39] Par contre, la base, tu comprends ce qui est... [à vérifier]
+- [00:40:39 --> 00:40:40] C'est un parable.
+- [00:40:40 --> 00:40:45] Alors, localement, on est quand même le partenaire,
+- [00:40:45 --> 00:40:47] c'est un sandwich.
+- [00:40:47 --> 00:40:49] En fait, il y a un train de construire, je disais,
+- [00:40:49 --> 00:40:50] je disais, de fièvre astuce.
+- [00:40:50 --> 00:40:53] Donc, on n'est pas tout.
+- [00:40:53 --> 00:40:55] En fait, on n'est pas plus seul.
+- [00:40:55 --> 00:40:57] Non, mais on peut s'appeler sur lui,
+- [00:40:57 --> 00:40:58] pour trouver un bureau d'étude locale.
+- [00:40:58 --> 00:40:59] Voilà.
+- [00:40:59 --> 00:41:02] Et pour beaucoup nous aider à faire ce problème.
+- [00:41:02 --> 00:41:04] Après, j'ai... [à vérifier]
+- [00:41:04 --> 00:41:06] Non, mais qu'à pas, mais aussi,
+- [00:41:06 --> 00:41:07] des phas de générique.
+- [00:41:07 --> 00:41:09] Non, en fait, dans laquelle il est change,
+- [00:41:09 --> 00:41:12] tu as surtout besoin de leur donner des objectifs
+- [00:41:12 --> 00:41:14] de température, de grands maîtris,
+- [00:41:14 --> 00:41:15] ce que tu veux,
+- [00:41:15 --> 00:41:18] à charge à eux, de répondre
+- [00:41:18 --> 00:41:20] avec la technique et de leur bureau d'étude,
+- [00:41:20 --> 00:41:21] parce qu'ils vont forcément construire
+- [00:41:21 --> 00:41:23] avec les bureaux d'étude d'ailleurs.
+- [00:41:23 --> 00:41:25] De tenir ces objectifs.
+- [00:41:25 --> 00:41:27] Donc, nous, ce qu'il faut,
+- [00:41:27 --> 00:41:29] c'est qu'on soit clair sur ce que tu as besoin,
+- [00:41:29 --> 00:41:30] à la fois pour les module,
+- [00:41:30 --> 00:41:32] à la fois pour la Ale,
+- [00:41:32 --> 00:41:33] qui va continuer à les module.
+- [00:41:33 --> 00:41:35] Et ensuite, pour la partie d'anciers.
+- [00:41:35 --> 00:41:36] Voilà.
+- [00:41:36 --> 00:41:38] Mais il est pour moi, il n'est 3 ans que tu ne peux pas aller tout loin.
+- [00:41:38 --> 00:41:39] Tu ne peux pas aller plus loin,
+- [00:41:39 --> 00:41:40] on doit d'un casier des charge.
+- [00:41:40 --> 00:41:41] Alors, à l'instant,
+- [00:41:41 --> 00:41:42] vous voulez, mais... [à vérifier]
+- [00:41:42 --> 00:41:43] Non, mais je veux, c'est ça.
+- [00:41:43 --> 00:41:44] Il n'y a pas, c'est j'y veux.
+- [00:41:44 --> 00:41:45] Ils vont avoir chacun,
+- [00:41:45 --> 00:41:46] mais... [à vérifier]
+- [00:41:46 --> 00:41:47] Pour moi, on va vouloir le faire, en fait.
+- [00:41:48 --> 00:41:49] Est-ce qu'il faut multiplier,
+- [00:41:49 --> 00:41:50] c'est ça?
+- [00:41:50 --> 00:41:51] Moi, je n'en restaurer.
+- [00:41:51 --> 00:41:52] Oui, c'est le revoir,
+- [00:41:52 --> 00:41:53] en fait.
+- [00:41:53 --> 00:41:54] Beaucoup d'une culture,
+- [00:41:54 --> 00:41:55] et les actions.
+- [00:41:55 --> 00:41:56] Parce que sur la zone et à l'heure,
+- [00:41:56 --> 00:41:57] il y avait un générique,
+- [00:41:57 --> 00:41:59] c'est une photo température dans les module.
+- [00:42:05 --> 00:42:07] Si fais-ce qu'on me donnerait à dedans,
+- [00:42:07 --> 00:42:08] on s'allait avoir un problème.
+- [00:42:08 --> 00:42:09] Donc, il y avait un problème.
+- [00:42:09 --> 00:42:10] Il y avait un problème.
+- [00:42:10 --> 00:42:11] Il y avait un problème.
+- [00:42:11 --> 00:42:13] Je pense qu'il faut utiliser là.
+- [00:42:13 --> 00:42:14] Oui, c'est un problème.
+- [00:42:14 --> 00:42:15] Oui, c'est un problème.
+- [00:42:15 --> 00:42:16] D'autant.
+- [00:42:16 --> 00:42:17] Et tu vais d'autre chiler à l'extérieur.
+- [00:42:17 --> 00:42:18] Voilà.
+- [00:42:18 --> 00:42:20] On produit ton oblincé en plus pour les sétaires.
+- [00:42:20 --> 00:42:21] Voilà.
+- [00:42:21 --> 00:42:22] Moi, je pense qu'il y avait un problème.
+- [00:42:22 --> 00:42:23] Il y avait un problème,
+- [00:42:23 --> 00:42:24] c'est différent.
+- [00:42:24 --> 00:42:25] Il y avait un des module.
+- [00:42:25 --> 00:42:26] La boîte des module.
+- [00:42:26 --> 00:42:28] Et il y avait l'appartement.
+- [00:42:28 --> 00:42:29] Mais là-dessus,
+- [00:42:29 --> 00:42:30] on est capable de donner
+- [00:42:30 --> 00:42:32] avec d'autres data
+- [00:42:32 --> 00:42:34] qu'il faut récupérer de la bas
+- [00:42:34 --> 00:42:36] qu'on construit pour prendre.
+- [00:42:36 --> 00:42:38] Donc, il y a une température spécifique, etc.
+- [00:42:38 --> 00:42:42] Mais je pense qu'on est capable de donner des objectifs par... [à vérifier]
+- [00:42:42 --> 00:42:43] Par exemple,
+- [00:42:43 --> 00:42:44] et après,
+- [00:42:44 --> 00:42:45] eux,
+- [00:42:45 --> 00:42:47] ils boisseraient chaque entreprise,
+- [00:42:47 --> 00:42:48] à vos sélections de l'Euro-Détude.
+- [00:42:48 --> 00:42:49] Et il faut... [à vérifier]
+- [00:42:49 --> 00:42:51] Il est décrirant.
+- [00:42:51 --> 00:42:52] Il chiffre en ce qu'il faut.
+- [00:42:52 --> 00:42:53] Pour obtenir l'objectif,
+- [00:42:53 --> 00:42:54] on va leur donner.
+- [00:42:54 --> 00:42:55] Moi, j'ai l'appartement de l'objectif,
+- [00:42:55 --> 00:42:57] on n'a pas les solutions
+- [00:42:57 --> 00:42:59] pour obtenir l'objectif.
+- [00:42:59 --> 00:43:00] La problème.
+- [00:43:00 --> 00:43:01] C'est très bien.
+- [00:43:01 --> 00:43:03] Le risque que je vois à ça,
+- [00:43:03 --> 00:43:04] c'est qu'à partir moment en fait,
+- [00:43:04 --> 00:43:05] ils ont répondu
+- [00:43:05 --> 00:43:07] différentes options possibles.
+- [00:43:07 --> 00:43:09] Si on n'a pas de nous,
+- [00:43:09 --> 00:43:11] on a aussi un bureau d'étude
+- [00:43:11 --> 00:43:13] de la engenerie sur ce jour de point,
+- [00:43:13 --> 00:43:15] on va être de choisir la solution
+- [00:43:15 --> 00:43:16] qui n'était pas à plus près de même dans le temps.
+- [00:43:16 --> 00:43:17] Ou ça,
+- [00:43:17 --> 00:43:19] qu'il faut que t'arrives dépasser
+- [00:43:19 --> 00:43:20] et je ne sais pas que je ne sais pas que
+- [00:43:20 --> 00:43:21] il n'y a rien de garantie,
+- [00:43:21 --> 00:43:22] qu'il y a dans la vis-à-vis de la route.
+- [00:43:22 --> 00:43:23] Et bien, tout en panne.
+- [00:43:23 --> 00:43:25] Qu'est-ce qu'on peut trouver
+- [00:43:25 --> 00:43:26] juste?
+- [00:43:26 --> 00:43:28] Il y a un peu plus de sécurité.
+- [00:43:28 --> 00:43:29] En disant,
+- [00:43:29 --> 00:43:31] c'est-à-dire qu'il est con.
+- [00:43:31 --> 00:43:35] Est-ce que vous le dire pas?
+- [00:43:35 --> 00:43:37] Bien sûr, c'est un bureau d'étudier.
+- [00:43:37 --> 00:43:40] C'est-à-dire que c'est un bureau d'étudier.
+- [00:43:40 --> 00:43:41] Par exemple,
+- [00:43:41 --> 00:43:43] la taille du groupe,
+- [00:43:43 --> 00:43:44] la taille du groupe,
+- [00:43:44 --> 00:43:47] qui propose dans leur possession.
+- [00:43:47 --> 00:43:49] Est-ce qu'elle est vraiment bien adaptée?
+- [00:43:49 --> 00:43:50] Oui, vous dire oui,
+- [00:43:50 --> 00:43:51] ça marche,
+- [00:43:51 --> 00:43:52] on va respecter,
+- [00:43:52 --> 00:43:53] on vous disait le basis,
+- [00:43:53 --> 00:43:54] et vous aurez bien
+- [00:43:54 --> 00:43:56] qu'il se devrait engager.
+- [00:43:56 --> 00:43:58] Ce que ça sera vraiment,
+- [00:43:58 --> 00:44:00] c'est-à-dire qu'il peut avoir le regard dans le équipe
+- [00:44:00 --> 00:44:02] d'aujourd'hui,
+- [00:44:02 --> 00:44:03] plus qu'on parle de les offres,
+- [00:44:03 --> 00:44:05] et d'avoir un technicien qui a regard
+- [00:44:05 --> 00:44:06] de la copie,
+- [00:44:06 --> 00:44:07] et qui dit,
+- [00:44:07 --> 00:44:08] il y a peut-être un peu juste,
+- [00:44:08 --> 00:44:09] en termes de... [à vérifier]
+- [00:44:09 --> 00:44:10] En ce que j'ai mis,
+- [00:44:10 --> 00:44:11] plus or person,
+- [00:44:11 --> 00:44:12] en fait.
+- [00:44:12 --> 00:44:13] Mais effectivement,
+- [00:44:13 --> 00:44:14] mais d'un côté,
+- [00:44:14 --> 00:44:15] ils sont comme mieux placés,
+- [00:44:15 --> 00:44:16] qu'il y a,
+- [00:44:16 --> 00:44:17] qu'il y a,
+- [00:44:17 --> 00:44:18] qu'il y a,
+- [00:44:18 --> 00:44:19] qu'il y a,
+- [00:44:19 --> 00:44:20] qu'il y a,
+- [00:44:20 --> 00:44:21] qu'il y a,
+- [00:44:21 --> 00:44:22] qu'il y a,
+- [00:44:22 --> 00:44:23] qu'il y a,
+- [00:44:23 --> 00:44:26] qu'il y a,
+- [00:44:26 --> 00:44:27] qu'il y a,
+- [00:44:27 --> 00:44:28] qu'il y a,
+- [00:44:28 --> 00:44:29] qu'il y a,
+- [00:44:29 --> 00:44:31] qu'il y a,
+- [00:44:31 --> 00:44:32] qu'il y a,
+- [00:44:32 --> 00:44:32] qu'il y a,
+- [00:44:32 --> 00:44:33] Yes,
+- [00:44:33 --> 00:44:34] ça va,
+- [00:44:34 --> 00:44:35] ça va,
+- [00:44:35 --> 00:44:35] ça va,
+- [00:44:35 --> 00:44:36] ça va,
+- [00:44:36 --> 00:44:37] yes,
+- [00:44:37 --> 00:44:38] sì,
+- [00:44:38 --> 00:44:40] ça va Université Lily,
+- [00:44:41 --> 00:44:42] ça va va,
+- [00:44:42 --> 00:44:42] ça va,
+- [00:44:42 --> 00:44:42] ça va,
+- [00:44:42 --> 00:44:43] ça va,
+- [00:44:43 --> 00:44:44] ça va,
+- [00:44:44 --> 00:44:47] ça va,
+- [00:44:47 --> 00:44:48] ça va,
+- [00:44:48 --> 00:44:49] ça va,
+- [00:44:49 --> 00:44:50] 大家,
+- [00:44:50 --> 00:44:52] et on,
+- [00:44:52 --> 00:44:54] ça va,
+- [00:44:54 --> 00:44:55] en dire,
+- [00:44:55 --> 00:44:56] ça va
+- [00:44:56 --> 00:44:58] ça va,
+- [00:44:58 --> 00:44:59] ça va,
+- [00:44:59 --> 00:45:00] ça va,
+- [00:45:00 --> 00:45:05] Donc vous passe le réel, la palde d'oeuvre, ça va être au temps, on va en offre le temps.
+- [00:45:05 --> 00:45:07] C'est ton bien, je devrais t'en artre très loin.
+- [00:45:07 --> 00:45:10] Donc je me suis engagé avec un copain pour le faire.
+- [00:45:10 --> 00:45:14] Ici, je remplis le faire de faire un train assez de l'Atlantique.
+- [00:45:14 --> 00:45:17] Après, on voit cette temps, on va essayer de l'entendre.
+- [00:45:17 --> 00:45:20] Ah oui, je fais une seconde à l'entendre, je fais une seconde à l'entendre.
+- [00:45:20 --> 00:45:22] J'ai fait le 10, il y a un kilo.
+- [00:45:22 --> 00:45:25] J'ai fait que j'ai rien signé en fait.
+- [00:45:25 --> 00:45:29] Donc effectivement, j'ai passé tout à l'heure.
+- [00:45:29 --> 00:45:35] Le baisseur est, on réalise, il y a le terrain septembre.
+- [00:45:35 --> 00:45:38] Donc, en fait, on ne pourra pas faire avant.
+- [00:45:38 --> 00:45:40] Non, on a le temps de remplir un baisseur.
+- [00:45:40 --> 00:45:44] Mais par contre, de tout, c'est chuchant avant d'accord.
+- [00:45:44 --> 00:45:47] Bien préparé, c'est ce que j'ai aussi avec les yeux.
+- [00:45:47 --> 00:45:52] Mais avec l'absagion, ça j'aurais dit, on va reprendre les plans
+- [00:45:52 --> 00:45:55] pour s'adapter, mais tant qu'on n'a pas la validation de la chance.
+- [00:45:55 --> 00:45:58] Et puis, même le terrain,
+- [00:45:58 --> 00:46:00] je n'ai jamais donné.
+- [00:46:00 --> 00:46:02] Vous terminez pas en fait parce que après,
+- [00:46:02 --> 00:46:04] en fait, il faut refondre tous les calculs
+- [00:46:04 --> 00:46:08] pour faire la version des finitiles, avec les puissances de ces terrain,
+- [00:46:08 --> 00:46:10] et les plus les circulaires.
+- [00:46:10 --> 00:46:12] Donc, c'est un peu de temps.
+- [00:46:12 --> 00:46:16] Effectivement de rechèquer tout ce dont on a besoin de tout.
+- [00:46:16 --> 00:46:17] Je sais.
+- [00:46:17 --> 00:46:19] Peut-être qu'en croit temps, il m'audu l'histoire en boutique.
+- [00:46:19 --> 00:46:20] Oui, oui.
+- [00:46:20 --> 00:46:24] Et je me dis, comment ça lui-même, ils ont pas parlé,
+- [00:46:24 --> 00:46:25] mais il m'audu là.
+- [00:46:25 --> 00:46:28] Ça commence à s'enterner l'heure.
+- [00:46:28 --> 00:46:29] Voilà.
+- [00:46:29 --> 00:46:31] Donc, je reprends ici,
+- [00:46:31 --> 00:46:33] on l'avait vu, vraiment,
+- [00:46:33 --> 00:46:34] tout ce qui est rebleux,
+- [00:46:34 --> 00:46:35] ça sera les module.
+- [00:46:35 --> 00:46:37] Et quand j'ai relié,
+- [00:46:37 --> 00:46:39] le coup-boir qui lit les module,
+- [00:46:39 --> 00:46:40] en fait,
+- [00:46:40 --> 00:46:42] il s'est j'aurait dit,
+- [00:46:42 --> 00:46:44] vous l'avez le prendre en plus.
+- [00:46:44 --> 00:46:45] Donc, il est effectivement,
+- [00:46:45 --> 00:46:46] on me rajoute dans qu'aille des charges,
+- [00:46:46 --> 00:46:47] en fait, les module.
+- [00:46:47 --> 00:46:48] Comme ça, c'est une zone.
+- [00:46:48 --> 00:46:51] Peut-être que le color est un module.
+- [00:46:51 --> 00:46:52] Le coup-boir,
+- [00:46:52 --> 00:46:54] non, ça sera pas un module,
+- [00:46:54 --> 00:46:56] c'est eux qui font les clothes,
+- [00:46:56 --> 00:46:58] qui font les cepudaires.
+- [00:46:58 --> 00:46:59] Et comme ça,
+- [00:46:59 --> 00:47:00] t'as une nouvelle génité,
+- [00:47:00 --> 00:47:01] en fait, tout.
+- [00:47:01 --> 00:47:03] Donc, il sera classé,
+- [00:47:03 --> 00:47:04] pas forcément classé,
+- [00:47:04 --> 00:47:06] mais les gens,
+- [00:47:06 --> 00:47:08] le vestient,
+- [00:47:08 --> 00:47:09] ça,
+- [00:47:09 --> 00:47:10] ça,
+- [00:47:10 --> 00:47:11] dans le tercer.
+- [00:47:11 --> 00:47:13] Et quand ils sortent du maître,
+- [00:47:13 --> 00:47:14] versers,
+- [00:47:14 --> 00:47:15] ils se sont tenus.
+- [00:47:15 --> 00:47:17] Et il t'a une nouvelle génété
+- [00:47:17 --> 00:47:19] sur tout ce qui est circulaire
+- [00:47:19 --> 00:47:21] à ce niveau-là, en fait.
+- [00:47:21 --> 00:47:22] Par contre,
+- [00:47:22 --> 00:47:23] c'est à l'heure,
+- [00:47:23 --> 00:47:26] c'est du tercer.
+- [00:47:26 --> 00:47:28] Et puis après,
+- [00:47:28 --> 00:47:30] ça va pas ça comme ça,
+- [00:47:30 --> 00:47:31] j'adore.
+- [00:47:31 --> 00:47:33] Ça, c'était le plan d'un autre.
+- [00:47:33 --> 00:47:35] On avait, tu vois,
+- [00:47:35 --> 00:47:36] on avait ici,
+- [00:47:36 --> 00:47:37] on avait trois,
+- [00:47:37 --> 00:47:38] trois, six,
+- [00:47:38 --> 00:47:39] seven,
+- [00:47:39 --> 00:47:40] et on a six,
+- [00:47:40 --> 00:47:41] en fait.
+- [00:47:41 --> 00:47:42] On avait quelques-cyl-17
+- [00:47:42 --> 00:47:43] pour donner unquet de réception.
+- [00:47:43 --> 00:47:44] Et en fait,
+- [00:47:44 --> 00:47:45] on va,
+- [00:47:45 --> 00:47:46] on va,
+- [00:47:46 --> 00:47:47] à grandir,
+- [00:47:47 --> 00:47:48] le 13, 14.
+- [00:47:48 --> 00:47:49] En fait.
+- [00:47:49 --> 00:47:51] Et qu'en plus d'aller,
+- [00:47:51 --> 00:47:53] ça va pousser dans le mercanton.
+- [00:47:53 --> 00:47:54] Ca va aller,
+- [00:47:54 --> 00:47:55] d'aller le bas.
+- [00:47:57 --> 00:47:58] On a un métier.
+- [00:47:58 --> 00:48:01] C'est-à-dire qu'en d'utiliter une et de augmenter,
+- [00:48:01 --> 00:48:03] la main en fait.
+- [00:48:03 --> 00:48:04] Ca va aller,
+- [00:48:04 --> 00:48:05] voilà, là.
+- [00:48:05 --> 00:48:06] Ca va aller là.
+- [00:48:06 --> 00:48:06] Et deux,
+- [00:48:06 --> 00:48:07] toutes trois,
+- [00:48:07 --> 00:48:09] on a pas le problème de place de terrain.
+- [00:48:09 --> 00:48:11] Et il y avait des milieux,
+- [00:48:11 --> 00:48:12] mais de carri.
+- [00:48:12 --> 00:48:13] On s'en fout.
+- [00:48:13 --> 00:48:14] Donc du coup,
+- [00:48:14 --> 00:48:14] et puis,
+- [00:48:14 --> 00:48:15] moi,
+- [00:48:15 --> 00:48:16] on dit,
+- [00:48:16 --> 00:48:16] en fait,
+- [00:48:16 --> 00:48:17] il est un truc que,
+- [00:48:17 --> 00:48:18] qu'on soit pas géantir,
+- [00:48:18 --> 00:48:18] donc
+- [00:48:19 --> 00:48:20] on va grandir.
+- [00:48:20 --> 00:48:27] parce qu'en fait, c'est ça, c'est ça le pire en fait, et du coup, le pétirchneux a indi,
+- [00:48:27 --> 00:48:32] bah ouais, les circuits, comment tu fais des circuits natières, ça se croise, donc il faut
+- [00:48:32 --> 00:48:39] la marron, donc du coup, j'ai fait une version, j'ai dit, mais il peut-être que c'est passé,
+- [00:48:39 --> 00:48:43] mais c'est vrai que ça, il faut qu'on le reçant, on fait l'un de se dire, est-ce que il y a assez pour
+- [00:48:43 --> 00:48:51] circuler. Donc ça j'ai l'essaye de ce plan, donc dans ce plan, en fait, t'as une partie
+- [00:48:51 --> 00:48:59] restauration et réception, t'as une un d'accueil qui était l'exueil, qui donne envie d'entrer,
+- [00:48:59 --> 00:49:06] t'as une salle de rayons, le chorume, les lébureaux, avec une petite, ça c'était une salle de rayons
+- [00:49:07 --> 00:49:16] et puis les, les, les, le personnel venez par ici, t'as les vestirs ici, une salle de
+- [00:49:16 --> 00:49:20] prières, ça c'est une salle de formation de l'autopsy, ça c'est une salle de casme un peu
+- [00:49:20 --> 00:49:24] j'peux particulièrement, un peu technique, mais qui est dans le taxi.
+- [00:49:24 --> 00:49:26] T'es que toi qui est vite, toi, on est à des petites petites.
+- [00:49:26 --> 00:49:31] Et toujours, moi, on est sur le passé, c'est ce qu'il était présenté en fait, quand même
+- [00:49:31 --> 00:49:35] par qui, non mais comme un genre, tu m'avais dit que si, c'était pas un régime, ça me
+- [00:49:35 --> 00:49:39] serait pas beaucoup plus là, il t'en termes de prestate, d'allons ça reste très là, il y a toujours
+- [00:49:39 --> 00:49:45] le côté, au régime de monde, c'est là, en fait, comme ça reste sur le regard, on les
+- [00:49:45 --> 00:49:50] commerciaux, en fait, en bon des bureaux et en fait, il y a l'activité ici, en fait,
+- [00:49:50 --> 00:49:54] que ce soit le, donc effectivement, le plus de faire finir des gens,
+- [00:49:54 --> 00:49:57] c'est pas le monde, c'est pas le monde, c'est pas le monde, oui, puis c'est votre
+- [00:49:57 --> 00:50:02] récordation, oui, l'orientation, oui, tout à fait, tout à fait, donc, c'est en
+- [00:50:02 --> 00:50:08] l'évacité. Donc, le 16, ce que l'utiliser, c'est ce qu'il, alors le 16, il est vite, c'était,
+- [00:50:08 --> 00:50:13] je m'étais dit, c'était, on a un certaini, il lui a eu de faire du bactérien, donc
+- [00:50:13 --> 00:50:19] bactérien, donc ici, ici, il t'a l'appartit d'antification, l'attail, l'attail,
+- [00:50:19 --> 00:50:22] l'attail, l'attail, l'attail, l'attail, l'attail, l'attail, l'attail, l'attail, l'attail, l'attail,
+- [00:50:22 --> 00:50:29] l'attention, donc j'avais l'essai ça pour pouvoir en chute, et ici, le 15,
+- [00:50:29 --> 00:50:36] d'a, c'était de ce qu'a j'en fait. Alors, c'est pas du tout la bonne disposition,
+- [00:50:36 --> 00:50:43] c'est c'est c'est, c'est, c'est le propre monde de fil, donc, du coup, j'ai repris, et j'ai
+- [00:50:43 --> 00:50:50] reçu, j'ai pas un petit vieux Excel, donc, t'as le d'or ici, parce qu'en fait,
+- [00:50:50 --> 00:50:54] t'as les entrées ici, puis l'attail, un grand, un grand entré pour pouvoir faire
+- [00:50:54 --> 00:50:58] rentrer les contenaires, des gens à la construction des module, en fait, à vis en place
+- [00:50:58 --> 00:51:05] des module, et puis, sur celui-là, et donc j'ai agrandi, j'ai regardé, donc logiquement,
+- [00:51:05 --> 00:51:11] le stockage, ou qu'il soit là, parce qu'en fait, t'as un circuit comme ça, t'as
+- [00:51:11 --> 00:51:14] le stockage qu'il y a là, et après ça, qu'il a dans les module.
+- [00:51:14 --> 00:51:17] Mais, est-ce que tu l'as mis dans le bleu stockage?
+- [00:51:17 --> 00:51:21] Ah bah le stockage, oui, le stockage, le stockage, je sais, c'est dans le tercer,
+- [00:51:21 --> 00:51:24] oui, pas, c'est pas de tercer, mais c'est dans le... [à vérifier]
+- [00:51:24 --> 00:51:28] C'est vrai, oui, oui, oui, mais ça, ça ne sera pas les module, c'est les... [à vérifier]
+- [00:51:28 --> 00:51:30] Non, mais ça sera là là, elle, les module.
+- [00:51:30 --> 00:51:32] Tout à fait, c'est-à-dire.
+- [00:51:32 --> 00:51:34] C'est-à-dire, c'est un stockage, non?
+- [00:51:34 --> 00:51:36] Ah non, c'est-à-dire, j'ai l'épendant, c'est-à-dire.
+- [00:51:36 --> 00:51:39] C'est-à-dire, on peut en faire entrer par devant du monde.
+- [00:51:39 --> 00:51:42] Allez, on peut voir qu'il va tout distribuer.
+- [00:51:42 --> 00:51:46] C'est alors ce que vous m'en m'en m'a fait là, je suis 4 mètres de dévoire.
+- [00:51:46 --> 00:51:49] Effectivement, pour faire entrer dans un sens, c'est-à-dire.
+- [00:51:49 --> 00:51:51] J'en sais, il y a tout, c'est géné en fait.
+- [00:51:51 --> 00:51:54] Donc c'est pour ça que je pense qu'il faut laisser comme ça.
+- [00:51:54 --> 00:51:57] Et puis, en discutant avec les module, les cétats quand même,
+- [00:51:57 --> 00:51:59] en fait, ils nous en font rajouter.
+- [00:51:59 --> 00:52:03] Donc, on s'est dit, on l'effrait bien sur côté.
+- [00:52:03 --> 00:52:05] Donc, ça veut dire que c'est que vous le voir-là aussi.
+- [00:52:05 --> 00:52:08] Il faut qu'il fasse aussi 3 mètres en fait.
+- [00:52:08 --> 00:52:14] Là aussi, comme il y a de la circulation, il faut qu'il en puisse faire entrer.
+- [00:52:14 --> 00:52:19] Les marchandises, les vingtiers à première, et pour aller contrôler avant
+- [00:52:19 --> 00:52:21] pour les soquets ici.
+- [00:52:21 --> 00:52:26] Donc, il faut aussi une certaine place, on a de 8, 3 mètres de moins.
+- [00:52:26 --> 00:52:32] Et la sortie, donc, la par contre, c'est tout.
+- [00:52:32 --> 00:52:35] Là par contre, c'est moins génant. Il y a clé les déchets.
+- [00:52:35 --> 00:52:38] En fait, qui peuvent, qui peuvent, j'ai mis en verre.
+- [00:52:38 --> 00:52:46] En fait, la situation des déchets.
+- [00:52:46 --> 00:52:51] Et du moment là, en du coup, si on met le stockage-là, c'est vrai, c'est... [à vérifier]
+- [00:52:51 --> 00:52:54] J'ai inversé tout, en fait.
+- [00:52:54 --> 00:52:55] Par rapport à ton blanc.
+- [00:52:55 --> 00:52:58] Parce que du coup, t'allais les vestirs sont ici.
+- [00:52:59 --> 00:53:01] Et donc, la salle de... [à vérifier]
+- [00:53:01 --> 00:53:02] Il y a le touch-y.
+- [00:53:02 --> 00:53:03] Il y a le touch-y.
+- [00:53:04 --> 00:53:05] Et donc, du coup, j'ai fait un miroir.
+- [00:53:05 --> 00:53:08] Ce qui me j'ai appris, c'est à l'heure du coup.
+- [00:53:08 --> 00:53:10] J'ai mis l'identification ici.
+- [00:53:10 --> 00:53:11] Parce que... [à vérifier]
+- [00:53:11 --> 00:53:12] Il faut... [à vérifier]
+- [00:53:12 --> 00:53:13] C'est à l'autopsie ici.
+- [00:53:13 --> 00:53:14] Il faut... [à vérifier]
+- [00:53:14 --> 00:53:16] Tu m'aide... [à vérifier]
+- [00:53:16 --> 00:53:19] Le... [à vérifier]
+- [00:53:19 --> 00:53:20] Le... [à vérifier]
+- [00:53:20 --> 00:53:21] L'autopsie.
+- [00:53:21 --> 00:53:22] Tu reçois des poulets.
+- [00:53:22 --> 00:53:23] Et tu... [à vérifier]
+- [00:53:23 --> 00:53:24] Tu... [à vérifier]
+- [00:53:24 --> 00:53:25] Tu... [à vérifier]
+- [00:53:25 --> 00:53:27] Et puis tu me vois ce qu'il y a dans les jours.
+- [00:53:27 --> 00:53:29] Donc, tu les amène ici et puis... [à vérifier]
+- [00:53:29 --> 00:53:32] Par définition, c'est du coup, il s'est du contaminé.
+- [00:53:32 --> 00:53:35] Donc, tu vas pas faire, c'est-à-dire que les partout dans ton avant.
+- [00:53:35 --> 00:53:38] Donc, du coup, j'ai gardé... [à vérifier]
+- [00:53:38 --> 00:53:39] ...a... [à vérifier]
+- [00:53:39 --> 00:53:44] ...a une proximité, en fait, pour pouvoir rejoindre ici en fait. [à vérifier]
+- [00:53:44 --> 00:53:45] Est-ce que... [à vérifier]
+- [00:53:45 --> 00:53:48] Tu t'as fait, je sais pas, de flux, entre la diverse module et... [à vérifier]
+- [00:53:48 --> 00:53:49] ...topsie. [à vérifier]
+- [00:53:49 --> 00:53:50] Oui, ça vient après.
+- [00:53:51 --> 00:53:54] Donc là, la surface, en fait... [à vérifier]
+- [00:53:54 --> 00:53:56] ...qu'on t'en fait tout ça... [à vérifier]
+- [00:53:56 --> 00:54:05] ...et pour les biopodes, on est à 1600 mètres... [à vérifier]
+- [00:54:05 --> 00:54:07] ...on est un peu plus gros... [à vérifier]
+- [00:54:07 --> 00:54:08] ...que... [à vérifier]
+- [00:54:08 --> 00:54:09] ...on fasse les vers du compte. [à vérifier]
+- [00:54:09 --> 00:54:10] Pour moi, ce qui va... [à vérifier]
+- [00:54:10 --> 00:54:11] Ouais.
+- [00:54:11 --> 00:54:12] ...le appartit bien dedans. [à vérifier]
+- [00:54:12 --> 00:54:13] C'est-ce que... [à vérifier]
+- [00:54:13 --> 00:54:14] ...un vers de j'ai pas... [à vérifier]
+- [00:54:14 --> 00:54:15] J'ai... [à vérifier]
+- [00:54:15 --> 00:54:16] J'ai... [à vérifier]
+- [00:54:16 --> 00:54:18] Alors du coup, je sais plus combien... [à vérifier]
+- [00:54:18 --> 00:54:19] ...on avait fait... [à vérifier]
+- [00:54:19 --> 00:54:20] ...c'était 2.35 mètres c'est-à-dire... [à vérifier]
+- [00:54:20 --> 00:54:22] ...on doit arriver à 2.50 mètres qu'à-dire. [à vérifier]
+- [00:54:22 --> 00:54:23] Peut-être pas... [à vérifier]
+- [00:54:23 --> 00:54:24] ...c'est pas ça qu'il... [à vérifier]
+- [00:54:24 --> 00:54:25] ...qu'il... [à vérifier]
+- [00:54:25 --> 00:54:27] ...qu'il a changé la phase du monde. [à vérifier]
+- [00:54:27 --> 00:54:28] Pardon?
+- [00:54:28 --> 00:54:29] Et... [à vérifier]
+- [00:54:29 --> 00:54:32] L'autre chose, c'est que je vais respecter aussi le fait que... [à vérifier]
+- [00:54:32 --> 00:54:33] ...y est des travais. [à vérifier]
+- [00:54:33 --> 00:54:36] Donc, j'ai fait assez large pour pouvoir avoir aussi des circulations... [à vérifier]
+- [00:54:37 --> 00:54:39] ...et donc dans les travaux, d'avoir les pouces... [à vérifier]
+- [00:54:39 --> 00:54:41] ...en fait, tout ce qui est... [à vérifier]
+- [00:54:41 --> 00:54:44] ...aurement et en fait, qui soit obligé de confettre. [à vérifier]
+- [00:54:44 --> 00:54:46] Et si... qui sont des callées... [à vérifier]
+- [00:54:46 --> 00:54:51] ...c'est...c'est une plus gêne... [à vérifier]
+- [00:54:51 --> 00:54:53] ...je crois plus du tout... [à vérifier]
+- [00:54:53 --> 00:54:54] ...l'interré... [à vérifier]
+- [00:54:54 --> 00:54:55] ...l'interré... [à vérifier]
+- [00:54:55 --> 00:54:56] ...l'interré... [à vérifier]
+- [00:54:56 --> 00:54:57] ...l'interré... [à vérifier]
+- [00:54:57 --> 00:54:59] ...d'une orfue... [à vérifier]
+- [00:54:59 --> 00:55:00] ...d'un en fait... [à vérifier]
+- [00:55:00 --> 00:55:01] ...d'un... [à vérifier]
+- [00:55:01 --> 00:55:02] ...elle... [à vérifier]
+- [00:55:02 --> 00:55:03] ...elle... [à vérifier]
+- [00:55:03 --> 00:55:04] ...elle... [à vérifier]
+- [00:55:04 --> 00:55:05] ...elle... [à vérifier]
+- [00:55:05 --> 00:55:06] ...elle... [à vérifier]
+- [00:55:06 --> 00:55:07] ...elle... [à vérifier]
+- [00:55:07 --> 00:55:08] ...elle... [à vérifier]
+- [00:55:08 --> 00:55:09] ...elle... [à vérifier]
+- [00:55:09 --> 00:55:14] parce que la lumière, mais en fait, tout est rien,
+- [00:55:14 --> 00:55:16] mais c'est un éclairage naturel dans l'alien.
+- [00:55:16 --> 00:55:19] Alors, si le plafon peut mettre, on peut mettre... [à vérifier]
+- [00:55:19 --> 00:55:22] Oui, finalement, attend, parce que, dans ce grand volume,
+- [00:55:22 --> 00:55:25] si on va, on va le traiter qu'on couloir comme un module,
+- [00:55:25 --> 00:55:26] il est vers.
+- [00:55:26 --> 00:55:28] Oui, mais j'ai l'ambiance, c'est parti.
+- [00:55:28 --> 00:55:32] Oui, mais par contre, je m'ai d'épuis du bien sur le jeu.
+- [00:55:32 --> 00:55:34] J'ai promosé d'épuis du lumière effectivement, en dessus.
+- [00:55:34 --> 00:55:37] Oui, j'ai l'ambiance.
+- [00:55:37 --> 00:55:40] Et puis, dans les module, t'as déjà l'extérieur, en fait, hein?
+- [00:55:40 --> 00:55:41] T'as... [à vérifier]
+- [00:55:41 --> 00:55:46] Oui, mais la boîte extérieur à l'éthème, je t'attends.
+- [00:55:46 --> 00:55:47] La boîte extérieur.
+- [00:55:47 --> 00:55:50] La boîte qui contient les module, tout ça, c'était plein.
+- [00:55:50 --> 00:55:52] Donc, on peut t'auer pas de la lumière qui passe à travers.
+- [00:55:52 --> 00:55:56] Et si, par le, t'avais tout, t'as rébis au fond de la lumière,
+- [00:55:56 --> 00:56:01] et puis, le Delta, ça peut dire en train de la lumière, en fait.
+- [00:56:01 --> 00:56:03] Oui, mais quand je vois tous les plafons qui y a, au final,
+- [00:56:03 --> 00:56:07] tu vois beaucoup de lumière qui va rentrer par le plaf par le toit.
+- [00:56:08 --> 00:56:09] Parce qu'en plus, suivant le terrain,
+- [00:56:09 --> 00:56:12] il y a un roi d'entrée logique, un jour, quand tu vas rentrer un,
+- [00:56:12 --> 00:56:14] il y aura la évoie qui vont arriver,
+- [00:56:14 --> 00:56:16] tu vas pas arriver par l'arrière du projet.
+- [00:56:17 --> 00:56:21] Au final, c'est un du climatique, il y avait du soleil qui est rentré dans le chède.
+- [00:56:21 --> 00:56:24] Et puis, il t'avais aussi une notion de ventilation.
+- [00:56:24 --> 00:56:26] Là, là-bas, arriède, pour vous désir,
+- [00:56:26 --> 00:56:29] que les renseins, les compagnies, je sais pas comment on... [à vérifier]
+- [00:56:29 --> 00:56:31] Il y a pas que j'en dessins depuis deux ans, en fait.
+- [00:56:31 --> 00:56:33] C'est vrai, oui, mais il y a des plafons.
+- [00:56:33 --> 00:56:36] Et puis, il y a des plafons, il y a des plafons.
+- [00:56:36 --> 00:56:40] C'est vrai que, alors, je suis d'accord avec ton enfaite.
+- [00:56:40 --> 00:56:42] Et pour moi, c'est vraiment quelque chose d'disciucuter,
+- [00:56:42 --> 00:56:44] aussi, avec les constructeurs locaux,
+- [00:56:44 --> 00:56:47] comment il gère ce genre de, c'est la problématique.
+- [00:56:47 --> 00:56:52] Comment faire rentrer, comment on va arriver, et protéger du sable,
+- [00:56:52 --> 00:56:56] comment faire rentrer de la lumière, sans avoir la chaleur.
+- [00:56:56 --> 00:56:58] Ah ben, ça, c'est la plan de n'ensoller.
+- [00:56:58 --> 00:56:59] Il n'y a pas entendu, c'est... [à vérifier]
+- [00:56:59 --> 00:57:01] Donc c'est pour ça que j'avais gardé d'or,
+- [00:57:01 --> 00:57:05] je me l'ai dit si, en fait, des entrées au temps que ça soit un ordre,
+- [00:57:05 --> 00:57:06] en fait.
+- [00:57:06 --> 00:57:08] Et ça va dépendre du... [à vérifier]
+- [00:57:08 --> 00:57:09] Mais ça va dépendre du terrain.
+- [00:57:09 --> 00:57:10] Oui, c'est sûr.
+- [00:57:10 --> 00:57:13] En fait, je voulais le joueur cette attitude de se dire,
+- [00:57:13 --> 00:57:17] que l'argent d'assurance solaire, elle n'est pas obligatoire.
+- [00:57:17 --> 00:57:19] On peut-on d'un avis la tête du projet de clé,
+- [00:57:19 --> 00:57:22] mais, c'est pour moi, il est beaucoup moins bioclimatique.
+- [00:57:22 --> 00:57:25] Il n'y a une expectation d'élu, en fait.
+- [00:57:25 --> 00:57:28] Parce que tu vas s'intermantclimatiser cette oeuvre.
+- [00:57:28 --> 00:57:29] On parle avec le Fafro.
+- [00:57:31 --> 00:57:34] Donc mon idée, moi, c'est un sens, c'est une maître ici,
+- [00:57:34 --> 00:57:37] sans côté de gros produits exerres de France
+- [00:57:37 --> 00:57:40] et de faire entrer de gérer.
+- [00:57:40 --> 00:57:42] Donc, sans que faire mieux une fois que t'as été réorientation,
+- [00:57:42 --> 00:57:46] sans que faire mieux d'amener un peu de bioclimatisme en tout ça,
+- [00:57:46 --> 00:57:47] tant mieux.
+- [00:57:47 --> 00:57:48] Mais ça sera après, quoi.
+- [00:57:48 --> 00:57:50] Oui, effectivement, c'est fralicé, plutôt.
+- [00:57:50 --> 00:57:52] C'était un d'abord, en fait, il faut produire.
+- [00:57:52 --> 00:57:57] En fait, juste pour te dire, en fait, les midi, c'était... [à vérifier]
+- [00:57:57 --> 00:57:58] Et je l'ai eu d'être pas dehors.
+- [00:57:58 --> 00:58:02] D'avoir, en fait, l'air qui est au tout, en fait.
+- [00:58:02 --> 00:58:06] En voudrait qu'il soit à 18 $, en fait,
+- [00:58:06 --> 00:58:09] et que c'est soit l'air qui soit utilisés par les module,
+- [00:58:09 --> 00:58:11] en fait, dans les sétaères qu'on fait.
+- [00:58:11 --> 00:58:12] Il y a une treine de surcharge.
+- [00:58:12 --> 00:58:14] Et comme ça, ça évite.
+- [00:58:14 --> 00:58:18] Et ouais, de l'épisode d'utiliser plein d'énergie.
+- [00:58:18 --> 00:58:21] Pour, il y a que les DSL-2, ou c'est de l'air,
+- [00:58:21 --> 00:58:25] ou effectivement, des autres très contaminés,
+- [00:58:25 --> 00:58:26] ou on fera du 100% à l'unève.
+- [00:58:26 --> 00:58:31] Donc on délirea l'air qu'au compte au milieu qui est en fait sur les liés,
+- [00:58:31 --> 00:58:33] des chiffres très pas.
+- [00:58:33 --> 00:58:36] Donc, ils disent ce qu'il faut, oui, c'est-à-dire.
+- [00:58:36 --> 00:58:38] Mais bon, pourquoi pas?
+- [00:58:38 --> 00:58:44] Mais c'est quelque salle de l'identification.
+- [00:58:44 --> 00:58:47] Le courant, que tu as l'écrit, force est non fermé,
+- [00:58:47 --> 00:58:50] parce que c'est vrai qu'on peut te dire, on va perdre une version numère, etc.
+- [00:58:50 --> 00:58:51] Il peut pas rester ouvert.
+- [00:58:51 --> 00:58:53] Et on a vraiment quatre module.
+- [00:58:53 --> 00:58:54] Voilà, ouais, ils font des soins fermés.
+- [00:58:54 --> 00:58:59] Alors, c'est-à-dire, parce qu'en fait, les gens s'en tenus.
+- [00:58:59 --> 00:59:07] Et donc, tu peux pas mélanger des grades modiciens dans même cité,
+- [00:59:07 --> 00:59:10] on est pratiquement déenclacé dans ce qu'on va.
+- [00:59:10 --> 00:59:13] Donc, en fait, t'es obligé d'avoir le nouveau génétaire
+- [00:59:13 --> 00:59:15] avec les entraînes de tout est modé.
+- [00:59:15 --> 00:59:19] Si non, ils ont de faire ajouter des salles dans chaque mois d'une fois.
+- [00:59:19 --> 00:59:22] Pour ça, qu'ils se portent des pides jours.
+- [00:59:22 --> 00:59:24] Faut que tout, ils plavent enfin marchables.
+- [00:59:25 --> 00:59:27] Donc, moi, les pides jours, j'ai pas plus trop... [à vérifier]
+- [00:59:27 --> 00:59:29] C'est-à-dire, c'est qu'il faut te dire.
+- [00:59:29 --> 00:59:33] Est-ce que tu as proposé avec des verticles orientés non?
+- [00:59:33 --> 00:59:35] Oui, qu'il faut quand j'avais des soleils, c'est... [à vérifier]
+- [00:59:35 --> 00:59:36] Oui, des salles.
+- [00:59:36 --> 00:59:40] Alors, ça restait bien, parce qu'il y a une orienteur dans le volume du début.
+- [00:59:40 --> 00:59:42] Donc, d'avoir un peu les mières naturels,
+- [00:59:42 --> 00:59:45] qui, pour les gens, qui vont y passer, réparer, en voiciens, etc.
+- [00:59:45 --> 00:59:46] C'est pas sas.
+- [00:59:46 --> 00:59:50] Mais tout, je veux dire, de la lumière, sans être... [à vérifier]
+- [00:59:50 --> 00:59:51] Si cette isse, c'est pas sûr.
+- [00:59:51 --> 00:59:54] Donc, il n'y mettra avec les ifles, ils incidences locales du soleil.
+- [00:59:54 --> 00:59:57] On n'y mettra l'aventois qu'il faut, ou des protections solaires.
+- [00:59:57 --> 00:59:59] Franchère, c'est de la lumière naturelle, pas du... [à vérifier]
+- [01:00:00 --> 01:00:04] pas le soleil rentre évidemment faut pas qu'il y en a recompte, on va ramener de l'HMN naturel
+- [01:00:04 --> 01:00:06] sur les côtés, ce que du coup on en double-cock.
+- [01:00:06 --> 01:00:07] Ah mais pour moi on pourra pas.
+- [01:00:07 --> 01:00:09] Ouais, ça serait complètement.
+- [01:00:09 --> 01:00:10] Donc ça peut être... [à vérifier]
+- [01:00:10 --> 01:00:14] Pas à l'héphilètre, mais il n'est pas de lumière, je suis à présent, il n'est pas très difficile.
+- [01:00:14 --> 01:00:19] Il n'est pas de fenêtre, j'ai tous en l'hémique, mais j'en ai réeleté sur les bureaux, mais sur la tolise, j'ai pas de l'hémique.
+- [01:00:19 --> 01:00:20] Ça sent un... [à vérifier]
+- [01:00:20 --> 01:00:22] T'as l'hémique au fond, toi.
+- [01:00:23 --> 01:00:26] Là, là, il y a une simple... [à vérifier]
+- [01:00:26 --> 01:00:28] Comme au fond, tu te chutes.
+- [01:00:28 --> 01:00:30] Ah mais... non, c'est la 1800. [à vérifier]
+- [01:00:30 --> 01:00:33] On y va de l'hémique, j'allai l'héphilètre.
+- [01:00:33 --> 01:00:36] Pour moi qui est ne vu sur l'Extérieur de... [à vérifier]
+- [01:00:36 --> 01:00:38] Oui, c'est pas sur l'art de l'hémique... [à vérifier]
+- [01:00:38 --> 01:00:42] Oui mais sans sage, je me dis que... [à vérifier]
+- [01:00:42 --> 01:00:43] Ah bah c'est... [à vérifier]
+- [01:00:43 --> 01:00:46] C'est... un autre question de m'en... [à vérifier]
+- [01:00:46 --> 01:00:48] Et effectivement... [à vérifier]
+- [01:00:48 --> 01:00:49] C'est vrai.
+- [01:00:49 --> 01:00:56] C'était un autre les contre, et euh, et euh, et vice-à-du-mières, et où va-tu qu'il s'y aura pas s'en
+- [01:00:56 --> 01:00:59] d'reli pas, c'était ouvert, t'avais des rentrais, c'était beauUNKNOWN Vier, en fait,
+- [01:00:59 --> 01:01:04] mais je voudrais vous vous ouvrir où inducte, et ce l'as derrière, en fait, en fait,
+- [01:01:04 --> 01:01:10] De simple, peut-être il y a quelque chose qui se fera me derrière pour que ça,
+- [01:01:10 --> 01:01:11] puis vraiment, on te fait vraiment.
+- [01:01:11 --> 01:01:15] Je suis en train de se faire faire du coup.
+- [01:01:15 --> 01:01:17] Moi j'appendrai de sa rocterin et puis... [à vérifier]
+- [01:01:17 --> 01:01:19] Il faut vraiment... [à vérifier]
+- [01:01:19 --> 01:01:23] On se rend les cérètes comme le château vocastelle.
+- [01:01:23 --> 01:01:25] J'ai fait que c'était vu ça.
+- [01:01:25 --> 01:01:27] C'est un vrai objectif.
+- [01:01:27 --> 01:01:30] Il a une minute d'un système de bâtiment bleu climatique.
+- [01:01:30 --> 01:01:34] Sur une base, on peut même penser qu'il y ait un peu moins une oreille.
+- [01:01:34 --> 01:01:37] Tu as des tours avant et mon charablier.
+- [01:01:37 --> 01:01:40] Il y avait un 4-4 lèvres qui passe en soutira.
+- [01:01:40 --> 01:01:47] Il y a une grande piscine en fait sous-téane de clé d'apportation et qu'il y a ensuite
+- [01:01:47 --> 01:01:53] en revoir la frère dont le bâtiment. Ils ont un gars de température qui n'a pas de
+- [01:01:53 --> 01:01:58] reture et qui a juste une entrée pour voir ça, le meilleur et ça me fait bon ça.
+- [01:01:58 --> 01:02:04] C'est à l'heure que c'est vraiment. Et bon là.
+- [01:02:04 --> 01:02:11] Et alors on va peut-être que j'ai l'impression que j'ai pas guilleté l'a pas l'énergie
+- [01:02:11 --> 01:02:16] et les chers, pas chers, mais on ne passe au view qui est plus climatiste.
+- [01:02:16 --> 01:02:22] Alors peut-être qu'on peut être plus airtue. Je sais pas si vous avez un objectif de ce côté
+- [01:02:22 --> 01:02:23] la seule une comprétée.
+- [01:02:23 --> 01:02:29] C'est-à-dire, comme c'est stress, sur une filiale, j'ai dit même la savertein
+- [01:02:29 --> 01:02:33] il faut que je demande d'avoir un objectif de l'amérique.
+- [01:02:33 --> 01:02:36] Il faut qu'ils sont les consignes par voir ça.
+- [01:02:36 --> 01:02:40] Ici, on ferait qu'on prend par l'air en avant, et là-bas.
+- [01:02:40 --> 01:02:42] Est-ce qu'on peut me marre là-bas?
+- [01:02:42 --> 01:02:44] Oui, oui, oui.
+- [01:02:44 --> 01:02:48] Mais par contre, c'est pas un objectif.
+- [01:02:48 --> 01:02:51] Donc est-ce que ça rende donc pas?
+- [01:02:51 --> 01:02:58] Par exemple, sur le risque, c'est pas c'est mort direct, c'est une filiale
+- [01:02:58 --> 01:03:00] donc on est plus... [à vérifier]
+- [01:03:00 --> 01:03:02] Et à chance, on m'a regardé.
+- [01:03:04 --> 01:03:09] On est plus facilement dégocier.
+- [01:03:09 --> 01:03:13] Aujourd'hui, on ne m'a pas de sprain.
+- [01:03:13 --> 01:03:17] Il y a même pas de même peu par rapport à le surface civilier,
+- [01:03:17 --> 01:03:20] comme même pas besoin de derrière, en fait.
+- [01:03:20 --> 01:03:24] On s'achoblèche, parce que le repressionnce, elle va lier au-delà.
+- [01:03:24 --> 01:03:25] Très l'arrivée.
+- [01:03:25 --> 01:03:28] Bon, là-dedans.
+- [01:03:28 --> 01:03:30] Sur 200%.
+- [01:03:30 --> 01:03:35] Alors, moi, j'ai mis que des cloisons des cloisons des panneaux-samblits,
+- [01:03:35 --> 01:03:39] c'est pas du pire, du pire, du pire.
+- [01:03:39 --> 01:03:42] Ouais, c'est du, c'est du panneaux-samblits,
+- [01:03:42 --> 01:03:45] avec l'année d'origine.
+- [01:03:45 --> 01:03:47] Non, c'est vrai qu'on fait.
+- [01:03:47 --> 01:03:48] Donc je restais.
+- [01:03:48 --> 01:03:49] Voilà.
+- [01:03:49 --> 01:03:51] En fait, c'est ça.
+- [01:03:51 --> 01:03:52] Elle va être... [à vérifier]
+- [01:03:52 --> 01:03:54] Donc, toi, comme elle, ils commencent dans une presse,
+- [01:03:54 --> 01:03:57] en fait, on devra être saute, et ça va être saute.
+- [01:03:57 --> 01:04:01] En fait, y a pas besoin de mieux en conforte.
+- [01:04:01 --> 01:04:04] unable le dire, on me dit, il est crash coupe fausse, voilà.
+- [01:04:04 --> 01:04:05] J'ai dit安.
+- [01:04:05 --> 01:04:07] Et ouais, ouais, ouais.
+- [01:04:07 --> 01:04:09] Il a pas de poids en place de sa abouge, j'ai investi mon aide.
+- [01:04:09 --> 01:04:11] Elle a envoyé également sa abouge, c'est avant.
+- [01:04:11 --> 01:04:12] Pas de poids, ils ne sont pasostailles.
+- [01:04:12 --> 01:04:16] En tout cas, ça a été fait que ce soit... [à vérifier]
+- [01:04:16 --> 01:04:18] On pourra parler avec lui.
+- [01:04:18 --> 01:04:19] Oui, ça me favorit.
+- [01:04:19 --> 01:04:25] Et qu'il fallait aller les terres plus d'autres consignantes et les assurances.
+- [01:04:27 --> 01:04:35] Donc voilà, ça symbole à chez ce c'est intégré aussi risque.
+- [01:04:35 --> 01:04:40] C'est-à-dire, c'est-ce que j'ai essayé de me déliser.
+- [01:04:40 --> 01:04:44] Voilà, c'est tout ce qu'on a fait.
+- [01:04:44 --> 01:04:56] Donc le terrain, en fait, c'est de la dustric, donc c'est j'ai envie de prendre jusqu'en fin septembre.
+- [01:04:56 --> 01:05:03] C'est vrai que pendant le temps, il faut qu'il y a une structure qui est sympa en 30 ans.
+- [01:05:03 --> 01:05:05] C'est pas un peu menti-t-à-dire.
+- [01:05:05 --> 01:05:07] Et ouais, il y a une entité juridique.
+- [01:05:07 --> 01:05:10] C'est pas une entité, c'est pas une entité sans pour le sens, c'est-à-dire.
+- [01:05:10 --> 01:05:14] C'est une entité avec un peu menti, on le dis celui-t-à-dire.
+- [01:05:14 --> 01:05:15] Donc ça, c'est valier à l'immaisos.
+- [01:05:15 --> 01:05:21] Alors, en plus, je sais pas, toujours des sur-occupés, donc, comme il y a eu un l'année pour des plus,
+- [01:05:21 --> 01:05:24] je crois qu'il y a des acquises et sur- et des doppets.
+- [01:05:24 --> 01:05:26] Du coup, on m'allait rien à un peu plus de temps.
+- [01:05:26 --> 01:05:32] C'est-à-dire, c'est que je m'arriens oui, on m'allait m'allait assez lancé de directrices juridiques.
+- [01:05:32 --> 01:05:34] Je pense qu'à vous l'utilipiez, en fait.
+- [01:05:34 --> 01:05:41] Mais qu'il a gardé, en fait, et effectivement, elle connaît parfaitement toutes les contraintes de ces vagues.
+- [01:05:41 --> 01:05:48] Donc, c'est pas fait, elle a un peu plus de temps du coup, le coup, c'est-à-dire qu'il y a cet écoute au-fekt,
+- [01:05:48 --> 01:05:49] c'est un peu pas, ça fait que çaasted.
+- [01:05:49 --> 01:05:52] On ne peut pas avoir le terrain à cetorge, mais pas avoir des sourdits sombres-là.
+- [01:05:52 --> 01:05:56] Il y a, mais en fait, il faut consérer la J-E-E, la J-E, c'est... [à vérifier]
+- [01:05:56 --> 01:06:03] c'est... on a la finalisation de la portrait, et donc quand on a un régéniver, on va lancé le processus [à vérifier]
+- [01:06:03 --> 01:06:10] pour le dépôt du la société, et donc, c'est là où on va pouvoir commencer à aller
+- [01:06:10 --> 01:06:13] à commencer à l'évoire les terrain, à l'idée d'éducation.
+- [01:06:13 --> 01:06:15] Il l'adresse. Il l'adresse. Il l'adresse.
+- [01:06:15 --> 01:06:17] Il l'adresse. Il l'adresse.
+- [01:06:17 --> 01:06:18] Il l'adresse.
+- [01:06:18 --> 01:06:20] Il l'adresse du temps.
+- [01:06:20 --> 01:06:22] Non, parce qu'on parle d'adresse.
+- [01:06:22 --> 01:06:23] Il l'adresse du temps.
+- [01:06:23 --> 01:06:25] Il l'adresse du temps.
+- [01:06:25 --> 01:06:26] Non, parce qu'on parle d'adresse.
+- [01:06:26 --> 01:06:29] Mais donc nous on se disait avec,
+- [01:06:29 --> 01:06:31] on voudrait essayer d'y aller faire ou de qu'on en fait.
+- [01:06:31 --> 01:06:34] Au début septembre, on voit le terrain de confette.
+- [01:06:34 --> 01:06:37] Et là, au début, vous avez deux ou trois terrain.
+- [01:06:37 --> 01:06:39] Oui, il y a peut-être.
+- [01:06:39 --> 01:06:42] Il y a plusieurs terrain qui est du ministère.
+- [01:06:42 --> 01:06:46] Il nous j'en dis, en fait, il y a plusieurs zones où vous pouvez aller.
+- [01:06:46 --> 01:06:48] Et vous auriez un choix aussi?
+- [01:06:48 --> 01:06:49] On risque d'avoir un choix.
+- [01:06:49 --> 01:06:52] Parce que mettre ton projet, tel qu'il est pistolé,
+- [01:06:52 --> 01:06:54] soit peut-être plus facile à l'endroit, car... [à vérifier]
+- [01:06:54 --> 01:06:55] Oui, oui, oui.
+- [01:06:55 --> 01:06:56] On comprends en choix.
+- [01:06:56 --> 01:06:58] On va dire prestation de l'endroit.
+- [01:06:58 --> 01:07:02] Oui, il y a du sein dit, il y a plusieurs terrain dans l'azone où on était.
+- [01:07:02 --> 01:07:03] Après, t'as construit.
+- [01:07:03 --> 01:07:04] T'as construit.
+- [01:07:06 --> 01:07:07] Donc, donc bon,
+- [01:07:07 --> 01:07:10] j'ai accessé ma optimiste.
+- [01:07:10 --> 01:07:11] Oui, ça se trouve ça.
+- [01:07:11 --> 01:07:14] En fait, j'ai mis au top-dors.
+- [01:07:14 --> 01:07:16] Ça peut-être au descendre.
+- [01:07:16 --> 01:07:19] Bon, moi, il m'a mis comme au objectif.
+- [01:07:19 --> 01:07:21] Oui, bon, bon, bon, bon.
+- [01:07:21 --> 01:07:26] Ça, c'est un choix qui a eu quoi de deux mois entre le moment où l'on l'utilise des marres
+- [01:07:26 --> 01:07:28] et la première position.
+- [01:07:28 --> 01:07:29] Oui, mais... [à vérifier]
+- [01:07:29 --> 01:07:31] En fait, c'est le tout vaccin.
+- [01:07:31 --> 01:07:35] Donc, effectivement, il peut démarrer douchement avec quelques l'eau.
+- [01:07:35 --> 01:07:41] Ce n'est pas une machine qui était sortée et... [à vérifier]
+- [01:07:42 --> 01:07:43] Il flaccume.
+- [01:07:43 --> 01:07:44] C'est de moi.
+- [01:07:44 --> 01:07:47] Mais, c'est vrai que tu qualifie tes autres.
+- [01:07:47 --> 01:07:51] Et après ça, tu commençais à l'ancien décollection.
+- [01:07:51 --> 01:07:55] Fais-le à une réception du programme pour septembre octobre 2017.
+- [01:07:55 --> 01:07:58] Non, ça se ressemble à ça, ça se ressemble à ça.
+- [01:07:58 --> 01:08:02] C'est vrai que c'est vrai que c'est vrai que c'est vrai que c'est vrai que c'est vrai que... [à vérifier]
+- [01:08:02 --> 01:08:06] Regulateur-y. Donc, on a dans d'adiscutions... [à vérifier]
+- [01:08:06 --> 01:08:10] C'est correcté, réglementation, en fait, il faut aussi intégrer ça.
+- [01:08:10 --> 01:08:13] Project management... [à vérifier]
+- [01:08:13 --> 01:08:17] Donc, on a tout ce qui est préparé sur des AFP.
+- [01:08:17 --> 01:08:20] Donc, le... [à vérifier]
+- [01:08:20 --> 01:08:21] le... [à vérifier]
+- [01:08:21 --> 01:08:23] Préléminaire et des Aine.
+- [01:08:23 --> 01:08:25] Le temps de leur ordre... [à vérifier]
+- [01:08:25 --> 01:08:26] Le temps de leur ordre... [à vérifier]
+- [01:08:26 --> 01:08:27] Le temps de leur ordre... [à vérifier]
+- [01:08:27 --> 01:08:30] Et construction, à partir de descendre.
+- [01:08:30 --> 01:08:33] Et pour l'Abscience, j'ai rien que c'est plus facile,
+- [01:08:33 --> 01:08:35] parce que c'est vrai qu'il faut l'utiliser.
+- [01:08:35 --> 01:08:37] Et donc, nous on fait les URS.
+- [01:08:37 --> 01:08:40] Et c'est à partir de ça qu'il faut l'utiliser.
+- [01:08:40 --> 01:08:42] Où c'est des structures... [à vérifier]
+- [01:08:42 --> 01:08:47] En fait, il n'y a pas de créativité à part posée.
+- [01:08:47 --> 01:08:50] Quel que je n'ai être pour avoir de la lumière.
+- [01:08:50 --> 01:08:52] Et avoir un circuit de visite, et aussi ça,
+- [01:08:52 --> 01:08:54] il voulait pouvoir faire visiter, c'est pour ça que j'ai... [à vérifier]
+- [01:08:54 --> 01:08:56] Laissez les couloins, l'extérieur.
+- [01:08:57 --> 01:09:00] Donc, peut-être sans doute peut-être regarder ça,
+- [01:09:00 --> 01:09:02] peut-être dire, on met où les... [à vérifier]
+- [01:09:02 --> 01:09:04] l'espèce de prophète.
+- [01:09:04 --> 01:09:05] Donc, l'instant, c'est pas... [à vérifier]
+- [01:09:05 --> 01:09:07] Pour la sens, c'est... [à vérifier]
+- [01:09:07 --> 01:09:10] On a été chose un peu plus précise là-dessus,
+- [01:09:10 --> 01:09:11] mais il y a... [à vérifier]
+- [01:09:11 --> 01:09:13] Il y a... [à vérifier]
+- [01:09:13 --> 01:09:15] C'est pas encore... [à vérifier]
+- [01:09:15 --> 01:09:17] Il y a des écours.
+- [01:09:17 --> 01:09:19] Donc, oui, il y a eu entre l'or,
+- [01:09:19 --> 01:09:20] le... [à vérifier]
+- [01:09:20 --> 01:09:23] la commande et le pratiquement, c'est un peu moins des mois,
+- [01:09:23 --> 01:09:25] parce que, non vraiment, le dit, c'est... [à vérifier]
+- [01:09:25 --> 01:09:27] les comprétences.
+- [01:09:27 --> 01:09:30] C'est pas ça, le facteur limitant, ça va être... [à vérifier]
+- [01:09:30 --> 01:09:32] Oui, c'est la construction de la construction.
+- [01:09:32 --> 01:09:41] Pour l'instant, c'est l'image de la situation
+- [01:09:41 --> 01:09:42] d'aujourd'hui, en fait.
+- [01:09:42 --> 01:09:45] Enfin, route, c'est vrai que si... [à vérifier]
+- [01:09:45 --> 01:09:47] si on a pas de terrain,
+- [01:09:47 --> 01:09:49] si ça freine, si... [à vérifier]
+- [01:09:49 --> 01:09:50] c'est... [à vérifier]
+- [01:09:50 --> 01:09:52] C'est peut-être dit moi.
+- [01:09:52 --> 01:09:54] Ça fait des mois.
+- [01:09:54 --> 01:09:56] Ça me permet de partir en train
+- [01:09:56 --> 01:09:58] d'essendre moi, je suis... [à vérifier]
+- [01:09:58 --> 01:10:00] Moi, c'est ça, moi, d'un objectif,
+- [01:10:00 --> 01:10:02] en train de boire de... [à vérifier]
+- [01:10:02 --> 01:10:04] C'est... [à vérifier]
+- [01:10:04 --> 01:10:06] En descendre 2017, je suis l'art rate que... [à vérifier]
+- [01:10:06 --> 01:10:08] C'est la commande.
+- [01:10:08 --> 01:10:09] On a pas une augurement.
+- [01:10:09 --> 01:10:11] Alors, l'a juste fait qu'il va aller tranquille.
+- [01:10:11 --> 01:10:13] Bon, là, je l'ai à l'air.
+- [01:10:13 --> 01:10:14] C'est un facteur limitant.
+- [01:10:14 --> 01:10:16] C'est pas possible.
+- [01:10:16 --> 01:10:19] Alors, ça, c'était la conclusion.
+- [01:10:19 --> 01:10:22] Donc, juste pour aller dans le détail,
+- [01:10:22 --> 01:10:27] voilà ce que tu voulais savoir, c'était ça.
+- [01:10:27 --> 01:10:29] Mais, je repensez à... [à vérifier]
+- [01:10:29 --> 01:10:31] On parle d'appel d'offres... [à vérifier]
+- [01:10:31 --> 01:10:33] en octobre.
+- [01:10:33 --> 01:10:36] Comment on donne au vent, on le démarrage, on le descendre.
+- [01:10:36 --> 01:10:38] Mais il n'y a pas une question de permis.
+- [01:10:38 --> 01:10:41] Le permis, ça peut être court sur ces terrain.
+- [01:10:41 --> 01:10:42] Perfecte.
+- [01:10:42 --> 01:10:44] Donc, oui, il y a une question de permis.
+- [01:10:44 --> 01:10:47] D'après ce que j'ai compris, ça va assez vite.
+- [01:10:47 --> 01:10:51] C'est vraiment des terrain qui sont... [à vérifier]
+- [01:10:51 --> 01:10:53] Parce qu'en tenu comme ça en France, c'est... [à vérifier]
+- [01:10:53 --> 01:10:54] C'est pas... [à vérifier]
+- [01:10:54 --> 01:10:55] Ah oui, c'est l'accord.
+- [01:10:55 --> 01:10:56] Oui, c'est l'accord.
+- [01:10:56 --> 01:10:57] Oui, c'est l'accord.
+- [01:10:57 --> 01:10:58] Oui, c'est l'accord.
+- [01:10:58 --> 01:11:00] Et plus, c'est... [à vérifier]
+- [01:11:00 --> 01:11:02] Plus, c'est d'au moins de plus, parce que l'itement de place de parking.
+- [01:11:02 --> 01:11:03] Oui, c'est d'au moins de parking.
+- [01:11:03 --> 01:11:05] C'est d'au moins de parking.
+- [01:11:05 --> 01:11:07] Alors, ça, je l'ai fait à quoi ça.
+- [01:11:07 --> 01:11:10] J'ai fait deux ans de l'essence, mais... [à vérifier]
+- [01:11:10 --> 01:11:12] C'est de ça.
+- [01:11:12 --> 01:11:13] C'est de ça.
+- [01:11:13 --> 01:11:15] Non, mais on est dans l'autobre accent.
+- [01:11:15 --> 01:11:18] Donc, en fait, c'est à plus, finalement,
+- [01:11:18 --> 01:11:21] t'as pas de grosse machine.
+- [01:11:21 --> 01:11:23] Bon, les choses, les plus puissants.
+- [01:11:23 --> 01:11:24] C'est avec les deux bonbons.
+- [01:11:24 --> 01:11:26] Non, mais ça, c'est pour la partie... [à vérifier]
+- [01:11:26 --> 01:11:27] C'est parce qu'il y a deux bonbons.
+- [01:11:27 --> 01:11:29] Oui, c'est peus, c'est... [à vérifier]
+- [01:11:29 --> 01:11:31] Finalement, il y a pas beaucoup de... [à vérifier]
+- [01:11:31 --> 01:11:32] Donc, il y a quelques... [à vérifier]
+- [01:11:32 --> 01:11:33] Donc, là, avec... [à vérifier]
+- [01:11:33 --> 01:11:34] Non, c'est... [à vérifier]
+- [01:11:34 --> 01:11:35] C'est l'activité de communication,
+- [01:11:35 --> 01:11:36] c'est que dans le temps montage,
+- [01:11:36 --> 01:11:38] c'était les contractes de décontreinte quand je n'ai n'arrette.
+- [01:11:38 --> 01:11:39] C'est un process.
+- [01:11:39 --> 01:11:40] C'est mon générique.
+- [01:11:40 --> 01:11:42] J'ai l'impression que c'était un poser le permis.
+- [01:11:43 --> 01:11:44] Oui, c'est un problème.
+- [01:11:44 --> 01:11:46] Oui, c'est un problème.
+- [01:11:47 --> 01:11:49] Le coup, ce n'est pas le solet-là.
+- [01:11:49 --> 01:11:51] Parce que les choisis, c'est pour construire,
+- [01:11:51 --> 01:11:52] ça fait que... [à vérifier]
+- [01:11:52 --> 01:11:54] Ils vont me voir que, comme un permis, tout de suite.
+- [01:11:54 --> 01:11:55] On va être plus manteux,
+- [01:11:55 --> 01:11:56] qui ne l'ont rien.
+- [01:11:56 --> 01:11:57] Parce que... [à vérifier]
+- [01:11:57 --> 01:11:59] C'est un peu plus long.
+- [01:11:59 --> 01:12:00] C'est un peu plus long.
+- [01:12:00 --> 01:12:01] C'est un peu plus long.
+- [01:12:01 --> 01:12:02] C'est un peu long.
+- [01:12:02 --> 01:12:03] On peut-être qu'il y a une pape,
+- [01:12:03 --> 01:12:04] on peut-être sur une des films,
+- [01:12:04 --> 01:12:05] mais... [à vérifier]
+- [01:12:05 --> 01:12:06] Mais tout de plus long.
+- [01:12:06 --> 01:12:08] Là, il y a des souvenirs qui va sur.
+- [01:12:08 --> 01:12:09] Oui, donc c'est ce qui se fait.
+- [01:12:09 --> 01:12:10] Il peut faire mis.
+- [01:12:10 --> 01:12:12] Il faut qu'il passe des films.
+- [01:12:12 --> 01:12:14] Oui, c'est pour j'ai, donc... [à vérifier]
+- [01:12:14 --> 01:12:15] C'est bon.
+- [01:12:15 --> 01:12:16] Il faut faire de faire de manger.
+- [01:12:16 --> 01:12:17] Par contre, qu'il construit.
+- [01:12:17 --> 01:12:19] Et il faut que je demande... [à vérifier]
+- [01:12:19 --> 01:12:22] C'est un peu, je vais faire de faire les grandes issues.
+- [01:12:22 --> 01:12:24] On va voir le permis.
+- [01:12:24 --> 01:12:25] C'est bon.
+- [01:12:25 --> 01:12:27] Il y a peut-être de plus simple de la vague ici.
+- [01:12:27 --> 01:12:28] C'est assez si.
+- [01:12:28 --> 01:12:29] Oui, il m'y a quand même attend.
+- [01:12:29 --> 01:12:30] Il y a du travail.
+- [01:12:30 --> 01:12:31] Il y a là.
+- [01:12:31 --> 01:12:33] C'est sûr que... [à vérifier]
+- [01:12:33 --> 01:12:34] On peut qu'il y a un jour... [à vérifier]
+- [01:12:34 --> 01:12:36] Donc, il reste 9 mois pour la construction.
+- [01:12:37 --> 01:12:38] Voilà, construction.
+- [01:12:38 --> 01:12:39] J'avais 29 fois.
+- [01:12:39 --> 01:12:40] C'est... [à vérifier]
+- [01:12:40 --> 01:12:42] Parce que globalement,
+- [01:12:42 --> 01:12:44] t'as quand... [à vérifier]
+- [01:12:44 --> 01:12:45] Quand on partit, c'est... [à vérifier]
+- [01:12:45 --> 01:12:47] Et puis après, on peut-être bien dire... [à vérifier]
+- [01:12:47 --> 01:12:48] Oui, il m'appelle... [à vérifier]
+- [01:12:48 --> 01:12:50] Il meurt qu'il y a un rembré.
+- [01:12:50 --> 01:12:51] Il m'appelle Pile-Pure.
+- [01:12:51 --> 01:12:52] Il m'appelle Pate-Oxen, finalement.
+- [01:12:52 --> 01:12:53] Donc c'est pas de nom.
+- [01:12:53 --> 01:12:54] Il y a... [à vérifier]
+- [01:12:54 --> 01:12:55] On va le déroule.
+- [01:12:55 --> 01:12:57] Donc, on lui fait simple.
+- [01:12:57 --> 01:12:58] Donc, on va... [à vérifier]
+- [01:12:58 --> 01:12:59] On va... [à vérifier]
+- [01:12:59 --> 01:13:00] On va... [à vérifier]
+- [01:13:00 --> 01:13:01] On peut-être ce qu'on choisit.
+- [01:13:01 --> 01:13:02] Ça, c'était l'ancienne... [à vérifier]
+- [01:13:02 --> 01:13:04] C'est l'essence intaine de module.
+- [01:13:04 --> 01:13:05] Ben le principe, c'est... [à vérifier]
+- [01:13:05 --> 01:13:07] T'as l'entrée ici avec... [à vérifier]
+- [01:13:07 --> 01:13:08] Le... [à vérifier]
+- [01:13:08 --> 01:13:09] Le... [à vérifier]
+- [01:13:09 --> 01:13:10] Le... [à vérifier]
+- [01:13:10 --> 01:13:11] Il y a quelques subtilités sur les... [à vérifier]
+- [01:13:11 --> 01:13:12] Les séers, parce que, en fait,
+- [01:13:12 --> 01:13:14] pour les gens qui seront contaminés,
+- [01:13:14 --> 01:13:15] il faut qu'ils puissent prendre une douche.
+- [01:13:15 --> 01:13:17] À moins que sortir.
+- [01:13:17 --> 01:13:18] Donc, en fait, il faut... [à vérifier]
+- [01:13:18 --> 01:13:19] Il faut... [à vérifier]
+- [01:13:19 --> 01:13:20] Il faut... [à vérifier]
+- [01:13:20 --> 01:13:21] Pour... [à vérifier]
+- [01:13:21 --> 01:13:22] Pour... [à vérifier]
+- [01:13:22 --> 01:13:23] Pour... [à vérifier]
+- [01:13:23 --> 01:13:24] Pour... [à vérifier]
+- [01:13:24 --> 01:13:25] Pour... [à vérifier]
+- [01:13:25 --> 01:13:26] Pour... [à vérifier]
+- [01:13:26 --> 01:13:27] Pour... [à vérifier]
+- [01:13:27 --> 01:13:28] Pour... [à vérifier]
+- [01:13:28 --> 01:13:29] Pour... [à vérifier]
+- [01:13:29 --> 01:13:30] Pour... [à vérifier]
+- [01:13:30 --> 01:13:31] Pour... [à vérifier]
+- [01:13:31 --> 01:13:32] Pour... [à vérifier]
+- [01:13:32 --> 01:13:33] Pour... [à vérifier]
+- [01:13:33 --> 01:13:34] Pour... [à vérifier]
+- [01:13:34 --> 01:13:35] Pour... [à vérifier]
+- [01:13:35 --> 01:13:36] Pour... [à vérifier]
+- [01:13:36 --> 01:13:37] Pour... [à vérifier]
+- [01:13:37 --> 01:13:38] Pour... [à vérifier]
+- [01:13:38 --> 01:13:39] Pour... [à vérifier]
+- [01:13:39 --> 01:13:40] Pour... [à vérifier]
+- [01:13:40 --> 01:13:41] Pour... [à vérifier]
+- [01:13:41 --> 01:13:42] Pour... [à vérifier]
+- [01:13:42 --> 01:13:43] Pour... [à vérifier]
+- [01:13:43 --> 01:13:44] Pour... [à vérifier]
+- [01:13:44 --> 01:13:45] Pour... [à vérifier]
+- [01:13:45 --> 01:13:46] Pour... [à vérifier]
+- [01:13:46 --> 01:13:47] Pour... [à vérifier]
+- [01:13:47 --> 01:13:48] Pour... [à vérifier]
+- [01:13:48 --> 01:13:49] Pour... [à vérifier]
+- [01:13:49 --> 01:13:50] Pour... [à vérifier]
+- [01:13:50 --> 01:13:51] Pour... [à vérifier]
+- [01:13:51 --> 01:13:52] Pour... [à vérifier]
+- [01:13:52 --> 01:13:53] Pour... [à vérifier]
+- [01:13:53 --> 01:13:54] Pour... [à vérifier]
+- [01:13:54 --> 01:13:55] Pour... [à vérifier]
+- [01:13:55 --> 01:13:56] Pour... [à vérifier]
+- [01:13:56 --> 01:13:57] Pour... [à vérifier]
+- [01:13:57 --> 01:13:58] Pour... [à vérifier]
+- [01:13:58 --> 01:13:59] Pour... [à vérifier]
+- [01:13:59 --> 01:14:00] Pour... [à vérifier]
+- [01:14:00 --> 01:14:01] Pour... [à vérifier]
+- [01:14:01 --> 01:14:02] Pour... [à vérifier]
+- [01:14:02 --> 01:14:07] par hété et voir qui c'est, et t'es massorcible, que tu as quand j'avais quand j'ai l'intérieur
+- [01:14:07 --> 01:14:14] pour faire trop l'heure, ici. Donc là, ensuite, tu produis tes souches et tu les inactives.
+- [01:14:14 --> 01:14:22] Ici, de directeur ici, donc du coup, je le j'ai agrandi en fait là aussi, je me suis dit
+- [01:14:22 --> 01:14:26] il me faut rajouter des sasses des marchands, il faut faire, et puis tu produis aussi sur la
+- [01:14:26 --> 01:14:35] France. Donc, de coup, je me suis dit aujourd'hui aussi d'un module ici, et je dis à
+- [01:14:35 --> 01:14:42] émigo, c'est que c'est 100 000 ans de plus, mais à mon avis, c'est peut-être mieux, en fait,
+- [01:14:42 --> 01:14:47] quand même. Mais ça va flesser une place pour l'inactivation et le contrôle d'inactivation,
+- [01:14:47 --> 01:14:55] enfin, un module pour le contrôle d'inactivation. Donc, ce qui sortit ici, estéril, ça sera
+- [01:14:55 --> 01:14:59] de l'antigenie d'activation. Mais le mari, ça vient ici.
+- [01:15:00 --> 01:15:03] Et donc là, dans la formation, il y a un passé.
+- [01:15:03 --> 01:15:06] De mettre qui contenu, il prend une douche, il apprend où le tout.
+- [01:15:06 --> 01:15:10] Il est contenu, il est contenu, il est contenu, il se change.
+- [01:15:10 --> 01:15:12] Et après, il apprend la douche.
+- [01:15:12 --> 01:15:18] C'est la truc d'arabilité, parce que ça a aucun intérêt chez nous.
+- [01:15:18 --> 01:15:25] Les gens, tu m'aies, tu m'aies, tu m'aies, tu m'aies, tu m'enlèves, tu m'enlèves, tu m'enlèves, tu m'enlèves, tu m'enlèves, tu m'enlèves, tu m'enlèves.
+- [01:15:25 --> 01:15:28] Non, c'est-à-dire qu'on ne peut-être que tu passons de coulée là et là-bas, tu as quand même... [à vérifier]
+- [01:15:28 --> 01:15:33] L'vision prend dans le douche, la barre, là, je me porte douche ici.
+- [01:15:33 --> 01:15:34] C'est une autre.
+- [01:15:34 --> 01:15:38] Par contre, ça poitre à l'entrée du mot du l'hôme, pour éviter que l'isahe dans les l'estirs,
+- [01:15:38 --> 01:15:40] très versé les l'estirs, pour aller à la douche.
+- [01:15:40 --> 01:15:44] Alors, juste pour le fait que ça n'est pas fait ça, ce douche, peut-être?
+- [01:15:44 --> 01:15:47] Bon, c'est à réserve compliquez après de tout.
+- [01:15:47 --> 01:15:50] Parce que la douche a l'nès que c'est curité, ou... [à vérifier]
+- [01:15:50 --> 01:15:53] C'est pour éviter pour dissiminer l'extérieur.
+- [01:15:53 --> 01:15:55] C'est l'extérieur, et il fait 40, c'est-à-dire... [à vérifier]
+- [01:15:55 --> 01:15:59] Oui, mais c'est-à-dire que, je crois qu'il arrive.
+- [01:15:59 --> 01:16:00] Non, c'est tout le monde.
+- [01:16:00 --> 01:16:04] Non, non, il se douche ceux qui travaillent dans les zones contaminés,
+- [01:16:04 --> 01:16:07] notamment dans la zone de production virale.
+- [01:16:07 --> 01:16:11] Dans les zones baissèles-là, quand ils sortent, ils vont prendre une douche.
+- [01:16:11 --> 01:16:14] Il est une change, ils vont prendre une douche.
+- [01:16:14 --> 01:16:20] Sachant que comme d'un des effecteurs, d'un des toilages qui est programmé dans tes module,
+- [01:16:20 --> 01:16:22] donc en fait, et d'en couvert central en fait.
+- [01:16:22 --> 01:16:26] C'est pour ça qu'ils sont congards d'une homogénisée sur ces zones baissèles.
+- [01:16:26 --> 01:16:27] C'est-à-dire que je comprends... [à vérifier]
+- [01:16:27 --> 01:16:30] Là, je l'ai mis ici, ou à Tallello, qui a un ici, donc en fait,
+- [01:16:30 --> 01:16:33] ils sortent là, ils vont là pour la douche.
+- [01:16:33 --> 01:16:35] Que je comprends pas, c'est que le mec qui est contaminé.
+- [01:16:35 --> 01:16:38] Donc, cette nuit, il est pas contaminé, cette nuit, c'est-à-dire.
+- [01:16:38 --> 01:16:40] C'est-à-dire, cette nuit, dans l'f qu'on... [à vérifier]
+- [01:16:40 --> 01:16:42] Il en lève quand ils sortent des modilles-là.
+- [01:16:42 --> 01:16:44] Ah, il faut aller dans le plan de... [à vérifier]
+- [01:16:44 --> 01:16:45] Il faut aller dans plus... [à vérifier]
+- [01:16:46 --> 01:16:50] C'est-à-dire quand même que t'allons le contaminant à l'extérieur du module.
+- [01:16:50 --> 01:16:51] Et donc, en couvert?
+- [01:16:51 --> 01:16:54] Non, parce que Tallello, tu vas aller dans un sac qui est enche.
+- [01:16:54 --> 01:16:59] Donc, ici, ici, je ne vais pas changer parce qu'il voulait me... [à vérifier]
+- [01:16:59 --> 01:17:03] Je le dis, donc, il voulait me mettre des sacs partout.
+- [01:17:03 --> 01:17:08] Et ici, c'est des échantillons, donc, c'est des faibles quantités des virales.
+- [01:17:08 --> 01:17:11] Il faut pas être déjà, et aux États-Unis, quand tu vois,
+- [01:17:11 --> 01:17:13] il y en a une production.
+- [01:17:13 --> 01:17:18] Donc, on peut faire du BSL2, donc, j'ai pas changé la fête.
+- [01:17:18 --> 01:17:24] T'as ici, tu reçoit des échantillons à ce niveau-là.
+- [01:17:24 --> 01:17:28] T'as un labor-viral, un labor-vacterien, et puis ça, c'est tout ce qui... [à vérifier]
+- [01:17:28 --> 01:17:31] PCR et... [à vérifier]
+- [01:17:31 --> 01:17:33] Et c'est quand ça, Jean-Prette.
+- [01:17:33 --> 01:17:35] Donc, le... [à vérifier]
+- [01:17:35 --> 01:17:40] Cela sont BSL2, mais tu travaille en fait sous des... [à vérifier]
+- [01:17:40 --> 01:17:44] ce qu'on appelle des BSL2, c'est qu'il a été microbiologique,
+- [01:17:44 --> 01:17:50] qu'on définit très bas, et qu'il y en a un circuit en Aspro.
+- [01:17:50 --> 01:17:52] Donc, il n'y a pas besoin de... [à vérifier]
+- [01:17:52 --> 01:17:55] Mais c'est vrai qu'il va, qu'il va, quand ils changent,
+- [01:17:55 --> 01:17:58] il y a retourne et ils a les prendre une... [à vérifier]
+- [01:17:58 --> 01:18:01] Je dirais que le coolment n'est pas en BSL2.
+- [01:18:01 --> 01:18:07] C'est une bonne question, mais il est pas en BSL2, je ne peux pas faire ça.
+- [01:18:07 --> 01:18:08] Oui, c'est ça, il est pas ça.
+- [01:18:08 --> 01:18:10] Il n'y a pas ça, mais il t'a une surpression ici,
+- [01:18:10 --> 01:18:14] une depression, une sous-pression, et en fait, il se sent BSL2,
+- [01:18:14 --> 01:18:19] parce qu'il travaille sous, je ne peux pas essaie.
+- [01:18:19 --> 01:18:23] Et, globalement, dans la suppression, ici,
+- [01:18:23 --> 01:18:27] les fides d'avoir l'air, quand ils sortent et filtrées,
+- [01:18:27 --> 01:18:31] et il a envoyé à l'extérieur, et c'est tout au fait.
+- [01:18:31 --> 01:18:35] C'est... mais oui, dans le couloir, et par... [à vérifier]
+- [01:18:35 --> 01:18:40] De toute façon, l'air vient du couloir, d'envers le temps vraiment, c'est ça.
+- [01:18:40 --> 01:18:42] C'est pas un cité à sortir.
+- [01:18:42 --> 01:18:45] C'est-à-dire que le couloir est un modul à parentière.
+- [01:18:45 --> 01:18:47] C'est pas un modul, dans ce sens,
+- [01:18:47 --> 01:18:49] il ne va pas mettre l'armate sur la beauté, il est modulée.
+- [01:18:49 --> 01:18:50] Ça fait partie de... [à vérifier]
+- [01:18:50 --> 01:18:51] C'est la question.
+- [01:18:51 --> 01:18:52] Il y avait un double croisant.
+- [01:18:52 --> 01:18:55] Il y avait des module, et une croise en couloir.
+- [01:18:55 --> 01:18:58] C'est un amène, plus ou non, il y aura que... [à vérifier]
+- [01:18:58 --> 01:19:00] Il y aura une croise sur le mot d'une.
+- [01:19:00 --> 01:19:02] D'orale, la cause, c'est juste à l'extrémité.
+- [01:19:02 --> 01:19:05] En fait, mais c'est le transferment.
+- [01:19:05 --> 01:19:10] Et puis sinon, non, c'est vrai que c'est une chose qui ne faut vraiment donner.
+- [01:19:10 --> 01:19:11] Mais c'est mon sac, ça va être ferme.
+- [01:19:11 --> 01:19:16] Et on va avoir le texte, que le couloir est l'intérieur.
+- [01:19:16 --> 01:19:19] Il peut mettre, il m'a dit, qu'il pouvait mettre.
+- [01:19:19 --> 01:19:21] Mais il faudra discuter avec lui, en fait.
+- [01:19:21 --> 01:19:29] Il pourrait mettre du décroison des plus lumières, en fait.
+- [01:19:29 --> 01:19:32] Ah, en fait, le plus lumière, ça peut-être que, comme tu verras pas,
+- [01:19:32 --> 01:19:34] l'essayer la travers, parce que tu es trop l'al.
+- [01:19:34 --> 01:19:37] Ça peut être aussi les systèmes de canon à lumière,
+- [01:19:37 --> 01:19:40] pour au moins que tu es une lumière naturelle.
+- [01:19:40 --> 01:19:41] Non, ce que vous pouvez... [à vérifier]
+- [01:19:41 --> 01:19:43] C'est un savoir-cher, on s'est un... [à vérifier]
+- [01:19:43 --> 01:19:46] Oui, mais quand tu vois, ça va le côté, d'avoir le plus de jour,
+- [01:19:46 --> 01:19:47] qu'il va falloir protéger de la marche,
+- [01:19:47 --> 01:19:48] parce qu'il était bluffant, il se remarcha,
+- [01:19:48 --> 01:19:51] mais qu'on va pas s'attraver les des plus joues,
+- [01:19:51 --> 01:19:53] pour qu'on prend, à voir.
+- [01:19:54 --> 01:19:55] Mais si c'est juste à voir la sensation,
+- [01:19:55 --> 01:19:57] ne n'est que la naturelle.
+- [01:19:57 --> 01:19:58] On peut la voir, par la sensation.
+- [01:19:58 --> 01:19:59] Par les oui.
+- [01:19:59 --> 01:20:02] Alors, ça c'est la production virale.
+- [01:20:02 --> 01:20:04] Je ne sais pas, je ne sais pas.
+- [01:20:04 --> 01:20:07] C'est dans la production virale,
+- [01:20:07 --> 01:20:09] t'as deux types de production.
+- [01:20:09 --> 01:20:13] Toi, tu fais des cultures qui se rèvent.
+- [01:20:13 --> 01:20:16] Donc, là, il y a une part définition, il n'est pas sérieux.
+- [01:20:16 --> 01:20:19] Donc, il est l'entrée ici,
+- [01:20:19 --> 01:20:21] et on rentre directement ici,
+- [01:20:21 --> 01:20:24] donc, il m'en fait rajouter un sass.
+- [01:20:24 --> 01:20:27] Donc, du coup, j'ajouter un uniteur faite.
+- [01:20:27 --> 01:20:29] Pour passer à l'épée en plus, c'est une production,
+- [01:20:29 --> 01:20:31] et qu'on va s'en dire, il faut aller prévoir,
+- [01:20:31 --> 01:20:33] que c'est là où il peut lui faire de l'achineur,
+- [01:20:33 --> 01:20:35] avec des grandes quantités.
+- [01:20:35 --> 01:20:37] Je me suis dit, c'est un jour, on va rentrer,
+- [01:20:37 --> 01:20:39] on va rentrer les quantités.
+- [01:20:39 --> 01:20:42] Donc, du coup, j'ai rajouté un uniteur.
+- [01:20:43 --> 01:20:46] C'est l'entrée, et tu changez ici.
+- [01:20:46 --> 01:20:49] Donc, de toute façon, tu change dans un sens,
+- [01:20:49 --> 01:20:51] c'est dans l'autre, c'est sérieux ici,
+- [01:20:51 --> 01:20:55] quand tu sortes, tu mettes en train d'entre eux,
+- [01:20:55 --> 01:20:57] dans soi, si c'est du jetable,
+- [01:20:57 --> 01:21:00] dans le jetable, soit c'est le secte pour,
+- [01:21:00 --> 01:21:02] donc, tu sortes, proprement, en fait.
+- [01:21:02 --> 01:21:04] Bon, tu vas prendre ta douche commune.
+- [01:21:05 --> 01:21:09] Et ensuite, t'as un ici,
+- [01:21:09 --> 01:21:12] à ça, sans fait, plus cinq,
+- [01:21:12 --> 01:21:16] avec une zone ici de production, de cellulaire.
+- [01:21:16 --> 01:21:18] Donc, avec un actuel bataire assez d'huile,
+- [01:21:18 --> 01:21:23] et ici, c'est une zone qui est en dépression,
+- [01:21:23 --> 01:21:25] ou là, tu produis ton anti-gène.
+- [01:21:25 --> 01:21:28] Donc, là, c'est des quantités importants.
+- [01:21:28 --> 01:21:31] C'est vrai que sur l'ange, j'ai été dit,
+- [01:21:31 --> 01:21:34] bon, c'est sérationnel de faire un sens,
+- [01:21:34 --> 01:21:37] parce que c'est vrai que si tu as une zone qui est menée,
+- [01:21:37 --> 01:21:39] c'est bien ça l'heure.
+- [01:21:39 --> 01:21:42] Et c'est vrai que ça faisait tiquer un peu tout le monde.
+- [01:21:42 --> 01:21:45] Il n'y a pas pas une rivier, t'as apparennait dans ce sens.
+- [01:21:45 --> 01:21:46] T'as pas de tension, t'as pas de tension.
+- [01:21:46 --> 01:21:49] Et bien, je l'ai mis ici,
+- [01:21:49 --> 01:21:54] et change juste, c'est juste un sens de décontamination, en fait.
+- [01:21:54 --> 01:21:55] Mais comment tu dis quand même,
+- [01:21:55 --> 01:21:57] juste à renverser la blouse en fait?
+- [01:21:57 --> 01:21:59] Oui, oui, oui, oui, oui, oui, oui, oui, oui.
+- [01:21:59 --> 01:22:01] Mais on n'a pas de contenu, non sur nous-mêmes,
+- [01:22:01 --> 01:22:04] à partir du moment où tu l'enlèves avec tes mains,
+- [01:22:04 --> 01:22:05] t'as pas un... [à vérifier]
+- [01:22:05 --> 01:22:06] Pas, donc, c'est en fait.
+- [01:22:06 --> 01:22:08] Et en plus, il travaille... [à vérifier]
+- [01:22:08 --> 01:22:09] Alors, ici, il travaille sous... [à vérifier]
+- [01:22:09 --> 01:22:10] je l'ai fait.
+- [01:22:10 --> 01:22:13] Mais là, il travaille super, c'est avant-fait.
+- [01:22:13 --> 01:22:14] C'est le bout, c'est le mélanger.
+- [01:22:14 --> 01:22:17] Donc, il a attendre, il travaille pas les mains nuins.
+- [01:22:17 --> 01:22:19] Attends, c'est... [à vérifier]
+- [01:22:19 --> 01:22:21] Ils ont des gants, et ils sortent les gants,
+- [01:22:21 --> 01:22:22] et il est juste, en fait,
+- [01:22:22 --> 01:22:25] il y a une formation pour travailler,
+- [01:22:25 --> 01:22:28] en zone comme ta diné, en fait.
+- [01:22:28 --> 01:22:30] Et c'est pour... [à vérifier]
+- [01:22:30 --> 01:22:31] Non, mais j'ai entendu, mais... [à vérifier]
+- [01:22:31 --> 01:22:33] Donc là, c'est qu'il n'y a pas sorti,
+- [01:22:33 --> 01:22:34] comme ça... [à vérifier]
+- [01:22:34 --> 01:22:35] C'est... [à vérifier]
+- [01:22:35 --> 01:22:37] C'est... c'est le temps que dans le ça, [à vérifier]
+- [01:22:37 --> 01:22:39] c'est pas moyen de se nettoyer.
+- [01:22:39 --> 01:22:40] C'est ça que je trouve.
+- [01:22:40 --> 01:22:41] Non, parce que, non,
+- [01:22:41 --> 01:22:45] c'est le principe, c'est de rajouter des couches
+- [01:22:45 --> 01:22:46] que tu l'esrains dans le ça,
+- [01:22:46 --> 01:22:48] et les dégants, et de travailler,
+- [01:22:48 --> 01:22:54] avec eux pas un brein de peau qui apparaît qu'on fait.
+- [01:22:54 --> 01:22:56] Mais bon, ça ne sera qu'un pas du... [à vérifier]
+- [01:22:56 --> 01:22:57] C'est en... [à vérifier]
+- [01:22:57 --> 01:22:59] On n'est pas... ça ne sera pas du... [à vérifier]
+- [01:22:59 --> 01:23:01] C'est pas du stéril, du clasp B,
+- [01:23:01 --> 01:23:02] donc c'est vrai que... [à vérifier]
+- [01:23:02 --> 01:23:04] Tu ne peux pas un masque... [à vérifier]
+- [01:23:04 --> 01:23:06] Donc effectivement,
+- [01:23:06 --> 01:23:10] c'est pour ça que c'est pour... [à vérifier]
+- [01:23:10 --> 01:23:12] C'est... [à vérifier]
+- [01:23:12 --> 01:23:15] Et donc, ça aussi, ici, un incubateur.
+- [01:23:15 --> 01:23:19] Et donc, j'ai calculé les besoins de charieux d'occupation,
+- [01:23:19 --> 01:23:21] il n'a pas tant que ça, en fait.
+- [01:23:21 --> 01:23:23] Donc... [à vérifier]
+- [01:23:23 --> 01:23:24] Ça doit... [à vérifier]
+- [01:23:24 --> 01:23:28] 4,5 pour ici et 3 pour ici, en fait.
+- [01:23:28 --> 01:23:30] Et en face,
+- [01:23:30 --> 01:23:33] t'as une zone ici de stockage du vignette,
+- [01:23:33 --> 01:23:34] ou peut-être qu'on j'ai l'intérieur ici,
+- [01:23:34 --> 01:23:37] voit-ce que c'est 50, 50.
+- [01:23:37 --> 01:23:40] Ici, t'as une zone... [à vérifier]
+- [01:23:40 --> 01:23:41] que de... [à vérifier]
+- [01:23:41 --> 01:23:44] de réfrigérer, en fait, pour conserver les antigenes,
+- [01:23:44 --> 01:23:47] notamment par un d'un duré de... [à vérifier]
+- [01:23:47 --> 01:23:49] de l'inactivation, en fait.
+- [01:23:49 --> 01:23:52] Et puis... [à vérifier]
+- [01:23:52 --> 01:23:54] Et puis, là, il y a une zone technique, en fait.
+- [01:23:54 --> 01:23:59] Et une zone de la magie, de toute la magie.
+- [01:23:59 --> 01:24:01] Et donc, t'as une salle de l'hypens,
+- [01:24:01 --> 01:24:04] c'est vrai que c'est à réfléchir sur,
+- [01:24:04 --> 01:24:09] notamment, le contrôle d'inactivation.
+- [01:24:09 --> 01:24:11] C'est-à-dire que, sur moi, il y a contre l'inactivation,
+- [01:24:11 --> 01:24:13] vous l'avez fait, bon, l'inactivation,
+- [01:24:13 --> 01:24:16] et ça, vous l'avez dit qu'il y a un peu les impuristes.
+- [01:24:16 --> 01:24:19] Le salice qui a été dans tout ça, ils vont.
+- [01:24:19 --> 01:24:22] Le salice qui a été dans les bureaux, et sinon, après... [à vérifier]
+- [01:24:22 --> 01:24:25] C'est le chacun, c'est après, c'est le salice qui a été,
+- [01:24:25 --> 01:24:28] c'est beaucoup de procédures, de contrôle de choses comme ça.
+- [01:24:28 --> 01:24:29] Mais qui se fait à chaque moule?
+- [01:24:29 --> 01:24:31] Qui se fait dans chaque moule, en fait, ouais.
+- [01:24:31 --> 01:24:33] Il n'y a pas pris des problèmes, qui la même dans notre moule,
+- [01:24:33 --> 01:24:34] et qui devient vérifier.
+- [01:24:34 --> 01:24:35] Alors, ça, c'est le secui.
+- [01:24:36 --> 01:24:41] Il y a, en fait, dans chaque processus, dans chaque procédure,
+- [01:24:41 --> 01:24:45] on dit, bah, tient ici, vous faites un tel type de pelletement,
+- [01:24:46 --> 01:24:49] et ça on va aller de regarder dans, dans des autres,
+- [01:24:49 --> 01:24:51] du lapos d'identification.
+- [01:24:51 --> 01:24:56] Soit, on regarde, par exemple, dans ce, dans ce, dans ce, dans ce,
+- [01:24:56 --> 01:24:57] il faut dire que je rajoute.
+- [01:24:59 --> 01:25:00] Oui, c'est une.
+- [01:25:00 --> 01:25:01] On prend très clair.
+- [01:25:01 --> 01:25:08] Il 3ème, donc, Blending, il a été les 3.
+- [01:25:09 --> 01:25:12] Au reçois, j'avais rajouté un sasset au milieu.
+- [01:25:12 --> 01:25:17] Donc, on mante par là, et donc, le principe,
+- [01:25:17 --> 01:25:24] C'est le mélange, c'est le fait ici, donc tu ne trapez que c'était plus pire, le mélange.
+- [01:25:24 --> 01:25:29] Là, c'est la répartition et là, c'est l'édictage.
+- [01:25:29 --> 01:25:31] Donc ici, c'est pas classé.
+- [01:25:31 --> 01:25:34] Et c'est en lien avec le stockage ici des produits finis.
+- [01:25:34 --> 01:25:37] Donc, il y a des chariots qui peuvent aller de la route.
+- [01:25:37 --> 01:25:41] Et les matières premières, il y a un stockage ici.
+- [01:25:41 --> 01:25:45] C'est le matières premières, c'est notamment le tout ce qui est adjuvant.
+- [01:25:45 --> 01:25:50] Donc là, ça peut être des gros dividendes 50.
+- [01:25:50 --> 01:25:53] Ou les tout ce qui est conditionnement,
+- [01:25:53 --> 01:25:56] en fait, les flaccons, les bouchons, des choses comme ça.
+- [01:25:56 --> 01:26:01] Donc, donc l'idée, c'est que ici, c'est pas classé.
+- [01:26:01 --> 01:26:04] Donc, les gens, les vagasignés peuvent venir ici.
+- [01:26:04 --> 01:26:11] Et il y a un matariel sas, donc un pour faire passer tout le matariel ici.
+- [01:26:11 --> 01:26:16] Soit en isose. Donc, ils osènes, c'est classé.
+- [01:26:16 --> 01:26:18] Et ils ont huites, c'est classé.
+- [01:26:18 --> 01:26:24] Et donc, soit ça vient ici, soit ça vient directement ici.
+- [01:26:24 --> 01:26:31] Et donc là, ça, c'est lagence, c'était choquée que, en plus, ça l'a huites, c'était huites.
+- [01:26:31 --> 01:26:33] C'est un complot de m'où il y a.
+- [01:26:33 --> 01:26:35] Parce que là, là, c'est du stéréil.
+- [01:26:35 --> 01:26:38] Donc, chaque moment, à l'hognation, en fait,
+- [01:26:38 --> 01:26:43] donc, effectivement, j'ai rajumé à ça ici pour pouvoir passer ici, en fait.
+- [01:26:43 --> 01:26:48] Et donc, ici, donc du coup, j'ai déplacé l'auto-clage des bici.
+- [01:26:48 --> 01:26:52] Et là, on a les déchets et le module technique.
+- [01:26:52 --> 01:27:02] Tu parles de formale, t'as l'air, c'est l'histoire stockée là,
+- [01:27:02 --> 01:27:04] ou est-ce qu'est-ce de stocker dans le l'autre?
+- [01:27:04 --> 01:27:06] C'est-ce de stockage de formale, ça va?
+- [01:27:06 --> 01:27:10] Ah, alors, on peut rajouter un peu de formale, des fois dans l'information.
+- [01:27:10 --> 01:27:13] Et si on essaie des petites quantités, si dans le formale,
+- [01:27:13 --> 01:27:17] les utilisés plutôt dans le précédent, en fait.
+- [01:27:17 --> 01:27:21] Donc, il y a, donc, le formale sera utilisé ici.
+- [01:27:21 --> 01:27:24] Et le stockage ici, mais le stockage ici,
+- [01:27:24 --> 01:27:27] ça sera dans les gestors sur les deux.
+- [01:27:27 --> 01:27:29] Ah, mais quand j'ai l'intérieur.
+- [01:27:29 --> 01:27:33] Le congétaire, mais aussi, un peu de quelques produits
+- [01:27:33 --> 01:27:36] de médias, de culture, et puis le formale.
+- [01:27:36 --> 01:27:38] C'est pas un grand nombre de stockage.
+- [01:27:38 --> 01:27:41] C'est pas le très grand, mais c'est pas des rouvelues, dans plus.
+- [01:27:41 --> 01:27:47] Non, c'est pas le passé en millie, de ce qui change.
+- [01:27:47 --> 01:27:50] Tout.
+- [01:27:50 --> 01:27:52] Et tout.
+- [01:27:52 --> 01:27:53] Il l'aide.
+- [01:27:53 --> 01:27:56] On a eu deux sur les deux, là, du youtube par 5, hein.
+- [01:27:56 --> 01:27:58] Oui, mais ce que c'est, il y a le volume.
+- [01:27:58 --> 01:28:01] Il y a une sim qui se note au-dessus d'attention.
+- [01:28:01 --> 01:28:05] Ouais, alors, des infatets déjà, alors, parce que je le demande,
+- [01:28:05 --> 01:28:08] j'allais voir où il y a un grand quartier.
+- [01:28:08 --> 01:28:14] La fille qui s'occupe, c'est le principe de la répartition.
+- [01:28:14 --> 01:28:15] C'est la répartition.
+- [01:28:15 --> 01:28:19] La mise sous flacon, c'est un flacon du peu le faire aimer.
+- [01:28:19 --> 01:28:22] Et tu prends des pompets les synthiques, et tu... [à vérifier]
+- [01:28:22 --> 01:28:25] Et la pompée, c'est-à-dire que c'est pas très précis.
+- [01:28:25 --> 01:28:28] Donc, ton objet de peser à chaque flacon.
+- [01:28:28 --> 01:28:30] Donc, c'est vrai que c'est... [à vérifier]
+- [01:28:30 --> 01:28:35] Je pense que la rentage de pompée à celle-ci, c'est un tuyau plastique entre
+- [01:28:35 --> 01:28:40] quand tu change de l'eau dans l'estant tuyau et puis tu en même suivement.
+- [01:28:40 --> 01:28:42] Et puis, tu as pas contact, en fait.
+- [01:28:42 --> 01:28:47] Tout ce qui est en contact avec le produit, hein.
+- [01:28:47 --> 01:28:51] Donc, c'est... c'est... puisque la pente ne touche pas le produit. [à vérifier]
+- [01:28:51 --> 01:28:54] Et... par me le disait, mais... [à vérifier]
+- [01:28:54 --> 01:28:58] J'ai eu des pompets, j'ai eu des pompets à cette... [à vérifier]
+- [01:28:58 --> 01:29:01] L'hypheur, j'ai eu des pompets à cette ligne.
+- [01:29:01 --> 01:29:03] Donc, j'allais l'évier avec la fille.
+- [01:29:03 --> 01:29:05] Il fait la formule sur un lignore.
+- [01:29:05 --> 01:29:07] Mais, pour moi, c'est des... [à vérifier]
+- [01:29:07 --> 01:29:09] On appelle des pompets humetriques.
+- [01:29:09 --> 01:29:10] Ils sont plus précisens.
+- [01:29:10 --> 01:29:13] Donc, du coup, j'ingectope bien,
+- [01:29:13 --> 01:29:16] la quantité exacte, et tu peux le faire de façon autoretique.
+- [01:29:16 --> 01:29:17] Donc, non.
+- [01:29:17 --> 01:29:22] Donc c'est... c'est... c'est... c'est... c'est... c'est vraiment une échelle... [à vérifier]
+- [01:29:22 --> 01:29:37] une échelle différente, c'est un projet de trois ans, ce qu'il va faire, c'est pas la même chose, en fait.
+- [01:29:37 --> 01:29:41] Et sur la bouleume, il faudrait.
+- [01:29:41 --> 01:29:51] Donc là, là, je m'écoute, alors j'ai demandé, c'est vrai qu'on peut moi utiliser des cuve, des cuve, je t'appellent les cuve, je t'appellent les cuve.
+- [01:29:51 --> 01:29:59] C'est vrai qu'il faut des cuve que je t'appellent, donc je t'appellent.
+- [01:30:00 --> 01:30:04] J'ai la mettre là en 1985.
+- [01:30:04 --> 01:30:10] C'est une cuve qui fait qui me prend un écart et il faut d'ailleurs d'autre chose.
+- [01:30:10 --> 01:30:14] Donc il faut quand même de la place, c'est pour ça que l'agrandissement, finalement,
+- [01:30:14 --> 01:30:16] je pense que c'est pas sas.
+- [01:30:16 --> 01:30:20] C'est... c'est... c'est... ça permettra d'être un peu confortable, [à vérifier]
+- [01:30:20 --> 01:30:25] mais c'est pas une cuve de... c'est pas une cuve de l'hôlite. [à vérifier]
+- [01:30:25 --> 01:30:29] La seule partie n'a pas clué de faire passer à 200 amie.
+- [01:30:29 --> 01:30:34] C'est la dernière partie, c'est le Blending & Filling où tout ce que les oeufs sont impactés aussi.
+- [01:30:34 --> 01:30:40] Alors, c'est... c'est deux millilitres, c'est deux millilitres, c'est deux millifacons. [à vérifier]
+- [01:30:40 --> 01:30:42] C'est plus, tu le fais plus à l'endroit.
+- [01:30:42 --> 01:30:44] Non, j'y suis, j'y suis, j'y suis, j'y suis.
+- [01:30:44 --> 01:30:45] C'est un part ici.
+- [01:30:45 --> 01:30:46] Non, c'est c'est tout petit, c'est tout petit, c'est un petit.
+- [01:30:46 --> 01:30:49] C'est un petit, c'est un petit, c'est un petit, c'est un petit, c'est un petit.
+- [01:30:49 --> 01:30:50] C'est un petit.
+- [01:30:50 --> 01:30:54] Avec des�es, on entre pas, on lives ça, il faut pour produire de le série.
+- [01:30:54 --> 01:30:59] On te souvelte hein, je peux acheter plus série, mais, il faut que je faire produiser.
+- [01:30:59 --> 01:31:04] Donc en sesraphes, c'est ça automatique.
+- [01:31:04 --> 01:31:08] Donc il faut la強cremieister, il faut toujours le戰.
+- [01:31:08 --> 01:31:15] En fait, j'ai envie qu'on devrait avoir un pretending, quand on colle aujourd'hui,
+- [01:31:15 --> 01:31:25] le certissage, en fait, de ton change, donc, ça rien à voir, en fait, je sais, je sais, mais
+- [01:31:25 --> 01:31:27] ça a projet qu'au fait.
+- [01:31:27 --> 01:31:33] Je sais, mais ce qu'on peut pas le dimensionner sur un espace et dire, à partir
+- [01:31:33 --> 01:31:37] au moment où il y avait passé en mille litres, on a cette espace-là qui est dédiée.
+- [01:31:37 --> 01:31:41] A partir, moi, c'est l'espace qui est pour moi.
+- [01:31:41 --> 01:31:49] En fait, c'est un projet qu'on a fait du coup, là, il faut mettre quelques ingénaires
+- [01:31:49 --> 01:31:54] pour l'affection sur comment faire un site pour produire mille litres, qu'est-ce qu'il faut
+- [01:31:54 --> 01:31:55] communiser.
+- [01:31:55 --> 01:31:56] Bon, le direct.
+- [01:31:56 --> 01:32:02] Moi, quand je... alors, c'est vrai que du coup, dans le projet d'un, c'est vrai qu'on [à vérifier]
+- [01:32:02 --> 01:32:12] réfléchit sur un sain, je me suis dit, si on le met là, il y a du coup sur
+- [01:32:12 --> 01:32:16] Marthage, j'ai mis ici, on a dû le mis sous-fort-faim à massotique d'un dégâchil
+- [01:32:16 --> 01:32:19] et bon, et je vous le dis, t'es un sain, il faudrait peut-être le mettre là, comme
+- [01:32:19 --> 01:32:25] ça, on peut peut-être réfléchir sur comment on m'utilisait et est-ce qu'il y a de choses
+- [01:32:25 --> 01:32:27] qu'on peut m'utiliser entre les deux.
+- [01:32:27 --> 01:32:30] Mais, mais, on l'incense, c'est juste... [à vérifier]
+- [01:32:30 --> 01:32:35] Et mais, si Marthage a cette pensée là, c'est... c'est sûr qu'il faut aller d'en ça, ou... [à vérifier]
+- [01:32:35 --> 01:32:41] Ah, et il y a beau, il pousse, il change beaucoup, en fait.
+- [01:32:41 --> 01:32:44] Mais après, qu'est-ce qu'il y a l'isé, vous pourrez en fait?
+- [01:32:44 --> 01:32:50] Et, pour l'instant, les lignes, sur mes automatiques, il y en a pas aux États-Unis, il n'y a pas... [à vérifier]
+- [01:32:50 --> 01:32:56] Ça marche pas si bien, en fait, donc il faut... c'est pas si simple, en fait. [à vérifier]
+- [01:32:56 --> 01:33:01] On va rester dans la nivelle avec mes lignes, avec plus de 2, plus de 2, plus de 2.
+- [01:33:01 --> 01:33:02] Et maintenant, il faut acheter vraiment.
+- [01:33:02 --> 01:33:08] Non, mais parce que, moi, je lui dis, mais 200 lignes, je suis 200 lignes, déjà si on fait
+- [01:33:08 --> 01:33:15] en 0, 3, mais en tout le monde, presque d'intière, en fait, dans la production.
+- [01:33:15 --> 01:33:22] Et puis, on peut enchaîner de l'eau, en fait, il fait le matin de 100 lignes, la prévédite de 100 lignes.
+- [01:33:22 --> 01:33:25] 100 changer, en plus, sans changer, t'as cu.
+- [01:33:25 --> 01:33:28] Bon, c'est un, c'est un, c'est un, et quatre sans lignes.
+- [01:33:28 --> 01:33:32] Et, on va tenter d'attir, donc ça fait un peu plus de 100 lignes.
+- [01:33:32 --> 01:33:35] On sait que, pas sas.
+- [01:33:35 --> 01:33:38] Mais, il faut réfléchir plus comme ça, en fait.
+- [01:33:38 --> 01:33:41] Après, le passage industrielle, c'est une autre chose, c'est... [à vérifier]
+- [01:33:41 --> 01:33:43] C'est pas que le dit, c'est pas que le telem.
+- [01:33:43 --> 01:33:45] C'est plus de l'automaxe.
+- [01:33:45 --> 01:33:52] C'est vrai que, est-ce que le jour où, si on laisse l'espace, on va pouvoir réfléchir
+- [01:33:52 --> 01:33:54] de l'intimé et de peu près de 4 plus, dans la soin.
+- [01:33:54 --> 01:33:58] Et de plus, c'est du fait le matin, on va m'attair à point d'inquié.
+- [01:33:58 --> 01:34:05] Qui peut faire plus de 4 plus, parce que en fait, tu vas utiliser sur des productions.
+- [01:34:05 --> 01:34:09] Mais, oui, c'est... Alors, l'autre chose, on va réfléchir, c'est... [à vérifier]
+- [01:34:09 --> 01:34:12] Alors, ouais, c'est un de 10, c'est un de 10, c'est un de 10, c'est un de 10, c'est un de 10.
+- [01:34:12 --> 01:34:16] L'idée, je vais les les dire, en fonction du terrain qu'on a... [à vérifier]
+- [01:34:16 --> 01:34:19] C'est ce dire, et, en fait, il faut que... [à vérifier]
+- [01:34:19 --> 01:34:21] Alors, il faut que l'on a fait, c'est en courant.
+- [01:34:21 --> 01:34:22] Et il faut que tu... [à vérifier]
+- [01:34:22 --> 01:34:25] Parce que, en un lecture, c'est vrai que c'est... [à vérifier]
+- [01:34:25 --> 01:34:26] C'est... [à vérifier]
+- [01:34:26 --> 01:34:28] Je vais continuer, c'est une chose, c'est en... [à vérifier]
+- [01:34:28 --> 01:34:29] Le blocage, il va être ça, et bien... [à vérifier]
+- [01:34:29 --> 01:34:31] Et c'est tout le reste derrière, il faut que tu... [à vérifier]
+- [01:34:31 --> 01:34:33] Et voilà, et en fait, on fait une fois, il faut... [à vérifier]
+- [01:34:33 --> 01:34:35] Il faut raison d'écrire, c'est-à-dire, si on doit agrander, il faut le faire.
+- [01:34:35 --> 01:34:40] Il faut, il faut agrander, donc, effectivement, dans la structure, ici,
+- [01:34:40 --> 01:34:41] panneau... [à vérifier]
+- [01:34:41 --> 01:34:46] C'est-à-dire, si on met du béton l'art et là, ici, il faut peut-être rester assez light,
+- [01:34:46 --> 01:34:51] à un panneau sandwich pour pouvoir agrander, il y a, en fait, c'est vrai.
+- [01:34:51 --> 01:34:53] Après, ce que c'est grave, si il y a une limite physique,
+- [01:34:53 --> 01:34:55] tu peux reprendre à l'ailleurs, et il faut rien dire.
+- [01:34:55 --> 01:34:57] La façon que c'est des module, il y a des normes,
+- [01:34:57 --> 01:34:59] c'est la façon qu'il faut qu'il faut.
+- [01:34:59 --> 01:35:02] Et effectivement, je pense que ce truc là,
+- [01:35:02 --> 01:35:07] pour l'en raison d'écrire, c'est vrai.
+- [01:35:07 --> 01:35:09] Oui, oui, oui.
+- [01:35:09 --> 01:35:12] C'est-à-dire, il y a personne, il y a aucun endroit où, on a une production millilitre,
+- [01:35:12 --> 01:35:14] comme on peut.
+- [01:35:14 --> 01:35:17] On va, c'est ici, mais c'est ici, mais c'est vrai que c'est vrai que c'est vrai que c'est... [à vérifier]
+- [01:35:17 --> 01:35:18] Oui, oui, oui.
+- [01:35:18 --> 01:35:22] C'est un autorexatie, mais c'est plus le autorexatie, c'est une fois,
+- [01:35:22 --> 01:35:24] il faut, il faut, il faut, il faut, il faut des productions,
+- [01:35:24 --> 01:35:27] plus que chaque fois,
+- [01:35:27 --> 01:35:33] comme on verraur, en fait, aux États-Unis,
+- [01:35:33 --> 01:35:37] où il y a un vieil, en fait, il faut des productions de plus de minutes,
+- [01:35:37 --> 01:35:40] mais c'est des productions automatiques sur... [à vérifier]
+- [01:35:40 --> 01:35:42] Non, parce que je m'le posais à question sur... [à vérifier]
+- [01:35:42 --> 01:35:43] Je n'ai aucune queue de 600 fois.
+- [01:35:43 --> 01:35:44] De l'ensemble.
+- [01:35:45 --> 01:35:50] En fait, c'est quand même cuis de 600 litres d'avoir d'un 2 cuis.
+- [01:35:50 --> 01:35:52] Il faut que ça ne part de l'année.
+- [01:35:52 --> 01:35:56] Donc, du coup, parce que, en fait, ton émission, tu n'as pas de l'un à l'autre.
+- [01:35:56 --> 01:35:57] Donc, c'est... [à vérifier]
+- [01:35:57 --> 01:36:01] Donc, déjà, ça doule d'attailles de haut niveau... [à vérifier]
+- [01:36:01 --> 01:36:04] Parce que, j'entends le côté... [à vérifier]
+- [01:36:04 --> 01:36:06] C'est ce qui, sur moi, de notre solution,
+- [01:36:06 --> 01:36:09] le côté d'être facile à être normal.
+- [01:36:09 --> 01:36:12] Mais je me dis, c'est ce que le volume que l'on a aujourd'hui
+- [01:36:12 --> 01:36:15] n'a d'être pas loin du millilitre à peut-être que... [à vérifier]
+- [01:36:15 --> 01:36:20] mettre près là, et c'est chiant de se lancer sur un nouveau projet d'extension
+- [01:36:20 --> 01:36:21] pour, je ne sais pas, qu'à te mettre.
+- [01:36:21 --> 01:36:25] Donc, si on avait déjà plus ou moins le volume nécessaire
+- [01:36:25 --> 01:36:28] pour répondre à la question de millilitre,
+- [01:36:28 --> 01:36:31] et on fait qu'à te mettre de plus dans une enveloppe qui n'y pâchait à affaire de base,
+- [01:36:31 --> 01:36:33] parce que ça, c'est pas chér, en soi.
+- [01:36:33 --> 01:36:34] Partit chér à faire, c'est ça.
+- [01:36:34 --> 01:36:37] Et les module, mais la coque on elle-même.
+- [01:36:37 --> 01:36:39] Oui, c'est pas ce, c'est pas ce, c'est pas ce, c'est pas ce.
+- [01:36:39 --> 01:36:43] Est-ce qu'un pas intéressant, de plus ou moins répondre à ça, de l'accord?
+- [01:36:44 --> 01:36:48] Et comme ça, sans... [à vérifier]
+- [01:36:48 --> 01:36:54] C'est chiant, oui.
+- [01:36:54 --> 01:36:55] Ouais.
+- [01:36:55 --> 01:36:57] Non, c'est ça peut se faire.
+- [01:36:57 --> 01:37:05] Allez, du petit niveau alors, il faut qu'aminer des tubes, des trucs, des trucs,
+- [01:37:05 --> 01:37:07] les trucs, en fait.
+- [01:37:07 --> 01:37:11] Et puis, sur le plan process, on n'est pas, on n'est pas... [à vérifier]
+- [01:37:11 --> 01:37:15] Ils sont en train de faire des tests, dans le chez Sénat, dans plusieurs sites.
+- [01:37:15 --> 01:37:17] C'est un peu l'ideos, c'est un peu l'ideos, c'est un peu l'ideos, c'est un peu l'ideos.
+- [01:37:17 --> 01:37:23] Comme en vaccin, on va régrapher quand il y a un bilite, c'est plus l'auto-vaccin,
+- [01:37:23 --> 01:37:25] c'est... [à vérifier]
+- [01:37:25 --> 01:37:28] C'est le pays, il faut, il faut... [à vérifier]
+- [01:37:28 --> 01:37:37] T'es obligé de fonctionner sur des cuifs fixes, des subtités qui sont, qui sont plus loin, en fait.
+- [01:37:37 --> 01:37:45] Donc, j'ai le prévoire, t'es obligé de faire la perpure du monde.
+- [01:37:45 --> 01:37:48] Si tu change complètement de dimension, c'est pas ce qu'on a eu le monde.
+- [01:37:48 --> 01:37:53] Et en fait, il y a des gens, je l'ai, de s'enlite, tu peux le faire, tu as pas besoin de la perpure, tu fais... [à vérifier]
+- [01:37:53 --> 01:37:59] Et en faisant pourtant, nous avons du stéréde, c'est le truc flexible.
+- [01:37:59 --> 01:38:04] Donc, c'est pas le sas, c'est pas le projet qu'on fait.
+- [01:38:04 --> 01:38:19] T'en faisant comprendre tout le fait.
+- [01:38:19 --> 01:38:21] Et il fait ça.
+- [01:38:22 --> 01:38:28] Du vrai que c'était une belle école, parce qu'en fait, on va faire ça comme ça, la point de gagne.
+- [01:38:28 --> 01:38:35] Je veux dire, on s'en m'en mordait donc, la zone de production est trop petite.
+- [01:38:35 --> 01:38:36] C'est... [à vérifier]
+- [01:38:36 --> 01:38:42] Avant, c'est là qu'il a été embêté avec la production Tigen, donc, ils ont pu sécher sur la production Tigen.
+- [01:38:42 --> 01:38:50] Et moi, quand je suis allé, moi, je pensais que tu t'étais défié, tu t'étais, puis, en fait, non.
+- [01:38:50 --> 01:38:57] Donc, c'est, c'est, c'est, c'est, c'est, c'est le questionnement avant, elle n'est pas été, c'est vrai.
+- [01:38:57 --> 01:39:05] Alors que, alors c'est vrai, il a au monde, on a pu se faire, mais il faut pas changer, il faut pas changer le dernier monde.
+- [01:39:06 --> 01:39:14] Si on veut le faire, moi, d'avis, il faut soit, bon, regarder si c'est possible, dans l'espace du dernier mot d'huile, soit avant d'y rentrer.
+- [01:39:14 --> 01:39:19] Et, le temps que tu l'as, qui a qu'il s'est dit là-dedans, c'est-à-dire pas de... [à vérifier]
+- [01:39:19 --> 01:39:26] Donc, on peut se faire vis-à-dire qu'il faut, c'est tout le procès, bah, au-dessus, fait tout.
+- [01:39:28 --> 01:39:31] J'en ai la joie, moi, j'ai fait par ma détruite.
+- [01:39:31 --> 01:39:36] Et donc, ils sont en train de relire la pour les durs, c'est-à-dire, quand tu vois ce qu'ils me donnent,
+- [01:39:36 --> 01:39:39] il y a, c'est, c'est, c'est pas... [à vérifier]
+- [01:39:39 --> 01:39:42] C'est qu'en faire ça, j'ai des reasons.
+- [01:39:42 --> 01:39:47] C'est... [à vérifier]
+- [01:39:47 --> 01:39:50] Mais, bon, on fait que les chausses, je peux les questionner, il va avoir... [à vérifier]
+- [01:39:50 --> 01:39:52] Oui, parce qu'ils en pensent, mais... [à vérifier]
+- [01:39:52 --> 01:39:53] Tu te sens de se... [à vérifier]
+- [01:39:53 --> 01:39:56] C'est ce qui faut, à vous, de qui on fait un tu-là, c'est... [à vérifier]
+- [01:39:56 --> 01:39:57] C'est... [à vérifier]
+- [01:39:57 --> 01:39:59] Ça, comme il n'a pas de process, le problème.
+- [01:39:59 --> 01:40:03] C'est ceux qui l'évoluent, il faut des salles.
+- [01:40:03 --> 01:40:06] Mais en fonction de son conscience, en fonction de ce que j'ai demandé,
+- [01:40:06 --> 01:40:08] qui sont dans des critères que j'ai demandé.
+- [01:40:08 --> 01:40:14] Mais après, le process, c'est-à-dire qu'elle ne peut pas se traiter,
+- [01:40:14 --> 01:40:18] si on veut dire qu'il faut qu'elle coulée,
+- [01:40:18 --> 01:40:20] et le dire qu'on va faire une scène de... [à vérifier]
+- [01:40:20 --> 01:40:28] Mais là, il faut que je prends le pays, le machin et tout ce qu'il faut.
+- [01:40:28 --> 01:40:31] Donc, la place, elle s'achange entre le... [à vérifier]
+- [01:40:31 --> 01:40:33] Et Métulis, qui sont des entrées qui travaillent,
+- [01:40:33 --> 01:40:37] donc ça se trouve, on a, en fait, une réponse qui était pas si long de vérité.
+- [01:40:37 --> 01:40:41] On aussi, on y avait travaillé.
+- [01:40:41 --> 01:40:46] C'est sur les machinotes automatiques, je veux dire, c'est pas si... [à vérifier]
+- [01:40:46 --> 01:40:47] Non, c'est pas si... [à vérifier]
+- [01:40:47 --> 01:40:50] C'est sur du stéréde, c'est pas si simple.
+- [01:40:50 --> 01:40:58] Pour la chose, c'est un avenge que je veux dire que tout ce qui... [à vérifier]
+- [01:40:58 --> 01:40:59] Je ne m'en fais pas du tout contain.
+- [01:40:59 --> 01:41:03] Mais je veux dire, sur du stéréde, t'as-tu quand même toute l'industrie... [à vérifier]
+- [01:41:04 --> 01:41:07] Accroly Monte, putain, rien se donne.
+- [01:41:07 --> 01:41:09] On l'a écrit, rien a pas.
+- [01:41:09 --> 01:41:10] Bon, voilà, c'est-à-dire pas.
+- [01:41:10 --> 01:41:15] En fait, pour vous, si vraiment, tu veux faire du GNP Stair Hill,
+- [01:41:15 --> 01:41:20] tu vois, là, il vienne de dire, ils sont tout contents sur les monde,
+- [01:41:20 --> 01:41:24] parce qu'ils ont passé leur médiéfile test.
+- [01:41:24 --> 01:41:26] C'est un site, c'est moi, je m'en disais,
+- [01:41:26 --> 01:41:29] puis je crois qu'il est dévés construit, quand je rêvais,
+- [01:41:29 --> 01:41:33] disais, en fait, quand on fait passer la fille,
+- [01:41:33 --> 01:41:38] et le test du médiéfile test, j'étais aussi dans le stéréde avant,
+- [01:41:38 --> 01:41:41] c'est de faire passer un mot de flacon,
+- [01:41:41 --> 01:41:43] ou tu fais un boire culture,
+- [01:41:43 --> 01:41:47] que tu fais passer dans, comme si tu viens à l'eau,
+- [01:41:47 --> 01:41:49] pour prouver, c'est le moyen,
+- [01:41:49 --> 01:41:52] pour prouver que ton processie est est-à-dire.
+- [01:41:52 --> 01:41:56] Et bien sûr, si tu fais le warst case,
+- [01:41:56 --> 01:41:59] c'est-à-dire que si tu as maintenant un terrain,
+- [01:41:59 --> 01:42:02] il faut faire un terrain de planète dans,
+- [01:42:02 --> 01:42:04] pendant le médiéfile test.
+- [01:42:04 --> 01:42:07] On le fait, donc nous, on s'est aperçus, il y avait de lui,
+- [01:42:07 --> 01:42:09] il y avait des problèmes en fait,
+- [01:42:09 --> 01:42:11] il y a une rupture de flue,
+- [01:42:11 --> 01:42:15] peut-être faire des points positifs en fait.
+- [01:42:15 --> 01:42:19] On a également maintenant ce sas avié,
+- [01:42:19 --> 01:42:21] et on filvait de nous, et on a registré,
+- [01:42:21 --> 01:42:23] donc on voyait bien,
+- [01:42:23 --> 01:42:25] l'intervention de la maintenant,
+- [01:42:25 --> 01:42:27] c'est d'aller juste un petit bout de franc,
+- [01:42:27 --> 01:42:30] qui apparaissait entre le masque et le poffre,
+- [01:42:30 --> 01:42:33] de flacon positif.
+- [01:42:33 --> 01:42:36] Et je veux dire, ils ont galéré,
+- [01:42:36 --> 01:42:40] je sais pas, ici, pour faire en médiéfile test.
+- [01:42:40 --> 01:42:45] C'est assez après quand le système est bien embêtrisé,
+- [01:42:45 --> 01:42:48] ça va, mais c'est pas si simple, en fait.
+- [01:42:48 --> 01:42:54] Donc, donc, dans ce n'est pas assez pas libre,
+- [01:42:54 --> 01:42:56] de la gualimentaire.
+- [01:42:56 --> 01:42:59] Mais si on n'y aurait pas,
+- [01:42:59 --> 01:43:02] on est-ce que pas de se prendre à un retour
+- [01:43:02 --> 01:43:05] au capex ou à l'opèque?
+- [01:43:05 --> 01:43:11] Non, il voulait savoir comment on pouvait faire évoluer,
+- [01:43:11 --> 01:43:14] donc je pense que l'idée d'y reçoit,
+- [01:43:14 --> 01:43:16] il y a les autres antigenes,
+- [01:43:16 --> 01:43:18] ça permet de réfléchir,
+- [01:43:18 --> 01:43:20] de lancer le truc,
+- [01:43:20 --> 01:43:22] parce qu'il y en fait,
+- [01:43:22 --> 01:43:24] sinon on a décupé ton investissement,
+- [01:43:24 --> 01:43:27] en fait, c'est plus là,
+- [01:43:27 --> 01:43:29] les mêmes module, c'est un coup de 7 millions.
+- [01:43:29 --> 01:43:31] C'est-à-dire que, c'est-à-dire que,
+- [01:43:31 --> 01:43:34] une zone stéré, c'est plus diminuant,
+- [01:43:34 --> 01:43:38] c'est-à-dire que tu veux faire vraiment en plus.
+- [01:43:38 --> 01:43:41] Donc, le coup,
+- [01:43:41 --> 01:43:44] quand tu commence à travailler un stéré,
+- [01:43:44 --> 01:43:49] c'est juste l'anning and fling, c'est combien?
+- [01:43:50 --> 01:43:53] Si tu voulais, là, l'ensemble, c'est, c'est, c'est,
+- [01:43:53 --> 01:43:54] c'est pratiquement, c'est le milieu.
+- [01:43:54 --> 01:43:56] Et juste le Blanning and fling.
+- [01:43:56 --> 01:43:58] C'est, ça doit être un milieu, c'est un écout,
+- [01:43:58 --> 01:43:59] c'est comme ça, non.
+- [01:43:59 --> 01:44:00] Donc, tu te dis, si tu veux doubler,
+- [01:44:00 --> 01:44:03] t'as la tapoduction, tu veux en doubler Blanning and fling?
+- [01:44:03 --> 01:44:04] Non, non, c'est... [à vérifier]
+- [01:44:04 --> 01:44:05] C'est-à-dire que, c'est-à-dire que, c'est-à-dire que,
+- [01:44:05 --> 01:44:07] si je change des chemes,
+- [01:44:07 --> 01:44:09] je vais décupler beaucoup,
+- [01:44:09 --> 01:44:11] mais je vais passer pas doubler,
+- [01:44:11 --> 01:44:12] en fait, c'est un,
+- [01:44:12 --> 01:44:14] vraiment si tu voulais,
+- [01:44:14 --> 01:44:15] vraiment faire une zone,
+- [01:44:16 --> 01:44:17] la Blanning and fling,
+- [01:44:17 --> 01:44:19] production industrielle
+- [01:44:19 --> 01:44:20] avec une ligne de répartige.
+- [01:44:20 --> 01:44:22] Ce n'est pas ce que j'ai délés la de vous dire,
+- [01:44:22 --> 01:44:24] c'est ce que je dis,
+- [01:44:24 --> 01:44:26] et aujourd'hui,
+- [01:44:26 --> 01:44:27] on a, dans le cadre,
+- [01:44:27 --> 01:44:28] aujourd'hui,
+- [01:44:28 --> 01:44:30] on peut passer de 200,
+- [01:44:30 --> 01:44:31] à 400,
+- [01:44:31 --> 01:44:33] sur mes deux mois du Blanning and fling.
+- [01:44:33 --> 01:44:35] Et si on veut vraiment arriver.
+- [01:44:35 --> 01:44:37] Si tu voulais doubler,
+- [01:44:37 --> 01:44:39] mais sur la même technique de refette,
+- [01:44:39 --> 01:44:40] c'est ça que tu dis.
+- [01:44:40 --> 01:44:42] Si on veut vraiment passer à 1000,
+- [01:44:42 --> 01:44:44] si tu te doggalons fling,
+- [01:44:44 --> 01:44:51] C'est une doublée, c'est une doublée.
+- [01:44:51 --> 01:44:53] Oui, c'est un milieu.
+- [01:44:53 --> 01:44:58] Oui, c'est un pacte sur le module iblable et va propre de... [à vérifier]
+- [01:44:58 --> 01:44:59] Il y a un nom.
+- [01:45:00 --> 01:45:03] la production virale à mon avis.
+- [01:45:03 --> 01:45:04] On part sur mon regard.
+- [01:45:04 --> 01:45:06] On part sur mon regard.
+- [01:45:06 --> 01:45:09] Donc j'ai un point de facilement de 200 ans.
+- [01:45:10 --> 01:45:11] Exact.
+- [01:45:11 --> 01:45:13] Un point à million cinq.
+- [01:45:13 --> 01:45:16] C'est-à-dire que les millilitres étaient associés à tout le procès
+- [01:45:16 --> 01:45:18] s'évoluer qu'elle arrière.
+- [01:45:18 --> 01:45:20] Si ce n'est pas juste obligé à la quantité.
+- [01:45:20 --> 01:45:23] C'est-à-dire qu'il y a une hyautomatique.
+- [01:45:23 --> 01:45:25] Il y a une hyautomatique.
+- [01:45:25 --> 01:45:28] C'est ça qu'il y a.
+- [01:45:28 --> 01:45:30] Donc il s'est pas encore commun.
+- [01:45:30 --> 01:45:32] Elle est maclaba.
+- [01:45:32 --> 01:45:34] Et puis, ça va être des portes du G,
+- [01:45:34 --> 01:45:36] et ça va être des portes du totemention.
+- [01:45:36 --> 01:45:40] Si l'indésolution de l'automatique du Maginion,
+- [01:45:40 --> 01:45:43] ça va peut-être faire des écoles du week.
+- [01:45:43 --> 01:45:45] C'est vrai que ça va être sympa.
+- [01:45:46 --> 01:45:48] Mais si une personne à un écteur,
+- [01:45:48 --> 01:45:50] effectivement, à possibilité de vouluer facilement
+- [01:45:50 --> 01:45:52] la partie arrière.
+- [01:45:52 --> 01:45:53] Ou deux étes.
+- [01:45:53 --> 01:45:55] Et là, on y a un point quand même assez facilement.
+- [01:45:55 --> 01:45:56] Et en plus on peut aller.
+- [01:45:56 --> 01:45:59] C'est vrai que c'est vrai que par contre,
+- [01:45:59 --> 01:46:02] c'est un intégré dans le K-D-chan.
+- [01:46:02 --> 01:46:05] C'est-à-dire garder cette possibilité d'amener.
+- [01:46:05 --> 01:46:06] Regarde-être facilement.
+- [01:46:07 --> 01:46:08] C'est sûr.
+- [01:46:08 --> 01:46:10] Donc, quand tu nous as dit,
+- [01:46:10 --> 01:46:13] j'ai pas la sensation d'avoir connaissances
+- [01:46:13 --> 01:46:15] des locaux techniques.
+- [01:46:15 --> 01:46:18] C'est parce qu'il y a des choses qui vont être en preuve sur le module.
+- [01:46:19 --> 01:46:20] En fait, c'est-à-dire, par exemple,
+- [01:46:20 --> 01:46:22] il y a aucun compresse en fait peut-être peut-être.
+- [01:46:22 --> 01:46:24] En fait, ça sera dans les locaux techniques du coup
+- [01:46:24 --> 01:46:27] en discutant avec le... [à vérifier]
+- [01:46:27 --> 01:46:29] En fait, c'est... [à vérifier]
+- [01:46:29 --> 01:46:31] C'est un dérômeux du coup, ça va?
+- [01:46:31 --> 01:46:32] On se conseilier.
+- [01:46:32 --> 01:46:33] Ouais, dans chaque module,
+- [01:46:33 --> 01:46:35] tu as une unité technique.
+- [01:46:35 --> 01:46:37] Donc par exemple,
+- [01:46:37 --> 01:46:38] le petit compresseur,
+- [01:46:38 --> 01:46:40] on mettra dans une unité technique.
+- [01:46:40 --> 01:46:41] On peut-être dit le coup.
+- [01:46:41 --> 01:46:42] Oui, c'est vrai.
+- [01:46:42 --> 01:46:43] Il n'est-à-dire... [à vérifier]
+- [01:46:43 --> 01:46:44] Non, il n'y a pas... [à vérifier]
+- [01:46:44 --> 01:46:45] Regarde-être.
+- [01:46:45 --> 01:46:46] Non, il n'y a pas.
+- [01:46:46 --> 01:46:47] Il n'y a pas.
+- [01:46:47 --> 01:46:48] Il n'y a pas.
+- [01:46:48 --> 01:46:49] Il n'y a pas.
+- [01:46:49 --> 01:46:50] Il n'y a pas.
+- [01:46:51 --> 01:46:52] Ah, bap... [à vérifier]
+- [01:46:52 --> 01:46:52] A fonds.
+- [01:46:52 --> 01:46:55] Donc entre 60 et... [à vérifier]
+- [01:46:55 --> 01:46:57] Du été, c'est... [à vérifier]
+- [01:46:57 --> 01:47:00] En fait, c'est... [à vérifier]
+- [01:47:00 --> 01:47:02] Quel culé... [à vérifier]
+- [01:47:02 --> 01:47:05] hommes, ton pairature.
+- [01:47:05 --> 01:47:07] Bonne establishing.
+- [01:47:07 --> 01:47:09] En fait, c'est un temps.
+- [01:47:09 --> 01:47:11] Don, on peut... [à vérifier]
+- [01:47:11 --> 01:47:13] Ca va servir à ça, ça va... [à vérifier]
+- [01:47:13 --> 01:47:15] On prend du chaim.
+- [01:47:15 --> 01:47:16] Donc c'est pas…
+- [01:47:16 --> 01:47:18] l'interruption.
+- [01:47:18 --> 01:47:27] La cuve, le fait qu'on utilise une cuve jetable, c'est vraiment un gros avantage sur plein d'utilités.
+- [01:47:27 --> 01:47:32] Il n'y a pas le détoillage, il n'y a pas les infections, il n'y a pas besoin de vainpeur.
+- [01:47:32 --> 01:47:39] Il n'y a pas besoin du compressor, de d'arcomprimer niveau de GMP.
+- [01:47:39 --> 01:47:42] Du coup, du coup, il s'est comprécée.
+- [01:47:42 --> 01:47:46] C'est un point du financier, c'est vraiment beaucoup plus intéressant que d'avoir supposant des produits,
+- [01:47:46 --> 01:47:50] c'est un petit peu en surlever par rapport au sol de la coque,
+- [01:47:50 --> 01:47:54] et d'avoir l'ensemble des utilités qui arrivent par là ou par les côtés,
+- [01:47:54 --> 01:47:57] et d'avoir un sol local technique, il y a plusieurs comprimers,
+- [01:47:57 --> 01:48:00] mais on n'est pas partie là-dessus.
+- [01:48:00 --> 01:48:04] Et en fait, on n'a pas besoin, en fait, le seul.
+- [01:48:04 --> 01:48:07] Ce qui est non plus important, ça va être les cetteurs.
+- [01:48:07 --> 01:48:09] En fait, le traitement d'air.
+- [01:48:09 --> 01:48:12] Et la gestion d'appression.
+- [01:48:12 --> 01:48:15] C'est ça les cetteurs.
+- [01:48:15 --> 01:48:16] Mais ils sont moins sols.
+- [01:48:16 --> 01:48:17] Ils sont moins sols.
+- [01:48:17 --> 01:48:19] Ils sont moins sols.
+- [01:48:19 --> 01:48:21] Parce qu'en fait, ils ont peur plus de toi.
+- [01:48:21 --> 01:48:23] Ils leur ont plein fond de marchands, c'est sûr.
+- [01:48:23 --> 01:48:24] Un passé resistance.
+- [01:48:24 --> 01:48:26] Du coup, ils l'ont mis au sol.
+- [01:48:26 --> 01:48:27] C'est vraiment pris au sol.
+- [01:48:27 --> 01:48:29] C'est plus un rouleur du concert.
+- [01:48:29 --> 01:48:31] C'est-ce qu'ils aident au début, c'est 3 mètres.
+- [01:48:31 --> 01:48:32] C'est un point.
+- [01:48:32 --> 01:48:33] C'est un point.
+- [01:48:33 --> 01:48:34] On sort de l'aide de produits.
+- [01:48:34 --> 01:48:36] En fait, c'est-à-dire, c'était depuis l'air.
+- [01:48:36 --> 01:48:38] Il y a partie au... [à vérifier]
+- [01:48:38 --> 01:48:39] En tout cas.
+- [01:48:40 --> 01:48:41] On va... [à vérifier]
+- [01:48:41 --> 01:48:43] On va... [à vérifier]
+- [01:48:43 --> 01:48:45] On fait ça... [à vérifier]
+- [01:48:45 --> 01:48:48] Une sorte de... [à vérifier]
+- [01:48:48 --> 01:48:51] Dans les titres, c'est les USA qui en pense.
+- [01:48:51 --> 01:48:55] Plus, on pense sur un module qui est censé pour la couvette.
+- [01:48:55 --> 01:48:56] Il y a deux points.
+- [01:48:56 --> 01:48:58] C'est... [à vérifier]
+- [01:48:58 --> 01:49:02] C'est le moment, c'est le sol.
+- [01:49:02 --> 01:49:03] C'est le sol.
+- [01:49:03 --> 01:49:04] C'est le sol.
+- [01:49:04 --> 01:49:05] C'est le sol.
+- [01:49:05 --> 01:49:06] C'est le sol.
+- [01:49:06 --> 01:49:07] C'est le sol.
+- [01:49:07 --> 01:49:08] C'est le sol.
+- [01:49:08 --> 01:49:12] Ben, du coup, tu baisses une route dans... [à vérifier]
+- [01:49:12 --> 01:49:13] Au malheureur.
+- [01:49:15 --> 01:49:17] T'es beaucoup d'oliment, tu l'as cótne mètres.
+- [01:49:17 --> 01:49:20] Il y a une nouvelle, mais c'est surtout que tu as aidé au feuir.
+- [01:49:20 --> 01:49:22] Merchable, à le seul point-bas.
+- [01:49:22 --> 01:49:25] Comme on va aujourd'hui, de fait, on va monter plus haut encore.
+- [01:49:25 --> 01:49:26] Oui, vraiment.
+- [01:49:26 --> 01:49:29] Et ce qui se repunchait à l'production, tu as pensé ses techniques.
+- [01:49:29 --> 01:49:31] Est-ce qu'il n'en aura pas de intéressant de faire un... [à vérifier]
+- [01:49:31 --> 01:49:34] Il est pas ne possible.
+- [01:49:34 --> 01:49:38] ça ne peut pas passer pas par les module mais il n'y a rien, tu peux bénéficier
+- [01:49:38 --> 01:49:42] l'auteur avec ça avec ça, j'enquais beau-t-il, mais t'as l'icc, c'était arrêt et que dans
+- [01:49:42 --> 01:49:46] autre-tout, et ce qui permet de changer très facilement trop.
+- [01:49:46 --> 01:49:54] Il y a une centrale de poteau de poteau de poteau de poteau, qu'on peut créer
+- [01:49:54 --> 01:49:57] une mes aline avec quelques poteaux du pépentère, il va pas y avoir des charges
+- [01:49:57 --> 01:49:58] donc plus astronomiques pour les séter.
+- [01:49:59 --> 01:50:02] Ouais, c'est ce qu'on a, avec un gérgène, ça va pas, je ne peut-être pas d'iccée.
+- [01:50:02 --> 01:50:06] C'est la préparation, on va pas, on va pas, on va faire visiter, tu vois, on va être en
+- [01:50:06 --> 01:50:10] heureux, on va être un module, t'as pas la technique qui est à se faire vivre, et c'est
+- [01:50:10 --> 01:50:11] à faire vivre, on peut se faire faire.
+- [01:50:11 --> 01:50:15] Puis tu mets des fenêtres, au-dessus, oui, visiter, c'est-à-dire, c'est-à-dire,
+- [01:50:15 --> 01:50:16] c'est-à-dire.
+- [01:50:16 --> 01:50:19] J'ai pas, j'ai vraiment besoin de ça à lui mettre au-dessus, en fait, des volumes, mais il y a
+- [01:50:19 --> 01:50:23] la préparation de l'être, en particulier, en partit, je suis paruant, donc... [à vérifier]
+- [01:50:23 --> 01:50:28] Et est-ce qu'on se dit que les module sont un peu sur levé pour une
+- [01:50:28 --> 01:50:37] l'héorité de l'héorité, n'est-à-dire, n'est-à-dire que l'héorité, merci rapide, de l'ensemble,
+- [01:50:37 --> 01:50:40] pour des réseaux supplémentaires à ajouter ou pas?
+- [01:50:40 --> 01:50:45] Non, on n'est pas partie là-dessus, parce que si tu mets et si tu l'as émonte, tu vas
+- [01:50:45 --> 01:50:51] avoir les défisances de pente, qui entre le stockage et ton couvre-là, en fait, verre.
+- [01:50:51 --> 01:50:52] Quoi?
+- [01:50:52 --> 01:50:58] Et bien parce qu'en fait, tu as réticence de divorce, en fait.
+- [01:50:58 --> 01:51:01] Bon, là, pour lui, j'ai, on peut construire le stockage, même niveau que les module?
+- [01:51:02 --> 01:51:06] Oui, mais dans le temps, à l'entrée, dans le temps, il y a des terrain d'envoie ou dans les
+- [01:51:06 --> 01:51:07] défisances de l'héorité.
+- [01:51:07 --> 01:51:11] Mais, attends, déjà, tes module, ils sont 3D, ils ont le sol, et il plafond, ils ont
+- [01:51:11 --> 01:51:12] mis en arrivent.
+- [01:51:13 --> 01:51:14] Donc, ils font les trades d'écussèles.
+- [01:51:14 --> 01:51:16] Tu as un niveau de... [à vérifier]
+- [01:51:16 --> 01:51:17] Un d'huyer, un modèle.
+- [01:51:17 --> 01:51:18] Oui, tout à fait.
+- [01:51:18 --> 01:51:19] Voilà.
+- [01:51:19 --> 01:51:20] En fait, en sol, finis couvre, il est déjà plus haut.
+- [01:51:20 --> 01:51:22] Oui, ils font du haut du haut.
+- [01:51:22 --> 01:51:23] Oui, oui.
+- [01:51:23 --> 01:51:25] Et on va être à être à être à être à être.
+- [01:51:25 --> 01:51:28] Et, là, je sais plus combien, il faut que j'y aura de bons.
+- [01:51:28 --> 01:51:30] Ça fait du plan de attention, dans ce que... [à vérifier]
+- [01:51:30 --> 01:51:33] T'as une différence de niveau.
+- [01:51:33 --> 01:51:36] Alors, c'est-à-dire que... [à vérifier]
+- [01:51:36 --> 01:51:43] la gestion des ouvres, en fait, effectivement, de gérer la cuisson et les usés, en fait.
+- [01:51:43 --> 01:51:45] Je suis sur l'aimerais un petit peu l'ensemble.
+- [01:51:46 --> 01:51:49] Après, c'est le niveau courant qui est controuvé.
+- [01:51:49 --> 01:51:54] Et après, c'est parce que c'est de partir sur un verse que tu vas qu'à l'invite du remerce.
+- [01:51:54 --> 01:51:56] Oui, mais toute façon, ça va être deux jours.
+- [01:51:56 --> 01:52:02] Je sais pas, parce que tout ça va être en Davidard, qu'est-ce que ça va pas, comme les évaccuations.
+- [01:52:02 --> 01:52:06] Les évaccuations, ils voulaient battre pour que le j'ai dit, non, on va faire un petit peu.
+- [01:52:06 --> 01:52:10] Oui, mais Gravitard, ça veut dire que d'autres situations, il faut être à l'estraise de soit des usés.
+- [01:52:10 --> 01:52:16] Oui, il faut que soit du m'adoumède, du m'adoumède, des coulés, en fait, pour pouvoir.
+- [01:52:16 --> 01:52:17] Et des collecteurs?
+- [01:52:17 --> 01:52:20] Oui, des collecteurs, en fait.
+- [01:52:20 --> 01:52:22] Oui, ça va être fixe, une fois pour tout, et tu ne pourras pas.
+- [01:52:22 --> 01:52:26] C'est ça, les relâts, aussi fonds, c'est un petit peu.
+- [01:52:26 --> 01:52:27] Oui, c'est un petit peu, c'est un petit peu.
+- [01:52:27 --> 01:52:29] Et tu t'as plus d'éobligité des outils.
+- [01:52:29 --> 01:52:31] Pas ça, ou t'es.
+- [01:52:31 --> 01:52:35] Oui, c'est une petite vie sur levé un petit peu.
+- [01:52:35 --> 01:52:39] Et les différentes hauteurs de stockage, même les qui en soit, c'est le mieux,
+- [01:52:39 --> 01:52:43] d'avoir les qui en pourra reçoiler, ça va remettre.
+- [01:52:43 --> 01:52:45] Alors, mais Gravitard, qui est ou pas qui est.
+- [01:52:45 --> 01:52:47] Oui, c'est qu'il faut les qu'il faut les qu'il faut les qu'il faut les qu'il faut les qu'il faut les qu'il faut.
+- [01:52:47 --> 01:52:49] Non, faut pas qu'il y a de votre zone qui est en fait.
+- [01:52:49 --> 01:52:51] C'est un projet de la réaction.
+- [01:52:51 --> 01:52:52] Oui, c'est un petit peu l'humain.
+- [01:52:52 --> 01:52:54] Tu ne peux pas vous dire pas de la plan.
+- [01:52:54 --> 01:52:56] Même à 8,5.
+- [01:52:56 --> 01:53:01] Oui, parce que... [à vérifier]
+- [01:53:01 --> 01:53:10] En fait, le pire côté, c'est ça serait des l'adjuvant, c'est sans son 15,
+- [01:53:10 --> 01:53:11] le qu'il faut.
+- [01:53:11 --> 01:53:17] Donc, t'as pas assez pas assez camp,
+- [01:53:17 --> 01:53:19] mais c'est pas des... [à vérifier]
+- [01:53:19 --> 01:53:22] La prélucule, si on passe ce principe là,
+- [01:53:22 --> 01:53:25] de sur le vingt-y peu pour pouvoir changer plus facilement la chose,
+- [01:53:25 --> 01:53:27] de qui c'est créatuellement.
+- [01:53:27 --> 01:53:28] Donc, c'est plus bon.
+- [01:53:28 --> 01:53:30] Il m'aide là, c'est à reçoiler.
+- [01:53:30 --> 01:53:31] C'est à ma 10.
+- [01:53:31 --> 01:53:34] Si t'es pas ma 10, t'es maître en preuve.
+- [01:53:34 --> 01:53:37] Non, mais tu peux causer un peu plus plat, et côté vers des aussi.
+- [01:53:37 --> 01:53:40] Ça, ça, ça, ça, ça dépend de des terrain, de la relaxée.
+- [01:53:40 --> 01:53:44] Il y a 160 cm, et tu vas causer 250 pour arriver à un coup.
+- [01:53:44 --> 01:53:48] Mais après, si tu veux de la augure, il faut voir que ce soit accessible.
+- [01:53:48 --> 01:53:49] Donc, c'est plus... [à vérifier]
+- [01:53:49 --> 01:53:52] 20 cm, là, ça va être une espèce de vie technique.
+- [01:53:52 --> 01:53:55] Oui, mais 8 technique, c'est un 160 cm.
+- [01:53:55 --> 01:53:59] On parle juste vraiment de ramener un réseau quelque chose.
+- [01:53:59 --> 01:54:03] Une maintenant, si jamais il y a un problème.
+- [01:54:03 --> 01:54:09] Ça, ça, il est imposé.
+- [01:54:09 --> 01:54:12] On va faire un vrai lien avec un projet technique dans le module.
+- [01:54:12 --> 01:54:14] Aujourd'hui, c'est quoi le fond du module?
+- [01:54:14 --> 01:54:16] C'est pas même si le salinter soit une planche technique
+- [01:54:16 --> 01:54:18] à l'intérieur du module, peut-être.
+- [01:54:18 --> 01:54:20] C'est-ce que c'est pour moi que pour rendre le mettant sous,
+- [01:54:20 --> 01:54:22] quelque chose de très magnuable.
+- [01:54:22 --> 01:54:25] On sous, on a un petit autre magnuable autre dessus.
+- [01:54:25 --> 01:54:28] Les module, ils ont leur 4 piliers sur... [à vérifier]
+- [01:54:28 --> 01:54:30] Je vois, c'est la, c'est... [à vérifier]
+- [01:54:30 --> 01:54:33] Ça fait 6 mètres de long, 2 mètres de range.
+- [01:54:33 --> 01:54:36] Et donc, t'allais les armes à sur-là.
+- [01:54:36 --> 01:54:38] J'ai fait que ce compte.
+- [01:54:38 --> 01:54:40] Au milieu, c'est... [à vérifier]
+- [01:54:40 --> 01:54:43] C'est-à-dire que c'est-à-dire que c'est-à-dire que c'est-à-dire que
+- [01:54:43 --> 01:54:55] c'est un aspect d'adétendre et bien au milieu des choses plus,
+- [01:54:55 --> 01:54:58] et donc, mètres de tombe des accès éclairés.
+- [01:54:58 --> 01:55:01] Mais ça, il n'y a pas du tout le premier aignant qu'on a fait.
+- [01:55:01 --> 01:55:04] Toutefois, j'ai tout d'être juste 8, 7 idées de me dire.
+- [01:55:04 --> 01:55:06] J'allais les mois-ducs sont posés sur des fondations
+- [01:55:06 --> 01:55:07] sous des soques etc.
+- [01:55:07 --> 01:55:10] Et j'ai amené mes réseaux un petit peu autour.
+- [01:55:11 --> 01:55:14] Pour eux, on peut avoir un utilisé-t-à, on espère de canivot technique,
+- [01:55:14 --> 01:55:16] tout le long, donc il n'y a plus de gelés chose,
+- [01:55:16 --> 01:55:19] deux à deux, si tu veux, on va avoir un 20, ça pourrait être ça aussi.
+- [01:55:19 --> 01:55:21] Il faut vraiment dire.
+- [01:55:21 --> 01:55:22] Il faut dire que les allènes qui... [à vérifier]
+- [01:55:22 --> 01:55:25] On va les compassions en allant, avec... [à vérifier]
+- [01:55:25 --> 01:55:28] On se signent le contre-assigné, et qu'on a pas... [à vérifier]
+- [01:55:28 --> 01:55:30] Et ils ont pu séparer les autres.
+- [01:55:30 --> 01:55:32] Et donc, il y a des mecs de mètres de mètres.
+- [01:55:32 --> 01:55:34] Les fréchants de mètres de mètres.
+- [01:55:34 --> 01:55:37] Donc, après, effectivement, de discuter,
+- [01:55:37 --> 01:55:40] sur les vingt-eutels, sur les utilisés... [à vérifier]
+- [01:55:40 --> 01:55:44] Maintenant, les critères de la dalle sont assez précis.
+- [01:55:44 --> 01:55:47] C'est assez du fait plusieurs, pour juste poser les module.
+- [01:55:47 --> 01:55:50] Il y a des module, c'est un plus simple de gérer
+- [01:55:50 --> 01:55:54] quelque chose de parfaitement uniforme sur des plauds.
+- [01:55:54 --> 01:55:56] Oui, qu'il y a une question, hein?
+- [01:56:00 --> 01:56:01] C'est... [à vérifier]
+- [01:56:01 --> 01:56:05] Voilà, la dalle qui est des vingt-bians, il faut la raboter après.
+- [01:56:05 --> 01:56:08] Ah, mais tu sais que ça va qu'un biais, surtout dans ses pays, là.
+- [01:56:08 --> 01:56:09] Oui, c'est ça.
+- [01:56:09 --> 01:56:11] Et impossible de faire même avec les règles.
+- [01:56:12 --> 01:56:13] Et les règles de type tournant.
+- [01:56:13 --> 01:56:14] Là, c'est à voir un biais.
+- [01:56:14 --> 01:56:17] Donc, ça c'est pas un biais en règles de détailleux sur un biais.
+- [01:56:17 --> 01:56:18] C'est un biais, un biais.
+- [01:56:18 --> 01:56:19] C'est pas possible.
+- [01:56:19 --> 01:56:21] Donc, le seul moyen d'avoir un biais,
+- [01:56:21 --> 01:56:23] c'est-à-dire, tu viens faire tes plauds.
+- [01:56:23 --> 01:56:26] T'es au laser et tu viens couper ton coffrage.
+- [01:56:26 --> 01:56:27] Pour qu'ils sont des casques.
+- [01:56:27 --> 01:56:29] Si tu viens sur une dalle avec ta... [à vérifier]
+- [01:56:29 --> 01:56:31] Pour n'avoir fait quelques-unes avec ton hélicoptère,
+- [01:56:31 --> 01:56:32] t'as d'aller comme ça.
+- [01:56:32 --> 01:56:34] Parce que ça dépend de ton passage.
+- [01:56:34 --> 01:56:36] C'est intéressant.
+- [01:56:36 --> 01:56:38] C'est-à-dire qu'il faut qu'on discute avec ça.
+- [01:56:38 --> 01:56:40] Et pour avoir travaillé pour coucou au Qatar,
+- [01:56:40 --> 01:56:42] et avoir déjà travaillé avec l'impact qui est année,
+- [01:56:42 --> 01:56:45] indien, il y a rien d'eau.
+- [01:56:45 --> 01:56:47] Donc, autant... [à vérifier]
+- [01:56:47 --> 01:56:49] C'est toujours un... [à vérifier]
+- [01:56:49 --> 01:56:51] Mais je suis là-dessus.
+- [01:56:51 --> 01:56:52] En France aussi.
+- [01:56:52 --> 01:56:53] Et je suis là-dessus.
+- [01:56:53 --> 01:56:55] Et je suis là-dessus.
+- [01:56:55 --> 01:56:56] Et je suis là-dessus.
+- [01:56:56 --> 01:56:57] Ça me dit comme ça.
+- [01:56:57 --> 01:57:00] Le truc, il y a tout de suite là où il était comme ça.
+- [01:57:00 --> 01:57:01] Il y avait peur.
+- [01:57:01 --> 01:57:03] Et on a fini de faire tous les chers.
+- [01:57:03 --> 01:57:04] On est faisés.
+- [01:57:04 --> 01:57:06] Et après, on aura voté.
+- [01:57:06 --> 01:57:08] Pour avoir le biais.
+- [01:57:08 --> 01:57:10] Et là, j'appuie plus jamais pour la vraie.
+- [01:57:10 --> 01:57:12] Et moi... [à vérifier]
+- [01:57:12 --> 01:57:14] J'ai tous l'imaginié ça comme ça.
+- [01:57:14 --> 01:57:15] En fait, en moins tu viens.
+- [01:57:15 --> 01:57:18] Après, t'étais peut-être pas donc eu à cette... [à vérifier]
+- [01:57:18 --> 01:57:19] C'est... [à vérifier]
+- [01:57:19 --> 01:57:22] Non, mais t'as une magnibilité qui est bien plus forte que ça.
+- [01:57:22 --> 01:57:23] Je sais plus.
+- [01:57:23 --> 01:57:24] Et je vous disais... [à vérifier]
+- [01:57:24 --> 01:57:25] On va verrer la tation au sol.
+- [01:57:25 --> 01:57:26] Et dans ce sujet.
+- [01:57:27 --> 01:57:28] Ça, c'est sûr.
+- [01:57:28 --> 01:57:29] Et puis avec les biais où la connaissance bureau,
+- [01:57:29 --> 01:57:30] tu as plein.
+- [01:57:31 --> 01:57:35] Et puis que tu as une hauteur à nouveau sur les marches.
+- [01:57:37 --> 01:57:38] Moi, je ne sais pas.
+- [01:57:38 --> 01:57:39] Je ne sais pas.
+- [01:57:39 --> 01:57:40] Il n'y a pas de paix.
+- [01:57:40 --> 01:57:41] Mais il n'y a pas de paix.
+- [01:57:41 --> 01:57:42] Mais il n'y a pas de paix.
+- [01:57:42 --> 01:57:43] Ouais, je pense moins que... [à vérifier]
+- [01:57:43 --> 01:57:44] Ouais.
+- [01:57:44 --> 01:57:45] Ouais.
+- [01:57:45 --> 01:57:46] C'est pas bon.
+- [01:57:46 --> 01:57:49] C'est long pour rêver sur les premières portes.
+- [01:57:49 --> 01:57:50] Ouais.
+- [01:57:50 --> 01:57:51] Ouais.
+- [01:57:51 --> 01:57:54] Mais moi, on vient créer un truc qui est... [à vérifier]
+- [01:57:54 --> 01:57:56] Il personper en maintenant.
+- [01:57:56 --> 01:57:58] Il personper à faire évoluer.
+- [01:57:58 --> 01:57:59] Ouais, c'est ça.
+- [01:57:59 --> 01:58:00] C'est ça, c'est-à-dire.
+- [01:58:00 --> 01:58:02] Voilà comment on peut faire un goblier.
+- [01:58:02 --> 01:58:03] Ouais, ouais.
+- [01:58:03 --> 01:58:05] C'est vrai, c'est vrai, sur le sol.
+- [01:58:05 --> 01:58:06] Ouais.
+- [01:58:06 --> 01:58:07] Ouais, là.
+- [01:58:07 --> 01:58:08] En fait, les yeux... [à vérifier]
+- [01:58:08 --> 01:58:09] Il n'y a pas... [à vérifier]
+- [01:58:09 --> 01:58:10] Il n'y a pas.
+- [01:58:10 --> 01:58:11] Il n'y a pas.
+- [01:58:11 --> 01:58:12] Il n'y a pas.
+- [01:58:12 --> 01:58:13] Ouais.
+- [01:58:13 --> 01:58:14] Moi, j'ai mon débat rassuré.
+- [01:58:14 --> 01:58:15] C'était à la route.
+- [01:58:15 --> 01:58:17] Il y a avoir des gros machins dans le... [à vérifier]
+- [01:58:17 --> 01:58:19] Que la route apprend envie de voir,
+- [01:58:19 --> 01:58:20] de la machine de voir.
+- [01:58:20 --> 01:58:21] Quand il faut être contre le poids,
+- [01:58:21 --> 01:58:22] qu'il n'y a pas.
+- [01:58:22 --> 01:58:23] Ouais.
+- [01:58:23 --> 01:58:25] Et t'as le volume que je pense que ça,
+- [01:58:25 --> 01:58:26] pour qu'on arrive à aller,
+- [01:58:26 --> 01:58:28] auquel il y a eu le carrière sur le prochain attempt.
+- [01:58:28 --> 01:58:29] Le prochain attempt... [à vérifier]
+- [01:58:29 --> 01:58:30] Le prochain attempt... [à vérifier]
+- [01:58:30 --> 01:58:31] ... [à vérifier]
+- [01:58:31 --> 01:58:32] ... [à vérifier]
+- [01:58:32 --> 01:58:33] ... [à vérifier]
+- [01:58:33 --> 01:58:35] ... [à vérifier]
+- [01:58:35 --> 01:58:36] ... [à vérifier]
+- [01:58:36 --> 01:58:37] ... [à vérifier]
+- [01:58:37 --> 01:58:38] ... [à vérifier]
+- [01:58:38 --> 01:58:39] ... [à vérifier]
+- [01:58:39 --> 01:58:40] ... [à vérifier]
+- [01:58:40 --> 01:58:41] ... [à vérifier]
+- [01:58:41 --> 01:58:42] ... [à vérifier]
+- [01:58:42 --> 01:58:43] ... [à vérifier]
+- [01:58:43 --> 01:58:44] ... [à vérifier]
+- [01:58:44 --> 01:58:45] ... [à vérifier]
+- [01:58:45 --> 01:58:46] ... [à vérifier]
+- [01:58:46 --> 01:58:47] ... [à vérifier]
+- [01:58:47 --> 01:58:48] ... [à vérifier]
+- [01:58:48 --> 01:58:49] ... [à vérifier]
+- [01:58:49 --> 01:58:50] ... [à vérifier]
+- [01:58:50 --> 01:58:52] Voilà, on va avoir une question.
+- [01:58:52 --> 01:58:55] On va aussi avoir une question.
+- [01:58:55 --> 01:58:56] Ça va faire un histoire.
+- [01:58:56 --> 01:58:58] Oui ça il faut qu'on fait ça, et on y... [à vérifier]
+- [01:58:58 --> 01:58:59] ... [à vérifier]
+- [01:58:59 --> 01:59:01] On va faire le face-là, c'est lui, et lui.
+- [01:59:01 --> 01:59:02] On y a un cas de Palestine.
+- [01:59:02 --> 01:59:03] Oui, c'est tout.
+- [01:59:03 --> 01:59:04] Ça je veux l'envoyer.
+- [01:59:04 --> 01:59:05] Ils sont... [à vérifier]
+- [01:59:05 --> 01:59:06] Ils sont... [à vérifier]
+- [01:59:06 --> 01:59:07] Ils sont... [à vérifier]
+- [01:59:07 --> 01:59:09] Ils sont les éthats.
+- [01:59:09 --> 01:59:11] On les aime, mais nous, on en prendra surtout,
+- [01:59:11 --> 01:59:13] c'est un à un et une ett de sortie des modes.
+- [01:59:13 --> 01:59:14] Et pendant de fallant, on fait ça un point en monde.
+- [01:59:14 --> 01:59:16] On s'occellent vraiment en vidéo pour en pliar tous les détails.
+- [01:59:16 --> 01:59:18] La facture, ça a reçu, ça oui.
+- [01:59:18 --> 01:59:19] On fait la dur.
+- [01:59:19 --> 01:59:22] On fait ça.
+- [01:59:22 --> 01:59:23] Un tout aspect.
+- [01:59:23 --> 01:59:28] On peut se envoyer, on peut se faire un visu, un petit jour, je pense qu'on a un point moment.
+- [01:59:28 --> 01:59:31] Et toi, tu as besoin de quoi... [à vérifier]
+- [01:59:31 --> 01:59:34] Ah ben, il faut qu'est-ce que l'auté plein de choses, mais là, j'ai toujours... [à vérifier]
+- [01:59:34 --> 01:59:36] J'en veux y être, j'essaie de la présentation, j'allais m'émer.
+- [01:59:36 --> 01:59:38] Et vous, là, on soit à voir faire ce du poule,
+- [01:59:38 --> 01:59:41] effectivement, avant de dessiner un projet définitive,
+- [01:59:41 --> 01:59:44] on va aider pour l'innovation, on va cliquer par le BRS,
+- [01:59:44 --> 01:59:46] qui parle de... [à vérifier]
+- [01:59:46 --> 01:59:48] On va... il va falloir pièce par pièce. [à vérifier]
+- [01:59:48 --> 01:59:50] Il va faire en fait qu'on passe cette clie de pièce.
+- [01:59:51 --> 01:59:53] Il fait qu'ils sont propres à ton programme, et la marche en avant,
+- [01:59:53 --> 01:59:55] qui est à proximité de quoi.
+- [01:59:55 --> 01:59:59] Et ensuite, mettre dedans des retards, des retards, des températures... [à vérifier]
+- [01:59:59 --> 02:00:00] J'ai hommé un free.
+- [02:00:00 --> 02:00:02] On va faire un cas de défendre.
+- [02:00:02 --> 02:00:03] C'est tout le monde.
+- [02:00:03 --> 02:00:05] Ça, je l'ai essayé.
+- [02:00:05 --> 02:00:06] Je l'ai essayé.
+- [02:00:06 --> 02:00:10] Par rapport au module, j'ai des roues bouques,
+- [02:00:10 --> 02:00:13] et tout est noté.
+- [02:00:13 --> 02:00:14] En fait, sur... [à vérifier]
+- [02:00:14 --> 02:00:14] J'ai arrêté ça.
+- [02:00:14 --> 02:00:15] C'est arrêté.
+- [02:00:16 --> 02:00:17] Pour ma seconde.
+- [02:00:17 --> 02:00:19] Après, on va se faire, je peux commencer.
+- [02:00:19 --> 02:00:22] Moi, par faire, j'ai temps voyait.
+- [02:00:22 --> 02:00:25] Je suis en haut à le roue bouc et les uraires.
+- [02:00:25 --> 02:00:28] Enfin, dans les uraires, je vous en vois à tous les deux.
+- [02:00:29 --> 02:00:31] Je t'appelle les avoir dans les uraires,
+- [02:00:31 --> 02:00:32] puisque les uraires étaient besoin de roues bouques,
+- [02:00:32 --> 02:00:34] ce qui doit être sorti dans le monde du monde.
+- [02:00:35 --> 02:00:37] Oui, tu l'as dans les... [à vérifier]
+- [02:00:37 --> 02:00:39] Oui, tu l'as en bas.
+- [02:00:39 --> 02:00:41] Mais le roue bouc est plus compliqué que le reste.
+- [02:00:41 --> 02:00:43] Le roue est plus simple au excel,
+- [02:00:43 --> 02:00:46] c'est le moins d'escriptif en fait.
+- [02:00:47 --> 02:00:48] Parce que je propose,
+- [02:00:48 --> 02:00:51] c'est que je l'ai à partir de cette envie,
+- [02:00:51 --> 02:00:52] c'est pas... [à vérifier]
+- [02:00:52 --> 02:00:53] Le la présentation, oui.
+- [02:00:53 --> 02:00:55] Je l'ai reparti à de pas en plan théorique
+- [02:00:55 --> 02:00:58] et faire en fait en ce que l'être de plan.
+- [02:00:58 --> 02:01:00] Et tu l'as fait pour les module.
+- [02:01:00 --> 02:01:02] Et après, j'ai vu qu'il y avait ça à miroir du plan musical.
+- [02:01:02 --> 02:01:04] Ici, on ne veut pas me lancer par dessiner,
+- [02:01:04 --> 02:01:06] parce que ce sera l'autre fois qu'on aura le terrain,
+- [02:01:06 --> 02:01:08] qu'on dessinera le tout le monde.
+- [02:01:08 --> 02:01:11] Par contre, je vais faire une trace de chaque pièce
+- [02:01:11 --> 02:01:13] telle que tu l'as imaginé,
+- [02:01:13 --> 02:01:15] en faisant le mix entre ce que tu jouais aujourd'hui,
+- [02:01:15 --> 02:01:16] et le plan d'avant.
+- [02:01:17 --> 02:01:20] Pour donner une dimension pour commencer les pièces.
+- [02:01:20 --> 02:01:22] Et qu'on puisse numéro telle pièce.
+- [02:01:22 --> 02:01:24] Et voir si manque à des pièces.
+- [02:01:24 --> 02:01:26] Est-ce qu'ils n'ont pas des locaux techniques,
+- [02:01:26 --> 02:01:30] ou des armoirs de technique?
+- [02:01:30 --> 02:01:32] Il faut qu'on a mis une numéro telle tout ça,
+- [02:01:32 --> 02:01:33] mais ça va te donner le... [à vérifier]
+- [02:01:33 --> 02:01:35] Dans chaque voie d'une, en fait,
+- [02:01:35 --> 02:01:37] c'est d'ailleurs un tout... [à vérifier]
+- [02:01:37 --> 02:01:38] C'est... [à vérifier]
+- [02:01:38 --> 02:01:39] C'est... [à vérifier]
+- [02:01:39 --> 02:01:41] C'est le côté.
+- [02:01:41 --> 02:01:43] Elles ont tout le même numéro.
+- [02:01:43 --> 02:01:45] Le... [à vérifier]
+- [02:01:45 --> 02:01:47] Le... [à vérifier]
+- [02:01:47 --> 02:01:50] En haut, la R11.
+- [02:01:50 --> 02:01:51] C'est... [à vérifier]
+- [02:01:51 --> 02:01:53] Donc, c'est... [à vérifier]
+- [02:01:53 --> 02:01:54] C'est le... [à vérifier]
+- [02:01:54 --> 02:01:55] Modulté technique.
+- [02:01:55 --> 02:01:57] En fait, un qui s'ouvra à l'extérieur,
+- [02:01:57 --> 02:01:58] qui s'ouvra... [à vérifier]
+- [02:01:58 --> 02:02:00] Donc, on va accès, en fait.
+- [02:02:00 --> 02:02:03] Ici, c'est la R121,
+- [02:02:03 --> 02:02:04] qui... [à vérifier]
+- [02:02:04 --> 02:02:05] On... [à vérifier]
+- [02:02:05 --> 02:02:07] Je veux faire du numéro déjà dans toutes ces pièces.
+- [02:02:07 --> 02:02:08] Tout de ces pièces sont numérotés.
+- [02:02:08 --> 02:02:09] C'est... [à vérifier]
+- [02:02:09 --> 02:02:10] C'est... [à vérifier]
+- [02:02:10 --> 02:02:11] C'est... [à vérifier]
+- [02:02:11 --> 02:02:12] C'est... [à vérifier]
+- [02:02:12 --> 02:02:13] C'est... [à vérifier]
+- [02:02:13 --> 02:02:14] C'est... [à vérifier]
+- [02:02:14 --> 02:02:15] C'est... [à vérifier]
+- [02:02:15 --> 02:02:16] C'est... [à vérifier]
+- [02:02:16 --> 02:02:17] C'est... [à vérifier]
+- [02:02:17 --> 02:02:18] C'est... [à vérifier]
+- [02:02:18 --> 02:02:19] C'est... [à vérifier]
+- [02:02:19 --> 02:02:20] C'est... [à vérifier]
+- [02:02:20 --> 02:02:21] C'est... [à vérifier]
+- [02:02:21 --> 02:02:22] C'est... [à vérifier]
+- [02:02:22 --> 02:02:23] Et là, il faudra du numéro qui j'en le rappu.
+- [02:02:23 --> 02:02:25] Donc, j'ai fait un premier g... [à vérifier]
+- [02:02:25 --> 02:02:26] juste en faisant des... [à vérifier]
+- [02:02:26 --> 02:02:27] des... [à vérifier]
+- [02:02:27 --> 02:02:28] des traces de pièces.
+- [02:02:28 --> 02:02:29] Les aglutinants entraînent pour ça,
+- [02:02:29 --> 02:02:30] ressembler un autre plan.
+- [02:02:30 --> 02:02:31] Donc, ça donne des numérots.
+- [02:02:31 --> 02:02:32] Ça... [à vérifier]
+- [02:02:32 --> 02:02:33] Il y aura des premières notions de surface,
+- [02:02:33 --> 02:02:34] à nous deviens,
+- [02:02:34 --> 02:02:35] qui est... [à vérifier]
+- [02:02:35 --> 02:02:36] S'il y en fonction des... [à vérifier]
+- [02:02:36 --> 02:02:37] des capacités... [à vérifier]
+- [02:02:37 --> 02:02:38] de... [à vérifier]
+- [02:02:38 --> 02:02:39] de... [à vérifier]
+- [02:02:39 --> 02:02:40] de... [à vérifier]
+- [02:02:40 --> 02:02:41] de... [à vérifier]
+- [02:02:41 --> 02:02:42] de... [à vérifier]
+- [02:02:42 --> 02:02:43] de... [à vérifier]
+- [02:02:43 --> 02:02:44] de... [à vérifier]
+- [02:02:44 --> 02:02:45] de... [à vérifier]
+- [02:02:45 --> 02:02:46] de... [à vérifier]
+- [02:02:46 --> 02:02:47] de... [à vérifier]
+- [02:02:47 --> 02:02:48] de... [à vérifier]
+- [02:02:48 --> 02:02:49] de... [à vérifier]
+- [02:02:50 --> 02:02:57] d'art.
+- [02:02:57 --> 02:02:58] Il y a... [à vérifier]
+- [02:02:58 --> 02:03:01] Ça sera les tapes deux,
+- [02:03:01 --> 02:03:06] il y a un gigatmes de... [à vérifier]
+- [02:03:06 --> 02:03:08] des ça까지.
+- [02:03:08 --> 02:03:09] Et... [à vérifier]
+- [02:03:09 --> 02:03:10] Et c'est... [à vérifier]
+- [02:03:10 --> 02:03:11] Il faut gérer ce... [à vérifier]
+- [02:03:11 --> 02:03:12] il faut qu'on les voilà.
+- [02:03:12 --> 02:03:13] Et c'est... [à vérifier]
+- [02:03:13 --> 02:03:14] il faut... [à vérifier]
+- [02:03:14 --> 02:03:15] on les sleepy.
+- [02:03:15 --> 02:03:17] Il faut qu'on donne pas un gr praying.�
+- [02:03:17 --> 02:03:18] On ne tensionnaz pas.
+- [02:03:18 --> 02:03:20] Onにな pas.
+- [02:03:20 --> 02:03:23] Et les éleins.
+- [02:03:23 --> 02:03:25] Avec les âgées des volumes.
+- [02:03:26 --> 02:03:27] Avec moi.
+- [02:03:27 --> 02:03:28] Avec moi.
+- [02:03:28 --> 02:03:29] Ben le... [à vérifier]
+- [02:03:29 --> 02:03:30] Ben le... [à vérifier]
+- [02:03:30 --> 02:03:31] Ben, on a fait assez simple.
+- [02:03:31 --> 02:03:32] C'est un peu... [à vérifier]
+- [02:03:33 --> 02:03:33] C'est... [à vérifier]
+- [02:03:33 --> 02:03:35] Mais est-ce que toi a tout fait un grand plan?
+- [02:03:35 --> 02:03:36] On faut... [à vérifier]
+- [02:03:36 --> 02:03:37] Non mais... [à vérifier]
+- [02:03:37 --> 02:03:38] Non mais que si... [à vérifier]
+- [02:03:38 --> 02:03:40] Quand j'étais dans la façon de créer, on voit... [à vérifier]
+- [02:03:40 --> 02:03:42] Du moment où il a vraiment d'alist... [à vérifier]
+- [02:03:42 --> 02:03:44] la choclissité, ça va le complète de... [à vérifier]
+- [02:03:44 --> 02:03:45] On fière délaunche.
+- [02:03:45 --> 02:03:46] Oui, il est délaunche.
+- [02:03:47 --> 02:03:49] Et bien, voilà, ce n'est pas une prochaine.
+- [02:03:50 --> 02:03:54] Ah, les côtes, la semaine prochaine.
+- [02:03:54 --> 02:03:56] Et j'ai vendredi... [à vérifier]
+- [02:03:56 --> 02:03:58] Ou je disais pas.
+- [02:03:58 --> 02:03:59] Et puis, il faut avoir un fond clon.
+- [02:03:59 --> 02:04:01] Mais là, je le vendredi 17.
+- [02:04:01 --> 02:04:02] Pas pas de notre fond clon, quand même.
+- [02:04:02 --> 02:04:03] Avec les rentres fesses.
+- [02:04:03 --> 02:04:05] Bon, alors là, pour les module, tu les as.
+- [02:04:05 --> 02:04:08] Non, mais là, ce que l'autre plan, qu'on avait, on a déjà eu mes retes.
+- [02:04:08 --> 02:04:09] Tu... [à vérifier]
+- [02:04:10 --> 02:04:11] Oui, mais c'était... [à vérifier]
+- [02:04:11 --> 02:04:13] Alors, sous réserve que, il n'y a pas plus,
+- [02:04:13 --> 02:04:15] ou qu'on a le droit de venir.
+- [02:04:15 --> 02:04:16] Mais... [à vérifier]
+- [02:04:16 --> 02:04:18] Je veux que je disais que jusqu'à 15 heures.
+- [02:04:18 --> 02:04:19] Après, j'ai... [à vérifier]
+- [02:04:19 --> 02:04:20] De que la reculeur du coup?
+- [02:04:20 --> 02:04:22] Bon, de... de 8 heures, qu'est-ce d'avoir... [à vérifier]
+- [02:04:23 --> 02:04:24] On peut faire maintenant, c'est du... [à vérifier]
+- [02:04:24 --> 02:04:26] Et puis, après, il s'en a trop fini, on continue.
+- [02:04:26 --> 02:04:27] Alors... [à vérifier]
+- [02:04:27 --> 02:04:28] Et... [à vérifier]
+- [02:04:28 --> 02:04:30] 8 heures 30, le temps de vie, le café... [à vérifier]
+- [02:04:30 --> 02:04:31] L'instant... [à vérifier]
+- [02:04:31 --> 02:04:31] Ça... [à vérifier]
+- [02:04:31 --> 02:04:32] C'est raconté le aucun.
+- [02:04:34 --> 02:04:36] Là, c'est entre vous deux, hein.
+- [02:04:36 --> 02:04:37] Ouais.
+- [02:04:37 --> 02:04:38] Comme ça, je prends toutes les données.
+- [02:04:38 --> 02:04:39] Et après, je t'en aurais... [à vérifier]
+- [02:04:40 --> 02:04:42] C'est quand même, c'est pas bon, c'est ça.
+- [02:04:42 --> 02:04:43] C'est l'avoir du... vas-y 17. [à vérifier]
+- [02:04:43 --> 02:04:44] Bon, je dis ça.
+- [02:04:44 --> 02:04:46] Bon, ici, là, c'est d'avoir un fond fond.
+- [02:04:46 --> 02:04:48] Et après, il faut récaler la semaine d'après,
+- [02:04:48 --> 02:04:50] la réunion avec les... les modus. [à vérifier]
+- [02:04:50 --> 02:04:51] Ouais.
+- [02:04:52 --> 02:04:54] Ça va être... ça va être... ça va être... ça va être... [à vérifier]
+- [02:04:54 --> 02:04:56] Qu'est-ce que j'ai... bon, j'ai... [à vérifier]
+- [02:04:56 --> 02:04:57] on a un dimata... [à vérifier]
+- [02:04:57 --> 02:04:58] temps... [à vérifier]
+- [02:04:58 --> 02:05:00] et... je dis, matin... [à vérifier]
+- [02:05:00 --> 02:05:03] et, bon, on réussit.
+- [02:05:03 --> 02:05:04] Là, les yvres... [à vérifier]
+- [02:05:04 --> 02:05:06] Il y va, matin... [à vérifier]
+- [02:05:06 --> 02:05:07] Pour remarquer, comme le après-midi.
+- [02:05:07 --> 02:05:11] Ensuite, tu vas les y fuck.
+- [02:05:11 --> 02:05:16] J'ai... je dis, matin... [à vérifier]
+- [02:05:16 --> 02:05:17] et on réussit, que j'en ai.
+- [02:05:24 --> 02:05:25] Pas, c'est... [à vérifier]
+- [02:05:25 --> 02:05:26] Et, déjà, nous ne faut qu'on en a fait tout ça,
+- [02:05:26 --> 02:05:28] Je n'ai pas sas de nouveau.
+- [02:05:28 --> 02:05:39] Ok, je n'ai pas sas, et on pourra faire déjà avec tout ça.
+- [02:05:39 --> 02:05:42] Et au finalement, on peut les problèmes.
+- [02:05:42 --> 02:05:44] Il n'y aura pas.
+- [02:05:44 --> 02:05:45] Il n'y aura pas un petit... [à vérifier]
+- [02:05:45 --> 02:05:46] Enfin, il n'y aura pas un petit... [à vérifier]
+- [02:05:46 --> 02:05:48] En fait, je suis le pauvre protégé,
+- [02:05:48 --> 02:05:50] vivant le frein en fait,
+- [02:05:50 --> 02:05:52] et le projet 2015,
+- [02:05:52 --> 02:05:53] et le projet 2015,
+- [02:05:53 --> 02:05:55] et le projet 2015,
+- [02:05:55 --> 02:05:56] et le projet 2015,
+- [02:05:56 --> 02:05:57] et le projet 2015,
+- [02:05:57 --> 02:05:59] et le projet 2015,
+- [02:05:59 --> 02:06:00] et je me boulais,
+- [02:06:00 --> 02:06:01] et je me boulais,
+- [02:06:01 --> 02:06:02] et je me boulais,
+- [02:06:02 --> 02:06:04] alors j'en ai parlé,
+- [02:06:04 --> 02:06:06] ce n'est pas encore trop là-dedans.
+- [02:06:06 --> 02:06:08] Bon, ils viennent.
+- [02:06:08 --> 02:06:09] Le problème, oui.
+- [02:06:09 --> 02:06:10] Oui, ça peut en tout.
+- [02:06:10 --> 02:06:13] Mais pas sur les assurances,
+- [02:06:13 --> 02:06:14] on peut le faire,
+- [02:06:14 --> 02:06:16] on met ça sur les gilets pour l'éruption.
+- [02:06:16 --> 02:06:17] Ah, ok.
+- [02:06:17 --> 02:06:20] C'est vrai que c'est compliqué.
+- [02:06:20 --> 02:06:22] L'aimette sur le parking,
+- [02:06:22 --> 02:06:23] de j'ai vu,
+- [02:06:23 --> 02:06:24] ils ont envie de retrouver,
+- [02:06:24 --> 02:06:25] c'est pas le fait d'ailleurs,
+- [02:06:25 --> 02:06:27] c'est pas qu'elle est loin.
+- [02:06:27 --> 02:06:29] Mais, je te laisse à un point
+- [02:06:29 --> 02:06:30] qui faut, je me demande,
+- [02:06:31 --> 02:06:32] le moment,
+- [02:06:32 --> 02:06:33] c'est pas un peu de temps,
+- [02:06:33 --> 02:06:36] parce que là il y a un sujet sur les poids.
+- [02:06:36 --> 02:06:38] Pas nos photos de le taille, justement.
+- [02:06:38 --> 02:06:39] Oui, ça marche bien.
+- [02:06:39 --> 02:06:41] En fait, ils ont eu un truc qui a planté mon rendez,
+- [02:06:41 --> 02:06:42] il est pas nos photos de taille,
+- [02:06:42 --> 02:06:44] il devait y en reprendre de la rouleure,
+- [02:06:44 --> 02:06:45] ce qui s'était pas branché.
+- [02:06:45 --> 02:06:47] Ah, c'est pour ça que ce matin,
+- [02:06:47 --> 02:06:48] une cochure,
+- [02:06:48 --> 02:06:49] avec des marques qui étaient,
+- [02:06:49 --> 02:06:51] oui, c'est pour ça.
+- [02:06:51 --> 02:06:52] Ouais, c'est pour ça.
+- [02:06:52 --> 02:06:53] C'était très cool.
+- [02:06:53 --> 02:06:55] Non, non, non, mais j'ai entendu parler.
+- [02:06:55 --> 02:06:59] Ouais, moi, c'est pas j'allais aller aller le bonjour.
+- [02:06:59 --> 02:07:01] Oui, c'est pour ça que je vous voyais.
+- [02:07:01 --> 02:07:02] Ouais, c'est pour ça.
+- [02:07:02 --> 02:07:03] Ouais, c'est pour ça.
+- [02:07:03 --> 02:07:06] Bon, il n'avait pas l'air pour résoudre.
+- [02:07:06 --> 02:07:07] Marc,
+- [02:07:07 --> 02:07:08] marques,
+- [02:07:08 --> 02:07:09] marques,
+- [02:07:09 --> 02:07:09] et par exemple,
+- [02:07:09 --> 02:07:10] il me dis que,
+- [02:07:10 --> 02:07:11] vraiment, c'est pour ça.
+- [02:07:11 --> 02:07:13] Ah, bah, c'est pas,
+- [02:07:13 --> 02:07:15] et ça fait combien de fois que,
+- [02:07:15 --> 02:07:16] j'ai toujours pas été dans votre part,
+- [02:07:16 --> 02:07:17] dès que sur le défi,
+- [02:07:17 --> 02:07:19] j'ai une couleur fois avec le transform,
+- [02:07:20 --> 02:07:23] Et là, c'est pas l'électricité qui a planté.
+- [02:07:23 --> 02:07:25] C'est le je crois que c'est le réseau,
+- [02:07:25 --> 02:07:26] c'est comme ça,
+- [02:07:26 --> 02:07:29] J'ai un truc qui est content de l'activement, c'est un pro-tour, hein.
+- [02:07:30 --> 02:07:34] Il faut bien une année de la cycle, au Nord, pour moi.
+- [02:07:34 --> 02:07:40] Il me disait qu'il y a un petit peu d'impassions, hein.
+- [02:07:40 --> 02:07:43] Je pense que c'est pas ça que j'ai été première.
+- [02:07:43 --> 02:07:46] Vous m'aurez d'avoir choisi de quelqu'un qui avait été coupé?
+- [02:07:46 --> 02:07:47] T'as peut-être important, hein?
+- [02:07:48 --> 02:07:50] Il n'y a qu'à couper un câble.
+- [02:07:50 --> 02:07:52] Il n'y a pas qu'à quoi?
+- [02:07:52 --> 02:07:55] Oui, il a se mettre d'un venir c'était une bonne introduction.
+- [02:07:55 --> 02:07:56] Il a eu la production.
+- [02:07:56 --> 02:07:58] Oui, ça couper la pauvère.
+- [02:07:58 --> 02:08:00] C'est une compulsion.
+- [02:08:00 --> 02:08:03] Je l'ai des questions posées.
+- [02:08:03 --> 02:08:11] C'est pas que je prends dans des oeux que l'on a aussi de la tite pour avoir ses besoins.
+- [02:08:11 --> 02:08:14] C'est plus leur moron alors.
+- [02:08:14 --> 02:08:18] C'est plus d'un sang qui me fait cheveux lui en parler.
+- [02:08:18 --> 02:08:19] Je veux lui en parler.
+- [02:08:19 --> 02:08:24] Je veux voir qu'il peut laisser le besoin de... [à vérifier]
+- [02:08:25 --> 02:08:26] Alors, oui.
+- [02:08:26 --> 02:08:28] Par contre, par rapport à ton plan.
+- [02:08:29 --> 02:08:31] Il faut prévoir... [à vérifier]
+- [02:08:36 --> 02:08:39] Sur le dessus, tu sais, on avait fait une version.
+- [02:08:39 --> 02:08:41] Tu avais vu un étage ici.
+- [02:08:42 --> 02:08:43] Il faudrait l'armette.
+- [02:08:44 --> 02:08:47] Il y a une salle serreur.
+- [02:08:47 --> 02:08:49] Il faut mieux qu'elle soit un peu plus long de... [à vérifier]
+- [02:08:49 --> 02:08:51] À l'étage, il faut savoir.
+- [02:08:51 --> 02:08:52] Oui, à l'étage.
+- [02:08:52 --> 02:08:55] Et puis, une zone de stockage, par exemple, des filtres.
+- [02:08:55 --> 02:08:57] Il faudrait quand même d'attendre ce point.
+- [02:08:58 --> 02:08:59] Vous l'aurez choçé.
+- [02:08:59 --> 02:09:00] Pour quoi?
+- [02:09:01 --> 02:09:02] Il y a une des filtres.
+- [02:09:02 --> 02:09:03] Il y a une des filtres.
+- [02:09:03 --> 02:09:04] C'est 85.
+- [02:09:04 --> 02:09:05] C'est du 40 ans.
+- [02:09:06 --> 02:09:08] Vous m'avez avancé avec des archives.
+- [02:09:09 --> 02:09:10] Il y a une archives.
+- [02:09:10 --> 02:09:11] Il y a une avée.
+- [02:09:11 --> 02:09:14] Mais au final d'un d'autres archives, on ne pas valir toujours des archives.
+- [02:09:15 --> 02:09:16] Et tu veux pas plutôt verser.
+- [02:09:16 --> 02:09:17] Ça le dévoigne ça.
+- [02:09:18 --> 02:09:21] On se va m'emmourmer pour le stockage vire.
+- [02:09:21 --> 02:09:24] Après, comme on veut qu'on a l'argie, c'est qu'on a pas capable de mettre
+- [02:09:24 --> 02:09:27] un peu de stockage en bas où le savoir s'est quand même bizarre.
+- [02:09:27 --> 02:09:28] Mais voilà au nom.
+- [02:09:28 --> 02:09:30] Bon, moi, je le Billow.
+- [02:09:30 --> 02:09:32] Encore.
+- [02:09:32 --> 02:09:33] Oui, il y a pas, c'est quoi, on peut... [à vérifier]
+- [02:09:33 --> 02:09:34] On peut pas de dire... [à vérifier]
+- [02:09:34 --> 02:09:37] C'est de hurler les bayes... [à vérifier]
+- [02:09:37 --> 02:09:44] les bères ont été de bères plus plus un serveur, si pas très beau, en fait.
+- [02:09:44 --> 02:09:48] Et ça permet d'être, de l'équipe.
+- [02:09:48 --> 02:09:50] C'est pareil, c'est peut-être actif, mais qu'on aurait eu de l'inventure,
+- [02:09:50 --> 02:09:55] parce que c'est combien l'eau pour?
+- [02:09:55 --> 02:10:00] C'est bonne de mots, c'est comme la facilité qui accédei, c'est comme mieux, au recours.
+- [02:10:00 --> 02:10:02] Oui, mais le chef va se faire.
+- [02:10:02 --> 02:10:03] C'est une force sensible.
+- [02:10:03 --> 02:10:05] C'est Vincent Soffey Lométec?
+- [02:10:05 --> 02:10:07] Et puis, il y a des ongulants, c'est le cerveau.
+- [02:10:07 --> 02:10:10] On vit du ne pas dans un salsin, c'est-à-dire.
+- [02:10:10 --> 02:10:14] Il y a des morts dans les bé, ou sur la côté.
+- [02:10:14 --> 02:10:17] Il est une archives cicatiques qui a dit « Mettecare » et tout crée.
+- [02:10:17 --> 02:10:18] C'est ça?
+- [02:10:18 --> 02:10:20] Et mais si tu fais une dalle, c'est combien de dollars?
+- [02:10:20 --> 02:10:22] Non, mais tu es grave, on peut mettre.
+- [02:10:22 --> 02:10:25] C'est-à-dire, il y a 500 kilomètres cartes, tu as rafter le coton.
+- [02:10:25 --> 02:10:27] Il y a que ça augmente effectivement.
+- [02:10:27 --> 02:10:29] Pour tout, assier, mais ça ne se passe.
+- [02:10:29 --> 02:10:32] Moi, je suis appanté de voir sas-le-lande, parce que ce soit la grande vie comme au sein.
+- [02:10:32 --> 02:10:34] On regarde ce que l'on a fait.
+- [02:10:34 --> 02:10:38] C'est-à-dire qu'il faut vraiment dire, c'est-à-dire qu'il faut déjà,
+- [02:10:38 --> 02:10:41] où est-ce que le 7 et le 7 du 8 sont déjà un peu... [à vérifier]
+- [02:10:41 --> 02:10:44] Sachant qu'il y a pas, on a des prévus beaucoup de monde.
+- [02:10:44 --> 02:10:46] Mais en fait, il n'y a pas tant que s'annonce.
+- [02:10:46 --> 02:10:48] Ils ont cette personne, là-bas.
+- [02:10:48 --> 02:10:50] Oui, j'ai plus qu'on y en a des 8.
+- [02:10:50 --> 02:10:52] Mais là, j'ai été tout l'office nature, là.
+- [02:10:52 --> 02:10:53] Pourquoi, on ne m'a pas eu à étage.
+- [02:10:53 --> 02:10:57] Et on s'écartule le bas en stockage, etc.
+- [02:10:57 --> 02:10:58] Et toi tu veux mettre?
+- [02:10:58 --> 02:10:59] Le 5.
+- [02:11:00 --> 02:11:02] Non, c'est ça, c'est la grande uton.
+- [02:11:02 --> 02:11:05] Tu es tous les séparves niveaux, tu es fait du silo.
+- [02:11:05 --> 02:11:07] Il faut que tout le monde soit soit le même... [à vérifier]
+- [02:11:07 --> 02:11:08] Mais tu m'as tout le même premier.
+- [02:11:08 --> 02:11:11] Si ils vont se faire, comme ça, je ne crois que j'ai jamais les autres, etc.
+- [02:11:11 --> 02:11:12] Mais tu le m'en ai j'en ai.
+- [02:11:12 --> 02:11:13] Non, non, non, non.
+- [02:11:13 --> 02:11:14] C'est tout le même premier.
+- [02:11:14 --> 02:11:16] Quand tu dois pouvoir, t'as un interseil.
+- [02:11:16 --> 02:11:20] C'est-à-dire que t'avais l'entrée ici,
+- [02:11:20 --> 02:11:23] avec, ouais, on avait l'entrée.
+- [02:11:23 --> 02:11:27] En fait, là, ici, t'as détécdicé comme bien le bureau.
+- [02:11:27 --> 02:11:30] Il faut qu'il y a un bureau en fait dedans.
+- [02:11:30 --> 02:11:34] Et c'est vrai qu'il puisse accéder à des bureaux, en fait.
+- [02:11:34 --> 02:11:36] Oui, mais il doit passer dans les vestirs.
+- [02:11:36 --> 02:11:37] Oui, il doit se changer.
+- [02:11:37 --> 02:11:40] Il faut que t'as passé les vestirs, et dans les bureaux.
+- [02:11:40 --> 02:11:43] Oui, mais ça, c'était la réception, en fait.
+- [02:11:43 --> 02:11:44] Oui, t'as l'arcer que t'as son point.
+- [02:11:44 --> 02:11:46] Oui, mais j'ai tout interseil.
+- [02:11:46 --> 02:11:47] Oui, t'as l'arcer.
+- [02:11:47 --> 02:11:50] Il faut que t'aurais peut-être remettre les bureaux face à l'entrée.
+- [02:11:50 --> 02:11:52] L'entrée.
+- [02:11:52 --> 02:11:55] Oui, l'entrée, l'intérêt en fait, c'est très bien l'entrée.
+- [02:11:55 --> 02:11:59] Comme qu'il passe le rôle, t'as busqué que l'entrée en visu le chourume.
+- [02:11:59 --> 02:12:00] Le rôle.
+- [02:12:00 --> 02:12:03] Oui, je vois que je vois que l'entrée, le couloir, au tout va bosser.
+- [02:12:03 --> 02:12:04] Ça fallait c'est.
+- [02:12:04 --> 02:12:07] T'as la salaire d'ingrédion et le bureau du manager.
+- [02:12:07 --> 02:12:10] La réunion, c'était pour éviter que les bureaux sont en première ligne pour le rôle.
+- [02:12:11 --> 02:12:12] Oui, c'est l'entrée.
+- [02:12:12 --> 02:12:20] Après, en fait, on pourrait très bien mettre les bureaux plutôt avec l'accès de salaire d'ingrédion.
+- [02:12:22 --> 02:12:26] Par dans les bureaux, on les bureaux avec l'accès au restaire.
+- [02:12:26 --> 02:12:29] On va essayer comme ça, les gens, comme ça.
+- [02:12:29 --> 02:12:31] Ça dépense que ceux qui vont venir visiter.
+- [02:12:31 --> 02:12:32] Ils vont passer par les vestirs.
+- [02:12:32 --> 02:12:33] Ils vont traverser les bureaux.
+- [02:12:37 --> 02:12:39] Après, il y a un peu qui ira à se rendre bureau.
+- [02:12:39 --> 02:12:41] C'est-ce que je ne met très loin, c'est pas dit qu'ils le mettent.
+- [02:12:41 --> 02:12:42] Oui, oui, oui.
+- [02:12:44 --> 02:12:45] Le bureau n'avait bien... [à vérifier]
+- [02:12:45 --> 02:12:47] C'est un couloir, en fait.
+- [02:12:47 --> 02:12:52] Oui, je pense pas que ce n'est pas grave de traverser le couloir et d'aller dans leur bureau.
+- [02:12:52 --> 02:12:56] Ils vont vivre, c'est aussi le but que ça a le couloir sur croise et que... [à vérifier]
+- [02:12:56 --> 02:13:00] Après, on fait un fond fond du schéma que je vais faire le premier.
+- [02:13:00 --> 02:13:01] On est tragédé.
+- [02:13:01 --> 02:13:02] Oui, on va naviguer plus.
+- [02:13:02 --> 02:13:04] J'ai pour le nombre de technici, on a... [à vérifier]
+- [02:13:04 --> 02:13:05] Tu t'as regardé dessus.
+- [02:13:05 --> 02:13:06] J'avais... [à vérifier]
+- [02:13:06 --> 02:13:07] Je savais le livre, mais... [à vérifier]
+- [02:13:07 --> 02:13:09] Oui, c'était... il n'y a pas tant que ça. [à vérifier]
+- [02:13:09 --> 02:13:12] C'est petit équipe, c'est une douze, un casse personne, en fait.
+- [02:13:12 --> 02:13:15] Oui, mais déjà, on a douze casse personne plus les conventions.
+- [02:13:15 --> 02:13:17] Les conversations, c'est cette.
+- [02:13:17 --> 02:13:19] Donc on est déjà 22 plus... [à vérifier]
+- [02:13:19 --> 02:13:22] Les conventions, ils sont là, une fois par semaine.
+- [02:13:22 --> 02:13:23] Tu m'éleures, tu m'éleures.
+- [02:13:23 --> 02:13:25] Tu m'éleures, c'est pas... [à vérifier]
+- [02:13:25 --> 02:13:27] Il m'école de bureau, trois bureau, ça te... [à vérifier]
+- [02:13:27 --> 02:13:31] Ouais, il y a un celle d'origine.
+- [02:13:31 --> 02:13:32] Il y a un... [à vérifier]
+- [02:13:32 --> 02:13:34] La même bureau, un gros... [à vérifier]
+- [02:13:34 --> 02:13:38] Tout ça, c'est vrai, il faut... il faut reparevoir les impacts, effectivement. [à vérifier]
+- [02:13:38 --> 02:13:40] Parce que là, là, là, là, là, là, là, là, là, là, là.
+- [02:13:40 --> 02:13:42] Que j'en regarde l'office, là, on n'est pas avant quoi.
+- [02:13:42 --> 02:13:43] L'office?
+- [02:13:43 --> 02:13:44] Ah non, mais l'office.
+- [02:13:44 --> 02:13:46] Depin, alors, il y a eu quelques... [à vérifier]
+- [02:13:47 --> 02:13:49] Un nomore, le c'est... [à vérifier]
+- [02:13:49 --> 02:13:51] L'arrowym et la réception, la réception.
+- [02:13:53 --> 02:13:54] Le zinc?
+- [02:13:54 --> 02:13:56] it's lui-même.
+- [02:13:56 --> 02:13:56] C'est non, on necte pas cause de 5.
+- [02:13:56 --> 02:13:59] Le feu à la office, ça en... [à vérifier]
+- [02:13:59 --> 02:14:00] 5, c'est... [à vérifier]
+- [02:14:00 --> 02:14:01] Régétable.
+- [02:14:02 --> 02:14:05] La védétative, c'est des bureaux sur Princes Thuis,
+- [02:14:05 --> 02:14:06] Dans le cas de cette tête... [à vérifier]
+- [02:14:06 --> 02:14:08] Que je vais vous couroir Ravi.
+- [02:14:08 --> 02:14:09] Tout va?
+- [02:14:09 --> 02:14:12] Yeah, bien, bon, on avait saveille, à l'ai accepter.
+- [02:14:12 --> 02:14:15] Bien, donc, de nuevo, donc, il y a un bureaucallé sur Syqin.
+- [02:14:15 --> 02:14:17] Et les technicins comme besoin de John?
+- [02:14:17 --> 02:14:18] Oui, mais c'est pas tous.
+- [02:14:18 --> 02:14:19] Je ne sais pas.
+- [02:14:19 --> 02:14:20] Non, c'est pas tous.
+- [02:14:20 --> 02:14:23] Et il faut... [à vérifier]
+- [02:14:23 --> 02:14:25] Il faut... [à vérifier]
+- [02:14:25 --> 02:14:28] ...a-où de pour l'identification, [à vérifier]
+- [02:14:28 --> 02:14:30] et au moins... [à vérifier]
+- [02:14:30 --> 02:14:31] ...a-où de... [à vérifier]
+- [02:14:31 --> 02:14:39] ...a la qualité, et lesquelles nous en a bien haut. [à vérifier]
+- [02:14:39 --> 02:14:41] C'est tout ce que c'est.
+- [02:14:41 --> 02:14:43] On fait le point sur le... [à vérifier]
+- [02:14:43 --> 02:14:44] ...pour n'a-où de tous. [à vérifier]
+- [02:14:44 --> 02:14:46] Très bien haut, et pas.
+- [02:14:46 --> 02:14:48] Vous êtes plus en achant.
+- [02:14:48 --> 02:14:50] Mais après, il y a la maintenance.
+- [02:14:50 --> 02:14:52] Aujourd'hui, maintenant, je ne sais pas où elle est.
+- [02:14:52 --> 02:14:55] Et si vous êtes quoi, je l'avais bien mis en haut, la maintenance.
+- [02:14:56 --> 02:14:59] C'est comme ça.
+- [02:14:59 --> 02:15:00] La maintenance.
+- [02:15:00 --> 02:15:01] C'est une seule technique ici.
+- [02:15:01 --> 02:15:05] Parfait, qu'on parle qu'elle a descendre des retroupes que l'on a eu l'armement.
+- [02:15:05 --> 02:15:07] Ça s'en stockait, j'ai fait vraiment de charge.
+- [02:15:07 --> 02:15:11] Le stockage va être dans la périférée des modulants.
+- [02:15:11 --> 02:15:15] De l'accord qu'extérieur, c'est sûr facilement ici.
+- [02:15:15 --> 02:15:21] Et dans tous lesquels il faut aussi un autre charge pour accéder la plateforme technique
+- [02:15:21 --> 02:15:22] qui sera retour de l'émodiel.
+- [02:15:22 --> 02:15:25] Pour les ceterre ou pas?
+- [02:15:26 --> 02:15:30] On va enlever sur votre résil, qu'il y a un côté des vestiens, il n'y a pas de... [à vérifier]
+- [02:15:30 --> 02:15:36] On va en avoir des ceterre en tout cas, en tout cas, on a un cul sur le 3, et on a un truc avec les filtres.
+- [02:15:38 --> 02:15:39] On se le prend.
+- [02:15:39 --> 02:15:44] Le 2, on veut changer une ceterie ou là, il faut pouvoir s'appuyer avec des clums dans les services.
+- [02:15:44 --> 02:15:50] Et voilà, le 17, il faut pouvoir s'appuyer la réserculeur.
+- [02:15:50 --> 02:15:54] Mais là, le 17, mais le spasse au tout le 3, il y a le plan, il faut s'appuyer.
+- [02:15:54 --> 02:15:56] Mais le 3 m, il faut s'appuyer.
+- [02:15:56 --> 02:15:58] On va partout en fait.
+- [02:15:58 --> 02:16:02] On se voit vraiment une conchante.
+- [02:16:02 --> 02:16:03] Ok, on se suit.
+- [02:16:03 --> 02:16:06] Bah tu sais, comme ça, on est... [à vérifier]
+- [02:16:06 --> 02:16:07] Tu es bien habitué.
+- [02:16:07 --> 02:16:19] Et on se fait un point de point.
+- [02:16:19 --> 02:16:22] Après moi, j'ai tous les besoins, mais ça, ça consomme aussi.
+- [02:16:22 --> 02:16:27] C'est avoir des data sur les besoins de gargant passion, ça me dépend du site.
+- [02:16:27 --> 02:16:30] Les rendues hominants, des rentes sauvles, ça existe là-bas.
+- [02:16:30 --> 02:16:32] C'est plus le petit sape de ça.
+- [02:16:32 --> 02:16:37] Les rendues, qu'est-ce qui m'avez dit, c'est des darts sud.
+- [02:16:37 --> 02:16:42] J'avais perdu ça, mais ça l'est d'attaindre, il faut que c'est son site.
+- [02:16:42 --> 02:16:43] Voilà.
+- [02:16:43 --> 02:16:45] J'espère qu'il y a beaucoup de choses sur place, qui sera capable de donner comme nous l'amétaux
+- [02:16:45 --> 02:16:46] France pour les sites.
+- [02:16:46 --> 02:16:48] Ici, mais c'est... [à vérifier]
+- [02:16:48 --> 02:16:51] Et il s'était darts sud, je l'avais noté.
+- [02:16:51 --> 02:16:59] J'avais pas l'appuyer au lequel, il y a vraiment.
+- [02:16:59 --> 02:17:03] Il y a 245.
+- [02:17:03 --> 02:17:05] Il disait que c'est quand-tu?
+- [02:17:05 --> 02:17:08] Oui, mais ils sont les 50.
+- [02:17:08 --> 02:17:11] Bonjour.
+- [02:17:11 --> 02:17:14] Vous êtes en train du ordre de l'aïde.
+- [02:17:14 --> 02:17:18] Il y a 242, on va y être.
+- [02:17:18 --> 02:17:22] 3, c'est-ce que j'ai une?
+- [02:17:22 --> 02:17:25] En 2019, il y a 245.
+- [02:17:25 --> 02:17:26] Il y a 245.
+- [02:17:26 --> 02:17:28] Il y a 245.
+- [02:17:28 --> 02:17:29] Il y a 245.
+- [02:17:29 --> 02:17:30] Il y a 245.
+- [02:17:30 --> 02:17:32] Il y a 245.
+- [02:17:32 --> 02:17:33] Il y a 245.
+- [02:17:33 --> 02:17:34] medal kaç?
+- [02:17:34 --> 02:17:39] Oui, oui.
+- [02:17:39 --> 02:17:40] Il y a 245.
+- [02:17:40 --> 02:17:42] Il y a 245.
+- [02:17:42 --> 02:17:45] Donc qu'est-ce que vous sentez?
+- [02:17:45 --> 02:17:48] Vous ne vous aviez pas de noodle pour que tu le connais.
