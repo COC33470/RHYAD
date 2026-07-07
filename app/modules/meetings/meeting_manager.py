@@ -1,0 +1,185 @@
+from concurrent.futures import Future, ThreadPoolExecutor
+from datetime import datetime
+import json
+import logging
+from pathlib import Path
+import re
+import shutil
+import tempfile
+from typing import Optional
+import zipfile
+
+from app.modules.meetings.models import MeetingArtifactPaths, TranscriptionResult
+from app.services.meeting_analysis_service import MeetingAnalysisService
+from app.services.transcription_service import (
+    SUPPORTED_AUDIO_EXTENSIONS,
+    FFMpegAudioPreprocessor,
+    TranscriptionConfig,
+    TranscriptionService,
+)
+
+
+class MeetingManagerError(RuntimeError):
+    pass
+
+
+def _safe_slug(value: str) -> str:
+    slug = re.sub(r"[^A-Za-z0-9_.-]+", "_", value.strip()).strip("_")
+    return slug[:80] or "meeting"
+
+
+def configure_meeting_logger(project_root: Path) -> logging.Logger:
+    logger = logging.getLogger("rhyad.meetings")
+    logger.setLevel(logging.INFO)
+    log_dir = project_root / "data" / "meetings" / "outputs"
+    log_dir.mkdir(parents=True, exist_ok=True)
+    log_path = log_dir / "meeting_manager.log"
+
+    for handler in logger.handlers:
+        if isinstance(handler, logging.FileHandler) and Path(handler.baseFilename) == log_path:
+            return logger
+
+    handler = logging.FileHandler(log_path, encoding="utf-8")
+    handler.setFormatter(logging.Formatter("%(asctime)s %(levelname)s %(message)s"))
+    logger.addHandler(handler)
+    return logger
+
+
+class MeetingManager:
+    def __init__(
+        self,
+        project_root: Path,
+        transcription_service: Optional[TranscriptionService] = None,
+        analysis_service: Optional[MeetingAnalysisService] = None,
+        executor: Optional[ThreadPoolExecutor] = None,
+        logger: Optional[logging.Logger] = None,
+    ):
+        self.project_root = Path(project_root)
+        self.paths = MeetingArtifactPaths(
+            audio_dir=self.project_root / "data" / "meetings" / "audio",
+            transcripts_dir=self.project_root / "data" / "meetings" / "transcripts",
+            outputs_dir=self.project_root / "data" / "meetings" / "outputs",
+        )
+        self.logger = logger or configure_meeting_logger(self.project_root)
+        self.config = TranscriptionConfig.from_project(self.project_root)
+        self.transcription_service = transcription_service or TranscriptionService(
+            config=self.config,
+            audio_preprocessor=FFMpegAudioPreprocessor(self.config, logger=self.logger),
+            logger=self.logger,
+        )
+        self.analysis_service = analysis_service or MeetingAnalysisService()
+        self.executor = executor or ThreadPoolExecutor(max_workers=1, thread_name_prefix="rhyad-meeting")
+
+    @classmethod
+    def from_project(cls, project_root: Path) -> "MeetingManager":
+        return cls(project_root=project_root)
+
+    def select_audio_file(self, audio_path: Path) -> Path:
+        path = Path(audio_path).expanduser().resolve()
+        if not path.exists():
+            raise FileNotFoundError(f"Audio file not found: {path}")
+        if path.suffix.lower() not in SUPPORTED_AUDIO_EXTENSIONS:
+            allowed = ", ".join(sorted(SUPPORTED_AUDIO_EXTENSIONS))
+            raise MeetingManagerError(f"Unsupported audio format: {path.suffix}. Expected one of: {allowed}")
+        return path
+
+    def import_audio_source(self, source_path: Path) -> Path:
+        self.paths.ensure()
+        source = Path(source_path).expanduser().resolve()
+        if not source.exists():
+            raise FileNotFoundError(f"Meeting source not found: {source}")
+
+        if source.suffix.lower() == ".zip":
+            with tempfile.TemporaryDirectory(prefix="rhyad-meeting-import-") as tmp:
+                extracted_audio = self._extract_audio_from_zip(source, Path(tmp))
+                return self._copy_audio_to_project(extracted_audio)
+
+        selected_audio = self.select_audio_file(source)
+        return self._copy_audio_to_project(selected_audio)
+
+    def process_audio(self, audio_path: Path, meeting_id: Optional[str] = None) -> TranscriptionResult:
+        self.paths.ensure()
+        selected_audio = self.select_audio_file(audio_path)
+        meeting_id = meeting_id or self._meeting_id(selected_audio)
+        transcript_dir = self.paths.transcripts_dir / meeting_id
+        output_dir = self.paths.outputs_dir / meeting_id
+        transcript_dir.mkdir(parents=True, exist_ok=True)
+        output_dir.mkdir(parents=True, exist_ok=True)
+
+        stored_audio = self._store_audio(selected_audio, meeting_id)
+        transcript_text_path = transcript_dir / "transcript.txt"
+        transcript_json_path = transcript_dir / "transcript.json"
+        summary_draft_path = output_dir / "meeting_summary_draft.md"
+
+        try:
+            self.logger.info("Starting meeting transcription: %s", selected_audio)
+            segments = self.transcription_service.transcribe_audio(stored_audio)
+            analysis_draft = self.analysis_service.prepare_draft(segments)
+            result = TranscriptionResult(
+                meeting_id=meeting_id,
+                source_audio_path=selected_audio,
+                stored_audio_path=stored_audio,
+                transcript_text_path=transcript_text_path,
+                transcript_json_path=transcript_json_path,
+                summary_draft_path=summary_draft_path,
+                segments=segments,
+                language=self.transcription_service.config.language,
+                backend=self.transcription_service.config.backend,
+                model_name=self.transcription_service.config.model_name,
+                created_at=datetime.now().isoformat(timespec="seconds"),
+                analysis_draft=analysis_draft,
+            )
+            self._write_outputs(result)
+            self.logger.info("Meeting transcription completed: %s", meeting_id)
+            return result
+        except Exception:
+            self.logger.exception("Meeting transcription failed: %s", selected_audio)
+            raise
+
+    def start_processing_job(self, audio_path: Path, meeting_id: Optional[str] = None) -> Future:
+        return self.executor.submit(self.process_audio, audio_path, meeting_id)
+
+    def shutdown(self) -> None:
+        self.executor.shutdown(wait=False, cancel_futures=False)
+
+    def _meeting_id(self, audio_path: Path) -> str:
+        timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
+        return f"{timestamp}-{_safe_slug(audio_path.stem)}"
+
+    def _store_audio(self, audio_path: Path, meeting_id: str) -> Path:
+        destination = self.paths.audio_dir / f"{meeting_id}{audio_path.suffix.lower()}"
+        if audio_path.resolve() != destination.resolve():
+            shutil.copy2(audio_path, destination)
+        return destination
+
+    def _copy_audio_to_project(self, audio_path: Path) -> Path:
+        destination = self.paths.audio_dir / audio_path.name
+        if audio_path.resolve() != destination.resolve():
+            shutil.copy2(audio_path, destination)
+        return destination
+
+    def _extract_audio_from_zip(self, zip_path: Path, extract_dir: Path) -> Path:
+        try:
+            with zipfile.ZipFile(zip_path) as archive:
+                archive.extractall(extract_dir)
+        except zipfile.BadZipFile as exc:
+            raise MeetingManagerError(f"Invalid meeting zip file: {zip_path}") from exc
+
+        audio_files = sorted(
+            path for path in extract_dir.rglob("*") if path.is_file() and path.suffix.lower() in SUPPORTED_AUDIO_EXTENSIONS
+        )
+        if not audio_files:
+            allowed = ", ".join(sorted(SUPPORTED_AUDIO_EXTENSIONS))
+            raise MeetingManagerError(f"No supported audio file found in {zip_path}. Expected one of: {allowed}")
+        return audio_files[0]
+
+    def _write_outputs(self, result: TranscriptionResult) -> None:
+        result.transcript_text_path.write_text(result.transcript_text(), encoding="utf-8")
+        result.transcript_json_path.write_text(
+            json.dumps(result.to_dict(), ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+        result.summary_draft_path.write_text(
+            self.analysis_service.build_summary_markdown(result),
+            encoding="utf-8",
+        )

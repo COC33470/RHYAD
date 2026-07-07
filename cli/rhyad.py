@@ -5,6 +5,7 @@ from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 
+from app.modules.meetings.meeting_manager import MeetingManager
 from engine.core.figures import check_figures, load_figures_registry, resolve_figure_path
 from engine.core.impact_engine import get_impacts
 from engine.core.traceability_suggester import suggest_traceability
@@ -33,6 +34,8 @@ Usage:
   rhyad impact <object>
   rhyad figures list
   rhyad figures check
+  rhyad meetings import <audio_or_zip>
+  rhyad meetings transcribe <audio_file>
   rhyad ui
   rhyad trace suggest
   rhyad trace approve
@@ -50,6 +53,8 @@ Compatibility:
   python3 scripts/rhyad.py impact D-014
   python3 scripts/rhyad.py figures list
   python3 scripts/rhyad.py figures check
+  python3 scripts/rhyad.py meetings import reunion.zip
+  python3 scripts/rhyad.py meetings transcribe data/meetings/audio/reunion.m4a
   python3 scripts/rhyad.py ui
   python3 scripts/rhyad.py trace suggest
   python3 scripts/rhyad.py trace approve
@@ -491,6 +496,39 @@ def command_figures(args, root=ROOT, stream=sys.stdout):
         print(f"- {figure['id']}", file=stream)
 
     return 1 if result["missing"] or result["unsupported"] else 0
+
+
+def command_meetings(args, root=ROOT, stream=sys.stdout):
+    if len(args) != 2 or args[0] not in {"import", "transcribe"}:
+        print("Usage: rhyad meetings import <audio_or_zip>", file=stream)
+        print("       rhyad meetings transcribe <audio_file>", file=stream)
+        return 2
+
+    manager = None
+    try:
+        manager = MeetingManager.from_project(root)
+        if args[0] == "import":
+            imported_path = manager.import_audio_source(Path(args[1]))
+            print("RHYAD Meeting Manager", file=stream)
+            print(f"Imported audio: {imported_path}", file=stream)
+            return 0
+
+        result = manager.process_audio(Path(args[1]))
+    except Exception as exc:
+        print("Meeting operation failed.", file=stream)
+        print(exc, file=stream)
+        return 1
+    finally:
+        if manager is not None:
+            manager.shutdown()
+
+    print("RHYAD Meeting Manager", file=stream)
+    print(f"Meeting ID: {result.meeting_id}", file=stream)
+    print(f"Transcript TXT: {result.transcript_text_path}", file=stream)
+    print(f"Transcript JSON: {result.transcript_json_path}", file=stream)
+    print(f"Summary draft: {result.summary_draft_path}", file=stream)
+    print(f"Segments: {len(result.segments)}", file=stream)
+    return 0
 
 
 def _read_ui_input(input_func, stream, prompt="Choix : "):
@@ -1102,6 +1140,8 @@ def main(argv=None):
         return command_impact(argv[1])
     if command == "figures":
         return command_figures(argv[1:])
+    if command == "meetings":
+        return command_meetings(argv[1:])
     if command == "ui":
         return command_ui()
     if command == "trace":

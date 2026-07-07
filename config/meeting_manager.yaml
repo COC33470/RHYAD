@@ -1,0 +1,10 @@
+transcription:
+  backend: faster-whisper
+  model_name: tiny
+  language: fr
+  device: auto
+  compute_type: int8
+  segment_seconds: 900
+  ffmpeg_path: ffmpeg
+  ffprobe_path: ffprobe
+  openai_model: ""

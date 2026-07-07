@@ -1,8 +1,13 @@
 # Active runtime dependencies
 python-docx
 pyyaml
+imageio-ffmpeg
 
 # Reserved for planned exports or document enrichments
 reportlab
 openpyxl
 pillow
+
+# Optional meeting transcription backends
+# faster-whisper
+# openai-whisper

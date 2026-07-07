@@ -147,11 +147,35 @@ output/pdf/100/CEVA-RHYAD-100-F01_Rev0.1.pdf
 
 - Python 3.10 ou supérieur
 - LibreOffice installé via `soffice` ou `libreoffice` dans le `PATH`, ou via `/Applications/LibreOffice.app` sur macOS
+- `ffmpeg` disponible dans le `PATH` pour le Meeting Manager audio, ou fallback `imageio-ffmpeg` installé via `requirements.txt`
+- `ffprobe` disponible dans le `PATH` si possible, pour optimiser la détection de durée des réunions longues
 
 Installation :
 
 ```bash
 python3 -m pip install -r requirements.txt
+```
+
+Pour la transcription locale des réunions, installer ensuite un backend au choix :
+
+```bash
+python3 -m pip install faster-whisper
+# ou
+python3 -m pip install openai-whisper
+```
+
+Installation système `ffmpeg` / `ffprobe` recommandée :
+
+```bash
+# macOS avec Homebrew
+brew install ffmpeg
+
+# Debian / Ubuntu
+sudo apt-get install ffmpeg
+
+# Vérification
+ffmpeg -version
+ffprobe -version
 ```
 
 ## Commandes
@@ -181,6 +205,8 @@ rhyad doctor
 rhyad impact D-014
 rhyad figures list
 rhyad figures check
+rhyad meetings import chemin/reunion.zip
+rhyad meetings transcribe chemin/reunion.m4a
 rhyad ui
 rhyad trace suggest
 rhyad trace approve
@@ -200,11 +226,51 @@ python3 scripts/rhyad.py doctor
 python3 scripts/rhyad.py impact D-014
 python3 scripts/rhyad.py figures list
 python3 scripts/rhyad.py figures check
+python3 scripts/rhyad.py meetings import chemin/reunion.zip
+python3 scripts/rhyad.py meetings transcribe chemin/reunion.m4a
 python3 scripts/rhyad.py ui
 python3 scripts/rhyad.py trace suggest
 python3 scripts/rhyad.py trace approve
 python3 scripts/rhyad.py dashboard
 ```
+
+## RHYAD Meeting Manager Alpha 0.1
+
+Le module Meeting Manager importe un fichier audio local `.m4a`, `.mp3` ou `.wav`, le normalise avec `ffmpeg`, segmente les fichiers longs, puis lance une transcription française via le backend configuré.
+
+Configuration :
+
+```yaml
+# config/meeting_manager.yaml
+transcription:
+  backend: faster-whisper
+  model_name: tiny
+  language: fr
+  device: auto
+  compute_type: int8
+  segment_seconds: 900
+```
+
+Commande :
+
+```bash
+python3 scripts/rhyad.py meetings import /chemin/local/reunion.zip
+python3 scripts/rhyad.py meetings transcribe /chemin/local/reunion.m4a
+```
+
+La commande `meetings import` accepte un audio direct ou un `.zip`. Si un zip est fourni, RHYAD le décompresse, détecte le premier fichier `.m4a`, `.mp3` ou `.wav`, puis le copie dans `data/meetings/audio/`.
+
+Sorties locales :
+
+```text
+data/meetings/audio/
+data/meetings/transcripts/<meeting_id>/transcript.txt
+data/meetings/transcripts/<meeting_id>/transcript.json
+data/meetings/outputs/<meeting_id>/meeting_summary_draft.md
+data/meetings/outputs/meeting_manager.log
+```
+
+`meeting_summary_draft.md` prépare l’extraction IA des décisions, actions, échéances, risques et documents évoqués. Le backend `openai` est réservé dans la configuration pour une intégration API ultérieure.
 
 Les scripts historiques restent disponibles. Générer le Programme Fonctionnel :
 

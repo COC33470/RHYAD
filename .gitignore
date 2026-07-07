@@ -2,5 +2,11 @@ __pycache__/
 *.pyc
 .venv/
 output/
+data/meetings/audio/*
+data/meetings/transcripts/*
+data/meetings/outputs/*
+!data/meetings/audio/.gitkeep
+!data/meetings/transcripts/.gitkeep
+!data/meetings/outputs/.gitkeep
 .DS_Store
 .vscode/

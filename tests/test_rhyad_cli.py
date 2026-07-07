@@ -2,6 +2,7 @@ import io
 import tempfile
 import unittest
 from pathlib import Path
+from types import SimpleNamespace
 from unittest.mock import patch
 
 from cli import rhyad
@@ -178,6 +179,71 @@ class RhyadCliTest(unittest.TestCase):
         self.assertEqual(commands[0], ["python3", "scripts/main.py", "002"])
         self.assertEqual(commands[1], ["python3", "scripts/import_validated.py", "003"])
         self.assertEqual(commands[2], ["python3", "-m", "unittest", "discover"])
+
+    def test_meetings_transcribe_reports_created_outputs(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            _write_cli_fixture(root)
+            audio_path = root / "meeting.m4a"
+            audio_path.write_bytes(b"fake m4a")
+            stream = io.StringIO()
+
+            class FakeMeetingManager:
+                def __init__(self):
+                    self.shutdown_called = False
+
+                def process_audio(self, path):
+                    self.audio_path = path
+                    return SimpleNamespace(
+                        meeting_id="meeting-test",
+                        transcript_text_path=root / "data" / "meetings" / "transcripts" / "meeting-test" / "transcript.txt",
+                        transcript_json_path=root / "data" / "meetings" / "transcripts" / "meeting-test" / "transcript.json",
+                        summary_draft_path=root / "data" / "meetings" / "outputs" / "meeting-test" / "meeting_summary_draft.md",
+                        segments=[object(), object()],
+                    )
+
+                def shutdown(self):
+                    self.shutdown_called = True
+
+            fake_manager = FakeMeetingManager()
+            with patch("cli.rhyad.MeetingManager.from_project", return_value=fake_manager):
+                exit_code = rhyad.command_meetings(["transcribe", str(audio_path)], root=root, stream=stream)
+
+            self.assertEqual(exit_code, 0)
+            self.assertTrue(fake_manager.shutdown_called)
+            self.assertEqual(fake_manager.audio_path, audio_path)
+            output = stream.getvalue()
+            self.assertIn("RHYAD Meeting Manager", output)
+            self.assertIn("Meeting ID: meeting-test", output)
+            self.assertIn("Segments: 2", output)
+
+    def test_meetings_import_reports_imported_audio(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            _write_cli_fixture(root)
+            zip_path = root / "meeting.zip"
+            zip_path.write_bytes(b"fake zip")
+            stream = io.StringIO()
+
+            class FakeMeetingManager:
+                def import_audio_source(self, path):
+                    self.source_path = path
+                    return root / "data" / "meetings" / "audio" / "Réunion n01 CEVA.m4a"
+
+                def shutdown(self):
+                    self.shutdown_called = True
+
+            fake_manager = FakeMeetingManager()
+            with patch("cli.rhyad.MeetingManager.from_project", return_value=fake_manager):
+                exit_code = rhyad.command_meetings(["import", str(zip_path)], root=root, stream=stream)
+
+            self.assertEqual(exit_code, 0)
+            self.assertTrue(fake_manager.shutdown_called)
+            self.assertEqual(fake_manager.source_path, zip_path)
+            output = stream.getvalue()
+            self.assertIn("RHYAD Meeting Manager", output)
+            self.assertIn("Imported audio:", output)
+            self.assertIn("Réunion n01 CEVA.m4a", output)
 
     def test_paste_rejects_unknown_document(self):
         with tempfile.TemporaryDirectory() as tmp:
