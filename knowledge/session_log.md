@@ -29,6 +29,7 @@ Ce fichier complète la mémoire permanente du projet sans remplacer :
 - Validation du principe : GitHub est la source unique de vérité.
 - Validation du principe : Codex intervient en priorité en fin de séance pour limiter la consommation de quota.
 - Validation du principe : aucun document validé ne doit être reconstruit depuis la mémoire conversationnelle.
+- Validation de la codification officielle Design Basis : `CEVA-RHYAD-300-DB000` réservé aux Principes Généraux de Conception, puis `CEVA-RHYAD-300-DB001` à `CEVA-RHYAD-300-DB010`.
 
 ### Fichiers créés
 
@@ -45,7 +46,7 @@ Ce fichier complète la mémoire permanente du projet sans remplacer :
 ### Points ouverts
 
 - Harmonisation des références DT vers `CEVA-RHYAD-200-Fxx-DT01` réalisée pour F01 à F15.
-- Harmoniser les références Design Basis vers `CEVA-RHYAD-300-DB001` à `DB010`.
+- Harmonisation des références Design Basis vers `CEVA-RHYAD-300-DB001` à `CEVA-RHYAD-300-DB010` réalisée.
 - Contrôler les livrables DT générés.
 - Initialiser `CEVA-RHYAD-200-DT000`.
 - Initialiser les familles 300, 400 et 500.

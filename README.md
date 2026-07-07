@@ -49,16 +49,16 @@ Le référentiel documentaire validé est décrit dans `config/rhyad_repository.
 - CEVA-RHYAD-200-F01-DT01 à CEVA-RHYAD-200-F15-DT01
 
 300 — Design Basis
-- DB-001 Process
-- DB-002 Architecture
-- DB-003 CVC / HVAC
-- DB-004 Utilités
-- DB-005 Électricité
-- DB-006 IT / OT
-- DB-007 Maintenance
-- DB-008 Sécurité / Sûreté
-- DB-009 Logistique
-- DB-010 Instrumentation & Automatisme
+- CEVA-RHYAD-300-DB001 Process
+- CEVA-RHYAD-300-DB002 Architecture
+- CEVA-RHYAD-300-DB003 CVC / HVAC
+- CEVA-RHYAD-300-DB004 Utilités
+- CEVA-RHYAD-300-DB005 Électricité
+- CEVA-RHYAD-300-DB006 IT / OT
+- CEVA-RHYAD-300-DB007 Maintenance
+- CEVA-RHYAD-300-DB008 Sécurité / Sûreté
+- CEVA-RHYAD-300-DB009 Logistique
+- CEVA-RHYAD-300-DB010 Instrumentation & Automatisme
 
 400 — Réunions
 - R00 Kick-off
@@ -257,7 +257,7 @@ L'utilisateur dépose le contenu validé dans `inbox/validated/` :
 ```text
 inbox/validated/002.md
 inbox/validated/F01.md
-inbox/validated/DB01.md
+inbox/validated/CEVA-RHYAD-300-DB001.md
 ```
 
 Puis lance une seule commande :
@@ -287,7 +287,7 @@ Exemples :
 ```bash
 python3 scripts/rhyad.py import 003
 python3 scripts/rhyad.py import F01
-python3 scripts/rhyad.py import DB01
+python3 scripts/rhyad.py import CEVA-RHYAD-300-DB001
 ```
 
 Le Markdown validé est la source d'entrée. Le script ne rédige pas de contenu : si une information obligatoire est absente, il utilise le référentiel officiel lorsque c'est possible ou affiche une erreur explicite.
@@ -342,7 +342,7 @@ Exemples :
 
 ```bash
 python3 scripts/rhyad.py impact D-014
-python3 scripts/rhyad.py impact CEVA-RHYAD-300-DB03
+python3 scripts/rhyad.py impact CEVA-RHYAD-300-DB003
 ```
 
 L'API interne `get_impacts()` est disponible dans `engine/core/impact_engine.py`. Elle prépare les futures commandes de propagation comme `rhyad meeting` et `rhyad update`, sans modifier les documents existants.

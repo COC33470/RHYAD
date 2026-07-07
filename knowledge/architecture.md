@@ -29,7 +29,7 @@ Exemples actuellement utilisés :
 | 000 | `CEVA-RHYAD-006-PDD` |
 | 100 | `CEVA-RHYAD-100-F01` |
 | 200 | `CEVA-RHYAD-200-F01-DT01` |
-| 300 | `CEVA-RHYAD-300-DB001` à `CEVA-RHYAD-300-DB010` à harmoniser avec le référentiel `DB-001` à `DB-010`. |
+| 300 | `CEVA-RHYAD-300-DB000` réservé aux Principes Généraux de Conception, puis `CEVA-RHYAD-300-DB001` à `CEVA-RHYAD-300-DB010`. |
 | 500 | `CEVA-RHYAD-500-REG01` à `CEVA-RHYAD-500-REG05`. |
 
 ## Documents client et documentation interne

@@ -1,0 +1,503 @@
+---
+metadata:
+  purpose: "Mémoire permanente du projet RHYAD"
+  scope: "Règles, conventions, principes et décisions validés applicables sur la durée du projet"
+  exclusions:
+    - "suivi opérationnel de séance"
+    - "tâches non clôturées"
+    - "priorités court terme"
+    - "états transitoires"
+  temporary_context_file: "knowledge/SESSION_CONTEXT.yaml"
+
+projet:
+  client: "CEVA Santé Animale"
+  project_code: "RHYAD"
+  project_name: "Construction de l'unité de production d'autovaccins"
+  location: "Riyadh, Saudi Arabia"
+  repository: "RHYAD"
+  mission_context:
+    - "Programmation"
+    - "Assistance à Maîtrise d'Ouvrage"
+    - "Conception de projets industriels et pharmaceutiques"
+  confidentiality: "CEVA INTERNAL"
+
+gouvernance:
+  roles:
+    maitre_ouvrage: "CEVA"
+    amo_rhyad:
+      responsibilities:
+        - "animation des ateliers"
+        - "rédaction des livrables"
+        - "coordination documentaire"
+        - "gestion des interfaces"
+        - "aide à la décision"
+    chatgpt:
+      role: "Lead Engineer / AMO / Document Controller RHYAD"
+      responsibilities:
+        - "structurer les contenus"
+        - "contrôler la cohérence documentaire"
+        - "identifier les impacts"
+        - "préparer les décisions"
+    codex:
+      role: "Intégration dépôt, génération documentaire, tests et opérations Git"
+      responsibilities:
+        - "intégrer les contenus validés dans le dépôt local"
+        - "modifier uniquement les fichiers autorisés"
+        - "générer les livrables"
+        - "lancer les tests"
+        - "préparer les commits lorsque la demande ou le workflow validé le prévoit"
+  reference_documents:
+    methodology: "CEVA-RHYAD-000-MTH01"
+    documentary_master_plan: "CEVA-RHYAD-006-PDD"
+    risk_register: "CEVA-RHYAD-004-REGISTRE DES RISQUES"
+    decision_register: "CEVA-RHYAD-005-REGISTRE DES DECISIONS"
+    glossary: "CEVA-RHYAD-003-GLOSSAIRE"
+  governance_rules:
+    - "Les documents CEVA-RHYAD sont les documents projet destinés au client."
+    - "La documentation RHYAD-SYS est strictement interne à RHYAD et reste dans docs/internal/."
+    - "Un document client CEVA-RHYAD ne référence pas la documentation interne RHYAD-SYS."
+    - "Un document validé n'est pas modifié sans demande explicite et analyse d'impact."
+    - "Un document validé n'est jamais reconstruit depuis la mémoire conversationnelle."
+
+source_unique_de_verite:
+  principles:
+    - "GitHub est la source unique de vérité du projet RHYAD."
+    - "Les fichiers YAML intégrés dans le dépôt Git sont les sources documentaires officielles après import."
+    - "Une information ne doit exister qu'à un seul endroit dans le référentiel RHYAD."
+    - "Les autres documents référencent la source officielle au lieu de dupliquer l'information."
+    - "Les DOCX, PDF, PPTX et XLSX générés sont des livrables ou supports de synthèse, pas la source de référence."
+    - "Les Markdown d'entrée sont des supports d'import et d'archivage, pas la mémoire officielle après intégration."
+    - "Les documents générés ne sont jamais modifiés directement."
+  source_files:
+    repository_nomenclature: "config/rhyad_repository.yaml"
+    document_registry: "config/document_registry.yaml"
+    project_metadata: "config/project.yaml"
+    knowledge_core: "knowledge/"
+  knowledge_core:
+    role: "Référentiel de données projet structurées et validées"
+    files:
+      project: "knowledge/project.yaml"
+      glossary: "knowledge/glossary.yaml"
+      decisions: "knowledge/decisions.yaml"
+      risks: "knowledge/risks.yaml"
+      assumptions: "knowledge/assumptions.yaml"
+      requirements: "knowledge/requirements.yaml"
+      interfaces: "knowledge/interfaces.yaml"
+      meetings: "knowledge/meetings.yaml"
+      traceability: "knowledge/traceability.yaml"
+    rule: "Aucun contenu métier non validé ne doit être ajouté dans le Knowledge Core."
+
+hierarchie_documentaire:
+  official_sources:
+    - "config/rhyad_repository.yaml définit l'arborescence documentaire officielle."
+    - "config/document_registry.yaml déclare les documents générables, leur code officiel, leur famille et leur source YAML."
+  hierarchy:
+    - family: "000"
+      title: "Gouvernance Projet"
+      role: "Méthode, charte, ACAP, programme fonctionnel, glossaire, registres de gouvernance et Plan Directeur Documentaire"
+    - family: "100"
+      title: "Programme Fonctionnel"
+      role: "Fonctions F01 à F15"
+    - family: "200"
+      title: "Données Techniques"
+      role: "Collecte et structuration des données nécessaires aux études et Design Basis"
+    - family: "300"
+      title: "Design Basis"
+      role: "Principes de conception par discipline"
+    - family: "400"
+      title: "Réunions"
+      role: "Ateliers, réunions, supports, comptes rendus, actions et tableaux de bord associés"
+    - family: "500"
+      title: "Registres Projet"
+      role: "Registres dynamiques actions, décisions, risques, hypothèses et interfaces"
+    - family: "600"
+      title: "Dossiers d'Études"
+      role: "Livrables APS, APD, PRO, DCE, EXE, VISA et DOE"
+  separation_rules:
+    - "Les documents client CEVA-RHYAD décrivent la méthode, la gouvernance et les livrables sans exposer l'architecture logicielle interne."
+    - "La documentation interne RHYAD-SYS peut décrire moteur documentaire, scripts, CLI, Git, conventions de développement et automatisations."
+
+charte_graphique:
+  client_graphic_charter: "CEVA"
+  logo_rules:
+    use_ceva_logo: true
+    use_rhyad_logo_on_client_deliverables: false
+  model_rules:
+    - "Le modèle documentaire RHYAD-CEVA est le modèle unique des documents projet."
+    - "Tous les documents client utilisent la charte graphique CEVA."
+    - "Les pages de garde, en-têtes, pieds de page, tableaux, styles et historiques de révision sont homogènes."
+    - "Aucune modification de mise en page spécifique par document n'est autorisée sans décision validée."
+    - "La confidentialité, la référence documentaire, la révision et le cartouche documentaire sont présents sur les livrables."
+
+codification:
+  general_pattern: "CEVA-RHYAD-XXX-YYY"
+  official_registry: "config/document_registry.yaml"
+  rules:
+    - "Chaque document possède une référence unique."
+    - "Chaque document possède une version, un statut documentaire, un historique des révisions et un responsable."
+    - "La codification officielle prévaut sur les libellés historiques lorsqu'une divergence est détectée."
+  technical_data:
+    rule: "La codification DT officielle est CEVA-RHYAD-200-Fxx-DT01."
+    examples:
+      - "CEVA-RHYAD-200-F01-DT01"
+      - "CEVA-RHYAD-200-F15-DT01"
+    master_excel:
+      file: "templates/excel/CEVA-RHYAD-200-DT-Master.xlsx"
+      role: "Support consolidé de collecte et de suivi des Données Techniques F01 à F15"
+      sheets:
+        - "00_Index"
+        - "00_General"
+        - "F01 à F15"
+      rule: "Tant que la conversion Excel vers YAML n'est pas automatisée, le classeur Excel reste un support de collecte et les YAML restent le référentiel technique exploitable par le dépôt."
+  design_basis:
+    general_reference: "CEVA-RHYAD-300-DB000"
+    general_reference_role: "Principes Généraux de Conception"
+    official_series:
+      - "CEVA-RHYAD-300-DB001"
+      - "CEVA-RHYAD-300-DB002"
+      - "CEVA-RHYAD-300-DB003"
+      - "CEVA-RHYAD-300-DB004"
+      - "CEVA-RHYAD-300-DB005"
+      - "CEVA-RHYAD-300-DB006"
+      - "CEVA-RHYAD-300-DB007"
+      - "CEVA-RHYAD-300-DB008"
+      - "CEVA-RHYAD-300-DB009"
+      - "CEVA-RHYAD-300-DB010"
+    rule: "La série CEVA-RHYAD-300-DB001 à CEVA-RHYAD-300-DB010 constitue la codification officielle des Design Basis disciplinaires."
+  registers:
+    actions: "CEVA-RHYAD-500-REG01"
+    decisions: "CEVA-RHYAD-500-REG02"
+    risks: "CEVA-RHYAD-500-REG03"
+    assumptions: "CEVA-RHYAD-500-REG04"
+    interfaces: "CEVA-RHYAD-500-REG05"
+
+methodologie:
+  source: "CEVA-RHYAD-000-MTH01"
+  philosophy:
+    - "une information = une seule source"
+    - "une décision = une justification"
+    - "une modification = un impact documentaire identifié"
+    - "une variante = une analyse multicritère"
+    - "une exigence = un document de référence"
+  methodological_principles:
+    P-001: "Une information = une seule source"
+    P-002: "Les documents RHYAD définissent les exigences de programmation et de conception, pas les procédures d'exploitation."
+    P-003: "Aucune solution technique ne peut être retenue sans justification."
+    P-004: "Toute modification identifie les documents, risques, décisions et actions impactés."
+    P-005: "Les infrastructures critiques sont identifiées par une analyse de risques et leur redondance, disponibilité et protection sont justifiées."
+  process_phases:
+    - phase: "Définition du besoin"
+      outputs:
+        - "Programme Fonctionnel"
+        - "Données Techniques"
+        - "Design Drivers"
+    - phase: "Conception"
+      outputs:
+        - "Design Basis"
+        - "APS"
+        - "APD"
+        - "PRO"
+    - phase: "Consultation et réalisation"
+      outputs:
+        - "DCE"
+        - "EXE"
+    - phase: "Clôture"
+      outputs:
+        - "DOE"
+  process_rules:
+    - "Chaque étape produit des livrables validés avant le passage à la suivante."
+    - "Les décisions prises à chaque jalon sont enregistrées dans les registres du projet."
+    - "Les impacts documentaires des décisions sont propagés dans le référentiel RHYAD."
+    - "Toutes les disciplines travaillent sur une source documentaire unique."
+    - "Les retours d'expérience enrichissent la méthode RHYAD."
+
+principes_rhyad:
+  fundamentals:
+    - "Concevoir pour l'ensemble du cycle de vie de l'installation, pas uniquement pour la réception des travaux."
+    - "Intégrer la maintenabilité dès les premières phases de conception."
+    - "Concevoir des installations évolutives et résilientes."
+    - "Étudier systématiquement les variantes lorsqu'elles apportent une valeur au projet."
+    - "Justifier objectivement chaque choix technique."
+    - "Garantir la cohérence documentaire et la traçabilité des décisions."
+    - "Privilégier des solutions simples, robustes et adaptées au contexte local."
+    - "Limiter les consommations de ressources sans compromettre les performances pharmaceutiques."
+    - "Intégrer les exigences réglementaires dès les premières phases du projet."
+    - "Assurer une coordination permanente entre les disciplines."
+    - "Considérer les impacts documentaires comme une composante de chaque décision technique."
+  design_drivers:
+    rule: "Les Design Drivers sont définis avant toute analyse de variantes et servent de critères d'évaluation."
+    examples:
+      - "conformité réglementaire"
+      - "qualité pharmaceutique"
+      - "sécurité des personnes"
+      - "sécurité des installations"
+      - "continuité d'activité"
+      - "disponibilité"
+      - "maintenabilité"
+      - "évolutivité"
+      - "performance énergétique"
+      - "CAPEX"
+      - "OPEX"
+      - "durabilité"
+      - "contraintes du contexte local"
+    weighting_rule: "Les pondérations sont proposées par l'équipe projet et validées par le Maître d'Ouvrage CEVA."
+  variants:
+    rule: "Toute variante est étudiée selon une méthode commune et justifiée par une matrice multicritère."
+    required_content:
+      - "objectif"
+      - "avantages"
+      - "inconvénients"
+      - "impacts techniques"
+      - "impacts réglementaires"
+      - "impacts économiques"
+      - "impacts exploitation"
+      - "impacts maintenance"
+      - "impacts performance énergétique"
+      - "impacts documentaires"
+    decision_rule: "Le choix retenu est enregistré dans le Registre des Décisions."
+
+regles_codex:
+  operating_rules:
+    - "Auditer le dépôt avant toute génération ou modification documentaire."
+    - "Lire le contexte permanent RHYAD et le contexte de session lorsqu'ils existent."
+    - "Lire le dossier knowledge/ avant de produire ou modifier un livrable."
+    - "Privilégier les fichiers du dépôt à la conversation comme source de vérité."
+    - "Réutiliser les informations existantes au lieu de les recréer."
+    - "Ne jamais inventer de contenu métier."
+    - "Ne jamais inscrire un lien de traçabilité validé sans preuve documentaire explicite."
+    - "Ne jamais modifier un document client validé sans demande explicite."
+    - "Ne jamais reconstruire un document validé depuis la mémoire conversationnelle."
+    - "Produire des documents opérationnels et préremplis lorsqu'une information validée existe."
+    - "Les modèles ou livrables vides sont interdits lorsqu'une donnée validée existe."
+    - "Les prompts Codex doivent être complets et inclure le périmètre, les sources à lire, les fichiers autorisés et les contrôles attendus."
+    - "Aucun commit ne doit être effectué sauf demande explicite de l'utilisateur ou workflow validé qui le prévoit."
+  session_boundary:
+    - "Le suivi opérationnel et les états transitoires restent dans knowledge/SESSION_CONTEXT.yaml."
+    - "RHYAD_CONTEXT.yaml ne contient que les règles, conventions, principes et décisions permanents."
+
+conventions_de_developpement:
+  internal_documentation:
+    prefix: "RHYAD-SYS"
+    path: "docs/internal/"
+    rule: "La documentation système interne ne doit pas être exposée dans les documents client CEVA-RHYAD."
+  commands:
+    cli_entrypoint: "python3 scripts/rhyad.py"
+    legacy_generation: "python3 scripts/main.py <CODE>"
+    tests: "python3 -m unittest discover"
+  pipeline:
+    source_input: "inbox/validated/<CODE>.md"
+    processed_archive: "inbox/processed/"
+    rejected_archive: "inbox/rejected/"
+    log_file: "logs/import.log"
+    rule: "Le pipeline convertit le Markdown validé en YAML, génère les livrables DOCX/PDF, exécute les tests et vérifie les sorties."
+  figures:
+    registry: "config/figures_registry.yaml"
+    assets:
+      - "assets/figures/000/"
+      - "assets/figures/100/"
+      - "assets/figures/200/"
+      - "assets/figures/300/"
+      - "assets/figures/400/"
+      - "assets/figures/500/"
+      - "assets/figures/600/"
+      - "assets/figures/shared/"
+    supported_docx_formats:
+      - "PNG"
+      - "JPG"
+      - "JPEG"
+    future_formats:
+      - "SVG"
+      - "PDF"
+      - "Mermaid"
+      - "Draw.io"
+    rule: "Une figure est déclarée dans le registre avant insertion documentaire."
+
+structure_documentaire:
+  client_documents_root: "config/documents/"
+  output_roots:
+    docx: "output/docx/"
+    pdf: "output/pdf/"
+    xlsx: "output/xlsx/"
+  generated_output_families:
+    - "000"
+    - "100"
+    - "200"
+    - "300"
+    - "400"
+    - "500"
+    - "600"
+  knowledge_directory: "knowledge/"
+  inbox_directory: "inbox/"
+  archive_directory: "archive/"
+  rule: "Les sources, registres, livrables générés, archives et documents internes restent séparés selon leur rôle documentaire."
+
+workflow_documentaire:
+  status_cycle:
+    - "Draft"
+    - "Review"
+    - "Validated"
+    - "Published"
+    - "Obsolete"
+  lifecycle:
+    - "Création"
+    - "Rédaction"
+    - "Revue"
+    - "Validation"
+    - "Publication"
+    - "Révision"
+    - "Archivage"
+  rules:
+    - "Chaque changement de statut est associé à une validation formelle."
+    - "Chaque évolution documentaire est historisée."
+    - "Chaque modification entraîne une analyse des impacts documentaires."
+    - "Les documents impactés sont identifiés, mis à jour et tracés dans le Registre des Décisions."
+    - "Les versions obsolètes sont archivées et restent consultables."
+  decisions:
+    register: "CEVA-RHYAD-005-REGISTRE DES DECISIONS"
+    lifecycle:
+      - "Proposition"
+      - "Analyse"
+      - "Validation"
+      - "Mise en œuvre"
+      - "Vérification des impacts documentaires"
+      - "Clôture"
+    rules:
+      - "Le registre des décisions constitue la référence unique pour toutes les décisions du projet."
+      - "Chaque décision possède un identifiant unique."
+      - "Une décision n'est enregistrée qu'une seule fois."
+      - "Toute décision doit être justifiée."
+      - "Toute décision doit identifier ses impacts documentaires."
+      - "Une décision validée devient une donnée d'entrée pour les phases suivantes."
+      - "Les décisions relatives aux Design Drivers, aux pondérations et aux variantes sont reliées au Design Basis concerné."
+  risks:
+    register: "CEVA-RHYAD-004-REGISTRE DES RISQUES"
+    rules:
+      - "Le registre des risques constitue la référence unique des risques projet."
+      - "Un risque possède un identifiant unique et n'est décrit qu'une seule fois."
+      - "Les risques sont identifiés, analysés, évalués, traités et suivis jusqu'à clôture."
+      - "Les risques ayant un impact sur plusieurs disciplines sont partagés entre les équipes concernées."
+      - "Chaque risque référence les documents, décisions et actions associés lorsque nécessaire."
+  interfaces:
+    rules:
+      - "Chaque document identifie ses données d'entrée, données de sortie, documents liés, disciplines concernées et impacts documentaires."
+      - "Chaque interface doit rester traçable jusqu'aux documents concernés, aux décisions associées et, si nécessaire, aux risques et actions."
+  traceability:
+    validated_file: "knowledge/traceability.yaml"
+    suggestions_file: "knowledge/traceability_suggestions.yaml"
+    rules:
+      - "Les liens de traçabilité ne doivent pas être inventés."
+      - "Aucune relation de traçabilité n'est inscrite comme validée sans preuve documentaire explicite et validation."
+      - "Le fichier de suggestions est une zone de propositions, pas une source validée."
+
+documents_de_reunion:
+  family: "400"
+  rule: "Les documents de réunion sont des synthèses et ne constituent pas la source unique des informations projet."
+  package_documents:
+    R00: "Support de présentation"
+    R01: "Ordre du jour"
+    R02: "Compte rendu"
+    R03: "Registre des actions"
+    R04: "Feuille de présence"
+    R05: "Tableau de bord projet"
+  workshop_rules:
+    - "Chaque atelier peut faire l'objet d'un ordre du jour, d'un support de présentation, d'un compte rendu et d'une liste d'actions."
+    - "Les conclusions des ateliers alimentent les documents du référentiel RHYAD."
+    - "Les décisions et risques issus des réunions sont enregistrés dans les registres de référence."
+
+dashboard:
+  reference: "CEVA-RHYAD-400-R05"
+  role: "Tableau de bord projet officiel"
+  rule: "Le Dashboard est une synthèse et ne constitue pas une source primaire."
+  presentation_rule: "Le Dashboard R05 est la source de la première slide de contenu des présentations projet."
+  source_documents:
+    - "Données Techniques"
+    - "Actions"
+    - "Décisions"
+    - "Risques"
+    - "Planning"
+    - "Documents reçus"
+  data_entry_rule: "La saisie manuelle directe dans le Dashboard est interdite lorsque l'information existe dans une source de référence."
+
+regles_de_generation:
+  document_generation:
+    - "Les DOCX et PDF sont générés à partir des sources YAML validées."
+    - "La génération applique la charte CEVA, le logo CEVA, le cartouche documentaire, la page de garde, le Document Control, le pied de page et la table des matières."
+    - "Les livrables doivent être préremplis lorsqu'une information validée existe dans le dépôt."
+    - "Un livrable généré n'est pas modifié directement."
+    - "Un modèle vide est interdit si le référentiel contient déjà les informations nécessaires."
+  markdown_import:
+    - "Le Markdown validé est la source d'entrée du pipeline d'import."
+    - "Le script d'import ne rédige pas de contenu métier."
+    - "Si une information obligatoire est absente, le pipeline utilise le référentiel officiel lorsque c'est possible ou affiche une erreur explicite."
+    - "Les titres Markdown sont convertis en chapitres YAML."
+    - "Les listes Markdown sont converties en bullets YAML."
+    - "Les tableaux Markdown simples sont convertis en tables YAML."
+  quality_controls:
+    - "Lancer les tests après les générations documentaires automatisées."
+    - "Vérifier l'existence des fichiers DOCX/PDF produits."
+    - "Contrôler la cohérence documentaire, l'absence de duplication, la traçabilité et la lisibilité."
+  technical_data_generation:
+    - "Les DT individuels conservent une référence stricte de type CEVA-RHYAD-200-Fxx-DT01."
+    - "Le DT Master sert à la collecte consolidée et au suivi global."
+    - "Les données validées du DT Master doivent être reportées ou converties vers les YAML de référence."
+  abandoned_outputs:
+    - code: "CHK01"
+      decision: "Document abandonné"
+      reason: "Redondant avec les Données Techniques"
+
+decisions_permanentes:
+  - id: "DP-001"
+    decision: "GitHub est la source unique de vérité du projet RHYAD."
+    source: "SESSION_CONTEXT / PDD"
+  - id: "DP-002"
+    decision: "Les YAML intégrés dans le dépôt sont les documents sources officiels après import."
+    source: "README / PDD / SESSION_CONTEXT"
+  - id: "DP-003"
+    decision: "Une information ne doit exister qu'à un seul endroit dans le référentiel RHYAD."
+    source: "MTH01 / PDD"
+  - id: "DP-004"
+    decision: "Les Dashboards et documents de réunion sont des synthèses, pas des sources primaires."
+    source: "SESSION_CONTEXT"
+  - id: "DP-005"
+    decision: "La charte graphique CEVA est obligatoire sur les livrables client."
+    source: "Modèle documentaire RHYAD-CEVA / SESSION_CONTEXT"
+  - id: "DP-006"
+    decision: "Aucun logo RHYAD n'est utilisé sur les livrables client."
+    source: "SESSION_CONTEXT"
+  - id: "DP-007"
+    decision: "Les prompts Codex doivent être complets."
+    source: "SESSION_CONTEXT"
+  - id: "DP-008"
+    decision: "Les livrables doivent être préremplis lorsqu'une information validée existe."
+    source: "SESSION_CONTEXT"
+  - id: "DP-009"
+    decision: "Le Dashboard R05 est la source de la première slide de contenu des présentations projet."
+    source: "SESSION_CONTEXT"
+  - id: "DP-010"
+    decision: "Le DT Master est le support consolidé de collecte des Données Techniques."
+    source: "SESSION_CONTEXT / templates/excel/README.md"
+  - id: "DP-011"
+    decision: "Le document CHK01 est abandonné car redondant avec les Données Techniques."
+    source: "SESSION_CONTEXT"
+  - id: "DP-012"
+    decision: "La codification DT officielle est CEVA-RHYAD-200-Fxx-DT01."
+    source: "knowledge/decisions.md / document_registry"
+  - id: "DP-013"
+    decision: "CEVA-RHYAD-300-DB000 est réservé aux Principes Généraux de Conception."
+    source: "knowledge/decisions.md / knowledge/project_state.md"
+  - id: "DP-014"
+    decision: "Les Design Basis disciplinaires utilisent la série CEVA-RHYAD-300-DB001 à CEVA-RHYAD-300-DB010."
+    source: "knowledge/decisions.md / MTH01"
+  - id: "DP-015"
+    decision: "Les liens de traçabilité validés exigent une preuve documentaire explicite et une validation."
+    source: "README / règles de traçabilité RHYAD"
+  - id: "DP-016"
+    decision: "Les documents CEVA-RHYAD et RHYAD-SYS sont des référentiels séparés."
+    source: "README / knowledge/architecture.md"
+  - id: "DP-017"
+    decision: "Le cycle documentaire RHYAD est Draft, Review, Validated, Published, Obsolete."
+    source: "MTH01 / knowledge/glossary.yaml"
+  - id: "DP-018"
+    decision: "Une décision validée devient une donnée d'entrée pour les phases suivantes."
+    source: "MTH01 / Registre des Décisions"
+...

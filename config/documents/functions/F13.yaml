@@ -224,18 +224,18 @@ chapters:
     items:
     - CEVA-RHYAD-001A-ACAP
     - CEVA-RHYAD-200-F13-DT01
-    - CEVA-RHYAD-300-DB05 — Électricité
-    - CEVA-RHYAD-300-DB06 — Automatisme, IT / OT et Cybersécurité
-    - CEVA-RHYAD-300-DB07 — Sûreté et Sécurité
+    - CEVA-RHYAD-300-DB005 — Électricité
+    - CEVA-RHYAD-300-DB006 — Automatisme, IT / OT et Cybersécurité
+    - CEVA-RHYAD-300-DB007 — Sûreté et Sécurité
     - CEVA-RHYAD-500-REG03 — Registre des Risques
     - CEVA-RHYAD-500-REG04 — Registre des Hypothèses
     - CEVA-RHYAD-500-REG05 — Registre des Interfaces
   bullets:
   - CEVA-RHYAD-001A-ACAP
   - CEVA-RHYAD-200-F13-DT01
-  - CEVA-RHYAD-300-DB05 — Électricité
-  - CEVA-RHYAD-300-DB06 — Automatisme, IT / OT et Cybersécurité
-  - CEVA-RHYAD-300-DB07 — Sûreté et Sécurité
+  - CEVA-RHYAD-300-DB005 — Électricité
+  - CEVA-RHYAD-300-DB006 — Automatisme, IT / OT et Cybersécurité
+  - CEVA-RHYAD-300-DB007 — Sûreté et Sécurité
   - CEVA-RHYAD-500-REG03 — Registre des Risques
   - CEVA-RHYAD-500-REG04 — Registre des Hypothèses
   - CEVA-RHYAD-500-REG05 — Registre des Interfaces

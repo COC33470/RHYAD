@@ -213,7 +213,7 @@ d'enregistrer les actions dans le registre projet.
 
 ## Recommandation RHYAD
 
-Le DB-006 --- IT / OT devra comporter une architecture de référence
+Le CEVA-RHYAD-300-DB006 --- IT / OT devra comporter une architecture de référence
 distinguant clairement :
 
 -   le réseau IT d'entreprise ;

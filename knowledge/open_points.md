@@ -5,8 +5,8 @@
 | Point | Statut |
 |---|---|
 | Harmonisation DT vers `CEVA-RHYAD-200-Fxx-DT01` | Réalisé pour F01 à F15 |
-| Harmonisation `DB001` vs `DB01` vs `DB-001` | Ouvert |
-| Référence cible pour Design Basis général `DB000` / `DB00` | Ouvert |
+| Harmonisation Design Basis vers `CEVA-RHYAD-300-DB001` à `CEVA-RHYAD-300-DB010` | Réalisé |
+| Référence cible pour Design Basis général `CEVA-RHYAD-300-DB000` | Réalisé |
 | Anciennes références de type `CEVA-RHYAD-000-001` | À corriger après validation |
 
 ## Production documentaire
@@ -24,6 +24,5 @@
 
 ## Décisions à obtenir
 
-- Codification DB définitive.
 - Articulation entre registres 000 et famille 500.
 - Priorité d'intégration des Design Basis.

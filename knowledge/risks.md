@@ -32,7 +32,7 @@ Les familles reprises du registre des risques sont :
 ## Risques documentaires connus
 
 - Incohérence de codification entre `CEVA-RHYAD-200-Fxx-DT01`.
-- Incohérence de codification entre `DB-001`, `DB01`, `DB001`, `CEVA-RHYAD-300-DB01` et `CEVA-RHYAD-300-DB001`.
+- Risque de réintroduction de formes non officielles pour les références Design Basis.
 - Présence de références anciennes de type `CEVA-RHYAD-000-001` dans certains contenus en attente.
 - Risque de doublon entre Markdown d'entrée, YAML source et livrables DOCX/PDF.
 - Risque de modification directe des livrables générés.

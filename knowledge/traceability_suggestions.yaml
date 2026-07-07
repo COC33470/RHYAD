@@ -2,14 +2,14 @@ generated_at: '2026-07-04T19:22:29.980151+00:00'
 status: proposed
 traceability_suggestions:
 - source: CEVA-RHYAD-000-MODELE
-  destination: DB-001
+  destination: CEVA-RHYAD-300-DB001
   relation: explicit-reference
   status: proposed
   evidence:
     source_file: config/documents/000.yaml
     location: $.chapters[8].bullets[3]
-    matched_reference: DB-001
-    text: DB-001
+    matched_reference: CEVA-RHYAD-300-DB001
+    text: CEVA-RHYAD-300-DB001
 - source: CEVA-RHYAD-000-MODELE
   destination: REG-001
   relation: explicit-reference

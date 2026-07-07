@@ -139,7 +139,7 @@ Chaque etape produit des livrables valides avant le passage a la suivante. Les d
 **03 - Design Drivers**
 
 - Definition des objectifs de conception et des criteres d'evaluation des variantes.
-- Reference : **Série CEVA-RHYAD-300-DBxx (Design Basis)**
+- Reference : **Série CEVA-RHYAD-300-DB001 à CEVA-RHYAD-300-DB010 (Design Basis)**
 
 ### Phase 2 - Conception
 

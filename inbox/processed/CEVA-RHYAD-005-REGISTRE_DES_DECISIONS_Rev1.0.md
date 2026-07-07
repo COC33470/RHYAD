@@ -129,7 +129,7 @@ traçabilité.
   -------------------------- ---------------
   CEVA-RHYAD-100-F09         Mise à jour
   CEVA-RHYAD-200-F09-DT01   Compléter
-  CEVA-RHYAD-300-DB04        Réviser
+  CEVA-RHYAD-300-DB004        Réviser
   CEVA-RHYAD-500-REG04       Mettre à jour
 
 ------------------------------------------------------------------------

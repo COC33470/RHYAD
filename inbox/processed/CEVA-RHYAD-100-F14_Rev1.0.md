@@ -141,10 +141,10 @@ activités.
 
 -   CEVA-RHYAD-001A-ACAP
 -   CEVA-RHYAD-200-F14-DT01
--   CEVA-RHYAD-300-DB02 --- Architecture
--   CEVA-RHYAD-300-DB03 --- CVC / HVAC
--   CEVA-RHYAD-300-DB05 --- Électricité
--   CEVA-RHYAD-300-DB06 --- Automatisme, IT / OT et Cybersécurité
+-   CEVA-RHYAD-300-DB002 --- Architecture
+-   CEVA-RHYAD-300-DB003 --- CVC / HVAC
+-   CEVA-RHYAD-300-DB005 --- Électricité
+-   CEVA-RHYAD-300-DB006 --- Automatisme, IT / OT et Cybersécurité
 -   CEVA-RHYAD-500-REG03 --- Registre des Risques
 -   CEVA-RHYAD-500-REG04 --- Registre des Hypothèses
 -   CEVA-RHYAD-500-REG05 --- Registre des Interfaces

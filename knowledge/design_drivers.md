@@ -28,7 +28,7 @@ Les pondérations sont proposées par l'équipe projet et validées par le Maît
 
 ## Lien avec les Design Basis
 
-Chaque Design Basis doit définir ses Design Drivers spécifiques. La référence cible reste à harmoniser entre `DB000`, `DB-000`, `DB00` et la série officielle des Design Basis.
+Chaque Design Basis doit définir ses Design Drivers spécifiques. La référence générale est `CEVA-RHYAD-300-DB000` et la série officielle des Design Basis est `CEVA-RHYAD-300-DB001` à `CEVA-RHYAD-300-DB010`.
 
 ## Lien avec la matrice multicritère
 

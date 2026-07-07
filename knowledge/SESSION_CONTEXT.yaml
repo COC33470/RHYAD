@@ -1,0 +1,124 @@
+---
+session:
+  id: 2026-07-05
+  date: 2026-07-05
+  type: "Développement RHYAD"
+  status: "validated"
+
+project:
+  client: "CEVA"
+  name: "Construction de l'unité de production d'autovaccins"
+  location: "Arabie Saoudite"
+  repository: "RHYAD"
+
+governance:
+  source_of_truth:
+    git_repository: true
+    yaml_documents: true
+    generated_documents:
+      - docx
+      - xlsx
+      - pptx
+      - pdf
+
+  document_principles:
+    single_source_of_truth: true
+    rule: >
+      Une information ne doit exister qu'à un seul endroit
+      dans le référentiel RHYAD.
+    duplicate_information: forbidden
+    dashboards_are_synthesis: true
+    meeting_documents_are_synthesis: true
+
+branding:
+  client_graphic_charter: "CEVA"
+  use_ceva_logo: true
+  use_rhyad_logo: false
+  rhyad_is:
+    - methodology
+    - document_codification
+
+meeting_documents:
+  family: 400
+  validated_documents:
+    R00:
+      name: "Support de présentation"
+    R01:
+      name: "Ordre du jour"
+    R02:
+      name: "Compte rendu"
+    R03:
+      name: "Registre des actions"
+    R04:
+      name: "Feuille de présence"
+    R05:
+      name: "Tableau de bord projet"
+
+dashboard:
+  reference: "CEVA-RHYAD-400-R05"
+  official_project_dashboard: true
+  first_content_slide: true
+  source_documents:
+    - DT
+    - Actions
+    - Decisions
+    - Risks
+    - Planning
+    - Documents received
+  manual_data_entry: false
+
+technical_data:
+  master_excel:
+    official_collection_document: true
+  dt_documents:
+    source_documents: true
+  checklist_document:
+    created: false
+    reason: "Redondant avec les DT"
+
+codex:
+  audit_repository_before_generation: true
+  read_knowledge_directory: true
+  reuse_existing_information: true
+  produce_operational_documents: true
+  empty_templates_forbidden: true
+  full_prompt_required: true
+  no_commit: true
+
+validated_decisions:
+  - "GitHub est la source unique de vérité."
+  - "Les YAML sont les documents sources."
+  - "Une information = une seule source."
+  - "Les Dashboards sont des synthèses."
+  - "Les documents de réunion sont des synthèses."
+  - "Aucun logo RHYAD sur les livrables client."
+  - "Charte graphique CEVA obligatoire."
+  - "Les prompts Codex sont toujours complets."
+  - "Les livrables doivent être préremplis lorsqu'une information existe."
+  - "Le Dashboard R05 est la source de la slide 2 de toutes les présentations."
+  - "Le DT Master est l'unique support de collecte des Données Techniques."
+  - "Le document CHK01 est abandonné car redondant avec les DT."
+
+open_points:
+  - "Vérifier les livrables générés par Codex."
+  - "Intégrer le Dashboard R05 dans toutes les présentations."
+  - "Préparer la famille 300 (Design Basis)."
+  - "Contrôler la conformité à la charte graphique CEVA."
+
+next_session:
+  mandatory_actions:
+    - "Lire SESSION_CONTEXT.yaml."
+    - "Lire le dossier knowledge/ mis à jour par Codex."
+    - "Vérifier les nouveaux livrables générés."
+    - "Mettre à jour le contexte avant toute production."
+    - "Poursuivre le développement RHYAD."
+
+memory:
+  reusable: true
+  codex_should_read_first: true
+  chatgpt_should_request_at_session_start: true
+
+version:
+  revision: "Rev1.0"
+  validated: true
+---

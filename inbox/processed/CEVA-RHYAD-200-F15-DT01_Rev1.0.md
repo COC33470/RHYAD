@@ -36,16 +36,16 @@ une conception cohérente du projet.
 
   Discipline                      Interfaces principales            Documents associés
   ------------------------------- --------------------------------- --------------------
-  Process                         Architecture, CVC, Utilités       DB001
-  Architecture                    Toutes disciplines                DB002
-  CVC / HVAC                      Process, Utilités, Architecture   DB003
-  Utilités                        Process, CVC, Électricité         DB004
-  Électricité                     Utilités, IT / OT                 DB005
-  IT / OT                         Automatismes, Sécurité            DB006
-  Maintenance                     Toutes disciplines                DB007
-  Sécurité / Sûreté               Architecture, IT / OT             DB008
-  Logistique                      Process, Architecture             DB009
-  Instrumentation & Automatisme   Process, Utilités                 DB010
+  Process                         Architecture, CVC, Utilités       CEVA-RHYAD-300-DB001
+  Architecture                    Toutes disciplines                CEVA-RHYAD-300-DB002
+  CVC / HVAC                      Process, Utilités, Architecture   CEVA-RHYAD-300-DB003
+  Utilités                        Process, CVC, Électricité         CEVA-RHYAD-300-DB004
+  Électricité                     Utilités, IT / OT                 CEVA-RHYAD-300-DB005
+  IT / OT                         Automatismes, Sécurité            CEVA-RHYAD-300-DB006
+  Maintenance                     Toutes disciplines                CEVA-RHYAD-300-DB007
+  Sécurité / Sûreté               Architecture, IT / OT             CEVA-RHYAD-300-DB008
+  Logistique                      Process, Architecture             CEVA-RHYAD-300-DB009
+  Instrumentation & Automatisme   Process, Utilités                 CEVA-RHYAD-300-DB010
 
 # 2. Données d'entrée des études
 

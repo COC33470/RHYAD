@@ -24,12 +24,12 @@ Le registre des décisions validé pose les règles suivantes :
 | Sujet | Règle mémoire |
 |---|---|
 | Données Techniques | Codification DT validée : `CEVA-RHYAD-200-Fxx-DT01`. |
-| Design Basis | Codification DB à harmoniser : `CEVA-RHYAD-300-DB001` à `CEVA-RHYAD-300-DB010`. |
+| Design Basis | Codification DB validée : `CEVA-RHYAD-300-DB000` réservé aux Principes Généraux de Conception, puis `CEVA-RHYAD-300-DB001` à `CEVA-RHYAD-300-DB010`. |
 | Source officielle | YAML intégré dans le dépôt Git. |
 | Livrables | Markdown d'entrée, DOCX et PDF sont des livrables ou artefacts générés. |
 
 ## Points de vigilance
 
-La codification DT est harmonisée vers `CEVA-RHYAD-200-Fxx-DT01`. La codification DB coexiste sous plusieurs formes : `DB-001`, `DB01`, `DB001`, `CEVA-RHYAD-300-DB01` et `CEVA-RHYAD-300-DB001`.
+La codification DT est harmonisée vers `CEVA-RHYAD-200-Fxx-DT01`. La codification DB est harmonisée vers la série officielle validée.
 
-Ces écarts doivent être arbitrés dans le registre des décisions avant toute correction documentaire systématique.
+Les futures corrections documentaires doivent conserver cette codification officielle.

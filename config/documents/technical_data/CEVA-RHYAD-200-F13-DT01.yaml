@@ -795,7 +795,7 @@ chapters:
 - title: Recommandation RHYAD
   blocks:
   - type: text
-    text: 'Le DB-006 --- IT / OT devra comporter une architecture de référence distinguant clairement :'
+    text: 'Le CEVA-RHYAD-300-DB006 --- IT / OT devra comporter une architecture de référence distinguant clairement :'
   - type: list
     items:
     - le réseau IT d'entreprise ;
@@ -807,7 +807,7 @@ chapters:
   - type: text
     text: Cette architecture devra respecter les principes de segmentation et de défense en profondeur, tout en restant compatible
       avec les standards CEVA et les exigences de cybersécurité industrielle, notamment IEC 62443.
-  text: 'Le DB-006 --- IT / OT devra comporter une architecture de référence distinguant clairement :
+  text: 'Le CEVA-RHYAD-300-DB006 --- IT / OT devra comporter une architecture de référence distinguant clairement :
 
 
     Cette architecture devra respecter les principes de segmentation et de défense en profondeur, tout en restant compatible

@@ -226,18 +226,18 @@ chapters:
     items:
     - CEVA-RHYAD-001A-ACAP
     - CEVA-RHYAD-200-F06-DT01
-    - CEVA-RHYAD-300-DB01 — Process
-    - CEVA-RHYAD-300-DB02 — Architecture
-    - CEVA-RHYAD-300-DB09 — Logistique
+    - CEVA-RHYAD-300-DB001 — Process
+    - CEVA-RHYAD-300-DB002 — Architecture
+    - CEVA-RHYAD-300-DB009 — Logistique
     - CEVA-RHYAD-500-REG03 — Registre des Risques
     - CEVA-RHYAD-500-REG04 — Registre des Hypothèses
     - CEVA-RHYAD-500-REG05 — Registre des Interfaces
   bullets:
   - CEVA-RHYAD-001A-ACAP
   - CEVA-RHYAD-200-F06-DT01
-  - CEVA-RHYAD-300-DB01 — Process
-  - CEVA-RHYAD-300-DB02 — Architecture
-  - CEVA-RHYAD-300-DB09 — Logistique
+  - CEVA-RHYAD-300-DB001 — Process
+  - CEVA-RHYAD-300-DB002 — Architecture
+  - CEVA-RHYAD-300-DB009 — Logistique
   - CEVA-RHYAD-500-REG03 — Registre des Risques
   - CEVA-RHYAD-500-REG04 — Registre des Hypothèses
   - CEVA-RHYAD-500-REG05 — Registre des Interfaces
